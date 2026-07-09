@@ -43,9 +43,8 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
 
 - Windows 11, PowerShell. Venv at `venv\` — Python 3.11.9 (matches project pin `>=3.11,<3.13`).
 - **Always invoke the venv interpreter directly** — `venv\Scripts\python.exe -m pytest ...` — because shell activation does not persist between Claude Code tool calls.
-- Repo status: **pre-implementation** — Phase 0 not started; no `src/`, no tests, no `pyproject.toml` yet. Update this section as commands become real.
-- Planned conventions (from the master plan — confirm against `pyproject.toml` once it exists):
+- Repo status: **Phase 0 complete** — package skeleton + toy MCP server exist and are verified against Claude Code over stdio. Phase 1 (corpus construction) not started.
+- Working conventions:
+  - Install: `venv\Scripts\python.exe -m pip install -e ".[dev]"`
   - Tests: `venv\Scripts\python.exe -m pytest tests\test_x.py::test_name -v`
-  - Package layout: `src/kbmcp/`; console entry point `kbmcp`
-  - Corpus build (dev-only): `python scripts/build_corpus.py`
-  - Eval: `python -m kbmcp.eval run` → per-tier report in `eval/runs/<ts>/report.md`
+  - Toy MCP server (Phase 0 reference, not production): `examples\toy_server.py`, registered with Claude Code as `kb-toy`
