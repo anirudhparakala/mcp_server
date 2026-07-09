@@ -48,3 +48,7 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
   - Install: `venv\Scripts\python.exe -m pip install -e ".[dev]"`
   - Tests: `venv\Scripts\python.exe -m pytest tests\test_x.py::test_name -v`
   - Toy MCP server (Phase 0 reference, not production): `examples\toy_server.py`, registered with Claude Code as `kb-toy`
+- Planned conventions (not yet implemented — see master plan for phases):
+  - Package layout: `src/kbmcp/`; console entry point `kbmcp`
+  - Corpus build (dev-only): `python scripts/build_corpus.py`
+  - Eval: `python -m kbmcp.eval run` → per-tier report in `eval/runs/<ts>/report.md`
