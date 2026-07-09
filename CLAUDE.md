@@ -22,6 +22,8 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
 - `docs/PLAN.md` — high-level goals, non-goals, success criteria
 - `docs/superpowers/plans/2026-07-09-kb-mcp-server-master-plan.md` — the master technical plan: architecture, interfaces, port surface map, tier taxonomy, per-phase contracts and exit criteria
 
+> **Note:** `docs/superpowers/` is gitignored — plans exist only on the primary dev machine. If you are on a fresh clone and the master plan is missing, stop and ask the user for it; do not improvise architecture from this file alone.
+
 ## Locked decisions — do not relitigate
 
 1. **Retrieval-only.** No generation, no answer verification on the server. Client LLM does synthesis.
@@ -39,10 +41,11 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
 
 ## Environment & commands
 
-- Windows 11, PowerShell. Python 3.11+ venv at `venv\` (activate: `venv\Scripts\Activate.ps1`).
-- Repo status: **pre-implementation** (Phase 0 not started; no `src/`, no tests yet). Update this section as commands become real.
+- Windows 11, PowerShell. Venv at `venv\` — Python 3.11.9 (matches project pin `>=3.11,<3.13`).
+- **Always invoke the venv interpreter directly** — `venv\Scripts\python.exe -m pytest ...` — because shell activation does not persist between Claude Code tool calls.
+- Repo status: **pre-implementation** — Phase 0 not started; no `src/`, no tests, no `pyproject.toml` yet. Update this section as commands become real.
 - Planned conventions (from the master plan — confirm against `pyproject.toml` once it exists):
-  - Tests: `pytest` (`pytest tests/test_x.py::test_name -v` for a single test)
+  - Tests: `venv\Scripts\python.exe -m pytest tests\test_x.py::test_name -v`
   - Package layout: `src/kbmcp/`; console entry point `kbmcp`
   - Corpus build (dev-only): `python scripts/build_corpus.py`
   - Eval: `python -m kbmcp.eval run` → per-tier report in `eval/runs/<ts>/report.md`
