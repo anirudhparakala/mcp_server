@@ -1,4 +1,3 @@
-import tempfile
 from pathlib import Path
 
 from kbmcp.config import load_corpus_config
@@ -15,15 +14,9 @@ def test_loads_real_config_sections():
     assert cfg.parse["ocr"] is False
 
 
-def test_missing_section_defaults_to_empty_dict():
-    # pytest's tmp_path fixture fails on this machine: a pre-existing
-    # pytest-of-aniru bookkeeping dir under the Windows temp folder is
-    # ACL-locked (PermissionError: WinError 5), even for its owning user.
-    # tempfile.TemporaryDirectory() does not touch that directory and
-    # works correctly here.
-    with tempfile.TemporaryDirectory() as tmpdir:
-        p = Path(tmpdir) / "c.yaml"
-        p.write_text("chunk:\n  target_tokens: 256\n", encoding="utf-8")
-        cfg = load_corpus_config(p)
-        assert cfg.chunk["target_tokens"] == 256
-        assert cfg.graph == {}
+def test_missing_section_defaults_to_empty_dict(safe_tmp_path):
+    p = safe_tmp_path / "c.yaml"
+    p.write_text("chunk:\n  target_tokens: 256\n", encoding="utf-8")
+    cfg = load_corpus_config(p)
+    assert cfg.chunk["target_tokens"] == 256
+    assert cfg.graph == {}
