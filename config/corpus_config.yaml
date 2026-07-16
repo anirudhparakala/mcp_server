@@ -1,0 +1,36 @@
+# Corpus build configuration (dev-only [corpus] extra). See
+# docs/superpowers/specs/2026-07-16-phase1-ingest-design.md §8.
+fetch:
+  timeout_s: 30
+  retries: 2
+  playwright: true
+
+parse:
+  table_mode: accurate
+  ocr: false
+  cache_dir: corpus/parsed
+
+chunk:
+  target_tokens: 512
+  max_tokens: 800
+  overlap_policy: minimal
+
+contextualize:
+  enabled: true
+  model: claude-haiku-4-5
+  temperature: 0
+  max_tokens: 150
+  cache_ttl: 1h
+  section_scoped: true
+  contexts_dir: corpus/contexts
+
+graph:
+  extractors: [legal, academic]
+  resolve: true
+  edge_types: [adjacent, parent, references]
+
+verify:
+  fixtures: corpus/benchmark/structure_fixtures.yaml
+
+ids:
+  scheme: "sha256(canonical_url|version|chunk_index)"
