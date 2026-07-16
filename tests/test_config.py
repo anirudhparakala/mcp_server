@@ -14,11 +14,9 @@ def test_loads_real_config_sections():
     assert cfg.parse["ocr"] is False
 
 
-def test_missing_section_defaults_to_empty_dict():
-    import tempfile
-    with tempfile.TemporaryDirectory() as tmpdir:
-        p = Path(tmpdir) / "c.yaml"
-        p.write_text("chunk:\n  target_tokens: 256\n", encoding="utf-8")
-        cfg = load_corpus_config(p)
-        assert cfg.chunk["target_tokens"] == 256
-        assert cfg.graph == {}
+def test_missing_section_defaults_to_empty_dict(tmp_path):
+    p = tmp_path / "c.yaml"
+    p.write_text("chunk:\n  target_tokens: 256\n", encoding="utf-8")
+    cfg = load_corpus_config(p)
+    assert cfg.chunk["target_tokens"] == 256
+    assert cfg.graph == {}
