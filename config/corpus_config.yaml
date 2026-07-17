@@ -33,4 +33,4 @@ verify:
   fixtures: corpus/benchmark/structure_fixtures.yaml
 
 ids:
-  scheme: "sha256(canonical_url|version|chunk_index)"
+  scheme: "sha256(canonical_url + U+001F + version + U+001F + chunk_index) — ASCII unit-separator joined, see src/kbmcp/models/ids.py"
