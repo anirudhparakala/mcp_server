@@ -27,15 +27,16 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
 ## Locked decisions — do not relitigate
 
 1. **Retrieval-only.** No generation, no answer verification on the server. Client LLM does synthesis.
-2. **Copy + adapt from `C:\Users\aniru\RAG`.** That repo is the source for the retrieval pipeline, ingest pipeline, and eval framework. The master plan's §2 "Port Surface Map" says exactly what is copied verbatim, rewritten, or dropped. Read the RAG original before porting a module.
+2. **RAG code is reference, not a copy source (amended 2026-07-15).** `C:\Users\aniru\RAG` is read for inspiration and technique — never transcribed verbatim. The user considers the old implementation functional but not optimal, and wants to deliberately enhance each module rather than port it as-is. **HARD STOP:** before invoking `superpowers:writing-plans` or writing any implementation code for a module listed in the master plan's §2 "Port Surface Map," stop, explicitly tell the user "this module needs an enhancement-planning pass before I proceed" naming the module, invoke `superpowers:brainstorming`, and wait for the user's actual input in the conversation. Do not treat reading the RAG source yourself as satisfying this — the pass is not complete until the user has weighed in. This supersedes the original "copy + adapt" framing; §2's category labels ("Copy near-verbatim" etc.) now describe what the old code does, not an instruction to transcribe it.
 3. **No Ollama anywhere.** Embedder is `Snowflake/snowflake-arctic-embed-l-v2.0` via sentence-transformers (same weights as the RAG project's Ollama model). Runtime = pip install only.
 4. **Stateless server.** No session state, no coref, no warm-start. Fresh internal state per call.
-5. **Prebuilt index ships to users** (release asset); ingest is dev-only behind a `[corpus]` extra.
+5. **Two install paths — demo + bring-your-own-corpus (Shape C, amended 2026-07-16).** (a) A prebuilt CKB ships as a release asset for a zero-build demo/proof over the 60-doc hard corpus; (b) bring-your-own-corpus — users install the `[corpus]` extra and run `scripts/build_corpus.py` against their own `manifest.yaml` to build a CKB over their own documents. The 60-doc corpus is the eval/proof fixture **and** the demo content, not the only supported content. This is an open-source project meant to be used by others, so BYO is first-class. Contextual Retrieval (Haiku) must be **optional/config-gated** (`contextualize.enabled`) so the BYO path works without an API key. Supersedes the earlier "ingest is dev-only" framing.
+6. **Usability decisions (2026-07-16, with user).** Code license: **MIT**. Shipped index: **ship all chunk text with a fair-use + per-source attribution `NOTICE`** (keep the per-source `license` field so any source can be swapped/removed in one line if challenged; prefer CC-licensed equivalents where a swap is trivial). BYO corpus input: support **both** a `manifest.yaml` **and** a friction-free **local-folder** mode (`build_corpus.py --folder`) — local-file ingest is first-class; local files' `version` defaults to a content hash. Contextual Retrieval **defaults OFF when no API key is present** (build proceeds on raw text with a note); the shipped corpus is built with it ON.
 
 ## House rules (carried over from the RAG project)
 
 - **YAML config over hard-coded constants** — all tunables live in `config/*.yaml`.
-- **Deterministic, stable IDs** — chunk IDs are `sha256(canonical_url + version + chunk_index)`; never break this (citations and eval gold labels depend on it).
+- **Deterministic, stable IDs** — chunk IDs are `sha256(canonical_url + version + chunk_index)` conceptually; the implementation (`src/kbmcp/models/ids.py`) joins fields with the ASCII unit-separator `\x1f` before hashing (prevents boundary-collision, e.g. `"ab"+"c"` vs `"a"+"bc"`) — never break this scheme, in concept or exact serialization (citations and eval gold labels depend on it). `config/corpus_config.yaml`'s `ids.scheme` field must stay in sync with this description.
 - **Reproducible artifacts** — corpus builds, eval runs, and reports must be re-runnable and committed where they are proof artifacts (eval reports especially).
 - **Never write to stdout in server code** — stdio transport; logs go to stderr.
 
@@ -43,7 +44,7 @@ A **retrieval-only knowledge-base MCP server**: hybrid retrieval (BM25 + dense +
 
 - Windows 11, PowerShell. Venv at `venv\` — Python 3.11.9 (matches project pin `>=3.11,<3.13`).
 - **Always invoke the venv interpreter directly** — `venv\Scripts\python.exe -m pytest ...` — because shell activation does not persist between Claude Code tool calls.
-- Repo status: **Phase 0 complete** — package skeleton + toy MCP server exist and are verified against Claude Code over stdio. Phase 1 (corpus construction) not started.
+- Repo status: **Phase 0 complete.** Phase 1 (corpus construction) in progress — Milestone 1 (Foundations & Data Model: `[corpus]` extra, deterministic sha256 IDs, 5-table SQLite schema + ops, `corpus_config.yaml` loader, BYO-compatible manifest loader) complete and reviewed (task reviews + whole-milestone review + independent adversarial review). Remaining Phase 1 milestones: fetch & pin, Docling parse & chunk, Contextual Retrieval, cross-ref graph, BM25 index + `build_corpus.py`, benchmark + gold resolution.
 - Working conventions:
   - Install: `venv\Scripts\python.exe -m pip install -e ".[dev]"`
   - Tests: `venv\Scripts\python.exe -m pytest tests\test_x.py::test_name -v`
