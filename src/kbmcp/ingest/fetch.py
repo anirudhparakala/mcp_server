@@ -84,3 +84,36 @@ def is_cached(raw_dir, doc_id: str) -> bool:
     if meta is None:
         return False
     return (Path(raw_dir) / meta.get("raw_filename", "")).exists()
+
+
+class FetchError(Exception):
+    """Raised when a source cannot be fetched or pinned."""
+
+
+def _http_get(url: str, cfg: dict, *, transport=None):
+    """GET `url` with retries/timeout/UA; return (data, final_url, content_type, status).
+
+    Retries on transport errors and 5xx up to cfg['retries'] times; raises
+    FetchError immediately on 4xx (fail fast) and after exhausting retries.
+    A fresh client per attempt keeps injected MockTransport tests simple.
+    """
+    timeout = cfg.get("timeout_s", 30)
+    retries = cfg.get("retries", 2)
+    headers = {"User-Agent": cfg.get("user_agent", "kbmcp-corpus-builder/0.1")}
+    last_err = None
+    for _ in range(retries + 1):
+        try:
+            with httpx.Client(
+                timeout=timeout, follow_redirects=True, transport=transport, headers=headers
+            ) as client:
+                resp = client.get(url)
+        except httpx.TransportError as exc:
+            last_err = f"transport error: {exc}"
+            continue
+        if resp.status_code >= 500:
+            last_err = f"server error {resp.status_code}"
+            continue
+        if resp.status_code >= 400:
+            raise FetchError(f"{url} -> HTTP {resp.status_code}")
+        return resp.content, str(resp.url), resp.headers.get("content-type"), resp.status_code
+    raise FetchError(f"{url} failed after {retries + 1} attempt(s): {last_err}")
