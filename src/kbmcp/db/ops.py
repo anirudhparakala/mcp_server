@@ -114,9 +114,12 @@ def get_chunk(conn: sqlite3.Connection, chunk_id: str) -> Optional[dict]:
     if row is None:
         return None
     result = dict(row)
-    # Deserialize JSON columns
-    result["heading_path_json"] = json.loads(result["heading_path_json"])
+    # Deserialize JSON columns and normalize to clean key names
+    result["heading_path"] = json.loads(result.pop("heading_path_json"))
     if result["table_json"] is not None:
-        result["table_json"] = json.loads(result["table_json"])
-    result["citation_anchors_json"] = json.loads(result["citation_anchors_json"])
+        result["table"] = json.loads(result.pop("table_json"))
+    else:
+        result.pop("table_json")
+        result["table"] = None
+    result["citation_anchors"] = json.loads(result.pop("citation_anchors_json"))
     return result

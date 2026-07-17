@@ -46,8 +46,8 @@ def test_insert_and_get_chunk_roundtrip():
     assert got is not None
     assert got["text"] == "hello world"
     assert got["chunk_index"] == 0
-    assert isinstance(got["heading_path_json"], list)
-    assert got["heading_path_json"] == ["Intro"]
+    assert isinstance(got["heading_path"], list)
+    assert got["heading_path"] == ["Intro"]
 
 
 def test_chunk_id_exists_true_and_false():
