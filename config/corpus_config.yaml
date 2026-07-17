@@ -3,7 +3,11 @@
 fetch:
   timeout_s: 30
   retries: 2
-  playwright: true
+  user_agent: "kbmcp-corpus-builder/0.1 (+https://github.com/anirudhparakala/mcp_server)"
+  raw_dir: corpus/raw
+  render:
+    enabled: false        # Playwright JS rendering; flipped on only if a source needs it (Task C1)
+    hosts: []             # hostnames requiring rendering (populated on demand, e.g. ["eur-lex.europa.eu"])
 
 parse:
   table_mode: accurate
