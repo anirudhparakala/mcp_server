@@ -83,7 +83,10 @@ def is_cached(raw_dir, doc_id: str) -> bool:
     meta = read_meta(raw_dir, doc_id)
     if meta is None:
         return False
-    return (Path(raw_dir) / meta.get("raw_filename", "")).exists()
+    raw_filename = meta.get("raw_filename")
+    if not raw_filename:
+        return False
+    return (Path(raw_dir) / raw_filename).exists()
 
 
 class FetchError(Exception):
@@ -177,7 +180,10 @@ def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=N
         )
 
     if recipe == "local":
-        data, final_url = _read_local(entry.url)
+        try:
+            data, final_url = _read_local(entry.url)
+        except (OSError, ValueError) as exc:
+            raise FetchError(f"{entry.doc_id}: cannot read local file {entry.url}: {exc}") from exc
         fmt, content_type = entry.format, None
         resolved_version = f"sha256:{content_hash(data)}"
     elif recipe == "arxiv":
@@ -217,7 +223,7 @@ def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=N
     )
 
 
-def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> list:
+def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> list[FetchResult]:
     """Fetch every source, capturing per-source failures as error results."""
     results = []
     for entry in entries:
@@ -226,7 +232,11 @@ def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=No
                 fetch_source(entry, raw_dir, cfg, force=force, transport=transport, renderer=renderer)
             )
         except Exception as exc:  # noqa: BLE001 — one bad source must not abort the run
+            try:
+                recipe = resolve_recipe(entry)
+            except Exception:  # noqa: BLE001 — recipe is best-effort context on the error path
+                recipe = None
             results.append(
-                FetchResult(doc_id=entry.doc_id, status="error", recipe=resolve_recipe(entry), error=str(exc))
+                FetchResult(doc_id=entry.doc_id, status="error", recipe=recipe, error=str(exc))
             )
     return results

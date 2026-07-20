@@ -60,6 +60,7 @@ def test_fetch_source_arxiv_falls_back_to_pdf(safe_tmp_path):
     r = fetch.fetch_source(e, safe_tmp_path, CFG, transport=httpx.MockTransport(handler))
     assert r.status == "ok" and r.format == "pdf"
     assert r.raw_path.name == "arxiv-x.pdf"
+    assert r.resolved_version == "v7"
 
 
 def test_fetch_source_raises_on_http_error(safe_tmp_path):
@@ -80,6 +81,27 @@ def test_fetch_all_collects_errors_without_raising(safe_tmp_path):
     results = fetch.fetch_all([good, bad], safe_tmp_path, CFG, transport=httpx.MockTransport(handler))
     by_id = {r.doc_id: r.status for r in results}
     assert by_id == {"good": "ok", "bad": "error"}
+
+
+def test_fetch_all_does_not_raise_on_malformed_entry(safe_tmp_path):
+    good = _entry(doc_id="good")
+    bad = _entry(doc_id="bad", url=123)
+
+    def handler(req):
+        return httpx.Response(200, content=b"ok", headers={"content-type": "text/html"})
+
+    results = fetch.fetch_all([good, bad], safe_tmp_path, CFG, transport=httpx.MockTransport(handler))
+    by_id = {r.doc_id: r for r in results}
+    assert by_id["good"].status == "ok"
+    assert by_id["bad"].status == "error"
+    assert by_id["bad"].error
+
+
+def test_fetch_source_missing_local_file_raises_fetcherror(safe_tmp_path):
+    missing = safe_tmp_path / "nope.pdf"
+    e = _entry(doc_id="local-missing", url=missing.as_uri(), format="pdf", version="ignored")
+    with pytest.raises(fetch.FetchError):
+        fetch.fetch_source(e, safe_tmp_path, CFG)
 
 
 def test_render_required_without_renderer_raises(safe_tmp_path):

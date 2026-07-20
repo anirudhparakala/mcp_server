@@ -42,3 +42,13 @@ def test_is_cached_false_when_raw_bytes_missing(safe_tmp_path):
         {"doc_id": "y", "raw_filename": "y.pdf", "resolved_version": "v1", "content_hash": "abc"},
     )
     assert fetch.is_cached(safe_tmp_path, "y") is False
+
+
+def test_is_cached_false_when_meta_lacks_raw_filename(safe_tmp_path):
+    # meta record present but missing the raw_filename key entirely -> must not
+    # fall back to treating raw_dir itself as the "raw file" (it always exists).
+    fetch.write_meta(
+        safe_tmp_path,
+        {"doc_id": "z", "resolved_version": "v1", "content_hash": "abc"},
+    )
+    assert fetch.is_cached(safe_tmp_path, "z") is False
