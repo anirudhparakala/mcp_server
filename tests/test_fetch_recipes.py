@@ -37,3 +37,19 @@ def test_read_local_returns_bytes_and_path(safe_tmp_path):
     data, path = fetch._read_local(f.as_uri())
     assert data == b"%PDF-1.4 data"
     assert Path(path) == f
+
+
+def test_read_local_handles_percent_in_filename(safe_tmp_path):
+    f = safe_tmp_path / "report%41.pdf"
+    f.write_bytes(b"%PDF-1.4 data")
+    data, path = fetch._read_local(f.as_uri())
+    assert data == b"%PDF-1.4 data"
+    assert Path(path) == f
+
+
+def test_read_local_handles_spaces_and_ampersand_in_filename(safe_tmp_path):
+    f = safe_tmp_path / "sp ace & plain.pdf"
+    f.write_bytes(b"%PDF-1.4 data")
+    data, path = fetch._read_local(f.as_uri())
+    assert data == b"%PDF-1.4 data"
+    assert Path(path) == f

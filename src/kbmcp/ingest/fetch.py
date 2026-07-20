@@ -23,7 +23,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse
 from urllib.request import url2pathname
 
 import httpx
@@ -144,5 +144,5 @@ def _arxiv_urls(url: str, version: str) -> tuple[str, str]:
 
 def _read_local(url: str) -> tuple[bytes, str]:
     """Read bytes for a file:// URL (BYO local-file path); returns (data, abspath)."""
-    path = Path(url2pathname(unquote(urlparse(url).path)))
+    path = Path(url2pathname(urlparse(url).path))
     return path.read_bytes(), str(path)
