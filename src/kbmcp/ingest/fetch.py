@@ -146,3 +146,87 @@ def _read_local(url: str) -> tuple[bytes, str]:
     """Read bytes for a file:// URL (BYO local-file path); returns (data, abspath)."""
     path = Path(url2pathname(urlparse(url).path))
     return path.read_bytes(), str(path)
+
+
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _needs_render(entry: SourceEntry, cfg: dict) -> bool:
+    render = cfg.get("render") or {}
+    if not render.get("enabled", False):
+        return False
+    host = urlparse(entry.url).netloc.lower()
+    return any(h.lower() in host for h in render.get("hosts", []))
+
+
+def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> FetchResult:
+    """Fetch and pin one source (cache-first). Raises FetchError on fetch failure."""
+    raw_dir = Path(raw_dir)
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    recipe = resolve_recipe(entry)
+
+    if not force and is_cached(raw_dir, entry.doc_id):
+        meta = read_meta(raw_dir, entry.doc_id)
+        return FetchResult(
+            doc_id=entry.doc_id, status="cached", recipe=recipe,
+            raw_path=raw_dir / meta["raw_filename"], meta_path=meta_path_for(raw_dir, entry.doc_id),
+            resolved_version=meta.get("resolved_version"), content_hash=meta.get("content_hash"),
+            content_type=meta.get("content_type"), final_url=meta.get("final_url"),
+            format=meta.get("format"), fetched_at=meta.get("fetched_at"),
+        )
+
+    if recipe == "local":
+        data, final_url = _read_local(entry.url)
+        fmt, content_type = entry.format, None
+        resolved_version = f"sha256:{content_hash(data)}"
+    elif recipe == "arxiv":
+        html_url, pdf_url = _arxiv_urls(entry.url, entry.version)
+        try:
+            data, final_url, content_type, _ = _http_get(html_url, cfg, transport=transport)
+            fmt = "html"
+        except FetchError:
+            data, final_url, content_type, _ = _http_get(pdf_url, cfg, transport=transport)
+            fmt = "pdf"
+        resolved_version = entry.version
+    else:  # generic
+        if _needs_render(entry, cfg):
+            if renderer is None:
+                raise FetchError(f"{entry.doc_id}: rendering required but no renderer configured")
+            data, final_url = renderer(entry.url, cfg)
+            content_type = "text/html"
+        else:
+            data, final_url, content_type, _ = _http_get(entry.url, cfg, transport=transport)
+        fmt = entry.format
+        resolved_version = entry.version
+
+    raw_filename = f"{entry.doc_id}{_ext_for(fmt)}"
+    (raw_dir / raw_filename).write_bytes(data)
+    meta = {
+        "doc_id": entry.doc_id, "recipe": recipe, "resolved_version": resolved_version,
+        "content_hash": content_hash(data), "content_type": content_type,
+        "final_url": final_url, "format": fmt, "fetched_at": _now_iso(),
+        "source_url": entry.url, "license": entry.license, "license_ok": entry.license_ok,
+        "raw_filename": raw_filename,
+    }
+    meta_p = write_meta(raw_dir, meta)
+    return FetchResult(
+        doc_id=entry.doc_id, status="ok", recipe=recipe, raw_path=raw_dir / raw_filename,
+        meta_path=meta_p, resolved_version=resolved_version, content_hash=meta["content_hash"],
+        content_type=content_type, final_url=final_url, format=fmt, fetched_at=meta["fetched_at"],
+    )
+
+
+def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> list:
+    """Fetch every source, capturing per-source failures as error results."""
+    results = []
+    for entry in entries:
+        try:
+            results.append(
+                fetch_source(entry, raw_dir, cfg, force=force, transport=transport, renderer=renderer)
+            )
+        except Exception as exc:  # noqa: BLE001 — one bad source must not abort the run
+            results.append(
+                FetchResult(doc_id=entry.doc_id, status="error", recipe=resolve_recipe(entry), error=str(exc))
+            )
+    return results
