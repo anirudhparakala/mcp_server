@@ -117,3 +117,32 @@ def _http_get(url: str, cfg: dict, *, transport=None):
             raise FetchError(f"{url} -> HTTP {resp.status_code}")
         return resp.content, str(resp.url), resp.headers.get("content-type"), resp.status_code
     raise FetchError(f"{url} failed after {retries + 1} attempt(s): {last_err}")
+
+
+def resolve_recipe(entry: SourceEntry) -> str:
+    """Pick the fetch recipe. Only arXiv and local need bespoke logic."""
+    if entry.url.startswith("file:"):
+        return "local"
+    host = urlparse(entry.url).netloc.lower()
+    if "arxiv.org" in host:
+        return "arxiv"
+    return "generic"
+
+
+def _arxiv_id(url: str) -> str:
+    tail = urlparse(url).path.rsplit("/", 1)[-1]
+    if tail.endswith(".pdf"):
+        tail = tail[:-4]
+    return re.sub(r"v\d+$", "", tail)
+
+
+def _arxiv_urls(url: str, version: str) -> tuple[str, str]:
+    """(html_url, pdf_url) for the pinned version, e.g. version='v7'."""
+    aid = _arxiv_id(url)
+    return f"https://arxiv.org/html/{aid}{version}", f"https://arxiv.org/pdf/{aid}{version}"
+
+
+def _read_local(url: str) -> tuple[bytes, str]:
+    """Read bytes for a file:// URL (BYO local-file path); returns (data, abspath)."""
+    path = Path(url2pathname(unquote(urlparse(url).path)))
+    return path.read_bytes(), str(path)
