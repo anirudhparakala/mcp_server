@@ -50,3 +50,29 @@ def test_http_get_retries_transport_error_then_succeeds():
     data, *_ = fetch._http_get("https://example.com/x", CFG, transport=httpx.MockTransport(handler))
     assert data == b"ok"
     assert calls["n"] == 2
+
+
+def test_http_get_raises_after_exhausting_retries():
+    calls = {"n": 0}
+
+    def handler(request):
+        calls["n"] += 1
+        raise httpx.ConnectError("down")
+
+    with pytest.raises(fetch.FetchError):
+        fetch._http_get("https://example.com/x", CFG, transport=httpx.MockTransport(handler))
+    assert calls["n"] == CFG["retries"] + 1
+
+
+def test_http_get_retries_5xx_then_succeeds():
+    calls = {"n": 0}
+
+    def handler(request):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            return httpx.Response(503)
+        return httpx.Response(200, content=b"ok")
+
+    data, *_ = fetch._http_get("https://example.com/x", CFG, transport=httpx.MockTransport(handler))
+    assert data == b"ok"
+    assert calls["n"] == 2
