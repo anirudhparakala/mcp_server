@@ -1,0 +1,14 @@
+{
+  "content_hash": "a41bd7877fd1a6bcbba096b2619618bd2f90e02488f2365644903eb2f7c6a494",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-kaplan-2020-scaling-laws",
+  "fetched_at": "2026-07-23T17:06:36Z",
+  "final_url": "https://arxiv.org/pdf/2001.08361v1",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-kaplan-2020-scaling-laws.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v1",
+  "source_url": "https://arxiv.org/abs/2001.08361"
+}

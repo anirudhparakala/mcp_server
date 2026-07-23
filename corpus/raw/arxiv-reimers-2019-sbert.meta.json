@@ -1,0 +1,14 @@
+{
+  "content_hash": "4424d0b229d8d21a9dff7a864cbcbebe69d673077d4ec6880ce7d45bb54564c6",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "arxiv-reimers-2019-sbert",
+  "fetched_at": "2026-07-23T17:06:34Z",
+  "final_url": "https://arxiv.org/html/1908.10084v1",
+  "format": "html",
+  "license": "CC BY-SA 4.0 (author-selected on arXiv)",
+  "license_ok": true,
+  "raw_filename": "arxiv-reimers-2019-sbert.html",
+  "recipe": "arxiv",
+  "resolved_version": "v1",
+  "source_url": "https://arxiv.org/abs/1908.10084"
+}

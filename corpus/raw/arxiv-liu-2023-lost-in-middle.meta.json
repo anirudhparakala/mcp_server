@@ -1,0 +1,14 @@
+{
+  "content_hash": "653b29619eae2ae4b361d7bdcdc06db4bedcb1b0eabe31814036beca8c1af0b1",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-liu-2023-lost-in-middle",
+  "fetched_at": "2026-07-23T17:06:09Z",
+  "final_url": "https://arxiv.org/pdf/2307.03172v3",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-liu-2023-lost-in-middle.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v3",
+  "source_url": "https://arxiv.org/abs/2307.03172"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "3750a4bb06c120343a495b5a643b45957c293064b4858fe597fbc6e346a18d82",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "modelcard-qwen3-embedding",
+  "fetched_at": "2026-07-23T17:06:40Z",
+  "final_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+  "format": "html",
+  "license": "Apache-2.0 (model card)",
+  "license_ok": true,
+  "raw_filename": "modelcard-qwen3-embedding.html",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B"
+}

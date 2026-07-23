@@ -1,0 +1,14 @@
+{
+  "content_hash": "11a9ef825dfd3fe50c8621273d02ea26b6f502b60379db9519d6c5c10de4fd25",
+  "content_type": "application/pdf",
+  "doc_id": "paper-robertson-2009-bm25",
+  "fetched_at": "2026-07-23T17:06:32Z",
+  "final_url": "https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf",
+  "format": "pdf",
+  "license": "(c) Now Publishers (Foundations and Trends in IR 3(4), 2009); author self-archived open copy (City, University of London). Shipped fair-use + attribution; first candidate for one-line removal if challenged.",
+  "license_ok": true,
+  "raw_filename": "paper-robertson-2009-bm25.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "3e67fc1a9977715acf722d85f0b7d124b03715e975f6310a4d6c12094190912f",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-karpukhin-2020-dpr",
+  "fetched_at": "2026-07-23T17:06:29Z",
+  "final_url": "https://arxiv.org/pdf/2004.04906v3",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-karpukhin-2020-dpr.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v3",
+  "source_url": "https://arxiv.org/abs/2004.04906"
+}

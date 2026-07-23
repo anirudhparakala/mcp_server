@@ -1,0 +1,210 @@
+# kbmcp corpus manifest — the curated, web-verified source list for the hard
+# mixed-domain eval/demo corpus. Versions are AUTHOR-PINNED (arXiv vN, Wikipedia
+# oldid, retrieval date); fetch.py records them verbatim into corpus/raw/*.meta.json.
+# Shipped-index posture: fair-use + per-source attribution NOTICE; the `license`
+# field records each source's actual license so any one can be swapped/removed in
+# one line if challenged. See docs/superpowers/specs/2026-07-16-phase1-corpus-design.md.
+#
+# Verified 2026-07-23 (Milestone 2, Task 8: AI/RAG/LLM domain).
+
+# ── AI / RAG / LLM (18) ────────────────────────────────────────────────────────
+
+- doc_id: arxiv-vaswani-2017-attention
+  url: https://arxiv.org/abs/1706.03762
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v7
+  tier_roles: [T1, T3, T6]
+  collision_terms: [training, performance]
+  rationale: "Transformer baseline (T1); T3 paraphrase pair with wiki-transformer-dl; 'training'/'performance' cross-domain collisions (T6)."
+
+- doc_id: arxiv-devlin-2018-bert
+  url: https://arxiv.org/abs/1810.04805
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [training]
+  rationale: "Encoder / masked-LM reference."
+
+- doc_id: arxiv-lewis-2020-rag
+  url: https://arxiv.org/abs/2005.11401
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v4
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "The RAG paper (meta self-reference to this server's own approach)."
+
+- doc_id: arxiv-karpukhin-2020-dpr
+  url: https://arxiv.org/abs/2004.04906
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v3
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "Dense passage retrieval (the dense half of this server's hybrid retrieval)."
+
+- doc_id: paper-robertson-2009-bm25
+  url: https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf
+  domain: ai
+  format: pdf
+  license: "(c) Now Publishers (Foundations and Trends in IR 3(4), 2009); author self-archived open copy (City, University of London). Shipped fair-use + attribution; first candidate for one-line removal if challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "BM25 / probabilistic relevance framework (the lexical half of hybrid retrieval); distractor for the RRF T1 query. Publisher (c); author self-archived copy per user decision 2026-07-23."
+
+- doc_id: paper-cormack-2009-rrf
+  url: https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf
+  domain: ai
+  format: pdf
+  license: "(c) ACM (SIGIR 2009, DOI 10.1145/1571941.1572114); author self-archived postprint (University of Waterloo). Shipped fair-use + attribution; first candidate for one-line removal if challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Reciprocal Rank Fusion — the exact fusion this server implements (meta); T1 anchor 'what is the RRF constant k for'. Publisher (c); author self-archived copy per user decision 2026-07-23."
+
+- doc_id: arxiv-reimers-2019-sbert
+  url: https://arxiv.org/abs/1908.10084
+  domain: ai
+  format: pdf
+  license: "CC BY-SA 4.0 (author-selected on arXiv)"
+  license_ok: true
+  version: v1
+  tier_roles: [T3]
+  collision_terms: [performance]
+  rationale: "Sentence-BERT bi-encoders; T3 paraphrase pair with wiki-transformer-dl."
+
+- doc_id: arxiv-khattab-2020-colbert
+  url: https://arxiv.org/abs/2004.12832
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "ColBERT late interaction retrieval."
+
+- doc_id: arxiv-liu-2023-lost-in-middle
+  url: https://arxiv.org/abs/2307.03172
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v3
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Context-position effect (lost-in-the-middle); relevant to reranking."
+
+- doc_id: arxiv-kaplan-2020-scaling-laws
+  url: https://arxiv.org/abs/2001.08361
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v1
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [arxiv-hoffmann-2022-chinchilla]
+  rationale: "Scaling laws: larger models more sample-efficient. T5 conflict pair with Chinchilla on compute-optimal size."
+
+- doc_id: arxiv-hoffmann-2022-chinchilla
+  url: https://arxiv.org/abs/2203.15556
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v1
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [arxiv-kaplan-2020-scaling-laws]
+  rationale: "Chinchilla: scale model size and tokens equally. T5 conflict pair with Kaplan (opposite compute-optimal prescription)."
+
+- doc_id: arxiv-hu-2021-lora
+  url: https://arxiv.org/abs/2106.09685
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [training]
+  rationale: "LoRA parameter-efficient fine-tuning."
+
+- doc_id: arxiv-malkov-2016-hnsw
+  url: https://arxiv.org/abs/1603.09320
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v4
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "HNSW approximate-nearest-neighbour vector index."
+
+- doc_id: paper-jumper-2021-alphafold
+  url: https://europepmc.org/articles/PMC8371605?pdf=render
+  domain: ai
+  format: pdf
+  license: "CC BY 4.0 (Nature Open Access; via Europe PMC, PMC8371605)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T6]
+  collision_terms: [protein]
+  rationale: "AlphaFold protein-structure prediction; the 'protein' T6 collision vs dietary protein. Nature OA CC BY 4.0. Fetched via Europe PMC PDF route (europepmc.org/articles/PMC<id>?pdf=render) because pmc.ncbi.nlm.nih.gov reCAPTCHA-blocks bots; same pattern used for fitness-domain PMC sources."
+
+- doc_id: wiki-transformer-dl
+  url: https://en.wikipedia.org/w/index.php?title=Transformer_(deep_learning_architecture)&oldid=1362319941
+  domain: ai
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1362319941
+  tier_roles: [T3, T6]
+  collision_terms: [training]
+  rationale: "Wikipedia restatement of the transformer; T3 paraphrase pair with arxiv-vaswani-2017-attention and arxiv-reimers-2019-sbert."
+
+- doc_id: wiki-vector-database
+  url: https://en.wikipedia.org/w/index.php?title=Vector_database&oldid=1363379488
+  domain: ai
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363379488
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "Wikipedia vector-database overview; HTML wiki format."
+
+- doc_id: modelcard-qwen3-embedding
+  url: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+  domain: ai
+  format: html
+  license: "Apache-2.0 (model card)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Model card for this project's actual embedder (meta, Qwen3-Embedding-0.6B, modernized 2026-07-23); results table (structure bar)."
+
+- doc_id: modelcard-bge-reranker-v2-m3
+  url: https://huggingface.co/BAAI/bge-reranker-v2-m3
+  domain: ai
+  format: html
+  license: "Apache-2.0 (model card)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T2, T6]
+  collision_terms: [performance]
+  rationale: "Model card for this project's actual cross-encoder reranker (meta, bge-reranker-v2-m3, modernized 2026-07-23); benchmark table (structure bar); 'performance' T6 collision."

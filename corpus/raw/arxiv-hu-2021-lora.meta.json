@@ -1,0 +1,14 @@
+{
+  "content_hash": "d2cbb0a1c2663f72c0c169d62d2810f82ab63f2fd3f4002dffa2503fc37553f6",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "arxiv-hu-2021-lora",
+  "fetched_at": "2026-07-23T17:06:38Z",
+  "final_url": "https://arxiv.org/html/2106.09685v2",
+  "format": "html",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-hu-2021-lora.html",
+  "recipe": "arxiv",
+  "resolved_version": "v2",
+  "source_url": "https://arxiv.org/abs/2106.09685"
+}
