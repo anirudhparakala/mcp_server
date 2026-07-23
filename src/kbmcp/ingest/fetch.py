@@ -275,6 +275,15 @@ def main(argv=None) -> int:
     entries = load_manifest(args.manifest)
     only = set(args.only) if args.only else None
 
+    if only is not None:
+        unknown = only - {e.doc_id for e in entries}
+        if unknown:
+            print(
+                f"error: --only requested unknown doc_id(s): {', '.join(sorted(unknown))}",
+                file=sys.stderr,
+            )
+            return 1
+
     if args.dry_run:
         for doc_id, recipe, target in plan_fetches(entries, only):
             print(f"{doc_id}\t{recipe}\t{target}")
