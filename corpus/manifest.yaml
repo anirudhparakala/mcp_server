@@ -208,3 +208,131 @@
   tier_roles: [T2, T6]
   collision_terms: [performance]
   rationale: "Model card for this project's actual cross-encoder reranker (meta, bge-reranker-v2-m3, modernized 2026-07-23); benchmark table (structure bar); 'performance' T6 collision."
+
+# ── Legal / AI regulation (11) ─────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 9). OECD AI Principles dropped per user decision
+# (bespoke 'not altered / may not be sold' license conflicts with a chunked KB).
+
+- doc_id: eurlex-gdpr-2016-679
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504"
+  domain: law_aireg
+  format: html
+  license: "(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)"
+  license_ok: true
+  version: consolidated-2016-05-04
+  tier_roles: [T2, T3, T4]
+  collision_terms: [breach]
+  rationale: "GDPR consolidated text; structure-critical (article<->recital cross-references must survive chunking); T4 target of EDPB Art 22 refs; T3 pair with wiki-gdpr; 'breach' (data breach) T2 collision vs contract breach."
+
+- doc_id: eurlex-ai-act-2024-1689
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689"
+  domain: law_aireg
+  format: html
+  license: "(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)"
+  license_ok: true
+  version: oj-original
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [nist-ai-rmf]
+  rationale: "EU AI Act risk tiers; mandatory regime. T5 conflict_with NIST AI RMF (mandatory vs voluntary); no consolidated version yet (applies in stages through 2027). T3 pair with wiki-eu-ai-act."
+
+- doc_id: law-ccpa-1798
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5"
+  domain: law_aireg
+  format: html
+  license: "Public domain (California statute; government edict, not copyrightable)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [consent]
+  conflict_with: [law-cpra-amendment]
+  rationale: "CCPA (Cal. Civ. Code Title 1.81.5, current codified text). US vs EU privacy conflict; T5 versioning conflict_with the CPRA amendment."
+
+- doc_id: law-cpra-amendment
+  url: "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop24.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "Public domain (California ballot measure / government work)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [consent]
+  conflict_with: [law-ccpa-1798]
+  rationale: "CPRA (Prop 24, 2020) — the isolated amendment instrument (SOS official text), deliberately distinct from the merged CCPA codified law so the CCPA-vs-CPRA T5 versioning conflict has two separable documents."
+
+- doc_id: edpb-guidelines-automated-decisions
+  url: "https://ec.europa.eu/newsroom/article29/redirection/document/49826"
+  domain: law_aireg
+  format: pdf
+  license: "(c) European Union / EDPB (WP29); reuse under Commission Decision 2011/833/EU with source acknowledgement"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4]
+  references: [eurlex-gdpr-2016-679]
+  collision_terms: [profiling]
+  rationale: "EDPB/WP29 WP251rev.01 on automated decision-making & profiling; references GDPR Art 22 -> T4 multi-hop into eurlex-gdpr-2016-679."
+
+- doc_id: edpb-guidelines-consent
+  url: "https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "(c) European Union / EDPB; reuse under Commission Decision 2011/833/EU with source acknowledgement"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4]
+  references: [eurlex-gdpr-2016-679]
+  collision_terms: [consent]
+  rationale: "EDPB Guidelines 05/2020 on consent; multi-hop into GDPR; 'consent' collision vs gym-waiver/informed-consent (T2/T6)."
+
+- doc_id: ico-ai-automated-decision
+  url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-individual-rights-in-our-ai-systems/"
+  domain: law_aireg
+  format: html
+  license: "UK Open Government Licence v3.0 (Crown copyright)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [profiling]
+  rationale: "ICO (UK) guidance on AI & automated decisions; UK<->EU divergence (T5). Cloudflare-fronted (fetch-reliability watch)."
+
+- doc_id: nist-ai-rmf
+  url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "Public domain (U.S. federal government work, 17 U.S.C. 105)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [training]
+  conflict_with: [eurlex-ai-act-2024-1689]
+  rationale: "NIST AI Risk Management Framework (AI RMF 1.0); voluntary regime. T5 conflict_with EU AI Act (voluntary vs mandatory)."
+
+- doc_id: wiki-gdpr
+  url: "https://en.wikipedia.org/w/index.php?title=General_Data_Protection_Regulation&oldid=1363040264"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363040264
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of GDPR; T3 paraphrase pair with eurlex-gdpr-2016-679 ('right to be forgotten' vs Art 17 text)."
+
+- doc_id: wiki-ccpa
+  url: "https://en.wikipedia.org/w/index.php?title=California_Consumer_Privacy_Act&oldid=1363027288"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363027288
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of CCPA; T3 paraphrase pair with law-ccpa-1798."
+
+- doc_id: wiki-eu-ai-act
+  url: "https://en.wikipedia.org/w/index.php?title=Artificial_Intelligence_Act&oldid=1365588755"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1365588755
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of the EU AI Act; T3 paraphrase pair with eurlex-ai-act-2024-1689."

@@ -1,0 +1,14 @@
+{
+  "content_hash": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+  "content_type": "application/pdf",
+  "doc_id": "nist-ai-rmf",
+  "fetched_at": "2026-07-23T18:15:04Z",
+  "final_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+  "format": "pdf",
+  "license": "Public domain (U.S. federal government work, 17 U.S.C. 105)",
+  "license_ok": true,
+  "raw_filename": "nist-ai-rmf.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+}

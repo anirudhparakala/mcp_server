@@ -1,0 +1,14 @@
+{
+  "content_hash": "187c18a83c18af3f63719c7520313bbfca16d54def707c992faba6f842513d80",
+  "content_type": "text/html; charset=UTF-8",
+  "doc_id": "eurlex-gdpr-2016-679",
+  "fetched_at": "2026-07-23T18:14:47Z",
+  "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504",
+  "format": "html",
+  "license": "(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)",
+  "license_ok": true,
+  "raw_filename": "eurlex-gdpr-2016-679.html",
+  "recipe": "generic",
+  "resolved_version": "consolidated-2016-05-04",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "9046de3069ee27a6914796adf18521d4b439c4f39c9c1d58eead8c0182c942d2",
+  "content_type": "application/",
+  "doc_id": "edpb-guidelines-automated-decisions",
+  "fetched_at": "2026-07-23T18:14:52Z",
+  "final_url": "https://ec.europa.eu/newsroom/article29/redirection/document/49826",
+  "format": "pdf",
+  "license": "(c) European Union / EDPB (WP29); reuse under Commission Decision 2011/833/EU with source acknowledgement",
+  "license_ok": true,
+  "raw_filename": "edpb-guidelines-automated-decisions.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://ec.europa.eu/newsroom/article29/redirection/document/49826"
+}
