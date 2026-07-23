@@ -1,0 +1,14 @@
+{
+  "content_hash": "3ef5d0329bfc45ee84b92cc11582ca02608d5d5e350db7dad99c7106d148a717",
+  "content_type": "text/html",
+  "doc_id": "edgar-commercial-contract",
+  "fetched_at": "2026-07-23T20:22:24Z",
+  "final_url": "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm",
+  "format": "html",
+  "license": "Public record (SEC EDGAR filing; Hexion Specialty Chemicals Credit Agreement, Ex. 10.4). Shipped fair-use as a public SEC filing.",
+  "license_ok": true,
+  "raw_filename": "edgar-commercial-contract.html",
+  "recipe": "generic",
+  "resolved_version": "accession-0001193125-09-174289",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm"
+}

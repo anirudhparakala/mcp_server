@@ -336,3 +336,144 @@
   version: oldid-1365588755
   tier_roles: [T3]
   rationale: "Wikipedia restatement of the EU AI Act; T3 paraphrase pair with eurlex-ai-act-2024-1689."
+
+# ── Legal / contract law (12) ──────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 10). UCC swapped Cornell LII (ALI/NCCUSL (c)) -> CA
+# Commercial Code (public domain, per user decision); Wex swapped (CC BY-NC-SA 2.5)
+# -> Wikipedia (CC BY-SA 4.0, per user decision). Justia/nycourts/SEC fetched via
+# curl_cffi TLS impersonation; Wikisource/Wikipedia via httpx.
+
+- doc_id: ucc-article-1
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=1201."
+  domain: law_contract
+  format: html
+  license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 1 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4]
+  collision_terms: [performance]
+  rationale: "UCC Article 1 general definitions, as enacted in CA Commercial Code sec.1201 (master definitions section). T4 target of the sales rules that invoke Article-1 definitions."
+
+- doc_id: ucc-article-2
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2601."
+  domain: law_contract
+  format: html
+  license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 2 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4, T5]
+  collision_terms: [performance]
+  references: [ucc-article-1]
+  conflict_with: [case-jacob-youngs-v-kent]
+  rationale: "UCC Article 2 sales — the perfect-tender rule (CA Commercial Code sec.2601: goods failing in any respect may be rejected). T5 conflict_with Jacob & Youngs (substantial performance); invokes Article-1 definitions (T4). NOTE: the specific sec.2-201->sec.1-201 numbered cross-ref lives only in the excluded ALI Official Comment; multi-hop uses the general Article-1-applies-throughout link."
+
+- doc_id: law-ca-civil-contracts
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550."
+  domain: law_contract
+  format: html
+  license: "Public domain (California Civil Code; government edict)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "California Civil Code sec.1550 — essential elements of a contract (parties, consent, lawful object, consideration). Statutory contract material."
+
+- doc_id: case-hadley-v-baxendale
+  url: "https://law.justia.com/cases/foreign/united-kingdom/9-ex-ch-341-1854.html"
+  domain: law_contract
+  format: html
+  license: "Public domain (1854 English judicial opinion; no copyright in judicial opinions)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T2]
+  collision_terms: [recovery, damages]
+  rationale: "Hadley v. Baxendale (1854) — consequential/foreseeable damages. T2 'recovery of damages' collides with muscle recovery. Fetched via curl_cffi (Justia TLS-gated)."
+
+- doc_id: case-hamer-v-sidway
+  url: "https://www.nycourts.gov/reporter/archives/hamer_sidway.htm"
+  domain: law_contract
+  format: html
+  license: "Public domain (1891 NY Court of Appeals opinion; official NY Law Reporting Bureau)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "Hamer v. Sidway (1891) — consideration (forbearance as consideration). Fetched via curl_cffi (nycourts.gov TLS-gated)."
+
+- doc_id: case-lucy-v-zehmer
+  url: "https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165"
+  domain: law_contract
+  format: html
+  license: "Public domain (1954 Virginia Supreme Court opinion); Wikisource transcription (CC BY-SA wrapper on formatting only)"
+  license_ok: true
+  version: oldid-15747165
+  tier_roles: [T1]
+  collision_terms: [assent]
+  rationale: "Lucy v. Zehmer (1954) — objective theory of assent ('secret jest' still binds). Wikisource transcription (clean PD text, avoids Justia's reporter-syllabus provenance question)."
+
+- doc_id: case-jacob-youngs-v-kent
+  url: "https://law.justia.com/cases/new-york/court-of-appeals/1921/230-n-y-239-1921.html"
+  domain: law_contract
+  format: html
+  license: "Public domain (1921 NY Court of Appeals opinion, Cardozo)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [performance]
+  conflict_with: [ucc-article-2]
+  rationale: "Jacob & Youngs v. Kent (1921, Cardozo) — substantial performance doctrine. T5 conflict_with UCC Article 2 perfect-tender rule. Fetched via curl_cffi (Justia TLS-gated)."
+
+- doc_id: case-carlill-carbolic
+  url: "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727"
+  domain: law_contract
+  format: html
+  license: "Public domain (1893 English Court of Appeal judgment); Wikisource transcription (CC BY-SA wrapper on formatting only)"
+  license_ok: true
+  version: oldid-6792727
+  tier_roles: [T1]
+  collision_terms: [offer]
+  rationale: "Carlill v. Carbolic Smoke Ball Co. (1893) — unilateral offer / offer to the world. Wikisource (cleanest host, plain GET)."
+
+- doc_id: edgar-commercial-contract
+  url: "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm"
+  domain: law_contract
+  format: html
+  license: "Public record (SEC EDGAR filing; Hexion Specialty Chemicals Credit Agreement, Ex. 10.4). Shipped fair-use as a public SEC filing."
+  license_ok: true
+  version: accession-0001193125-09-174289
+  tier_roles: [T4]
+  collision_terms: [consideration]
+  rationale: "SEC EDGAR commercial contract (Hexion Credit Agreement, 2009) — structure-critical: Article I/sec.1.01 defined terms + 82 numbered section cross-refs + Schedule 2.01 lender-commitments table with real dollar data. Fetched via curl_cffi (SEC TLS-gated). NOTE: schedule is padded-text HTML, not a literal <table>; Sonic Automotive accession 0001043509-20-000021 is the documented <table>-markup fallback if M6 structure bar needs it."
+
+- doc_id: wiki-consideration
+  url: "https://en.wikipedia.org/w/index.php?title=Consideration&oldid=1362535624"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1362535624
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "Wikipedia: Consideration (contract law). T3 paraphrase; replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+- doc_id: wiki-liquidated-damages
+  url: "https://en.wikipedia.org/w/index.php?title=Liquidated_damages&oldid=1360872692"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1360872692
+  tier_roles: [T3]
+  collision_terms: [damages]
+  rationale: "Wikipedia: Liquidated damages. T3 paraphrase; replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+- doc_id: wiki-breach-of-contract
+  url: "https://en.wikipedia.org/w/index.php?title=Breach_of_contract&oldid=1358210839"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1358210839
+  tier_roles: [T2]
+  collision_terms: [breach]
+  rationale: "Wikipedia: Breach of contract. T2 'breach' collides with GDPR data breach (eurlex-gdpr-2016-679); replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
