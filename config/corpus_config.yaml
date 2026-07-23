@@ -8,6 +8,10 @@ fetch:
   render:
     enabled: false        # Playwright JS rendering; flipped on only if a source needs it (Task C1)
     hosts: []             # hostnames requiring rendering (populated on demand, e.g. ["eur-lex.europa.eu"])
+  impersonate:
+    enabled: true        # curl_cffi TLS-fingerprint impersonation for WAF-gated hosts
+    browser: chrome
+    hosts: [law.justia.com, nycourts.gov, sec.gov]
 
 parse:
   table_mode: accurate

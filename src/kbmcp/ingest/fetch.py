@@ -163,7 +163,36 @@ def _needs_render(entry: SourceEntry, cfg: dict) -> bool:
     return any(h.lower() in host for h in render.get("hosts", []))
 
 
-def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> FetchResult:
+def _needs_impersonate(entry: SourceEntry, cfg: dict) -> bool:
+    imp = cfg.get("impersonate") or {}
+    if not imp.get("enabled", False):
+        return False
+    host = urlparse(entry.url).netloc.lower()
+    return any(h.lower() in host for h in imp.get("hosts", []))
+
+
+def _impersonate_get(url: str, cfg: dict):
+    """GET a TLS-fingerprint-gated URL via curl_cffi browser impersonation.
+
+    Returns (data, final_url, content_type, status); raises FetchError on 4xx/5xx
+    or transport failure. Used for hosts (Justia, nycourts.gov, SEC EDGAR) whose
+    WAFs block Python's TLS fingerprint but allow a real browser's.
+    """
+    from curl_cffi import requests as _creq
+
+    imp = cfg.get("impersonate") or {}
+    browser = imp.get("browser", "chrome")
+    timeout = cfg.get("timeout_s", 30)
+    try:
+        resp = _creq.get(url, impersonate=browser, timeout=timeout, allow_redirects=True)
+    except Exception as exc:  # noqa: BLE001 — curl_cffi surfaces varied transport errors
+        raise FetchError(f"impersonate GET failed for {url}: {exc}") from exc
+    if resp.status_code >= 400:
+        raise FetchError(f"{url} -> HTTP {resp.status_code} (impersonate)")
+    return resp.content, str(resp.url), resp.headers.get("content-type"), resp.status_code
+
+
+def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=None, impersonator=None) -> FetchResult:
     """Fetch and pin one source (cache-first). Raises FetchError on fetch failure."""
     raw_dir = Path(raw_dir)
     raw_dir.mkdir(parents=True, exist_ok=True)
@@ -201,6 +230,8 @@ def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=N
                 raise FetchError(f"{entry.doc_id}: rendering required but no renderer configured")
             data, final_url = renderer(entry.url, cfg)
             content_type = "text/html"
+        elif _needs_impersonate(entry, cfg):
+            data, final_url, content_type, _ = (impersonator or _impersonate_get)(entry.url, cfg)
         else:
             data, final_url, content_type, _ = _http_get(entry.url, cfg, transport=transport)
         fmt = entry.format
@@ -223,13 +254,16 @@ def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=N
     )
 
 
-def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=None) -> list[FetchResult]:
+def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=None, impersonator=None) -> list[FetchResult]:
     """Fetch every source, capturing per-source failures as error results."""
     results = []
     for entry in entries:
         try:
             results.append(
-                fetch_source(entry, raw_dir, cfg, force=force, transport=transport, renderer=renderer)
+                fetch_source(
+                    entry, raw_dir, cfg, force=force, transport=transport,
+                    renderer=renderer, impersonator=impersonator,
+                )
             )
         except Exception as exc:  # noqa: BLE001 — one bad source must not abort the run
             try:
