@@ -240,3 +240,58 @@ def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=No
                 FetchResult(doc_id=entry.doc_id, status="error", recipe=recipe, error=str(exc))
             )
     return results
+
+
+def plan_fetches(entries, only=None):
+    """Dry-run plan: (doc_id, recipe, target_url) per selected source (no network)."""
+    plan = []
+    for entry in entries:
+        if only and entry.doc_id not in only:
+            continue
+        recipe = resolve_recipe(entry)
+        target = _arxiv_urls(entry.url, entry.version)[0] if recipe == "arxiv" else entry.url
+        plan.append((entry.doc_id, recipe, target))
+    return plan
+
+
+def build_arg_parser() -> argparse.ArgumentParser:
+    p = argparse.ArgumentParser(
+        prog="python -m kbmcp.ingest.fetch",
+        description="Fetch and pin manifest sources into corpus/raw/ (dev-only).",
+    )
+    p.add_argument("--manifest", default="corpus/manifest.yaml")
+    p.add_argument("--raw-dir", default=None, help="override fetch.raw_dir from config")
+    p.add_argument("--config", default="config/corpus_config.yaml")
+    p.add_argument("--only", action="append", default=None, help="fetch only this doc_id (repeatable)")
+    p.add_argument("--force", action="store_true", help="re-fetch even if cached")
+    p.add_argument("--dry-run", action="store_true", help="print the plan; do not fetch")
+    return p
+
+
+def main(argv=None) -> int:
+    args = build_arg_parser().parse_args(argv)
+    cfg = load_corpus_config(args.config).fetch
+    raw_dir = args.raw_dir or cfg.get("raw_dir", "corpus/raw")
+    entries = load_manifest(args.manifest)
+    only = set(args.only) if args.only else None
+
+    if args.dry_run:
+        for doc_id, recipe, target in plan_fetches(entries, only):
+            print(f"{doc_id}\t{recipe}\t{target}")
+        return 0
+
+    selected = [e for e in entries if not only or e.doc_id in only]
+    results = fetch_all(selected, raw_dir, cfg, force=args.force)
+    ok = 0
+    for r in results:
+        if r.status == "error":
+            print(f"[error]  {r.doc_id}  ERROR: {r.error}", file=sys.stderr)
+        else:
+            ok += 1
+            print(f"[{r.status:>6}] {r.doc_id}  ({r.recipe}, {r.format}, {r.resolved_version})", file=sys.stderr)
+    print(f"{ok}/{len(results)} sources pinned", file=sys.stderr)
+    return 0 if ok == len(results) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
