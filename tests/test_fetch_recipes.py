@@ -53,3 +53,18 @@ def test_read_local_handles_spaces_and_ampersand_in_filename(safe_tmp_path):
     data, path = fetch._read_local(f.as_uri())
     assert data == b"%PDF-1.4 data"
     assert Path(path) == f
+
+
+def test_resolve_recipe_scheme_less_path_is_local():
+    # A repo-relative path (authored / committed BYO source) routes to the local recipe.
+    assert fetch.resolve_recipe(_entry(url="corpus/authored/waiver.html")) == "local"
+
+
+def test_read_local_reads_repo_relative_path(safe_tmp_path, monkeypatch):
+    # A scheme-less relative path is resolved from the current working directory.
+    (safe_tmp_path / "sub").mkdir()
+    (safe_tmp_path / "sub" / "doc.html").write_bytes(b"<html>rel</html>")
+    monkeypatch.chdir(safe_tmp_path)
+    data, path = fetch._read_local("sub/doc.html")
+    assert data == b"<html>rel</html>"
+    assert Path(path) == Path("sub/doc.html")

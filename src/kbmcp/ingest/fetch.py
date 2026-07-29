@@ -123,11 +123,15 @@ def _http_get(url: str, cfg: dict, *, transport=None):
 
 
 def resolve_recipe(entry: SourceEntry) -> str:
-    """Pick the fetch recipe. Only arXiv and local need bespoke logic."""
-    if entry.url.startswith("file:"):
+    """Pick the fetch recipe. Only arXiv and local need bespoke logic.
+
+    A ``file://`` URL or a scheme-less repo-relative path (e.g.
+    ``corpus/authored/x.html``) is a local source (BYO / authored content).
+    """
+    scheme = urlparse(entry.url).scheme.lower()
+    if scheme in ("", "file"):
         return "local"
-    host = urlparse(entry.url).netloc.lower()
-    if "arxiv.org" in host:
+    if "arxiv.org" in urlparse(entry.url).netloc.lower():
         return "arxiv"
     return "generic"
 
@@ -146,8 +150,14 @@ def _arxiv_urls(url: str, version: str) -> tuple[str, str]:
 
 
 def _read_local(url: str) -> tuple[bytes, str]:
-    """Read bytes for a file:// URL (BYO local-file path); returns (data, abspath)."""
-    path = Path(url2pathname(urlparse(url).path))
+    """Read bytes for a local source: a ``file://`` URL, or a repo-relative path
+    resolved from the current working directory (build runs from the repo root).
+    Returns (data, path).
+    """
+    if urlparse(url).scheme.lower() == "file":
+        path = Path(url2pathname(urlparse(url).path))
+    else:
+        path = Path(url)
     return path.read_bytes(), str(path)
 
 
