@@ -29,6 +29,11 @@ def test_needs_impersonate_false_when_disabled():
     assert fetch._needs_impersonate(_entry("https://law.justia.com/x"), cfg) is False
 
 
+def test_needs_impersonate_suffix_match_not_substring():
+    assert fetch._needs_impersonate(_entry("https://www.sec.gov/Archives/x.htm"), CFG) is True   # subdomain
+    assert fetch._needs_impersonate(_entry("https://websec.gov/x"), CFG) is False                # look-alike, not a real subdomain
+
+
 def test_fetch_source_routes_flagged_host_through_impersonator(safe_tmp_path):
     calls = {}
 

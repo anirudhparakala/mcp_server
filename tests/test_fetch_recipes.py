@@ -68,3 +68,21 @@ def test_read_local_reads_repo_relative_path(safe_tmp_path, monkeypatch):
     data, path = fetch._read_local("sub/doc.html")
     assert data == b"<html>rel</html>"
     assert Path(path) == Path("sub/doc.html")
+
+
+def test_resolve_recipe_windows_drive_path_is_local():
+    assert fetch.resolve_recipe(_entry(url="C:/data/doc.pdf")) == "local"
+    assert fetch.resolve_recipe(_entry(url=r"C:\data\doc.pdf")) == "local"
+
+
+def test_read_local_reads_bare_absolute_path(safe_tmp_path):
+    f = safe_tmp_path / "abs.pdf"
+    f.write_bytes(b"%PDF abs")
+    data, path = fetch._read_local(str(f))  # bare absolute path, no file://
+    assert data == b"%PDF abs"
+    assert Path(path) == f
+
+
+def test_arxiv_id_preserves_old_style_archive_prefix():
+    assert fetch._arxiv_id("https://arxiv.org/abs/cs/0701001") == "cs/0701001"
+    assert fetch._arxiv_id("https://arxiv.org/pdf/cs/0701001v2.pdf") == "cs/0701001"

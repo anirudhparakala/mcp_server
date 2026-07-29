@@ -93,7 +93,7 @@ class FetchError(Exception):
     """Raised when a source cannot be fetched or pinned."""
 
 
-def _http_get(url: str, cfg: dict, *, transport=None):
+def _http_get(url: str, cfg: dict, *, transport=None) -> tuple[bytes, str, Optional[str], int]:
     """GET `url` with retries/timeout/UA; return (data, final_url, content_type, status).
 
     Retries on transport errors and 5xx up to cfg['retries'] times; raises
@@ -129,7 +129,9 @@ def resolve_recipe(entry: SourceEntry) -> str:
     ``corpus/authored/x.html``) is a local source (BYO / authored content).
     """
     scheme = urlparse(entry.url).scheme.lower()
-    if scheme in ("", "file"):
+    # scheme-less relative path, file:// URL, or a bare Windows drive path
+    # (urlparse turns "C:/x" into scheme "c") are all local sources.
+    if scheme in ("", "file") or (len(scheme) == 1 and scheme.isalpha()):
         return "local"
     if "arxiv.org" in urlparse(entry.url).netloc.lower():
         return "arxiv"
@@ -137,7 +139,12 @@ def resolve_recipe(entry: SourceEntry) -> str:
 
 
 def _arxiv_id(url: str) -> str:
-    tail = urlparse(url).path.rsplit("/", 1)[-1]
+    path = urlparse(url).path
+    tail = path.rsplit("/", 1)[-1]
+    for pre in ("/abs/", "/pdf/", "/html/"):
+        if pre in path:
+            tail = path.split(pre, 1)[1]  # preserves old-style "cs/0701001"
+            break
     if tail.endswith(".pdf"):
         tail = tail[:-4]
     return re.sub(r"v\d+$", "", tail)
@@ -170,7 +177,7 @@ def _needs_render(entry: SourceEntry, cfg: dict) -> bool:
     if not render.get("enabled", False):
         return False
     host = urlparse(entry.url).netloc.lower()
-    return any(h.lower() in host for h in render.get("hosts", []))
+    return any(host == h.lower() or host.endswith("." + h.lower()) for h in render.get("hosts", []))
 
 
 def _needs_impersonate(entry: SourceEntry, cfg: dict) -> bool:
@@ -178,7 +185,7 @@ def _needs_impersonate(entry: SourceEntry, cfg: dict) -> bool:
     if not imp.get("enabled", False):
         return False
     host = urlparse(entry.url).netloc.lower()
-    return any(h.lower() in host for h in imp.get("hosts", []))
+    return any(host == h.lower() or host.endswith("." + h.lower()) for h in imp.get("hosts", []))
 
 
 def _impersonate_get(url: str, cfg: dict):
@@ -286,12 +293,15 @@ def fetch_all(entries, raw_dir, cfg, *, force=False, transport=None, renderer=No
     return results
 
 
+def _selected(entries, only):
+    """Manifest entries filtered by an optional set of doc_id slugs."""
+    return [e for e in entries if not only or e.doc_id in only]
+
+
 def plan_fetches(entries, only=None):
     """Dry-run plan: (doc_id, recipe, target_url) per selected source (no network)."""
     plan = []
-    for entry in entries:
-        if only and entry.doc_id not in only:
-            continue
+    for entry in _selected(entries, only):
         recipe = resolve_recipe(entry)
         target = _arxiv_urls(entry.url, entry.version)[0] if recipe == "arxiv" else entry.url
         plan.append((entry.doc_id, recipe, target))
@@ -314,8 +324,6 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 def main(argv=None) -> int:
     args = build_arg_parser().parse_args(argv)
-    cfg = load_corpus_config(args.config).fetch
-    raw_dir = args.raw_dir or cfg.get("raw_dir", "corpus/raw")
     entries = load_manifest(args.manifest)
     only = set(args.only) if args.only else None
 
@@ -333,8 +341,9 @@ def main(argv=None) -> int:
             print(f"{doc_id}\t{recipe}\t{target}")
         return 0
 
-    selected = [e for e in entries if not only or e.doc_id in only]
-    results = fetch_all(selected, raw_dir, cfg, force=args.force)
+    cfg = load_corpus_config(args.config).fetch
+    raw_dir = args.raw_dir or cfg.get("raw_dir", "corpus/raw")
+    results = fetch_all(_selected(entries, only), raw_dir, cfg, force=args.force)
     ok = 0
     for r in results:
         if r.status == "error":
