@@ -477,3 +477,158 @@
   tier_roles: [T2]
   collision_terms: [breach]
   rationale: "Wikipedia: Breach of contract. T2 'breach' collides with GDPR data breach (eurlex-gdpr-2016-679); replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+# ── Fitness / nutrition (14) ───────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 11). PMC sources fetched via Europe PMC PDF route
+# (europepmc.org/articles/PMC<id>?pdf=render; pmc.ncbi.nlm.nih.gov reCAPTCHA-blocks).
+# WHO/FAO TR935 dropped (all-rights-reserved + JS-gated). Schoenfeld frequency meta
+# dropped (not open); #51 -> Swinton 2024 dose-response (CC BY). Gym waiver authored
+# (no clean open example exists). All per user decisions 2026-07-23.
+
+- doc_id: issn-protein-exercise
+  url: "https://europepmc.org/articles/PMC5477153?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5477153)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T6]
+  collision_terms: [protein]
+  rationale: "ISSN Position Stand: Protein and Exercise. Protein-target source; 'protein' T6 collision (dietary vs AlphaFold vs Wikipedia)."
+
+- doc_id: issn-nutrient-timing
+  url: "https://europepmc.org/articles/PMC5596471?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5596471)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [timing]
+  rationale: "ISSN Position Stand: Nutrient Timing ('anabolic window')."
+
+- doc_id: issn-creatine
+  url: "https://europepmc.org/articles/PMC5469049?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5469049)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  rationale: "ISSN Position Stand: Creatine (2017). Supplement reference."
+
+- doc_id: issn-diets-body-comp
+  url: "https://europepmc.org/articles/PMC5470183?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5470183)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  rationale: "ISSN Position Stand: Diets and Body Composition."
+
+- doc_id: pmc-morton-2018-protein-meta
+  url: "https://europepmc.org/articles/PMC5867436?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY-NC (Br J Sports Med / BMJ; via Europe PMC PMC5867436). NonCommercial; kept per user decision 2026-07-23 (load-bearing T5, no clean CC-BY equivalent); first candidate for removal if the shipped index's NC status is challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5, T6]
+  collision_terms: [protein]
+  conflict_with: [usda-dietary-guidelines]
+  rationale: "Morton 2018 protein-supplementation meta-analysis: muscle/strength gains plateau ~1.6 g/kg/day. T5 conflict_with USDA RDA 0.8 g/kg."
+
+- doc_id: usda-dietary-guidelines
+  url: "https://odphp.health.gov/sites/default/files/2026-02/dietary_guidelines_for_americans-2020-2025.pdf"
+  domain: fitness
+  format: pdf
+  license: "Public domain (USDA/HHS, U.S. federal government work, 17 U.S.C. 105)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5, T6]
+  collision_terms: [protein]
+  conflict_with: [pmc-morton-2018-protein-meta]
+  rationale: "Dietary Guidelines for Americans 2020-2025 (9th ed). Protein RDA 0.8 g/kg -> T5 conflict_with Morton ~1.6 g/kg; nutrient TABLES (structure bar). NOTE: pin THIS 2020-2025 edition (a later edition reportedly raised the RDA, which would erase the conflict); build must spot-check the 0.8 g/kg table. Migrated from retired dietaryguidelines.gov to odphp.health.gov."
+
+- doc_id: pmc-frequency-volume-equated
+  url: "https://europepmc.org/articles/PMC9560172?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (PLoS One; via Europe PMC PMC9560172)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [training, frequency]
+  rationale: "Neves 2022 volume-equated training-frequency study: no 1RM/CSA difference between 1x vs 3x/week once volume is matched. T5 frequency angle vs the dose-response modeling."
+
+- doc_id: pmc-swinton-2024-dose-response
+  url: "https://europepmc.org/articles/PMC11239729?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY (Sports Medicine; via Europe PMC PMC11239729)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  collision_terms: [training, volume]
+  rationale: "Swinton/Schoenfeld/Murphy 2024 dose-response meta-analysis of resistance exercise (volume, frequency, intensity). Open-access substitute for the paywalled Schoenfeld volume/frequency meta-analyses (user-approved 2026-07-23)."
+
+- doc_id: wiki-strength-training
+  url: "https://en.wikipedia.org/w/index.php?title=Strength_training&oldid=1365407520"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1365407520
+  tier_roles: [T3, T6]
+  collision_terms: [training]
+  rationale: "Wikipedia: Strength training. T3 paraphrase; 'training' T6 collision (model training / training data / resistance training)."
+
+- doc_id: wiki-muscle-hypertrophy
+  url: "https://en.wikipedia.org/w/index.php?title=Muscle_hypertrophy&oldid=1363648459"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363648459
+  tier_roles: [T3]
+  rationale: "Wikipedia: Muscle hypertrophy. T3 paraphrase pair with the hypertrophy literature."
+
+- doc_id: wiki-progressive-overload
+  url: "https://en.wikipedia.org/w/index.php?title=Progressive_overload&oldid=1364829368"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1364829368
+  tier_roles: [T3]
+  rationale: "Wikipedia: Progressive overload. T3 paraphrase pair with the progression literature (resistance-training review)."
+
+- doc_id: wiki-protein-nutrient
+  url: "https://en.wikipedia.org/w/index.php?title=Protein_(nutrient)&oldid=1366342569"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1366342569
+  tier_roles: [T3, T6]
+  collision_terms: [protein]
+  rationale: "Wikipedia: Protein (nutrient). 'protein' T6 collision (dietary protein vs AlphaFold protein structure)."
+
+- doc_id: sample-gym-liability-waiver
+  url: corpus/authored/sample-gym-liability-waiver.html
+  domain: fitness
+  format: html
+  license: "CC0 1.0 (original work authored for this corpus; placeholder facility, no real entity)"
+  license_ok: true
+  version: authored-sha256
+  tier_roles: [T2, T6]
+  collision_terms: [waiver, consent, release, consideration]
+  rationale: "Original gym liability-waiver + informed-consent document (authored; no clean open example exists). 'waiver/release/consent' T2/T6 collision with contract law (release, consideration, indemnify) and GDPR/CCPA consent. Repo-relative local source (committed at corpus/authored/); version resolves to a content hash at build."
+
+- doc_id: pmc-resistance-training-review
+  url: "https://europepmc.org/articles/PMC8990091?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY (Frontiers in Public Health; via Europe PMC PMC8990091)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  collision_terms: [training]
+  rationale: "Stassen 2022 systematic review of progression principles in resistance training. Open-access substitute for the paywalled ACSM progression position stand."

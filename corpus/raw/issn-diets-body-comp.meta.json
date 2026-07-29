@@ -1,0 +1,14 @@
+{
+  "content_hash": "00b2304b13cb99d961dce9d01a6b43602d4568cf1afc8dd6f1beb5ac32ebf7f3",
+  "content_type": "application/pdf",
+  "doc_id": "issn-diets-body-comp",
+  "fetched_at": "2026-07-29T14:54:07Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC5470183",
+  "format": "pdf",
+  "license": "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5470183)",
+  "license_ok": true,
+  "raw_filename": "issn-diets-body-comp.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC5470183?pdf=render"
+}

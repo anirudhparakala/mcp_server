@@ -1,0 +1,14 @@
+{
+  "content_hash": "610a9aae85f564cff35c965c54c873a33b9a7d0095a8d92a4fb4f3871b22ad74",
+  "content_type": "application/pdf",
+  "doc_id": "issn-protein-exercise",
+  "fetched_at": "2026-07-29T14:54:02Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC5477153",
+  "format": "pdf",
+  "license": "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5477153)",
+  "license_ok": true,
+  "raw_filename": "issn-protein-exercise.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC5477153?pdf=render"
+}

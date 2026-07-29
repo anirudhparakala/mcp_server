@@ -1,0 +1,14 @@
+{
+  "content_hash": "9cff682fe428a9482d5bc6255066c9f2e9ce79fb258a49bfee03a7d0a853344f",
+  "content_type": "application/pdf",
+  "doc_id": "issn-creatine",
+  "fetched_at": "2026-07-29T14:54:05Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC5469049",
+  "format": "pdf",
+  "license": "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5469049)",
+  "license_ok": true,
+  "raw_filename": "issn-creatine.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC5469049?pdf=render"
+}

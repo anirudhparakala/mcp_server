@@ -1,0 +1,14 @@
+{
+  "content_hash": "3968279f890ce593ce3bfb7b034456db264448adf058515711c5e81af4778cff",
+  "content_type": "application/pdf",
+  "doc_id": "pmc-swinton-2024-dose-response",
+  "fetched_at": "2026-07-29T14:54:16Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC11239729",
+  "format": "pdf",
+  "license": "CC BY (Sports Medicine; via Europe PMC PMC11239729)",
+  "license_ok": true,
+  "raw_filename": "pmc-swinton-2024-dose-response.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC11239729?pdf=render"
+}

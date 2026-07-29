@@ -1,0 +1,14 @@
+{
+  "content_hash": "71466cf2918465a7133747899388ead6e45df7435ef14bc83159149f724c417b",
+  "content_type": "application/pdf",
+  "doc_id": "issn-nutrient-timing",
+  "fetched_at": "2026-07-29T14:54:04Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC5596471",
+  "format": "pdf",
+  "license": "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5596471)",
+  "license_ok": true,
+  "raw_filename": "issn-nutrient-timing.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC5596471?pdf=render"
+}
