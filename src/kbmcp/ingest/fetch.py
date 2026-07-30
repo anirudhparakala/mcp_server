@@ -133,7 +133,10 @@ def resolve_recipe(entry: SourceEntry) -> str:
     # (urlparse turns "C:/x" into scheme "c") are all local sources.
     if scheme in ("", "file") or (len(scheme) == 1 and scheme.isalpha()):
         return "local"
-    if "arxiv.org" in urlparse(entry.url).netloc.lower():
+    host = urlparse(entry.url).netloc.lower()
+    # Anchor the host match (not a bare substring) so a look-alike like
+    # "arxiv.org.evil.com" does not route to the arXiv recipe.
+    if host == "arxiv.org" or host.endswith(".arxiv.org"):
         return "arxiv"
     return "generic"
 

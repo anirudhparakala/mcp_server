@@ -75,6 +75,12 @@ def test_resolve_recipe_windows_drive_path_is_local():
     assert fetch.resolve_recipe(_entry(url=r"C:\data\doc.pdf")) == "local"
 
 
+def test_resolve_recipe_arxiv_host_is_anchored():
+    # A real arXiv mirror routes to arxiv; a look-alike host does not.
+    assert fetch.resolve_recipe(_entry(url="https://export.arxiv.org/abs/1706.03762")) == "arxiv"
+    assert fetch.resolve_recipe(_entry(url="http://arxiv.org.evil.com/abs/1")) == "generic"
+
+
 def test_read_local_reads_bare_absolute_path(safe_tmp_path):
     f = safe_tmp_path / "abs.pdf"
     f.write_bytes(b"%PDF abs")

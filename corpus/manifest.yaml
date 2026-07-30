@@ -12,7 +12,7 @@
 - doc_id: arxiv-vaswani-2017-attention
   url: https://arxiv.org/abs/1706.03762
   domain: ai
-  format: pdf
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
   license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
   license_ok: true
   version: v7
@@ -23,7 +23,7 @@
 - doc_id: arxiv-devlin-2018-bert
   url: https://arxiv.org/abs/1810.04805
   domain: ai
-  format: pdf
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
   license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
   license_ok: true
   version: v2
@@ -34,7 +34,7 @@
 - doc_id: arxiv-lewis-2020-rag
   url: https://arxiv.org/abs/2005.11401
   domain: ai
-  format: pdf
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
   license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
   license_ok: true
   version: v4
@@ -78,7 +78,7 @@
 - doc_id: arxiv-reimers-2019-sbert
   url: https://arxiv.org/abs/1908.10084
   domain: ai
-  format: pdf
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
   license: "CC BY-SA 4.0 (author-selected on arXiv)"
   license_ok: true
   version: v1
@@ -135,7 +135,7 @@
 - doc_id: arxiv-hu-2021-lora
   url: https://arxiv.org/abs/2106.09685
   domain: ai
-  format: pdf
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
   license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
   license_ok: true
   version: v2
