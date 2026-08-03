@@ -22,6 +22,7 @@ chunk:
   target_tokens: 512
   max_tokens: 800
   overlap_policy: minimal
+  tokenizer: Qwen/Qwen3-Embedding-0.6B   # HybridChunker token counting; matches the Phase-2 embedder
 
 contextualize:
   enabled: true
