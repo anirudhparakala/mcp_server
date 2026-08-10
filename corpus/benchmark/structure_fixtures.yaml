@@ -1,0 +1,17 @@
+# Structure-critical fixtures (ingest design §4 / corpus design §5). The build
+# FAILS if any regress. doc_id = sha256(canonical_url + version) — see Task 6.
+- name: dga-protein-rda-table
+  slug: usda-dietary-guidelines
+  must_contain_in_table: ["0.8", "Protein"]
+- name: hf-modelcard-benchmark-table
+  slug: modelcard-bge-reranker-v2-m3
+  must_contain_in_table: ["MIRACL"]        # finalize against the pinned card
+- name: ucc-numbered-cross-ref
+  slug: ucc-article-2
+  must_contain: ["2601"]                    # numbered section survives as text
+- name: edgar-defined-term-and-schedule
+  slug: edgar-commercial-contract
+  must_contain: ["Section 1.01", "Schedule 2.01"]
+- name: gdpr-article-recital
+  slug: eurlex-gdpr-2016-679
+  must_contain: ["Article", "Recital"]
