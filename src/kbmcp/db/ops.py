@@ -108,6 +108,20 @@ def chunk_id_exists(conn: sqlite3.Connection, chunk_id: str) -> bool:
     return row is not None
 
 
+def get_chunks_for_doc(conn: sqlite3.Connection, doc_id: str) -> list:
+    """All chunks for a doc, ordered by chunk_index, JSON columns parsed (see get_chunk)."""
+    rows = conn.execute(
+        "SELECT * FROM chunks WHERE doc_id = ? ORDER BY chunk_index", (doc_id,)
+    ).fetchall()
+    return [get_chunk(conn, r["chunk_id"]) for r in rows]
+
+
+def count_rows(conn: sqlite3.Connection, table: str) -> int:
+    if table not in {"sources", "docs", "chunks", "edges", "ingest_runs"}:
+        raise ValueError(f"unknown table: {table}")
+    return conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+
+
 def get_chunk(conn: sqlite3.Connection, chunk_id: str) -> Optional[dict]:
     """Fetch a chunk by ID; _json columns are returned parsed (list/dict), not as raw strings."""
     row = conn.execute("SELECT * FROM chunks WHERE chunk_id = ?", (chunk_id,)).fetchone()
