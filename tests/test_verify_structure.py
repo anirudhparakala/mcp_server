@@ -28,3 +28,13 @@ def test_fixture_fails_when_snippet_missing(safe_tmp_path):
     fx.write_text('- name: t\n  doc_id: D\n  must_contain: ["1.6 g/kg (absent)"]\n', encoding="utf-8")
     res = vs.verify_structure(ckb, fx)
     assert not vs.all_passed(res) and not res[0].passed
+
+
+def test_fixture_without_assertions_raises(safe_tmp_path):
+    # A gate must not vacuously pass a fixture that declares no assertions.
+    import pytest
+    ckb = safe_tmp_path / "ckb.sqlite"; _ckb_with_table(ckb)
+    fx = safe_tmp_path / "fx.yaml"
+    fx.write_text("- name: bad\n  doc_id: D\n", encoding="utf-8")
+    with pytest.raises(ValueError):
+        vs.verify_structure(ckb, fx)
