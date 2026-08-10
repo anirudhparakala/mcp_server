@@ -35,14 +35,16 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
     for e in entries:
         if only and e.doc_id not in only:
             continue
+        did = None
         try:
             meta = read_meta(raw_dir, e.doc_id)
             if meta is None:
                 raise FileNotFoundError(f"no pin record for {e.doc_id} (run fetch first)")
             version = meta["resolved_version"]
             did = mk_doc_id(e.url, version)
-            if not force and ops.count_rows(conn, "docs") and _doc_present(conn, did):
+            if not force and _doc_present(conn, did):
                 continue
+            _delete_doc(conn, did)  # clear any prior/partial rows -> atomic (re)build
             raw_path = Path(raw_dir) / meta["raw_filename"]
             dl_doc = parse_source(e.doc_id, raw_path, parsed_dir, cfg["parse"], force=force)
             _upsert_source_and_doc(conn, e, meta, did, dl_doc)
@@ -55,6 +57,8 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
                 stats["chunks"] += 1
             stats["docs"] += 1
         except Exception as exc:  # noqa: BLE001 — one bad source must not abort the build
+            if did is not None:
+                _delete_doc(conn, did)  # drop partial rows so a later run rebuilds cleanly
             stats["errors"].append({"doc_id": e.doc_id, "error": str(exc)})
     conn.execute(
         "INSERT INTO ingest_runs (ingest_run_id, started_at, finished_at, status, stats_json) "
@@ -69,6 +73,13 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
 
 def _doc_present(conn, did) -> bool:
     return conn.execute("SELECT 1 FROM docs WHERE doc_id = ?", (did,)).fetchone() is not None
+
+
+def _delete_doc(conn, did) -> None:
+    """Remove a doc and its chunks (chunks first, for the FK); commit. No-op if absent."""
+    conn.execute("DELETE FROM chunks WHERE doc_id = ?", (did,))
+    conn.execute("DELETE FROM docs WHERE doc_id = ?", (did,))
+    conn.commit()
 
 
 def _upsert_source_and_doc(conn, e, meta, did, dl_doc) -> None:

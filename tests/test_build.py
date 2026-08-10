@@ -42,3 +42,36 @@ def test_build_ckb_is_idempotent(safe_tmp_path):
     conn = ops.get_db(ckb)
     assert ops.count_rows(conn, "docs") == 1
     conn.close()
+
+
+def test_build_ckb_force_rebuilds_existing_doc(safe_tmp_path):
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"; parsed = safe_tmp_path / "parsed"
+    build.build_ckb(manifest, raw, parsed, ckb, CFG)
+    stats = build.build_ckb(manifest, raw, parsed, ckb, CFG, force=True)  # must not PK-collide
+    assert stats["docs"] == 1 and not stats["errors"]
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 1
+    conn.close()
+
+
+def test_build_ckb_cleans_partial_state_on_chunk_failure(safe_tmp_path, monkeypatch):
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"; parsed = safe_tmp_path / "parsed"
+    real = build.chunk_document
+    calls = {"n": 0}
+
+    def flaky(*a, **k):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise RuntimeError("boom")   # fail the first doc mid-build
+        return real(*a, **k)
+
+    monkeypatch.setattr(build, "chunk_document", flaky)
+    stats = build.build_ckb(manifest, raw, parsed, ckb, CFG)
+    assert stats["errors"] and stats["docs"] == 0
+    conn = ops.get_db(ckb); assert ops.count_rows(conn, "docs") == 0; conn.close()  # partial row cleaned
+    # a later run must REBUILD the previously-failed doc, not skip it
+    stats2 = build.build_ckb(manifest, raw, parsed, ckb, CFG)
+    assert stats2["docs"] == 1 and not stats2["errors"]
+    conn2 = ops.get_db(ckb); assert ops.count_rows(conn2, "docs") == 1; conn2.close()
