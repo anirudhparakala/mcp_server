@@ -1,17 +1,24 @@
-# Structure-critical fixtures (ingest design §4 / corpus design §5). The build
-# FAILS if any regress. doc_id = sha256(canonical_url + version) — see Task 6.
+# Structure-critical fixtures (ingest design sec4 / corpus design sec5). The
+# build FAILS if any regress. doc_id = sha256(canonical_url + version); the
+# slug is the human handle. Finalized 2026-08-04 against the built CKB.
+
 - name: dga-protein-rda-table
   slug: usda-dietary-guidelines
+  doc_id: b6d6e41f31f7b507ef175674383fbbc78609157504d8c1a3d499398d3f7dfce0
   must_contain_in_table: ["0.8", "Protein"]
 - name: hf-modelcard-benchmark-table
-  slug: modelcard-bge-reranker-v2-m3
-  must_contain_in_table: ["MIRACL"]        # finalize against the pinned card
+  slug: modelcard-qwen3-embedding
+  doc_id: a1af915216b0cf31c9d6e9af9f34741c3fc1fae108cb51c72b043dc30ce9a445
+  must_contain_in_table: ["NV-Embed-v2", "56.29"]
 - name: ucc-numbered-cross-ref
   slug: ucc-article-2
-  must_contain: ["2601"]                    # numbered section survives as text
+  doc_id: 183b505abcad9995f57ad7224104d1eb1ebd5b793ca2b6495857fe2afa58e965
+  must_contain: ["Section 2612"]
 - name: edgar-defined-term-and-schedule
   slug: edgar-commercial-contract
+  doc_id: a321b5e725568849cabb3b75b3f7158ca0bf1bdf55e6dca4e9e88dedcb189920
   must_contain: ["Section 1.01", "Schedule 2.01"]
-- name: gdpr-article-recital
+- name: gdpr-article-cross-ref
   slug: eurlex-gdpr-2016-679
-  must_contain: ["Article", "Recital"]
+  doc_id: 4f198882767c154d79a02b96b79e17864d980515a43eee9f6ffdd8c6db87b3ad
+  must_contain: ["Article 22", "referred to in Article"]

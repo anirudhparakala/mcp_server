@@ -1,0 +1,708 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "sample-gym-liability-waiver",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 8619190949095129485,
+    "filename": "sample-gym-liability-waiver.html"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "title",
+      "prov": [],
+      "orig": "Membership Liability Waiver, Release, and Informed Consent",
+      "text": "Membership Liability Waiver, Release, and Informed Consent"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "Summit Ridge Fitness - Membership Liability Waiver, Release of Liability, and Informed Consent",
+      "text": "Summit Ridge Fitness - Membership Liability Waiver, Release of Liability, and Informed Consent"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This is an original template document authored for the kbmcp evaluation corpus. It does not describe any real facility; \"Summit Ridge Fitness\" is a placeholder. It is dedicated to the public domain (CC0 1.0).",
+      "text": "This is an original template document authored for the kbmcp evaluation corpus. It does not describe any real facility; \"Summit Ridge Fitness\" is a placeholder. It is dedicated to the public domain (CC0 1.0).",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Please read this Agreement carefully. It is a legally binding contract that affects your rights. By signing below, in consideration of being permitted to use the facilities, equipment, and services of Summit Ridge Fitness (the \"Facility\"), the undersigned member (the \"Member\") agrees to all of the terms set out in this document.",
+      "text": "Please read this Agreement carefully. It is a legally binding contract that affects your rights. By signing below, in consideration of being permitted to use the facilities, equipment, and services of Summit Ridge Fitness (the \"Facility\"), the undersigned member (the \"Member\") agrees to all of the terms set out in this document."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1. Assumption of Risk",
+      "text": "1. Assumption of Risk",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member understands that participation in strength training, resistance exercise, cardiovascular conditioning, group fitness classes, and use of the Facility's equipment involves inherent risks of physical injury, including but not limited to muscle strains, sprains, torn ligaments, fractures, cardiac events, heat illness, and, in rare cases, permanent disability or death. The Member knowingly and voluntarily assumes all such risks, whether foreseen or unforeseen, arising out of or related to the Member's use of the Facility, and accepts personal responsibility for any resulting harm.",
+      "text": "The Member understands that participation in strength training, resistance exercise, cardiovascular conditioning, group fitness classes, and use of the Facility's equipment involves inherent risks of physical injury, including but not limited to muscle strains, sprains, torn ligaments, fractures, cardiac events, heat illness, and, in rare cases, permanent disability or death. The Member knowingly and voluntarily assumes all such risks, whether foreseen or unforeseen, arising out of or related to the Member's use of the Facility, and accepts personal responsibility for any resulting harm."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2. Release and Waiver of Liability",
+      "text": "2. Release and Waiver of Liability",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/texts/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "To the fullest extent permitted by law, the Member hereby releases, waives, discharges, and covenants not to sue Summit Ridge Fitness, its owners, officers, employees, independent-contractor trainers, and agents (collectively, the \"Released Parties\") from any and all liability, claims, demands, or causes of action arising out of or connected to any injury, loss, or damage to person or property sustained by the Member, whether caused by the negligence of the Released Parties or otherwise, while the Member is on the premises or using Facility equipment. This waiver and release is intended to be as broad and inclusive as is permitted by the laws of the governing jurisdiction.",
+      "text": "To the fullest extent permitted by law, the Member hereby releases, waives, discharges, and covenants not to sue Summit Ridge Fitness, its owners, officers, employees, independent-contractor trainers, and agents (collectively, the \"Released Parties\") from any and all liability, claims, demands, or causes of action arising out of or connected to any injury, loss, or damage to person or property sustained by the Member, whether caused by the negligence of the Released Parties or otherwise, while the Member is on the premises or using Facility equipment. This waiver and release is intended to be as broad and inclusive as is permitted by the laws of the governing jurisdiction."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "3. Indemnification",
+      "text": "3. Indemnification",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/texts/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member agrees to indemnify and hold harmless the Released Parties from any loss, liability, damage, or cost, including reasonable attorneys' fees, that the Released Parties may incur as a result of any claim brought by or on behalf of the Member, or arising from the Member's breach of this Agreement or violation of Facility rules.",
+      "text": "The Member agrees to indemnify and hold harmless the Released Parties from any loss, liability, damage, or cost, including reasonable attorneys' fees, that the Released Parties may incur as a result of any claim brought by or on behalf of the Member, or arising from the Member's breach of this Agreement or violation of Facility rules."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "4. Medical Representations and Fitness to Participate",
+      "text": "4. Medical Representations and Fitness to Participate",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/texts/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member represents that they are in good physical condition and have no medical condition, injury, or disability that would prevent safe participation in exercise. The Member acknowledges that Summit Ridge Fitness has recommended that the Member consult a physician before beginning any exercise program, and that the Facility's staff are not qualified to provide medical diagnosis or treatment.",
+      "text": "The Member represents that they are in good physical condition and have no medical condition, injury, or disability that would prevent safe participation in exercise. The Member acknowledges that Summit Ridge Fitness has recommended that the Member consult a physician before beginning any exercise program, and that the Facility's staff are not qualified to provide medical diagnosis or treatment."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "5. Informed Consent to Physical Activity and Data Processing",
+      "text": "5. Informed Consent to Physical Activity and Data Processing",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/texts/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member gives informed consent to participate in physical activity and, where applicable, to the collection and processing of personal data by the Facility for the purposes of membership administration, health-and-safety screening, and access control. Such data may include the Member's name, contact details, emergency-contact information, and, where the Member elects to provide it, basic health information relevant to safe participation. The Member's consent to the processing of personal data is freely given, specific, and informed, and the Member may withdraw consent at any time by written notice to the Facility, without affecting the lawfulness of processing carried out before withdrawal. Withdrawal of consent to essential health-and-safety processing may result in suspension of Facility access.",
+      "text": "The Member gives informed consent to participate in physical activity and, where applicable, to the collection and processing of personal data by the Facility for the purposes of membership administration, health-and-safety screening, and access control. Such data may include the Member's name, contact details, emergency-contact information, and, where the Member elects to provide it, basic health information relevant to safe participation. The Member's consent to the processing of personal data is freely given, specific, and informed, and the Member may withdraw consent at any time by written notice to the Facility, without affecting the lawfulness of processing carried out before withdrawal. Withdrawal of consent to essential health-and-safety processing may result in suspension of Facility access."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "6. Photography and Media Consent (Optional)",
+      "text": "6. Photography and Media Consent (Optional)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/texts/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member consents / does not consent (Member to initial one) to the Facility's use of photographs or video in which the Member appears for promotional purposes. This consent is separate from, and not a condition of, membership.",
+      "text": "The Member consents / does not consent (Member to initial one) to the Facility's use of photographs or video in which the Member appears for promotional purposes. This consent is separate from, and not a condition of, membership."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "7. Governing Law and Severability",
+      "text": "7. Governing Law and Severability",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/texts/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This Agreement is governed by the laws of the State in which the Facility is located. If any provision of this Agreement is held to be unenforceable, the remaining provisions shall continue in full force and effect. The Member's failure to comply with Facility rules constitutes a material breach of this Agreement and may result in termination of membership without refund of consideration paid.",
+      "text": "This Agreement is governed by the laws of the State in which the Facility is located. If any provision of this Agreement is held to be unenforceable, the remaining provisions shall continue in full force and effect. The Member's failure to comply with Facility rules constitutes a material breach of this Agreement and may result in termination of membership without refund of consideration paid."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/tables/0"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "8. Acknowledgment",
+      "text": "8. Acknowledgment",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/texts/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The Member acknowledges that they have read this entire Agreement, understand that it is a release of liability and an assumption of risk, understand that they are giving up substantial legal rights, and sign it freely and voluntarily as their own free act. This document, together with the membership application, constitutes the entire agreement between the Member and the Facility with respect to its subject matter.",
+      "text": "The Member acknowledges that they have read this entire Agreement, understand that it is a release of liability and an assumption of risk, understand that they are giving up substantial legal rights, and sign it freely and voluntarily as their own free act. This document, together with the membership application, constitutes the entire agreement between the Member and the Facility with respect to its subject matter."
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/texts/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Field",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Entry",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Member name (print)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "__________________________",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Member signature",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "__________________________",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Date",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "______________",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Emergency contact & phone",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "__________________________",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Facility representative",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "__________________________",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 6,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Field",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Entry",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Member name (print)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "__________________________",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Member signature",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "__________________________",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Date",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "______________",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Emergency contact & phone",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "__________________________",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Facility representative",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "__________________________",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}
