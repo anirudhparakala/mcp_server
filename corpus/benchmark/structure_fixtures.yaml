@@ -1,5 +1,6 @@
-# Structure-critical fixtures (ingest design sec4 / corpus design sec5). The
-# build FAILS if any regress. doc_id = sha256(canonical_url + version); the
+# Structure-critical fixtures (ingest design sec4 / corpus design sec5). Run via
+# verify_structure; the M6 build wires this in as a gate that fails on any
+# regression. doc_id = sha256(canonical_url + version); the
 # slug is the human handle. Finalized 2026-08-04 against the built CKB.
 
 - name: dga-protein-rda-table

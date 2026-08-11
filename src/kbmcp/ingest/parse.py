@@ -7,7 +7,6 @@ not guaranteed bit-identical across runs/GPUs). Cache-first: an existing parsed
 JSON is loaded and Docling is NOT re-run.
 """
 
-import json
 from functools import lru_cache
 from pathlib import Path
 

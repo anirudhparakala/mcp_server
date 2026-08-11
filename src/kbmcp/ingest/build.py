@@ -27,7 +27,7 @@ def _now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, force=False) -> dict:
+def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, force=False, reparse=False) -> dict:
     entries = load_manifest(manifest_path)
     conn = ops.get_db(ckb_path)
     create_all_tables(conn)
@@ -42,11 +42,13 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
                 raise FileNotFoundError(f"no pin record for {e.doc_id} (run fetch first)")
             version = meta["resolved_version"]
             did = mk_doc_id(e.url, version)
-            if not force and _doc_present(conn, did):
+            if not (force or reparse) and _doc_present(conn, did):
                 continue
             _delete_doc(conn, did)  # clear any prior/partial rows -> atomic (re)build
             raw_path = Path(raw_dir) / meta["raw_filename"]
-            dl_doc = parse_source(e.doc_id, raw_path, parsed_dir, cfg["parse"], force=force)
+            # --force rebuilds the DB from the committed parse; only --reparse re-runs
+            # Docling (which overwrites the committed corpus/parsed/ reproducibility anchor).
+            dl_doc = parse_source(e.doc_id, raw_path, parsed_dir, cfg["parse"], force=reparse)
             _upsert_source_and_doc(conn, e, meta, did, dl_doc)
             for rec in chunk_document(dl_doc, cfg["chunk"]):
                 ops.insert_chunk(
@@ -105,12 +107,14 @@ def main(argv=None) -> int:
     p.add_argument("--ckb", default="ckb/ckb.sqlite")
     p.add_argument("--config", default="config/corpus_config.yaml")
     p.add_argument("--only", action="append", default=None)
-    p.add_argument("--force", action="store_true")
+    p.add_argument("--force", action="store_true", help="rebuild the DB from the committed parse")
+    p.add_argument("--reparse", action="store_true",
+                   help="re-run Docling and OVERWRITE the committed parse (implies --force)")
     a = p.parse_args(argv)
     Path(a.ckb).parent.mkdir(parents=True, exist_ok=True)
     cfg = load_corpus_config(a.config).raw
     stats = build_ckb(a.manifest, a.raw_dir, a.parsed_dir, a.ckb, cfg,
-                      only=set(a.only) if a.only else None, force=a.force)
+                      only=set(a.only) if a.only else None, force=a.force, reparse=a.reparse)
     print(f"docs={stats['docs']} chunks={stats['chunks']} errors={len(stats['errors'])}", file=sys.stderr)
     for err in stats["errors"]:
         print(f"  [error] {err['doc_id']}: {err['error']}", file=sys.stderr)
