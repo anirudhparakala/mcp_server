@@ -30,8 +30,22 @@ contextualize:
   temperature: 0
   max_tokens: 150
   cache_ttl: 1h
+  # section_scoped: windows are packed out of WHOLE heading_path sections and never
+  # split one, except when a single section exceeds window_max_tokens. See the
+  # 2026-08-11 amendment to ingest spec §5: a bare heading_path section has a median
+  # size of 1 chunk (1421 sections / 2795 chunks) and sits below Haiku 4.5's
+  # 4096-token minimum cacheable prefix, so windows are token-budgeted runs of them.
   section_scoped: true
   contexts_dir: corpus/contexts
+  window_target_tokens: 6000     # pack sections up to this; > min_cacheable_tokens on purpose
+  window_max_tokens: 8000        # hard cap; a single section larger than this is split
+  min_cacheable_tokens: 4096     # Haiku 4.5 minimum cacheable prefix (shorter = silently uncached)
+  chars_per_token: 4             # offline token estimate for windowing + cost estimates
+  max_retries: 5                 # passed to the Anthropic client (429/5xx backoff)
+  price_in_per_mtok: 1.0         # claude-haiku-4-5 list price, USD per 1M input tokens
+  price_out_per_mtok: 5.0        # ... per 1M output tokens
+  cache_write_multiplier: 2.0    # 1h TTL cache write premium
+  cache_read_multiplier: 0.1     # cache read discount
 
 graph:
   extractors: [legal, academic]
