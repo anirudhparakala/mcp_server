@@ -64,7 +64,7 @@ def valid_pinned(record: dict, records, *, canonical_url: str, version: str,
     for rec in records:
         cid = mk_chunk_id(canonical_url, version, rec.chunk_index)
         entry = pinned.get(cid)
-        if not entry:
+        if not entry or not isinstance(entry, dict):
             continue
         context = (entry.get("context") or "").strip()
         if not context or entry.get("text_sha256") != text_sha256(rec.text):

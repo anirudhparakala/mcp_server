@@ -81,3 +81,30 @@ def test_valid_pinned_drops_blank_contexts():
     got = ctx.valid_pinned(record, recs, canonical_url=URL, version=VER,
                            model="claude-haiku-4-5", prompt_version=ctx.PROMPT_VERSION)
     assert list(got) == [mk_chunk_id(URL, VER, 0)]
+
+
+def test_valid_pinned_handles_malformed_record_shapes():
+    """Covers malformed record shapes: non-dict entry, null contexts, missing contexts.
+    Valid entries are preserved; malformed are dropped."""
+    recs = _recs("alpha", "beta", "gamma")
+
+    # Non-dict entry: valid entries still come back
+    record_nondict = _pin(recs, ["ctx a", "ctx b", "ctx c"])
+    record_nondict["contexts"][mk_chunk_id(URL, VER, 1)] = "not a dict"
+    got_nondict = ctx.valid_pinned(record_nondict, recs, canonical_url=URL, version=VER,
+                                   model="claude-haiku-4-5", prompt_version=ctx.PROMPT_VERSION)
+    assert mk_chunk_id(URL, VER, 0) in got_nondict  # Valid entry
+    assert mk_chunk_id(URL, VER, 1) not in got_nondict  # Malformed dropped
+    assert mk_chunk_id(URL, VER, 2) in got_nondict  # Valid entry
+
+    # Null contexts: no entries, but no crash
+    record_null = {"doc_id": "slug", "model": "claude-haiku-4-5", "prompt_version": ctx.PROMPT_VERSION, "generated_at": "2026-08-11T00:00:00Z", "contexts": None}
+    got_null = ctx.valid_pinned(record_null, recs, canonical_url=URL, version=VER,
+                                model="claude-haiku-4-5", prompt_version=ctx.PROMPT_VERSION)
+    assert got_null == {}
+
+    # Missing contexts key: no entries, but no crash
+    record_missing = {"doc_id": "slug", "model": "claude-haiku-4-5", "prompt_version": ctx.PROMPT_VERSION, "generated_at": "2026-08-11T00:00:00Z"}
+    got_missing = ctx.valid_pinned(record_missing, recs, canonical_url=URL, version=VER,
+                                   model="claude-haiku-4-5", prompt_version=ctx.PROMPT_VERSION)
+    assert got_missing == {}
