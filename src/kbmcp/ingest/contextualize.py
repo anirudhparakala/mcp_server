@@ -292,7 +292,16 @@ def contexts_for_document(slug: str, records, *, canonical_url: str, version: st
 
 
 def estimate_document(records, cfg: dict, *, doc_header_len: int = 64) -> dict:
-    """Offline projection of what contextualizing these records will cost."""
+    """Offline projection of what contextualizing these records will cost.
+
+    This is a FLOOR, not a ceiling. It prices each cacheable window as one
+    uninterrupted run -- a single cache write amortized over (k-1) reads -- and
+    assumes every call succeeds on the first attempt. A run that is interrupted
+    and resumed after the cache TTL expires, or split across sessions with
+    --only, pays another unamortized cache write for each partially-completed
+    window; SDK retries after a 429/5xx also re-bill their input. Token counts
+    are a chars/chars_per_token approximation, not Claude's tokenizer.
+    """
     cpt = int(cfg.get("chars_per_token", 4))
     min_cacheable = int(cfg.get("min_cacheable_tokens", 4096))
     out_per_chunk = int(cfg.get("max_tokens", 150))
@@ -422,6 +431,10 @@ def main(argv=None) -> int:
               f"cache_read={grand['cache_read_tokens']} output={grand['output_tokens']}",
               file=sys.stderr)
         print(f"ESTIMATE  USD={round(grand['usd'], 4)}", file=sys.stderr)
+        print("ESTIMATE  NOTE: this is a floor, not a ceiling — it prices each window as one "
+              "uninterrupted run. Resuming after the cache TTL expires (or splitting the run "
+              "with --only) pays an extra unamortized cache write per partially-done window, "
+              "and retries re-bill their input.", file=sys.stderr)
         return 0
 
     client, reason = make_client(cfg)

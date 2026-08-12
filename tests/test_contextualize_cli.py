@@ -31,6 +31,48 @@ def test_estimate_document_reports_tokens_and_dollars():
     assert est["cache_read_tokens"] > 0 or est["cacheable_windows"] == 0
 
 
+def test_estimate_charges_one_cache_write_and_k_minus_one_reads_per_window():
+    """The number this produces is what a human approves real spend from, so pin
+    the arithmetic: one write per cacheable window, (k-1) reads (not k), per-chunk
+    tokens always billed, and the multipliers actually applied."""
+    from kbmcp.ingest.context_windows import est_tokens
+
+    cfg = {**CFG, "min_cacheable_tokens": 1,          # force the window to be cacheable
+           "window_target_tokens": 10_000, "window_max_tokens": 10_000}
+    recs = _recs(3, size=400)
+    est = ctx.estimate_document(recs, cfg)
+
+    assert est["windows"] == 1 and est["cacheable_windows"] == 1 and est["chunks"] == 3
+    prefix = est["cache_write_tokens"]                # exactly ONE write per cacheable window
+    assert prefix > 0
+    assert est["cache_read_tokens"] == prefix * 2     # (k-1) reads — a k/k-1 flip fails here
+
+    per_chunk = est_tokens("w" * 400, 4) + est_tokens(ctx.TASK_INSTRUCTION, 4)
+    assert est["input_tokens"] == per_chunk * 3       # per-chunk tokens billed regardless
+    assert est["output_tokens"] == 3 * 150
+
+    # multipliers written out independently of the implementation
+    expected_usd = round((est["input_tokens"] * 1.0
+                          + prefix * 1.0 * 2.0
+                          + est["cache_read_tokens"] * 1.0 * 0.1
+                          + est["output_tokens"] * 5.0) / 1_000_000, 4)
+    assert est["usd"] == expected_usd
+
+    # below the cache floor the SAME window bills its prefix once per chunk instead
+    uncacheable = ctx.estimate_document(recs, {**cfg, "min_cacheable_tokens": 10 ** 9})
+    assert uncacheable["cacheable_windows"] == 0
+    assert uncacheable["cache_write_tokens"] == 0 and uncacheable["cache_read_tokens"] == 0
+    assert uncacheable["input_tokens"] == per_chunk * 3 + prefix * 3
+    assert uncacheable["usd"] > est["usd"]            # caching must be the cheaper path
+
+
+def test_estimate_handles_a_single_chunk_window_without_negative_reads():
+    cfg = {**CFG, "min_cacheable_tokens": 1, "window_target_tokens": 10_000,
+           "window_max_tokens": 10_000}
+    est = ctx.estimate_document(_recs(1, size=400), cfg)
+    assert est["chunks"] == 1 and est["cache_read_tokens"] == 0   # k-1 == 0, never negative
+
+
 def test_estimate_scales_with_chunk_count():
     small = ctx.estimate_document(_recs(4), CFG)
     big = ctx.estimate_document(_recs(16), CFG)
