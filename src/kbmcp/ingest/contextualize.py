@@ -11,13 +11,16 @@ and stays deterministic. Context is never an input to chunk_id, so LLM
 non-determinism cannot affect IDs (ingest design spec section 5).
 """
 
+import argparse
 import hashlib
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from ..db import ops
 from ..models.ids import chunk_id as mk_chunk_id
-from .context_windows import build_windows
+from .context_windows import build_windows, est_tokens
 
 PROMPT_VERSION = 1  # bump to invalidate every pinned context
 
@@ -286,3 +289,176 @@ def contexts_for_document(slug: str, records, *, canonical_url: str, version: st
             "contexts": merged,
         })
     return stats
+
+
+def estimate_document(records, cfg: dict, *, doc_header_len: int = 64) -> dict:
+    """Offline projection of what contextualizing these records will cost."""
+    cpt = int(cfg.get("chars_per_token", 4))
+    min_cacheable = int(cfg.get("min_cacheable_tokens", 4096))
+    out_per_chunk = int(cfg.get("max_tokens", 150))
+    system_tokens = est_tokens(SYSTEM_PROMPT, cpt) + est_tokens("x" * doc_header_len, cpt)
+    instruction_tokens = est_tokens(TASK_INSTRUCTION, cpt)
+
+    totals = {"windows": 0, "chunks": 0, "cacheable_windows": 0, "input_tokens": 0,
+              "cache_write_tokens": 0, "cache_read_tokens": 0, "output_tokens": 0}
+    by_index = {r.chunk_index: r for r in records}
+    for window in build_windows(records, cfg):
+        prefix = system_tokens + window.est_tokens
+        k = len(window.chunk_indices)
+        totals["windows"] += 1
+        totals["chunks"] += k
+        if prefix >= min_cacheable:
+            totals["cacheable_windows"] += 1
+            totals["cache_write_tokens"] += prefix
+            totals["cache_read_tokens"] += prefix * (k - 1)
+        else:
+            totals["input_tokens"] += prefix * k
+        for i in window.chunk_indices:
+            totals["input_tokens"] += est_tokens(by_index[i].text, cpt) + instruction_tokens
+        totals["output_tokens"] += out_per_chunk * k
+
+    p_in = float(cfg.get("price_in_per_mtok", 1.0))
+    p_out = float(cfg.get("price_out_per_mtok", 5.0))
+    w_mult = float(cfg.get("cache_write_multiplier", 2.0))
+    r_mult = float(cfg.get("cache_read_multiplier", 0.1))
+    totals["usd"] = round(
+        (totals["input_tokens"] * p_in
+         + totals["cache_write_tokens"] * p_in * w_mult
+         + totals["cache_read_tokens"] * p_in * r_mult
+         + totals["output_tokens"] * p_out) / 1_000_000,
+        4,
+    )
+    return totals
+
+
+def _is_suspicious(context: str, chunk_text: str) -> bool:
+    words = context.split()
+    if len(words) < 5 or len(words) > 120:
+        return True
+    return chunk_text.strip().startswith(context.strip())
+
+
+def context_coverage(ckb_path) -> dict:
+    """Context-quality gate over a built CKB."""
+    conn = ops.get_db(ckb_path)
+    try:
+        rows = conn.execute(
+            "SELECT chunk_id, text, context FROM chunks ORDER BY doc_id, chunk_index"
+        ).fetchall()
+    finally:
+        conn.close()
+    out = {"total": len(rows), "with_context": 0, "empty": [], "suspicious": []}
+    for row in rows:
+        context = (row["context"] or "").strip()
+        if not context:
+            out["empty"].append(row["chunk_id"])
+            continue
+        out["with_context"] += 1
+        if _is_suspicious(context, row["text"]):
+            out["suspicious"].append(row["chunk_id"])
+    return out
+
+
+def load_document(entry, raw_dir, parsed_dir, cfg: dict, *, reparse=False):
+    """(meta, version, dl_doc, records, title) for one manifest entry.
+
+    THE shared document loader: build.build_ckb and the contextualize CLI both
+    call this, so the two cannot drift on how a document is parsed and chunked.
+    Reads the committed corpus/parsed/ cache -- Docling only runs under reparse.
+    """
+    from .chunk import chunk_document
+    from .fetch import read_meta
+    from .parse import parse_source
+
+    meta = read_meta(raw_dir, entry.doc_id)
+    if meta is None:
+        raise FileNotFoundError(f"no pin record for {entry.doc_id} (run fetch first)")
+    raw_path = Path(raw_dir) / meta["raw_filename"]
+    dl_doc = parse_source(entry.doc_id, raw_path, parsed_dir, cfg["parse"], force=reparse)
+    records = chunk_document(dl_doc, cfg["chunk"])
+    title = getattr(dl_doc, "name", None) or entry.doc_id
+    return meta, meta["resolved_version"], dl_doc, records, title
+
+
+def main(argv=None) -> int:
+    from ..config import load_corpus_config
+    from .manifest import load_manifest
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.contextualize")
+    p.add_argument("--manifest", default="corpus/manifest.yaml")
+    p.add_argument("--raw-dir", default="corpus/raw")
+    p.add_argument("--parsed-dir", default="corpus/parsed")
+    p.add_argument("--contexts-dir", default=None, help="default: contextualize.contexts_dir")
+    p.add_argument("--config", default="config/corpus_config.yaml")
+    p.add_argument("--only", action="append", default=None, help="manifest slug; repeatable")
+    p.add_argument("--force", action="store_true", help="regenerate even when pins are valid")
+    p.add_argument("--estimate", action="store_true",
+                   help="project cost only; no API calls, no pins")
+    p.add_argument("--limit", type=int, default=None, help="stop after N documents")
+    a = p.parse_args(argv)
+
+    full = load_corpus_config(a.config)
+    cfg = full.contextualize
+    contexts_dir = a.contexts_dir or cfg.get("contexts_dir", "corpus/contexts")
+    entries = [e for e in load_manifest(a.manifest) if not a.only or e.doc_id in set(a.only)]
+    if a.limit:
+        entries = entries[: a.limit]
+
+    if a.estimate:
+        grand = {"windows": 0, "chunks": 0, "cacheable_windows": 0, "input_tokens": 0,
+                 "cache_write_tokens": 0, "cache_read_tokens": 0, "output_tokens": 0, "usd": 0.0}
+        for entry in entries:
+            _, _, _, records, _ = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+            est = estimate_document(records, cfg)
+            for k in grand:
+                grand[k] += est[k]
+            print(f"  {entry.doc_id:42s} {est['chunks']:4d} chunks {est['windows']:3d} win  "
+                  f"${est['usd']:.4f}", file=sys.stderr)
+        print(f"ESTIMATE  docs={len(entries)} chunks={grand['chunks']} "
+              f"windows={grand['windows']} cacheable={grand['cacheable_windows']}",
+              file=sys.stderr)
+        print(f"ESTIMATE  input={grand['input_tokens']} "
+              f"cache_write={grand['cache_write_tokens']} "
+              f"cache_read={grand['cache_read_tokens']} output={grand['output_tokens']}",
+              file=sys.stderr)
+        print(f"ESTIMATE  USD={round(grand['usd'], 4)}", file=sys.stderr)
+        return 0
+
+    client, reason = make_client(cfg)
+    if client is None:
+        print(f"[error] cannot contextualize: {reason}", file=sys.stderr)
+        print("        set ANTHROPIC_API_KEY (or run `ant auth login`), or use --estimate",
+              file=sys.stderr)
+        return 1
+
+    totals = {"pinned": 0, "generated": 0, "missing": 0, "errors": 0}
+    usage = _empty_usage()
+    for entry in entries:
+        _, version, _, records, title = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+        out = contexts_for_document(
+            entry.doc_id, records, canonical_url=entry.url, version=version,
+            doc_title=title, source_url=entry.url, contexts_dir=contexts_dir,
+            cfg=cfg, client=client, force=a.force,
+        )
+        for k in ("pinned", "generated", "missing"):
+            totals[k] += out[k]
+        totals["errors"] += len(out["errors"])
+        for k in usage:
+            usage[k] += out["usage"][k]
+        print(f"  {entry.doc_id:42s} pinned={out['pinned']:4d} "
+              f"generated={out['generated']:4d} missing={out['missing']:3d} "
+              f"errors={len(out['errors'])}", file=sys.stderr)
+        for err in out["errors"]:
+            print(f"    [error] chunk {err['chunk_index']}: {err['error']}", file=sys.stderr)
+
+    print(f"contexts: pinned={totals['pinned']} generated={totals['generated']} "
+          f"missing={totals['missing']} errors={totals['errors']}", file=sys.stderr)
+    print(f"usage: calls={usage['calls']} input={usage['input_tokens']} "
+          f"cache_write={usage['cache_creation_input_tokens']} "
+          f"cache_read={usage['cache_read_input_tokens']} output={usage['output_tokens']}",
+          file=sys.stderr)
+    return 0 if not totals["errors"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
