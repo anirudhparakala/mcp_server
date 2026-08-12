@@ -256,6 +256,23 @@ def test_chunks_in_one_window_share_a_byte_identical_cached_prefix(safe_tmp_path
     assert len(reads) == 3
 
 
+def test_make_client_returns_none_when_no_credentials_resolve(monkeypatch):
+    """The SDK constructs happily with api_key=None and only fails at request time,
+    so make_client must probe resolution itself -- otherwise a keyless build would
+    call the API once per chunk and log thousands of failures instead of skipping."""
+    for var in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_BASE_URL"):
+        monkeypatch.delenv(var, raising=False)
+    client, reason = ctx.make_client({"max_retries": 5})
+    assert client is None
+    assert "credential" in reason.lower()
+
+
+def test_make_client_returns_a_client_when_a_key_is_present(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-test-not-a-real-key")
+    client, reason = ctx.make_client({"max_retries": 5})
+    assert client is not None and reason == "ok"
+
+
 def test_force_regenerates_even_when_pins_are_valid(safe_tmp_path):
     recs = _recs("alpha " * 30)
     ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",

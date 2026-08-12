@@ -169,6 +169,19 @@ def make_client(cfg: dict) -> tuple:
         client = anthropic.Anthropic(max_retries=int(cfg.get("max_retries", 5)))
     except Exception as exc:  # noqa: BLE001 -- any credential-resolution failure means "no client"
         return None, f"no Anthropic credentials resolved ({exc})"
+    # Constructing is NOT the credential check: the SDK builds a client with
+    # api_key=None and only raises at request time. Probe its own resolution
+    # offline instead -- auth_headers is empty exactly when nothing resolved,
+    # and is populated for an API key, an auth token, or a stored profile alike.
+    # Without this, a keyless build would call the API once per chunk and log
+    # thousands of failures instead of skipping with one note.
+    try:
+        resolved = bool(client.auth_headers)
+    except Exception:  # noqa: BLE001 -- an unresolvable auth method means "no client"
+        resolved = False
+    if not resolved:
+        return None, ("no Anthropic credentials resolved "
+                      "(set ANTHROPIC_API_KEY or run `ant auth login`)")
     return client, "ok"
 
 
