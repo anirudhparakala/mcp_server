@@ -17,44 +17,69 @@ from ..db import ops
 from ..db.schema import create_all_tables
 from ..models.ids import chunk_id as mk_chunk_id
 from ..models.ids import doc_id as mk_doc_id
-from .chunk import chunk_document
-from .fetch import read_meta
+from . import contextualize as ctxmod
 from .manifest import load_manifest
-from .parse import parse_source
 
 
 def _now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, force=False, reparse=False) -> dict:
+def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, force=False,
+              reparse=False, no_context=False, require_context=False) -> dict:
     entries = load_manifest(manifest_path)
     conn = ops.get_db(ckb_path)
     create_all_tables(conn)
-    stats = {"docs": 0, "chunks": 0, "errors": []}
+    stats = {"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0, "errors": []}
+
+    # Contextual Retrieval is pins-first: valid pins are applied with or without
+    # credentials, and the API is called only for chunks that have none. Locked
+    # Decision 5/6 -- no key and no pins is a NOTE, not a failure.
+    ctx_cfg = cfg.get("contextualize", {})
+    contexts_dir = ctx_cfg.get("contexts_dir", "corpus/contexts")
+    if not ctx_cfg.get("enabled"):
+        client, client_reason = None, "disabled in config (contextualize.enabled)"
+    elif no_context:
+        client, client_reason = None, "skipped (--no-context)"
+    else:
+        client, client_reason = ctxmod.make_client(ctx_cfg)
+
     for e in entries:
         if only and e.doc_id not in only:
             continue
         did = None
         try:
-            meta = read_meta(raw_dir, e.doc_id)
-            if meta is None:
-                raise FileNotFoundError(f"no pin record for {e.doc_id} (run fetch first)")
-            version = meta["resolved_version"]
+            # --force rebuilds the DB from the committed parse; only --reparse re-runs
+            # Docling (which overwrites the committed corpus/parsed/ reproducibility anchor).
+            meta, version, dl_doc, records, title = ctxmod.load_document(
+                e, raw_dir, parsed_dir, cfg, reparse=reparse)
             did = mk_doc_id(e.url, version)
             if not (force or reparse) and _doc_present(conn, did):
                 continue
             _delete_doc(conn, did)  # clear any prior/partial rows -> atomic (re)build
-            raw_path = Path(raw_dir) / meta["raw_filename"]
-            # --force rebuilds the DB from the committed parse; only --reparse re-runs
-            # Docling (which overwrites the committed corpus/parsed/ reproducibility anchor).
-            dl_doc = parse_source(e.doc_id, raw_path, parsed_dir, cfg["parse"], force=reparse)
             _upsert_source_and_doc(conn, e, meta, did, dl_doc)
-            for rec in chunk_document(dl_doc, cfg["chunk"]):
+
+            ctx_out = ctxmod.contexts_for_document(
+                e.doc_id, records, canonical_url=e.url, version=version,
+                doc_title=title, source_url=e.url, contexts_dir=contexts_dir,
+                cfg=ctx_cfg, client=client,
+            )
+            contexts = ctx_out["contexts"]
+            stats["contexts"] += len(contexts)
+            stats["contexts_missing"] += max(0, len(records) - len(contexts))
+            for err in ctx_out["errors"]:
+                stats["errors"].append(
+                    {"doc_id": e.doc_id,
+                     "error": f"context chunk {err['chunk_index']}: {err['error']}"})
+
+            for rec in records:
+                cid = mk_chunk_id(e.url, version, rec.chunk_index)
                 ops.insert_chunk(
-                    conn, chunk_id=mk_chunk_id(e.url, version, rec.chunk_index), doc_id=did,
+                    conn, chunk_id=cid, doc_id=did,
                     chunk_index=rec.chunk_index, text=rec.text, chunk_type=rec.chunk_type,
-                    heading_path=rec.heading_path, table=rec.table, citation_anchors=rec.citation_anchors,
+                    context=contexts.get(cid),
+                    heading_path=rec.heading_path, table=rec.table,
+                    citation_anchors=rec.citation_anchors,
                 )
                 stats["chunks"] += 1
             stats["docs"] += 1
@@ -62,6 +87,16 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
             if did is not None:
                 _delete_doc(conn, did)  # drop partial rows so a later run rebuilds cleanly
             stats["errors"].append({"doc_id": e.doc_id, "error": str(exc)})
+
+    if stats["contexts_missing"]:
+        msg = (f"{stats['contexts_missing']} of {stats['chunks']} chunks have no context "
+               f"({client_reason}). The CKB is usable, but Contextual Retrieval improves recall "
+               f"~49%; set ANTHROPIC_API_KEY (or run `ant auth login`) and rebuild with --force.")
+        if require_context:
+            stats["errors"].append({"doc_id": "*", "error": f"--require-context: {msg}"})
+        else:
+            print(f"[note] {msg}", file=sys.stderr)
+
     conn.execute(
         "INSERT INTO ingest_runs (ingest_run_id, started_at, finished_at, status, stats_json) "
         "VALUES (?, ?, ?, ?, ?)",
@@ -110,12 +145,18 @@ def main(argv=None) -> int:
     p.add_argument("--force", action="store_true", help="rebuild the DB from the committed parse")
     p.add_argument("--reparse", action="store_true",
                    help="re-run Docling and OVERWRITE the committed parse (implies --force)")
+    p.add_argument("--no-context", action="store_true",
+                   help="skip Contextual Retrieval generation (pinned contexts are still applied)")
+    p.add_argument("--require-context", action="store_true",
+                   help="fail the build if any chunk ends up without a context")
     a = p.parse_args(argv)
     Path(a.ckb).parent.mkdir(parents=True, exist_ok=True)
     cfg = load_corpus_config(a.config).raw
     stats = build_ckb(a.manifest, a.raw_dir, a.parsed_dir, a.ckb, cfg,
-                      only=set(a.only) if a.only else None, force=a.force, reparse=a.reparse)
-    print(f"docs={stats['docs']} chunks={stats['chunks']} errors={len(stats['errors'])}", file=sys.stderr)
+                      only=set(a.only) if a.only else None, force=a.force, reparse=a.reparse,
+                      no_context=a.no_context, require_context=a.require_context)
+    print(f"docs={stats['docs']} chunks={stats['chunks']} contexts={stats['contexts']} "
+          f"errors={len(stats['errors'])}", file=sys.stderr)
     for err in stats["errors"]:
         print(f"  [error] {err['doc_id']}: {err['error']}", file=sys.stderr)
     return 0 if not stats["errors"] else 1

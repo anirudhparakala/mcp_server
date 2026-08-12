@@ -58,7 +58,11 @@ def test_build_ckb_force_rebuilds_existing_doc(safe_tmp_path):
 def test_build_ckb_cleans_partial_state_on_chunk_failure(safe_tmp_path, monkeypatch):
     manifest, raw = _mini_corpus(safe_tmp_path)
     ckb = safe_tmp_path / "ckb.sqlite"; parsed = safe_tmp_path / "parsed"
-    real = build.chunk_document
+    # M4 moved parse+chunk behind contextualize.load_document, so the seam that
+    # fails a doc AFTER its docs row is inserted (the case _delete_doc exists for)
+    # is now the first insert_chunk. Failing earlier would never create a partial
+    # row and so would not exercise the cleanup this test is about.
+    real = build.ops.insert_chunk
     calls = {"n": 0}
 
     def flaky(*a, **k):
@@ -67,7 +71,7 @@ def test_build_ckb_cleans_partial_state_on_chunk_failure(safe_tmp_path, monkeypa
             raise RuntimeError("boom")   # fail the first doc mid-build
         return real(*a, **k)
 
-    monkeypatch.setattr(build, "chunk_document", flaky)
+    monkeypatch.setattr(build.ops, "insert_chunk", flaky)
     stats = build.build_ckb(manifest, raw, parsed, ckb, CFG)
     assert stats["errors"] and stats["docs"] == 0
     conn = ops.get_db(ckb); assert ops.count_rows(conn, "docs") == 0; conn.close()  # partial row cleaned
@@ -75,3 +79,77 @@ def test_build_ckb_cleans_partial_state_on_chunk_failure(safe_tmp_path, monkeypa
     stats2 = build.build_ckb(manifest, raw, parsed, ckb, CFG)
     assert stats2["docs"] == 1 and not stats2["errors"]
     conn2 = ops.get_db(ckb); assert ops.count_rows(conn2, "docs") == 1; conn2.close()
+
+
+CTX_CFG = {
+    "enabled": True, "model": "claude-haiku-4-5", "temperature": 0, "max_tokens": 150,
+    "cache_ttl": "1h", "window_target_tokens": 6000, "window_max_tokens": 8000,
+    "min_cacheable_tokens": 4096, "chars_per_token": 4, "max_retries": 5,
+    "price_in_per_mtok": 1.0, "price_out_per_mtok": 5.0,
+    "cache_write_multiplier": 2.0, "cache_read_multiplier": 0.1,
+}
+
+
+def test_build_applies_pinned_contexts_without_any_client(safe_tmp_path, monkeypatch):
+    from test_contextualize import _FakeClient
+
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    contexts_dir = safe_tmp_path / "contexts"
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(contexts_dir)}}
+
+    # First build with a fake client writes the pins...
+    monkeypatch.setattr(ctx, "make_client", lambda c: (_FakeClient(), "ok"))
+    build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "a.sqlite", cfg)
+
+    # ...then a build with NO credentials must still populate context from the pins.
+    monkeypatch.setattr(ctx, "make_client", lambda c: (None, "no credentials"))
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "b.sqlite", cfg)
+    assert stats["contexts"] == stats["chunks"] and stats["contexts_missing"] == 0
+    conn = ops.get_db(safe_tmp_path / "b.sqlite")
+    rows = ops.get_chunks_for_doc(conn, mk_doc_id("https://ex/tiny", "v1"))
+    conn.close()
+    assert rows and all((r["context"] or "").strip() for r in rows)
+
+
+def test_build_without_key_or_pins_succeeds_with_empty_context(safe_tmp_path, monkeypatch, capsys):
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    monkeypatch.setattr(ctx, "make_client", lambda c: (None, "no credentials"))
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "ckb.sqlite", cfg)
+    assert stats["docs"] == 1 and not stats["errors"]          # build still SUCCEEDS
+    assert stats["contexts"] == 0 and stats["contexts_missing"] == stats["chunks"]
+    assert "[note]" in capsys.readouterr().err                 # one loud note, not an error
+    conn = ops.get_db(safe_tmp_path / "ckb.sqlite")
+    rows = ops.get_chunks_for_doc(conn, mk_doc_id("https://ex/tiny", "v1"))
+    conn.close()
+    assert rows and all(r["context"] is None for r in rows)
+
+
+def test_build_no_context_flag_skips_generation_entirely(safe_tmp_path, monkeypatch):
+    from test_contextualize import _FakeClient
+
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    client = _FakeClient()
+    monkeypatch.setattr(ctx, "make_client", lambda c: (client, "ok"))
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "ckb.sqlite",
+                            cfg, no_context=True)
+    assert client.messages.calls == []
+    assert stats["contexts"] == 0
+
+
+def test_build_require_context_reports_the_shortfall(safe_tmp_path, monkeypatch):
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    monkeypatch.setattr(ctx, "make_client", lambda c: (None, "no credentials"))
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "ckb.sqlite",
+                            cfg, require_context=True)
+    assert any("context" in e["error"].lower() for e in stats["errors"])
