@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from ..models.ids import chunk_id as mk_chunk_id
+from .context_windows import build_windows
 
 PROMPT_VERSION = 1  # bump to invalidate every pinned context
 
@@ -71,3 +72,188 @@ def valid_pinned(record: dict, records, *, canonical_url: str, version: str,
             continue
         out[cid] = context
     return out
+
+
+SYSTEM_PROMPT = (
+    "You write short retrieval contexts for a search index. You are given an "
+    "excerpt from a source document and one chunk taken from that excerpt. Write "
+    "1-3 sentences (under 80 words) that situate the chunk within the document so "
+    "it can be understood and retrieved on its own: name the document, the section "
+    "or topic it belongs to, and any entity, definition, section number, or "
+    "cross-reference the chunk depends on. Use only information present in the "
+    "excerpt -- never add outside knowledge and never speculate. Respond with the "
+    "context only: no preamble, no quotes, no markdown, no bullet points."
+)
+
+TASK_INSTRUCTION = (
+    "Give a short context that situates this chunk within the document above, to "
+    "improve search retrieval of the chunk. Answer only with the context."
+)
+
+
+def build_doc_header(doc_title: str, source_url: str) -> str:
+    return f"# {doc_title}\nSource: {source_url}"
+
+
+def build_messages(doc_header: str, window_text: str, chunk_text: str, *, cache_ttl: str) -> list:
+    """One user message: [cached window prefix, volatile chunk suffix].
+
+    The cache_control breakpoint goes on the FIRST block only. Render order is
+    tools -> system -> messages, and caching is a prefix match, so this one
+    breakpoint caches the system prompt and the window together; every chunk in
+    the same window reproduces those bytes exactly and reads the cache.
+    """
+    return [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": f"{doc_header}\n\n<document_excerpt>\n{window_text}\n</document_excerpt>",
+                    "cache_control": {"type": "ephemeral", "ttl": cache_ttl},
+                },
+                {
+                    "type": "text",
+                    "text": f"<chunk>\n{chunk_text}\n</chunk>\n\n{TASK_INSTRUCTION}",
+                },
+            ],
+        }
+    ]
+
+
+def _usage_dict(usage) -> dict:
+    return {
+        "input_tokens": getattr(usage, "input_tokens", 0) or 0,
+        "output_tokens": getattr(usage, "output_tokens", 0) or 0,
+        "cache_creation_input_tokens": getattr(usage, "cache_creation_input_tokens", 0) or 0,
+        "cache_read_input_tokens": getattr(usage, "cache_read_input_tokens", 0) or 0,
+    }
+
+
+class ContextGenerator:
+    """The only place that calls the Anthropic API."""
+
+    def __init__(self, client, cfg: dict):
+        self._client = client
+        self._model = cfg.get("model", "claude-haiku-4-5")
+        self._max_tokens = int(cfg.get("max_tokens", 150))
+        self._temperature = cfg.get("temperature", 0)
+        self._cache_ttl = cfg.get("cache_ttl", "1h")
+
+    def generate(self, doc_header: str, window_text: str, chunk_text: str) -> tuple:
+        msg = self._client.messages.create(
+            model=self._model,
+            max_tokens=self._max_tokens,
+            temperature=self._temperature,
+            system=[{"type": "text", "text": SYSTEM_PROMPT}],
+            messages=build_messages(doc_header, window_text, chunk_text, cache_ttl=self._cache_ttl),
+        )
+        text = "".join(
+            b.text for b in msg.content if getattr(b, "type", None) == "text"
+        ).strip()
+        return text, _usage_dict(msg.usage)
+
+
+def make_client(cfg: dict) -> tuple:
+    """(client, reason). Returns (None, reason) when the SDK or credentials are absent.
+
+    Constructing the client is the credential check: the SDK resolves
+    ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, or an `ant auth login` profile, and
+    raises when it can resolve none of them.
+    """
+    try:
+        import anthropic  # lazy: [corpus] extra only; the pinned-context path must work without it
+    except ImportError:
+        return None, "the anthropic SDK is not installed (pip install -e \".[corpus]\")"
+    try:
+        client = anthropic.Anthropic(max_retries=int(cfg.get("max_retries", 5)))
+    except Exception as exc:  # noqa: BLE001 -- any credential-resolution failure means "no client"
+        return None, f"no Anthropic credentials resolved ({exc})"
+    return client, "ok"
+
+
+def _empty_usage() -> dict:
+    return {"input_tokens": 0, "output_tokens": 0,
+            "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "calls": 0}
+
+
+def contexts_for_document(slug: str, records, *, canonical_url: str, version: str,
+                          doc_title: str, source_url: str, contexts_dir, cfg: dict,
+                          client=None, force=False, log=None) -> dict:
+    """Pinned-first contexts for one document; generates only what is missing.
+
+    With client=None this is fully offline: valid pins are returned, missing
+    chunks are counted, and nothing fails -- that is the no-API-key build path.
+    """
+    model = cfg.get("model", "claude-haiku-4-5")
+    stats = {"contexts": {}, "pinned": 0, "generated": 0, "missing": 0,
+             "errors": [], "usage": _empty_usage()}
+    if not records:
+        return stats
+
+    pinned = {} if force else valid_pinned(
+        load_pin_file(contexts_dir, slug), records,
+        canonical_url=canonical_url, version=version,
+        model=model, prompt_version=PROMPT_VERSION,
+    )
+    stats["contexts"].update(pinned)
+    stats["pinned"] = len(pinned)
+
+    windows = build_windows(records, cfg)
+    by_index = {r.chunk_index: r for r in records}
+    doc_header = build_doc_header(doc_title, source_url)
+    generated = {}
+
+    for window in windows:
+        todo = [
+            i for i in window.chunk_indices
+            if mk_chunk_id(canonical_url, version, i) not in stats["contexts"]
+        ]
+        if not todo:
+            continue
+        if client is None:
+            stats["missing"] += len(todo)
+            continue
+        gen = ContextGenerator(client, cfg)
+        # Sequential on purpose: the first call in a window writes the cache and the
+        # rest read it. Concurrent calls sharing a prefix would all miss the cache.
+        for idx in todo:
+            cid = mk_chunk_id(canonical_url, version, idx)
+            try:
+                context, usage = gen.generate(doc_header, window.text, by_index[idx].text)
+            except Exception as exc:  # noqa: BLE001 -- one bad chunk must not abort the run
+                stats["errors"].append({"chunk_index": idx, "error": f"{type(exc).__name__}: {exc}"})
+                stats["missing"] += 1
+                continue
+            for k in ("input_tokens", "output_tokens",
+                      "cache_creation_input_tokens", "cache_read_input_tokens"):
+                stats["usage"][k] += usage[k]
+            stats["usage"]["calls"] += 1
+            if not context:
+                stats["errors"].append({"chunk_index": idx, "error": "empty context returned"})
+                stats["missing"] += 1
+                continue
+            stats["contexts"][cid] = context
+            generated[cid] = {
+                "context": context,
+                "text_sha256": text_sha256(by_index[idx].text),
+                "window_index": window.window_index,
+            }
+            stats["generated"] += 1
+            if log is not None:
+                log(f"  [{slug}] chunk {idx} w{window.window_index} "
+                    f"cache_read={usage['cache_read_input_tokens']}")
+
+    if generated:
+        record = {} if force else load_pin_file(contexts_dir, slug)
+        merged = dict(record.get("contexts") or {}) if record.get("model") == model \
+            and record.get("prompt_version") == PROMPT_VERSION else {}
+        merged.update(generated)
+        save_pin_file(contexts_dir, slug, {
+            "doc_id": slug,
+            "model": model,
+            "prompt_version": PROMPT_VERSION,
+            "generated_at": _now(),
+            "contexts": merged,
+        })
+    return stats
