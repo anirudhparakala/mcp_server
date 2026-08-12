@@ -154,6 +154,24 @@ class ContextGenerator:
         return text, _usage_dict(msg.usage)
 
 
+def _credentials_resolved(client) -> bool:
+    """True when the SDK resolved SOME authentication method for this client.
+
+    Static credentials (ANTHROPIC_API_KEY / ANTHROPIC_AUTH_TOKEN) populate
+    auth_headers; a stored `ant auth login` profile, OAuth, or workload-identity
+    federation instead arrive as `credentials`/`custom_auth` and leave
+    auth_headers EMPTY -- checking only auth_headers would reject a correctly
+    authenticated user. Offline: touches no network.
+    """
+    try:
+        if client.auth_headers:
+            return True
+    except Exception:  # noqa: BLE001 -- an unresolvable auth method means "no credentials"
+        return False
+    return (getattr(client, "credentials", None) is not None
+            or getattr(client, "custom_auth", None) is not None)
+
+
 def make_client(cfg: dict) -> tuple:
     """(client, reason). Returns (None, reason) when the SDK or credentials are absent.
 
@@ -171,15 +189,9 @@ def make_client(cfg: dict) -> tuple:
         return None, f"no Anthropic credentials resolved ({exc})"
     # Constructing is NOT the credential check: the SDK builds a client with
     # api_key=None and only raises at request time. Probe its own resolution
-    # offline instead -- auth_headers is empty exactly when nothing resolved,
-    # and is populated for an API key, an auth token, or a stored profile alike.
-    # Without this, a keyless build would call the API once per chunk and log
-    # thousands of failures instead of skipping with one note.
-    try:
-        resolved = bool(client.auth_headers)
-    except Exception:  # noqa: BLE001 -- an unresolvable auth method means "no client"
-        resolved = False
-    if not resolved:
+    # offline instead. Without this, a keyless build would call the API once per
+    # chunk and log thousands of failures instead of skipping with one note.
+    if not _credentials_resolved(client):
         return None, ("no Anthropic credentials resolved "
                       "(set ANTHROPIC_API_KEY or run `ant auth login`)")
     return client, "ok"
@@ -258,7 +270,11 @@ def contexts_for_document(slug: str, records, *, canonical_url: str, version: st
                     f"cache_read={usage['cache_read_input_tokens']}")
 
     if generated:
-        record = {} if force else load_pin_file(contexts_dir, slug)
+        # Always merge onto what is already pinned, force included: force means
+        # "regenerate rather than reuse", not "discard pins for chunks whose
+        # regeneration failed". Loading unconditionally keeps a partially-failed
+        # force run from shrinking the pin file. Entries from THIS run win.
+        record = load_pin_file(contexts_dir, slug)
         merged = dict(record.get("contexts") or {}) if record.get("model") == model \
             and record.get("prompt_version") == PROMPT_VERSION else {}
         merged.update(generated)

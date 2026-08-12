@@ -244,7 +244,9 @@ def test_contexts_for_document_resumes_after_a_failure(safe_tmp_path):
 
 
 def test_chunks_in_one_window_share_a_byte_identical_cached_prefix(safe_tmp_path):
-    recs = _recs(*["body " * 20 for _ in range(4)])
+    # Chunk texts must DIFFER, otherwise a regression that leaks the chunk into
+    # the cached first block would still produce identical prefixes and pass.
+    recs = _recs(*[f"body {i} " + "filler " * 20 for i in range(4)])
     client = _FakeClient()
     ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
                               source_url=URL, contexts_dir=safe_tmp_path,
@@ -271,6 +273,40 @@ def test_make_client_returns_a_client_when_a_key_is_present(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-test-not-a-real-key")
     client, reason = ctx.make_client({"max_retries": 5})
     assert client is not None and reason == "ok"
+
+
+def test_credentials_resolved_accepts_every_sdk_auth_shape(monkeypatch):
+    """A stored `ant auth login` profile arrives as `credentials`, NOT as
+    auth_headers -- checking auth_headers alone would reject an authenticated user."""
+    import anthropic
+
+    for var in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"):
+        monkeypatch.delenv(var, raising=False)
+    assert ctx._credentials_resolved(anthropic.Anthropic()) is False
+    assert ctx._credentials_resolved(anthropic.Anthropic(api_key="sk-ant-fake")) is True
+    assert ctx._credentials_resolved(anthropic.Anthropic(auth_token="tok")) is True
+    profile_like = anthropic.Anthropic(credentials=anthropic.StaticToken("x"))
+    assert profile_like.auth_headers == {}          # the trap this guards against
+    assert ctx._credentials_resolved(profile_like) is True
+
+
+def test_force_does_not_drop_pins_for_chunks_that_fail_to_regenerate(safe_tmp_path):
+    """force means 'regenerate rather than reuse', not 'lose the pin when the
+    regeneration fails' -- a partially-failed force run must not shrink the file."""
+    recs = _recs("alpha " * 30, "beta " * 30, "gamma " * 30)
+    ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
+                              source_url=URL, contexts_dir=safe_tmp_path, cfg=CFG,
+                              client=_FakeClient())
+    assert len(ctx.load_pin_file(safe_tmp_path, "slug")["contexts"]) == 3
+
+    flaky = _FakeClient(raise_on={1})               # chunk 1 fails during the force run
+    out = ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
+                                    source_url=URL, contexts_dir=safe_tmp_path, cfg=CFG,
+                                    client=flaky, force=True)
+    assert out["generated"] == 2 and len(out["errors"]) == 1
+    record = ctx.load_pin_file(safe_tmp_path, "slug")
+    assert len(record["contexts"]) == 3             # chunk 1's earlier pin survived
+    assert record["contexts"][mk_chunk_id(URL, VER, 1)]["context"]
 
 
 def test_force_regenerates_even_when_pins_are_valid(safe_tmp_path):
