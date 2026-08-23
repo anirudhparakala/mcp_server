@@ -14,6 +14,7 @@ non-determinism cannot affect IDs (ingest design spec section 5).
 import argparse
 import hashlib
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -56,9 +57,19 @@ def load_pin_file(contexts_dir, slug: str) -> dict:
 
 
 def save_pin_file(contexts_dir, slug: str, record: dict) -> Path:
+    """Write the pin file atomically (tmp + os.replace).
+
+    Pins are now flushed once per window rather than once per document, which
+    multiplies the number of writes during the long generation pass; a hard kill
+    landing inside a plain write would leave a truncated file and forfeit that
+    document's paid-for contexts. os.replace is atomic on the same volume, so a
+    reader sees either the old file or the new one, never a half-written one.
+    """
     p = contexts_path_for(contexts_dir, slug)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(record, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    tmp = p.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(record, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    os.replace(tmp, p)
     return p
 
 
@@ -320,7 +331,6 @@ def _generate(windows, by_index, doc_header, generated, stats, *, slug, canonica
                 log(f"  [{slug}] chunk {idx} w{window.window_index} "
                     f"cache_read={usage['cache_read_input_tokens']}")
         flush()   # per window: never lose more than one window's spend
-    return stats
 
 
 def estimate_document(records, cfg: dict, *, doc_header_len: int = 64) -> dict:
