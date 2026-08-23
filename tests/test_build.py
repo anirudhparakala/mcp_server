@@ -153,3 +153,68 @@ def test_build_require_context_reports_the_shortfall(safe_tmp_path, monkeypatch)
     stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", safe_tmp_path / "ckb.sqlite",
                             cfg, require_context=True)
     assert any("context" in e["error"].lower() for e in stats["errors"])
+
+
+def test_build_counters_exclude_a_document_rolled_back_mid_insert(safe_tmp_path, monkeypatch, capsys):
+    """A doc that fails PARTWAY through its inserts is rolled back, so none of its
+    chunks or contexts may remain in the totals -- otherwise the build reports
+    nonsense like '2 of 0 chunks have no context'."""
+    from test_contextualize import _FakeClient
+
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    monkeypatch.setattr(ctx, "make_client", lambda c: (_FakeClient(), "ok"))
+
+    real = build.ops.insert_chunk
+    calls = {"n": 0}
+
+    def flaky(*a, **k):
+        calls["n"] += 1
+        if calls["n"] == 2:          # fixture yields 2 chunks; fail the SECOND
+            raise RuntimeError("boom")
+        return real(*a, **k)
+
+    monkeypatch.setattr(build.ops, "insert_chunk", flaky)
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed",
+                            safe_tmp_path / "ckb.sqlite", cfg)
+
+    assert stats["docs"] == 0 and stats["errors"]        # doc failed and was rolled back
+    assert stats["chunks"] == 0                          # no partially-inserted chunks counted
+    assert stats["contexts"] == 0                        # ... and none of its contexts either
+    assert stats["contexts_missing"] == 0
+    assert "of 0 chunks" not in capsys.readouterr().err  # the incoherent note never appears
+    conn = ops.get_db(safe_tmp_path / "ckb.sqlite")
+    assert ops.count_rows(conn, "chunks") == 0 and ops.count_rows(conn, "docs") == 0
+    conn.close()
+
+
+def test_build_note_never_counts_a_rolled_back_document(safe_tmp_path, monkeypatch, capsys):
+    """The keyless variant of the rollback case: without a client every chunk is
+    'missing' a context, so a rolled-back doc used to produce the incoherent
+    '2 of 0 chunks have no context' note."""
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    monkeypatch.setattr(ctx, "make_client", lambda c: (None, "no credentials"))
+
+    real = build.ops.insert_chunk
+    calls = {"n": 0}
+
+    def flaky(*a, **k):
+        calls["n"] += 1
+        if calls["n"] == 2:
+            raise RuntimeError("boom")
+        return real(*a, **k)
+
+    monkeypatch.setattr(build.ops, "insert_chunk", flaky)
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed",
+                            safe_tmp_path / "ckb.sqlite", cfg)
+
+    assert stats["docs"] == 0 and stats["chunks"] == 0
+    assert stats["contexts_missing"] == 0        # the rolled-back doc contributes nothing
+    err = capsys.readouterr().err
+    assert "of 0 chunks" not in err              # the incoherent note must not appear
+    assert "[note]" not in err                   # nothing was built, so nothing to note

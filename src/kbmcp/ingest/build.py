@@ -65,13 +65,13 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
                 cfg=ctx_cfg, client=client,
             )
             contexts = ctx_out["contexts"]
-            stats["contexts"] += len(contexts)
-            stats["contexts_missing"] += max(0, len(records) - len(contexts))
-            for err in ctx_out["errors"]:
-                stats["errors"].append(
-                    {"doc_id": e.doc_id,
-                     "error": f"context chunk {err['chunk_index']}: {err['error']}"})
 
+            # Accumulate this document's numbers LOCALLY and fold them into stats
+            # only once every row is in. An insert can raise partway through, and
+            # the handler below rolls the whole document back -- counting as we go
+            # would leave a rolled-back doc's chunks and contexts in the totals
+            # (e.g. reporting "2 of 0 chunks have no context").
+            doc_chunks = 0
             for rec in records:
                 cid = mk_chunk_id(e.url, version, rec.chunk_index)
                 ops.insert_chunk(
@@ -81,7 +81,15 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
                     heading_path=rec.heading_path, table=rec.table,
                     citation_anchors=rec.citation_anchors,
                 )
-                stats["chunks"] += 1
+                doc_chunks += 1
+
+            stats["chunks"] += doc_chunks
+            stats["contexts"] += len(contexts)
+            stats["contexts_missing"] += max(0, len(records) - len(contexts))
+            for err in ctx_out["errors"]:
+                stats["errors"].append(
+                    {"doc_id": e.doc_id,
+                     "error": f"context chunk {err['chunk_index']}: {err['error']}"})
             stats["docs"] += 1
         except Exception as exc:  # noqa: BLE001 — one bad source must not abort the build
             if did is not None:
