@@ -317,3 +317,77 @@ def test_force_regenerates_even_when_pins_are_valid(safe_tmp_path):
     ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
                               source_url=URL, contexts_dir=safe_tmp_path, cfg=CFG, client=again, force=True)
     assert len(again.messages.calls) == 1
+
+
+def test_contexts_are_flushed_per_window_not_only_at_the_end(safe_tmp_path):
+    """Pins must hit disk as each window completes, not only when the document does.
+
+    The finally-flush already covers interrupts and exceptions, so this asserts the
+    stronger property it cannot: MID-run, once window 0 is done, its contexts are
+    already durable. That is what limits the loss to one window if the process is
+    hard-killed (no finally runs) during the ~90-minute live pass.
+    """
+    from kbmcp.ingest.context_windows import build_windows
+
+    recs = _recs(*[f"chunk {i} " + "filler " * 40 for i in range(6)])
+    cfg = {**CFG, "window_target_tokens": 200, "window_max_tokens": 240}
+    windows = build_windows(recs, cfg)
+    assert len(windows) >= 2, "test needs at least two windows to be meaningful"
+    first_window_size = len(windows[0].chunk_indices)
+
+    seen = {}
+
+    class _InspectsDiskMidRun:
+        def __init__(self):
+            self.messages = self
+            self.n = 0
+
+        def create(self, **kwargs):
+            self.n += 1
+            # at the first call of window 1, window 0 must already be on disk
+            if self.n == first_window_size + 1:
+                seen["pinned_at_window_1"] = len(
+                    ctx.load_pin_file(safe_tmp_path, "slug").get("contexts", {}))
+            return _FakeMessage(f"context {self.n}", _FakeUsage())
+
+    ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
+                              source_url=URL, contexts_dir=safe_tmp_path, cfg=cfg,
+                              client=_InspectsDiskMidRun())
+
+    assert seen["pinned_at_window_1"] == first_window_size
+    assert len(ctx.load_pin_file(safe_tmp_path, "slug")["contexts"]) == len(recs)
+
+
+def test_interrupt_mid_document_keeps_contexts_already_paid_for(safe_tmp_path):
+    """The finally-flush: a Ctrl-C must not throw away work already billed."""
+    recs = _recs(*[f"chunk {i} " + "filler " * 40 for i in range(6)])
+    cfg = {**CFG, "window_target_tokens": 10_000, "window_max_tokens": 10_000}  # ONE window
+
+    class _DiesOnFourth:
+        def __init__(self):
+            self.messages = self
+            self.n = 0
+
+        def create(self, **kwargs):
+            self.n += 1
+            if self.n == 4:
+                raise KeyboardInterrupt("ctrl-c")
+            return _FakeMessage(f"context {self.n}", _FakeUsage())
+
+    try:
+        ctx.contexts_for_document("slug", recs, canonical_url=URL, version=VER, doc_title="T",
+                                  source_url=URL, contexts_dir=safe_tmp_path, cfg=cfg,
+                                  client=_DiesOnFourth())
+    except KeyboardInterrupt:
+        pass
+
+    record = ctx.load_pin_file(safe_tmp_path, "slug")
+    assert len(record.get("contexts", {})) == 3     # the 3 already paid for survived
+
+
+def test_load_pin_file_degrades_on_a_corrupt_file(safe_tmp_path):
+    ctx.contexts_path_for(safe_tmp_path, "slug").write_text('{"contexts": {trunca',
+                                                            encoding="utf-8")
+    assert ctx.load_pin_file(safe_tmp_path, "slug") == {}   # regenerate, do not crash
+    ctx.contexts_path_for(safe_tmp_path, "arr").write_text("[1,2,3]", encoding="utf-8")
+    assert ctx.load_pin_file(safe_tmp_path, "arr") == {}    # non-object JSON too

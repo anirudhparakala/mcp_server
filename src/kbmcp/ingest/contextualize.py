@@ -38,10 +38,21 @@ def contexts_path_for(contexts_dir, slug: str) -> Path:
 
 
 def load_pin_file(contexts_dir, slug: str) -> dict:
+    """The pinned record for one document, or {} when absent or unreadable.
+
+    A corrupt or truncated pin file degrades to "no pins" -- the contexts are
+    simply regenerated -- rather than raising and taking the whole document out
+    of the build. Consistent with valid_pinned, which drops every other malformed
+    shape instead of failing.
+    """
     p = contexts_path_for(contexts_dir, slug)
     if not p.exists():
         return {}
-    return json.loads(p.read_text(encoding="utf-8"))
+    try:
+        record = json.loads(p.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError, OSError):
+        return {}
+    return record if isinstance(record, dict) else {}
 
 
 def save_pin_file(contexts_dir, slug: str, record: dict) -> Path:
@@ -178,9 +189,9 @@ def _credentials_resolved(client) -> bool:
 def make_client(cfg: dict) -> tuple:
     """(client, reason). Returns (None, reason) when the SDK or credentials are absent.
 
-    Constructing the client is the credential check: the SDK resolves
-    ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, or an `ant auth login` profile, and
-    raises when it can resolve none of them.
+    Constructing the client is NOT the credential check -- the SDK happily builds
+    one with api_key=None and only raises at request time (verified on anthropic
+    0.121.0). Resolution is probed separately by _credentials_resolved.
     """
     try:
         import anthropic  # lazy: [corpus] extra only; the pinned-context path must work without it
@@ -232,6 +243,43 @@ def contexts_for_document(slug: str, records, *, canonical_url: str, version: st
     doc_header = build_doc_header(doc_title, source_url)
     generated = {}
 
+    def _flush() -> None:
+        """Persist what has been generated so far.
+
+        Called after every window and again from a finally, so an interrupt or a
+        crash mid-document keeps the contexts already paid for. Flushing only at
+        the end meant a Ctrl-C inside the largest document (376 chunks, ~13% of
+        the run) threw all of them away and re-paid on the next attempt.
+
+        Always merges onto what is already pinned, force included: force means
+        "regenerate rather than reuse", not "discard pins for chunks whose
+        regeneration failed". Entries from THIS run win.
+        """
+        if not generated:
+            return
+        record = load_pin_file(contexts_dir, slug)
+        merged = dict(record.get("contexts") or {}) if record.get("model") == model \
+            and record.get("prompt_version") == PROMPT_VERSION else {}
+        merged.update(generated)
+        save_pin_file(contexts_dir, slug, {
+            "doc_id": slug,
+            "model": model,
+            "prompt_version": PROMPT_VERSION,
+            "generated_at": _now(),
+            "contexts": merged,
+        })
+
+    try:
+        _generate(windows, by_index, doc_header, generated, stats,
+                  slug=slug, canonical_url=canonical_url, version=version,
+                  cfg=cfg, client=client, log=log, flush=_flush)
+    finally:
+        _flush()
+    return stats
+
+
+def _generate(windows, by_index, doc_header, generated, stats, *, slug, canonical_url,
+              version, cfg, client, log, flush) -> None:
     for window in windows:
         todo = [
             i for i in window.chunk_indices
@@ -271,23 +319,7 @@ def contexts_for_document(slug: str, records, *, canonical_url: str, version: st
             if log is not None:
                 log(f"  [{slug}] chunk {idx} w{window.window_index} "
                     f"cache_read={usage['cache_read_input_tokens']}")
-
-    if generated:
-        # Always merge onto what is already pinned, force included: force means
-        # "regenerate rather than reuse", not "discard pins for chunks whose
-        # regeneration failed". Loading unconditionally keeps a partially-failed
-        # force run from shrinking the pin file. Entries from THIS run win.
-        record = load_pin_file(contexts_dir, slug)
-        merged = dict(record.get("contexts") or {}) if record.get("model") == model \
-            and record.get("prompt_version") == PROMPT_VERSION else {}
-        merged.update(generated)
-        save_pin_file(contexts_dir, slug, {
-            "doc_id": slug,
-            "model": model,
-            "prompt_version": PROMPT_VERSION,
-            "generated_at": _now(),
-            "contexts": merged,
-        })
+        flush()   # per window: never lose more than one window's spend
     return stats
 
 
@@ -416,8 +448,15 @@ def main(argv=None) -> int:
     if a.estimate:
         grand = {"windows": 0, "chunks": 0, "cacheable_windows": 0, "input_tokens": 0,
                  "cache_write_tokens": 0, "cache_read_tokens": 0, "output_tokens": 0, "usd": 0.0}
+        failed = 0
         for entry in entries:
-            _, _, _, records, _ = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+            try:
+                _, _, _, records, _ = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+            except Exception as exc:  # noqa: BLE001 -- one unloadable doc must not abort the pass
+                print(f"  {entry.doc_id:42s} [skipped] {type(exc).__name__}: {exc}",
+                      file=sys.stderr)
+                failed += 1
+                continue
             est = estimate_document(records, cfg)
             for k in grand:
                 grand[k] += est[k]
@@ -430,7 +469,9 @@ def main(argv=None) -> int:
               f"cache_write={grand['cache_write_tokens']} "
               f"cache_read={grand['cache_read_tokens']} output={grand['output_tokens']}",
               file=sys.stderr)
-        print(f"ESTIMATE  USD={round(grand['usd'], 4)}", file=sys.stderr)
+        print(f"ESTIMATE  USD={round(grand['usd'], 4)}"
+              + (f"  ({failed} doc(s) skipped — estimate is incomplete)" if failed else ""),
+              file=sys.stderr)
         print("ESTIMATE  NOTE: this is a floor, not a ceiling — it prices each window as one "
               "uninterrupted run. Resuming after the cache TTL expires (or splitting the run "
               "with --only) pays an extra unamortized cache write per partially-done window, "
@@ -447,7 +488,12 @@ def main(argv=None) -> int:
     totals = {"pinned": 0, "generated": 0, "missing": 0, "errors": 0}
     usage = _empty_usage()
     for entry in entries:
-        _, version, _, records, title = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+        try:
+            _, version, _, records, title = load_document(entry, a.raw_dir, a.parsed_dir, full.raw)
+        except Exception as exc:  # noqa: BLE001 -- never abort a paid run over one bad document
+            print(f"  {entry.doc_id:42s} [error] {type(exc).__name__}: {exc}", file=sys.stderr)
+            totals["errors"] += 1
+            continue
         out = contexts_for_document(
             entry.doc_id, records, canonical_url=entry.url, version=version,
             doc_title=title, source_url=entry.url, contexts_dir=contexts_dir,

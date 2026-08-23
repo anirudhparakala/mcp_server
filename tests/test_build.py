@@ -218,3 +218,64 @@ def test_build_note_never_counts_a_rolled_back_document(safe_tmp_path, monkeypat
     err = capsys.readouterr().err
     assert "of 0 chunks" not in err              # the incoherent note must not appear
     assert "[note]" not in err                   # nothing was built, so nothing to note
+
+
+class _Interrupting:
+    """Simulates Ctrl-C during the long contextualization pass."""
+
+    def __init__(self):
+        self.messages = self
+
+    def create(self, **kwargs):
+        raise KeyboardInterrupt("user pressed ctrl-c mid-run")
+
+
+def test_interrupt_during_contextualization_leaves_no_half_built_doc(safe_tmp_path, monkeypatch):
+    """A KeyboardInterrupt is NOT caught by `except Exception`, so if the docs row
+    were written before contextualization it would survive with zero chunks and
+    every later non-force build would skip that document forever."""
+    from kbmcp.ingest import contextualize as ctx
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    cfg = {**CFG, "contextualize": {**CTX_CFG, "contexts_dir": str(safe_tmp_path / "contexts")}}
+    ckb = safe_tmp_path / "ckb.sqlite"
+
+    monkeypatch.setattr(ctx, "make_client", lambda c: (_Interrupting(), "ok"))
+    try:
+        build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, cfg)
+    except KeyboardInterrupt:
+        pass                                        # propagates, as it should
+
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 0        # nothing half-built
+    assert ops.count_rows(conn, "chunks") == 0
+    conn.close()                                    # handle was released despite the interrupt
+
+    # the interrupted document must be REBUILDABLE, not skipped forever
+    monkeypatch.setattr(ctx, "make_client", lambda c: (None, "no credentials"))
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, cfg)
+    assert stats["docs"] == 1 and stats["chunks"] >= 1
+
+
+def test_doc_with_zero_chunks_is_not_treated_as_already_built(safe_tmp_path):
+    """Defence in depth for the same class of partial state: a docs row with no
+    chunks must not make a later build skip the document."""
+    from kbmcp.ingest.parse import parse_source
+
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    did = mk_doc_id("https://ex/tiny", "v1")
+    conn = ops.get_db(ckb)
+    build.create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="https://ex/tiny", url_original="https://ex/tiny",
+                      domain="ai", format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id=did, canonical_url="https://ex/tiny", domain="ai",
+                   format="html", title="orphan")
+    assert ops.count_rows(conn, "chunks") == 0
+    conn.close()
+
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG)
+    assert stats["docs"] == 1 and stats["chunks"] >= 1   # rebuilt, not skipped
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 1
+    conn.close()

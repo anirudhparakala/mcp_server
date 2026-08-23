@@ -44,6 +44,20 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
     else:
         client, client_reason = ctxmod.make_client(ctx_cfg)
 
+    try:
+        _run_build(conn, entries, raw_dir, parsed_dir, cfg, ctx_cfg, contexts_dir, client,
+                   client_reason, stats, only=only, force=force, reparse=reparse,
+                   require_context=require_context)
+    finally:
+        # Always release the sqlite handle -- including on KeyboardInterrupt during
+        # the long contextualization pass. A leaked handle locks ckb/ckb.sqlite on
+        # Windows and fails temp-dir cleanup in tests.
+        conn.close()
+    return stats
+
+
+def _run_build(conn, entries, raw_dir, parsed_dir, cfg, ctx_cfg, contexts_dir, client,
+               client_reason, stats, *, only, force, reparse, require_context) -> None:
     for e in entries:
         if only and e.doc_id not in only:
             continue
@@ -56,15 +70,22 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
             did = mk_doc_id(e.url, version)
             if not (force or reparse) and _doc_present(conn, did):
                 continue
-            _delete_doc(conn, did)  # clear any prior/partial rows -> atomic (re)build
-            _upsert_source_and_doc(conn, e, meta, did, dl_doc)
 
+            # Contextualization runs BEFORE any row is written. It is the slow,
+            # networked part (minutes per document), and `except Exception` below
+            # cannot catch a KeyboardInterrupt: writing the docs row first meant a
+            # Ctrl-C mid-run left docs=1/chunks=0, which every later non-force
+            # build then SKIPPED as already present -- losing the document
+            # permanently and silently. Nothing touches the DB until it returns.
             ctx_out = ctxmod.contexts_for_document(
                 e.doc_id, records, canonical_url=e.url, version=version,
                 doc_title=title, source_url=e.url, contexts_dir=contexts_dir,
                 cfg=ctx_cfg, client=client,
             )
             contexts = ctx_out["contexts"]
+
+            _delete_doc(conn, did)  # clear any prior/partial rows -> atomic (re)build
+            _upsert_source_and_doc(conn, e, meta, did, dl_doc)
 
             # Accumulate this document's numbers LOCALLY and fold them into stats
             # only once every row is in. An insert can raise partway through, and
@@ -112,12 +133,19 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
          "ok" if not stats["errors"] else "partial", json.dumps(stats)),
     )
     conn.commit()
-    conn.close()  # release the sqlite file (Windows temp-dir cleanup fails on an open handle)
-    return stats
 
 
 def _doc_present(conn, did) -> bool:
-    return conn.execute("SELECT 1 FROM docs WHERE doc_id = ?", (did,)).fetchone() is not None
+    """A doc counts as built only if it actually has chunks.
+
+    Defence in depth: a docs row with zero chunks is partial state (e.g. an
+    interrupt slipped between the row insert and the chunk loop). Treating it as
+    'present' would skip that document on every later build, forever.
+    """
+    return conn.execute(
+        "SELECT 1 FROM docs d WHERE d.doc_id = ? "
+        "AND EXISTS (SELECT 1 FROM chunks c WHERE c.doc_id = d.doc_id)", (did,)
+    ).fetchone() is not None
 
 
 def _delete_doc(conn, did) -> None:

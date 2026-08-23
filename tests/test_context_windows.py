@@ -49,7 +49,17 @@ def test_oversized_single_section_is_split_at_chunk_boundaries():
     recs = [_rec(i, big, ["Doc", "Same"]) for i in range(4)]
     wins = cw.build_windows(recs, {"window_target_tokens": 60, "window_max_tokens": 100, "chars_per_token": 4})
     assert [w.chunk_indices for w in wins] == [(0,), (1,), (2,), (3,)]
-    assert all(w.est_tokens <= 100 or len(w.chunk_indices) == 1 for w in wins)
+    # Every window here holds a single chunk, so an `or len(...) == 1` escape clause
+    # would make the cap assertion vacuous. Assert the real invariant instead: a
+    # window may exceed the cap ONLY when it cannot be split further (one chunk).
+    assert all(len(w.chunk_indices) == 1 for w in wins)
+    # and a multi-chunk packing at the same cap must stay under it
+    packed = cw.build_windows(
+        [_rec(i, "z" * 40, ["Doc", "Same"]) for i in range(4)],
+        {"window_target_tokens": 60, "window_max_tokens": 100, "chars_per_token": 4},
+    )
+    assert all(w.est_tokens <= 100 for w in packed)
+    assert any(len(w.chunk_indices) > 1 for w in packed)
 
 
 def test_chunks_without_headings_are_windowed_too():
