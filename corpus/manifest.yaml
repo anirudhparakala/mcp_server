@@ -344,28 +344,28 @@
 # curl_cffi TLS impersonation; Wikisource/Wikipedia via httpx.
 
 - doc_id: ucc-article-1
-  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=1201."
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=1.&title=&part=&chapter=2.&article="
   domain: law_contract
   format: html
   license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 1 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
   license_ok: true
-  version: retrieved-2026-07-23
+  version: retrieved-2026-08-11
   tier_roles: [T4]
   collision_terms: [performance]
-  rationale: "UCC Article 1 general definitions, as enacted in CA Commercial Code sec.1201 (master definitions section). T4 target of the sales rules that invoke Article-1 definitions."
+  rationale: "UCC Article 1 general definitions, as enacted in CA Commercial Code Division 1 Chapter 2 (sec.1201-1206 definitions + sec.1303 course of dealing/usage of trade). Widened 2026-08-11 from the single-section sec.1201 URL: Division 2 never cites sec.1201 by number, but sec.2202 cites '(Section 1303)' explicitly, so this chapter is the actual in-corpus target of the Article-2 cross-reference that makes T4 resolvable."
 
 - doc_id: ucc-article-2
-  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2601."
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=2.&title=&part=&chapter=2.&article="
   domain: law_contract
   format: html
   license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 2 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
   license_ok: true
-  version: retrieved-2026-07-23
+  version: retrieved-2026-08-11
   tier_roles: [T4, T5]
   collision_terms: [performance]
   references: [ucc-article-1]
   conflict_with: [case-jacob-youngs-v-kent]
-  rationale: "UCC Article 2 sales — the perfect-tender rule (CA Commercial Code sec.2601: goods failing in any respect may be rejected). T5 conflict_with Jacob & Youngs (substantial performance); invokes Article-1 definitions (T4). NOTE: the specific sec.2-201->sec.1-201 numbered cross-ref lives only in the excluded ALI Official Comment; multi-hop uses the general Article-1-applies-throughout link."
+  rationale: "UCC Article 2 sales, CA Commercial Code Division 2 Chapter 2 (sec.2201-2210: form, formation and readjustment — includes sec.2201 Statute of Frauds and sec.2202 parol evidence). Widened 2026-08-11 from the single-section sec.2601 URL, which was a 1.1k-char stub containing NO Article-1 reference at all, so the declared references edge had no textual basis and the T4 exit criterion could not be met by any correct resolver. This chapter carries the explicit numbered cross-reference sec.2202 -> '(Section 1303)', which resolves into ucc-article-1. T5 conflict_with Jacob & Youngs (substantial performance) still holds via the perfect-tender/substantial-performance tension."
 
 - doc_id: law-ca-civil-contracts
   url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550."

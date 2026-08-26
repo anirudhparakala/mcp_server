@@ -279,3 +279,77 @@ def test_doc_with_zero_chunks_is_not_treated_as_already_built(safe_tmp_path):
     conn = ops.get_db(ckb)
     assert ops.count_rows(conn, "docs") == 1
     conn.close()
+
+
+def test_full_build_prunes_docs_no_longer_in_the_manifest(safe_tmp_path):
+    """Changing a source's URL or version changes its doc_id. Without reconciliation
+    the OLD doc and its chunks linger forever — stale content that still gets
+    embedded, indexed and served."""
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG)
+
+    # simulate a previous build under a different URL (=> different doc_id)
+    stale = mk_doc_id("https://ex/tiny-OLD-URL", "v1")
+    conn = ops.get_db(ckb)
+    ops.insert_source(conn, canonical_url="https://ex/tiny-OLD-URL",
+                      url_original="https://ex/tiny-OLD-URL", domain="ai", format="html",
+                      license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id=stale, canonical_url="https://ex/tiny-OLD-URL",
+                   domain="ai", format="html", title="stale")
+    ops.insert_chunk(conn, chunk_id="stale-c0", doc_id=stale, chunk_index=0,
+                     text="Code:\nSelect Code\nCONS", chunk_type="text")
+    assert ops.count_rows(conn, "docs") == 2
+    conn.close()
+
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG, force=True)
+    assert stats["pruned"] == 1
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 1                    # stale doc gone
+    assert ops.get_chunk(conn, "stale-c0") is None              # and its chunks
+    conn.close()
+
+
+def test_only_build_never_prunes(safe_tmp_path):
+    """--only builds a subset; pruning there would delete every other document."""
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG)
+    conn = ops.get_db(ckb)
+    other = mk_doc_id("https://ex/other", "v1")
+    ops.insert_source(conn, canonical_url="https://ex/other", url_original="https://ex/other",
+                      domain="ai", format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id=other, canonical_url="https://ex/other", domain="ai",
+                   format="html", title="other")
+    conn.close()
+
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG,
+                            only={"tiny"}, force=True)
+    assert stats["pruned"] == 0
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 2                    # untouched
+    conn.close()
+
+
+def test_build_does_not_prune_when_a_document_errored(safe_tmp_path, monkeypatch):
+    """A load failure means we cannot know that doc's identity; deleting other rows
+    on the strength of an incomplete picture would be destructive."""
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG)
+    conn = ops.get_db(ckb)
+    other = mk_doc_id("https://ex/other", "v1")
+    ops.insert_source(conn, canonical_url="https://ex/other", url_original="https://ex/other",
+                      domain="ai", format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id=other, canonical_url="https://ex/other", domain="ai",
+                   format="html", title="other")
+    conn.close()
+
+    from kbmcp.ingest import contextualize as ctx
+    monkeypatch.setattr(ctx, "load_document",
+                        lambda *a, **k: (_ for _ in ()).throw(RuntimeError("boom")))
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG, force=True)
+    assert stats["errors"] and stats["pruned"] == 0
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "docs") == 2                    # nothing deleted
+    conn.close()

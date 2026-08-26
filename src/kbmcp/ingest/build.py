@@ -18,6 +18,7 @@ from ..db.schema import create_all_tables
 from ..models.ids import chunk_id as mk_chunk_id
 from ..models.ids import doc_id as mk_doc_id
 from . import contextualize as ctxmod
+from .fetch import read_meta
 from .manifest import load_manifest
 
 
@@ -30,7 +31,8 @@ def build_ckb(manifest_path, raw_dir, parsed_dir, ckb_path, cfg, *, only=None, f
     entries = load_manifest(manifest_path)
     conn = ops.get_db(ckb_path)
     create_all_tables(conn)
-    stats = {"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0, "errors": []}
+    stats = {"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0, "pruned": 0,
+             "errors": []}
 
     # Contextual Retrieval is pins-first: valid pins are applied with or without
     # credentials, and the API is called only for chunks that have none. Locked
@@ -116,6 +118,23 @@ def _run_build(conn, entries, raw_dir, parsed_dir, cfg, ctx_cfg, contexts_dir, c
             if did is not None:
                 _delete_doc(conn, did)  # drop partial rows so a later run rebuilds cleanly
             stats["errors"].append({"doc_id": e.doc_id, "error": str(exc)})
+
+    # Reconcile the DB against the manifest. Changing a source's URL or version
+    # changes its doc_id, so the PREVIOUS doc and its chunks would otherwise linger
+    # forever as stale content that still gets indexed and served. Only on a
+    # complete, error-free full build: with --only we are looking at a subset, and
+    # after an error we cannot know the missing document's identity -- pruning on
+    # either incomplete picture would delete good data.
+    if only is None and not stats["errors"]:
+        expected = set()
+        for e in entries:
+            meta = read_meta(raw_dir, e.doc_id)
+            if meta is not None:
+                expected.add(mk_doc_id(e.url, meta["resolved_version"]))
+        for row in conn.execute("SELECT doc_id FROM docs").fetchall():
+            if row["doc_id"] not in expected:
+                _delete_doc(conn, row["doc_id"])
+                stats["pruned"] += 1
 
     if stats["contexts_missing"]:
         msg = (f"{stats['contexts_missing']} of {stats['chunks']} chunks have no context "

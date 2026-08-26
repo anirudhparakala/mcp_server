@@ -13,8 +13,13 @@
   must_contain_in_table: ["NV-Embed-v2", "56.29"]
 - name: ucc-numbered-cross-ref
   slug: ucc-article-2
-  doc_id: 183b505abcad9995f57ad7224104d1eb1ebd5b793ca2b6495857fe2afa58e965
-  must_contain: ["Section 2612"]
+  # Re-derived 2026-08-11 after widening ucc-article-2 from the single-section
+  # sec.2601 stub to Division 2 Chapter 2. "Section 1303" is the cross-DOCUMENT
+  # reference the T4 multi-hop set resolves (sec.2202 -> ucc-article-1's sec.1303);
+  # "Section 2201" is an intra-document one. Both must survive chunking, or the
+  # cross-reference resolver has nothing to resolve.
+  doc_id: 611baba9748a23e5a32ba760b4d5d87e0ef3edf676fec773733424fc54fc1b8d
+  must_contain: ["Section 1303", "Section 2201"]
 - name: edgar-defined-term-and-schedule
   slug: edgar-commercial-contract
   doc_id: a321b5e725568849cabb3b75b3f7158ca0bf1bdf55e6dca4e9e88dedcb189920

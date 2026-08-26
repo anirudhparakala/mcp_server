@@ -23,6 +23,11 @@ chunk:
   max_tokens: 800
   overlap_policy: minimal
   tokenizer: Qwen/Qwen3-Embedding-0.6B   # HybridChunker token counting; matches the Phase-2 embedder
+  # Drop publisher site chrome (leginfo code-selector menu, Justia link footer) that
+  # Docling faithfully extracts but that carries no corpus content. Narrow signatures
+  # only -- see ingest/chunk.py:is_boilerplate for why a structural heuristic was
+  # measured and rejected. Verified corpus-wide: drops exactly 5 of 2795 chunks.
+  drop_boilerplate: true
 
 contextualize:
   enabled: true

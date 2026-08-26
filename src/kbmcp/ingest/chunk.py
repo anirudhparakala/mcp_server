@@ -5,6 +5,7 @@ house-rule chunk_id = sha256(url + version + chunk_index). context and
 citation_anchors are left empty here (populated in M4 contextualize / M5 graph).
 """
 
+import re
 from dataclasses import dataclass, field
 from functools import lru_cache
 from typing import Optional
@@ -13,6 +14,38 @@ from docling.chunking import HybridChunker
 from docling_core.transforms.chunker.tokenizer.huggingface import HuggingFaceTokenizer
 from docling_core.types.doc import DoclingDocument, DocItemLabel, RefItem, TableItem
 from transformers import AutoTokenizer
+
+
+# Site chrome that Docling faithfully extracts but that carries no corpus content.
+# Deliberately NARROW, one signature per publisher. A structural heuristic
+# (short-line ratio) was measured first and REJECTED: 31 of 2795 corpus chunks have
+# >=70% short lines and nearly all are real content -- arXiv LaTeX math, author
+# blocks, Wikipedia pseudocode, model-card citation snippets. Matching on shape
+# would have destroyed them; matching on "Cookie"/"Privacy Policy" keywords wrongly
+# caught a Wikipedia bibliography entry. Each rule below is anchored to text that
+# only that publisher's navigation emits.
+_LINK_LINE = re.compile(r"^\[[^\]]+\]\(https?://[^)]+\)$")
+
+
+def is_boilerplate(text: str) -> bool:
+    """True only for site navigation/footer chrome, never for document content."""
+    stripped = (text or "").strip()
+    if not stripped:
+        return False
+
+    # leginfo.legislature.ca.gov renders a California code-selector menu above
+    # every section: "Code:\nSelect Code\nCONS\nBPC\nCIV\n..."
+    if stripped.startswith("Code:") and "Select Code" in stripped[:200]:
+        return True
+
+    # law.justia.com appends a footer that is almost entirely markdown links.
+    lines = [ln.strip() for ln in stripped.splitlines() if ln.strip()]
+    if len(lines) >= 5:
+        links = sum(1 for ln in lines if _LINK_LINE.match(ln))
+        if links / len(lines) >= 0.85:
+            return True
+
+    return False
 
 
 @dataclass(frozen=True)
@@ -55,11 +88,17 @@ def chunk_document(dl_doc: DoclingDocument, chunk_cfg: dict) -> list[ChunkRecord
         chunk_cfg.get("tokenizer", "Qwen/Qwen3-Embedding-0.6B"),
         int(chunk_cfg.get("max_tokens", 512)),
     )
+    drop_chrome = bool(chunk_cfg.get("drop_boilerplate", True))
     records: list[ChunkRecord] = []
-    for i, ck in enumerate(chunker.chunk(dl_doc=dl_doc)):
+    for ck in chunker.chunk(dl_doc=dl_doc):
+        if drop_chrome and is_boilerplate(ck.text):
+            continue
         headings = list(getattr(ck.meta, "headings", []) or [])
         ctype, table = _classify(dl_doc, ck)
+        # chunk_index is assigned AFTER filtering so it stays 0-based contiguous:
+        # it feeds chunk_id = sha256(url + version + chunk_index) (house rule).
         records.append(
-            ChunkRecord(chunk_index=i, text=ck.text, heading_path=headings, chunk_type=ctype, table=table)
+            ChunkRecord(chunk_index=len(records), text=ck.text, heading_path=headings,
+                        chunk_type=ctype, table=table)
         )
     return records
