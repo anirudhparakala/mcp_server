@@ -4,6 +4,7 @@ JSON-valued columns are serialized with json.dumps here so callers pass native
 Python lists/dicts. Edge ops live in the cross-ref-graph milestone.
 """
 
+import hashlib
 import json
 import sqlite3
 from typing import Any, Optional
@@ -137,3 +138,58 @@ def get_chunk(conn: sqlite3.Connection, chunk_id: str) -> Optional[dict]:
         result["table"] = None
     result["citation_anchors"] = json.loads(result.pop("citation_anchors_json"))
     return result
+
+
+_EDGE_SEP = "\x1f"  # same ASCII unit separator discipline as models/ids.py
+
+
+def edge_id(from_chunk: str, to_chunk, edge_type: str, provenance) -> str:
+    """Deterministic edge ID so re-running the graph pass regenerates, not duplicates.
+
+    Fields are joined with the ASCII unit separator before hashing so no value can
+    forge a boundary (the same rule the chunk/doc IDs follow).
+    """
+    payload = _EDGE_SEP.join([from_chunk, to_chunk or "", edge_type, provenance or ""])
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def insert_edge(
+    conn: sqlite3.Connection,
+    *,
+    from_chunk: str,
+    to_chunk: Optional[str] = None,
+    to_external_ref: Optional[str] = None,
+    edge_type: str,
+    provenance: Optional[str] = None,
+    confidence: Optional[float] = None,
+    created_at: Optional[str] = None,
+) -> str:
+    """Insert one edge, returning its deterministic ID. Idempotent by edge_id."""
+    eid = edge_id(from_chunk, to_chunk, edge_type, provenance)
+    conn.execute(
+        "INSERT OR REPLACE INTO edges (edge_id, from_chunk, to_chunk, to_external_ref, "
+        "edge_type, provenance, confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (eid, from_chunk, to_chunk, to_external_ref, edge_type, provenance, confidence, created_at),
+    )
+    conn.commit()
+    return eid
+
+
+def get_edges_from(conn: sqlite3.Connection, chunk_id: str) -> list:
+    rows = conn.execute(
+        "SELECT * FROM edges WHERE from_chunk = ? ORDER BY edge_type, edge_id", (chunk_id,)
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def delete_edges_of_type(conn: sqlite3.Connection, edge_type: str) -> int:
+    cur = conn.execute("DELETE FROM edges WHERE edge_type = ?", (edge_type,))
+    conn.commit()
+    return cur.rowcount
+
+
+def set_citation_anchors(conn: sqlite3.Connection, chunk_id: str, anchors: dict) -> None:
+    """Populate the chunks.citation_anchors column left empty by M3."""
+    conn.execute("UPDATE chunks SET citation_anchors_json = ? WHERE chunk_id = ?",
+                 (json.dumps(anchors or {}), chunk_id))
+    conn.commit()

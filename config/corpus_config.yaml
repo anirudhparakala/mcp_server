@@ -53,9 +53,14 @@ contextualize:
   cache_read_multiplier: 0.1     # cache read discount
 
 graph:
-  extractors: [legal, academic]
-  resolve: true
-  edge_types: [adjacent, parent, references]
+  extractors: [legal, academic]   # which pattern families to run (see ingest/citations.py)
+  resolve: true                   # resolve references to in-corpus target chunks
+  edge_types: [adjacent, references]
+  # parent edges are NOT built: heading_path is empty (EUR-Lex) or a constant site
+  # breadcrumb (leginfo) in this corpus, so there is no hierarchy to derive them from.
+  # Revisit in Phase 2 if the graph expander shows it needs them.
+  record_unresolved: true         # store out-of-corpus citations with to_chunk = NULL
+  max_targets_per_reference: 1    # >1 candidate after scoping = ambiguous = no edge
 
 verify:
   fixtures: corpus/benchmark/structure_fixtures.yaml
