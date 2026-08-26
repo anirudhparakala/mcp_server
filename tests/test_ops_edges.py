@@ -79,3 +79,37 @@ def test_edges_respect_the_chunk_foreign_key():
         raised = True
     assert raised, "from_chunk must be a real chunk (FK enforced by get_db's PRAGMA)"
     conn.close()
+
+
+def test_edge_id_is_injective_with_embedded_separators():
+    """JSON serialization escapes control characters, preventing forgery even with embedded \\x1f."""
+    # A field containing \x1f must not collide with the same content split across fields
+    assert ops.edge_id("a\x1fb", "c", "d", "e") != ops.edge_id("a", "b", "c", "d\x1fe")
+    # None must encode distinctly from empty string
+    assert ops.edge_id("a", None, "d", "e") != ops.edge_id("a", "", "d", "e")
+    assert ops.edge_id("a", "b", None, "e") != ops.edge_id("a", "b", "", "e")
+    assert ops.edge_id("a", "b", "d", None) != ops.edge_id("a", "b", "d", "")
+
+
+def test_set_citation_anchors_stores_and_retrieves():
+    """Test that citation_anchors are stored and retrieved correctly through the JSON column."""
+    conn = _ckb()
+    anchors = {"ref1": {"start": 0, "end": 10}, "ref2": {"start": 20, "end": 30}}
+    ops.set_citation_anchors(conn, "c0", anchors)
+    chunk = ops.get_chunk(conn, "c0")
+    assert chunk["citation_anchors"] == anchors
+    conn.close()
+
+
+def test_set_citation_anchors_handles_none_and_empty():
+    """Both None and {} should result in an empty dict when retrieved."""
+    conn = _ckb()
+    # Setting None should result in empty dict
+    ops.set_citation_anchors(conn, "c0", None)
+    chunk = ops.get_chunk(conn, "c0")
+    assert chunk["citation_anchors"] == {}
+    # Setting {} should result in empty dict
+    ops.set_citation_anchors(conn, "c1", {})
+    chunk = ops.get_chunk(conn, "c1")
+    assert chunk["citation_anchors"] == {}
+    conn.close()

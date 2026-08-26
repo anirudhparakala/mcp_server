@@ -140,16 +140,13 @@ def get_chunk(conn: sqlite3.Connection, chunk_id: str) -> Optional[dict]:
     return result
 
 
-_EDGE_SEP = "\x1f"  # same ASCII unit separator discipline as models/ids.py
-
-
 def edge_id(from_chunk: str, to_chunk, edge_type: str, provenance) -> str:
     """Deterministic edge ID so re-running the graph pass regenerates, not duplicates.
 
-    Fields are joined with the ASCII unit separator before hashing so no value can
-    forge a boundary (the same rule the chunk/doc IDs follow).
+    Fields are serialized with JSON and then hashed so no field value can forge a boundary,
+    even if it contains control characters. JSON escaping ensures the four-tuple is injective.
     """
-    payload = _EDGE_SEP.join([from_chunk, to_chunk or "", edge_type, provenance or ""])
+    payload = json.dumps([from_chunk, to_chunk, edge_type, provenance], separators=(",", ":"))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
