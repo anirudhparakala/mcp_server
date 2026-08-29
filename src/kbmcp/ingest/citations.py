@@ -13,9 +13,17 @@ citation as an anchor would make every document appear to define what it cites,
 and the resolver would wire every reference back to its own chunk.
 
 Pattern choices are measurement-driven (see the plan's measurements table):
-heading_path is unusable in this corpus, so anchors come from line-start text;
 "[20]"-style bibliography citations and "incorporated by reference" are
 deliberately not extracted.
+
+Anchors come from two independent sources that do not overlap in this corpus:
+line-start text (EUR-Lex GDPR/AI-Act documents, which have `heading_path == []`)
+and, when supplied, the last element of a chunk's `heading_path` (leginfo CA
+Commercial Code documents, where the chunker preserves the section number --
+e.g. "1201." -- as the final breadcrumb element rather than as its own text
+line). Only the *last* element is examined and it must match the section shape
+in full: breadcrumb elements like "CHAPTER 2. ... [1201 - 1206]" contain digits
+too, and a substring match there would anchor the wrong section.
 """
 
 import re
@@ -28,6 +36,11 @@ _ANCHOR_PATTERNS = (
     # leginfo renders "1303." as its own line above the section body
     ("section", re.compile(r"^[ \t]*(\d{4})\.[ \t]*$", re.M)),
 )
+
+# --- anchors: heading_path last element (leginfo docs; see module docstring).
+# Anchored both ends (fullmatch semantics) so a breadcrumb element containing
+# digits, e.g. "CHAPTER 2. ... [1201 - 1206]", never matches as a substring.
+_HEADING_PATH_SECTION_RE = re.compile(r"^(\d+[a-z]?)\.?$")
 
 # --- references: inline prose ---
 _LEGAL_REFERENCE_PATTERNS = (
@@ -75,18 +88,31 @@ def _anchor_line_spans(text: str) -> list:
     return spans
 
 
-def extract_anchors(text: str) -> list:
-    """Section identifiers this chunk DEFINES (standalone header lines only)."""
-    if not text:
-        return []
+def extract_anchors(text: str, heading_path=None) -> list:
+    """Section identifiers this chunk DEFINES.
+
+    Combines two sources, de-duplicated, source-then-pattern order preserved:
+    standalone header lines in `text`, and -- when `heading_path` is given and
+    non-empty -- its last element, if that element (in full) is a section
+    identifier such as "1201." (leginfo CA Commercial Code chunks carry the
+    section number there instead of as a text line).
+    """
     found = []
     seen = set()
-    for kind, pattern in _ANCHOR_PATTERNS:
-        for m in pattern.finditer(text):
-            key = (kind, m.group(1))
+    if text:
+        for kind, pattern in _ANCHOR_PATTERNS:
+            for m in pattern.finditer(text):
+                key = (kind, m.group(1))
+                if key not in seen:
+                    seen.add(key)
+                    found.append(Anchor(kind, m.group(1)))
+    if heading_path:
+        m = _HEADING_PATH_SECTION_RE.match(heading_path[-1].strip())
+        if m:
+            key = ("section", m.group(1))
             if key not in seen:
                 seen.add(key)
-                found.append(Anchor(kind, m.group(1)))
+                found.append(Anchor("section", m.group(1)))
     return found
 
 

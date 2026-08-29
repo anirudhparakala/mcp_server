@@ -95,3 +95,49 @@ def test_anchors_to_dict_is_sorted_and_json_ready():
 
 def test_empty_text_yields_nothing():
     assert cit.extract_anchors("") == [] and cit.extract_references("") == []
+
+
+# --- heading_path section anchors (leginfo docs: no text-line heading, but the
+# chunker preserves the section number as the last heading_path element) ---
+
+def test_heading_path_section_anchor_is_extracted():
+    anchors = cit.extract_anchors("some section body text", heading_path=[
+        "Code Section Group", "Code Text", "Commercial Code - COM",
+        "DIVISION 1. GENERAL PROVISIONS [1101 - 1310]",
+        "CHAPTER 2. General Definitions ... [1201 - 1206]", "1201.",
+    ])
+    assert cit.Anchor("section", "1201") in anchors
+
+
+def test_heading_path_section_anchor_is_extracted_for_another_section():
+    anchors = cit.extract_anchors("some other section body", heading_path=[
+        "CHAPTER 2. Form, Formation and Readjustment of Contract [2201 - 2210]",
+        "2202.",
+    ])
+    assert cit.Anchor("section", "2202") in anchors
+
+
+def test_heading_path_breadcrumb_elements_are_not_mistaken_for_section_anchors():
+    """The whole element must match the section shape -- a substring match here
+    would anchor the wrong section. This is the false-positive guard that matters
+    most: breadcrumb elements contain digits too."""
+    assert cit.extract_anchors("body", heading_path=[
+        "DIVISION 1. GENERAL PROVISIONS [1101 - 1310]",
+    ]) == []
+    assert cit.extract_anchors("body", heading_path=[
+        "CHAPTER 2. Form, Formation and Readjustment of Contract [2201 - 2210]",
+    ]) == []
+
+
+def test_heading_path_none_or_empty_behaves_exactly_as_before():
+    assert cit.extract_anchors(GDPR_HEADER_CHUNK, heading_path=None) == cit.extract_anchors(GDPR_HEADER_CHUNK)
+    assert cit.extract_anchors(GDPR_HEADER_CHUNK, heading_path=[]) == cit.extract_anchors(GDPR_HEADER_CHUNK)
+    assert cit.extract_anchors("", heading_path=None) == []
+    assert cit.extract_anchors("", heading_path=[]) == []
+
+
+def test_text_header_and_heading_path_section_anchors_combine():
+    anchors = cit.extract_anchors(GDPR_HEADER_CHUNK, heading_path=["Some Doc", "1201."])
+    assert cit.Anchor("article", "22") in anchors
+    assert cit.Anchor("article", "23") in anchors
+    assert cit.Anchor("section", "1201") in anchors
