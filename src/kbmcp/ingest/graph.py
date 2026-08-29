@@ -79,13 +79,24 @@ def scope_for(slug: str, entries_by_slug: dict) -> set:
     return scope
 
 
-def resolve_reference(reference, *, from_doc_id: str, scope_doc_ids: set, anchor_index: dict):
-    """Target chunk_id, or None when out of corpus or ambiguous within the scope."""
+def candidates_for(reference, *, scope_doc_ids: set, anchor_index: dict) -> list:
+    """Chunk IDs within `scope_doc_ids` that define `reference`.
+
+    The raw candidate list, not collapsed to a single verdict -- callers that need
+    to tell "out of corpus" (0 candidates) apart from "ambiguous" (>1 candidates)
+    for stats/config purposes use this instead of resolve_reference.
+    """
     targets = []
     for doc_id in scope_doc_ids:
         chunk = anchor_index.get((doc_id, reference.kind, reference.value))
         if chunk is not None:
             targets.append(chunk)
+    return targets
+
+
+def resolve_reference(reference, *, from_doc_id: str, scope_doc_ids: set, anchor_index: dict):
+    """Target chunk_id, or None when out of corpus or ambiguous within the scope."""
+    targets = candidates_for(reference, scope_doc_ids=scope_doc_ids, anchor_index=anchor_index)
     if len(targets) != 1:
         return None            # 0 = out of corpus, >1 = ambiguous; guessing is worse
     return targets[0]
@@ -131,13 +142,21 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
         stats["anchors"] = persist_anchors(conn)
         anchor_index = build_anchor_index(conn)
 
-        for edge_type in cfg.get("edge_types", ["adjacent", "references"]):
+        edge_types = cfg.get("edge_types", ["adjacent", "references"])
+        resolve_refs = cfg.get("resolve", True) and "references" in edge_types
+
+        # Only delete an edge type this run will actually rebuild: `references`
+        # rebuilding is additionally gated on `resolve`, so deleting it when
+        # resolve=False would wipe previously-built edges and never restore them.
+        for edge_type in edge_types:
+            if edge_type == "references" and not resolve_refs:
+                continue
             ops.delete_edges_of_type(conn, edge_type)   # rebuild, never accumulate
 
-        if "adjacent" in cfg.get("edge_types", []):
+        if "adjacent" in edge_types:
             stats["adjacent"] = build_adjacent_edges(conn)
 
-        if not cfg.get("resolve", True) or "references" not in cfg.get("edge_types", []):
+        if not resolve_refs:
             return stats
 
         # doc_id -> the scope of doc_ids its references may resolve into
@@ -149,26 +168,37 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
             resolved = {_doc_id(s) for s in scope_for(slug, by_slug)}
             scope_by_doc[did] = {d for d in resolved if d is not None}
 
+        max_targets = cfg.get("max_targets_per_reference", 1)
         extractors = tuple(cfg.get("extractors", ["legal", "academic"]))
         rows = conn.execute(
             "SELECT chunk_id, doc_id, text FROM chunks ORDER BY doc_id, chunk_index"
         ).fetchall()
         for row in rows:
             scope = scope_by_doc.get(row["doc_id"], {row["doc_id"]})
-            for ref in extract_references(row["text"], extractors=extractors):
-                target = resolve_reference(ref, from_doc_id=row["doc_id"],
-                                           scope_doc_ids=scope, anchor_index=anchor_index)
-                if target is not None and target != row["chunk_id"]:
-                    ops.insert_edge(conn, from_chunk=row["chunk_id"], to_chunk=target,
-                                    edge_type="references", provenance=ref.raw,
-                                    confidence=1.0, created_at=_now())
-                    stats["references_resolved"] += 1
-                elif target is None and cfg.get("record_unresolved", True):
-                    ops.insert_edge(conn, from_chunk=row["chunk_id"],
-                                    to_external_ref=f"{ref.kind}:{ref.value}",
-                                    edge_type="references", provenance=ref.raw,
-                                    confidence=0.0, created_at=_now())
-                    stats["references_unresolved"] += 1
+            try:
+                for ref in extract_references(row["text"], extractors=extractors):
+                    candidates = candidates_for(ref, scope_doc_ids=scope,
+                                                anchor_index=anchor_index)
+                    if len(candidates) == 1:
+                        target = candidates[0]
+                        if target == row["chunk_id"]:
+                            continue    # self-citation: cites the section it defines
+                        ops.insert_edge(conn, from_chunk=row["chunk_id"], to_chunk=target,
+                                        edge_type="references", provenance=ref.raw,
+                                        confidence=1.0, created_at=_now())
+                        stats["references_resolved"] += 1
+                    elif len(candidates) > max_targets:
+                        stats["ambiguous"] += 1        # too many candidates; guessing is worse
+                    else:
+                        if cfg.get("record_unresolved", True):
+                            ops.insert_edge(conn, from_chunk=row["chunk_id"],
+                                            to_external_ref=f"{ref.kind}:{ref.value}",
+                                            edge_type="references", provenance=ref.raw,
+                                            confidence=0.0, created_at=_now())
+                        stats["references_unresolved"] += 1
+            except Exception as exc:
+                # One bad chunk must not lose the whole graph -- record and continue.
+                stats["errors"].append(f"{row['chunk_id']}: {exc}")
     finally:
         conn.close()
     return stats

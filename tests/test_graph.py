@@ -202,3 +202,179 @@ def test_build_graph_is_rerunnable_without_duplicating_edges(safe_tmp_path):
     assert ops.count_rows(conn, "edges") == first["adjacent"] + first["references_resolved"] \
         + first["references_unresolved"]
     conn.close()
+
+
+def test_resolve_false_does_not_wipe_existing_reference_edges(safe_tmp_path):
+    """resolve: false must SKIP rebuilding references, not DELETE them -- an
+    operator using resolve: false for a fast partial rebuild must not lose
+    reference edges a prior run already built (review round 1, finding 2)."""
+    ckb = safe_tmp_path / "ckb.sqlite"
+    src = _two_doc_ckb()
+    disk = ops.get_db(ckb)
+    src.backup(disk)
+    src.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["adjacent", "references"], "record_unresolved": True,
+           "max_targets_per_reference": 1}
+
+    first = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert first["references_resolved"] == 1
+    conn = ops.get_db(ckb)
+    before = [r for r in ops.get_edges_from(conn, "edpb0") if r["edge_type"] == "references"]
+    assert len(before) == 1
+    conn.close()
+
+    cfg_no_resolve = dict(cfg, resolve=False)
+    second = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg_no_resolve,
+                               doc_id_for=lambda slug: slug.upper())
+    assert second["references_resolved"] == 0    # skipped this run, not rebuilt
+
+    conn = ops.get_db(ckb)
+    after = [r for r in ops.get_edges_from(conn, "edpb0") if r["edge_type"] == "references"]
+    assert len(after) == 1                        # the earlier edge survived
+    assert after[0]["to_chunk"] == before[0]["to_chunk"] == "gdpr22"
+    conn.close()
+
+
+def test_build_graph_counts_ambiguous_separately_and_emits_no_edge(safe_tmp_path):
+    """EDPB's Article 22(1) has two in-scope candidates once the manifest scopes
+    EDPB to both GDPR and the AI Act. That must land in stats['ambiguous'], not
+    be folded into references_unresolved, and must produce NO edge at all --
+    not even an unresolved placeholder (review round 1, finding 1)."""
+    ckb = safe_tmp_path / "ckb.sqlite"
+    src = _two_doc_ckb()
+    disk = ops.get_db(ckb)
+    src.backup(disk)
+    src.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "  references: [gdpr, aiact]\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True,
+           "max_targets_per_reference": 1}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["ambiguous"] == 1                # Article 22(1) -- GDPR and AIACT both define it
+    assert stats["references_unresolved"] == 1    # Article 9999 -- nowhere in the corpus
+    assert stats["references_resolved"] == 0
+
+    conn = ops.get_db(ckb)
+    refs = [r for r in ops.get_edges_from(conn, "edpb0") if r["edge_type"] == "references"]
+    assert refs == []                              # ambiguous -> no edge, not even a placeholder
+    conn.close()
+
+
+def test_build_graph_honours_configured_max_targets_per_reference(safe_tmp_path):
+    """Changing max_targets_per_reference must actually change behaviour, not
+    just be accepted: at the default (1) a 2-candidate reference is ambiguous;
+    raising it to 2 must reclassify that same reference as unresolved instead
+    (still no edge -- a single candidate is still required to emit one). This
+    proves the config value is read, not merely accepted (review round 1,
+    finding 3)."""
+    ckb = safe_tmp_path / "ckb.sqlite"
+    src = _two_doc_ckb()
+    disk = ops.get_db(ckb)
+    src.backup(disk)
+    src.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "  references: [gdpr, aiact]\n",
+        encoding="utf-8")
+    base_cfg = {"extractors": ["legal", "academic"], "resolve": True,
+                "edge_types": ["references"], "record_unresolved": True}
+
+    strict = graph.build_graph(ckb, manifest, safe_tmp_path / "raw",
+                               dict(base_cfg, max_targets_per_reference=1),
+                               doc_id_for=lambda slug: slug.upper())
+    assert strict["ambiguous"] == 1
+    assert strict["references_unresolved"] == 1
+
+    lenient = graph.build_graph(ckb, manifest, safe_tmp_path / "raw",
+                                dict(base_cfg, max_targets_per_reference=2),
+                                doc_id_for=lambda slug: slug.upper())
+    assert lenient["ambiguous"] == 0               # 2 candidates <= configured max of 2
+    assert lenient["references_unresolved"] == 2   # Article 22(1) AND Article 9999: still no edge
+    assert lenient["references_resolved"] == 0
+
+
+def test_build_graph_records_a_per_chunk_error_and_keeps_going(safe_tmp_path, monkeypatch):
+    """An unexpected failure resolving one chunk's citations must not abort the
+    whole pass: it is recorded in stats['errors'], and a chunk that sorts AFTER
+    the failing one must still be processed (review round 1, finding 1)."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    for slug, dom in (("gdpr", "law_aireg"), ("edpb", "law_aireg"), ("later", "law_aireg")):
+        ops.insert_source(conn, canonical_url=slug, url_original=slug, domain=dom,
+                          format="html", license="x", license_ok=True, version="v1")
+        ops.insert_doc(conn, doc_id=slug.upper(), canonical_url=slug, domain=dom, format="html")
+    ops.insert_chunk(conn, chunk_id="gdpr22", doc_id="GDPR", chunk_index=0, chunk_type="text",
+                     text="Article 22\nAutomated individual decision-making\n1.\nThe data subject")
+    ops.insert_chunk(conn, chunk_id="edpb0", doc_id="EDPB", chunk_index=0, chunk_type="text",
+                     text="See Article 9999 which triggers the injected failure.")
+    ops.insert_chunk(conn, chunk_id="later0", doc_id="LATER", chunk_index=0, chunk_type="text",
+                     text="This document cites Article 22 too.")
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n"
+        "- doc_id: later\n  url: later\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True,
+           "max_targets_per_reference": 1}
+
+    real_extract_references = graph.extract_references
+
+    def flaky(text, *, extractors):
+        if "9999" in text:
+            raise ValueError("boom")
+        return real_extract_references(text, extractors=extractors)
+
+    monkeypatch.setattr(graph, "extract_references", flaky)
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert len(stats["errors"]) == 1
+    assert "edpb0" in stats["errors"][0]
+    assert stats["references_resolved"] == 1      # LATER sorts after EDPB and still ran
+    conn2 = ops.get_db(ckb)
+    conn2.close()
