@@ -10,9 +10,13 @@ Re-runnable: it clears its own edge types before rebuilding, and edge IDs are
 derived from their fields, so repeated runs converge instead of accumulating.
 """
 
+import argparse
 import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
 
-from .citations import anchors_to_dict, extract_anchors
+from .citations import anchors_to_dict, extract_anchors, extract_references
 from ..db import ops
 
 
@@ -54,3 +58,140 @@ def persist_anchors(conn) -> int:
         ops.set_citation_anchors(conn, row["chunk_id"], anchors_to_dict(anchors))
         updated += 1
     return updated
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def scope_for(slug: str, entries_by_slug: dict) -> set:
+    """Manifest slugs a document's references may resolve into: itself + declared refs.
+
+    Bare citations carry no instrument name (measured: 1 of 173 EDPB references names
+    one, and it names a document outside the corpus), and the same article number is
+    defined by several regulations. The manifest's `references:` field is the only
+    reliable statement of which instruments a document is about.
+    """
+    entry = entries_by_slug.get(slug)
+    scope = {slug}
+    if entry is not None:
+        scope.update(getattr(entry, "references", None) or [])
+    return scope
+
+
+def resolve_reference(reference, *, from_doc_id: str, scope_doc_ids: set, anchor_index: dict):
+    """Target chunk_id, or None when out of corpus or ambiguous within the scope."""
+    targets = []
+    for doc_id in scope_doc_ids:
+        chunk = anchor_index.get((doc_id, reference.kind, reference.value))
+        if chunk is not None:
+            targets.append(chunk)
+    if len(targets) != 1:
+        return None            # 0 = out of corpus, >1 = ambiguous; guessing is worse
+    return targets[0]
+
+
+def build_adjacent_edges(conn) -> int:
+    """Link consecutive chunks inside each document (never across documents)."""
+    rows = conn.execute(
+        "SELECT chunk_id, doc_id FROM chunks ORDER BY doc_id, chunk_index"
+    ).fetchall()
+    made = 0
+    for prev, cur in zip(rows, rows[1:]):
+        if prev["doc_id"] != cur["doc_id"]:
+            continue
+        ops.insert_edge(conn, from_chunk=prev["chunk_id"], to_chunk=cur["chunk_id"],
+                        edge_type="adjacent", confidence=1.0, created_at=_now())
+        made += 1
+    return made
+
+
+def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None) -> dict:
+    """Resolve every chunk's citations into edges. Re-runnable and deterministic."""
+    from ..models.ids import doc_id as mk_doc_id
+    from .fetch import read_meta
+    from .manifest import load_manifest
+
+    entries = load_manifest(manifest_path)
+    by_slug = {e.doc_id: e for e in entries}
+
+    def _doc_id(slug: str):
+        if doc_id_for is not None:
+            return doc_id_for(slug)
+        entry = by_slug.get(slug)
+        meta = read_meta(raw_dir, slug) if entry is not None else None
+        if entry is None or meta is None:
+            return None
+        return mk_doc_id(entry.url, meta["resolved_version"])
+
+    stats = {"anchors": 0, "references_resolved": 0, "references_unresolved": 0,
+             "ambiguous": 0, "adjacent": 0, "errors": []}
+    conn = ops.get_db(ckb_path)
+    try:
+        stats["anchors"] = persist_anchors(conn)
+        anchor_index = build_anchor_index(conn)
+
+        for edge_type in cfg.get("edge_types", ["adjacent", "references"]):
+            ops.delete_edges_of_type(conn, edge_type)   # rebuild, never accumulate
+
+        if "adjacent" in cfg.get("edge_types", []):
+            stats["adjacent"] = build_adjacent_edges(conn)
+
+        if not cfg.get("resolve", True) or "references" not in cfg.get("edge_types", []):
+            return stats
+
+        # doc_id -> the scope of doc_ids its references may resolve into
+        scope_by_doc = {}
+        for slug in by_slug:
+            did = _doc_id(slug)
+            if did is None:
+                continue
+            resolved = {_doc_id(s) for s in scope_for(slug, by_slug)}
+            scope_by_doc[did] = {d for d in resolved if d is not None}
+
+        extractors = tuple(cfg.get("extractors", ["legal", "academic"]))
+        rows = conn.execute(
+            "SELECT chunk_id, doc_id, text FROM chunks ORDER BY doc_id, chunk_index"
+        ).fetchall()
+        for row in rows:
+            scope = scope_by_doc.get(row["doc_id"], {row["doc_id"]})
+            for ref in extract_references(row["text"], extractors=extractors):
+                target = resolve_reference(ref, from_doc_id=row["doc_id"],
+                                           scope_doc_ids=scope, anchor_index=anchor_index)
+                if target is not None and target != row["chunk_id"]:
+                    ops.insert_edge(conn, from_chunk=row["chunk_id"], to_chunk=target,
+                                    edge_type="references", provenance=ref.raw,
+                                    confidence=1.0, created_at=_now())
+                    stats["references_resolved"] += 1
+                elif target is None and cfg.get("record_unresolved", True):
+                    ops.insert_edge(conn, from_chunk=row["chunk_id"],
+                                    to_external_ref=f"{ref.kind}:{ref.value}",
+                                    edge_type="references", provenance=ref.raw,
+                                    confidence=0.0, created_at=_now())
+                    stats["references_unresolved"] += 1
+    finally:
+        conn.close()
+    return stats
+
+
+def main(argv=None) -> int:
+    from ..config import load_corpus_config
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.graph")
+    p.add_argument("--ckb", default="ckb/ckb.sqlite")
+    p.add_argument("--manifest", default="corpus/manifest.yaml")
+    p.add_argument("--raw-dir", default="corpus/raw")
+    p.add_argument("--config", default="config/corpus_config.yaml")
+    a = p.parse_args(argv)
+
+    cfg = load_corpus_config(a.config).graph
+    stats = build_graph(a.ckb, a.manifest, a.raw_dir, cfg)
+    print(f"anchors={stats['anchors']} adjacent={stats['adjacent']} "
+          f"references_resolved={stats['references_resolved']} "
+          f"unresolved={stats['references_unresolved']} errors={len(stats['errors'])}",
+          file=sys.stderr)
+    return 0 if not stats["errors"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
