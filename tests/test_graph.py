@@ -35,11 +35,25 @@ def test_anchor_index_ignores_inline_citations():
 
 
 def test_first_definer_wins_when_an_anchor_repeats():
-    conn = _ckb()
-    ops.insert_chunk(conn, chunk_id="g3", doc_id="GDPR", chunk_index=3, chunk_type="text",
+    """Insertion order is deliberately the OPPOSITE of chunk_index order: the
+    later restatement (chunk_index=3) is inserted BEFORE the true section body
+    (chunk_index=1). This pins the ORDER BY doc_id, chunk_index clause in
+    build_anchor_index -- without it, "first definer wins" would silently fall
+    back to insertion/rowid order instead of chunk_index order, and a fixture
+    that happens to insert chunks in chunk_index order would mask that
+    regression. Do not "tidy" this back to insertion order.
+    """
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="gdpr", url_original="gdpr", domain="law_aireg",
+                      format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id="GDPR", canonical_url="gdpr", domain="law_aireg", format="html")
+    ops.insert_chunk(conn, chunk_id="g_annex", doc_id="GDPR", chunk_index=3, chunk_type="text",
                      text="Article 22\nrestated later in an annex")
+    ops.insert_chunk(conn, chunk_id="g_body", doc_id="GDPR", chunk_index=1, chunk_type="text",
+                     text="Article 22\nAutomated individual decision-making\n1.\nThe data subject")
     idx = graph.build_anchor_index(conn)
-    assert idx[("GDPR", "article", "22")] == "g1"     # earliest chunk_index wins
+    assert idx[("GDPR", "article", "22")] == "g_body"   # lowest chunk_index wins, not first inserted
     conn.close()
 
 
