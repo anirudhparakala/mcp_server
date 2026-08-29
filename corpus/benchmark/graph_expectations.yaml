@@ -1,0 +1,34 @@
+# Cross-reference ground truth (ingest design sec6; Phase-1 exit criterion).
+# Each entry asserts that at least one resolved `references` edge runs from a chunk
+# of `from_slug` to a chunk of `to_slug`. Authored 2026-08-11 from measured corpus
+# facts, not from assumption:
+#   - EDPB automated-decisions guidelines cite "Article 22" repeatedly across many
+#     chunks; GDPR defines Article 22.
+#   - EDPB consent guidelines cite GDPR articles (e.g. Article 7) repeatedly;
+#     GDPR defines those articles.
+#   - ucc-article-2 sec.2202 cites "(Section 1303)"; ucc-article-1 would define
+#     sec.1303, but does not currently -- see the pending entry below.
+- name: edpb-to-gdpr-article-22
+  from_slug: edpb-guidelines-automated-decisions
+  to_slug: eurlex-gdpr-2016-679
+  min_edges: 1
+- name: edpb-consent-to-gdpr
+  from_slug: edpb-guidelines-consent
+  to_slug: eurlex-gdpr-2016-679
+  min_edges: 1
+# PENDING (2026-08-29, controller ruling): this pair cannot resolve today and it
+# is not a resolver defect. ucc-article-1's pinned URL fetched California
+# Commercial Code Division 1 *Chapter 2* (sections 1201-1206), but the citation
+# that would link the pair is ucc-article-2 sec.2202's "(Section 1303)", and
+# sec.1303 lives in Division 1 *Chapter 3*, which was never fetched -- so the
+# target section simply isn't in the corpus yet. Unblocks when ucc-article-1's
+# manifest URL is repointed to Division 1 Chapter 3 (queued separately,
+# deliberately deferred until a long-running paid job finishes) and the corpus
+# is re-fetched/re-parsed/re-chunked so sec.1303 has an anchor to resolve to.
+# Do not lower min_edges to make this pass -- `pending: true` is the honest
+# mechanism instead.
+- name: ucc-article2-to-article1
+  from_slug: ucc-article-2
+  to_slug: ucc-article-1
+  min_edges: 1
+  pending: true
