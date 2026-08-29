@@ -1,0 +1,178 @@
+{
+  "contexts": {
+    "028355bf8884822c675e60a24510e946f0d9b2877e86d6a3846715b9e7a5bf56": {
+      "context": "This chunk appears in section 5.2 \"Hardware and Schedule\" of the \"Attention Is All You Need\" paper, which describes the computational resources and training duration used for the Transformer model variants, including both base and big model configurations.",
+      "text_sha256": "c00577661cb3c233a217456d85c60b156b48598bc8ec7ef4495f803acb468d55",
+      "window_index": 1
+    },
+    "0669ce74438ff94c9c27eaf7c857e66f3e745c01096d80144232ff87a330f8bf": {
+      "context": "This chunk appears in Section 3 (Model Architecture) of the paper \"Attention Is All You Need\" by Vaswani et al. It introduces the overall architecture of the Transformer model, explaining how it follows a standard encoder-decoder structure while using stacked self-attention and fully connected layers instead of recurrence or convolutions.",
+      "text_sha256": "501964d0e87767ec7170eea8eeb7ea73a9fd5a8c7c86dc670bbb5896a62ffc04",
+      "window_index": 0
+    },
+    "0a51159319564b6acc32bb3ab62983a3e406ad1af8f89a3b6d6f4b16f4a6a9c3": {
+      "context": "This section from \"Attention Is All You Need\" presents attention visualizations that demonstrate how different attention heads in the Transformer model learn to capture different linguistic phenomena, including long-distance dependencies, anaphora resolution, and syntactic structure, as discussed in Section 4 on why self-attention is beneficial for sequence transduction tasks.",
+      "text_sha256": "37a4605269eeac7f6cdfb05a5090e4f5496e7b8e1a5b174e6e2b20402ed94eff",
+      "window_index": 1
+    },
+    "0e9e23bf55ce1cca0042df3eac7bc90f157c4cde950a07d1fdcfa225ec0d5e5a": {
+      "context": "This chunk is from the Conclusion section (Section 7) of \"Attention Is All You Need,\" a 2017 paper introducing the Transformer architecture. It summarizes the paper's main contribution of replacing recurrent layers with multi-headed self-attention in sequence transduction models, reports state-of-the-art results on WMT 2014 English-German and English-French translation tasks, and outlines future research directions for attention-based models.",
+      "text_sha256": "e432efef14967ebdcecfb0766cae8479d11394c68beb4c5278e138882df7f174",
+      "window_index": 1
+    },
+    "15b6defe4482089363c9e93beff514cd56b930794bf93ec9bef35c074d602ff0": {
+      "context": "This chunk appears in section 6.1 Machine Translation of the \"Attention Is All You Need\" paper, presenting the main experimental results of the Transformer model on WMT 2014 English-German and English-French translation tasks, including BLEU scores, training costs, and inference hyperparameters used for evaluation.",
+      "text_sha256": "bbe5200d9ee533986766d072b9ddf7406c0c3a60ef518d748022a6ea555c71ab",
+      "window_index": 1
+    },
+    "1e2d296f14f519037783ba012197ed96d9b5b203b44f353a663baf47cec4ca60": {
+      "context": "This chunk appears in section 5.4 \"Regularization\" under section 5 \"Training\" of the paper \"Attention Is All You Need\". It describes the residual dropout technique used during model training, specifying where dropout is applied in the Transformer architecture and the dropout rate used for the base model.",
+      "text_sha256": "a0346413ec970335c33fdc99fa2cb896d4ef9988d68860d28363a9536ed16e82",
+      "window_index": 1
+    },
+    "385d90081045f111b5f1fe12a1ca90017917ab4689fdd62f10dce0c3f3e58ec4": {
+      "context": "This chunk appears in section 5.4 (Regularization) of the \"Attention Is All You Need\" paper, which discusses the training procedures for the Transformer model. The sentence introduces three regularization techniques applied during model training: residual dropout, label smoothing, and another unspecified method.",
+      "text_sha256": "d46c1255a833153fc8366c0d1007bd19e6f4ff74c87d1cd09a97ead3f1464751",
+      "window_index": 1
+    },
+    "3c9f376dc9dea12afa3604838add659feca1068b8122e5d82a3834eb6dd88c52": {
+      "context": "Section 6.3 of \"Attention Is All You Need\" evaluates the Transformer model's generalization to English constituency parsing, describing experiments on the Penn Treebank dataset and comparing results to previous models including RNN sequence-to-sequence approaches and the BerkeleyParser.",
+      "text_sha256": "8025955c2f2005440ef00ed309079469705575f3ae23be20eb327efeeb98e308",
+      "window_index": 1
+    },
+    "4f654484a0869e0843f45c7008a1ec628864f785e21ff168c156d3ec7e297090": {
+      "context": "This chunk appears in section 3.2.3 \"Applications of Attention in our Model\" of the \"Attention Is All You Need\" paper by Vaswani et al. (2017), which describes the Transformer architecture. It explains the three distinct ways multi-head attention, introduced in section 3.2.2, is applied within the Transformer's encoder and decoder components described in section 3.1.",
+      "text_sha256": "cd082f2b7308da4946c28b757f93fae1e8feb2a5920a32161125ff1b267bccd8",
+      "window_index": 0
+    },
+    "5f95069130fd0a1f07759e4b5a764d96bfe3ca69dc953280b01ee87b7fa24855": {
+      "context": "This is the abstract from \"Attention Is All You Need\" by Vaswani et al., which introduces the Transformer architecture as a novel sequence transduction model based entirely on attention mechanisms rather than recurrence or convolutions. The abstract summarizes the paper's main contribution, experimental results on machine translation tasks, and demonstrates the model's generalizability to other NLP tasks like constituency parsing.",
+      "text_sha256": "4e873413a989a6feed75ae6b1ac70e01a42acf78ff852b3185b83ee5587f7f88",
+      "window_index": 0
+    },
+    "75c2d5ee9177d0c658af68c1ae3550136348ed8039aa8446df6aea26b2ce45e9": {
+      "context": "This chunk appears in section 5.3 (Optimizer) of \"Attention Is All You Need,\" which is part of section 5 (Training) that describes the training regime for the Transformer model. The chunk specifies the optimizer hyperparameters and learning rate schedule used during model training.",
+      "text_sha256": "71f7bacab8b666d3d2098a54b28de73a647beede32ce483d7f329f38021440bc",
+      "window_index": 1
+    },
+    "76aa97fe8e94016847c9130768e3d45a1ff8e8c60d6d8c2f11ace1f95c1918cc": {
+      "context": "This chunk appears in section 5.4 (Regularization) of the \"Attention Is All You Need\" paper, which describes the training procedures for the Transformer model. It specifically discusses label smoothing as one of three regularization techniques employed during training, alongside residual dropout and other methods.",
+      "text_sha256": "313e8320fa7448762c98ccf9ab1d28df3b65fe947f8693fdfd7482078c9f9294",
+      "window_index": 1
+    },
+    "7d449008a70c3be5a8b6922a6983254565a46eb6298ec66a0bb3a2ff701f0a3a": {
+      "context": "This chunk is from section 3.2.1 \"Scaled Dot-Product Attention\" in the \"Attention Is All You Need\" paper by Vaswani et al. (2017). It describes the core attention mechanism used in the Transformer model architecture, explaining how queries, keys, and values are combined using dot-product operations with scaling to compute attention weights.",
+      "text_sha256": "f0dbde7b71d673f8de8e16cb3c1b6c1c3cc3d32ad64dbfce67b429ad17dd2a56",
+      "window_index": 0
+    },
+    "7e5d18d587a1ba1661a2cc738eb4f5cc73cf334ff6262530a26b1e1c5d5b3771": {
+      "context": "This chunk appears in section 3.3 \"Position-wise Feed-Forward Networks\" of the \"Attention Is All You Need\" paper by Vaswani et al. (2017), which describes the Transformer model architecture. The section explains the feed-forward network component that complements the attention sub-layers in both the encoder and decoder stacks of the Transformer, providing the mathematical formula and dimensional specifications for this network component.",
+      "text_sha256": "dbf6608894ed04a511fa100924f651c57502c0177221f2527b59804d0bc2d140",
+      "window_index": 0
+    },
+    "83b3e3bd0e4a7bb96b83bacf2ddf75c4924bdf6d9f7f19294519e8d970df82a8": {
+      "context": "This chunk is from Section 1 (Introduction) of \"Attention Is All You Need\" by Vaswani et al. (2017). It establishes the motivation for the Transformer architecture by discussing limitations of recurrent neural networks in sequence modeling and transduction tasks, and introduces the paper's core contribution: a model based entirely on attention mechanisms rather than recurrence.",
+      "text_sha256": "71100eac44fed3a58545db6fa605f903d7e29ac8e858913341cc71a27610dd9a",
+      "window_index": 0
+    },
+    "8726ab75f4786ca5fe0fa6ad2a30e81adb860dc510e248a0c5d562f325ff0727": {
+      "context": "This chunk contains references [29] through [39] from the References section of \"Attention Is All You Need,\" a paper introducing the Transformer architecture. These citations support various claims made throughout the paper regarding machine translation, neural network architectures, and training techniques like dropout and label smoothing.",
+      "text_sha256": "7e3c94a5dc0b05e5540b7d0e15bb7ab7768ae4d0769dfdb710a91d6aff5bbb96",
+      "window_index": 1
+    },
+    "90f6e6b03472bded38b40283e8ac6597b67baa63e7b0e24333a51db01f5407da": {
+      "context": "This chunk is part of the References section of \"Attention Is All You Need,\" a 2017 paper introducing the Transformer architecture. It lists the first fourteen bibliographic citations (references 1-14) that are cited throughout the paper in sections covering self-attention mechanisms, training procedures, model variations, and machine translation results.",
+      "text_sha256": "19528986f347ba0494322dec52a1a12504baaaffb1aef9ac071e597b60e4ddf6",
+      "window_index": 1
+    },
+    "9a157315b650c593d9f8eb8881b549f5f7efdd9b41fcc18c75b2312364f29326": {
+      "context": "This is the author list and contributions section from \"Attention Is All You Need,\" a 2017 paper by Vaswani et al. that introduces the Transformer architecture. The chunk lists the seven authors from Google Brain, Google Research, and University of Toronto, along with a detailed description of each author's specific contributions to developing the Transformer model, scaled dot-product attention, multi-head attention, and the tensor2tensor implementation.",
+      "text_sha256": "76d2c5b93a40dfb3859781189dc39065acc9f6c428120a3aaaf01fa33e4eef23",
+      "window_index": 0
+    },
+    "9f5f95c1eb103ddc07204f9bba6828ded163322b20a0e49f8d58696010456a9c": {
+      "context": "This chunk appears in section 3.4 \"Embeddings and Softmax\" of the \"Attention Is All You Need\" paper by Vaswani et al., which describes the Transformer model architecture. The section explains how the model uses learned embeddings to convert tokens to vectors of dimension d_model and shares weight matrices between embedding layers and the pre-softmax linear transformation.",
+      "text_sha256": "ab5abfdc70cf506858deeee07cffede9c0361744e0bedf6f20dd796acf56f5f6",
+      "window_index": 0
+    },
+    "a92a8a2a58741f4797827fd20e6487099c9638a1a6208b8f77987c607efdefea": {
+      "context": "This is the table of contents and header information from \"Attention Is All You Need\" (arXiv:1706.03762), a paper by Vaswani et al. introducing the Transformer architecture. It provides navigation links to all major sections including the Abstract, Introduction, Background, Model Architecture (covering Encoder/Decoder Stacks, Attention mechanisms, Feed-Forward Networks, Embeddings, and Positional Encoding), Training details, Results, and Conclusion.",
+      "text_sha256": "072da8260091713059586aebac0b5d5cf2e94d5407ce04dce4c5ec494230945b",
+      "window_index": 0
+    },
+    "ad774738ea6cc56da49cdfc25f38c38fc4d5dcf3d34c9c572c0549c7d1e9158f": {
+      "context": "This reference appears in the References section of \"Attention Is All You Need,\" a paper on the Transformer architecture. It is cited in connection with work on constituent parsing tasks discussed in Section 6.3 (English Constituency Parsing), where the paper evaluates the Transformer's ability to generalize beyond machine translation to structural prediction problems.",
+      "text_sha256": "c7876875b0ba925a84c888c1f00cc6ae8edee3551bb7583ea2dd77d853857418",
+      "window_index": 1
+    },
+    "b1f187655428f4efe87fe65913a235d6637a7a367d1330421feddf31876f4396": {
+      "context": "This acknowledgement appears in the Conclusion section of \"Attention Is All You Need,\" the paper introducing the Transformer architecture, where the authors thank specific individuals for their contributions to the work.",
+      "text_sha256": "2e4e454bab26e1cfae2950803757af4a2f2ffed845c0b7dcde9551046ef43e27",
+      "window_index": 1
+    },
+    "b663873595a898f3df3a3de0324b02be1b3e60727827ff30783dd185090560ad": {
+      "context": "This chunk is part of the References section of \"Attention Is All You Need,\" containing bibliography entries [15] through [28] that are cited throughout the paper to support discussions of language modeling, attention mechanisms, neural machine translation, optimization methods, and parsing tasks.",
+      "text_sha256": "102e53f9aa6937c054dc7404183ec3f8c34c03fffc1ae345232d674d12d2ba6b",
+      "window_index": 1
+    },
+    "bb70e05ecc996730601f9b4e8cf29aade1bad6e72fd7d868a4dea4fa2413e111": {
+      "context": "This chunk appears in Section 2 (Background) of \"Attention Is All You Need\" by Vaswani et al., where the authors review prior work on reducing sequential computation in neural networks. The chunk discusses convolutional approaches like Extended Neural GPU, ByteNet, and ConvS2S, explains how the Transformer improves upon them by reducing operations to a constant number, and introduces self-attention as a key mechanism that the Transformer relies on entirely for the first time in transduction models.",
+      "text_sha256": "c3e8a44c7151e3c5a9976aae01fc9d66ba318fddb81d3a015fc195b28e29ecc2",
+      "window_index": 0
+    },
+    "be43afd8beba121a48aa2f5a71d01cd7e127961508e08a017a2ee263878a3529": {
+      "context": "This chunk appears in section 3.2 Attention of the \"Attention Is All You Need\" paper by Vaswani et al., providing a general definition of how attention mechanisms work before the paper describes specific implementations like Scaled Dot-Product Attention and Multi-Head Attention.",
+      "text_sha256": "0316a4b93c6eff4ab5527444a3f5f4d5a10cb515678c2d2e659514e9460b86e0",
+      "window_index": 0
+    },
+    "bebd02456df5d72a0e6c70a8799e903eb6daa85ab94abab5be2d98b71392f5c4": {
+      "context": "This chunk appears in section 5.1 \"Training Data and Batching\" of the \"Attention Is All You Need\" paper, which describes the datasets, encoding methods, and batching strategy used when training the Transformer model on machine translation tasks.",
+      "text_sha256": "9c093139b53a12896abbd271fd634c15965538001dcfebab331d6e182a32d7f4",
+      "window_index": 1
+    },
+    "c173d4c0768bd654304f9b8f76071afc8c5a7b564dc9db7ef4eb9b57a6f2ec8a": {
+      "context": "This chunk is from section 3.5 Positional Encoding in \"Attention Is All You Need\" by Vaswani et al. (2017), which describes how the Transformer model encodes position information in sequences. The section explains the motivation for positional encodings, their mathematical formulation using sine and cosine functions, and why this approach was chosen over learned positional embeddings.",
+      "text_sha256": "5696e8e8a33fb99d4c80b7a291f7c91b439ad85eeec634542ddb9743af8afbe2",
+      "window_index": 0
+    },
+    "c9f483e296f1ea8e57da98e29ec8e9dd40bcdf702a7d340138919f5eef02fa66": {
+      "context": "This chunk is from section 3.2.2 Multi-Head Attention in the \"Attention Is All You Need\" paper by Vaswani et al. (2017). It explains the multi-head attention mechanism, which is a key component of the Transformer architecture described in section 3 Model Architecture. The chunk details how multi-head attention projects queries, keys, and values multiple times in parallel and describes the mathematical formulation and specific hyperparameters (h=8 heads, d_k=d_v=64) used in the Transformer model.",
+      "text_sha256": "2dd6fdc332f38319b402756897e8c9f426abdb26488fa5a33fde075690896a4b",
+      "window_index": 0
+    },
+    "ce668bbd81e89e9f04c37724fe0f8e5e4f3ea0d155d4468d0f34faf748b31d75": {
+      "context": "This is the introductory sentence to Section 5 (Training) of the paper \"Attention Is All You Need,\" which outlines the training procedures and hyperparameters used for the Transformer model, including details on training data, hardware, optimization, and regularization techniques.",
+      "text_sha256": "1e571c178bc81f0e69b07f8f489ea7a3a6d8f694e2020d2a79c09635ba08fd79",
+      "window_index": 1
+    },
+    "ebf3e3a21a718cd42072d4e4365b037890acf102ee15765a1014a8df218d50e8": {
+      "context": "This chunk appears in section 3.1 \"Encoder and Decoder Stacks\" of the \"Attention Is All You Need\" paper by Vaswani et al., which describes the Transformer model architecture. The chunk specifically details the encoder component, explaining its stack of 6 identical layers, each containing a multi-head self-attention mechanism and a feed-forward network with residual connections and layer normalization.",
+      "text_sha256": "e1604d634b7a86751c5c4e9828376e1d88c962c951423d4980f66a6deeb91233",
+      "window_index": 0
+    },
+    "f117d482e9d6c4efc61339ebed6c63fdfb0de46f5837b1aeebf79c6bc096cf09": {
+      "context": "This chunk describes the decoder architecture in section 3.1 of \"Attention Is All You Need,\" a paper by Vaswani et al. that introduces the Transformer model. The decoder is one of the two main components of the Transformer's encoder-decoder structure, complementing the encoder described in the preceding subsection.",
+      "text_sha256": "24a456c5b29a78b02d83923cf5ccb0e874f1bc566c2e1f12e39ab6cc8c09a2ee",
+      "window_index": 0
+    },
+    "f277bca33d174012fb08d4d703126714d7cb34efb7abb5f9e33cc82a6ff534de": {
+      "context": "Section 4 \"Why Self-Attention\" from the paper \"Attention Is All You Need\" (Vaswani et al., 2017), which compares self-attention layers to recurrent and convolutional layers across three key criteria: computational complexity per layer, parallelizability, and path length for learning long-range dependencies in sequence transduction tasks.",
+      "text_sha256": "8c68f8705b03125cc768d95d1c01fe9ed3ffa5600026e4c2703c87f92cab83bf",
+      "window_index": 1
+    },
+    "f58b45df953f7226521da437a79b3408748c59e025d9d4f738f6796b605b3408": {
+      "context": "Section 6.2 \"Model Variations\" of the \"Attention Is All You Need\" paper, which presents ablation studies evaluating the importance of different Transformer components by varying the base model and measuring performance changes on English-to-German translation tasks using Table 3.",
+      "text_sha256": "3ae6ac605d84f7b6ead72ca885887ff13071c7b25d5f03f843823d6563533004",
+      "window_index": 1
+    },
+    "f63cd21859b8148e54a84905eefdc3618928c45a8a2e0328291db3e6361d1a57": {
+      "context": "This section appears at the end of the \"Attention Is All You Need\" paper and provides instructions for reporting HTML rendering errors to arXiv, rather than being part of the research content itself.",
+      "text_sha256": "2c4490804b2e5e7057d2405d7eaa489df1f4ffb958026dbee0e71f53f0d59f73",
+      "window_index": 1
+    }
+  },
+  "doc_id": "arxiv-vaswani-2017-attention",
+  "generated_at": "2026-08-29T21:36:00Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,208 @@
+{
+  "contexts": {
+    "067c41d9dff5e69a460b3038ff332718201d08ab364887aea31b2929b7026392": {
+      "context": "This chunk introduces Section 4 of the Dense Passage Retrieval for Open-Domain Question Answering paper by Karpukhin et al., which describes the experimental setup including Wikipedia data preprocessing and the question answering datasets used to evaluate the DPR model.",
+      "text_sha256": "becf92039254407410319cad3e1f4847e66991f8fb6b3012a9802c25dde54fa7",
+      "window_index": 0
+    },
+    "07bfdd9c2bd2c013abbaf9043ce0779a75478d6229e05c33898703e932acce7b": {
+      "context": "This is the abstract from \"Dense Passage Retrieval for Open-Domain Question Answering\" by Karpukhin et al., which introduces DPR, a dense retrieval method for open-domain QA that uses dual-encoder embeddings to outperform traditional sparse retrieval methods like BM25.",
+      "text_sha256": "a052a0efdda55fc9ce19fc4b49e08d909dd19c606808bea4bb985b6b9aec4382",
+      "window_index": 0
+    },
+    "0bb98816d3db28ead09cf349669c8a115d6e695aa2053ba9e044bd0c6f0bc69d": {
+      "context": "This chunk describes the Wikipedia data preprocessing step in Section 4.1 of the Dense Passage Retrieval (DPR) paper, explaining how the English Wikipedia corpus was prepared into passages for use as the retrieval corpus in the open-domain question answering experiments.",
+      "text_sha256": "e46ba25b535a07b1e5aebf6cb630da1eb912e26577f7e7b1498b53210b538268",
+      "window_index": 0
+    },
+    "0ebea374cbe07e934afddd01e75a92a24929e17536e70e7bf5b50f1c880ad0af": {
+      "context": "This chunk is part of the References section of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020), listing bibliographic citations for works related to question answering, passage retrieval, and neural language models that inform the DPR methodology.",
+      "text_sha256": "28a3e915974d9de5a43187fe0997901b32d56b525db635ec8a8f5a62c30f171c",
+      "window_index": 2
+    },
+    "1067a6c6e0e04015b0a68e6b7f7426cd127eab239833baf4f0da9a04ed18d742": {
+      "context": "This chunk appears in Section 5.1 (Main Results) of the Dense Passage Retrieval for Open-Domain Question Answering paper by Karpukhin et al. It presents the main experimental results comparing DPR (Dense Passage Retriever) against BM25 on five QA datasets (Natural Questions, TriviaQA, WebQuestions, TREC, and SQuAD) using top-k retrieval accuracy metrics, and discusses why DPR underperforms on SQuAD compared to other datasets.",
+      "text_sha256": "2446cbdc44c9fa744f28d25cc9b499b4abc5aac0f51afa2f09a90cb3866117d2",
+      "window_index": 0
+    },
+    "151bdc3665c871a27ea9c0d2cb0dac75b251fceb0541dad3fa941eff299caddc": {
+      "context": "This table appears in Appendix C (Qualitative Analysis) of the Dense Passage Retrieval (DPR) paper, comparing passage retrieval results between BM25 and DPR methods. The table demonstrates qualitative differences between the two retrievers through two question-answering examples, showing how BM25 relies on keyword matching while DPR captures semantic relationships.",
+      "text_sha256": "cdade898f86b8740ac394c6d3346f7b5648e3deec9cd30e434feef7d6ba79b9a",
+      "window_index": 2
+    },
+    "19c50ec9403f569f299d019bf2741021167ae38379de1f7e61001ce6e3e17510": {
+      "context": "This chunk is part of the References section of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020), listing bibliographic citations for works related to question answering, semantic retrieval, and machine learning methods that inform the DPR approach to open-domain question answering.",
+      "text_sha256": "bd9fb93b328011294c7e803edbc3e592ae9298423dff4e61973f0d6ff828d897",
+      "window_index": 2
+    },
+    "21bff4bc141305663920ca8f8127f80332c581967eb45a61eddf716ae0aba741": {
+      "context": "This is the Acknowledgments section at the end of the Dense Passage Retrieval (DPR) paper, a standard closing element thanking reviewers for their feedback on the research.",
+      "text_sha256": "b30956b03da6ac51ed5d31ef068b6138984d4b94880b766437c17a545281c889",
+      "window_index": 1
+    },
+    "279d1a2e01c87f4a983fa88226e6cdbe1282ed9f8c93d141b7f795f7c7ab8a66": {
+      "context": "This chunk is from Section 5.2 (Ablation Study on Model Training) of the Dense Passage Retrieval (DPR) paper, specifically discussing experimental comparisons of different similarity functions and loss functions used in training the retriever, as well as testing DPR's ability to generalize across different question-answering datasets without fine-tuning.",
+      "text_sha256": "a79fbf5ca085ef17e01978f30fdd86fd87ef23d267b02e12cc1c9f7506d49a17",
+      "window_index": 1
+    },
+    "2a9d7488928e9e33156fcc22973d029f1f139a2d9caf0e5d4fe627c8443a02e8": {
+      "context": "This chunk introduces Section 6 of the Dense Passage Retrieval (DPR) paper, which transitions from ablation studies on model training to experiments evaluating how retrieval performance impacts end-to-end question answering system accuracy across multiple datasets.",
+      "text_sha256": "fca5a031c24af4608cc7b8176de2cfc2d8a3e40085a1db30f14be3d5b1fa5094",
+      "window_index": 1
+    },
+    "3cda6b6d1b80954d5ed7d7304129a79fb4dc5afdce59cb01ca8939e5415ff462": {
+      "context": "This chunk from Section 2 (Background) of the Dense Passage Retrieval for Open-Domain Question Answering paper formally defines the open-domain QA problem, including the extractive QA setting, corpus structure with documents and passages, and the retriever component's role in selecting relevant texts before answer extraction.",
+      "text_sha256": "2e888970ae063144e179a65f69465efdc4e74447d4e5b43d47eba2a1589ee95d",
+      "window_index": 0
+    },
+    "4b43a1486d0457f2022936baec195bb5409c1555e09dccd7326face036cdfa1b": {
+      "context": "This chunk is from Section C (Qualitative Analysis) of the Dense Passage Retrieval (DPR) paper, which compares the retrieval characteristics of DPR versus BM25 methods for open-domain question answering. It includes qualitative examples and retrieval accuracy results from Tables 5 and 6 on the Natural Questions dataset.",
+      "text_sha256": "a58d039e3f4cdb6017cf1e58923b8a8452726477a95c6e07c690377ef42a0bc2",
+      "window_index": 2
+    },
+    "4f53dbf71f4717947aabfea20d0f6f57d567b5cfdc7bac145e2b96b76164baba": {
+      "context": "This chunk appears in Section 3 of the Dense Passage Retrieval for Open-Domain Question Answering paper by Karpukhin et al., which introduces the Dense Passage Retriever (DPR) system. The chunk defines the core goal and scope of DPR, explaining how it indexes passages in a dense vector space for efficient retrieval in open-domain QA tasks.",
+      "text_sha256": "15a3794796518c107ef1aa7c27e55e84ac2dd1049113b6ccc45ff77b2fb4b37b",
+      "window_index": 0
+    },
+    "517cb0cb29c1d1f7df193819992a59ac9681cda3c48027b53b2e16586e09eb81": {
+      "context": "Section 5.4 \"Run-time Efficiency\" of the Dense Passage Retriever (DPR) paper discusses the computational performance and indexing time of the dense retrieval system compared to traditional BM25 retrieval, including query processing speed and index construction time on large passage collections.",
+      "text_sha256": "e77fbb00f61c7742f8f537ed5539bdab0d1641cd622600d00d1e1613fe7e4f9c",
+      "window_index": 1
+    },
+    "5552a18eba7b96841c239942dd99e7000d2e960646401f81ca8680bdf3a20c64": {
+      "context": "This chunk is the conclusion (Section 8) of the Dense Passage Retrieval (DPR) paper, summarizing the main findings and contributions of the work on using dense retrieval methods for open-domain question answering tasks.",
+      "text_sha256": "38ec5373ee41b58521ae0367a6c2449b8f4f690b764148eb1c38f1d06c4183d9",
+      "window_index": 1
+    },
+    "56de8f54b35422091cb5d04d0ad0de67c2c7188f879015fc27198669e9d31f53": {
+      "context": "This chunk is from Section 3.2 Training of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020). It describes the training methodology for DPR encoders, including the loss function formulation, strategies for selecting positive and negative passages, and the in-batch negatives technique used to efficiently train the dual-encoder model for open-domain question answering.",
+      "text_sha256": "fdab76930a3e38f5065f04b590c55d0cd0ff152c08b9bb46d414bb979d50cce5",
+      "window_index": 0
+    },
+    "604f21ea45af5dff496ee94a837972119905e2fa4577296eb1fe2b866fd8cbeb": {
+      "context": "This chunk introduces Section 5 of the Dense Passage Retrieval for Open-Domain Question Answering paper, which presents experimental evaluation of the DPR retrieval system's performance compared to traditional methods like BM25 across multiple QA datasets.",
+      "text_sha256": "2a0129b9d0ccc944f56d14043994ca258d07942e568ac96958d55ede70eba3c7",
+      "window_index": 0
+    },
+    "65ec69f699a498c8cc0a9056f09d7387cbd2eeb0f86073dea958457b7ee7266c": {
+      "context": "This chunk is part of the References section of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020), listing bibliographic citations for works related to question answering, neural networks, ranking methods, and language models that inform the DPR approach to open-domain question answering.",
+      "text_sha256": "4c20c63e368fac2972842a7157b634db25f69dc0d3a6b4dceca1d2baa1c2254a",
+      "window_index": 2
+    },
+    "728a047a9d975857eb44a36117a1f30ec0a6c1fb208079fd463fe929da267b6d": {
+      "context": "This chunk is from Section 3.1 (Overview) of the Dense Passage Retrieval for Open-Domain Question Answering paper by Karpukhin et al. (2020). It describes the architecture and inference mechanism of the Dense Passage Retriever (DPR) system, including the passage encoder E_P and question encoder E_Q, the dot-product similarity function used for ranking, the choice of BERT-based encoders, and the FAISS-based indexing and retrieval process at inference time.",
+      "text_sha256": "3b5bd1e5f03eec9818f1e22c07196aa6ade7e5031af918a4c355135cf978a1ba",
+      "window_index": 0
+    },
+    "735853247d23f71a83e2a70be8c689f0caf43bc3500eaefdfce11c91de2d82b8": {
+      "context": "This chunk is from Section 7 (Related Work) of the Dense Passage Retrieval (DPR) paper, which surveys prior work on passage retrieval methods for open-domain question answering, including sparse retrieval approaches like BM25, dense vector representations, and competing dense retrieval systems for QA tasks.",
+      "text_sha256": "1088cb82cb59ab58459fc54090beb929ec3af885d6745ed573971eda1406d66d",
+      "window_index": 1
+    },
+    "7edcd20b5bd875f9da4be68aa4634ef3d2cf80cddfdeacaa423adeac06ce0532": {
+      "context": "This chunk appears in section 6.2 (Results) of the Dense Passage Retriever (DPR) paper, presenting end-to-end question answering performance results. It discusses how DPR's retrieval accuracy translates to final QA accuracy across multiple datasets (Natural Questions, TriviaQA, WebQuestions, TREC, and SQuAD) and compares DPR's performance against prior state-of-the-art methods like ORQA and REALM, including Table 4 which provides exact match accuracy metrics for various retriever and training configurations.",
+      "text_sha256": "0b98cfbb91c7ec5d5958848ec1de2a12e47665217056c1ae08a815049dde1f2f",
+      "window_index": 1
+    },
+    "80562a4de6c0d7985a1ef5af02ec7dbde54a2df29990dde9c1f61f86e58d1f6d": {
+      "context": "This chunk appears in Section 4.2 of the Dense Passage Retrieval (DPR) paper by Karpukhin et al., which describes the experimental setup for training data preparation. Specifically, it explains how positive passages were selected from five QA datasets (Natural Questions, TriviaQA, WebQuestions, CuratedTREC, and SQuAD) for training the DPR model, detailing different strategies used depending on dataset characteristics.",
+      "text_sha256": "6352f9689380c9b9a989afd9ec16479a3df8ebebdb6902adae255f5e1f27fd17",
+      "window_index": 0
+    },
+    "8221a301c69bdc3be2b949bc22a3eeee4cf295ffb8f5cad62699e4d6964b8f05": {
+      "context": "This chunk appears in Appendix B of the Dense Passage Retrieval (DPR) paper, which presents ablation studies on alternative similarity functions and loss functions used in training the DPR retriever model. The section compares dot product with negative log-likelihood, Euclidean distance, and triplet loss approaches for passage retrieval on the Natural Questions dataset.",
+      "text_sha256": "824ee5dd35386061f19c458b2744dc11a9af20d82fbd1cfc50a4dcc7994f73a3",
+      "window_index": 2
+    },
+    "86fb462a7ea8716c7e7b8c5ab7dde80bc09161ed526e0545550cdd8c87b71f88": {
+      "context": "This chunk is from Section 5.2 (Ablation Study on Model Training) of the Dense Passage Retrieval (DPR) paper, which investigates how different training configurations affect dense retriever performance. It covers three key training aspects: sample efficiency showing that DPR needs only 1,000 examples to outperform BM25, in-batch negative training strategies tested on Natural Questions development set, and the impact of using gold passages as positive examples.",
+      "text_sha256": "3fffe6d83aea90355180b74cfe426932f960349043724ef41a3f889bda283b88",
+      "window_index": 1
+    },
+    "8e493d7946a6bb81a36730934e2449d939e73b370595ab160d056c68d916a3eb": {
+      "context": "This chunk appears in Section 5.3 Qualitative Analysis of the Dense Passage Retrieval (DPR) paper, which compares the qualitative differences between passages retrieved by DPR and the BM25 baseline method in open-domain question answering tasks.",
+      "text_sha256": "8748470390f0486ffeb9636175678bdae765b8e3f02c6e62fe6125ec033affa7",
+      "window_index": 1
+    },
+    "8fff21006d0053aab0b22a0fa57612021a5f9768cdd5a5b5806ab1249f3d4086": {
+      "context": "This table appears in Section 5.2 (Ablation Study on Model Training) of the Dense Passage Retrieval (DPR) paper and compares different training schemes for the passage retriever, specifically examining in-batch negative training versus standard 1-of-N training with various negative passage selection strategies (random, BM25, or gold passages) on the Natural Questions development set.",
+      "text_sha256": "6e3a7907fd198827ae36c6dfa8d8b8e16b5c4a2ad1c107fd35ec3ece5e3ce8c6",
+      "window_index": 1
+    },
+    "90d457172e814328913907d0c9e564044b6811e24c7ae3961375c3932aaf3691": {
+      "context": "This chunk from the introduction of \"Dense Passage Retrieval for Open-Domain Question Answering\" by Karpukhin et al. presents the paper's main research question, methodology using BERT and dual-encoder architecture, and key contributions to open-domain QA retrieval. It explains how DPR outperforms traditional BM25 retrieval and demonstrates that fine-tuning on question-passage pairs alone is sufficient without additional pretraining.",
+      "text_sha256": "60228860269cd9c4b20eb25a4a0d963354af6a3eb4933686ace9f190dc1b2e6f",
+      "window_index": 0
+    },
+    "9f71b98625099c1e54e81a0113d4395fde7a54729427d68bcd6570b9b5ee001c": {
+      "context": "This chunk is from section 6.1 \"End-to-end QA System\" in the \"Experiments: Question Answering\" section of the Dense Passage Retrieval (DPR) paper. It describes the architecture and training procedure of the neural reader component that works with the DPR retriever to extract answers from retrieved passages in an open-domain question answering system.",
+      "text_sha256": "ca3d1e6c9675e08bef684a9b1acd9b229d47856bc5dcefbb37df67d49e7d3b8e",
+      "window_index": 1
+    },
+    "a0480bbf50165f426e368734354b5ed0e8500f5ff8aa7dfe8cfb455d2ea1398f": {
+      "context": "This is the author and affiliation information for the paper \"Dense Passage Retrieval for Open-Domain Question Answering\" by Karpukhin et al., published on arxiv in 2020, listing the authors' names and their institutional affiliations at Facebook AI, University of Washington, and Princeton University.",
+      "text_sha256": "3e48c157d3045e249156580f3a54e2320350e660e1bbc4054f136aa653cb0dd3",
+      "window_index": 0
+    },
+    "a2c68b755e4e7154484ca210f6423f3506c2bfca81af54e4110dfffe251fb8d9": {
+      "context": "This chunk is part of the References section of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020), listing bibliographic citations for works related to question answering, passage retrieval, and dense text representation methods that inform the DPR approach.",
+      "text_sha256": "860043343eb6d2db6943148c2abd83479ba9e06cd4411d31b957986621dae9ed",
+      "window_index": 2
+    },
+    "ad927d8cf6c5add40e05ce1c715fa6e478f0f32d84433ef14d1741b10e7068af": {
+      "context": "Section 4.2 of the Dense Passage Retrieval (DPR) paper describes the five question answering datasets used for experimental evaluation: Natural Questions, TriviaQA, WebQuestions, CuratedTREC, and SQuAD, along with their characteristics and training/dev/test split sizes shown in Table 1.",
+      "text_sha256": "5e6d41b8e77bad241df7eb4d0be58153c6585c139ce1d9eba810f27236eccfbf",
+      "window_index": 0
+    },
+    "b03be504263afd5d062d3c0737ae16ca1a59cc5af25a2328fa409645daed16b9": {
+      "context": "This chunk appears in the Related Work section of the Dense Passage Retrieval (DPR) paper, discussing subsequent applications and extensions of the DPR model by other researchers after its initial development.",
+      "text_sha256": "7b1373f5ee57234b39a11fe013a3dac6100631d74c51fcbfba959abd4383f101",
+      "window_index": 1
+    },
+    "c86ff2ce29297da123238a3d83159e159e7ebb8f26695b6059f2da0935eef8c1": {
+      "context": "Table 4 from section 6.2 (Results) of the Dense Passage Retrieval (DPR) paper, presenting end-to-end question answering exact match accuracy across five datasets (Natural Questions, TriviaQA, WebQuestions, TREC, SQuAD) comparing DPR with previous state-of-the-art methods and baseline approaches in both single-dataset and multi-dataset training settings.",
+      "text_sha256": "ea765ab8d17b4ee1948c28dd9e321aadf9ad0cbcc57f839fcbd7e297c0cc46e3",
+      "window_index": 1
+    },
+    "c8c1cc189356e4ce84d201019331f670b7e6ec9858e1358d0ff5056eec4bb03b": {
+      "context": "This chunk is from the References section of the Dense Passage Retrieval (DPR) paper by Karpukhin et al. (2020), listing bibliographic citations for works related to question answering and retrieval systems that informed the research.",
+      "text_sha256": "2e4371f5219eb6fa1ed2a12db46145b37fa8f29f1c695972c09cf416a223011e",
+      "window_index": 2
+    },
+    "cddb980bbf46738cd4ef1dcb26372642406aac4b4d46d6d8e4824b0f64ca3d5e": {
+      "context": "This chunk appears in Section 6.2 (Results) of the Dense Passage Retrieval (DPR) paper, where the authors present end-to-end question answering results and compare their pipeline training approach (training retriever and reader separately) against joint training methods. The chunk discusses computational efficiency and inference latency comparisons between DPR and the ORQA baseline system on the Natural Questions dataset.",
+      "text_sha256": "c343d203fea6761a5a5dcea472c9d99b877f2f0cbe2f2e73e3d016bb97cae615",
+      "window_index": 1
+    },
+    "d5fb63413d7b720a16a79cc52d618f9316d3e6cbc8ca439825c47aeaf9864215": {
+      "context": "This chunk from the \"Dense Passage Retrieval for Open-Domain Question Answering\" paper describes the experimental setup and training configuration for the DPR model in Section 5, specifically detailing the hyperparameters used in the main retrieval experiments, the multi-dataset training approach, and the hybrid BM25+DPR ranking method evaluated in Table 2.",
+      "text_sha256": "eb6c00198433eb5166749496a1e1f08b5fff47f87d073cb2749cf257275538be",
+      "window_index": 0
+    },
+    "d9595d63effd65aacb914d3eda205931e647de2266827ccb67392b451b6fe3db": {
+      "context": "This table appears in Section 5.1 (Main Results) of the Dense Passage Retrieval for Open-Domain Question Answering paper by Karpukhin et al. It presents the main experimental results comparing retrieval accuracy of DPR against BM25 and hybrid approaches across five QA datasets (Natural Questions, TriviaQA, WebQuestions, CuratedTREC, and SQuAD), measured at top-20 and top-100 passage retrieval accuracy.",
+      "text_sha256": "d95d8de2a3be179f7b1a8ef936a6706041cbca97e8d87a857644e9f8eb7d5e3d",
+      "window_index": 0
+    },
+    "eb60680360ae45ce9d5061c535ce256011db9eaeaee9a6108a36912abf887ca5": {
+      "context": "This chunk appears in Appendix D of the Dense Passage Retrieval (DPR) paper, which describes the joint training approach for combining the retriever and reader components of the DPR system. The appendix details the technical implementation of jointly training these components while keeping the passage encoder fixed, including loss function design, batch processing strategy, and comparative results on the Natural Questions dataset.",
+      "text_sha256": "5127a5d2bfda52cfe87012e9ac7c02c0c75694f1f63e98700a7ad5880f553305",
+      "window_index": 2
+    },
+    "f44d63bcb3d6bb6e590bf67b12c31f4bf814b76946709f228ae1b12b7b67dfb6": {
+      "context": "This chunk appears in Appendix A of the Dense Passage Retrieval (DPR) paper, which discusses distant supervision as an alternative training approach for the DPR retriever model. The section explains how DPR performance is evaluated when trained on passages containing answer pairs rather than gold context passages, with results presented in Table 5.",
+      "text_sha256": "bbd995cd379116a72f3cf95539328d50ccf5380845739fe9960718ad5a6fcc57",
+      "window_index": 2
+    },
+    "ff22894c23636918c7bb74e68300339178a0b54ab9ba6adb6a8ce9c3c1b27685": {
+      "context": "This chunk from the Introduction section of \"Dense Passage Retrieval for Open-Domain Question Answering\" by Karpukhin et al. (2020) defines open-domain QA as a task and explains the traditional two-stage retrieval-then-reading framework, contrasts sparse retrieval methods like BM25 with dense retrieval approaches, and discusses prior work including ORQA and its limitations that motivate the authors' Dense Passage Retriever (DPR) approach.",
+      "text_sha256": "109685a5c0c0f2586555cbfe81f94fcffc1983898861dc88f18918481249c36e",
+      "window_index": 0
+    }
+  },
+  "doc_id": "arxiv-karpukhin-2020-dpr",
+  "generated_at": "2026-08-29T21:43:27Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,363 @@
+{
+  "contexts": {
+    "0585819b9b0aa92bc24793d83cc57fa19d306a497f2e7cf0f74e20bea193e83b": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making section titled \"Key GDPR provisions that reference general profiling and automated decision-making.\" It maps specific GDPR articles and their corresponding recitals to explain how profiling and automated decision-making are regulated under the regulation, covering provisions related to monitoring behavior, defining profiling, data protection principles, children's protection, transparency rights, objection rights, and data protection impact assessment requirements.",
+      "text_sha256": "1fd000c1523de1578c1d0816a5913bf7ec6abedf30e1200a1c4ee197ef58ad71",
+      "window_index": 4
+    },
+    "0b959498c5e7ad10951bb4a838cd1a1b0bda78f7f26586a104803a73eb29c7ea": {
+      "context": "This chunk is an example in the EDPB Guidelines on Automated Decision-Making and Profiling that illustrates how controllers must provide transparency and meaningful information about credit scoring decisions to data subjects under GDPR Articles 13, 14, and 22(3), including the logic involved, data sources, and safeguards for contesting decisions.",
+      "text_sha256": "812732c597133e81eaab806c20f7bee2e83d0b06cd9d27481871c9284d6e9db7",
+      "window_index": 3
+    },
+    "12409335bf8cdb8f18bafd9afd77e37664e04e7eec44cdf3571063b5c772c078": {
+      "context": "This chunk appears in Annex 3 - Further reading of the EDPB Guidelines on Automated Decisions, providing a curated list of external references and sources that informed the guidelines' development, including academic papers, government reports, and international recommendations on automated decision-making, profiling, children's rights in digital environments, and data protection.",
+      "text_sha256": "6baba78d9348fdc2cbe235a68a3d5b0d9e430a47758bffe95627b3504d6c72fe",
+      "window_index": 4
+    },
+    "16f563ee0c90504db95210de048b14c5b5e49c5f8c1b74ceeed973a42b040977": {
+      "context": "This chunk is from Section VI of the EDPB Guidelines on Automated Decision-Making and Profiling, which discusses Data Protection Impact Assessments (DPIA) and Data Protection Officer (DPO) requirements. It explains how controllers can use DPIAs to identify measures addressing data protection risks in profiling and automated decision-making, and outlines when DPO designation is required under Article 37(1)(b) of the GDPR.",
+      "text_sha256": "0652c5004bb6ff8d80b3b15bb712080b6814be88cd40ca57b94e79e398cc0b73",
+      "window_index": 3
+    },
+    "1c576f2dc5b84a5688032b8bd528b14b2fb215f773d7bf915973c75758166536": {
+      "context": "This chunk appears in Section II.B of the EDPB Guidelines on Automated Decision-Making and Profiling, which provides definitions of key concepts under the GDPR. It defines automated decision-making as distinct from but potentially overlapping with profiling, explaining that solely automated decision-making involves technological decision-making without human involvement and can be based on various data types.",
+      "text_sha256": "c5f87719e186747163b2e993abc07574814afe56bcdb4aaef43a28cfe1bfb2f8",
+      "window_index": 0
+    },
+    "1fdab3fe6b198d8a69937ea13ff5cefa73682441467dc14e84e821a39d72baa1": {
+      "context": "This chunk appears in Chapter III, Section A of the EDPB Guidelines on Automated Decisions and Profiling, which outlines the data protection principles applicable to all profiling and automated decision-making activities. The chunk introduces the key areas controllers must consider for compliance with these principles, which are then detailed in subsections covering Article 5(1)(a) through Article 5(1)(e) of the GDPR.",
+      "text_sha256": "a774c89ac198cb3bb03ac6cb499afe7ce95867cc891036ecf370f2788d2761a0",
+      "window_index": 1
+    },
+    "213e9c6be801bfffacd5b0aebcbf87680f95b2f3257dd91530c2d067e87289df": {
+      "context": "This chunk appears in Section C of the EDPB Guidelines on Automated Decisions and Profiling, which explains how the GDPR addresses the concepts of profiling and automated decision-making. It distinguishes between three types of profiling uses and clarifies the difference between decision-making based on profiling versus solely automated decision-making under Article 22(1), establishing the foundational framework for the guidelines' subsequent chapters on general provisions and specific automated decision-making requirements.",
+      "text_sha256": "4c9831e89fb66acbccae6805e52011895d9466413d102221b4a4346df9cef107",
+      "window_index": 1
+    },
+    "25ee29ef3e239f075187111fe9c3532990179d5c4d05f770768752ca753fee45": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions, specifically in Chapter III section B subsection 3, which discusses Article 6(1)(c) as a lawful basis for processing in profiling and automated decision-making. It explains when controllers may rely on legal obligations to justify profiling activities such as fraud prevention or money laundering.",
+      "text_sha256": "d2a8db9419f46e0f9cd82c1d5b44da2cf1fac9a116d8b27762a1d88835a35f10",
+      "window_index": 1
+    },
+    "28a005f098ba18534cc5406778adc8b60e4a69a42dbf82fbb0ecb42de4be253f": {
+      "context": "This chunk is from Section I (Introduction) of the Article 29 Data Protection Working Party's Guidelines on Automated Decision-Making and Profiling under the GDPR, adopted on 3 October 2017 and revised on 6 February 2018. It introduces the scope and prevalence of profiling and automated decision-making across sectors, explains technological advances enabling these practices, and outlines both their benefits and significant risks to individuals' rights and freedoms.",
+      "text_sha256": "fb9d32469dd228fabb42fd32ace07cc6061c3623ba200356d0c0517b9e765c02",
+      "window_index": 0
+    },
+    "30b2149ba422f2a19a335aa31ea0675c4ff59772c6d9c1393ca567c082d234ae": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Chapter III section B on lawful bases for processing. It discusses Article 6(1)(e) as one of six possible lawful bases that controllers can use to justify profiling and automated decision-making activities, alongside consent, contract performance, legal obligations, vital interests, and legitimate interests.",
+      "text_sha256": "d14eafda378be2f99503b6de2eb358aa104736cb8445f417327ff721df80d931",
+      "window_index": 1
+    },
+    "322a053b5f110a239513fe332b30d8de1533c548e2056817d980145be5653915": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decision-Making and Profiling, specifically Section 2 titled \"Article 15(1)(h) - Right of Access.\" It explains data subjects' entitlements under GDPR Article 15(1)(h) to receive information about solely automated decision-making and profiling, including the existence of such processing, meaningful information about the logic involved, and the significance and envisaged consequences for the data subject.",
+      "text_sha256": "cab2274253451ca4e56ab06c756a7a2b18e6615c4c8e440a47549217293c6d64",
+      "window_index": 3
+    },
+    "35ba980e1ecdb7b4743e381670a72c09ff1e55cda4da7f9a07be445b9be73dbb": {
+      "context": "This is the table of contents from the Article 29 Data Protection Working Party's guidelines on automated decisions and profiling under the GDPR, adopted on 3 October 2017 and revised on 6 February 2018. The table of contents outlines the document's structure across six main chapters covering definitions, general provisions, specific provisions on Article 22, children and profiling, and data protection impact assessments, along with annexes on good practices and key GDPR provisions.",
+      "text_sha256": "870522b23bc80047e49732fff57aab051f040c4c8519f0a03484ead6e4d46d82",
+      "window_index": 0
+    },
+    "3744462e2f7efeadfe703a4a3a9617075ed1a83b5c465a2af9d49a373bbc2945": {
+      "context": "This is the document reference number and version identifier for the Article 29 Data Protection Working Party guidelines on automated decision-making and profiling, adopted on 3 October 2017 and last revised on 6 February 2018.",
+      "text_sha256": "2de9c1d170cf7e17c114dc5b352c08206e4fef9c1f0e75206e434e40860095b8",
+      "window_index": 0
+    },
+    "37b80987856af232e60c8652aa7e3d6ed2e2b58a19f8d9b6b75651f9d5157e99": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions, specifically in Chapter IV Section B under the discussion of \"Similarly significantly affects him or her.\" It explains that automated decisions can have significant effects not only on the individual directly targeted by the decision, but also through the actions or characteristics of other individuals, as illustrated by the credit card company example that follows.",
+      "text_sha256": "68c44dd4ab3d4854987ec170d11296035ed297ac2e3388159a1cb73c997eb874",
+      "window_index": 2
+    },
+    "3a1bde0d16365c99fe6590fec86517b966445a8bd162da7042531d07603e8de1": {
+      "context": "This chunk is from Section II.A (Profiling) of the EDPB Guidelines on Automated Decision-Making and Profiling, which provides the formal GDPR definition of profiling from Article 4(4) and explains its three essential elements: automated processing, personal data, and evaluation of personal aspects. The section distinguishes profiling from simple data classification and references the three stages of profiling outlined in the Council of Europe Recommendation CM/Rec (2010)13.",
+      "text_sha256": "d0ee5bd108a75625bc86d734011e74f7e6629f7ada1a9962355dc5d6f4c7b471",
+      "window_index": 0
+    },
+    "3af6b629b0f826e872709314986c26e3ae5ea08f98a78becd11ce2213e6380e3": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decisions, specifically Section B.6 on Article 6(1)(f) - Lawful Bases for Processing. It explains how controllers can use profiling based on legitimate interests, the balancing test required under Article 6(1)(f), and the factors relevant to assessing whether profiling is justified, including profile detail, comprehensiveness, impact, and safeguards.",
+      "text_sha256": "18b5e6bcbaea6a3c8d082c80e2316bb80f5c87dc6c3be6ae30aaa3e546e0c750",
+      "window_index": 1
+    },
+    "3c63bbf3985cce00a29bb24eeca6c4de184f591161af8c39211677cc44eca505": {
+      "context": "This chunk is an example in the EDPB Guidelines on Automated Decision-Making and Profiling, appearing in the section titled \"'Significance' and 'envisaged consequences'\". It illustrates how controllers should provide meaningful information about the intended effects and consequences of automated decision-making to data subjects, demonstrating the use of visual and interactive tools to explain both how decisions are made and their potential impact.",
+      "text_sha256": "23c7a56d04be44411b002c43376e638cfcabea2fa0bd23f39909d9fee3345ad2",
+      "window_index": 3
+    },
+    "3e645ca2690439b1467bf4f1ecea095c936cb32623f6bb3d5dd0a84b8a50d987": {
+      "context": "This chunk is from Section F \"Establishing appropriate safeguards\" of the EDPB Guidelines on Automated Decision-Making and Profiling. It explains the mandatory safeguards controllers must implement under Article 22(3) of the GDPR when relying on exceptions to the prohibition on solely automated decision-making, including requirements for human intervention, transparency, bias detection, and error prevention measures.",
+      "text_sha256": "951a125a31ab499e554c56fabf75f9552c9580feadb46ef04c662b6ae84acefe",
+      "window_index": 3
+    },
+    "3ee34097bd4c0ed5ab3a7f81f12eca1f87b95cb437109becb3669a487f651da4": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decisions section titled \"Key GDPR provisions that reference automated decision-making as defined in Article 22.\" It provides detailed commentary on Articles 22(2)(a-c), 22(3), 23, 35(3)(a), and 47(2)(e) of the GDPR, explaining the exceptions to the prohibition on solely automated decision-making, required safeguards including human intervention rights, and restrictions on profiling-based decisions.",
+      "text_sha256": "073e8b35f0926d7cc5b4b2e308b4ac75342625bb47e564d5bbb762d1387ed0f6",
+      "window_index": 4
+    },
+    "473477bdbb8a502098e0d7c6c1a746a3569c8cdfbdbb64d8f5b97dfdafafda37": {
+      "context": "This chunk appears in Chapter IV of the EDPB Guidelines on Automated Decision-Making, which provides specific provisions on solely automated decision-making as defined in Article 22 of the GDPR. The chunk explains the core prohibition established by Article 22(1) against decisions based solely on automated processing with legal or similarly significant effects, clarifies that this operates as a general prohibition rather than a right requiring invocation, and outlines the three key components of Article 22: the general prohibition, exceptions to it, and required safeguarding measures.",
+      "text_sha256": "348d3653d533c91bd6943c74f129e1635f1f461238d8db81cd76475e764d712e",
+      "window_index": 2
+    },
+    "4ba803b8ec15b9cbda9d306b89ae430f8fd7c2887ab1dd46a46c3b6edfe9c8ec": {
+      "context": "This chunk appears in Section IV.C of the EDPB Guidelines on Automated Decision-Making, which discusses the three exceptions to the general prohibition on solely automated individual decision-making established in Article 22(1) of the GDPR. The exceptions allow such processing when necessary for contract performance, authorized by law with safeguards, or based on explicit consent, with additional requirements for special categories of data under Article 22(4).",
+      "text_sha256": "7bc41037849ebe7698ba4d5d88c9f191301807f877caeaa7f32004c5fa96b8b4",
+      "window_index": 2
+    },
+    "4ef8a9aaed8de3415f27b05a90342fd2090c56dae2e01f49b1ee405090dc7fcf": {
+      "context": "This example appears in the \"Example\" section at the beginning of the EDPB Guidelines on Automated Decision-Making, illustrating how data brokers and companies sharing profiled personal data must comply with transparency obligations under Articles 13 and 14, data subject rights under Articles 15-17 and 21, and Article 22 provisions when using profiles in solely automated decision-making with legal or similarly significant effects.",
+      "text_sha256": "00653f7217ce05544c2d5e3b033fbe6b1af0058ef73880c180d542a83827155b",
+      "window_index": 2
+    },
+    "51c4de9fc268e704ae7c3b6bf710b2b85cb027e1eff1dee8000259b0f2958ac8": {
+      "context": "This chunk is from Annex 1 (Good Practice Recommendations) of the EDPB Guidelines on Automated Decision-Making and Profiling. It provides specific recommendations for data controllers implementing safeguards under Article 22 and Recital 71 of the GDPR, including quality assurance checks, algorithmic auditing, data minimization, human intervention mechanisms, and transparency measures for solely automated decisions with legal or similarly significant effects.",
+      "text_sha256": "d9fd1df46e8cad3f49425b8a1b0b03d6c58f46bd5b40fcf142ffc611b4b89500",
+      "window_index": 3
+    },
+    "521685b078c259c230af998c323e925afbc7873de1a00a4b84f7bfbf36048bae": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions, specifically in Chapter IV, Section C.1 titled \"Performance of a contract.\" It discusses one of the three exceptions to the general prohibition on solely automated decision-making established in Article 22(1), explaining when controllers may use automated processes for contractual purposes and the necessity requirement they must satisfy.",
+      "text_sha256": "2fc6481540c622234aa9bacfb834ff4491b7e98840890f148724376e1bc3f148",
+      "window_index": 2
+    },
+    "5aff9ac2bdf013b2247bc51b57bab68241dd3937468a3f3e1ff0c0a3ec4c23fb": {
+      "context": "This chunk is from Section VI of the EDPB Guidelines on Automated Decision-Making and Profiling, which discusses Data Protection Impact Assessments (DPIA) and Data Protection Officer (DPO) requirements. It explains how controllers must use DPIAs as an accountability tool to assess risks in automated decision-making and profiling under Article 35(3)(a) of the GDPR, and clarifies when DPIAs apply to both solely automated and partially automated decisions with legal or similarly significant effects.",
+      "text_sha256": "14df0a79d0aa55349f225f2658ede98f1f5543eb11830a8de312a738cce7e99c",
+      "window_index": 3
+    },
+    "5f3775a07b34882c038c9eeebc22a163259e6f5cf21d71d9befb5787b02e1f75": {
+      "context": "This chunk appears in Section III.A.2 of the EDPB Guidelines on Automated Decision-Making, under Article 5(1)(b) regarding further processing and purpose limitation. It introduces the concept that profiling may repurpose personal data collected for different original purposes, which is then illustrated with an example about mobile applications collecting location data.",
+      "text_sha256": "73fadd3a6e5e8e781d76f41785bb7ab95bba45db482b57faff921345743ed092",
+      "window_index": 1
+    },
+    "6ade702ef0468f726ce4b0e8ddd4e7c14a5bc7666fc857cd5768719b412c57db": {
+      "context": "This chunk from the EDPB Guidelines on Automated Decision-Making (WP251rev.01, adopted October 3, 2017 and revised February 6, 2018) provides an overview of the document's structure and scope in the Introduction section. It outlines the six main chapters covering definitions, general provisions, specific provisions on Article 22, children and profiling, and data protection impact assessments, along with information about annexes and WP29's monitoring role.",
+      "text_sha256": "3d6dc5b01e40625884f14a9704a1e9b80e644ea582f0fd56affa7a915cbae8bb",
+      "window_index": 0
+    },
+    "6b3a24d8669e5877f3d24c03bc8290581fb4f8c3fd7cd55eacd86de5bf46a5c1": {
+      "context": "This chunk is part of the table of contents from the Article 29 Data Protection Working Party's guidelines on automated decisions and profiling under the GDPR. It lists the structure and page numbers for Sections III through IV, covering data protection principles, lawful bases for processing, special categories of data, rights of data subjects, and specific provisions on solely automated decision-making as defined in Article 22 of the GDPR.",
+      "text_sha256": "a4e2511004b589c4b359f0e9793a4c04dc58b0f97743b6deac09d03293d6aeab",
+      "window_index": 0
+    },
+    "6eba1311ea558b533918571cf2f2be3a8acc8995da83e4ea0bf948ab187bb236": {
+      "context": "This chunk appears at the beginning of Chapter III of the EDPB Guidelines on Automated Decisions and Profiling, which covers general provisions applicable to all profiling and automated decision-making under the GDPR. It introduces the scope of Chapter III and cross-references Chapter IV, which addresses specific provisions that only apply to solely automated decision-making as defined in Article 22(1) of the GDPR.",
+      "text_sha256": "e234d434531ea60d69f3ee2cd7f47fe343a4096e76c98c30fb0e7fe45091528a",
+      "window_index": 1
+    },
+    "70c4f5c8319b2513b730dda684d05bbfada7590ea8926e10c05c7f0fb33ed495": {
+      "context": "This chunk appears in Section IV.A of the EDPB Guidelines on Automated Decision-Making, which explains the specific provisions of Article 22 of the GDPR. It defines what \"decision based solely on automated processing\" means as a key requirement for Article 22(1) protections against automated decision-making with legal or similarly significant effects.",
+      "text_sha256": "e102d6524ef44f76deb331674f5f5dbb47682241288cfb65e9d67f63c48a58a8",
+      "window_index": 2
+    },
+    "7b169a0b500c93ef3cf9559e2346fbebb1719dcb97de1ed538d23df363fe807a": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decisions section titled \"Key GDPR provisions that reference automated decision-making as defined in Article 22.\" It details specific GDPR articles (13, 14, 15, and 22) and their corresponding recitals that govern data subject rights to information about automated decision-making and profiling, and explains the rationale for interpreting Article 22(1) as a prohibition rather than a right to object.",
+      "text_sha256": "ad375c3c1ce5930f1d9377ac46168afbb374af40bbd67dbecdb27e0979cce656",
+      "window_index": 4
+    },
+    "7df4d4939a606a599f6350db266bc69a4b3383d873a5d2de5ce462004d33806b": {
+      "context": "This example appears in Chapter II (Definitions) under Section A on Profiling in the EDPB Guidelines on Automated Decision-Making. It illustrates the definition of profiling provided in Article 4(4) of the GDPR by demonstrating how a data broker's practice of collecting, compiling, and segmenting personal data to categorize individuals constitutes profiling activity.",
+      "text_sha256": "8809ae2247907164996f6f37d01a8b53c4349256328276e6af1603dff5f00155",
+      "window_index": 0
+    },
+    "7ec9e0e11da35439b51bb757ad9a5dc3fa7f1b8342abf746be846e8f3a84f6f6": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions under Section B (Lawful bases for processing), specifically subsection 4 on Article 6(1)(d) - necessary to protect vital interests. It explains when controllers can use vital interests as a lawful basis for profiling and automated decision-making, including examples like disease prediction models and humanitarian emergencies.",
+      "text_sha256": "7484eba645c63c3fbfaf0e13072dd45c67f9967fc3d60526690225eafbd29287",
+      "window_index": 1
+    },
+    "853fe504b45f9363406093437a3d0b5a7e6166324b0d28bc1e9bc221e7425cf3": {
+      "context": "This example appears in the EDPB Guidelines on Automated Decision-Making, specifically in Section III.B.2 on Article 6(1)(b) - Lawful Bases for Processing. It illustrates when profiling would NOT meet the \"necessary for the performance of a contract\" basis for processing, demonstrating that contractual necessity must be interpreted narrowly and that profiling beyond what is essential to fulfill a contract cannot be justified solely by contractual mention.",
+      "text_sha256": "a0548c5624636db194d343ad2fbb0bd78846b6bfb046943a5927f23d17f39476",
+      "window_index": 1
+    },
+    "88cec5a45527da63ce5f47606fb2f1607f11ee158d1769003a4cdf1305ec7557": {
+      "context": "This example appears in the EDPB Guidelines on Automated Decision-Making under Section IV.B, which discusses when automated decisions produce \"similarly significant effects\" on individuals. The example illustrates how automated decision-making based on characteristics of other people in the same area can have significant effects on an individual's opportunities, even when not based on their own personal data or behavior.",
+      "text_sha256": "8d62152eb1e3d48e1da1c20a089355c560e35431f8a721330f7bd17e3793f183",
+      "window_index": 2
+    },
+    "89abb46c7998e8287b07777facc0155015694ba07cf371ab8740db7f6b21abd8": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decisions, specifically Section III.A.4 on Article 5(1)(d) - Accuracy, which is part of the general data protection principles applicable to all profiling and automated decision-making under the GDPR. It explains the controller's obligations to ensure accuracy throughout all stages of the profiling process and the risks of inaccurate data in automated decision-making.",
+      "text_sha256": "ded7f5123b911c08e60efde88d09ee3a86f4534f41d271d07ceed0d0dd3fb683",
+      "window_index": 1
+    },
+    "969fdaa93575bad600d05094b46f6738cd3a7dbfad6b2ed72ab86690e021ef37": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making under section IV.D.1, which addresses Articles 13(2)(f) and 14(2)(g) regarding the right to be informed. It specifically explains what constitutes \"meaningful information about the logic involved\" that controllers must provide to data subjects when making automated decisions with legal or similarly significant effects under Article 22(1).",
+      "text_sha256": "e3f532fc3dacf7294a44ef19b9c2d37ddd95a5294bce6ef8088a4f24d07ba624",
+      "window_index": 2
+    },
+    "99f14854684e91ee3c929e6792a1526552e2a06e07c64729ac4e674e71158fb4": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decisions, specifically Section C on Article 9 - Special Categories of Data, which is part of Chapter III covering general provisions on profiling and automated decision-making under the GDPR. It explains how profiling can create special category personal data through inference and combination of non-sensitive data.",
+      "text_sha256": "f31f3a0f130d2b4718e092e61d2d9c588e77b6a825a8ff75d2171ce2a939a80a",
+      "window_index": 1
+    },
+    "a1d20cf482f6c595f0386a37ddc9a45c2acd25238b6b823ee08564f8067efd5e": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Chapter III section A.5 on Article 5(1)(e) Storage limitation, which discusses data protection principles applicable to all profiling and automated decision-making under the GDPR. The chunk explains how controllers must balance the benefits of retaining data for machine-learning algorithms against compliance with storage limitation and data minimisation principles.",
+      "text_sha256": "5c48c8a7ebedc98b4d311e58ba0fb616241dfcd19fc01ed12b471767f8751dd7",
+      "window_index": 1
+    },
+    "a63337006df57752526c3be712125d8a259b084bc3661ab701a65b61f5e66eb8": {
+      "context": "This chunk appears in Section B.1 of the EDPB Guidelines on Automated Decision-Making, which discusses Article 6(1)(a) consent as a lawful basis for processing under the GDPR. It explains how explicit consent functions as an exception to the prohibition on automated decision-making and profiling defined in Article 22(1), and addresses the specific challenges of obtaining valid consent for profiling activities.",
+      "text_sha256": "159dce0125c28193f1c1e5e8c083eb03951a4fa968a64bd91d396166cd1a4129",
+      "window_index": 1
+    },
+    "aac5db0e58869cdf8f39d98dc6efc8200af6f75ff37d98275e15438eda6ecb26": {
+      "context": "This chunk appears in Section B (Lawful bases for processing) of Chapter III (General provisions on profiling and automated decision-making) in the EDPB Guidelines on Automated Decisions. It distinguishes between the lawful bases required for solely automated decision-making under Article 22(1) versus other forms of profiling and automated decision-making, introducing the discussion of six specific lawful bases under Article 6 that follow.",
+      "text_sha256": "5ffd5ce0fe0f46952ef2139024ea049fc3ad556b35f26eebcde2ff830cb7556b",
+      "window_index": 1
+    },
+    "ad2d9e5135eb42c12678cdfd7a4598d353dff1a7b8bf6eedd24ed7be10e7557b": {
+      "context": "This chunk appears in Annex 3 of the EDPB Guidelines on Automated Decisions and Profiling, which lists the sources and references that informed the development of these guidelines. It includes citations to WP29 opinions and guidelines on profiling, data protection, and automated decision-making, as well as recommendations from the Council of Europe and reports from various international data protection authorities on big data and privacy.",
+      "text_sha256": "64c1106acddd7e54434feb1a65d0558368b2fcd49c920852812c10023b76d3cd",
+      "window_index": 4
+    },
+    "ad780a9fd4e0094668737da751d908c74d00e62e4da3a7299aba44214a55afe6": {
+      "context": "This chunk appears in Section II.B of the EDPB Guidelines on Automated Decision-Making and Profiling, under the subsection \"Automated decision-making.\" It provides examples illustrating the distinction between automated decision-making with and without profiling, and demonstrates how decisions can involve both automated processing and human intervention.",
+      "text_sha256": "7c984397172da90d93007da185f3059664f2fa56a6bf0a8d0c462b28574c0a68",
+      "window_index": 0
+    },
+    "b4b29e0299ec5fc0e8212ad64bd3f5b4ec41af55e03c1584a8c75a262f02df03": {
+      "context": "This chunk appears in Section 1 of the EDPB Guidelines on Automated Decision-Making, specifically under \"Articles 13 and 14 - Right to be informed,\" which addresses transparency obligations for controllers regarding profiling and automated decision-making processes. The section emphasizes that controllers must clearly explain how these processes work to data subjects, with particular focus on making distinct the dual purposes of profiling and profile-based decision-making under GDPR Articles 13 and 14.",
+      "text_sha256": "d8f37dded951a9f92ad4ba9da3655bfa556754cbc7f454fd6c9ffeb3244a4d86",
+      "window_index": 2
+    },
+    "b86e2c0d02ec46038d206c74aa088bdd5ea70bc40e7406e8db81455560fdb95e": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions, specifically in Section IV.B titled \"Legal or Similarly Significant Effects,\" which explains the scope and threshold of Article 22 of the GDPR regarding solely automated decision-making. The chunk introduces the key distinction between \"legal\" and \"similarly significant\" effects that determine whether automated decision-making falls under Article 22's prohibition.",
+      "text_sha256": "429a8914e5aea4eeeb678bd53f1eab047fd15768d7185491d319882cc2263055",
+      "window_index": 2
+    },
+    "baf331b58ba782db13ca1caf5d063d441ce844c4b5f5ed46ac735388fdceb479": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Section IV.C.3 titled \"Explicit consent,\" which discusses one of the three exceptions to the general prohibition on solely automated individual decision-making under Article 22(1) of the GDPR. The chunk explains the requirement for explicit consent when processing falls under Article 22(1) and directs readers to WP29 consent guidelines and Chapter III for additional information.",
+      "text_sha256": "5284d6e7894a98c9940acc402dd06c2c514163e9f3c15241bc919da504ada91c",
+      "window_index": 2
+    },
+    "bbab4cc37ba9edb2f55927fe60dc0f0561d28c69cd69642fc754929155387942": {
+      "context": "This chunk appears in Chapter IV of the EDPB Guidelines on Automated Decision-Making, which discusses specific provisions on solely automated decision-making as defined in Article 22 of the GDPR. It explains the role of Data Protection Impact Assessments (DPIAs) in determining whether proposed processing activities fall within Article 22(1) and what safeguarding measures must be applied.",
+      "text_sha256": "4c9a2752965bdcdd2337a909c82b771aabd3732c1f728b30adc6799922adabff",
+      "window_index": 2
+    },
+    "be7346b2daeb2af836b68bac77a8202f96ad58715746defcf26c6cfe58604adf": {
+      "context": "This chunk appears in ANNEX 3 - Further reading of the EDPB Guidelines on Automated Decisions and Profiling. It lists sources and references that informed the development of these guidelines, including a U.S. Senate report on data brokers, academic papers on algorithmic decision-making and the GDPR, and various international data protection resources.",
+      "text_sha256": "b72680cf4d1cb0bec6ee8b68132148348a60fd02c2c54cf1cca579c43329fb34",
+      "window_index": 4
+    },
+    "c018d81907c7afe2a31a0546284f2d3f0f43fa4360ba371b40503b3e32b80baf": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making under Section IV, subsection D, which addresses special categories of personal data under Article 22(4) of the GDPR. It specifies the cumulative conditions that must be met when automated decision-making involves special categories of data, requiring both an applicable Article 22(2) exemption and compliance with Article 9(2) conditions, along with mandatory safeguarding measures.",
+      "text_sha256": "c7f181c7a4ca79af62a98b9f7c26067fdf2f3fc47a06294a841104762c780ebf",
+      "window_index": 2
+    },
+    "c46add0ad512435122ddcfecec72057d107323059d9a906dca9c98cfeeedf79f": {
+      "context": "This is a citation reference in the EDPB Guidelines on Automated Decision-Making, specifically supporting an example in Section III.A.1 (Article 5(1)(a) - Lawful, fair and transparent) that illustrates unfair profiling practices by data brokers selling consumer profiles to financial companies without permission.",
+      "text_sha256": "2e646fafcdf1efb2dd00f84851af79ae199c2740844f3b088bebed8bf180cf32",
+      "window_index": 1
+    },
+    "c6f7e992ed1531419ef501a9b196077b8b6431d8ebc9bc73914d4d2fc0e470f6": {
+      "context": "This chunk appears in the header section of the EDPB Guidelines on Automated Decision-Making and Profiling (WP251rev.01), establishing the legal basis and procedural framework for the Article 29 Data Protection Working Party that authored these guidelines on profiling and automated decision-making under the GDPR.",
+      "text_sha256": "1fbdf765ec927c8f332e8af245d752e7b9c0173f040fd754e5f50a0146a57014",
+      "window_index": 0
+    },
+    "c7ba8d2f7f8aae3eb8501c9f8fc39eda247d392e7c5d688a77ffc2043d53df13": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions under Section IV.C.2, which discusses exceptions to the general prohibition on solely automated decision-making established in Article 22(1). Specifically, it explains the second exception under Article 22(2)(b), which permits automated decision-making when authorized by Union or Member State law that includes safeguards for data subject rights, with examples including fraud prevention and service security.",
+      "text_sha256": "fb7e5ce0a5a85f311dd6a543857b5264d626f4566fdeac1f7bac4ec715e22419",
+      "window_index": 2
+    },
+    "cc57b7dc84246abd143c939a475ac4fd16c24c127aada0941e754752c7600152": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions under Section IV, subsection A, titled \"Decision based solely on automated processing.\" It explains the requirement under Article 22(1) that decisions must have no human involvement to qualify as \"based solely\" on automated processing, providing examples of what constitutes meaningful human involvement versus fabricated involvement, and clarifying that controllers must document the degree and timing of human oversight in their Data Protection Impact Assessment.",
+      "text_sha256": "823d62a7dd60fabb86b1aecedda5ef13830443b3e0ff43ae9f0b9e1a1bd7ccd6",
+      "window_index": 2
+    },
+    "d1892194fee1cc536092ed180e6be2cfc4c964d42f86299cd04c2d50b3f697dc": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decision-Making, specifically Section IV.B on \"'Legal' or 'similarly significant' effects\" under Article 22 of the GDPR. It explains the \"similarly significantly affects\" threshold for automated decision-making, providing examples and criteria for determining when processing produces effects equivalent to legal effects, including impacts on financial circumstances, health services, employment, and education.",
+      "text_sha256": "b4bd91005452c0fe8e545133a86408f2f4b1faa09e6af62c3f09fbc2ad5cc0bc",
+      "window_index": 2
+    },
+    "d7975b744b468cd16e7555ea57663f3685a718eba4d0f0ae7ce0bb90e4a6659b": {
+      "context": "This example appears in the EDPB Guidelines on Automated Decisions, specifically in Chapter IV, Section C.1 on \"Performance of a Contract,\" which discusses exceptions to the general prohibition on solely automated individual decision-making under Article 22(1) of the GDPR. The example illustrates when automated decision-making may be necessary for pre-contractual processing, such as screening job applications.",
+      "text_sha256": "282f638b72acc0b92f260529f5aef3dee00399cf8e478bd9d8cb22e8be86fb2e",
+      "window_index": 2
+    },
+    "da6040b308f60b4185a70a549354c3cea423d1289cbe4a4c9959598f3c91c740": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decisions under Section III.A.2, which addresses Article 5(1)(b) on further processing and purpose limitation. It provides an example and explanation of how profiling may violate purpose limitation principles when personal data collected for one purpose is repurposed for profiling without compatibility assessment or appropriate consent.",
+      "text_sha256": "fc254146f82ec8f7b02d7b343511f071e3c2f584f1534a02c55a212fb274a40c",
+      "window_index": 1
+    },
+    "ddb59333b075c8739b9335d6d0b591f456b6a89ae7e3ccf39a26bbf299406fb7": {
+      "context": "This chunk is from Annex 1 of the EDPB Guidelines on Automated Decision-Making and Profiling, which provides good practice recommendations for data controllers to comply with GDPR requirements on profiling and automated decision-making. The chunk covers recommendations related to Articles 5, 6, 12-16, and 22, addressing transparency obligations, consent, right of access, right to rectification, and the requirement to provide meaningful information about algorithmic logic to data subjects.",
+      "text_sha256": "999dabbf8c59c5f53847191a2f5000cd92b46bcb0284d24d578853119b62ae80",
+      "window_index": 3
+    },
+    "df14c2346d835328198ae24e1d73a5f5a6fdd28caa7f9d4e6275110223f74921": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Section III.B.2 on lawful bases for processing under Article 6(1)(b) of the GDPR, which addresses processing necessary for the performance of a contract. The chunk explains why controllers might use profiling and automated decision-making, then clarifies that these business benefits alone do not satisfy the necessity requirement for contractual processing.",
+      "text_sha256": "b2a950182d1d9b8c0bb512ee0a75de18816da500480554ff427340ad1e00ff6f",
+      "window_index": 1
+    },
+    "df310ccd8cc03cdd818914e9aa92a88f2f8dc26e7d66327cae0f7dd493e83290": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Chapter III (General Provisions on Profiling and Automated Decision-Making), Section A (Data Protection Principles), subsection 1 addressing Article 5(1)(a) on Lawful, Fair and Transparent processing. It explains the transparency requirement under GDPR Article 12.1 and why transparency is particularly challenging in profiling contexts where data is derived or inferred rather than directly provided by data subjects.",
+      "text_sha256": "b5308ae87cb6d12067148ff83fc5e8baaf7a169517ce3cbf5158c531cbffe4d3",
+      "window_index": 1
+    },
+    "e03bf4a32f0461dd1638bdde04483376ec918727cc10794f9e2e50412c0dfa5c": {
+      "context": "This chunk appears at the end of Section D (Rights of the Data Subject) in Chapter III of the EDPB Guidelines on Automated Decisions and Profiling. It introduces the data subject rights provisions under the GDPR that apply to both profiling and automated decision-making, noting that additional requirements for Article 22 automated decision-making are covered separately in Chapter IV.",
+      "text_sha256": "df5943c5bf73fe9193fd4289949e8df3afed84901cd6912bd916b47f1ef7cbe2",
+      "window_index": 1
+    },
+    "e6a14675a281bc006b48125987b1e6b79a8f7ab2597ec9e881759fb0cc176376": {
+      "context": "This chunk appears at the beginning of the EDPB Guidelines on Automated Decisions and Profiling (WP251rev.01), providing institutional information about the Article 29 Data Protection Working Party that authored the guidelines, including its legal basis, status as an independent advisory body, and administrative details about its secretariat.",
+      "text_sha256": "1cf49fce45f22227e0505067bf136fb4518a07e0bb1da5eb460d565c7ac27f3e",
+      "window_index": 0
+    },
+    "e80d7a759b1cc0100d145820736ff3ae8b8eae018506a10141f788cd74adb3e5": {
+      "context": "This chunk appears in Section C of the EDPB Guidelines on Automated Decision-Making, which addresses Article 9 concerning special categories of data. It provides an example of how profiling can infer sensitive personal information from non-sensitive data, and outlines controller obligations when special category data is derived through profiling, including requirements for lawful basis, purpose compatibility, and data subject notification.",
+      "text_sha256": "1f5d9ecc05d3616cea7ebf68bd1540fdfbe8c97e926c93586a82f38b9cde2bed",
+      "window_index": 1
+    },
+    "e816798dbd0e47ebb46c978dda9a306072f694c62321bdad062f568b360af92f": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making and Profiling under Chapter III, Section A.1, which discusses Article 5(1)(a) on lawful, fair and transparent processing. It provides two examples illustrating how profiling must comply with transparency and fairness requirements: an insurance use case demonstrating lawful profiling practices, and a data broker scenario exemplifying unfair profiling that violates GDPR principles.",
+      "text_sha256": "482343b5e9afcfeeec70ed32dee4806a938e07056c30e690320b892f2c00d07a",
+      "window_index": 1
+    },
+    "e9ea7a98787133bcb3931b1a0186593f65887a855dc3a29f26a18695f9a3925b": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making, specifically in Chapter III (General Provisions on Profiling and Automated Decision-Making), Section A (Data Protection Principles), subsection 3 (Article 5(1)(c) - Data Minimisation). It explains how controllers must comply with the data minimisation principle when collecting personal data for profiling purposes.",
+      "text_sha256": "8e7abbc7852d2260e9d918b7b2be4cb262af54308121a83c6942e011a0fa4bd7",
+      "window_index": 1
+    },
+    "ec26aa6ca115c968ee300e16eb0156ea9259e5fdb121233f2f0a7c213a0007bf": {
+      "context": "This chunk appears in Chapter II (Definitions) of the EDPB Guidelines on Automated Decision-Making and Profiling, adopted on 3 October 2017 and revised on 6 February 2018. It introduces the GDPR's overarching approach to regulating profiling and automated decision-making by outlining the key protections and requirements the regulation establishes to prevent unjustified impacts on individuals' rights.",
+      "text_sha256": "1971764f172653733c13a68ac30279d941f7464885a451f22846721ba2c9e662",
+      "window_index": 0
+    },
+    "ecd2136a366c566bcc4ab9a1fdffd7d49b6760043ea25f1b91be5c6f98e2021e": {
+      "context": "This chunk is from the EDPB Guidelines on Automated Decision-Making, specifically Section D.1 titled \"Articles 13(2)(f) and 14(2)(g) - Right to be Informed\" under Chapter IV on solely automated decision-making as defined in Article 22. It details the transparency obligations controllers must fulfill when engaging in automated decision-making with legal or similarly significant effects, including requirements to inform data subjects about the logic, significance, and consequences of such processing.",
+      "text_sha256": "b3b4cfcb27c681eec23dcd2d05b39412171e13514deb5d945d43d6067d29a4df",
+      "window_index": 2
+    },
+    "ede7981688b20818cc2d70bde9e0413676875ad520b4609fa7cb826ebc0d723b": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making and Profiling, in a section titled \"Significance and Envisaged Consequences\" that explains how controllers must communicate the intended effects and future impact of automated decision-making processes to data subjects under GDPR Articles 13 and 14.",
+      "text_sha256": "b9315ae9d426574ab60d99d9651137d515e6e4006f9523e5134b0244c190dc45",
+      "window_index": 3
+    },
+    "f212b0b1bdb2308f3e4e28c0e1c86aa3676bfeb0e987a1e372f1df7ae95f1238": {
+      "context": "This footnote appears in the Introduction section of the Article 29 Data Protection Working Party's guidelines on profiling and automated decision-making. It provides the full citation for Regulation (EU) 2016/679 (the GDPR) and clarifies that while these guidelines focus on the GDPR, profiling and automated decision-making are also covered under Directive 2016/680 for law enforcement purposes, with separate guidance available in WP29 Opinion WP258.",
+      "text_sha256": "dd7146947c69b979fad43dc002aee63aa839b4107ec7b0f505dfd67ffd3d07a1",
+      "window_index": 0
+    },
+    "f3893741c68ee21c9272fdc5ad239bc0e62a8a9f0082f69b8082193712bd141c": {
+      "context": "This chunk is from Chapter V \"Children and profiling\" of the EDPB Guidelines on Automated Decision-Making and Profiling. It discusses the special protections and restrictions that apply when controllers process children's personal data under Article 22 of the GDPR, including the recommendation against relying on Article 22(2) exceptions for automated decision-making with legal or similarly significant effects on children, and the requirement for appropriate safeguards when such processing is necessary.",
+      "text_sha256": "95af4305951dd1eb6fde9d4963c18dc5dce0abd529e319d4747e4e045bf0b276",
+      "window_index": 3
+    },
+    "f669fa9eb0abb6ad59651e90fc079e6465700af1b37560054375e7b0f63cb4b6": {
+      "context": "This chunk is part of the table of contents from the Article 29 Data Protection Working Party's guidelines on automated decisions and profiling under the GDPR. It lists the section headings and page numbers for Chapter IV on specific provisions for solely automated decision-making under Article 22, including subsections on exceptions, special categories of data, data subject rights, and safeguards, as well as subsequent chapters on children and profiling, data protection impact assessments, and annexes with good practice recommendations and key GDPR provisions.",
+      "text_sha256": "2284e859e7445dce81992abfc134c40b5efabc4a445de9f142dd0d6e42dedafc",
+      "window_index": 0
+    },
+    "feb7627e68c5261ed20964e5bf703b29ddeb1f33a41f817f88b190a006d07fde": {
+      "context": "This chunk appears in the EDPB Guidelines on Automated Decision-Making under Section IV, subsection B titled \"'Legal' or 'similarly significant' effects,\" which explains when Article 22 of the GDPR applies to automated decision-making. The chunk specifically defines what constitutes a \"legal effect\" as one of the two threshold criteria for Article 22 protection, distinguishing it from \"similarly significant\" effects that may not involve legal rights but still warrant protection.",
+      "text_sha256": "78e7fd6185bb72f707561fc1020d680f2854f6307eb59d83c98e986d4e13f5de",
+      "window_index": 2
+    }
+  },
+  "doc_id": "edpb-guidelines-automated-decisions",
+  "generated_at": "2026-08-29T22:16:53Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,198 @@
+{
+  "contexts": {
+    "06148546efa200bb9adc0aba9dce6f68f85e347f99e79e25718463a2a42833c0": {
+      "context": "This chunk appears in Section 4 (Algorithm Description) of the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It describes the network construction algorithm (Algorithm 1) for the HNSW data structure, explaining how elements are inserted into the multi-layer graph structure and how the greedy search algorithm (Algorithm 2) is used to find nearest neighbors at each layer.",
+      "text_sha256": "41c8b1b878e965aa5cac01f7d9f2f872e2cb8565c405cf92af5a2f822e66f554",
+      "window_index": 0
+    },
+    "0654a69434cd51ba25172477c3a216e95a2da0052c0f07e14b1302738a009577": {
+      "context": "Section 5.4 of the arxiv paper \"Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs\" (Malkov & Yashunin, 2016) compares the Hierarchical NSW algorithm against product quantization (PQ) based K-ANNS algorithms, which are considered state-of-the-art for billion-scale datasets. This chunk describes the experimental setup and results of benchmarking Hierarchical NSW against the Facebook Faiss library on a 200M SIFT dataset subset.",
+      "text_sha256": "3f06150ec2be6f94f8bb3f22ca63692a98962ee613423d0e9e6eb2444059afb5",
+      "window_index": 2
+    },
+    "0b7f8282368b5b217421438e4fa40f7b18ca7eece7aea089fd18ce67e5292102": {
+      "context": "This chunk appears in Section 2.1 \"Proximity graph techniques\" of the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It discusses the limitations of the Navigable Small World (NSW) algorithm, a proximity graph-based K-approximate nearest neighbor search method, explaining its polylogarithmic complexity scaling and performance degradation on low-dimensional data.",
+      "text_sha256": "e454da0694d58c430253428d6156e44787ce9e14906794ee2f32026f32a81ef6",
+      "window_index": 0
+    },
+    "11747498eac606efcecd436eee570a98ee1994f67abe81ca829a4dbeba187e87": {
+      "context": "This chunk is from Section 5.2 \"Comparison in Euclid spaces\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It describes the experimental setup and results for comparing the Hierarchical NSW algorithm against state-of-the-art K-ANN search algorithms on vector datasets, including details about the hardware used, distance metrics applied, and performance outcomes across multiple datasets listed in Table 1.",
+      "text_sha256": "71f9a953883a6790712ac27462a88624b750d8e784f1ab0df05cb4b173646621",
+      "window_index": 1
+    },
+    "2008918fe2e88832b2a4267bc87bc11a72514dfca00248b8441309cf2ceaa6d9": {
+      "context": "This section from the Motivation chapter of the HNSW paper explains the core structural design of Hierarchical Navigable Small World graphs, describing how layered proximity graphs with exponentially decaying level probabilities achieve logarithmic complexity scaling, and how the approach relates to skip lists and uses a heuristic for neighbor selection to maintain connectivity in clustered data.",
+      "text_sha256": "ec2c41436451b4cd3f832f5aaf87f14bbe334cccca6e2312623d8d1bf78a927f",
+      "window_index": 0
+    },
+    "20f3da6250c5be5bc343cbfcba3a2a31eb268d9abce620a6276b4f254e0a5147": {
+      "context": "This is Algorithm 4 from the arxiv paper \"Efficient and robust approximate nearest neighbor search in high-dimensional spaces\" (arxiv 1603.09320) on Hierarchical Navigable Small World (HNSW) graphs. The algorithm implements a heuristic method for selecting M neighbor elements from a candidate set during graph construction, accounting for distances between candidates to create diverse connections. It is referenced in Section 4.1 as an alternative to the simpler neighbor selection approach in Algorithm 3.",
+      "text_sha256": "3bdfa6b7b1543dca0509c4312b7230d551a0c8c044a15fbc8679ea82e0792e40",
+      "window_index": 1
+    },
+    "27ad11cae9cfd11ab3d90122a85f38b4f00e5a4c0a52b85e188b1bbcb8f99084": {
+      "context": "This chunk is from Section 5.1 \"Comparison with baseline NSW\" in the performance evaluation section of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It compares the proposed Hierarchical NSW algorithm against the baseline NSW algorithm implementation from nmslib, demonstrating improvements in distance computations and algorithmic complexity across different dataset dimensions.",
+      "text_sha256": "4330a7fb210db105f4607dd2b7f8fff5deb7cf3a95724ea9b1e8b85bf4670118",
+      "window_index": 1
+    },
+    "29cfaa7f99e030bd4b193026e925b8964ea1df59d3f544920b035dc73728e94c": {
+      "context": "This chunk appears in the Introduction section of the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It defines K-Nearest Neighbor Search (K-NNS) and Approximate Nearest Neighbors Search (K-ANNS), explaining the motivation for developing scalable search algorithms to overcome the linear complexity of naive approaches and the curse of dimensionality in exact solutions.",
+      "text_sha256": "01da62d5f6b7f7a0ebaeac5c3a39da2b2ce5f2031f99e651c65baf88e70cb1b0",
+      "window_index": 0
+    },
+    "314c841d3ca72d34813009559fa57dca4de46c8b149b608c7904eeca9709e50a": {
+      "context": "This chunk from the HNSW paper's section 3 (Motivation) describes the neighbor selection heuristic used in the Hierarchical Navigable Small World algorithm. It explains how the heuristic maintains global connectivity in clustered data by creating connections based on relative distances between candidate elements, and how it relates to relative neighborhood graphs and Delaunay graphs.",
+      "text_sha256": "931369e6b214867896296d60cc52eb41a4507bf3425e2165939e7d8a47a651d7",
+      "window_index": 0
+    },
+    "31beed38fdddf6af2c2b3dc689ccf9f33fadea0766202b6f9288a675ee942386": {
+      "context": "This chunk appears in Section 3 (Motivation) of the arxiv paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It analyzes the limitations of the Navigable Small World (NSW) algorithm and motivates the proposed Hierarchical NSW approach by explaining how separating links by length scale into multiple layers achieves logarithmic complexity scaling instead of NSW's polylogarithmic complexity.",
+      "text_sha256": "6b5ae6b73eff9dcb17a3f69a995f87a756e53bee425a682cd6ece789cd331b91",
+      "window_index": 0
+    },
+    "3470a86a44373ea7f809a7d237aab236f95e1fd127e7e603283825a5c24172e6": {
+      "context": "This chunk appears in section 4.2.1 \"Search complexity\" of the arxiv paper \"Efficient and robust approximate nearest neighbor search\" (arxiv 1603.09320) on Hierarchical Navigable Small World (HNSW) graphs. It discusses limitations of empirically validating how well the Hierarchical NSW algorithm approximates Delaunay graphs, particularly for high-dimensional data where the average degree of Delaunay graphs scales exponentially with dimensionality.",
+      "text_sha256": "90e7d2a6d4ded8bbf11cfb816124f88abc409dfb9a05f6db13a2f7e0157550fa",
+      "window_index": 1
+    },
+    "38ba1cfb44eb8fe000612510c0aa86bfcd4e8df45e7abe483c89cf297f9e957d": {
+      "context": "This chunk appears in the introduction section of the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It presents the main contributions and overview of the proposed Hierarchical NSW (HNSW) algorithm for approximate K-nearest neighbor search, positioning it as an improvement over the previous Navigable Small World (NSW) approach and other state-of-the-art methods.",
+      "text_sha256": "42b3745a019dd6882c8b52e6965c19e5f2aacab0a3005d2cda410c6e6a1d76bf",
+      "window_index": 0
+    },
+    "39646785232de22d5b6002ffccc3ec6b8b3b6aa63b0368c64381f61b8c1b0ca4": {
+      "context": "This chunk is from Section 4.1 \"Influence of the construction parameters\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It discusses the impact of three key construction parameters\u2014Mmax0, the neighbor selection method (Algorithm 3 vs Algorithm 4), and M\u2014on search performance and memory consumption in the Hierarchical NSW algorithm.",
+      "text_sha256": "f31778102e7e0dda776b89631d706d26ee80df0622d5043e5a8d38cc52de28f4",
+      "window_index": 1
+    },
+    "3b456f4afa5ae266f370cb10ed1f945ede784a88462c6371463869b150708142": {
+      "context": "This chunk appears in section 4.2.3 \"Memory cost\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It explains how memory consumption is calculated based on graph connection parameters Mmax0, Mmax, and mL, and provides practical memory requirements for typical index configurations.",
+      "text_sha256": "ac5cabf3e6f9f894d906fafc9ac1001eb1f3b001773466122e2b02b64018c2be",
+      "window_index": 1
+    },
+    "3edd0024c3d94aed19ab100eac73cc2106169b99f00f617bec3b324c0e7c1878": {
+      "context": "This is a section of references from the arxiv paper \"Efficient and Robust Approximate Nearest Neighbor Search using Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin (2016). References [10-19] are cited throughout the paper's experimental sections, particularly in section 5.4 comparing Hierarchical NSW with product quantization-based algorithms like Faiss, and in section 5.3 comparing performance in general metric spaces.",
+      "text_sha256": "526792e2147a8aab7cd4ec23e40abde735c606629e7665e8457e6798042daed0",
+      "window_index": 2
+    },
+    "4b7868cade724b330eb46f67420b50f4831f34244a8d68784e8ba2c3f4ff2a60": {
+      "context": "Author biographies section of the arxiv paper \"Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin, providing background information on the two researchers who developed the Hierarchical NSW algorithm.",
+      "text_sha256": "b11ba5a8e7958109f1da3f18760b1b5a5a6ba84707e07612362157bafe27a5dd",
+      "window_index": 2
+    },
+    "5a5f1d59517b4d60b2383616c7b90ce7acbe546c6a92f515df66222243c74926": {
+      "context": "This is the abstract and introduction section of the arxiv paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin (2016). The chunk presents the main contribution of the paper\u2014the Hierarchical NSW (HNSW) algorithm for approximate K-nearest neighbor search\u2014and contrasts it with existing approaches like tree algorithms, locality-sensitive hashing, and proximity graph techniques.",
+      "text_sha256": "9d094a5e3eb7510500cc803cb31e050045344b35d428f2e327d4c6f3079c8c5a",
+      "window_index": 0
+    },
+    "68d90a99742102907bc91bf3c8243eb41c69328d73cb9bedd7fb9c3c04ae53ab": {
+      "context": "This chunk contains references 49-59 from the References section (Section 8) of the arxiv paper \"Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin. These citations support the experimental comparisons and methodologies discussed throughout the paper, particularly the evaluation of Hierarchical NSW against other approximate nearest neighbor search algorithms and the datasets used in performance testing.",
+      "text_sha256": "3102869ba78b5dcdf13b28d55dceb7bbfabf68a3e1a763bb64f831ce93950769",
+      "window_index": 2
+    },
+    "6e6cc9dc76d8a66669827e334fdfb73f5f1a573228a87510ae5f15e8a8e09c6f": {
+      "context": "This chunk contains references 40-48 from the References section of the arxiv paper \"Efficient Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin. These citations support the paper's discussion of navigable small world networks, distributed data structures, and approximate nearest neighbor search methods used throughout the document.",
+      "text_sha256": "811ae09cd7f15d05bd4f74a0423a916acdb109bde1fd292fc740c50a7d36414b",
+      "window_index": 2
+    },
+    "6ec4a7491ba0b78e4e6207c199425d596c5622e8efd3e0fdc20bd943ab0fc1a7": {
+      "context": "This chunk appears in Section 6 (Discussion) of the arxiv paper \"Efficient Similarity Search in Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin (2016). It addresses potential solutions to a limitation of Hierarchical NSW mentioned earlier in the discussion\u2014the loss of distributed search capability\u2014by proposing that the algorithm's similarity to skip list structures could enable distributed implementations with better performance than the base NSW algorithm.",
+      "text_sha256": "bfaf511d85fdb64d0834db16f4f5ac6194e5ec030668ffa9a28f53bf92a0683f",
+      "window_index": 2
+    },
+    "70da2b97836f1f1cafe94d5375689d0f0f40457d103547ea2b4148a12e9532cb": {
+      "context": "This chunk appears in section 4.2.2 \"Construction complexity\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov. It explains how the construction algorithm's time complexity scales by analyzing the insertion process, which relies on K-ANN searches at multiple layers and the neighbor selection heuristic, ultimately demonstrating O(N\u00b7log(N)) complexity for low-dimensional datasets.",
+      "text_sha256": "8291fcb758f54261c2d198250c0efeaecd88ae264915678cc9a6cf542539fc97",
+      "window_index": 1
+    },
+    "9125c6b6971791715d7bb88258b4f8c5f21546bf75bc9e8df18773c83114e9f3": {
+      "context": "This chunk is part of the References section (Section 8) of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov and Yashunin. References 1-9 cover foundational work on nearest neighbor search, image features, semantic indexing, metric spaces, and approximate nearest neighbor algorithms that provide background for the paper's contribution to K-ANN search methods.",
+      "text_sha256": "5e1e8a4d057f5067497099a11c9b5400e1e4e358262b1d0c2381dafc2a717a02",
+      "window_index": 2
+    },
+    "9d11d8ffa8ddc4828f3f825f338a7800a41896a6571b9e2b085635047b604bdd": {
+      "context": "This is Algorithm 1 from the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. The algorithm describes the INSERT procedure for constructing the HNSW data structure by consecutively inserting elements into the multilayer graph, selecting random levels with exponentially decaying probability, and performing greedy searches across layers to find and connect nearest neighbors.",
+      "text_sha256": "db4c2174b58a689c795e24a3928e0ddbd26ad8560716dd374c950f02d9cf8b00",
+      "window_index": 0
+    },
+    "9f66959bc597c3beb7698e8b70909698cc07bc1d69e42e38ec66839312456ec8": {
+      "context": "Section 6 (Discussion) of the arxiv paper \"Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin. This section summarizes the key advantages of the Hierarchical NSW algorithm over the basic NSW approach, discusses its robustness across different data dimensionalities, identifies remaining parameters and future research directions, and acknowledges limitations regarding distributed search capabilities.",
+      "text_sha256": "e57b7280178afab0a94ebf6e6c5ebfb85313bf97fc8f8122a804a2199c232b96",
+      "window_index": 2
+    },
+    "a03f8802ee666d949fda01f6c74515ddf9ea71db73ff852e004b0ca8a725c5d9": {
+      "context": "This is Algorithm 3 from the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin. It presents a simple neighbor selection method used during the graph construction phase of the HNSW algorithm, which selects M nearest neighbors from a set of candidate elements C for a base element q.",
+      "text_sha256": "d4c4e2aa753561468934bd871fb73d6219e663c500746f249068655d47ca3a3b",
+      "window_index": 0
+    },
+    "a73d42b403d3cb3133d85ce3b9965784dabdc64200cb798c626cc6ec08e49d5e": {
+      "context": "This chunk appears in Section 4.1 \"Influence of the construction parameters\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It discusses the efConstruction parameter, which controls the quality and speed tradeoff during index construction, and explains how the construction process can be parallelized with minimal synchronization overhead.",
+      "text_sha256": "6055844f38a62ab4f5cd631d6c3ffd04808e7fdb99af5bdfa74c6ef47d529702",
+      "window_index": 1
+    },
+    "af86841237f87b9744ee7d95f793737b640db0d2fd5d6e9754042ce14b3cc12a": {
+      "context": "Algorithm 2 in the paper \"Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs\" by Malkov and Yashunin describes the SEARCH-LAYER procedure, which is a core component of the Hierarchical NSW algorithm used during both the insertion phase and search operations to find the ef closest neighbors to a query element within a specific layer of the multilayer graph structure.",
+      "text_sha256": "ddc2301d28078f0b04bdd3b609aabe2b3b5434e949f5e63505389c577d6f7b84",
+      "window_index": 0
+    },
+    "bce8c50717870169653c7a156ef1c273b7c88f01069675544d06710351add367": {
+      "context": "This chunk from section 2.1 \"Proximity graph techniques\" in the Malkov and Yashunin paper on Hierarchical Navigable Small World (HNSW) graphs describes the foundational proximity graph methods for approximate nearest neighbor search, including k-NN graphs and the Navigable Small World (NSW) algorithm, which serves as the basis for the proposed HNSW approach.",
+      "text_sha256": "6a78213601ae6a29fd9e6c5e48e1e905a78a14b0a59c449a47e81571674b8410",
+      "window_index": 0
+    },
+    "ccce0d5c39e6b7e4cbfe088a88737e8155de15ee196950ac0e777d5ef98985cb": {
+      "context": "This chunk appears in Section 5 (Performance Evaluation) of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov. It describes the implementation details of the Hierarchical NSW algorithm in C++ using the nmslib library and outlines the structure of the performance evaluation section, which compares the algorithm against baseline NSW and state-of-the-art K-ANNS algorithms across multiple datasets and metric spaces.",
+      "text_sha256": "7697b5de95ab4d7695abf8f3ccaf996a7d33adc68d9b9c49d62063e0b6d6abe6",
+      "window_index": 1
+    },
+    "cddafe4473f4b40445a6cd78854fcc78c133f87d81e69d486a2ad605fe6b3e91": {
+      "context": "This chunk appears in Section 7 (Acknowledgements) of the arxiv paper \"Efficient Similarity Search in Hierarchical Navigable Small World Graphs\" by Malkov and Yashunin (2016), where the authors acknowledge individuals who contributed to the research and development of the Hierarchical NSW algorithm, and provide information about the funding source for the study.",
+      "text_sha256": "92787fd1436430601fad8894fe277c4c518571d119b12cacac50c3732a6ab91a",
+      "window_index": 2
+    },
+    "d69ff812afaf6e110e73b1bd97b7622a3aeacc1954064249363e09ce65447f3d": {
+      "context": "This chunk presents Algorithm 5 (K-NN-SEARCH) from the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov et al. (2016). The algorithm describes the K-approximate nearest neighbor search procedure used in the Hierarchical NSW data structure, including its two-phase search strategy with varying ef parameters and its relationship to the neighbor selection heuristics (Algorithms 3 and 4) and construction parameters like Mmax and Mmax0 discussed in Section 4.1.",
+      "text_sha256": "afe2510fd6bd34815776f4ab5ee8180515a851c3e39b3ddc1a758652a7e8b6a9",
+      "window_index": 1
+    },
+    "d7cb5f3581f3470372bf1a5c346b199ffe82649ad7005836b2bb1f5e4341f943": {
+      "context": "This chunk contains references 20-29 from the bibliography section of a 2016 arxiv paper on Hierarchical Navigable Small World (HNSW) graphs for approximate nearest neighbor search. These references support the paper's discussion of K-ANN algorithms, navigable small world graphs, and related proximity graph construction methods cited throughout the experimental comparisons and technical development of the Hierarchical NSW approach.",
+      "text_sha256": "5dd8eec151a49f71519fdb1dc701a603337f3f3abe62b7b063af85b1b265a01f",
+      "window_index": 2
+    },
+    "d854b3cf1cc33835354b4a404aefcc65171273b31c48a952b964302f508fbb5e": {
+      "context": "Section 2.2 \"Navigable small world models\" of the HNSW paper discusses theoretical foundations of navigable networks, including Kleinberg's spatial models, scale-free models, and the Navigable Small World (NSW) algorithm that forms the basis for the proposed Hierarchical NSW approach.",
+      "text_sha256": "f9c0f7194f2f1f19d2cb18df4f5807f6a0efcdb17b1d522a6ba27e7836874905",
+      "window_index": 0
+    },
+    "e5e375fd91af54bbb30a94f6ec905f3512cb9fce4ea005edbaa53273b2dbce11": {
+      "context": "Section 5.3 \"Comparison in general spaces\" of the arxiv paper \"Hierarchical Navigable Small World Graphs\" (arxiv-malkov-2016-hnsw) presents experimental comparisons of the Hierarchical NSW algorithm against other K-ANN search algorithms including VP-tree, permutation techniques, and NNDescent on datasets where the baseline NSW algorithm performed poorly, particularly on low-dimensional data in non-metric spaces.",
+      "text_sha256": "48032d141bf11624fb2b64adebe96e04bc32034b038eee386d1db336f9d0947a",
+      "window_index": 2
+    },
+    "f2f679e1587bd86a61557a9c083aebb4717c11445e74d2beee44997e2dbddbed": {
+      "context": "This chunk appears in section 4.2.1 \"Search complexity\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov et al. (2016). It analyzes the theoretical complexity scaling of the K-NN-SEARCH algorithm (Algorithm 5) by proving that search complexity is O(log(N)) under the assumption of exact Delaunay graphs, and discusses how the approximate edge selection heuristic (Algorithms 3-4) affects this complexity through backtracking procedures on the zero layer.",
+      "text_sha256": "1775c47a6112ac5dc8cc0963dcff163e96864110532c21f20e6851dd0ee5abbe",
+      "window_index": 1
+    },
+    "f61524d5980f227ece7624382e0fbea1a1219bca9eeca9840b15f9767546618b": {
+      "context": "This chunk is from section 5.2 \"Comparison in Euclid spaces\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs by Malkov. It describes the experimental methodology and competing algorithms used to benchmark the Hierarchical NSW algorithm's performance on vector datasets using the ann-benchmark testbed, comparing against baseline NSW, FLANN, Annoy, VP-tree, and FALCONN algorithms.",
+      "text_sha256": "3ea3973d9fa525f9e5d7cfaaf421d8593c226fa97c404a2f0eb08f7d2803c133",
+      "window_index": 1
+    },
+    "faa609539f26dc6a0ee6f54188cfbfb86e300308854c9b468d2ffac9dc9c6813": {
+      "context": "This chunk contains references [30-39] from the References section of a 2016 arxiv paper on Hierarchical Navigable Small World (HNSW) graphs for approximate nearest neighbor search. These citations support the theoretical foundations and related work on navigable small world networks, approximate nearest neighbor algorithms, and distributed search structures discussed throughout the paper.",
+      "text_sha256": "00bcfed67fa943952c9f5b108e0cb11ccb30f70d774d82b771760f4effc0a931",
+      "window_index": 2
+    },
+    "fd67da078909d6be1b2c4431ec31a96ed6566034c94f4f709daa9710daca6bff": {
+      "context": "This chunk is from Section 4.1 \"Influence of the construction parameters\" of the arxiv paper on Hierarchical Navigable Small World (HNSW) graphs. It discusses how the construction parameters mL and Mmax0 control graph structure and search complexity, and presents the recommended optimal value of mL = 1/ln(M) with empirical validation across different data dimensionalities.",
+      "text_sha256": "e56c1e80dea3249b833958f155f9fa8cfe1dedf8861ddbd0ee3115db87cc2f4a",
+      "window_index": 1
+    }
+  },
+  "doc_id": "arxiv-malkov-2016-hnsw",
+  "generated_at": "2026-08-29T21:55:44Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

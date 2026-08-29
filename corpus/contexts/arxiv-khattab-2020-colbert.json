@@ -1,0 +1,163 @@
+{
+  "contexts": {
+    "00bb640e90f27cfa582730631d8152cce0f3d05a20f3111694425a9d61fb727a": {
+      "context": "This table appears in section 4.2 \"Quality-Cost Tradeoff: Topk Re-ranking\" of the experimental evaluation section of the ColBERT paper. It presents re-ranking effectiveness and efficiency metrics on the MS MARCO dataset, comparing ColBERT against baseline neural ranking models including KNRM, Duet, fastText+ConvKNRM, and BERT variants, measuring MRR@10 scores, latency in milliseconds, and FLOPs per query.",
+      "text_sha256": "d9c8eb5a5d9f6878a7b9d26c2a8c5fa92821a82e4fb4a76e184f6228327873e1",
+      "window_index": 1
+    },
+    "06deddd486ea69e2d162dbdeb9355bc164f245b73c41c7b1596c91ff2dd4e958": {
+      "context": "Table 2 from the ColBERT paper's experimental evaluation section, presenting end-to-end retrieval results on the MS MARCO dataset where models retrieve the top-1000 documents directly from the entire 8.8M document collection, comparing effectiveness metrics (MRR@10, Recall) and latency across BM25, doc2query, DeepCT, docTTTTTquery, and ColBERT variants.",
+      "text_sha256": "d032ad5d0aa91d5124bad0a7b601a6323b81652a5b141866ad5808b3dfd8da1f",
+      "window_index": 1
+    },
+    "07fbbae172a193b60df0c5bf9a71089a7e7c027c9067c883f282fd984e95a9e9": {
+      "context": "This chunk is from Section 2 (Related Work) of the ColBERT paper, which surveys existing neural ranking models and language model approaches for information retrieval that provide context for ColBERT's contributions. The section discusses neural matching models like KNRM and Duet, language model pretraining approaches using BERT, and BERT optimization techniques that motivate the need for ColBERT's efficient late interaction architecture.",
+      "text_sha256": "3526438983c7f3f89793158a7eef1f9f0ca2c4956464251d246966207d8b0464",
+      "window_index": 0
+    },
+    "0ce67aff696068646ed585ffa529ce00227621669712df9acd67a079c85f19fe": {
+      "context": "This chunk from the Introduction section of the ColBERT paper contrasts different neural matching paradigms (representation-focused, interaction-focused, and the proposed late interaction approach) and explains how ColBERT combines the efficiency benefits of representation-based models with the effectiveness of interaction-based models through delayed query-document interaction via MaxSim operators.",
+      "text_sha256": "d916b50e96ca22c042ff21ab48488094c3e46f6e08af9b67268944617228a95f",
+      "window_index": 0
+    },
+    "0d6c2f581d76c03318dcdd81d86a2f984ab46f85cc00caf289a3cba53434b28a": {
+      "context": "This chunk is from section 4.1 (Methodology) of the ColBERT paper, which describes the experimental setup for evaluating the ColBERT neural ranking model. Section 4.1.1 details the datasets and evaluation metrics used, specifically MS MARCO and TREC-CAR, while section 4.1.2 covers implementation details including hyperparameters and software libraries used for training ColBERT models.",
+      "text_sha256": "9585bc34c5dfcef22640738877d5b258ebd09025737ddaa7475d7ee7a7490b14",
+      "window_index": 1
+    },
+    "14bbd474123690b23bcec08f8e56e7851a40d81cdf16de75a0a5647f2fa99c18": {
+      "context": "Section 4.4 (Ablation Studies) of the ColBERT paper examines the source of ColBERT's effectiveness by testing important architectural details through ablation experiments on the MS MARCO validation set. This chunk presents ablation results comparing ColBERT's main re-ranking model against alternative variants that remove or modify key components like the MaxSim-based late interaction mechanism, query augmentation, and fine-grained interaction, demonstrating the importance of each design choice.",
+      "text_sha256": "b29a27ccb0c7955b0cf530356219c7c17830106edc99461fbaa990b93caf0996",
+      "window_index": 2
+    },
+    "14eab1fbc3750a16eb187b6aaa6ee15bb42e8e13f6ba1cd9be58b29b3be5116c": {
+      "context": "Section 4.5 of the ColBERT paper examines indexing throughput and space footprint, presenting Figure 6 on indexing performance and Table 4 comparing space efficiency versus retrieval quality (MRR@10) across different embedding dimensions and precision settings on the MS MARCO dataset.",
+      "text_sha256": "ebd46f0a7fad229abe03af8ed70f0813ae0e43f74a606bb9f6be6de9f7b8021c",
+      "window_index": 2
+    },
+    "268a58a781f2e8c5896b2fddf972283c37f301f7adf04aa2372ffc7e92c6e603": {
+      "context": "This is the abstract of the paper \"ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT\" by Omar Khattab and Matei Zaharia from Stanford University, published at SIGIR 2020. The abstract summarizes the main contribution of ColBERT, a neural ranking model that addresses the computational inefficiency of BERT-based document ranking through a late interaction architecture that enables offline document encoding and efficient retrieval.",
+      "text_sha256": "5b30a2bc701b52bf9fa8e4d66519c032eda349201e27ad58cf0a808afd65e2ba",
+      "window_index": 0
+    },
+    "30a0f170d21a790eae332ce568fdaad45bee4ebc0e4753e201f7932a375131c9": {
+      "context": "This chunk from section 4 (Experimental Evaluation) of the ColBERT paper outlines the four main research questions that guide the empirical evaluation of ColBERT, a neural retrieval model. The questions address ColBERT's effectiveness in re-ranking, end-to-end retrieval from large collections, component contributions to quality, and indexing costs, with each question corresponding to subsections 4.2 through 4.5.",
+      "text_sha256": "1103816e8aa2c64c2600adcd57e330f58445c800cfed8581e49c0bfec64c8d17",
+      "window_index": 1
+    },
+    "31a7d5d17a145b1a0116a371da167e8fb774c869a36971db90f91e10e250a851": {
+      "context": "Section 3.5 of the ColBERT paper describes the top-k re-ranking procedure, which uses pre-computed document embeddings to efficiently score and rank a small set of k documents (typically k=1000) against a query by computing late-interaction scores through batch dot-products and max-pooling operations, contrasting this approach with standard BERT rankers that require processing each query-document pair separately.",
+      "text_sha256": "d41112101c07e5b6c2059ab18afa2e808b2de22a19025ae3c41e3e7edbedda62",
+      "window_index": 1
+    },
+    "3350635bdb6cf3d0b2be2e533337355b2f789ffe10b03b04887a627bafada3a7": {
+      "context": "This is a section of the references list from the ColBERT paper (arxiv-khattab-2020-colbert), containing citations [12] through [23] that support the document's discussion of neural ranking models, BERT-based approaches, and information retrieval techniques used throughout the paper.",
+      "text_sha256": "3ca1722fbeeb393fa2206dff0e3bbf2af3debe94264477fc94f1d7c96947aef7",
+      "window_index": 2
+    },
+    "4b6bc9589bc9532bd20a35fdf9d059d1becdfe75bff514e6609390c4548e86fa": {
+      "context": "This chunk is part of the References section of the ColBERT paper (arxiv-khattab-2020-colbert), containing citations [24-34] for datasets, baseline models, and foundational techniques referenced throughout the paper's evaluation and methodology sections.",
+      "text_sha256": "d0b63dfae77ec938003964945668b884dc14af911dfa95afc3eccc0e5bf99f2f",
+      "window_index": 2
+    },
+    "5253cec990f43eb521ddec346580f3394b0152e70ec0419abe09eecc62d548cd": {
+      "context": "This chunk is from section 4.2 \"Quality-Cost Tradeoff: Topk Re-ranking\" of the ColBERT paper, which evaluates ColBERT's efficiency and effectiveness compared to BERT-based ranking models. The chunk presents Figure 4 and analysis showing how ColBERT and BERT scale with re-ranking depth k on the MS MARCO dataset, demonstrating ColBERT's superior computational efficiency and scalability, and includes results on the TREC CAR dataset in Table 3.",
+      "text_sha256": "9c9edab85edf020adecb5f923ef643d48f4f3a904f3c0c5735e86a6c4a5be1d0",
+      "window_index": 1
+    },
+    "548731d0b65a557e8165d5895de290c472a57f7093a44dcb81a7892a0c70427e": {
+      "context": "This chunk appears in section 3.3 \"Late Interaction\" of the ColBERT paper, which describes how the model computes relevance scores between queries and documents using late interaction. The section explains the mathematical mechanism for scoring and the training procedure for ColBERT, building on the query and document encoder architectures described in section 3.2.",
+      "text_sha256": "f77be9fba9a28a2ec99531835a9534f89aff6d03cc56c164a337c72f535699f0",
+      "window_index": 0
+    },
+    "5ba965cb17991db84d4b610ecb496c68ef20e8182330e18f4bcc9df436a35a5e": {
+      "context": "This chunk appears in Section 2 (Related Work) of the ColBERT paper, comparing ColBERT to concurrent and related neural ranking approaches. It discusses the Transformer-Kernel (TK) model as a competing non-BERT baseline and describes efficient NLU-based models like doc2query and DeepCT that perform expensive computations offline to improve retrieval efficiency.",
+      "text_sha256": "33e7aa9c6d3f809e93dfcf06978f2a681e1f63b9aa2d6101eb1ae39dc19a0338",
+      "window_index": 0
+    },
+    "5bc77ca0409dad3f9460ba19200a80b41c145529dafb9e09378da4503e7f8f4f": {
+      "context": "This chunk appears in Section 3.1 (Architecture) of the ColBERT paper, describing the overall architecture of the ColBERT ranking model and explaining the late interaction mechanism that computes relevance scores between queries and documents using maximum similarity (MaxSim) operations on contextualized embeddings.",
+      "text_sha256": "aef8806375a778db781a3e1577a85d354bbc04308f0e95efccd65c4581be2ffc",
+      "window_index": 0
+    },
+    "5ec232f7d4c1f6c23cc41e199ec157afafab88f1373a9d816da450bd4c7c380c": {
+      "context": "This chunk is from the Introduction section of the ColBERT paper by Khattab and Zaharia (2020), which discusses the motivation for proposing ColBERT as a solution to the efficiency-effectiveness tradeoff in neural ranking models. The chunk reviews prior neural ranking models like DRMM, KNRM, and Duet, introduces the ColBERT approach based on late interaction over BERT, and explains the computational cost problem that ColBERT addresses.",
+      "text_sha256": "9a48a3267d990bd32c0d06274f824a12b9f898ea08f79a8e2f817c0c5bd8d9d7",
+      "window_index": 0
+    },
+    "5ee0773c0b2ce6b91a847fad2dcd2839c9059837eedef17ab88e2556ee24573c": {
+      "context": "This chunk is from section 4.1.2 Implementation and 4.1.3 Hardware & Time Measurements of the ColBERT paper's Experimental Evaluation section. It details the specific hyperparameters, embedding configurations, and hardware specifications used for implementing and evaluating ColBERT on the MS MARCO and TREC CAR datasets, including BERT model initialization, training iterations, GPU/CPU resources, and embedding quantization settings.",
+      "text_sha256": "c9c0b851ea08a4cdf25acb549fbfea90cb6adf4ce8d259c076a5c1778ea21cbe",
+      "window_index": 1
+    },
+    "64662962ce55a3cf08cc86f507ada729d5e3d10ae559d541af2bab501f38f78c": {
+      "context": "This chunk appears in section 5 (Conclusions) of the ColBERT paper, which summarizes the key contributions and findings of the research on ColBERT, a neural ranking model for efficient document retrieval using BERT-based contextualized late interaction.",
+      "text_sha256": "9833434b7b047f131c8acdda97faf00b45d583e5cf162f9112b4ab9a676b86ef",
+      "window_index": 2
+    },
+    "6687fa6e0f4a958b82402c054382ad1ddf0c0dad891741c11d9864773763635f": {
+      "context": "Section 3.6 of the ColBERT paper describes the end-to-end top-k retrieval procedure for large document collections. This chunk explains the two-stage retrieval process using the faiss vector-similarity search library, including the approximate filtering stage that leverages MaxSim operations and the IVFPQ index structure with product quantization for efficient large-scale retrieval.",
+      "text_sha256": "20383eab2fdc20f75951e121c85a9b4291fd828b58661bd6961416b9e5625077",
+      "window_index": 1
+    },
+    "76e7a9721e7c149ab80e482968dbdc343159caa3d1aca389fa8c04ed183cbf62": {
+      "context": "This chunk appears in Section 3 (ColBERT) of the paper \"ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT\" by Khattab and Zaharia. It introduces the overall framework and design philosophy of ColBERT, explaining how the late interaction paradigm enables efficient neural information retrieval while maintaining effectiveness, and justifies the focus on BERT-based encoders.",
+      "text_sha256": "97fbad7a928ba1bc2c99dce889c04a0d98c2b305abc33ea511e8d0f28363c179",
+      "window_index": 0
+    },
+    "9361f096d33da8e100e8cfc14d389a8e33ef934755354b3019165b254ae3c24a": {
+      "context": "This is the bibliographic citation for the ColBERT paper, a 2020 publication by Omar Khattab and Matei Zaharia from Stanford University presented at the 43rd International ACM SIGIR Conference, which proposes an efficient neural ranking model that uses contextualized late interaction over BERT for passage search.",
+      "text_sha256": "ad49ae20f84b32da5b369f55081101fc474db7c7953441e733921c333455b0c1",
+      "window_index": 0
+    },
+    "93dac504a5691bd11a4982364bc2a9d39ed5e36254a5d5592ef491b7b04e6312": {
+      "context": "This chunk contains the first portion of the references section from the ColBERT paper, listing citations [1] through [11] that are cited throughout the document's sections on end-to-end retrieval, ablation studies, and indexing optimization.",
+      "text_sha256": "a03fc3cd968af61ab6e872428babb4d966c91457eca96fa12422ff97631c228a",
+      "window_index": 2
+    },
+    "af1b5aa978abe6546268ebc834bc3f2b0e5597143f492a439fbde846c75c11b9": {
+      "context": "This chunk appears in section 4.3 \"End-to-end Topk Retrieval\" of the ColBERT paper, where the authors evaluate ColBERT's performance on full collection retrieval from MS MARCO's 8.8M documents. The chunk discusses ColBERT's effectiveness gains compared to other end-to-end retrieval models, presenting results for MRR@10 and various Recall@k metrics that demonstrate the superiority of ColBERT's end-to-end approach over re-ranking-only baselines.",
+      "text_sha256": "06d47f61b5ce6345badc66cd3fdad3637cac5053d6413e74b5d4f749cc7f3fbd",
+      "window_index": 2
+    },
+    "b4ed94fb914ee4b46854cac3bbb0f87b57fe3869faf4582560c23ed5bd3f523d": {
+      "context": "Section 3.2 of the ColBERT paper describes the Query and Document Encoders, which are BERT-based components that encode queries and documents into bags of contextualized embeddings prior to the late interaction mechanism. This section explains the query encoder's tokenization, padding with mask tokens (query augmentation), dimensionality reduction through a linear layer, and embedding normalization, as well as the document encoder's similar architecture with punctuation filtering.",
+      "text_sha256": "2505fbf6289b1c9ecea47852be940a2c3b41e9d181034e7249f9cf44ddffa51a",
+      "window_index": 0
+    },
+    "d9aaaf789734168baa7031c21a50ec26f14ab7129906c2c30514d7d3dee44377": {
+      "context": "Section 3.4 of the ColBERT paper describes the offline indexing procedure for computing and storing document embeddings. This chunk explains the indexing workflow, including how document representations are encoded in batches using the document encoder, saved to disk with reduced precision, and then either loaded for ranking or indexed for vector-similarity search as described in sections 3.5 and 3.6. The chunk also details optimization techniques for improving indexing throughput, such as multi-GPU parallelization, length-based bucketing of documents, and CPU-based parallelization of text preprocessing.",
+      "text_sha256": "6d79592c724fbd9627105e9ebbbb7360a99a079153a0abb09447da233482551c",
+      "window_index": 1
+    },
+    "dca47e8e69e05de06b42b8e0b9299a718c366b7c9f975cf5e2ae61dd024fa37b": {
+      "context": "This chunk contains the final set of references (citations 35-42) from the ColBERT paper, a 2020 arxiv paper on efficient neural retrieval using contextualized late interaction over BERT. These references support the document's discussion of neural ranking models, retrieval baselines like Anserini, and related work in neural information retrieval.",
+      "text_sha256": "4cf896ea7577b7a67eb77bf8e5e08353afae62cfe3363109e59591504aa56c04",
+      "window_index": 2
+    },
+    "e77ddbbba789eee39d0460bddba66dfe70e9c5e48c9e05e2e9cef1444c94b35c": {
+      "context": "This chunk lists the four main contributions of the ColBERT paper, appearing at the end of the Introduction section (\u00a71) of the arxiv paper \"ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT\" by Khattab and Zaharia. The contributions outline the paper's key proposals: the late interaction paradigm, the ColBERT model architecture, its applications for re-ranking and end-to-end retrieval, and its evaluation on passage search datasets.",
+      "text_sha256": "3de08c63ba6c1bcb02f342927836d345a99ecce14e2cfbe0d848e44aa98d62f0",
+      "window_index": 0
+    },
+    "e78b8716762c24dfc7e257718f80c50deac4db9736d1bff6a513cc7d801003ec": {
+      "context": "Section 4.3 of the ColBERT paper evaluates end-to-end top-k retrieval directly from the full MS MARCO collection, comparing ColBERT against traditional bag-of-words baselines (BM25, doc2query, DeepCT, docTTTTquery) and discussing their retrieval effectiveness and latency characteristics.",
+      "text_sha256": "2d3672c1c7ab06cac21e1e8e9a52b1302b26760e474629a8939d7524e152327e",
+      "window_index": 2
+    },
+    "f45a052750bb4ec38adac54e318975dd43089ac0bb0e7d2d2ab10522ed8ccff2": {
+      "context": "Section 4.2 of the ColBERT paper evaluates the quality-cost tradeoff for top-k re-ranking on the MS MARCO dataset, comparing ColBERT's efficiency and effectiveness against neural ranking baselines including KNRM, Duet, fastText+ConvKNRM, and BERT models, using metrics like MRR@10, re-ranking latency, and FLOPs per query.",
+      "text_sha256": "65f92e7bce14db28158cc2647a8c9427c2faf8c95ceb78740cf7aa229b204517",
+      "window_index": 1
+    },
+    "f8c1da8ada7af7e3bd12726fc49a7e9e6865747a7b99d60c1686e805056ff298": {
+      "context": "This chunk from the introduction of the ColBERT paper discusses the motivation for the work, explaining how BERT-based ranking models achieve state-of-the-art effectiveness on retrieval benchmarks but suffer from prohibitive computational costs that are 100-1000 times more expensive than prior approaches. It references Figure 1, which compares ColBERT's efficiency and effectiveness against other ranking models on the MS MARCO dataset.",
+      "text_sha256": "57368830863a34bd669c684db1bd023fe623f190f7be1a8c510251ee83f418b3",
+      "window_index": 0
+    }
+  },
+  "doc_id": "arxiv-khattab-2020-colbert",
+  "generated_at": "2026-08-29T21:47:20Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

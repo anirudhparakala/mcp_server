@@ -1,0 +1,58 @@
+{
+  "contexts": {
+    "059e3f31c82d2e493c5f1301be65862647f805e2cf27d3144b5ee353f6bac49a": {
+      "context": "This chunk is Section 2204 of the California Commercial Code, located in Chapter 2 (Form, Formation and Readjustment of Contract) under Division 2 (Sales). It addresses the flexible requirements for forming a contract for the sale of goods, including through conduct and with open terms.",
+      "text_sha256": "f8f0b0eeaa05dbc8c8df3178175891a77acfa938bf25a11fdbaa47da9f2de741",
+      "window_index": 0
+    },
+    "2d06a6077648ddbfdde06510dd53258ccf847e0bf5b0a7716c85110aa4569df9": {
+      "context": "This is Section 2201 from Chapter 2 (Form, Formation and Readjustment of Contract) of Division 2 (Sales) of the California Commercial Code. Section 2201 establishes the statute of frauds requirements for sales contracts, specifying when a written record is necessary for enforceability and providing exceptions for specially manufactured goods, admissions in court, and accepted goods.",
+      "text_sha256": "fe276736e7786013b664ac31b8a15c7867927e7c547296458f4b1d220b4c9bd2",
+      "window_index": 0
+    },
+    "2ea09bf42b530b8dfdeb28c28b6cb259b0286287abfabc4ad8e46d2be587ee57": {
+      "context": "This is the enactment date and legislative history note for Division 2 (Sales) of the California Commercial Code, which covers sections 2101-2801 and establishes the foundational law governing sales transactions in California.",
+      "text_sha256": "749a48fe9c7d41b4cb7154440796a3ed0216e8fdd5bc5ee990731636e7f2f370",
+      "window_index": 0
+    },
+    "4319422512f2c87bc24fcc70cb73902ca347cf2c4e642085820f721d1fcacfed": {
+      "context": "Section 2210 of the California Commercial Code, Chapter 2 (Form, Formation and Readjustment of Contract), addresses delegation of performance and assignment of rights in sales contracts, including restrictions on delegation, conditions for assignment, and the treatment of security interests in seller's contract interests.",
+      "text_sha256": "4a7316470f1678b0abee034c2e77b2a5f889579c8e01ecdadf53e10a4768d7ba",
+      "window_index": 0
+    },
+    "78735086c316a3db9d1b9ce2e5bf98ce4c1e3d57e909b967bad47ac1d6f16050": {
+      "context": "This is the enactment date notation for Chapter 2 of the California Commercial Code, which covers Form, Formation and Readjustment of Contract (sections 2201-2210) within Division 2 on Sales.",
+      "text_sha256": "185ff3576ac406837c8ebd4e80d608ccaffc8b4670c8a0bee19ca56e1fc67249",
+      "window_index": 0
+    },
+    "a1eca7fd719fa35a1ad470e5ed235ef7e98adb63bf2f81060568b03ca723a966": {
+      "context": "This chunk is Section 2209 of the California Commercial Code, located in Chapter 2 (Form, Formation and Readjustment of Contract) under Division 2 (Sales). Section 2209 governs the modification and rescission of sales contracts, including requirements for consideration, signed agreements, statute of frauds compliance, and waivers.",
+      "text_sha256": "5924e8ba1e9dbace64bb592d043895d7c8670502da14a7e87c398f37fb71b75c",
+      "window_index": 0
+    },
+    "c150303a2865094642ac2bd4461aaf3eb8d78ea120c1d6be5e835a961827d816": {
+      "context": "This chunk is Section 2207 of the California Commercial Code, located in Chapter 2 (Form, Formation and Readjustment of Contract) under Division 2 (Sales). It addresses the rules for acceptance of contracts for the sale of goods, particularly when acceptance includes additional or different terms than those originally offered, and how such terms are treated between merchants.",
+      "text_sha256": "1b07808dec42c54f49e8fdaa6e3d00051f693d69a18fa59ea4fce4dc6324d513",
+      "window_index": 0
+    },
+    "e6193ad105b83e231f10d666cad05916e9eb789c9b34d5d602c47a50011a174c": {
+      "context": "This is Section 2202 of the California Commercial Code, located in Chapter 2 (Form, Formation and Readjustment of Contract) under Division 2 (Sales). It addresses the parol evidence rule for sales contracts, specifying that written confirmatory memoranda cannot be contradicted by prior or oral agreements but may be explained or supplemented by course of dealing, performance, usage of trade, or consistent additional terms.",
+      "text_sha256": "15309574e636a882f6bffce7429dfdadf2ddea144be4a41851c5d926c2e3f981",
+      "window_index": 0
+    },
+    "f101980e8b0dec30f53030d06f5bd574f71915b08b5f87796c6c678dd602619c": {
+      "context": "Section 2205 of the California Commercial Code, Chapter 2 (Form, Formation and Readjustment of Contract), establishes rules for merchant offers to buy or sell goods, including when such offers are irrevocable and the time periods during which they must remain open.",
+      "text_sha256": "e299647e088e6e91455128719c2f75e8c965710049569da2036f3f0515bf3bf2",
+      "window_index": 0
+    },
+    "f63f1852dfc3df2c50a9b01e8c25026ba5941f44abeab46fbfb06f87445fe825": {
+      "context": "This is Section 2206 from Chapter 2 (Form, Formation and Readjustment of Contract) of the California Commercial Code Division 2 (Sales). Section 2206 addresses how contract offers are construed regarding acceptable modes of acceptance and the timing requirements for acceptance in sales transactions.",
+      "text_sha256": "d602abc90b75871687f31317763a689333dffd16c072991d28e090e623997e00",
+      "window_index": 0
+    }
+  },
+  "doc_id": "ucc-article-2",
+  "generated_at": "2026-08-29T22:25:32Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

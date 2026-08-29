@@ -1,0 +1,143 @@
+{
+  "contexts": {
+    "04f67ff3b2475d523358741cb0d0581e3996199cdf4a1401af1a130486c2638d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Vector database, containing citations 58-67 that document sources about various vector database systems including OpenSearch, Oracle Database 23ai, Pinecone, Pixeltable, pgvector, Qdrant, and Redis, along with their licensing information and related articles about vector search capabilities.",
+      "text_sha256": "0b688eec8164534df4db00d4d7f5c075fe5e9e249b3b1bc1c2d43fa93f4a204a",
+      "window_index": 2
+    },
+    "08f064d45ce36e2069a7b5ff96850aefa0fecda51931c3060a2e7c28d6a537f0": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Vector databases, containing citations 46-57 that document various vector database systems and tools including Meilisearch, Milvus, MongoDB Atlas Vector Search, MyScaleDB, Neo4j, ObjectBox, and OpenSearch, along with their licensing information and related articles.",
+      "text_sha256": "659579748b4aea21f38b3a6e7efeccbab3dfad6a29d6d8e308f9248a7be97194",
+      "window_index": 2
+    },
+    "1b6ac5a9bfbf13052a3d0da3232acc7edf946f1f385acfc5989c95307301ed7f": {
+      "context": "This is the table of contents section from the Wikipedia article on Vector database, listing the main sections of the article including Techniques, Applications (with Retrieval-augmented generation as a subsection), Implementations, See also, References, and External links.",
+      "text_sha256": "7775fcf653925fae4c12362f98654e452382d0e1c633e69bf76e295e3833c5ab",
+      "window_index": 0
+    },
+    "1cb6ea2af0265c452369cdf45dc8ca473dd57a082b61c4555a9335d92669049f": {
+      "context": "This chunk is from the References section of the Wikipedia article on Vector database. It contains the first seven numbered citations that support claims made in the main article, including definitions of vector databases from Microsoft, Pinecone, and Elastic, as well as academic sources on vector database management systems.",
+      "text_sha256": "25ca8b35d6f8a23f3c6767429e263a6693ea732c1e341cee1bace938040a7d70",
+      "window_index": 2
+    },
+    "1f16c46ef883257e49602e24c856a765cc7a5a9c40f27504a9b1ea461bf60dfd": {
+      "context": "This chunk is from the Implementations section of the Vector database Wikipedia article, listing vector database systems with their licensing information. It includes the first portion of an alphabetically-ordered list of vector database implementations, starting with Aerospike through LlamaIndex.",
+      "text_sha256": "e1dd095f57238f57f551c86043349ffecc932d4c406aabbb5c5cf6a9d1eb576f",
+      "window_index": 1
+    },
+    "3a3c698ea7b4d9004690dd106464d154f0c2371dae60935b941e3a92213223b9": {
+      "context": "This chunk is from the \"Retrieval-augmented generation\" subsection (section 2.1) of the Wikipedia article on Vector databases. It explains how vector databases are used in retrieval-augmented generation (RAG), a technique for enhancing large language model responses by retrieving relevant documents based on vector embeddings.",
+      "text_sha256": "7838c7b790f7cd28315613946f20962bd6a120fc80bde56a9d29a4b70b7d5f6b",
+      "window_index": 0
+    },
+    "41255f17e486900a13d557dd3288234c9703e2f872c15576ad1a2ebe916fa28a": {
+      "context": "This chunk is part of the References section of the Vector database Wikipedia article, containing citations 26-35 that document various vector database systems and related resources, including Couchbase, CrateDB, DataStax Astra DB, IBM Db2, Elasticsearch, JaguarDB, and LanceDB.",
+      "text_sha256": "60ff8f752f5e571ae05e31c75def11918d80a3f4c76877739ec376b4fa1b00f5",
+      "window_index": 2
+    },
+    "4250326b75f9fc9962efe8590913252d8113051f0f3ba5ac8b70364c9aa453fe": {
+      "context": "This chunk appears in the Wikipedia article on Vector database and contains navigation and categorization information from the Machine Learning template, listing various machine learning paradigms, problems, and supervised learning techniques that provide context for understanding vector databases within the broader field of machine learning and data mining.",
+      "text_sha256": "75b71a032b7d89e425d5381dff4cd1eb8e5891d4b52121ddeaea5c2fbe54dd3c",
+      "window_index": 0
+    },
+    "58f4c9f708f56e30324f900b3d3218dbb968e02685c8f55bc00298062ef518f0": {
+      "context": "This chunk is part of the References section of the Vector database Wikipedia article, containing citations 17-25 that document sources about various vector database implementations and technologies, including Google's AlloyDB AI, Apache Cassandra's vector search capabilities, Microsoft Cosmos DB, and open-source vector databases like Chroma and ClickHouse.",
+      "text_sha256": "2f946e761b968cba4418b0d6bcb558fec90cbd35a8988909b898c1e27fcf6c11",
+      "window_index": 2
+    },
+    "5aea97347f04b75645e8c9cbc59aeaf1f03e8211836daa2b23fea76726169c46": {
+      "context": "This chunk appears in the Applications section (section 2) of the Wikipedia article on Vector databases, providing an overview of the primary use cases for vector databases in machine learning, including similarity search, semantic search, multi-modal search, recommendations engines, object detection, and retrieval-augmented generation.",
+      "text_sha256": "021be0688886100b02994e805a0bd394ea6d795cbf6f33b818a893fcda754f8e",
+      "window_index": 0
+    },
+    "6976224582bb026001828fd480a690c0daee5646799bbe65251a0732eaf742b4": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Vector databases, containing citations 79-84 that document sources about specific vector database implementations including Vespa, Weaviate, and YDB, along with their licensing information and integration documentation.",
+      "text_sha256": "4691ababe010589ae24e354779af10c024cced7da97c17e02a09a71d0c2eecd1",
+      "window_index": 2
+    },
+    "6a0caf90857cbd6bdff415334c77a71c6a061416cb27f0c799a64d16d55b9c24": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Vector database, containing citations 68-78 that document various vector database systems including Redis, ScyllaDB, Snowflake, SurrealDB, TiDB, and Typesense, along with their licensing information and related resources.",
+      "text_sha256": "730a3bdac8ddc8f37255b51f16b1f24b94dc677c04784d187c20ae1c791b8c12",
+      "window_index": 2
+    },
+    "73fdfe24ffb58ea490af42cd0845912f17983e263d6a261030c2443adec5e545": {
+      "context": "This chunk from the Wikipedia article on Vector database contains language links and navigation tools that appear in the article header, allowing readers to access the article in nine different languages and providing standard Wikipedia editing and viewing options.",
+      "text_sha256": "6d701c3dcbd2b76c3e4f886eda0bb66d62a753f5e06958459cac29d5b68d1049",
+      "window_index": 0
+    },
+    "7cbeb6e9dcff6b2814125898806e4bfca5b2df2e6c1f879429e991b0f6b6c5a4": {
+      "context": "This chunk is part of the Implementations section of the Vector database Wikipedia article, listing vector database systems with their respective licenses. It covers the latter portion of the implementations list, including Qdrant, Redis Stack, ScyllaDB, Snowflake, SurrealDB, TiDB, Typesense, Vespa, Weaviate, and YDB, each with their licensing information.",
+      "text_sha256": "94c3fd42a8ced6d54dc013046b54a23748dc68e82a05452912245587f7e577bc",
+      "window_index": 1
+    },
+    "90656ded966c89c92d5fa6df851cf4fd2126369f757079368dd7dfd8befcd764": {
+      "context": "This chunk appears in the External links section of the Wikipedia article on Vector database, providing a reference to a TechCrunch article discussing the relevance and adoption of vector databases in the context of AI development, along with article metadata including categories and hidden categories related to vector databases and machine learning.",
+      "text_sha256": "9c219721733cb0513a976dc8c37c339c13ee6710056f31e357f36557b4cc74b6",
+      "window_index": 2
+    },
+    "919b5301683b7e30a8cd3a8af62cc127c9c6f6d33cf8b2ec5d9d06555bfb1438": {
+      "context": "This chunk is from the \"Techniques\" section of the Wikipedia article on Vector databases. It describes common algorithms and methods used for similarity search on high-dimensional vectors, including HNSW graphs, locality-sensitive hashing, product quantization, and inverted files, and notes that HNSW-based implementations have performed well in recent benchmarks.",
+      "text_sha256": "0d1065c9c8f34c56effbc89aff43c8801da4374b8af9086a16212574fea132ec",
+      "window_index": 0
+    },
+    "a2dca6930fabb199a8f34cc6e1639faa4f0c2aa8ec558fa4beba4f171bb1f8eb": {
+      "context": "This chunk appears in the Wikipedia article on Vector databases as part of a machine learning navigation template. It lists mathematical foundations topics and related journals, conferences, and articles that provide broader context for understanding vector databases within the field of machine learning and data mining.",
+      "text_sha256": "fddd87bcc2a2ffbef57a7b5723ebf29a2a4ffd949fdf803fb01f9cb28d8c8c30",
+      "window_index": 0
+    },
+    "adfabd5acf4d394c3c0e44f07fbba3178c5d1ecda9ac831fb91fe9cca3394fc1": {
+      "context": "This introductory text appears in the Implementations section of the Vector database Wikipedia article, explaining that the following list of vector database systems is dynamic and incomplete, and inviting readers to contribute additional entries with proper sourcing.",
+      "text_sha256": "ff45ea527ae20174728e2074b822fb8e3ffc2b74a5d31144b3ca1c102e252804",
+      "window_index": 1
+    },
+    "bc8dd512130c21372d3eb11442deff66e72f41090e8a6b8056a2f4aa5329a0c8": {
+      "context": "This chunk is from the \"See also\" section of the Vector database Wikipedia article, listing related concepts and topics that are conceptually connected to vector databases, including curse of dimensionality, graph databases, machine learning, nearest neighbor search, and recommender systems.",
+      "text_sha256": "846197297de158c67e363ccda0110dbe17c1eb7a5b0354c86970e88b602d17ae",
+      "window_index": 1
+    },
+    "c4684c6f46542c1dc9ebe5a9516ba3a73db43a2f2d5126b91d036eed623eb6e5": {
+      "context": "This chunk is part of the References section of the Vector database Wikipedia article, containing citations 10-16 that support claims made elsewhere in the article about vector databases, including references to indexing challenges, competitions, retrieval-augmented generation techniques, and specific vector database vendors like Aerospike and AllegroGraph.",
+      "text_sha256": "83039666c8ac254818f9794bf465f8b7277e3ca6cb1f135a2e19f63e033cec3a",
+      "window_index": 2
+    },
+    "d1417de8f25a1d55a4132813b7c6045b02a4c68f312638f8e1b967e8fc31ea56": {
+      "context": "This chunk appears in the References section of the Vector database Wikipedia article, specifically citations 8 and 9, which both reference the same academic paper \"ANN-Benchmarks: A Benchmarking Tool for Approximate Nearest Neighbor Algorithms\" by Aum\u00fcller, Bernhardsson, and Faithfull published in 2017 in the Similarity Search and Applications conference proceedings.",
+      "text_sha256": "ae5465d1c66ec47d7ea12e753039c9a647342bcaac4cf136c4325d786d68ed1e",
+      "window_index": 2
+    },
+    "d2ec23c3f10f362ca02d9bf2d922de3df199e10e249eb6343bddc6ae5c334323": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Vector database, containing citations 36-45 that document sources about specific vector database systems including LanceDB, LlamaIndex, MariaDB Vector, Marqo, and Meilisearch, along with their licensing information and related articles.",
+      "text_sha256": "0aa5ca382712562f2e6622c07ad11705e9276d418217980b96ad279794521ad7",
+      "window_index": 2
+    },
+    "e8278f6fcb7cf1c73d767df47d836f78f55d833c196f7f983798a5dd1599e346": {
+      "context": "This chunk is part of the machine learning navigation sidebar in the Wikipedia article on Vector databases. It lists neural network architectures and related machine learning topics under the \"Neural networks\" subsection, which is part of a broader machine learning series template that provides cross-references to related machine learning concepts and paradigms.",
+      "text_sha256": "3df197a67db2ff50636c500ba5a2ef534857ee75d0475cd83fcec8cefbcb2d79",
+      "window_index": 0
+    },
+    "f277f97483fa1607e3b40a574e1c43db326c1b410f8af0452b94e6aaf40b1ba0": {
+      "context": "This chunk contains Wikipedia navigation and editing tools from the Vector database article, including links for viewing page history, citing the page, downloading as PDF, and information about the current revision edited by user Voltabike on July 9, 2026.",
+      "text_sha256": "562670c5d99b38f56880c0a30b787a7048f7965d256888117aa0d8b00c9b694b",
+      "window_index": 0
+    },
+    "f81f39a0e011e019fc102d4292bb6d23a9b851e3964ae76a4e1b056cf7322274": {
+      "context": "This chunk from the Wikipedia article on Vector Database provides the main definition and overview of vector databases, explaining what they are, how they work, their primary use cases, and the concept of vector embeddings that form their foundation.",
+      "text_sha256": "a8c1d92ef4ff5a6bce362bde257d62e41b25c1fc0f8a253857e4b78d85f09a11",
+      "window_index": 0
+    },
+    "f835d5624afb92cf620cb3754763b5bcd4fdbae59099712cd821d461b3a98ff8": {
+      "context": "This chunk is part of the machine learning navigation sidebar in the Wikipedia article on Vector databases. It lists supervised learning algorithms and related machine learning topics including clustering, dimensionality reduction, structured prediction, anomaly detection, and neural networks, serving as contextual navigation for the main article.",
+      "text_sha256": "f1ca7d6470229962ccf3d411b7dc5e8459f9ddc55d8762141de8f0a5e4c7fb81",
+      "window_index": 0
+    },
+    "ff0bc7c7869ae6498d551f64e5ea0571782028abe70645631c4ddfd3bb32807e": {
+      "context": "This chunk is part of the Implementations section of the Vector database Wikipedia article, listing vector database systems with their licensing information. It covers implementations from MariaDB through Qdrant, including details on license types such as GPL v2, Apache License 2.0, MIT License, and proprietary options.",
+      "text_sha256": "5800808f1f878f3c9bfc4cec82229df60723428261b78d7001ecb83303ac7914",
+      "window_index": 1
+    }
+  },
+  "doc_id": "wiki-vector-database",
+  "generated_at": "2026-08-29T22:01:20Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

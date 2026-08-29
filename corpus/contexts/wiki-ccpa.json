@@ -1,0 +1,118 @@
+{
+  "contexts": {
+    "02774a590938103bc336e79972d50d8f36620b6b4b16fa5c35a5535adab8a88d": {
+      "context": "This chunk from the Wikipedia article on the California Consumer Privacy Act provides the foundational definition and legislative history of the CCPA, including its official name, introduction date of January 3, 2018, signing into law on June 28, 2018 by Governor Jerry Brown, and its effective date of January 1, 2020. It also identifies the act's official designation as AB-375 and its introducers, Ed Chau and Robert Hertzberg, along with subsequent amendments and the act's codification in the California Civil Code.",
+      "text_sha256": "8d9e768fc2166de19d0c39c338a7173aa8c6ffe8a415d8c3dddf779e5e1c0ca0",
+      "window_index": 0
+    },
+    "16a4b97b7e38f41ea7f55c963bc14a715be9df9d263dbd8c4570ad7e44128bb5": {
+      "context": "This section from the Wikipedia article on the California Consumer Privacy Act describes the \"Sanctions and remedies\" subsection under \"Intentions of the Act,\" detailing the penalties and enforcement mechanisms available under the CCPA, including statutory damages for data breaches, civil fines for violations, and how it compares to other state privacy laws like the Virginia Consumer Data Protection Act.",
+      "text_sha256": "3d7cb829dca4b24de6282240a2872df5f94d7e9819f7e06af8abd8c6826b5b92",
+      "window_index": 0
+    },
+    "1fc96864f16f5001e116467b171abebe18f50c6ad6b8028e6bbe454d38442dee": {
+      "context": "This chunk is from the References section of the California Consumer Privacy Act Wikipedia article, containing the first seven numbered citations that support claims made in the main article about the CCPA legislation and its passage.",
+      "text_sha256": "7b075b541b807a7b9a99611c31ad77bbef51d1f4fb08b3c40466fee95ac295ca",
+      "window_index": 1
+    },
+    "30c87566fdaf983642271f809fb16bf6daad4dad0c0a408f7a6f43b804c57347": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 42-45 that provide sources for information about CCPA implementation, FAQs for covered businesses, and related regulatory codes.",
+      "text_sha256": "baba7c9922f7ce138c4d5c80904812b540f1fb7751027ddeaccb1612cccae4a9",
+      "window_index": 1
+    },
+    "3444a4285b7328397da7493624fd8e29d398b2fdadd6bff50c4a49982590e623": {
+      "context": "This section from the California Consumer Privacy Act Wikipedia article explains the exemptions to CCPA coverage, specifically detailing how personal health information and financial information are excluded from CCPA requirements and instead governed by separate federal and state regulations like HIPAA and the Gramm-Leach-Bliley Act.",
+      "text_sha256": "fb392679e0d4ad65d11b45b76bf84e39d2793d681c62d1a450372820b3b5b51a",
+      "window_index": 0
+    },
+    "3e3b873ec78cc25382376f2e176b25b63e29450a18153e1285f3da6748c5fdfd": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 8-16 that provide sources for information about the CCPA, including articles from The National Law Review, Bloomberg Law, the California Attorney General's office, and academic publications about the privacy law and its implementation.",
+      "text_sha256": "67d74a8c4b1a6faa95806ca14afd59d77e9abef793fc881415475ffd0c7cf260",
+      "window_index": 1
+    },
+    "58696fdcc1e6a04dfd92270d6f4dad2b45ac483f2e1da6e7354936654bf9ba6e": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 24-28 that provide sources for information about the CCPA legislation, including references to California State Legislature bills, preparation guides, and comparative analysis with the GDPR.",
+      "text_sha256": "805fe848bd89be2df47a4ab3ac71a62a6db7706c2d81dbaf5d5273c705332662",
+      "window_index": 1
+    },
+    "60a5f95f062d95a25cfa4f519877ce0bf7cda0a7babf80bed4635ddfacd0cbd1": {
+      "context": "This chunk appears in the Wikipedia article on the California Consumer Privacy Act and lists the languages into which the article has been translated, including Esperanto, Spanish, Persian, French, Portuguese, Thai, and Ukrainian, along with links to edit the language versions.",
+      "text_sha256": "fa6df2ea823a40f3f3d184f03187ad2586672d9d85f7ed589cbefa2e999b5b32",
+      "window_index": 0
+    },
+    "64aa776d1181960be590f6757cf160717de39a25bf2e4f4211c8010573e06a69": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 17-24 that support various claims made in the main article about CCPA provisions, implementation guidance, and related privacy legislation.",
+      "text_sha256": "f0f0f3c6f07cd35a026ff59a6bf22afb4afc210445d264f96e44fd2e6d24b200",
+      "window_index": 1
+    },
+    "7e90ec72162339eb1ac871a1360b471e64bfd16673a8180e925ef08ac7d5e18f": {
+      "context": "This chunk is from the \"Compliance\" subsection (section 1.2) under \"Intentions of the Act\" in the Wikipedia article on the California Consumer Privacy Act (CCPA). It explains which businesses must comply with the CCPA based on specific revenue and data handling thresholds, and outlines their obligations regarding data security and geographic applicability.",
+      "text_sha256": "c78a4f4d20e48b53d45c18a488e8b4b66fb619732a53af2f60a3b60f9c927f34",
+      "window_index": 0
+    },
+    "84a205e0389bbd41765530d1ab5ea645fe2dc392f1a20aebabb5a2c2b2cec74b": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 29-34 that document sources related to the CCPA's legislative history, regulatory context, and comparison to other privacy regulations like GDPR.",
+      "text_sha256": "08c18d42732d1f75a2c632c29b03f89ae99aa0d74e29b88d2de73aec4be791a3",
+      "window_index": 1
+    },
+    "8b0c40c5b2415c1b9f73863b7edd9e0c223aa6b604b8c93cb751209f43fe1138": {
+      "context": "This chunk appears in the \"Responsibility and accountability\" subsection (section 1.3) of the California Consumer Privacy Act Wikipedia article. It outlines specific compliance requirements that businesses must implement under the CCPA, including obtaining parental consent for minors, displaying opt-out links, providing data access methods, updating privacy policies, and respecting opt-out periods.",
+      "text_sha256": "b9635d13bbb1d848de4007f677ac7b5ed0f9958c052a85f643f32649f2de4e00",
+      "window_index": 0
+    },
+    "9bc2769be4a97e7870c84aa89baabfab7d3a4f25f2a160c6a13245f96e163660": {
+      "context": "This section from the Wikipedia article on the California Consumer Privacy Act defines what constitutes personal information under the CCPA, including specific examples like names, addresses, and online identifiers. It also compares the CCPA's definition of personal information with the European Union's General Data Protection Regulation (GDPR), highlighting key differences in scope and what data is covered.",
+      "text_sha256": "a268d4803e4deabf4deaa962ff8823b8409e9796610739c871b7157c0c89b7dd",
+      "window_index": 0
+    },
+    "a804a9230559d28bc283de6b4b26a2d0ec6160c60ad9f3c50eabe6f302cf8c2f": {
+      "context": "This section from the Wikipedia article on the California Consumer Privacy Act covers the History of the CCPA, detailing its origins as a ballot proposition by Californians for Consumer Privacy, its passage by the state legislature in 2018, subsequent amendments, and the related California Privacy Rights Act of 2020.",
+      "text_sha256": "cd22351fdcdbe6c0dcce3029a26b32ce338490c1df924084df593f7f9a0debcf",
+      "window_index": 0
+    },
+    "a8207476c21e6462b95e8396c0fbaeaab73f28fda824a7a25598da21d3c288db": {
+      "context": "This chunk contains the Wikipedia navigation and editing tools for the California Consumer Privacy Act article, including options to read, edit, view history, and access page information, as well as metadata about the current revision edited by user Benboy250 on July 7, 2026.",
+      "text_sha256": "e07df5a8b09e9e1f55fe2b65f4b7579d6aad70fa1a9d0f25bf510220f1b3565c",
+      "window_index": 0
+    },
+    "a8ce388cd5f901ca344c2de3b9899db2cdd1e54132963ac8ed2fa90a3b4e58e4": {
+      "context": "This is the table of contents for the Wikipedia article on the California Consumer Privacy Act (CCPA), listing the main sections covered in the document including the act's intentions, definitions, history, exemptions, and related topics.",
+      "text_sha256": "cb6282f00fc06e244898de343bea3c837449dd0ffca39d55aa207e3e63b64b5b",
+      "window_index": 0
+    },
+    "a991e8a0d1669958652a2ea8827f8dd94842c28545a83b82adee3a6f23015bbf": {
+      "context": "This section appears in the Wikipedia article on the California Consumer Privacy Act and provides external links to official resources related to CCPA implementation and privacy policy guidance, including the California Privacy Protection Agency and the California Office of the Attorney General. The chunk also includes article metadata, categories, and retrieval information for the Wikipedia page.",
+      "text_sha256": "80e45ddbec1c23ddce9ea9bc8599d85c47ac43388d1761d0ad547ac58ee7f5d3",
+      "window_index": 1
+    },
+    "acc927bfbf8263083e19b01fbb734f0cf1720954461571b49d20cc0fffd16b84": {
+      "context": "This chunk is part of the References section of the California Consumer Privacy Act Wikipedia article, containing citations 35-41 that document sources discussing the CCPA's passage, implementation, and related regulatory developments including California Proposition 24.",
+      "text_sha256": "0fa2ea95b457bf537fba06a2af22838cd5eef2c18e049f57c903b53d67cfbd59",
+      "window_index": 1
+    },
+    "b0d1856ee7b15e349c65c1d3c25dc565091e2289b3c878e82c7f1e366da37532": {
+      "context": "This chunk appears in the introductory section of the Wikipedia article on the California Consumer Privacy Act (CCPA), immediately following the description of the CCPA's passage and effectiveness. It describes a subsequent development in California privacy legislation, explaining how Proposition 24 (the California Privacy Rights Act) amended and expanded the original CCPA after voters approved it in November 2020.",
+      "text_sha256": "bd1a72cf8dd301fdb5139379ae3963bff764936f83746dd77cf5966d82952891",
+      "window_index": 0
+    },
+    "c0f8727b8b4f450653dcd36097382d6e931282acc29f27b706a9d65701cdb722": {
+      "context": "This chunk is the \"See also\" section of the California Consumer Privacy Act Wikipedia article, which lists related topics and legislation connected to the CCPA, including consumer protection, digital privacy, the GDPR, and other California privacy laws.",
+      "text_sha256": "755190d5e9ef107ad24ff297dcff1d80dc35161d56b2408a41aceb291c2d7522",
+      "window_index": 0
+    },
+    "e47ca20907bec65fbe855ac35e22e944284b6c97d6c2e360c449cec26c445007": {
+      "context": "This chunk is from the \"Further reading\" section of the California Consumer Privacy Act Wikipedia article, providing a curated list of secondary sources and articles about the CCPA from various publications including CNET, Wired, The Verge, Vox, and the American Bar Association.",
+      "text_sha256": "5d9c997c96dcbac9640ea0309d8029c0d7348aef7b6414db27898b95c5cc31ee",
+      "window_index": 1
+    },
+    "ef2a99840e12273be4eee09ca523731a789f61e8562fd7c0383bc3743479c3b9": {
+      "context": "This chunk appears in the \"Intentions of the Act\" section of the California Consumer Privacy Act Wikipedia article, outlining the six primary rights that the CCPA grants to California residents regarding their personal data and privacy protections.",
+      "text_sha256": "d964aef7e37a5d688c82d9773104011fc0a2250584dc54a10c6358cd3d5d0181",
+      "window_index": 0
+    }
+  },
+  "doc_id": "wiki-ccpa",
+  "generated_at": "2026-08-29T22:23:53Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

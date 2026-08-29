@@ -1,0 +1,398 @@
+{
+  "contexts": {
+    "00b545122e30201258e1b8e9d90569635e078bcaa8f6f06b4df43d9be60e6795": {
+      "context": "This chunk appears in section D.4 of the appendix of the Hoffmann et al. 2022 Chinchilla paper, which compares three different approaches for determining optimal model scaling. Section D.4 specifically presents a small-scale empirical comparison between Approach 1 (the authors' method) and the scaling predictions from Kaplan et al. (2020), demonstrating that the Chinchilla approach predicts smaller, more efficient models than prior work.",
+      "text_sha256": "2c2e3a98678004b4ee4748d6804178a16bead21a326e0a0eeba7c41cf4a2a768",
+      "window_index": 3
+    },
+    "09565b14a8851880f9289decc2f0ab21ce3be29738105310b8a618214e55830c": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Training Compute-Optimal Large Language Models\" (Hoffmann et al., 2022), which discusses optimal scaling of language models. The references cited here support the paper's methodology and findings regarding model scaling, training efficiency, and evaluation benchmarks used in developing Chinchilla and comparing it to Gopher.",
+      "text_sha256": "5f177788c0077abcc80fdda35433ee61efcbd063d27b796fb51276fca738bb70",
+      "window_index": 2
+    },
+    "0c82f4414a1ce69a61572c760f0c9967f80834372892a29fce1070fa40ce6cbc": {
+      "context": "This chunk appears in Section D.3 of the appendix of the Hoffmann et al. 2022 Chinchilla paper, which presents predicted compute-optimal frontiers across three different scaling analysis approaches. The chunk introduces Table A3 and Figure A3, which display optimal model sizes and training token counts for various compute budgets estimated by Approaches 2 and 3 (IsoFLOP analysis and parametric fitting of loss, respectively).",
+      "text_sha256": "c05e2b90e14a144304b30be3482e8613329e961faa455e05085bf89c5fce735a",
+      "window_index": 3
+    },
+    "0d5ae3f7a77d17509ecf28405d5c760a6d482b434d5088552972a86fec711d56": {
+      "context": "This chunk appears in Appendix E titled \"Curvature of the FLOP-loss frontier\" of the Hoffmann et al. 2022 Chinchilla paper (arxiv 2203.15556). It discusses the observation that the relationship between compute (FLOPs) and loss exhibits curvature, meaning scaling predictions vary depending on which range of model sizes are used to extrapolate, with implications for determining optimal model sizes across different compute budgets.",
+      "text_sha256": "16f20da33558fff9c0804d9a64ad819aec7ed59cbecc2b29bc5e330dcb3a65e1",
+      "window_index": 3
+    },
+    "0dfa398cdd993a0fae5cb1b03f8298c71da9e002f3565a276ac9f8d8f881e7d4": {
+      "context": "This chunk is from the Introduction section of \"Training Compute-Optimal Large Language Models\" by Hoffmann et al. (2022). It establishes the motivation and research question for the paper, discussing the computational costs of training large language models, prior work by Kaplan et al. (2020) on scaling laws, and the paper's central inquiry into how to optimally trade off model size versus training tokens given a fixed compute budget.",
+      "text_sha256": "35bfcf39445a74fc398ee9ffbf31ff826819db110c48ccb70ed453c8c0b811e6",
+      "window_index": 0
+    },
+    "122aec985718337857e37f27b4abffa128759bbdf766ca9d70dbc6a1f061a3fe": {
+      "context": "This chunk appears in Appendix C of the Chinchilla scaling laws paper (arxiv-hoffmann-2022), which validates the consistency of scaling results across different datasets. Figure A1 illustrates the impact of cosine learning rate schedule cycle length on model performance during training, while Figure A2 and Table A2 present IsoFLOP scaling analysis results on C4 and GitHub datasets, comparing the parameter and data scaling coefficients to prior work by Kaplan et al. (2020).",
+      "text_sha256": "70796bc2039dd8f9100600a42927f5c41cd08d45508fb953793f7523d6b2e9b7",
+      "window_index": 3
+    },
+    "13de22c7bf1a28d59b247cbf73f7a1f03bd07481fd7b2afd50429a320f85e947": {
+      "context": "This chunk contains Chinchilla model performance results on BIG-bench tasks, comparing accuracy scores between the Chinchilla and Gopher models across various reasoning and language understanding subtasks. It is part of Table A7 in the Model Card section of the Chinchilla paper, which presents comprehensive evaluation results of the Chinchilla language model.",
+      "text_sha256": "07bb6ec5cd58a009d078eba6da7952a633fc0199d98b5371c76c798e0ebf1b01",
+      "window_index": 4
+    },
+    "153f2797cfb00892b1fb9722d2e6be99e8f5e8da53e5ca27c090ab940057b8d4": {
+      "context": "This chunk appears in section 4.2.7 \"Gender bias and toxicity\" of the Chinchilla paper, which discusses potential risks of large language models and evaluates Chinchilla's performance on gender bias and toxicity benchmarks compared to Gopher. The chunk introduces the section's focus on examining whether Chinchilla exhibits gender bias and toxic language generation, noting that Chinchilla is expected to carry similar risks to Gopher since both are trained on the same dataset.",
+      "text_sha256": "9af9a0a57c794f0077237c1483408931d409a7eb621648d6a1e26802ce2d2f56",
+      "window_index": 1
+    },
+    "160d9cd9e0fc3d1db5650c63a5159a3f8fa49ff5621475967e0aff159d5cecbf": {
+      "context": "This is the abstract and title section of the paper \"Training Compute-Optimal Large Language Models\" by Hoffmann et al. (2022), which presents the main research question, methodology, and key findings about optimal allocation of model size and training tokens under a fixed compute budget, introducing the Chinchilla model as a compute-optimal alternative to larger models like Gopher and GPT-3.",
+      "text_sha256": "80e94d2dd6fd84d99663156ba74ab863a074bacd8f99a2d21553afac7ca5a0e2",
+      "window_index": 0
+    },
+    "18212fc804d4667596cfb6456b1c3c07c623002b817aec7ced175d56cfaef958": {
+      "context": "This chunk is from Section 2 (Related Work) of the paper \"Training Compute-Optimal Large Language Models\" by Hoffmann et al. (2022). It discusses prior work on large language models and scaling behavior, particularly comparing the authors' approach to Kaplan et al. (2020)'s earlier findings on optimal model size and training tokens allocation for a given compute budget.",
+      "text_sha256": "370b27fa9df9ab49f7624d70ed65376369b329945b423c4effaccfd6ce12194a",
+      "window_index": 0
+    },
+    "214fa94d18a2ce0f8396c79003dcf9db99cc174325b81fa9b8e82221f7e56a43": {
+      "context": "Section 4.2.4 (BIG-bench) and 4.2.3 (Reading comprehension) of the Chinchilla paper, which presents evaluation results comparing the 70B-parameter Chinchilla model to the larger 280B-parameter Gopher model and other large language models across multiple benchmark tasks. The chunk reports Chinchilla's superior performance on BIG-bench tasks and reading comprehension benchmarks including LAMBADA, RACE-m, and RACE-h.",
+      "text_sha256": "aa6fc4eed95f469eb2a15b470efb72684f9fac9043ff5d17e0a61accf42c7a54",
+      "window_index": 1
+    },
+    "21697342308b7ffa776e7b6867df99a91db8eebb944de7aa0b5c37399aa045ff": {
+      "context": "This chunk appears in the \"Training Data\" subsection of the Chinchilla model card (Table A8) in the appendix of the arxiv-hoffmann-2022-chinchilla paper. It specifies the source of training data used for the Chinchilla language model and references differences in data sampling compared to the prior Gopher model described in Rae et al. (2021).",
+      "text_sha256": "8352abd53738831ffd21f1df7864f7c6f3308c06e7c08c534ea794a5b5519675",
+      "window_index": 4
+    },
+    "2c7a3911348745c195758afb54b36e823c8db6cb5c90ab16164b349185cb6a92": {
+      "context": "This chunk is part of the References section of the Hoffmann et al. 2022 Chinchilla paper, containing bibliographic citations for works related to language model detoxification, hyperparameter tuning, and neural network design that are cited throughout the document's discussion of scaling laws and model training.",
+      "text_sha256": "5e0667f2f00cda68b691f2860c8e44184a402484225029c3ab564c97d4a70c51",
+      "window_index": 2
+    },
+    "2d78e2d8d6b339815adaf90d25cd5ef6f95b56d35acdea58941bf615111161f9": {
+      "context": "This chunk contains Chinchilla MMLU benchmark results comparing the Chinchilla model's accuracy to Gopher across various subject areas, presented in Table A6 of the Chinchilla model card in the appendix of the arxiv-hoffmann-2022-chinchilla paper.",
+      "text_sha256": "387929089318e2cad7af043fe8fe79eb66cd70c5ef6b323f4b7528a0a60b974b",
+      "window_index": 4
+    },
+    "2f03ec5346ffd975a72464d366e7123d9b4b4e451b20bd05355d15c420830034": {
+      "context": "This chunk appears in Appendix H.4 of the Hoffmann et al. 2022 Chinchilla paper, which discusses evaluation results comparing the Chinchilla language model to the larger Gopher model across various benchmarks. Section H.4 specifically presents performance comparisons on BIG-bench subsets, as shown in Table A7.",
+      "text_sha256": "9b2fe8ecd50f6545393f0e6d360324415283eb3f535708983b6d17977060a220",
+      "window_index": 3
+    },
+    "2fec936f70623f78bf3014c25a202000bb4148f37095c5b902710b4be3da7d82": {
+      "context": "This chunk is from the Model Card section (Table A8) of the Chinchilla paper by Hoffmann et al. (2022), specifically detailing the intended uses, evaluation factors, metrics, and evaluation data for the Chinchilla language model following the framework from Mitchell et al. (2019). It describes the model's primary intended users (DeepMind researchers), out-of-scope uses, relevant factors for performance evaluation, model performance measures across various benchmarks, and the datasets used for evaluation.",
+      "text_sha256": "9ed6a58894a48596c59805367cef9cf08bc22cbf76e37e6ec725bede7a5a9e69",
+      "window_index": 4
+    },
+    "3456259e678d12e51a6cb55d3138f4580160cb24542ebb2436793cc2e3d2126c": {
+      "context": "This chunk is part of Table A7 in the Chinchilla model card section, presenting BIG-bench benchmark results comparing the accuracy of the Chinchilla language model against the Gopher baseline model across various reasoning and language understanding tasks.",
+      "text_sha256": "c009d545c5284ca4dc8bc10ec25d2195d47556a95c10cff7c17aac3cf72910b3",
+      "window_index": 4
+    },
+    "35774547636338a7fc5d1b93699dacc4aef29097712143698c40d7c9d39bf9c3": {
+      "context": "This chunk appears in Appendix C of the Chinchilla scaling laws paper (Hoffmann et al., 2022), which validates the consistency of scaling results across different datasets. The section demonstrates that IsoFLOP (Approach 2) scaling analysis produces similar results when trained on C4 and GitHub code datasets compared to the primary MassiveText experiments, supporting the generalizability of the paper's scaling findings.",
+      "text_sha256": "7a040170be0c2efd03a2dce3fba0cd052b4b9118ba6e4668b0e4a310352af5ee",
+      "window_index": 3
+    },
+    "366e60dc0b168ca75570511760bc9c5cdb50d67d2ae1e62fab129945d603a75a": {
+      "context": "This table appears in Section 4.2 (Results) of the Hoffmann et al. 2022 Chinchilla paper, which compares the Chinchilla language model to Gopher and other large language models. Table 5 lists the comprehensive evaluation benchmark suite used to assess Chinchilla's performance across six categories: language modelling, reading comprehension, question answering, common sense reasoning, MMLU, and BIG-bench tasks.",
+      "text_sha256": "25e6a202dc55de6ffe0f092929ebcda8407bdb6ee61c02eaa82d5d25ada6ecc7",
+      "window_index": 1
+    },
+    "377900487a7a5f8c4d5c1d339442bb3ef39bd4a6b01e81c486f6143f6016d5c1": {
+      "context": "This chunk appears in Section H.3 (Winogender Setup) of the appendix to the Chinchilla scaling laws paper (Hoffmann et al., 2022). It describes the methodology for evaluating gender bias in coreference resolution for the Chinchilla language model using the Winogender benchmark, which tests whether the model can correctly resolve pronoun references independent of pronoun gender.",
+      "text_sha256": "1fa7e631c09f59f045ef0953cfcbb211e31de2d7ee5b45a92138a5bf7802f348",
+      "window_index": 3
+    },
+    "3812a457fa6a18780392340172fa4fe773c13d9bab4d222c5a81f0eb526a9d4e": {
+      "context": "This chunk is part of the References section of the Chinchilla paper (arxiv-hoffmann-2022), which lists citations for works on language model scaling, mixture-of-experts approaches, and evaluation benchmarks referenced throughout the document's discussion of optimal model sizing and training duration.",
+      "text_sha256": "833a62a2c123048f7699da819d8882251b77b9275abc7acf7db471cd68d5ffa6",
+      "window_index": 2
+    },
+    "39fcf55017af07e5026dc19b6621fe42edbf41b157a8f9a00df7e73e57e7ea83": {
+      "context": "This chunk is part of Table A9 in the appendix of the Chinchilla paper, which lists the hyperparameters and architectural configurations of all transformer models trained during the study, including model size (in millions of parameters), embedding dimension (d_model), feed-forward size (ffw_size), key-value size (kv_size), number of attention heads (n_heads), and number of layers (n_layers).",
+      "text_sha256": "8effd42848de298f048309249c8a8e64f00ee28db87849bccec8bd401afd25d5",
+      "window_index": 4
+    },
+    "3c1fe19ca964dab43578ab7299ce7e52c73beaa21a29b7191070ae0c3cebb86f": {
+      "context": "This section from the Related Work (Section 2) of \"Training Compute-Optimal Large Language Models\" discusses hyperparameter selection strategies for large language models, focusing on factors beyond model size and training tokens such as learning rate, batch size, and architecture choices, and reviews recent alternatives to dense transformers including mixture-of-expert models and retrieval-augmented approaches.",
+      "text_sha256": "cbafc81445dfa80409e3e5f9052b426329612eb8a830ae5f2e7cfb55f36eaf4a",
+      "window_index": 0
+    },
+    "47259fd4bc385c369708caa775a861eac612810a3eb9b10a9b506eb136cf46ff": {
+      "context": "This chunk appears in Appendix H.1 titled \"The Pile\" of the Chinchilla scaling laws paper (arxiv-hoffmann-2022). It introduces Table A5, which presents bits-per-byte performance comparisons of three language models\u2014Chinchilla (70B parameters), Gopher (280B parameters), and Jurassic-1 (170B parameters)\u2014across multiple subsets of The Pile evaluation dataset.",
+      "text_sha256": "e1e755018e69e3d6dd0e4447b1c071dea60b0aec12294eb5362aac6e1f7227c3",
+      "window_index": 3
+    },
+    "4ddafc11964f3712aed6191fb9587bfee4dc01f5e166eb260f0fb73be7719acd": {
+      "context": "This chunk is from Section 4.2.1 (Language modelling) of the Chinchilla paper, part of the Results section (4.2) that evaluates the Chinchilla model against Gopher and other large language models. It presents Chinchilla's performance on The Pile language modelling benchmark and introduces the MMLU benchmark results, which are discussed in detail in the following subsection 4.2.2.",
+      "text_sha256": "fe919375ebe99b30e1496ccf08c6d6f39e4275ba27740c0deea4f9473a1c2bb6",
+      "window_index": 1
+    },
+    "4f1ec50d8a9a7f4317410b6d3a9d6b1fbd6b066747133cf6e29bc6bffd266402": {
+      "context": "This chunk describes Approach 1 in Section 3.1 of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models,\" which presents one of three methods used to estimate the optimal allocation of model size and training tokens for a given compute budget. The approach involves training models of varying sizes and durations to extract the minimum loss for different FLOP counts and fit power laws predicting optimal scaling relationships.",
+      "text_sha256": "382597bc259c0bf3a14a868e84093a6a6c2edff7fb720d65380c40e7eb4ca844",
+      "window_index": 0
+    },
+    "4f82303ed4052a2029dc7aa64bff38774b210734d5937da558b3d45979d0041f": {
+      "context": "This chunk is part of the References section of the Hoffmann et al. 2022 Chinchilla paper, listing bibliographic citations for works cited throughout the document on language model scaling, optimization methods, and evaluation benchmarks.",
+      "text_sha256": "eef57c22f88b7cfbfb571477362a198dd2949595c63d4d67bd8cf123e7bc6520",
+      "window_index": 2
+    },
+    "551913292743ba846a091907fb0af6c559cb253552d723e420b4b8c57d3bde5a": {
+      "context": "This chunk is from section 4.2.6 \"Closed-book question answering\" in the Hoffmann et al. 2022 Chinchilla paper, which presents evaluation results comparing the Chinchilla language model to Gopher and other models on closed-book question answering tasks including Natural Questions and TriviaQA datasets.",
+      "text_sha256": "ba4870cb4d4ed8d51de9ae8a2fea4899a084c3b1bc6f710513dc5b87fe837285",
+      "window_index": 1
+    },
+    "5656b326eba917f4f49fe9b985076597d23fc74faede2044f08fa561e2e8e30a": {
+      "context": "This chunk describes Approach 2: IsoFLOP profiles, one of three methods presented in Section 3 of the Hoffmann et al. (2022) paper \"Training Compute-Optimal Large Language Models\" for determining optimal model size and training token allocation given a fixed compute budget. The approach varies model size across fixed FLOP counts to identify the optimal parameter count for each budget level.",
+      "text_sha256": "0b46f3226764bddc7ef538429f11e2f13eb9176099199185a28a14f050543728",
+      "window_index": 0
+    },
+    "5c100b3f8dc70d7198edaf10a6d1f1e1225927d7200d35b4e47af5332bbe5a3c": {
+      "context": "This chunk appears in Appendix D.2 of the Hoffmann et al. 2022 Chinchilla paper, specifically in the section on \"Approach 3: Parametric fitting of the loss.\" It explains the theoretical foundations and empirical fitting procedure for decomposing language model loss into Bayes risk, functional approximation, and stochastic approximation terms, building on Equation (2) introduced earlier in that section.",
+      "text_sha256": "69016da643a057cb347bdef8365639cbd7a64fce01b6ab50301679a6795d7fa3",
+      "window_index": 3
+    },
+    "5f815249e740258dc0a722e1d4cb80733931e47f819276f2616f59d2f11b6f4f": {
+      "context": "This chunk appears in section 4.2.6 (Closed-book question answering) and 4.2.7 (Gender bias and toxicity) of the Hoffmann et al. 2022 \"Chinchilla\" paper, which presents results comparing the Chinchilla language model to Gopher and other models. Table 9 shows Chinchilla's performance on closed-book question answering benchmarks including Natural Questions and TriviaQA, while the following text introduces the evaluation of gender bias and toxicity risks in large language models.",
+      "text_sha256": "1025b2db49d9b4244f86b37c4e44f482b034c417f54e49c4b9a957dd58db5d67",
+      "window_index": 1
+    },
+    "64cbd5b7622daaf2e205d4f832afd43726b6e7b89ecd64e459f2614a370ffb1a": {
+      "context": "This chunk is part of the References section of the Hoffmann et al. 2022 paper on Chinchilla, which proposes optimal scaling laws for large language models. The references cited here support the paper's methodology and findings regarding model scaling, training procedures, and evaluation metrics used in the Chinchilla research.",
+      "text_sha256": "fd8eb3096cbe5885a5dd8944441057501af47798be22ecee125769278cdadf87",
+      "window_index": 2
+    },
+    "67c1ec145efa052e0ca05c715ad7197fa3c7e58a391bb2bbe63b9e7a7f7413db": {
+      "context": "This chunk is part of the References section of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models\" (also known as the Chinchilla paper). It contains bibliographic citations for works related to language model scaling, mixture-of-experts approaches, datasets, and evaluation methods that are referenced throughout the paper's discussion and analysis of optimal model sizing and training duration.",
+      "text_sha256": "f9836f173d79bb2333cac1d1e92d63a8b57bf9425edec63fb209f80a89b8265d",
+      "window_index": 2
+    },
+    "69473fd8113d8a0622dab212b150bbbe454a7336bb1a0d61a8cd5fa3d63a4279": {
+      "context": "This chunk appears in Section 3.4 \"Optimal model scaling\" of the Hoffmann et al. 2022 paper on compute-optimal training of large language models. Table 2 presents the estimated exponents for parameter and data scaling relationships (N_opt and D_opt) across three different fitting approaches, comparing them to prior work by Kaplan et al. (2020) and showing that model size and training data should scale approximately equally with increased compute budget.",
+      "text_sha256": "ec8535168da5e6886d51e69e74959be00685ff8b5d0444e77c01dc00f5c8608c",
+      "window_index": 1
+    },
+    "6c11cb9dfb87e300771ccbcbcdcbb626c97a8f97769a264779e1deccfc5b02bd": {
+      "context": "This chunk appears in Section 4.2 (Results) of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models\" (also known as the Chinchilla paper). It introduces the comprehensive evaluation methodology for Chinchilla, a 70-billion parameter language model trained to test optimal scaling predictions from Section 3. The chunk explains that evaluations span multiple benchmark categories listed in Table 5, including language modeling, reading comprehension, question answering, common sense reasoning, MMLU, and BIG-bench tasks.",
+      "text_sha256": "c55df4c0fb6caca18834505d15f31d711347384b8a051514b3c1e1bd48d70443",
+      "window_index": 1
+    },
+    "74f2b48696b38e2c0c6dd3ad9a828863975744f02a0c8be35ddec8ebd418de77": {
+      "context": "This chunk is from Section 3.4 \"Optimal model scaling\" of the Hoffmann et al. 2022 paper on Chinchilla, which discusses three different approaches for predicting optimal scaling relationships between model parameters (N_opt), training tokens (D_opt), and compute budget (C). The chunk compares predictions across these three approaches and introduces Table 3, which provides estimated FLOPs and tokens needed for compute-optimal models of various sizes.",
+      "text_sha256": "36bc44893bf0619c64fc737f871054d42fa86bd642ced3a55923381a658dfeca",
+      "window_index": 1
+    },
+    "79a235ebcdd74fce4fe3e5ff9e76ee4277bb16ecb0a3c53728c6479d590110ab": {
+      "context": "This chunk is part of the References section of the Chinchilla paper (arxiv-hoffmann-2022), which lists bibliographic citations for works cited throughout the document on language model scaling, training datasets, and evaluation benchmarks.",
+      "text_sha256": "1e41c36e2083d694afb5ced43b8bff918b8c04039fc578f4cc50acd3d0b8e878",
+      "window_index": 2
+    },
+    "7be3793934bd96a64f43e62033b133dfeb930e85d94366b5c8b1a7aa0a80e883": {
+      "context": "This chunk is part of the References section of the Chinchilla paper (arxiv-hoffmann-2022), which lists bibliographic citations for works cited throughout the document on scaling laws for language models, optimization methods, and benchmark datasets used in evaluating large language models.",
+      "text_sha256": "2b27727516331bc5386f110e5ae069bf44fb990588e2600c3417e4d5d2ee92a9",
+      "window_index": 2
+    },
+    "8007e5e56e7757ded68a8e3211776cfed2532c22909cd17ba2fd0153a2d0455c": {
+      "context": "This table appears in Appendix F of the Hoffmann et al. 2022 Chinchilla paper, which discusses FLOPs computation methodology. Table A4 compares the authors' detailed FLOP calculation method against the common approximation formula C = 6ND (where C is FLOPs, D is training tokens, and N is parameters), showing the ratio between their approach and the standard approximation across various transformer model sizes.",
+      "text_sha256": "c92fbac0b2f09e29aac86c544ae760034085c1bb981b1dc5b29477cf783bcd80",
+      "window_index": 3
+    },
+    "85a7628f5295a8b2b30a8ece06d5dddd615f809bff1f0450fa965a632bcbf4b3": {
+      "context": "This chunk appears in Appendix A of the Chinchilla scaling laws paper (arxiv-hoffmann-2022-chinchilla), which details the composition of the MassiveText training dataset used for Chinchilla and all scaling experiments. Table A1 specifies the disk size, document count, sampling proportions, and epoch counts for each dataset subset (MassiveWeb, Books, C4, News, GitHub, and Wikipedia) when training on 1.4 trillion tokens.",
+      "text_sha256": "4db0207436f414da9f373bb1b0f739a55eb3ef81a9ccbddba741061cb7539cfa",
+      "window_index": 2
+    },
+    "85bc6bbf8df06435aed11489a3e8c12c7d5bf588f79a128e34bb57c6b663c066": {
+      "context": "This chunk is part of Table A9 in the appendix of the Chinchilla paper, which lists the hyperparameters and architectural configurations of all transformer models trained during the study, including model size parameters like d_model (embedding dimension), ffw_size (feedforward layer size), n_heads (number of attention heads), and n_layers (number of transformer layers).",
+      "text_sha256": "d7d4c51faf4c84bd3cf5faeaa6e1c55cfb952fd18a8738cc6dd92524979dff33",
+      "window_index": 4
+    },
+    "8c2462f12efbd9fec6c3f9a672dcf88ca1af8ac504f192c688db6e43df64c1aa": {
+      "context": "This chunk appears in Section 3.4 (Optimal model scaling) of the Hoffmann et al. 2022 paper on compute-optimal scaling for large language models. It describes validation of the main finding that model parameters and training data should scale equally with increased compute budget, by reproducing the IsoFLOP analysis on additional datasets beyond the primary analysis.",
+      "text_sha256": "12c490ef36f74202e53074895c5c639941fed25dfbd7c1ea153b83fe79592431",
+      "window_index": 1
+    },
+    "8d1b73ccbb04fa9210d216055bf00c33b98503384d2de36e94a2119bfa340d9d": {
+      "context": "This chunk is from section 4.2.7 \"Gender bias and toxicity\" in the Chinchilla paper (Hoffmann et al., 2022), which evaluates potential risks in the Chinchilla language model. It presents results on gender bias using the Winogender dataset and analyzes toxicity in generated text by comparing Chinchilla to the larger Gopher model, finding that gender bias improvements are uneven across pronoun types while toxicity levels remain similar between models.",
+      "text_sha256": "1d52e1a3772809146d1d96ba6d7334f90fdcadd85ea81e6038d5010266fdfbef",
+      "window_index": 1
+    },
+    "8d689986563284c7333e1f38a8ad38eb962a46e58a0dc93d363abe733617386e": {
+      "context": "This chunk is from section 4.2.5 \"Common sense\" in the Chinchilla paper (Hoffmann et al., 2022), which presents evaluation results comparing the Chinchilla language model to Gopher and other large language models on common sense reasoning benchmarks including PIQA, SIQA, Winogrande, HellaSwag, BoolQ, and TruthfulQA.",
+      "text_sha256": "6fd5c6c5b9fba5e3ec3f37e564b3641545fbf6ee07b09d955206bb5acb1780f6",
+      "window_index": 1
+    },
+    "8f77366fe96f3eaf222ed568e02191805e23c1ac447a260dca50c8b9144e0a29": {
+      "context": "This chunk is part of the References section of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models\" (also known as the Chinchilla paper). It contains bibliographic citations for works on tensor processing units, scaling laws for neural language models, optimization methods, and tokenization techniques that are referenced throughout the paper's discussion of optimal model scaling and training.",
+      "text_sha256": "3c270d499061d397b0b5be575d4fe1522ed284ecb816bd1667a3e103379f6b6a",
+      "window_index": 2
+    },
+    "902ed8fec9970e7760777e153ec49d4d935c5b8a58e7119c4179d1e8ad49fe7a": {
+      "context": "This chunk introduces Section I of the Hoffmann et al. 2022 paper on Chinchilla, which presents a comprehensive model card for the Chinchilla language model following Mitchell et al.'s framework. The model card documents Chinchilla's specifications, intended uses, evaluation metrics, datasets, and ethical considerations.",
+      "text_sha256": "3e009cebbd9044e883f497d24ce0a85252851e54de00b93242937783e5bdfbfa",
+      "window_index": 4
+    },
+    "907b4b50eac617b80876f4012c4cc462b5d3ce77126fbfcd1f2c9bc062e0491d": {
+      "context": "This chunk is part of the References section of the Chinchilla paper (arxiv-hoffmann-2022), containing citations to foundational work on language models and transformer architectures, including LaMDA, the original Transformer paper, and research on ethical risks of language models.",
+      "text_sha256": "b484222df5eb42e812e11a907e9da31f20cfd68cd73bae10e97d6f5ad294f712",
+      "window_index": 2
+    },
+    "941760a636580c9202074a3d73563f29a678a28ec6b55b9a014ef6f2989323a1": {
+      "context": "This is the Acknowledgements section (Section 6) of the Hoffmann et al. 2022 paper on Chinchilla, which presents research on optimal scaling of large language models. The acknowledgements thank colleagues at DeepMind and other institutions who provided feedback and support for the research.",
+      "text_sha256": "32263f0e12d27081a8ae89b853320bc5ffcb2ed706c9a0d5d4bb145b2f2a8a21",
+      "window_index": 2
+    },
+    "9498103731544fd11185d844774bb94dfea8e6f60300376062817cb9215c4b83": {
+      "context": "This chunk describes Approach 3 in Section 3.3 of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models,\" which presents a parametric loss function method for estimating optimal model size and training token allocation. The approach models final losses as a function of model parameters and tokens, fits the model using Huber loss minimization, and derives the efficient computational frontier showing power-law relationships between compute budget and optimal model size and training tokens.",
+      "text_sha256": "1ef4982b28c11e999051da8ca4710f60270ba08d3b3ddaf102cb60566933e740",
+      "window_index": 0
+    },
+    "979fe7d8efafacfdeae7aa20cc21a963f8082c5c669dc38ba19d24f4a399c5ba": {
+      "context": "This chunk appears in Section 3 of the paper \"Training Compute-Optimal Large Language Models\" by Hoffmann et al., which introduces three methodological approaches for determining optimal allocation of model size and training tokens given a fixed computational budget. The chunk provides an overview of the common framework across all three approaches and their key finding that model size and training tokens should scale equally with increased compute, contrasting with prior work by Kaplan et al. (2020).",
+      "text_sha256": "426c6e4ae8a95d4e3cb970db755728af7ff239a92f8ce2105254070ad03e4258",
+      "window_index": 0
+    },
+    "9980885b37dd9d5750e41f7f4da0415addaca09a28cf7fa7b51441b4372140a1": {
+      "context": "This chunk appears in Appendix D.1 of the Hoffmann et al. 2022 Chinchilla paper, which describes the experimental methodology for Approach 1: Fixing model sizes and varying training sequences. The chunk details the learning rate schedule and cosine annealing hyperparameters used during model training, including the requirement that cosine cycle length be matched to training steps to avoid performance degradation.",
+      "text_sha256": "91df0be05c2d89a4c9ffa0d2c18561c390e6ddf77ca40cf7b7858de77b11762f",
+      "window_index": 3
+    },
+    "a52e969633b46f57b383a0386e9d513aba9e4ca4b0dfcaf3f35a11612fa47f1a": {
+      "context": "This chunk is from Table A9 in the appendix of the Chinchilla paper (arxiv-hoffmann-2022), which lists the complete hyperparameters and architectural configurations of all transformer models trained during the study, including model size parameters like embedding dimension (d_model), feed-forward size (ffw_size), number of attention heads (n_heads), and number of layers (n_layers).",
+      "text_sha256": "facb8bd13e33a3f7cc14882476e3d085d615be72a660d9e7612b4032234978a7",
+      "window_index": 4
+    },
+    "a6b817a40acb38cbfdedeaebe615e9f76180faeef4e52dce4df4247e2574fe6e": {
+      "context": "This chunk is from section 4.2.2 (MMLU) of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models\" (arxiv 2203.15556), which presents results comparing the Chinchilla language model to Gopher on the Massive Multitask Language Understanding benchmark as part of the paper's extensive evaluation of optimal model scaling.",
+      "text_sha256": "a1b852a4299778f620899d327b0a4c4d759a9086c4670d109e24fd751ed9597a",
+      "window_index": 1
+    },
+    "a7a41b2072dc847b7d9c31346eb12f656100379a783688d3066c0fc53bbddb88": {
+      "context": "This chunk appears in the References section of the Hoffmann et al. 2022 Chinchilla paper. It contains citations to prior work on scaling language models, including the Gopher model paper by Rae et al. (2021), which is directly compared to Chinchilla in the paper's main findings, and foundational transformer papers by Raffel et al. on transfer learning with text-to-text models.",
+      "text_sha256": "60cb94cf44f89bf10c668f599d757257c9554f0b2905ce22d94f83487921e910",
+      "window_index": 2
+    },
+    "a80efeeb5e7df0f2ee479b0f1d9df62d4a7f69a1ef8b9a722957a67538e3bcee": {
+      "context": "This chunk is part of Table A6 in the Chinchilla model card section, which presents accuracy results from the Massive Multitask Language Understanding (MMLU) benchmark comparing the Chinchilla language model to the Gopher baseline model across various subject domains.",
+      "text_sha256": "f1216a5fdd239de4bfaed9ad932908ee2481b8c8456bd7ec30acd5bbd9a4365c",
+      "window_index": 4
+    },
+    "a9b53c0b08b9069b5e01b9c96196cca917fc0ab4fae42895c61549d2be790233": {
+      "context": "This chunk appears in the Model Card section of the Chinchilla paper (arxiv-hoffmann-2022), specifically under the Evaluation Data subsection. It lists the datasets used to evaluate the Chinchilla language model across multiple task categories including language modeling, language understanding, question answering, reading comprehension, and common sense reasoning, and notes the preprocessing approach using SentencePiece tokenization.",
+      "text_sha256": "29fac35f409c50d7bc4ab0422cca7f9843407627c56c2e0a522b9b480adb715c",
+      "window_index": 4
+    },
+    "b4d02d1665f81fb199010e3dd2ffe1eeef9dfc091d592d8763a1c659816086d1": {
+      "context": "This chunk comprises the Discussion and Conclusion section (Section 5) of the Hoffmann et al. 2022 paper on Chinchilla, a 70B parameter language model. It discusses the paper's main findings about optimal model scaling, comparing Chinchilla to Gopher, and addresses limitations of their scaling law methodology and ethical considerations for large-scale language model training.",
+      "text_sha256": "b8c569f8039031050f6ee60dd88792316b92967483864423ba0d0592167bb0d3",
+      "window_index": 2
+    },
+    "bbd620d22e7565e7793c39e7f15f82c144227aa202376ac7c72dd884be4a96a7": {
+      "context": "This chunk appears in Appendix J of the Chinchilla paper (arxiv-hoffmann-2022), which documents all trained models used in the scaling study. Table A9 provides hyperparameters and architectural configurations for the various transformer models evaluated, including model size, embedding dimensions, feed-forward sizes, attention heads, and layer counts.",
+      "text_sha256": "4e984bca26fe78dfcbedb21dd80d062b4ac0d2dcab5f7c1c72024fa820aef96f",
+      "window_index": 4
+    },
+    "bc3673191af12758a8b11660e58d0f6d28dd7fddfafd3c596143ff36e103d67e": {
+      "context": "This chunk appears in Appendix F of the Hoffmann et al. 2022 Chinchilla paper and details the methodology for computing training FLOPs. It explains how the authors calculate floating-point operations for transformer models, including contributions from embeddings, attention layers, and dense blocks, and compares their detailed calculation method to the common approximation formula C = 6DN used in prior work like Kaplan et al. (2020).",
+      "text_sha256": "bd3252b9a4c95ffadac1d051ab7dfe9e01a01a8ca080ea2d8facecd98ef22192",
+      "window_index": 3
+    },
+    "bd96c0ee73529c0984c890b9be506a39d4e49ee8ce460f4f2a1ac9ef47d2bc06": {
+      "context": "This figure appears in Section D.3 of the appendix of the Hoffmann et al. 2022 Chinchilla paper, which presents predicted compute-optimal frontiers across three different scaling analysis approaches. Figure A3 visualizes the optimal model size and training token allocations for various FLOP budgets, providing an alternative representation to Figure 1 in the main paper.",
+      "text_sha256": "f665cf41ce08c691f8afdd59328849fc72704fb471c6f34575f5741979f43f35",
+      "window_index": 3
+    },
+    "c0bce7d8f847811fd7c008fcc948f06fe43e9a1970877df0c05f272672fb9afe": {
+      "context": "This chunk is part of Section I (Model Card) of the Chinchilla paper, specifically containing the end of Table A6 showing MMLU benchmark results comparing Chinchilla and Gopher model performance across various knowledge domains, followed by the beginning of the model card metadata including model type, date, and intended uses as defined in the Mitchell et al. (2019) framework.",
+      "text_sha256": "a3ffead20a4df92447b7ab2baf20528946b4bc9f88d0bbb10b993408f677290d",
+      "window_index": 4
+    },
+    "c1cdda8f8a152401eec6bc84b60e7280f3ddda7bea9809ebd29f9c6b51a80bf1": {
+      "context": "This table appears in section 4.2.7 \"Gender bias and toxicity\" of the Chinchilla paper, which evaluates gender bias in coreference resolution using the Winogender dataset. The table compares Chinchilla and Gopher models' performance on pronoun resolution across different gender groups and gotcha examples that contradict gender stereotypes.",
+      "text_sha256": "2f6bb7f42519459538d7291ccf63a49aa63ce0532f7094e0b29f18acf9a886fd",
+      "window_index": 1
+    },
+    "c3708d96a1d807e1c7edd208e10c964e622dc39c989180820e87f08c24b922c5": {
+      "context": "This section appears in Appendix G of the Chinchilla scaling laws paper (arxiv-hoffmann-2022), which discusses differences between the Chinchilla and Gopher language models beyond their core scaling parameters. The chunk compares training optimizers (Adam vs AdamW) and optimizer state precision as factors affecting model performance, with experimental results shown in Figures A6 and A7.",
+      "text_sha256": "82278a0889c75c8b6d6f8c766144da638b230e7659a6756f08a0b150466ce532",
+      "window_index": 3
+    },
+    "c41d5fba901cdcbec81759f509a0f2b97bd200d056eba984608a8423c6399be2": {
+      "context": "This chunk is from the Chinchilla paper's appendix section presenting evaluation results on the BIG-bench benchmark. Table A7 compares the accuracy of the Chinchilla language model against the Gopher baseline model across multiple BIG-bench task subsets, demonstrating Chinchilla's performance on diverse reasoning and language understanding tasks.",
+      "text_sha256": "75fa958eedd82e72a22df5d96a232909bc794fca0c54c3531f859e4ac42e9098",
+      "window_index": 4
+    },
+    "cbb7159dd61cc6416845a6a57ca108c51558738d1ac838842ebbd0c738fa9448": {
+      "context": "This chunk appears in Appendix B of the Chinchilla paper (arxiv-hoffmann-2022), which discusses the optimal cosine cycle length assumption used in the paper's scaling law analysis. The section explains how cosine cycle length and learning rate decay affect model training quality when given a fixed FLOP budget.",
+      "text_sha256": "525f4700676db9023393c04d683c0c35bde379b1609ab571a474719c1185b331",
+      "window_index": 2
+    },
+    "cc430804c5b6fc1a4c625922a156ff9cbd07b5c74a9259377d90f6ccb424f929": {
+      "context": "This chunk is from the Chinchilla model card in Appendix I of the arxiv-hoffmann-2022-chinchilla paper. It presents the Ethical Considerations section of the model card, including quantitative analyses of model biases, risks and harms, mitigations, and intended use cases, following the framework from Mitchell et al. (2019).",
+      "text_sha256": "c83f9e809d65c643e17d48a171ca7e4f8cfc3faa564761a3a4e3d48ace4221a2",
+      "window_index": 4
+    },
+    "d34c70aff950df0006a2a69305e110c7c7730aea5b446f55c7fe1f1f9071d4b0": {
+      "context": "This chunk from the Introduction section of \"Training Compute-Optimal Large Language Models\" by Hoffmann et al. (2022) describes the empirical methodology for estimating optimal model size and training token allocation under a fixed compute budget, introduces the Chinchilla model as a verification of their compute-optimal predictions, and presents Table 1 comparing current large language models including Chinchilla to existing models like GPT-3 and Gopher.",
+      "text_sha256": "31515266e5698d9c835f82b83df1206aae0b8efda2d5d4bb6768e20ef749f889",
+      "window_index": 0
+    },
+    "d574d62623b0c1dda04f7a2b87ac798632cc7621648f1d5978e9c72ef3f31fe8": {
+      "context": "This chunk appears in Section 4.2.3 \"Reading comprehension\" of the Hoffmann et al. 2022 paper on optimal model scaling and the Chinchilla language model. It reports Chinchilla's performance on reading comprehension benchmarks (LAMBADA, RACE-h, and RACE-m) compared to other large language models like Gopher and MT-NLG 530B, as part of the comprehensive evaluation of Chinchilla described in Section 4.2.",
+      "text_sha256": "8ce404526cf1092a883eed22fc4b4400c26fb1e6c566d3b01125e48fad7540b6",
+      "window_index": 1
+    },
+    "d7faa7f16e62283192ad1654d25169425c5379cf457e39410f4fbc76673b61ea": {
+      "context": "This chunk is from Section D.2 \"Approach 3: Parametric fitting of the loss\" in the appendix of the Hoffmann et al. 2022 Chinchilla paper. It explains the mathematical derivation of Equation (2), which decomposes the loss function into three components: Bayes risk, functional approximation error, and stochastic approximation error. This theoretical framework underpins one of three approaches used to estimate optimal scaling relationships between model parameters and training tokens for language models.",
+      "text_sha256": "c5ca308294981f41b370be764306f11b0e623e7b7147adcf7012f3dc30b0ce75",
+      "window_index": 3
+    },
+    "da866e5628919cb42bd7375b8ae36bd5a90881395d1b063a14bbeb7f662cc0d2": {
+      "context": "This chunk is from Section H.1 of the appendix in the Hoffmann et al. 2022 Chinchilla paper, which presents bits-per-byte (bpb) performance metrics on The Pile dataset. Table A5 compares three language models\u2014Chinchilla (70B parameters), Gopher (280B parameters), and Jurassic-1 (170B parameters)\u2014across multiple subsets of The Pile benchmark, showing that Chinchilla generally outperforms Gopher on most subsets.",
+      "text_sha256": "fa6d52eb2fc521fdcb4e98b097b48c675f74d44ec748a9283977714039c73442",
+      "window_index": 3
+    },
+    "dc950e3e43349a9a65db4d08c5094059435d63ee26bf945ae3cdc54b7b1cb75b": {
+      "context": "Section 4.1 of the Hoffmann et al. 2022 paper \"Training Compute-Optimal Large Language Models\" describes the model and training details for Chinchilla, a 70-billion parameter language model designed according to the optimal scaling laws derived in Section 3. This chunk specifies Chinchilla's hyperparameters, architectural differences from the larger Gopher model, training dataset and tokenization choices, optimizer selection, and precision settings, with Table 4 providing detailed architecture specifications comparing Chinchilla 70B to Gopher 280B.",
+      "text_sha256": "d496d0b97cec68eb8ca122494bf7f8e40b9b8786c56c88610d48a49ae72e1e3c",
+      "window_index": 1
+    },
+    "df32ffdaeb16cf2ac4bf90a5d1d0569f4585e6625abd3569d7ccdae40114c282": {
+      "context": "This table appears in section D.3 of the appendix of the Hoffmann et al. 2022 Chinchilla paper and presents estimated optimal training FLOPs and training tokens for various model sizes using Approaches 2 and 3, which are three different methodologies for determining compute-optimal scaling laws for language models. The table is analogous to Table 3 in the main paper and provides projections across a range of compute budgets from 400 million to 10 trillion parameters.",
+      "text_sha256": "003d1d515bf80c876a28c62b4c90c5def5921a8f3a674946921abd707e8c532f",
+      "window_index": 3
+    },
+    "ebdb1265c3ed49d62d5930fd637bd9feab5633bc30b23a0f43be78adefa94b43": {
+      "context": "This chunk is part of Table A9 in the Chinchilla paper's appendix, which lists the hyperparameters and model sizes of all transformer models trained during the study. The table shows model parameter counts (in millions) paired with their corresponding architectural specifications including embedding dimension (d_model), feedforward size (ffw_size), key-value size (kv_size), number of attention heads (n_heads), and number of layers (n_layers).",
+      "text_sha256": "577f951890072d43feda3320c1c347b223656bd29ad1d810f02243e33477227f",
+      "window_index": 4
+    },
+    "ee05bb4b1be68a18ec7300b34651d3def0cd7f20d28c752a53f0502954b753ab": {
+      "context": "This chunk introduces Chinchilla, a 70-billion parameter language model presented in Section 4 of the Hoffmann et al. 2022 paper on optimal model scaling. The chunk describes how Chinchilla was designed based on the scaling analysis from Section 3, which determined that smaller models trained on more tokens achieve better compute-efficiency than larger models, and compares Chinchilla's design and computational advantages to the larger Gopher model.",
+      "text_sha256": "2c42866c48485971dc754cb93cfcbf25270d346c7c7a4ec91a288c70cdf2cb60",
+      "window_index": 1
+    },
+    "ee85de797778b839e74645a8d25e9d899b9741f6ea3f07c659f5ccba69039bc9": {
+      "context": "This chunk from the \"Optimal model scaling\" section (3.4) of the Hoffmann et al. 2022 Chinchilla paper presents Table 3, which shows estimated optimal training FLOPs and tokens for various model sizes based on Approach 1 of their scaling analysis. The table and accompanying text demonstrate that current large language models are over-parameterized relative to their compute budgets, and that smaller models trained on more tokens would be more compute-efficient, contrasting with previous scaling recommendations.",
+      "text_sha256": "f1d9dd46e30970846d0f150b1c832d0a031d7d062f30ebb742c2a9755baebb70",
+      "window_index": 1
+    },
+    "ef8671079dea0109c3245c15c8f34561315461f16944e14b4243a23d48499fb0": {
+      "context": "This chunk appears in Appendix H.2 of the Hoffmann et al. 2022 Chinchilla paper, which evaluates the Chinchilla language model against baseline models like Gopher on various downstream tasks. Table A6 presents MMLU (Massive Multitask Language Understanding) benchmark results comparing Chinchilla and Gopher performance across different subject subsets.",
+      "text_sha256": "76afb43ebce5b5383fcf3e76854276efd695f3f7461f1b643b59847b90df297c",
+      "window_index": 3
+    },
+    "fb69d18e0373aec7fc8c695efe244a3d8a9f82bf49c0d61106037ef526a973e8": {
+      "context": "This chunk is from Section H.1 \"The Pile\" in the appendix of the Chinchilla scaling laws paper (arxiv-hoffmann-2022). Table A5 presents bits-per-byte (bpb) performance metrics comparing three language models\u2014Chinchilla (70B parameters), Gopher (280B parameters), and Jurassic-1 (170B parameters)\u2014across multiple subsets of The Pile evaluation dataset, demonstrating Chinchilla's superior performance on most subsets despite having fewer parameters than Gopher.",
+      "text_sha256": "1268f6a888d5334308e6fd067f7e403465ab3bb12aa5a9179393476393e1834d",
+      "window_index": 3
+    },
+    "fe5c15cfd7f41bac836cf103e13ebe5ad26c700f65df8f7ec69d6e79657d3273": {
+      "context": "This chunk is part of Table A9 in the appendix of the Hoffmann et al. 2022 Chinchilla paper, which lists the hyperparameters and architectural configurations of all transformer models trained during the study, including model size parameters like embedding dimension (d_model), feed-forward size (ffw_size), number of attention heads (n_heads), and number of layers (n_layers).",
+      "text_sha256": "ca243d6a56da61308199e845167e400fad98e6a483bfc0883f65d477661d2d08",
+      "window_index": 4
+    }
+  },
+  "doc_id": "arxiv-hoffmann-2022-chinchilla",
+  "generated_at": "2026-08-29T21:52:54Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

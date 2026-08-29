@@ -1,0 +1,413 @@
+{
+  "contexts": {
+    "05f27ba9466acf7224bad215324578d45a5f46885e63dda4381d18ec09d218e5": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment text, specifically Section 1798.130, which outlines business obligations regarding consumer rights and privacy disclosures. It details requirements for businesses to disclose personal information categories, sources, purposes, and third-party recipients in their privacy policies and in response to consumer requests, with separate lists required for information disclosed for business purposes versus information sold or shared.",
+      "text_sha256": "e9749889a9e9c452b193dc9709f00e0115ae0caac293b64115de239b1d82db36",
+      "window_index": 2
+    },
+    "0a6950006603b0c68f5825e1003f642c630174a9ea851c6d9c0cb23210518cbe": {
+      "context": "This chunk is from the Text of Proposed Laws section of the California Privacy Rights Act (CPRA) Amendment, specifically defining key terms related to personal information and data processing. It includes definitions of \"personal information\" and its exclusions, along with related terms such as \"precise geolocation,\" \"probabilistic identifier,\" \"processing,\" \"profiling,\" \"pseudonymization,\" and \"research\" that are foundational to understanding the CPRA's privacy protections and obligations.",
+      "text_sha256": "12fc6af3b59d01a08b088e4a28eddd3ed8b5a32039cd55098034d0c6b6285770",
+      "window_index": 4
+    },
+    "0fe4b56c14181f3ed1e010267a5285fcea850bf0d2d15abe94848415b4677f7b": {
+      "context": "This chunk from the California Consumer Privacy Rights Act (CPRA) amendment contains exceptions and exemptions to consumer rights under the law, specifically addressing educational assessments and personal information security breaches. Section 1798.150 establishes a private right of action for consumers whose personal information is subject to unauthorized access or disclosure due to a business's failure to maintain reasonable security procedures.",
+      "text_sha256": "88e883481935cd9dcc4b1a7b1f5e58d7aaf5eebba8ff2cdb617b5c3cf8f9db9d",
+      "window_index": 5
+    },
+    "13f08b9b5ca3849841fe837685d89bfe55baa9667e1b04ece45925a2d868c3b6": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment, specifically from Section 1798.121 regarding Consumers' Right to Limit Use and Disclosure of Sensitive Personal Information, and the beginning of Section 1798.125 regarding Consumers' Right of No Retaliation Following Opt Out or Exercise of Other Rights. The first part clarifies that sensitive personal information collected without the purpose of inferring characteristics about a consumer is not subject to the limitations in Section 1798.121 but is treated as regular personal information under other sections of the act.",
+      "text_sha256": "66664d403b034c51017fdc32ff95f621ff911c822fa1578717863c1260b82600",
+      "window_index": 1
+    },
+    "14313ce947b4917c4f6e92c4fd5b960fe4d9f2df8ebd8160ef6e17c20c0e93a0": {
+      "context": "This chunk from Section 1798.150 of the California Civil Code, titled \"Personal Information Security Breaches,\" establishes the private right of action for consumers whose personal information is subject to unauthorized access due to a business's failure to maintain reasonable security. It specifies the damages available to consumers, the notice and cure procedures required before filing suit, and the scope of the cause of action under this section of the California Consumer Privacy Rights Act (CPRA) amendment.",
+      "text_sha256": "306fcf303205b1ac06ba8a18d6b14ecd93a293d957a4e288bc487d4842d1c239",
+      "window_index": 5
+    },
+    "153b7323bf6fc188ab974941c6d91b381d8a9e77e1e464d958f65c3b67a386c1": {
+      "context": "This chunk from the California Privacy Protection Act amendment (Proposition 24) establishes the structure and governance of the newly created California Privacy Protection Agency under Section 1798.199.10 and related sections. It details the agency's composition, board member appointment procedures, qualifications, duties, term limits, and compensation requirements for implementing and enforcing the California Consumer Privacy Act of 2018.",
+      "text_sha256": "e419ab3f5742dafd5cd3df3b6fffc70700280babd0575ca971d4bf561dfaa0b0",
+      "window_index": 8
+    },
+    "19504e6820701339ce765a9a7c8f8e110b91ee3b3104035805a35f18f15d5c1a": {
+      "context": "This chunk is Section 1798.175 titled \"Conflicting Provisions\" from the California Consumer Privacy Rights Act (CPRA) amendment text. It establishes the legislative intent of the title to protect constitutional privacy rights and defines how this title relates to and supersedes existing consumer privacy laws, including provisions in the Business and Professions Code and Civil Code Title 1.81.",
+      "text_sha256": "c91406fcb6bdb8379d500649ae5f784838ef8e99188d5661d01e7e98ac52b347",
+      "window_index": 6
+    },
+    "1969c7e55fdbe130ed07f2654815341b1686fe1561e9825f5b0a30f2f73195cd": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment text, specifically defining when a business does not \"sell\" personal information under the law. It details exceptions to the sale definition, including consumer-directed disclosures, opt-out notifications, service provider arrangements, and business transfers, and begins the definition of \"sensitive personal information\" which includes social security numbers and identification documents.",
+      "text_sha256": "66e35cf471affc4ca8cec33234fd2bfed74d76e22d2b133f14e5b2883a43d47c",
+      "window_index": 4
+    },
+    "1c52c01121ed6c9ae7e9e69f1473acf25d8d42b3b4b1195e2674708c5e6e32f6": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment to the California Consumer Privacy Act, specifically from Section 1798.185 subdivision (a), which enumerates the Attorney General's rulemaking authority. The chunk contains items (16) through (19)(vi), which detail regulations the agency must issue regarding automated decisionmaking technology, law enforcement investigations, audit authority, and opt-out preference signals with specific technical and consumer protection requirements.",
+      "text_sha256": "2c0a2470869e0804376b5cf9cf04b70cb429a6d062de292033e246165f0aee2d",
+      "window_index": 8
+    },
+    "1d633f86be1cd67a80efbce8a9a56feca954fe9138b7f83a7e95af7e63dabb1c": {
+      "context": "This chunk is from Section 1798.185 of the California Consumer Privacy Rights Act (CPRA) Amendment, specifically subsections (11) through (15) of subdivision (a), which detail specific regulatory areas the California Attorney General must address regarding consumer privacy protections, including rules for service providers' use of personal information, definitions of key terms like \"intentionally interacts\" and \"precise geolocation,\" and cybersecurity audit requirements for businesses presenting significant privacy risks.",
+      "text_sha256": "9738d12770c756452e2246b356387b89f65d3ecbd184c8b31ac21fa855132286",
+      "window_index": 7
+    },
+    "1d75342514cef7d0ef0e195f6910ed7c0077980a73cd0cdfe196d033c07ebf9b": {
+      "context": "This chunk is Section 31 (Effective and Operative Dates) from the California Privacy Rights Act (CPRA) amendment document, which establishes when the act becomes effective and operative, specifies which provisions take effect on different dates, and addresses the transition from the California Consumer Privacy Act of 2018.",
+      "text_sha256": "6b4840c6bd4ebdf69245dab556fa3803b52c516657af22d42a2baff6df0ebe64",
+      "window_index": 10
+    },
+    "1f41d0f8b06dda1aaaa9acf604dfd725379287070718780b4a75e11001256d9d": {
+      "context": "This chunk is from the Text of Proposed Laws section of the California Privacy Rights Amendment (CPRA), specifically defining key terms used throughout the legislation. It contains the definition of \"Third party\" (labeled as subsection w/ai) and related provisions about how third parties may receive and use consumer personal information under contract, including restrictions on selling, retaining, or using that information beyond specified business purposes. The chunk also includes provisions requiring notice when a third party materially alters how it uses shared personal information.",
+      "text_sha256": "31105f2d7233528e73b6d7e0fccd97fa61e549b6aacb1b0afcce1066de9b0ec2",
+      "window_index": 4
+    },
+    "210e120514d88c24d5a3b522247838a82c1553350b828d4dc791ffd5fd36c472": {
+      "context": "This chunk contains findings I, J, K, and L from SEC. 2 (Findings and Declarations) of Proposition 24, the California Privacy Rights Act of 2020. These findings establish the rationale for the proposed law by addressing concerns about opaque advertising practices, children's privacy vulnerability, data security accountability, and the need for independent enforcement oversight.",
+      "text_sha256": "a91c8baab40fcd7380bf923cbb1df375c3f52a394a3350328239c5209c101b58",
+      "window_index": 0
+    },
+    "2181d4caa41b11b9a51654d6f8749bac3dad304d92ec6a3722a14b5b5729ce76": {
+      "context": "This chunk is from the California Consumer Privacy Act (CPRA) amendment text, specifically Section 1798.100 subdivision (h), which lists exemptions to the title's applicability. It defines what personal information collected from employees, job applicants, contractors, and other business roles is excluded from CPRA requirements, and provides definitions for terms like \"contractor,\" \"director,\" \"medical staff member,\" \"officer,\" and \"owner\" used in those exemptions.",
+      "text_sha256": "2a7528b28755e43b7c3b6ccc5fb0b0ff4cbbe137ad011ee817fee34052f25b5c",
+      "window_index": 5
+    },
+    "3012aedf68132576a1d6792090f4dd10e6279c44d28fdf03b5cc3aac47b5b695": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment to the California Consumer Privacy Act, specifically sections 1798.199.75 and 1798.199.80 of the Civil Code. These sections establish the California Privacy Protection Agency's authority to collect unpaid administrative fines through civil actions in superior court, including procedures for obtaining judgments and enforcement timelines.",
+      "text_sha256": "13ec50d66ee832ceddb9f12b8f121c38ad71e41d6335fd85a2ca5e3e14c0a65b",
+      "window_index": 8
+    },
+    "34f9d467b32ea159886fdd0c9788ca1632b979761120236b03f327b07e4afec9": {
+      "context": "This chunk appears on the page numbers of the California Privacy Rights Act of 2020 (Proposition 24), which is an initiative measure that amends the Civil Code to establish comprehensive consumer privacy rights and business responsibilities.",
+      "text_sha256": "bc4c259e6f4e2b8bb8667808232a958977a32a77a3fece82883efef23f18b33c",
+      "window_index": 0
+    },
+    "35cdbf665969090d8a4184c6386e750be841eef77e3fa8935fadb335d7ed702f": {
+      "context": "This chunk appears in the severability clause section of Proposition 24, the California Privacy Rights Act of 2020, which is a proposed law amending the California Civil Code. The clause ensures that if any portion of the act is declared invalid or unconstitutional, the remaining provisions will continue to be valid and enforceable.",
+      "text_sha256": "a6417671a1c4c27bcb9a9942db07a0d25d5584e58a131872e600a94b7500a66c",
+      "window_index": 0
+    },
+    "46bb16b3ea8254fd9966cd817d6bc663bf9c84a95f1f19706f48f5950fa2cabc": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment contains sections 24.19, 25, and 26, which address penalty considerations, amendment procedures, and severability provisions. Section 1798.199.100 establishes that good faith cooperation must be considered when determining administrative fines or civil penalties for violations of the title, and prohibits double penalties for the same violation. Sections 25 and 26 outline how the act may be amended by the Legislature and provide severability language to preserve the act if any provision is found invalid.",
+      "text_sha256": "6664432cca6385ab950779e6d1b11928dda9770265d284f0cf68b34bd1b0f76b",
+      "window_index": 9
+    },
+    "496eedcc47c456dc3789b870c567e4e8b47cc15f054499d2cdf0e108d820b23e": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment, specifically from the definitions and exemptions section of the proposed law. It defines key terms including \"service provider\" restrictions on combining personal information, \"share\" and \"sharing\" for cross-context behavioral advertising purposes, and exceptions to sharing requirements. These definitions establish the legal framework for how businesses must handle consumer personal information under the CPRA.",
+      "text_sha256": "7af22fda3af567ca32d6670ca3dd40d064d5065995df0653b3be2d1711e14621",
+      "window_index": 4
+    },
+    "49e13bb3c9b3b8d32a5b818f16d00a1a7ae592faece31cbb8903d0cf0a32652b": {
+      "context": "This chunk contains the final sections (27-31) of the California Privacy Rights Act (CPRA) amendment document, addressing procedural and implementation matters including conflict resolution with other ballot measures, legal standing for constitutional defense, statutory construction, savings clause regarding federal preemption, and effective operative dates for the act.",
+      "text_sha256": "e6314b32084258b09c9edb3ff223e65cbebe0b9aa6cc31ec525c40bd22a4df52",
+      "window_index": 10
+    },
+    "4fc99c4d5e7f2a8c0da04e40b1f535e6d14d84e1a54cb7ea1a05a3a5db68b2b4": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment to the California Consumer Privacy Act, specifically from Section 1798.185 subdivision (a), which outlines the Attorney General's rulemaking authority. The chunk details regulations (19) and (20) governing opt-out preference signals, including the three consumer choice options that must be displayed, technical specifications for age verification, rules for sensitive personal information use, and prohibitions on how businesses may respond to opt-out signals.",
+      "text_sha256": "5530bd04bb052727821e42e329fb96b7b0d34b53b2e5747b0dca20e3929c19c1",
+      "window_index": 8
+    },
+    "5151e63b74a24e037c2c3fe2f613ff476d13e4e75dc2962d69141e5b4f548b4b": {
+      "context": "This chunk is from Section 1798.145 (Exemptions) of the California Privacy Rights Act (CPRA) amendment, specifically subsection (a), which lists exemptions to the obligations imposed on businesses under the title. The chunk covers exemptions allowing businesses to collect, use, sell, or share deidentified or aggregate consumer information, and to conduct commercial activities wholly outside California, as well as the beginning of subsection (b) regarding evidentiary privilege exemptions.",
+      "text_sha256": "a2c526865f34691a49f75e2be59d4fae14627a2952dfbaab3ecb5f73bcc0010c",
+      "window_index": 4
+    },
+    "55381caab61ad5c0f5de10bcd2d9faba517b107a3cddca1fddbc027f4751d28b": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment, specifically sections 1798.110 and 1798.115 of the Civil Code. Section 1798.110 establishes consumers' right to know what personal information is being collected and to access that information, while section 1798.115 establishes consumers' right to know what personal information is sold or shared and to whom. The chunk includes disclosure requirements for businesses regarding categories of third parties and specific pieces of personal information, as well as exceptions for single one-time transactions and non-personal data.",
+      "text_sha256": "a4ab02affd55a71630e4ca6896c17809820195b1eeea6a2071edeaf71edcd13c",
+      "window_index": 1
+    },
+    "5b9e71960212c3178b2c465a877caa8c0ffc3519df9e3801368473d423ead463": {
+      "context": "This chunk is from Section 14 of the California Privacy Rights Act (CPRA) amendment, which amends Section 1798.140 of the Civil Code to provide definitions of key terms used throughout the privacy legislation. The chunk contains the opening definitions including \"Advertising and marketing,\" \"Aggregate consumer information,\" \"Biometric information,\" and the beginning of the \"Business\" definition, which establishes the threshold requirements for entities subject to the CPRA's requirements.",
+      "text_sha256": "36515f0bdff9d8b79d8eb1c9c4aff80575305e06a5789442ce4ccaf57613083e",
+      "window_index": 2
+    },
+    "5f63265f2460bf975c5c1ac5fed49cf302eec6e46c7923efe38b4f7a4480ae38": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment defines key terms used throughout the law. It includes the definition of \"sensitive personal information\" (subdivision ae), which specifies categories of personal data requiring heightened protection such as financial account credentials, precise geolocation, racial or ethnic origin, biometric information, and health data. The chunk also defines \"service\" and \"service provider,\" establishing that service providers process personal information on behalf of businesses under written contracts with specific restrictions on data use and sharing.",
+      "text_sha256": "42b8a8bae0026c79efb4b61c8c19c36e4c0dd3ee77ebd218ab60c7a3909cb7e4",
+      "window_index": 4
+    },
+    "5fa2ae2098d4e4ab9c45dae6ead7fee73fd6fa53ff1421f41208fdfef804fafb": {
+      "context": "This chunk from the California Consumer Privacy Rights Act (CPRA) amendment contains Section 1798.120 on consumers' right to opt out of sale or sharing of personal information, and Section 1798.121 establishing a new consumer right to limit use and disclosure of sensitive personal information. These sections define restrictions on businesses selling or sharing consumer data, particularly for minors, and establish limitations on how sensitive personal information can be used by businesses and their service providers.",
+      "text_sha256": "9004d42cbab4bc34c6350a4d2d81e0c9da0df495e49b9f5f2339ec235472fe9a",
+      "window_index": 1
+    },
+    "659e2b23218b1efd46336cd1e63bff59af9ed0b2c8315e71ef1a4f3dadfb9ed1": {
+      "context": "This chunk is from the California Privacy Protection Agency (CPPA) establishment section of the CPRA amendment, specifically Section 1798.199.40 and 1798.199.45 of the Civil Code. It outlines the agency's core functions and powers, including protecting fundamental privacy rights, promoting public awareness, providing guidance to consumers and businesses, monitoring privacy developments, cooperating with other agencies, and investigating possible violations of the California Consumer Privacy Act of 2018.",
+      "text_sha256": "985fe1f5423f94143335d6acd4b242e2bb05bf7bfd76e334fbaa532ef7dd98b1",
+      "window_index": 8
+    },
+    "65ad0a11befebeb35d543cc733cd5a23fec9533c9861bf28ee4854a167b4ceef": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment, specifically sections 1798.115 and 1798.120 of the Civil Code. Section 1798.115 establishes consumers' right to know what personal information is sold or shared and to whom, requiring businesses to disclose categories of personal information sold or shared and the categories of third parties receiving it. Section 1798.120 establishes consumers' right to opt out of the sale or sharing of personal information, including special protections for minors under 16 years of age, and prohibits third parties from reselling or resharing consumer information without explicit notice and opt-out opportunity.",
+      "text_sha256": "69ae344ba58628c12c8000cb9c0aafe811d6f460ffa9181b10522d403e593ef9",
+      "window_index": 1
+    },
+    "6c4505936086e432e146a20c1b9480e606f2e75eccfb6f724c19ebcd8ba8b3f0": {
+      "context": "This chunk from the California Consumer Privacy Rights Act (CPRA) amendment contains definitions of key terms used throughout the law, specifically defining \"unique identifier\" and \"verifiable consumer request,\" followed by the beginning of Section 1798.145 on exemptions. These definitions are part of the \"Text of Proposed Laws\" section that establishes the terminology governing consumer privacy rights and business obligations under the CPRA.",
+      "text_sha256": "eb2415c5142080a2819e344250cc502d857e38395fbdec48231dab1ecdc5b03a",
+      "window_index": 4
+    },
+    "6d7ac70b3afcb50755a761547cf6783efb04e0633c225d16ffe305c9888ac664": {
+      "context": "This chunk is from Section 1798.185 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically subsections (7) through (10) detailing the Attorney General's regulatory authority. These provisions establish rules and procedures for consumer rights including deletion, correction, and access to personal information, as well as standards for verifiable consumer requests and business purposes for data use.",
+      "text_sha256": "e77003825ddb5cdc6a36f803e39acf7895b26ee3d7a528de82df9bd5d334ad53",
+      "window_index": 7
+    },
+    "6d8029afc5efe38df12459e8025db07d264f542f8a43819b7b471638b47c6be9": {
+      "context": "This chunk is Section 5 of the California Consumer Privacy Rights Act (CPRA) amendment, which amends Section 1798.105 of the Civil Code to establish consumers' right to delete personal information. It outlines the procedures businesses must follow when receiving verifiable deletion requests, including obligations to delete records and notify service providers, contractors, and third parties, with exceptions for cases where deletion is impossible or involves disproportionate effort.",
+      "text_sha256": "17904a4ba5c95fff9b402b451ad1e752030c7def8783784931e233b66ad4cb4d",
+      "window_index": 1
+    },
+    "77614bf480181625c7e9dbe264819083c1b0d2eea951439ffe1c2a7ead21e6db": {
+      "context": "Section 1798.185 of the California Civil Code, titled \"Regulations,\" outlines the Attorney General's mandate to adopt regulations by July 1, 2020, to further the purposes of the California Consumer Privacy Act (CPRA). This section specifies 15 areas requiring regulatory development, including updating personal information categories, defining key terms like \"deidentified\" and \"unique identifier,\" establishing exceptions for trade secrets, and creating rules for consumer opt-out requests and opt-out logos.",
+      "text_sha256": "b8eef8b8c664136d8544ea06da09b0dc62b0df799bdec27b29219b0403223cec",
+      "window_index": 7
+    },
+    "780fd55e7a9ed5622f235f47fb46c43b2c03cc237f9d7a10c49f76d0bb4ceacc": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment, specifically Section 1798.135 on \"Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information,\" and the beginning of Section 1798.140 on \"Definitions.\" It details business obligations regarding consumer opt-out requests, including restrictions on how personal information can be used after opt-out, liability protections for businesses, and authorization of third parties to submit opt-out requests on consumers' behalf.",
+      "text_sha256": "8af4768e60264ec7dba13d978a760a4779d59289bef8e2cce09e3be8dc3e19e6",
+      "window_index": 2
+    },
+    "7dcc134283a78ecb580f4919e189e8c9abfeada08a6b5193b13813073866c769": {
+      "context": "This chunk is from the Text of Proposed Laws section of California's CPRA (Consumer Privacy Rights Act) amendment, specifically subdivisions (o), (p), and (q) of Section 1798.100, which detail exemptions and exceptions to the title's applicability. Subdivision (o) exempts commercial credit reporting agencies from certain deletion and sale restrictions when handling business controller information, subdivision (p) exempts household data from specific consumer rights obligations, and subdivision (q) exempts student educational records from deletion and disclosure requirements.",
+      "text_sha256": "b3ebbbba5a7e092d23c493887ee319a0b81ef1f2266f32ac92f2f17790b6b9e7",
+      "window_index": 5
+    },
+    "7e350604f6bce18706ca01b1a3bed6d86c4180f79f4e28bfcd3de5a86e3228d8": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment establishes Section 1798.180 on preemption, which declares that the title supersedes all local laws regarding collection and sale of personal information, and introduces Section 21 amending Section 1798.185 on regulations that the Attorney General must adopt.",
+      "text_sha256": "70163d3dfd1ead8e03ded00af2719ab85b692797a0389235545447b7396030e6",
+      "window_index": 7
+    },
+    "7f0af0c9e1857eb8e98e0c74905bd4de00231bcb4574d33ee7563712c6aa8dcb": {
+      "context": "This chunk is from the Text of Proposed Laws section of California's CPRA (Consumer Privacy Rights Act) amendment, specifically Section 1798.100 and its subsections (c) and (d). It outlines exemptions to the title's applicability, including carve-outs for medical information governed by HIPAA and the Confidentiality of Medical Information Act, clinical trial data, and consumer credit information regulated under the Fair Credit Reporting Act.",
+      "text_sha256": "736027e625f88b909f2a1045bf5c0f7259fb8a8a0c50c12e7cfaaaba5dca0e8d",
+      "window_index": 5
+    },
+    "7f222815ca0ee3b9df1bbc33fbb0f65d55598dabd5c55f45ef26b0a18973c74a": {
+      "context": "This chunk is from Section 1798.140 (Definitions) of the California Consumer Privacy Rights Act (CPRA) amendment, specifically defining key terms including \"Commercial purposes,\" \"Consent,\" \"Consumer,\" and \"Contractor\" that are foundational to understanding privacy obligations and consumer rights throughout the title.",
+      "text_sha256": "c6b107996e6e6341c7f48c99bcf65c06980f654d855dda995dcceec4d2563534",
+      "window_index": 2
+    },
+    "7f5e86fd8cadd43d75b299188f22738651457a55671fdcd671d87ac6c156b299": {
+      "context": "This chunk appears at the end of the CPRA Amendment document and introduces Proposition 25, which is a referendum on Senate Bill 10 from the 2017-2018 Regular Session submitted to voters.",
+      "text_sha256": "7ef2dba744214f2dd5f2197f0d86ef13eb422eec2d8afb12d4909a1e07b7509c",
+      "window_index": 10
+    },
+    "802cd4f7ba178ac23c81d5b7d182ce1597a3359d1cda09761f48c8f396cb08f8": {
+      "context": "Section 1798.155 of the California Civil Code, titled \"Administrative Enforcement,\" establishes procedures for enforcing the California Privacy Rights Act (CPRA). This section outlines the penalties and enforcement mechanisms for businesses that violate the title, including administrative fines and civil penalties ranging from $2,500 to $7,500, with enhanced penalties for intentional violations or violations involving consumers under 16 years of age, and specifies that penalties are deposited into the Consumer Privacy Fund.",
+      "text_sha256": "4bb587602e6837c2ba897221b5b0f73728d941ba8a59dd30c99213d530b46fb9",
+      "window_index": 5
+    },
+    "8e745db9c56c72cd76b95b081c7e9ea65c4cc8ed920fa66860bc7b954dcbc9a4": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment to the California Consumer Privacy Act of 2018, specifically from SEC. 24 establishing the California Privacy Protection Agency. The chunk details the compensation structure for agency board members (Section 1798.199.25), the appointment and staffing authority of the agency board (Section 1798.199.30), delegation of authority between board meetings (Section 1798.199.35), and the core functions and responsibilities of the agency including administration, enforcement, and rulemaking authority (Section 1798.199.40).",
+      "text_sha256": "ad3004964a35d1b6c6678594a9e8fe65392b7c793c84617a7d3e6e54a8d560fe",
+      "window_index": 8
+    },
+    "8f6800cc10a227d0727efe61616bc68fc0d6bb55926db32775ffcbb378410968": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment establishes enforcement procedures and powers for the newly created California Privacy Protection Agency. It covers joint and several liability for violations, the agency's authority to subpoena evidence and audit businesses, statutes of limitations for administrative actions (with provisions for tolling in cases of fraudulent concealment or document production delays), and procedures for collecting unpaid administrative fines through civil actions in superior court.",
+      "text_sha256": "6a4ea86d4cf7d61cad3313b1f7882fe3bd65d8a15619f7a45b723f7e2bf2fe55",
+      "window_index": 8
+    },
+    "8f889229e505c9bef7dd2151ccbd7142e8695721f0aa034645f1a38da8519fbf": {
+      "context": "This chunk from Proposition 24 presents the table of contents and opening sections of the California Privacy Rights Act of 2020, a ballot initiative that amends the California Civil Code to establish comprehensive consumer privacy protections. The table of contents outlines all 31 sections of the proposed law, from the title and findings through enforcement mechanisms and effective dates, while the opening sections establish the measure's official name and begin the findings and declarations that justify the legislation's purpose.",
+      "text_sha256": "9f845cd9d1cf3a73c46d12d6c679a67f7e5dda7189b09cf4188e54d6548e63e8",
+      "window_index": 0
+    },
+    "94a0ae1a2bebf4dc6b37fd504660f1cf64dc2dcc5b39fa5f088d50cdec465dd1": {
+      "context": "This chunk is from Section 1798.185 of the California Civil Code, which outlines regulations the Attorney General must adopt to further the purposes of the California Consumer Privacy Act (CPRA). Specifically, it contains subsections (5), (6), and (7) detailing requirements for adjusting monetary thresholds annually, establishing consumer-accessible privacy notices, and creating procedures for consumer data deletion and correction rights.",
+      "text_sha256": "af76e21b9b7389107fb1e0eb0d02f1fa120ca032dc81f8d26ac17a7b814cbeb3",
+      "window_index": 7
+    },
+    "9672da83a4c35f1722db2200b8c590738c32e515f1cfe5ce5cfd9615bad2d74e": {
+      "context": "This chunk is from Section 1798.105 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically subdivision (d), which outlines exceptions to consumers' right to delete personal information. It lists nine circumstances where businesses, service providers, and contractors are not required to comply with deletion requests, including completing transactions, detecting security incidents, debugging errors, and complying with legal obligations.",
+      "text_sha256": "1b1d60a01c86b4dab83e255c2cad77ac6cdebc8c95c36fa1ba76f77350c798c4",
+      "window_index": 1
+    },
+    "990b9824f8c0adbf074c87ecdcda8664ee66d5881b90d3f90421d5b546cc92d2": {
+      "context": "This chunk from the California Consumer Privacy Rights Act (CPRA) amendment contains Section 1798.106 establishing consumers' right to correct inaccurate personal information, followed by Section 1798.110 detailing consumers' right to know and access what personal information businesses collect. Both sections reference Section 1798.130 for notice and disclosure requirements and are part of the broader framework of consumer privacy rights established in the proposed law.",
+      "text_sha256": "93168911cb9b6d5ccb9907bd534f89a2660f362f70dc0f342994f19bd63e3e68",
+      "window_index": 1
+    },
+    "9e98be392bf3c82d2ee94f1c97ac1d140f797951c6a3304617a519a8ca743b29": {
+      "context": "This chunk is from Section 1798.140 (Definitions) of the California Privacy Rights Act (CPRA) amendment, specifically defining \"Business purpose\" in subdivision (e). It lists eight enumerated categories of permissible business purposes for using personal information, including security, debugging, advertising, and service performance, along with the definition of \"Collects\" in subdivision (f).",
+      "text_sha256": "3e2c5d27746bc69996cbcefddc231f70cbd29ef78372836a2857f0f56bef18e8",
+      "window_index": 2
+    },
+    "9f0fffd6a219d532cd4f827f91edb8caa1d81708e3a071a7a2105acc1fc87876": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment contains enforcement and funding provisions. It includes subsections (b)-(e) detailing the Attorney General's enforcement authority, civil penalties deposited to the Consumer Privacy Fund, coordination with agency investigations, and private rights of action under Section 1798.150. It also includes SEC. 24.18 and Section 1798.199.95, which establish appropriations of $5-10 million annually to support agency operations and require the Department of Finance to include budget items for implementing the title.",
+      "text_sha256": "c913a8481e9f6f0f1257fdaf6488cbbd8a5ca1f6ac8420f1537fc5db66d82276",
+      "window_index": 9
+    },
+    "9fe177e697860f1b1370699fd37a042255abc760e38c4adc22af291de1b40b20": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment defines \"Personal information\" in Section 1798.140(o)(v)(1), providing the foundational definition and comprehensive list of categories of information that qualify as personal information under the law, including identifiers, commercial information, biometric data, internet activity, geolocation data, and inferences.",
+      "text_sha256": "cd32b3bb84f9306ba920a530f8f54f2a5698f8fd5a4e0328100a54a4bd34bbae",
+      "window_index": 3
+    },
+    "a2b3bdc7076b6d497035815a2f28e645bf6dea6b9a0a2819825aab4f1014ac76": {
+      "context": "This chunk appears in the California Consumer Privacy Rights Act (CPRA) amendment text under subdivision (h), which provides definitions and procedural rules for consumer requests. Specifically, it contains definitions of key terms (Contractor, Director, Medical staff member, Officer, and Owner) used throughout the privacy law, followed by rules governing business response timelines and handling of consumer requests, including provisions for extending response periods and refusing manifestly unfounded or excessive requests.",
+      "text_sha256": "53869dd8c0d7fc1ae434d4e5cad10a2ce1e692d8dd6761ed739f720030054c7f",
+      "window_index": 5
+    },
+    "a327904b9983af52b7cdacacc995d9d88d54783c1996d184c9b354494cabfa72": {
+      "context": "This chunk contains key definitions from the California Privacy Rights Act (CPRA) amendment, specifically defining terms used throughout the legislation such as \"designated methods for submitting requests,\" \"device,\" \"health insurance information,\" \"homepage,\" \"household,\" \"infer,\" \"intentionally interacts,\" \"nonpersonalized advertising,\" and \"person.\" These definitions are foundational to understanding consumer rights and business obligations under the CPRA.",
+      "text_sha256": "053c2d8d10f26f0e2027fec2fe5bdb847dda7e64dc663383d6d69c7bf40e75f7",
+      "window_index": 3
+    },
+    "a634e8006474e79e7cfc401424680e9946eb3f8885ac5fe41efd36993343c937": {
+      "context": "This chunk is from Section 1798.100 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically subsections (d) through (e), which detail the requirements for businesses that sell, share, or disclose consumer personal information to third parties, service providers, or contractors. The chunk outlines mandatory contractual provisions, security obligations, and exceptions to information retention requirements.",
+      "text_sha256": "1bea2cae6161226f838d8bdb3140df0a4bbae065dd5d0894add20a33646634dc",
+      "window_index": 1
+    },
+    "a64d1882bb40fd34e89f64e5b6028c88bd537fac86f457a132265ee7cb6f1517": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment establishes judicial review procedures and civil penalties for violations. Section 1798.199.85 addresses how decisions by the California Privacy Protection Agency regarding complaints and administrative fines can be challenged in court, while Section 1798.199.90 specifies the civil liability and penalties that businesses, service providers, contractors, and other persons face for violating the title, including injunctions and monetary penalties ranging from $2,500 to $7,500 per violation.",
+      "text_sha256": "2d06f8737f8edbf32527516a496925fef27df5bf2a4493f72b71e9620d46df2e",
+      "window_index": 8
+    },
+    "aaeef173cff87a12b022785d8d3464e560465fc5f91e125265e9569750dfcd6d": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment text, specifically detailing requirements for businesses under Sections 1798.110 and 1798.115. It outlines obligations for service providers and contractors to assist businesses in compliance, and specifies what information businesses must disclose to consumers regarding personal information collection, sale, sharing, and the categories and sources of that information.",
+      "text_sha256": "b85c62adc084d5ecd38d5934493175328997fe7fc4336b303da65a71059b0c7f",
+      "window_index": 2
+    },
+    "ad88c1001168f5b04cb23c355af3427c169413ffe6ef2c7ae4b34c7028d4842d": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment, specifically Section 11 (1798.125) titled \"Consumers' Right of No Retaliation Following Opt Out or Exercise of Other Rights\" and the beginning of Section 12 (1798.130) on \"Notice, Disclosure, Correction, and Deletion Requirements.\" Section 1798.125 prohibits businesses from discriminating against consumers who exercise privacy rights and establishes rules for financial incentive programs, while Section 1798.130 outlines how businesses must comply with disclosure and deletion requirements under the CPRA.",
+      "text_sha256": "2c380e2772d91e9790d1af30655e6fd2970956fcbe843f692c2412e973bc0983",
+      "window_index": 1
+    },
+    "aef2eb2ae665123a7b0f6e8843d1fbbef2b9b66d8274bbb2c6a3084d2397d386": {
+      "context": "This chunk is from Section 2 (Findings and Declarations) of Proposition 24, the California Privacy Rights Act of 2020, which amends the Civil Code. It contains subsections D through H that provide the legislative rationale for strengthening California's privacy laws, building on the California Consumer Privacy Act of 2018 (CCPA), and explaining the need for enhanced consumer protections regarding personal information collection, use, and sale.",
+      "text_sha256": "49205f924a0366941908bf1ac96aafe4160681b1e97fbf0d76879b929b1b42d1",
+      "window_index": 0
+    },
+    "b51ae70693b460a32fe1bbd05c9b4c61045ac5412949c44001223b66ca7ab1fd": {
+      "context": "This chunk is from subdivision (m) of the California Consumer Privacy Rights Act (CPRA) amendments, which lists exemptions to the title's applicability. Subdivision (m)(1) specifies that the CPRA does not apply to personal information collected about employees, job applicants, owners, directors, officers, medical staff members, and independent contractors when collected and used solely within the context of their employment or business relationship, including emergency contact information and benefits administration. Subdivision (m)(2) provides definitions for the key terms used in these exemptions. This subdivision becomes inoperative on January 1, 2023.",
+      "text_sha256": "1fa8c4116aaec6871ed5cdc7d4ee1b1c59a89c05f69e86277787e588a336530d",
+      "window_index": 5
+    },
+    "b5907f5b68f4e2626b88c4d96de3e6a0988aab3cfe0079912025620b4525974a": {
+      "context": "This chunk is from Section 3 (Purpose and Intent) of Proposition 24, the California Privacy Rights Act of 2020, which outlines the foundational principles guiding the implementation of the act. It introduces the three subsections that follow: Consumer Rights, Responsibilities of Businesses, and Implementation of the Law.",
+      "text_sha256": "0f23613e923cf848996f73b3911c15a807ad08dbffeeb4d7698a41c93720b1fc",
+      "window_index": 0
+    },
+    "b5de54999480005389c5140cc60e9ce9f151c89f6a52b1043bf1b4076fa77711": {
+      "context": "This chunk is from Section 1798.100 of the California Consumer Privacy Rights Act (CPRA) amendment, titled \"General Duties of Businesses that Collect Personal Information.\" It establishes foundational requirements for businesses collecting consumer data, including disclosure obligations at the point of collection, restrictions on data use beyond disclosed purposes, data retention limits, and contractual requirements when sharing personal information with third parties.",
+      "text_sha256": "a739b84075864e8d3fa7fa878080619307908eb24c41b806875d75bcf8d7911c",
+      "window_index": 1
+    },
+    "b8c855fe6bc38bd8c1135beb730ec8fb6ff18c67f5bcd5a416be480fd5747ef2": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment establishes the timeline for regulatory adoption and enforcement, specifies the transition of rulemaking authority from the Attorney General to the newly created California Privacy Protection Agency, and introduces foundational provisions on anti-avoidance, waiver of consumer rights, and the establishment of the agency itself. It includes Section 1798.190 on disregarding intermediate transactions to avoid circumventing the law, Section 1798.192 on voiding contractual waivers of consumer rights, and the beginning of Section 24 establishing the California Privacy Protection Agency.",
+      "text_sha256": "a0ca9bc035bc8f5c90f02a635d2afbb05b3ee740ecd89a14f9996e06956abaa5",
+      "window_index": 8
+    },
+    "baf4963439513bfb0057c74b58b240752f9b9beedbf99c5544ea8bcb54668081": {
+      "context": "This is Section 26 (Severability) from the California Privacy Rights Act (CPRA) amendment proposal, which establishes that if any provision of the measure is found invalid by a court, the remaining provisions remain enforceable and the act's core intent would have been enacted regardless of any invalid provisions.",
+      "text_sha256": "f7532cebaf059d6bb747070295eb8e2ea0d878b6c781aaa055b4c07878d3ff1c",
+      "window_index": 9
+    },
+    "bb3f1dab7785c141596477c558db1c981c092b1e4659b891a83588db9b6ec4c5": {
+      "context": "This is the section heading for Section 1798.100 in the California Consumer Privacy Rights Act (CPRA) amendment, which establishes the foundational requirements for businesses collecting personal information, including duties to disclose collection practices, inform consumers at point of collection, implement security measures, and establish agreements with third parties handling personal data.",
+      "text_sha256": "fe00f0857048621033e75336819f2a74d2e99001d52df6925af453fcda11b6b2",
+      "window_index": 1
+    },
+    "bbf4895947689f9c82913a2a0909ad43835a230bfa8333806b15b5559931d770": {
+      "context": "This chunk from the California Consumer Privacy Rights Act (CPRA) amendment establishes Section 1798.160, which creates the Consumer Privacy Fund within the State Treasury. It details the fund's creation, allocation of revenues between court and Attorney General costs, investment of remaining funds, and grant distribution through the California Privacy Protection Agency to nonprofits and law enforcement for consumer privacy protection and education purposes.",
+      "text_sha256": "c8f9f02c883b1adff0226bc09f1bb5fce5731c997bd438ac351edbef565c17fb",
+      "window_index": 6
+    },
+    "bc0c3eaca0477f723bb70717c85bc291629d77d480b94f1a3d14efbf776d33f5": {
+      "context": "This chunk from the California Privacy Rights Act of 2020 (Proposition 24) contains Section 3's Purpose and Intent statement, specifically subsections B (Responsibilities of Businesses) and C (Implementation of the Law), which outline the guiding principles for how businesses must handle consumer personal information and how the law should be implemented to balance privacy protection with business innovation.",
+      "text_sha256": "3ee597147fab1ca7206997a89ce2310086e312871fd893809b6cc219534bc939",
+      "window_index": 0
+    },
+    "bd1bfd6c93cf4a76c8588356d1519ccf41edd18e8ea89be6037ab37fed17b7f9": {
+      "context": "This chunk contains the eight consumer rights principles listed under Section A of SEC. 3 (Purpose and Intent) in Proposition 24, the California Privacy Rights Act of 2020. These principles establish the foundational consumer protections that guide implementation of the act, including rights to know about data collection, control personal information use, access and correct data, exercise rights without penalty, and hold businesses accountable for security breaches.",
+      "text_sha256": "7ff3a35afeb1f47652911060ffbb82e91e215f866a0318f425aa786dbbf49f37",
+      "window_index": 0
+    },
+    "c15da33fe2f0f918609546d3680fa225e9188f24aef520243fb057a05e1bd851": {
+      "context": "This chunk is from Section 1798.130 of the California Consumer Privacy Rights Act (CPRA) amendment, titled \"Notice, Disclosure, Correction, and Deletion Requirements.\" It outlines the procedural requirements businesses must follow to comply with consumer rights established in Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, including the methods for submitting requests and the 45-day response deadline for disclosing, correcting, or deleting personal information.",
+      "text_sha256": "7db1371bd7635814e16493a21c86114df7b2cda395fa374f07daba14bb332842",
+      "window_index": 1
+    },
+    "c223187a3dae4a5b50c97bba414230686a6e8b05b6633e5475cd5fac9fa57a48": {
+      "context": "This chunk is from Section 2 (Findings and Declarations) of Proposition 24, the California Privacy Rights Act of 2020, which outlines the historical development of California privacy law from the 1972 constitutional amendment through the 2018 California Consumer Privacy Act (CCPA) and the rationale for strengthening consumer privacy protections.",
+      "text_sha256": "23e5ccfb64ce8c5b91181b323a8c7b0df5175f6f91dcd9b12422e442992c6991",
+      "window_index": 0
+    },
+    "c28b67f63c92344b8b641e3de534a52296ee5ccc052e7e17bc7afa8471dc3c34": {
+      "context": "This chunk appears at the beginning of Proposition 24, the California Privacy Rights Act of 2020, and explains the procedural basis and formatting conventions used throughout the proposed law document.",
+      "text_sha256": "a4e93457b43b25a5e9e19a1312b1001491716aada616850c3c7926d75e52befa",
+      "window_index": 0
+    },
+    "c50b09f9541a060399a3571c1c64506cc3951fc5653a29b383e04701c201f229": {
+      "context": "This chunk is from the California Consumer Privacy Act Amendment (Proposition 24) text, specifically from Section 1798.185 subdivision (a), which outlines the Attorney General's regulatory authority. The chunk details regulations governing opt-out preference signals, including prohibitions on coercive business practices in response to consumer opt-out choices, requirements for consent links to avoid dark patterns and intrusive design, and provisions for harmonizing privacy mechanisms across the law.",
+      "text_sha256": "9dd1c8f134580749f6296f126d22cf9dd5556551ad253e0156f051295de1af90",
+      "window_index": 8
+    },
+    "c62993477d7a8783024453a8f51ed2637d728a2ea01d30c230b7f7b34c73ca69": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment text, specifically sections (m) and (n) of the exemptions and limitations provisions. Section (m) defines exemptions for personal information collected about employees, owners, directors, officers, medical staff members, and independent contractors, with definitions of key terms and an operative date of January 1, 2023. Section (n) further exempts business obligations under specified sections when personal information reflects communications or transactions between a business and a consumer acting in a business capacity, with similar role definitions and an operative date of January 1, 2023.",
+      "text_sha256": "abe374ef202688157e20487978e83bb31f876b9f9c57e2e955f11d7597b8fd3e",
+      "window_index": 5
+    },
+    "cff603f8a3c2294debf93561f8098f9db153adf023386cdc97ea9c76d113d4b9": {
+      "context": "This chunk is from Section 14 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically the definitions section (Section 1798.140). It contains requirements for contractors handling personal information, including restrictions on combining personal information, certification obligations, and monitoring provisions, as well as definitions of cross-context behavioral advertising, dark patterns, and deidentified information.",
+      "text_sha256": "f491562f3a010002f6f70cf8290794b9cd38f8e288ac9924b4e44c71864a6949",
+      "window_index": 2
+    },
+    "d18a53cdd98de2a2b5c8868fcff43e3c9d5f65738345f48c42d21ca0576f71e3": {
+      "context": "This chunk is from the California Consumer Privacy Rights Act (CPRA) amendment, specifically Section 1798.100 et seq., and addresses liability limitations for businesses that disclose personal information to service providers, contractors, and third parties. It establishes conditions under which these entities are not liable for violations of the title's restrictions, provided the disclosing business lacks actual knowledge or reason to believe the recipient intends to violate the law.",
+      "text_sha256": "f0a030c99e01a942b5f978c6100c628e2396abdffb53679530b74bff6f5386a7",
+      "window_index": 5
+    },
+    "d30389ad0b8d2b097c16b97917cd4f61e0d5b53b963ca41d22db5a8d9e12156b": {
+      "context": "This chunk is from Section 1798.130 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically subsection (a)(2) regarding Notice, Disclosure, Correction, and Deletion Requirements. It details the timeline and procedures businesses must follow when responding to verifiable consumer requests for information disclosure, correction, or deletion under Sections 1798.110 and 1798.115, including the 45-day response deadline, format requirements, and authentication standards.",
+      "text_sha256": "376f3df50879ed6a4c5fb19e39cdcc356698596c7c14a355c5b030509890dad6",
+      "window_index": 1
+    },
+    "d69cdbadcfc82cd522d9c90d8abc3a6f9ea097b6c4bc09a20937c8bd771da7c2": {
+      "context": "This chunk is from the Text of Proposed Laws section of the California Privacy Rights Act (CPRA) Amendment, specifically defining key terms related to consumer privacy. It includes requirements for research use of personal information (items 2-9 under the definition of 'Research'), the definition of 'Security and integrity', and the beginning of the definition of 'Sell' as it pertains to personal information disclosure.",
+      "text_sha256": "ddf399600a60f2ae377774ff8e765864f4655fc46d8cb1ffad84b4ee5c69b0d2",
+      "window_index": 4
+    },
+    "d83aa759b0e76abb47a91f4e0df9b9c22861e4e952bdbb294cf68f625eab2bf0": {
+      "context": "This chunk from the California Privacy Rights Act (CPRA) amendment establishes the enforcement procedures and penalties administered by the newly created California Privacy Protection Agency. Specifically, it outlines the agency's investigation discretion under Section 1798.199.45, the probable cause notification requirements under Section 1798.199.50, and the hearing procedures and administrative fines under Section 1798.199.55 for violations of the California Consumer Privacy Act of 2018.",
+      "text_sha256": "d66c05e5cd6bde1cd7241cfe04e334fd0ede875d3901ec33ce4cd3235e6c2f69",
+      "window_index": 8
+    },
+    "e99f116f6a82402efeeb98e75c2efb6a5f093e7c9a0ea35efaa824ae64fc3c2f": {
+      "context": "This chunk is from Section 14 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically from Section 1798.140 (Definitions). It defines what constitutes a \"business\" under the CPRA by establishing three revenue and data processing thresholds in paragraph (1), then defines related entities in paragraphs (2) through (4), and begins defining \"business purpose\" in subdivision (e), which lists specific authorized uses of personal information under the law.",
+      "text_sha256": "ffd07981be4c4699098263843fab718fa3d9a31e109044ecb9068bf6c29644de",
+      "window_index": 2
+    },
+    "eb968a24f4327d67d036113eaa1ffc704c7427327ff42d9520fb3dc040963f2f": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment, specifically Section 1798.100 et seq., detailing exemptions to the title's applicability. Subdivision (d) exempts personal information activities by consumer reporting agencies, furnishers, and users regulated under the Fair Credit Reporting Act, while subdivisions (e), (f), and (g) exempt information governed by the Gramm-Leach-Bliley Act, Driver's Privacy Protection Act, and vehicle information shared for warranty or recall purposes, respectively.",
+      "text_sha256": "e92844a4afb2de9179b4342ca2d9e0bd922137e4f7146708b4a23490f4dce369",
+      "window_index": 5
+    },
+    "eeec0fb815d880465b9c45492360c4f71984a3bd947e3f0c1ce7de2737b3c95d": {
+      "context": "This chunk is from the Text of Proposed Laws section of California's CPRA (Consumer Privacy Rights Act) amendment, specifically from the exemptions and limitations provisions. It contains subsections (k), (l), and (m) that clarify what businesses are not required to do under the title, establish that consumer rights do not affect other persons' rights, and describe exemptions for noncommercial activities and employment-related personal information.",
+      "text_sha256": "32a4f031d53381aa22c83284f6e602ac9389dfe286e6efee7cdf77ccd2592899",
+      "window_index": 5
+    },
+    "ef20df2d08e95ffdc52d5ecf70e36a4e8faa0b0632e027df3a962ab397b86999": {
+      "context": "This chunk is from the California Privacy Rights Act (CPRA) amendment text, specifically covering business obligations under Section 1798.100 et seq. regarding consumer privacy rights. It details requirements for staff training on privacy compliance (subsection 6), restrictions on using verification information (subsection 7), frequency limitations for disclosure requests (subsection b), and categorization standards for personal information disclosures (subsection c), followed by the beginning of Section 1798.135 on methods for limiting sale and sharing of personal information.",
+      "text_sha256": "35edb4f235d3371bec85b03d344b76a0c9f85b37f9de83dca7914bd3f1d3745e",
+      "window_index": 2
+    },
+    "f1b35b99c683ee070e36a30d79f548ac1c69a5b651c796f2694c02da33dd2492": {
+      "context": "This chunk is from Section 1798.135 of the California Civil Code, titled \"Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information,\" which is part of the proposed California Privacy Rights Act (CPRA) amendment. It specifies the requirements for businesses to provide consumers with clear links and mechanisms to opt out of the sale or sharing of personal information and to limit use of sensitive personal information, either through direct website links or through opt-out preference signals.",
+      "text_sha256": "009b418a29a1d761054e4452d1a5ddeacd29d7e719af7048d3ce7ceee121c958",
+      "window_index": 2
+    },
+    "fa92ee8558f1e623f4ce3b9857e50d782eda06c845121c2ee223f1bfc84ef1ce": {
+      "context": "This chunk is from Section 1798.135 of the California Civil Code, titled \"Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information,\" which is part of the California Consumer Privacy Rights Act (CPRA) amendment. It details requirements for businesses to provide opt-out mechanisms and consumer rights disclosures, including specifications for web page design, privacy policy content, and restrictions on re-requesting consumer authorization after opt-out.",
+      "text_sha256": "fbfdb137d2ded265cc98ae3458dfa9634941d5fa73f339a0d59a8a43e351eccf",
+      "window_index": 2
+    },
+    "fb5835f39d02a79d66281a18880e3845cae58b6cafbcbaa43194535b3dd23c44": {
+      "context": "This chunk is from Section 1798.145 of the California Consumer Privacy Rights Act (CPRA) amendment, specifically subsection (a), which outlines exemptions to the obligations imposed on businesses under the title. The section lists circumstances where businesses are not restricted in their ability to collect, use, or disclose consumer personal information, including compliance with legal processes, law enforcement cooperation, and legal defense.",
+      "text_sha256": "2f7713788dca43e196039041be7c547a98cd704b135c7af5fd75c427633eea9f",
+      "window_index": 4
+    }
+  },
+  "doc_id": "law-cpra-amendment",
+  "generated_at": "2026-08-29T22:14:40Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

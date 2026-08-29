@@ -1,0 +1,238 @@
+{
+  "contexts": {
+    "016254d96c767c70d95b09d13ca3ea80dd015d82b4b5c680d8778ec70fddd300": {
+      "context": "This chunk from the Executive Summary of NIST AI 100-1 (Artificial Intelligence Risk Management Framework 1.0, January 2023) introduces the potential benefits and risks of AI technologies, defines what the AI RMF considers an AI system, explains why AI risks are unique compared to traditional software risks, and establishes the importance of AI risk management for responsible development and use of AI systems.",
+      "text_sha256": "9e9ac0d251624fe0920d6d7e42a991c03c4cc75803eeaedc8c0a501f09f3b6bc",
+      "window_index": 0
+    },
+    "04814c1e219cebd4cbc306b4eb388992fbab7893acfecdf089792509889273b0": {
+      "context": "This chunk appears in Section 1 \"Framing Risk\" of the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0), which introduces the foundational concept that AI risk management is essential for developing trustworthy AI systems while minimizing negative impacts on civil liberties and rights.",
+      "text_sha256": "61f7f00fdafd88c7eb3a57f49aff7bdaf99db5f87b039df14ae9f9c7b1513d7e",
+      "window_index": 0
+    },
+    "050ae563228530e7583c822320bc055290ca3a9ec049b513957ac9f542e38f25": {
+      "context": "Appendix D of the NIST AI Risk Management Framework (AI RMF) document outlines the ten key attributes that guide the framework's design and development, including its risk-based and voluntary nature, consensus-driven approach, use of clear language, and commitment to being a living document that evolves with technology and stakeholder feedback.",
+      "text_sha256": "cffefd93dd5f184354c71e7e5b5f029a3ca843b335b3ddd5b8eb0bb9369a6494",
+      "window_index": 4
+    },
+    "09b1f39bdad257daff4b18041c290efd1c5e665febcf37031e58a365ed3077df": {
+      "context": "This chunk is from section 5.3 Measure of the NIST AI Risk Management Framework (AI RMF) document. It describes the MEASURE function, which is the second core function of the framework that follows the MAP function and precedes the MANAGE function. The MEASURE function uses testing and evaluation tools to assess AI risks identified during mapping and provides outcomes that inform risk management decisions.",
+      "text_sha256": "3a11ee6084d6a82a675ee464560135089cd083ae34a5597ba0bfd9c09af43425",
+      "window_index": 3
+    },
+    "0d458ba0ffae3488805cc3edad36e888b7a1475490e8b5159040b28281ba0f47": {
+      "context": "This chunk is from Section 2 (Audience) of the NIST AI Risk Management Framework (AI RMF) document and describes the intended users and stakeholders of the framework. It explains the primary audience of AI actors across the AI lifecycle dimensions (Application Context, Data and Input, AI Model, Task and Output) and a secondary audience from the People & Planet dimension, including civil society organizations and affected communities, all of whom are essential for effective AI risk management.",
+      "text_sha256": "15eee22288fc8b3d5d7e17de42323c1b0ab13a5f81882cc3750cda2691288165",
+      "window_index": 1
+    },
+    "0dfdd2ea36a90c8e9fd85232d6c22cfbff4bb805377bb15818efdd0963aacec8": {
+      "context": "This chunk is from Section 3.3 \"Secure and Resilient\" of the NIST AI Risk Management Framework (NIST.AI.100-1), which discusses the trustworthiness characteristics of AI systems. It defines resilience and security as related but distinct characteristics essential for managing AI risks, and references applicable NIST guidance frameworks for implementing these protections.",
+      "text_sha256": "1e28eac1225925b3e04571b8875578697e000683fbd8fd84bca4dccd91288529",
+      "window_index": 1
+    },
+    "155745ef86285172b786f07560a467213a578a52eb7151fb59e81946dbe4c8d8": {
+      "context": "This chunk appears in section 1.2.1 \"Risk Measurement\" of the NIST AI Risk Management Framework (AI RMF 1.0), which is part of section 1.2 \"Challenges for AI Risk Management\" in Part 1: Foundational Information. The chunk details specific challenges organizations face when measuring AI risks, including issues with third-party components, emergent risks, metric availability, lifecycle stage variations, real-world deployment differences, system inscrutability, and human baseline comparisons.",
+      "text_sha256": "0e4e7ca993cd04b3547b4e570f032aaf32dc0c793e32aef801781c64f7494b0b",
+      "window_index": 0
+    },
+    "178d5c747a63c1e81c24c1fd8c79cc0f62b7cbae3af2b40ee7c0ef8916ac7589": {
+      "context": "This chunk is from Section 1.2.3 \"Risk Prioritization\" of the NIST AI Risk Management Framework (NIST.AI.100-1). It explains how organizations should prioritize AI risks based on context and impact rather than attempting to eliminate all risks, and describes how risk prioritization differs depending on whether AI systems interact with humans and the sensitivity of their training data.",
+      "text_sha256": "9f1aa2912b4979aaed212be7353720945ef0e4fb777e57744f7d63d05b646a90",
+      "window_index": 1
+    },
+    "24f1b26cbffe7beaba044220760872cdb9573854f90133e386d315a9299c2b21": {
+      "context": "This chunk is from Appendix A of the NIST AI Risk Management Framework (NIST.AI.100-1), which describes the tasks and responsibilities of different AI actors across the AI lifecycle. It details five major categories of AI actor tasks: AI Design, AI Development, AI Deployment, Operation and Monitoring, and Test, Evaluation, Verification, and Validation (TEVV), along with the specific roles and responsibilities of actors within each category throughout different phases of the AI lifecycle shown in Figure 2.",
+      "text_sha256": "9768dab4f3b50d343bf3aa67559a40e34910dfb9c1e04438a0d7db087f255b93",
+      "window_index": 4
+    },
+    "27d364540be8b8a9296c83d9065964f1b068cd286d30f74f6090c96448be7a88": {
+      "context": "This chunk is from Section 1.2.2 \"Risk Tolerance\" of the NIST AI Risk Management Framework (NIST.AI.100-1). It explains that risk tolerance\u2014an organization's readiness to bear risk to achieve objectives\u2014is contextual and application-specific, influenced by legal requirements, policies, and organizational priorities. The section clarifies that the AI RMF does not prescribe risk tolerance but provides flexibility for organizations to define reasonable tolerance aligned with existing regulations and sector-specific guidelines before using the framework to manage risks.",
+      "text_sha256": "89951fda9c46ee0301c34a1e557a972edc42a4a4342f2ebcea9488a60d913ab5",
+      "window_index": 1
+    },
+    "3000baf42a8dba0dc0ff15b53a7bba8b4b25eeceb175b0b5887e63655e6861ad": {
+      "context": "This chunk is from Appendix B of the NIST AI Risk Management Framework (NIST.AI.100-1), titled \"How AI Risks Differ from Traditional Software Risks.\" It explains AI-specific risks that are new or increased compared to traditional software, including data representation issues, training changes, model complexity, privacy concerns, and testing challenges, and discusses how privacy and cybersecurity frameworks relate to the AI RMF's MAP, MEASURE, and MANAGE functions.",
+      "text_sha256": "52121ff6ffcf075198bd113cb7e9631cd58b3bd45ea6c0f4d07fdd70678ce6d5",
+      "window_index": 4
+    },
+    "3833ccce7b852d7b4d53047a8ad4d0f01025336d3fc74264335a47e254a17c59": {
+      "context": "This chunk from the NIST AI Risk Management Framework (NIST.AI.100-1) presents Table 3, which outlines the categories and subcategories for the MEASURE function\u2014the second core function of the framework that employs quantitative, qualitative, or mixed-method tools to analyze, assess, benchmark, and monitor AI risk and related impacts. The MEASURE function uses knowledge from the MAP function and informs the MANAGE function.",
+      "text_sha256": "2f1d17f7542d3b95fcdff0d5b8861d5cbe1846ff800d026c8117df6f84de906e",
+      "window_index": 3
+    },
+    "39544e119dd33bf50ab44c37c888db5eea5fa197fc1fc3557237e1db55e15315": {
+      "context": "This section from the Executive Summary of NIST AI 100-1 (Artificial Intelligence Risk Management Framework 1.0, January 2023) describes the overall purpose, design principles, and structure of the AI RMF. It explains that the Framework is a voluntary, non-sector-specific resource directed by the National Artificial Intelligence Initiative Act of 2020 to help organizations manage AI risks and promote trustworthy AI development. The section outlines the Framework's two-part structure: Part 1 covering risk framing and trustworthiness characteristics, and Part 2 containing the Core functions (GOVERN, MAP, MEASURE, MANAGE) for addressing AI risks in practice.",
+      "text_sha256": "df8e5f44595930a73181aa6e8260e31af34d80df7f2d10d48a854f1c451247ed",
+      "window_index": 0
+    },
+    "425ace9b345317b2a2b31b082df586b730df0e423509c4a70c47c85dbe5f5fc9": {
+      "context": "This chunk appears in Section 3 (AI Risks and Trustworthiness) of the NIST AI Risk Management Framework (NIST.AI.100-1), specifically at the conclusion of the section's introductory discussion. It synthesizes the framework's seven trustworthiness characteristics (valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed) and emphasizes that these characteristics must be balanced rather than optimized individually, requiring tradeoffs and contextual decision-making by all AI actors throughout the AI lifecycle.",
+      "text_sha256": "c7eec43ddd8c72e896cca28384cf5609346d768dd8e1a8e4516afc11100f5264",
+      "window_index": 1
+    },
+    "47505cb27e7766f1edd510dfe71f125190f6e347ca47484a889037f4abe0a447": {
+      "context": "This chunk is from Section 3.1 \"Valid and Reliable\" of the NIST AI Risk Management Framework (NIST.AI.100-1), which discusses one of the seven key characteristics of trustworthy AI systems. It defines and explains validation, reliability, accuracy, and robustness as essential components for ensuring AI systems perform correctly and safely throughout their lifecycle.",
+      "text_sha256": "ad59784b55a334ef87d7e6a6e8592afd39be2864aaa86b64ce6995bfff138262",
+      "window_index": 1
+    },
+    "4ccf25d400ec65edee6c51ae85db06dbbb6aa0221b66202a70b2ea10d70f8648": {
+      "context": "This chunk from the NIST AI Risk Management Framework (NIST.AI.100-1) presents Table 2, which details the categories and subcategories for the MAP function, the first of four core functions in the framework. The MAP function establishes context to frame risks related to AI systems, and this table specifically outlines MAP 1 (Context is established and understood) and MAP 2 (Categorization of the AI system is performed) with their respective subcategories MAP 1.1 through MAP 1.6 and MAP 2.1 through MAP 2.2.",
+      "text_sha256": "11081e88e97547162f202c0bf8253d265af316a7fc040b15fcc15c3f60ce9c44",
+      "window_index": 3
+    },
+    "51fb2ea01d96a03ad4eabdd943120722c1cb38adaaf0cc70564e5137b8a4e224": {
+      "context": "This chunk appears in section 1.2 \"Challenges for AI Risk Management\" of the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0), which is part of the foundational information in Part 1 of the document. It serves as an introductory statement before the framework details specific challenges including risk measurement, risk tolerance, risk prioritization, and organizational integration of risk management.",
+      "text_sha256": "67169a65cfd164f89f22dcf0ce46f4693697fc56a886fe5577c1d8b093a9e311",
+      "window_index": 0
+    },
+    "54afba43019101b796f8b806b8c6b374b098102583a8a87bc0a6d6855029d61c": {
+      "context": "This chunk from the NIST AI Risk Management Framework (AI RMF) document presents Table 1, which details the categories and subcategories of the GOVERN function. The GOVERN function is one of four core functions in the AI RMF Core (along with MAP, MEASURE, and MANAGE) designed to manage AI risks and develop trustworthy AI systems. The table outlines six main governance categories (GOVERN 1 through GOVERN 6) with their associated subcategories, covering organizational policies, accountability structures, workforce diversity, risk culture, stakeholder engagement, and supply chain management for AI systems.",
+      "text_sha256": "27c40356e5ce346f793a6e57d1e623a21834cf8115ac3d1def927c502cb2e8b3",
+      "window_index": 2
+    },
+    "5ac5fd8389e9ac8145fcfc3babeac755aa0f7b2ba3edd5f79b260ee91271783d": {
+      "context": "This chunk appears in section 1.1 \"Understanding and Addressing Risks, Impacts, and Harms\" of the NIST AI Risk Management Framework (AI RMF 1.0). It defines key concepts of risk, risk management, and the framework's approach to addressing both negative impacts and positive opportunities in AI systems, establishing foundational definitions used throughout the document.",
+      "text_sha256": "625333465ac31c68fcd99daf066d8e1a195f8f3a68213ca7cddc1775660cdb45",
+      "window_index": 0
+    },
+    "663f22afdd398580b61ae3c08f5fc732d8021185b88e467229494a077e1c4702": {
+      "context": "This section from Appendix A of the NIST AI Risk Management Framework describes five categories of AI actor tasks: Human Factors, Domain Expert, AI Impact Assessment, Procurement, and Governance and Oversight. These task categories complement the earlier-described AI Design, Development, Deployment, Operation and Monitoring, and TEVV tasks that occur throughout the AI lifecycle phases shown in Figure 2.",
+      "text_sha256": "9b356219dace4713e939e128e0a67c829d6a156a42c0c3ef82499be38e790141",
+      "window_index": 4
+    },
+    "68bb76369c608d882e1fa01e02c889dcd75b2e8d29309e862491e38caf3f3036": {
+      "context": "This chunk appears in Section 4 \"Effectiveness of the AI RMF\" of the NIST AI Risk Management Framework (NIST.AI.100-1) document. It describes how organizations should evaluate whether the AI RMF has improved their ability to manage AI risks and outlines the expected benefits that framework users can gain from implementing the AI RMF's governance, mapping, measuring, and managing functions.",
+      "text_sha256": "4dc47c91a100287eb28816a5ece53d7c9e35f58db809e4fc714528fae69fbff9",
+      "window_index": 2
+    },
+    "69dfa6ef0b27ffe50c131183c8dbf8b4aa43f24b4402514dc29115d9679b9c88": {
+      "context": "This chunk is from Section 3 \"AI Risks and Trustworthiness\" of the NIST AI Risk Management Framework (NIST.AI.100-1). It introduces the seven key characteristics of trustworthy AI systems\u2014valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed\u2014and explains how these characteristics must be balanced contextually and how tradeoffs among them require human judgment and transparent decision-making.",
+      "text_sha256": "14277f9e4bdd62b66edfcbc813bb3393ee720808d40808dd78214e7bccb4359a",
+      "window_index": 1
+    },
+    "725640955874914b800ebc4e27aef73bdbe221c2871f06b6d02e6a6789b3c707": {
+      "context": "This chunk is from Appendix C: AI Risk Management and Human-AI Interaction of the NIST AI Risk Management Framework (NIST.AI.100-1). It discusses how organizations can enhance AI risk management by understanding limitations of human-AI interaction, including issues with human roles and responsibilities, cognitive biases, and the complexity of presenting AI system information to humans. The chunk also explains how the GOVERN and MAP functions of the AI RMF address these human-AI interaction challenges.",
+      "text_sha256": "8c02f22ec639309abba1f49cadd61c05b76ab9abf32c77e6e318f81c95937027",
+      "window_index": 4
+    },
+    "7344c5ee9b5f4e7a72c69c22ae7f7923c47dad85408f353ccb545d9f79f256cb": {
+      "context": "This section from the NIST AI Risk Management Framework (NIST.AI.100-1) defines additional AI actors beyond those described in Appendix A. It categorizes various stakeholders involved in or affected by AI systems, including third-party entities, end users, affected individuals and communities, other AI actors providing guidance, and the general public, explaining their roles and relationships to AI system design, development, and deployment.",
+      "text_sha256": "854f2c2a3a47d06570d4d0b80ad23338a8ca6e6db44efc0e7b3274246a0c96a8",
+      "window_index": 4
+    },
+    "747bd9d14d2f61dee1ae61ade29385e0ef3cd57e4841edb1e51802de1bbd26e2": {
+      "context": "This section from NIST AI 100-1 (Artificial Intelligence Risk Management Framework 1.0) describes the update schedule and versioning system for the AI RMF, explaining how NIST will maintain the framework as a living document with regular reviews and a two-number versioning system to track major and minor changes.",
+      "text_sha256": "824aee673392b3f2a0c7fbc694d0b83c3124dcad7d4d0751da1095ea09208366",
+      "window_index": 0
+    },
+    "7521a76271dd88b41314c2b7eb43f4210d92b8a8afb65450dd2fd412bad22b12": {
+      "context": "This chunk appears in Appendix C of the NIST AI Risk Management Framework (NIST.AI.100-1), which discusses AI Risk Management and Human-AI Interaction. It concludes the appendix by highlighting areas requiring further research to enhance risk management approaches for human-AI team configurations, particularly regarding human oversight and decision-making in deployed AI systems.",
+      "text_sha256": "958378efab6d13ab58842754cb247fd5692d8aa9fc21246bfbcb07198ab60d85",
+      "window_index": 4
+    },
+    "774a4fc4fceab03476de6dd1b69c0668fd7ea4f4a43f5419cfba6d6e6ee3ca7b": {
+      "context": "Section 6 of the NIST AI Risk Management Framework (AI RMF) document describes AI RMF Profiles, which are implementations of the framework's functions, categories, and subcategories tailored to specific settings or applications. This chunk explains the three types of profiles: use-case profiles for particular applications, temporal profiles showing current or target states of AI risk management, and cross-sectoral profiles covering risks common across multiple sectors.",
+      "text_sha256": "80f1f2adcdc9e094ea660a2ff2da4da7d20dee574481986ef6cf6e6c16743e44",
+      "window_index": 3
+    },
+    "7b6d114b3c9e6a5fe9e128b8aafd0db99e48e7d707cc2e1f1c94b38f05646b33": {
+      "context": "This chunk is from section 3.7 \"Fair - with Harmful Bias Managed\" of the NIST AI Risk Management Framework (AI RMF) document, which describes fairness as a key trustworthiness characteristic for AI systems. The section explains how fairness addresses harmful bias and discrimination, defines NIST's three major categories of AI bias (systemic, computational and statistical, and human-cognitive), and discusses how bias can amplify harms across society.",
+      "text_sha256": "3edf2e90efeac9009f47aae56941253b56aa75ad548972e178392c7d8dd4b9ef",
+      "window_index": 2
+    },
+    "82bffa93e5dfc48c1c870b2971d41b25c83f28d10b1fb549aa545aee851bc503": {
+      "context": "This chunk is from section 3.5 \"Explainable and Interpretable\" of the NIST AI Risk Management Framework (NIST.AI.100-1), which describes one of the key trustworthiness characteristics for AI systems. It defines explainability and interpretability, explains how they support risk management, and distinguishes them from the related characteristic of transparency discussed in section 3.4.",
+      "text_sha256": "e99bdb487238112f6f3a3850fb1321c9dae5aa12850234f4d10e476d3e298338",
+      "window_index": 2
+    },
+    "8dd56f9326738b1bf33b48122ae44320a856e2d06eec05981f3159ea203ce16d": {
+      "context": "This chunk is from section 5.4 (MANAGE) of the NIST AI Risk Management Framework document, specifically the continuation of Table 4 which lists the categories and subcategories for the MANAGE function. MANAGE 4 addresses risk treatments, response and recovery plans, and communication strategies for identified and measured AI risks, representing the final category within the MANAGE function that follows the MAP and MEASURE functions in the framework's risk management process.",
+      "text_sha256": "987a36e46ff814fe18c97b5d79367d25e770c864ffa7b8c2ad7174e3a19d4852",
+      "window_index": 3
+    },
+    "9057e25272f5b57306863d11ceda5f122e72ae85f61380d9a487d9adbb60ab75": {
+      "context": "This chunk from the NIST AI Risk Management Framework (NIST.AI.100-1) presents the detailed categories and subcategories for the MEASURE function, which is the second core function of the framework. The MEASURE function employs quantitative, qualitative, or mixed-method tools to analyze, assess, benchmark, and monitor AI risk and related impacts. The chunk specifically details MEASURE 2 through MEASURE 4, covering evaluation of trustworthy characteristics, tracking of identified risks over time, and gathering feedback about measurement efficacy.",
+      "text_sha256": "b40045f5404a5085f50cabc79cb464f8cc6b2f4cbe402d88aa4d351dd445577a",
+      "window_index": 3
+    },
+    "90bc3677a06f32503a07793a2b0cce0891a07b8db4dcd89b0847209e31a4af2e": {
+      "context": "This is the publication information and disclaimer section from NIST AI 100-1, the Artificial Intelligence Risk Management Framework (AI RMF 1.0) released in January 2023. It includes the document's DOI, authorship details from the U.S. Department of Commerce and NIST, and a standard disclaimer regarding commercial entities mentioned in the document.",
+      "text_sha256": "58ee14396cfc9f09b6232ae59a8b927b04d7956ea6a3a747a8ff5b4cbedcca99",
+      "window_index": 0
+    },
+    "947e75dd54bbcbfe03c22270f4c95f2ed895dd09c1ef96e4158fcf1c33ff2687": {
+      "context": "This chunk is from Section 5.1 \"Govern\" of the NIST AI Risk Management Framework (AI RMF) document. It defines the GOVERN function, one of four core functions in the AI RMF (along with MAP, MEASURE, and MANAGE), and explains how it serves as a cross-cutting function to cultivate organizational risk management culture and enable AI risk management activities throughout an AI system's lifecycle. The chunk includes the definition of GOVERN and introduces Table 1, which lists the GOVERN function's categories and subcategories.",
+      "text_sha256": "e215705e5f5972493b4018b9768bb27db210c7142a3be9579973fc32cb5c4ef2",
+      "window_index": 2
+    },
+    "9fdd6d0d57d87ede3fef8c42c1047d385433fd36a4155ed5bb8aeaa5bf15ad25": {
+      "context": "This section lists the figures included in the NIST AI Risk Management Framework (AI RMF 1.0) document. The figures illustrate key concepts throughout the framework, including potential harms from AI systems, the AI system lifecycle and dimensions, AI actors involved in different stages, characteristics of trustworthy AI systems, and the four core functions of AI risk management (govern, map, measure, and manage).",
+      "text_sha256": "c470ca2ec3ef5dcf96248f90ebc988854b436c6a4d8aae4fac1ec8d0e6d8d7ec",
+      "window_index": 0
+    },
+    "a96acfa89209c55a8f48a4022cfa856e94f75af2bd9e52217a35831f85f0f7cd": {
+      "context": "This chunk from the NIST AI Risk Management Framework (AI RMF) document describes the core structure and implementation approach of the AI RMF in Section 5. It explains that the AI RMF Core consists of four primary functions\u2014GOVERN, MAP, MEASURE, and MANAGE\u2014organized hierarchically into categories, subcategories, actions, and outcomes, and outlines how organizations should apply these functions iteratively throughout the AI system lifecycle with diverse perspectives and flexibility based on their needs.",
+      "text_sha256": "d9427b9cfa28f9b24f3c0c844484f3eb03afcce1951e0b1ae71493e0dff3a8fe",
+      "window_index": 2
+    },
+    "af12d6c42fd50eb5d59cb534829964074ea3770ae2655e00ea9d556268adf96e": {
+      "context": "This chunk is from section 5.4 (Manage) of the NIST AI Risk Management Framework (NIST.AI.100-1), which describes the MANAGE function as the third core function for allocating resources to mapped and measured risks. The chunk includes the overview of the MANAGE function and Table 4, which details the four categories and their subcategories: MANAGE 1 (prioritizing and responding to AI risks), MANAGE 2 (strategies to maximize benefits and minimize impacts), and MANAGE 3 (managing third-party risks).",
+      "text_sha256": "661857a031bd285d16384aa20e56b1c9e004e2b390cc247eaae5627106789763",
+      "window_index": 3
+    },
+    "b7d0cbd72b11655c1dc7f24e696152c72eaec6eb77b17425ef14a805a6f39bff": {
+      "context": "This chunk is from Section 3.2 \"Safe\" of the NIST AI Risk Management Framework (NIST.AI.100-1), which discusses the \"Safe\" trustworthiness characteristic of AI systems. It defines safety requirements for AI systems and outlines practical approaches and risk management strategies for ensuring safe AI operation across different contexts and severity levels.",
+      "text_sha256": "dbf1095eaa0872485856741346fe5433ff2e489c8d9ff1851082e4d72dd49653",
+      "window_index": 1
+    },
+    "b84b3f946b09abe0c51b9692a0e723e9ec2bccdb9ad73c5dee7ce358334ef847": {
+      "context": "This chunk is from section 3.4 \"Accountable and Transparent\" of the NIST AI Risk Management Framework (NIST.AI.100-1), which defines transparency and accountability as key trustworthiness characteristics for AI systems. The section explains how transparency enables accountability across the AI lifecycle and discusses implementation considerations including resource requirements, training data provenance, and the role of AI actors in managing risks.",
+      "text_sha256": "c89cdf06a234f07997729fe7521feb70695ebd5895aacb13d5a016d6bdb7002b",
+      "window_index": 2
+    },
+    "c27f5b15c51ff76c3b3ba16720c57f6ca3e0628114424a1557a144f780489f2c": {
+      "context": "This is the Table of Contents from NIST AI 100-1, the Artificial Intelligence Risk Management Framework (AI RMF 1.0) published in January 2023. The table of contents maps the document structure, listing all major sections including the Executive Summary, Part 1 on Foundational Information covering topics like Framing Risk and AI Risks and Trustworthiness, and Part 2 on Core and Profiles with the four functions: Govern, Map, Measure, and Manage, along with appendices and supporting materials.",
+      "text_sha256": "74440dafa359c82d92c21af9c5a30a2a743bc07ca62bece931d11c0322a0ed30",
+      "window_index": 0
+    },
+    "d1b915bf5ca2ce502b59550667c310fc3734ea639cf7aaa59a5a488d888cb393": {
+      "context": "This chunk appears in Appendix B: How AI Risks Differ from Traditional Software Risks of the NIST AI Risk Management Framework (NIST.AI.100-1). It lists specific limitations of existing frameworks and guidance in addressing AI-specific risks that are not comprehensively covered by traditional software risk management approaches, including harmful bias, generative AI risks, machine learning security attacks, and third-party AI technology risks.",
+      "text_sha256": "575d169091ef6ab303c658f7a898826fdbd53e94b79cd2fa777825e1fa1d278f",
+      "window_index": 4
+    },
+    "d23772509972856e2a9fd93e090868496c3e03f5a24cb90c86185275ca086940": {
+      "context": "This chunk is from Section 5.2 (Map) of the NIST AI Risk Management Framework (NIST.AI.100-1), which describes the MAP function as the first core function for establishing context and framing risks related to AI systems. The chunk explains the purpose of the MAP function, the challenges of managing interdependencies across the AI lifecycle, and how it informs subsequent MEASURE and MANAGE functions.",
+      "text_sha256": "cc7cfd02deb7c314c5cc8342a71194b0384e7fbf3eb8675df27322e4b1d91422",
+      "window_index": 3
+    },
+    "d3e019a51fab1d2451fcee54ebbf37e55f0e4fbd6a785e8bd046709f5ea980b4": {
+      "context": "This chunk from the NIST AI Risk Management Framework (NIST.AI.100-1) presents the continuation of Table 2, which outlines the categories and subcategories for the MAP (Map) function. The MAP function is the first core function of the AI RMF, designed to establish context and frame risks related to AI systems. The chunk details categories MAP 2 through MAP 5, covering AI system categorization, capabilities and benefits, risk and benefit mapping for system components, and impact characterization across stakeholders.",
+      "text_sha256": "4b832580353d1a215b27673ab8c0721808b771e98dc15c72fd1fdef4c90f167d",
+      "window_index": 3
+    },
+    "e00193c884761b8f5f56942b121f772fc355b63e9f332dd38ec51bad0a0b7e36": {
+      "context": "This chunk is from Section 1.2.4 \"Organizational Integration and Management of Risk\" in the NIST AI Risk Management Framework (NIST.AI.100-1). It discusses how AI risks should be integrated into broader enterprise risk management strategies, how the AI RMF can be used alongside other frameworks, and the organizational requirements for effective risk management implementation.",
+      "text_sha256": "aa88e8823bacfdd6c0cff4eef7248555f6f909392cf9fc487a70173f21c5a350",
+      "window_index": 1
+    },
+    "ecba31b1f0dde804537461c90f49b84e8d290b49fe1b04d3f12cffe1ca18c261": {
+      "context": "This chunk from the NIST AI Risk Management Framework (AI RMF 1.0) is part of the Table of Contents section, listing the page numbers and organizational structure for Part 2: Core and Profiles, which includes the four core functions (Govern, Map, Measure, Manage) and AI RMF Profiles, as well as the appendices and tables that follow the main framework content.",
+      "text_sha256": "2f52c4dd6bdd3af3daf2406fce49320ba88cecfb1c64ef4ff6d54c9f828f7f85",
+      "window_index": 0
+    },
+    "f4bdc26655d70a730780db0da65e69e75023fa8d52e4e6cfaa7d101851641958": {
+      "context": "This chunk is from section 3.6 \"Privacy-Enhanced\" of the NIST AI Risk Management Framework (AI RMF) document, which discusses one of the key trustworthiness characteristics for AI systems. The section defines privacy as safeguarding human autonomy and identity, explains privacy-related risks and tradeoffs with other characteristics, and describes privacy-enhancing technologies and methods for implementing privacy-enhanced AI systems.",
+      "text_sha256": "cf96b69dcb2b9ceef2d209e1a2fac1653d79b25b6afdcf92ee6786fcf97b4be1",
+      "window_index": 2
+    },
+    "f7beeff339a75e2a8438ecd76f6cd25fa6fe87d76ce6944c1b527dc3b8c39806": {
+      "context": "This is the document identifier for the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0), published in January 2023 by the National Institute of Standards and Technology.",
+      "text_sha256": "c236364e0b04f73ddac40de0869537ca052298b19fe4f61c016b2c0913260ac1",
+      "window_index": 0
+    }
+  },
+  "doc_id": "nist-ai-rmf",
+  "generated_at": "2026-08-29T22:20:43Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

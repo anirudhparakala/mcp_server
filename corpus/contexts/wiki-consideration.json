@@ -1,0 +1,143 @@
+{
+  "contexts": {
+    "034273efcb863650b30cd1d2c837b9f4dcd12ea9e6ab5639669e564819f6fe22": {
+      "context": "This chunk appears in the \"Consideration > In settlements\" section of the Wikipedia article on Consideration, a legal doctrine in contract law. It illustrates how consideration functions in settlement agreements by demonstrating an example where a tort victim agrees to drop a lawsuit in exchange for partial payment of damages.",
+      "text_sha256": "4132ebe2f8a22cf6b607506ebe6a973fc00a0f1b41741a5fa4ca03eca258290a",
+      "window_index": 1
+    },
+    "119bfca2d89c121e2beeca3d6ed294d2e41a3a00e7f1d835c89d14e7886aaeae": {
+      "context": "This chunk is part of the table of contents and navigation structure in the Wikipedia article on Consideration, specifically listing contract law topics under the sections \"Performance & breach,\" \"Remedies,\" \"Quasi-contractual obligations,\" \"Rights of third parties,\" \"Duties of parties,\" \"Dispute resolution,\" and \"By jurisdiction.\" It provides links to related contract law concepts and does not contain substantive content about consideration itself.",
+      "text_sha256": "0758be3bbc5132a9ea4213fc9cfc5ee95a89238942cdfdc5065f0c183f015635",
+      "window_index": 0
+    },
+    "1d98eb8ee4d011d51c58f10ecbb2469f25bdabef60e16c86a4c30d371533cf72": {
+      "context": "This chunk appears in the Wikipedia article on Consideration under the section \"As an element or a prerequisite,\" which explains consideration as a foundational concept in common law contracts. The section discusses how consideration functions as a binding requirement in contract formation and what legal remedies may apply when consideration is absent.",
+      "text_sha256": "eedc142b669e46668fab26fe436d5ed26a52f84422dd7073f2f379d5c8444e10",
+      "window_index": 0
+    },
+    "2920326c3e1a17f1d50f57d5023b2414695f91b286479a0f8ed28bf9ee9184c3": {
+      "context": "This chunk is from the \"Past consideration\" section of the Wikipedia article on Consideration in contract law. It explains the general rule that past consideration lacks legal value and cannot support contract claims, along with an exception involving duties to third parties and the three conditions established in Pao On v Lau Yiu Long.",
+      "text_sha256": "1efff74f1639380325f0ad4a3d1e0e87234b463fbe5a04a7a4ac01b12d1f1ed9",
+      "window_index": 1
+    },
+    "3859d493110d9e73a9a9b81b54b363b579b001580158446e5acf26bc52b0e09d": {
+      "context": "This chunk is from the \"Monetary value of consideration\" section (section 5) of the Wikipedia article on Consideration, a concept in English common law contract formation. The section explains how courts evaluate whether consideration in a contract must be monetarily equivalent or merely present, using examples like the peppercorn doctrine and nominal consideration amounts.",
+      "text_sha256": "41ddaabec998859d3769eadf24eb5b60a5876639e79090fbc96a3b1c085ab67c",
+      "window_index": 0
+    },
+    "39dde51756cc31a0c795d25c4dd6aee686f8efb1639f4613ccddae14cf8b45b4": {
+      "context": "This section from the Wikipedia article on Consideration outlines the key legal rules governing consideration under English law, including requirements that consideration cannot be illusory, must move from the promisee, must be sufficient though not necessarily adequate, must be whole rather than partial, and cannot be past consideration. It also notes that moral consideration and performance of existing duties are generally insufficient.",
+      "text_sha256": "de0a82d8878c511da34f081c01f06c7cecc7d79df81f9ad7a414c631609231a2",
+      "window_index": 0
+    },
+    "4a1426732c15ff869a4b70e80dc40f5165c5039f7e3e057e9a1e9722fb5f8ead": {
+      "context": "This chunk appears in the Wikipedia article on Consideration (contract law) and contains navigation and language links at the top of the page, showing the article is available in seven languages and providing access to editing, history, and tool functions.",
+      "text_sha256": "83508d6d89bd61c31f6c880d44ee7aa693e921c0372c200934cdd48b704b4672",
+      "window_index": 0
+    },
+    "4fa15ff276629d1b86039c6e51693a6046cdbf2d2a11efe0ed878ae62f449058": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Consideration and contains metadata and navigation elements, including the page revision information, links to related resources like Wikiquote and Wiktionary, and a disambiguation notice. It precedes the main article content that defines consideration as a concept in English common law.",
+      "text_sha256": "b22ae1a73484a794848bad82b05367ee340b6b20890e367250dcc08ff99df596",
+      "window_index": 0
+    },
+    "5197749620027f88bdd570431205e741e8a0588c82756e2eed57dda006594d6e": {
+      "context": "This chunk is from the \"Bundled terms\" section of the Wikipedia article on Consideration in contract law. It explains the legal principle that contracts containing both legally valueless and legally valuable terms remain enforceable, using an uncle-nephew scenario to illustrate how mixed consideration affects contract validity.",
+      "text_sha256": "7f0f841046606797b7c8131d128f844e3d6e1da49914746dd0078da1ae1d1afe",
+      "window_index": 1
+    },
+    "5666dc03be3be65d3711eed3075b9c7a934348707a64da7da333a3e28e4b5626": {
+      "context": "This is the References section of the Wikipedia article on Consideration in contract law, listing the first thirteen legal cases and sources cited throughout the document to support discussions of consideration doctrine, including landmark cases like Foakes v Beer and Pinnel's Case.",
+      "text_sha256": "7f17599b56ac70afa6088fc9fbeb816437f1a2c274d383c7261afc7507cd8ecb",
+      "window_index": 1
+    },
+    "67ff6ae4161ff0055d49caaa5fde0951744c25e5bf25969ff29d3fc085ad86c3": {
+      "context": "This section from the Wikipedia article on Consideration discusses the pre-existing duty rule, which states that a party cannot provide valid consideration by merely promising to fulfill a legal duty they already have. The section explains how this rule applies to various scenarios including criminal law obligations, previous contracts, at-will employment, and settlements, with exceptions noted for accord and satisfaction agreements.",
+      "text_sha256": "88dc991be9959477bec309a0820e3a84ef5e1988ea680e602ceae8a3b1310a82",
+      "window_index": 1
+    },
+    "69d0b14f15017445494890dc420ef1f5ed94985fe215ffea88ff9317b9d8db72": {
+      "context": "This chunk appears in the \"See also\" section of the Wikipedia article on Consideration, which provides cross-references to related topics in contract law including jurisdiction-specific treatments of consideration under English law, American law, and Scots law, as well as the concept of failure of consideration.",
+      "text_sha256": "e19097b69b480095d5757dad7542ca86bbc441a4e0500daf1e1dabe69520c4ab",
+      "window_index": 1
+    },
+    "6a4254fd96a42bdc4b860801da77096355502af3151fcfc2ff18c33a13bfd66b": {
+      "context": "This chunk from the Wikipedia article on Consideration provides the foundational definition and explanation of consideration as a concept in English common law. It appears at the beginning of the main article content, following the table of contents and navigation elements, and establishes that consideration is a promise of value given in exchange for value, required for simple contracts but not special contracts by deed, and is one of six or seven elements of a contract.",
+      "text_sha256": "fafd8be1d7db8612e9775ae72379eff70fa6548968def64480cc090360995f04",
+      "window_index": 0
+    },
+    "72cd44689d5fa86c493fcc2b516700145728243c8eb35640089f5fb1dfc96dbe": {
+      "context": "This chunk appears in the Wikipedia article on Consideration, under the section \"Option contracts and conditional consideration.\" It illustrates how conditional consideration\u2014where performance depends on future events\u2014constitutes valid consideration in contract law through a hypothetical scenario involving a movie script writer and production company.",
+      "text_sha256": "6bc5fc12a3217a6afbd2181b8afb79565a9d3af2f50a54317ad5d33f5594ed6f",
+      "window_index": 1
+    },
+    "8d84d611376753c1691cf59d0d666ef28beff05c4ec2b197ad63a28eab897cc8": {
+      "context": "This chunk is from the References section of the Wikipedia article on Consideration in contract law, listing citations 27-33 that support various legal principles and case law discussed throughout the article, including references to works on the history of contract law and specific court cases cited in the main text.",
+      "text_sha256": "e3f2c4d0b79fa903ce3b16e82576304bc91c4007691faf2db67d9c7a3991b628",
+      "window_index": 1
+    },
+    "9e96796c0bab3996ca2f61eb85bab88980defc0c9485cb549d561e948490c7ea": {
+      "context": "This chunk appears at the end of the Wikipedia article on Consideration, containing metadata and categorization information including authority identifiers, the article's retrieval URL, and category tags related to contract law and legal doctrines.",
+      "text_sha256": "39746533fabe4584c40d26c5a07fb4b25dd8541c8ee5b00762bbd78b4e463fb9",
+      "window_index": 1
+    },
+    "a4f780cd441499f622e32e07f60d164e11e99e4cae1c4e36d05f8c9dd6c0d7d8": {
+      "context": "This is the table of contents for the Wikipedia article on Consideration, a legal concept in English common law. The contents list outlines the main sections and subsections of the article, including topics such as consideration as a contract element, legal rules, history, monetary value, past consideration, and related concepts.",
+      "text_sha256": "063917f5d124059f915c8acf105de6aca05ecf8f9b07a8bc5515083ba0440bb8",
+      "window_index": 0
+    },
+    "a6af2fe6d6a84d85fcda6b7cbe22c508d102325431bb504ea9758a1df9d1cc21": {
+      "context": "This chunk is from the References section of the Wikipedia article on Consideration in contract law. It lists legal cases cited throughout the document, including Stilk v Myrick (supporting the pre-existing duty rule), Hamer v Sidway (illustrating bundled terms), Roscorla v Thomas (regarding past consideration), Chappell & Co Ltd v. Nestle Co Ltd (on what constitutes valid consideration), and Central London Property Trust Ltd v High Trees House Ltd (cited in the Criticism section).",
+      "text_sha256": "de996ad7a5f041f26f1cf707cfac9127e6445793d5d57446d852eb9fe846f288",
+      "window_index": 1
+    },
+    "be651443cc04759376d1727b73ac459de364d64a33c17ab7d188a4d104c63080": {
+      "context": "This chunk is from the \"Criticism\" section of the Wikipedia article on Consideration in contract law. It outlines major criticisms of the doctrine of consideration, including that it creates legal uncertainty and complicates commerce, and discusses how international legal frameworks and legal scholars have rejected or proposed abolishing the doctrine.",
+      "text_sha256": "5cb99c4155c8e99fee939acbe612d05c3d3b649ecff246d860115cf3a6e4823b",
+      "window_index": 1
+    },
+    "c5c67aceefd12d90193acc809818a05972e72ce51a5dc9df4a3a7e3ccf889f53": {
+      "context": "This chunk appears in the \"History and comparative law\" section of the Wikipedia article on Consideration, a legal concept in English common law. It discusses how Roman law-based legal systems do not require consideration, contrasts this with common law jurisdictions, and explains the historical origins of the consideration doctrine in 19th-century English law through the action of assumpsit and 18th-century French legal theory.",
+      "text_sha256": "0a3ef24294bd93081eab990f545b043443d84fefaf49512e8016f9abd6b5666e",
+      "window_index": 0
+    },
+    "d2e7bd52b5b8184647e9f2d8ee9767dd93d24ae7130af9b68b6ecf12a792a822": {
+      "context": "This chunk appears in the Wikipedia article on Consideration, a concept in English common law where a promise of something of value is exchanged for something of value in a contract. The chunk provides a definition and practical example of consideration, illustrating how both parties to a contract must exchange something of value for the contract to be valid.",
+      "text_sha256": "c2fcd3cb3c178064ddbdc9db91bdd11f741e26060f857fa0f1419b69e2626d9d",
+      "window_index": 0
+    },
+    "d48129bf8b6c5acef9e4dae206a8ce8942bceb7fe25ea6195913b73d03d4fd02": {
+      "context": "This chunk is a navigation template from the Wikipedia article on Consideration that organizes contract law topics into categories including Formation, Vitiating factors and defences, Terms and interpretation, and Performance and breach. It appears at the beginning of the article and lists Consideration as one of several elements within the Formation category that are essential to contract law.",
+      "text_sha256": "618d72d9f3e46e6c871b83f0fa586c809c789f56ee74b160a3a365356aaa55b6",
+      "window_index": 0
+    },
+    "d7e3f1b791eb83cd380603700f6630c74f021d10e17089401ed5e0d734c3c8f9": {
+      "context": "This section from the Wikipedia article on Consideration contains explanatory notes that provide examples and clarifications related to the doctrine of consideration in contract law. The notes illustrate when agreements are void due to illegal or harmful considerations, including agreements for unlawful acts, those injurious to public policy, and those restricting personal liberty, as well as discussing the concept of trivial consideration and the established nature of the consideration doctrine.",
+      "text_sha256": "b2a9d016518a2da7b20f8c1292329ed6977790a0e4fbcaa2028caa5c279fa4c6",
+      "window_index": 1
+    },
+    "df919027921411c4b0b1f719906372665baa15be3cad857b1b59bbf41486f6ba": {
+      "context": "This section from the Wikipedia article on Consideration lists legal case citations and references that support the doctrine of consideration in contract law. The references include landmark cases such as Lampleigh v Braithwaite (past consideration), Stilk v Myrick (pre-existing duties), and Pao On v Lau Yiu Long (conditions for past consideration exceptions), as well as citations to legal codes and scholarly works discussing consideration doctrine.",
+      "text_sha256": "7bd86c267fd22eb0ca4d1fe9d4490bcb5c32265a5056d425bab29474aae25291",
+      "window_index": 1
+    },
+    "e60de5493ee8ee5631ad06086ede9c018f87fdb617468eb4357c047f1dfdbe8a": {
+      "context": "This chunk appears in the \"History and comparative law\" section of the Wikipedia article on Consideration, comparing how civil law and common law systems approach contract formation differently regarding the requirement of consideration.",
+      "text_sha256": "d81d836f636e9f97a657f16bdcba03ddf46d3501c59e5d4a68ce7ec025ea8662",
+      "window_index": 0
+    },
+    "ed549097b9d924d1cb1f4883a09ad1ebe3315d0ad6eeae4ac199fcab64876f4e": {
+      "context": "This section from the Wikipedia article on Consideration outlines the legal requirements for valid consideration under the Indian Contract Act, 1872, which remains in force in Pakistan, Bangladesh, and India. It lists seven criteria that consideration must satisfy to generate a contractual obligation, eight conditions that render consideration invalid, and notes a key distinction between English and Indian contract law regarding past consideration.",
+      "text_sha256": "4c8a2524b73c4b03b012d3b6f1b52046627d3237b724d09d42df6809d758150a",
+      "window_index": 0
+    },
+    "fa79cb5c58d30147d68ee5c704010af5a5d5d0e3b5489d90c5e9129dc7e68b85": {
+      "context": "This chunk appears in the Wikipedia article on Consideration, a legal doctrine in contract law. It is located in the \"Bonus clause\" section, which explains how bonus clauses function as a form of consideration in contracts by rewarding contractors for exceeding contractual obligations, contrasting with penalty clauses that impose losses for underperformance.",
+      "text_sha256": "297f4110b62eafb87d22122eee454c6809b95987995d89fb96329b6188b1cce1",
+      "window_index": 1
+    }
+  },
+  "doc_id": "wiki-consideration",
+  "generated_at": "2026-08-29T22:28:29Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

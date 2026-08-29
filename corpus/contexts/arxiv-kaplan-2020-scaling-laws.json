@@ -1,0 +1,313 @@
+{
+  "contexts": {
+    "01b412201892ba7d1acb573e1b9a41468e101117dda292df0c89290255c0c041": {
+      "context": "This chunk appears in Section 6 \"Optimal Allocation of the Compute Budget\" of the Kaplan et al. 2020 scaling laws paper. It introduces the section's focus on correcting for training inefficiencies by adjusting to the critical batch size B_crit (defined in Section 5.1) and determining the optimal allocation of compute between model size N and training data processed, using the L(N,S_min) equation from Section 5.",
+      "text_sha256": "8f2530e6e56bb94daea0feb21fe7770838f920bdcb2fa96ef110fa324b3fa982",
+      "window_index": 1
+    },
+    "01e8d957489fe1668cc5a6ff1639f233fec69f13d35307ce348d4ddb555929f8": {
+      "context": "This chunk from section 1.2 \"Summary of Scaling Laws\" in the Kaplan et al. 2020 paper on scaling laws presents the three fundamental power-law equations that predict Transformer language model test loss as a function of model parameters (N), dataset size (D), and compute budget (C_min), along with related equations for critical batch size and combined N-D dependence. The section establishes the mathematical framework and key exponents (\u03b1_N, \u03b1_D, \u03b1_C_min, \u03b1_S) that characterize how performance scales across multiple orders of magnitude.",
+      "text_sha256": "40c677a610d38c1d8083bc43da22b871d320ff0bdad7cddb54b6a51610b42de1",
+      "window_index": 0
+    },
+    "0417ee42feb738e56bdc60f4eab4577b2187fd373d60ff29d67c1bdaaee8db4c": {
+      "context": "This chunk appears in Section 2.2 \"Training Procedures\" of the Kaplan et al. 2020 paper on scaling laws for language models. It describes the specific training configurations used for the Transformer models studied throughout the paper, including optimizer choice, batch size, number of training steps, and learning rate schedules.",
+      "text_sha256": "000c785d33c8d091555d77e4771efe5b5df05fbd8340831cfa0a8ed668fdab75",
+      "window_index": 0
+    },
+    "050c930972fd4d3a05b1bb795b79ff0823dfe131b6113174c0d2898ad3ff6e23": {
+      "context": "This chunk is part of the References section of the \"Scaling Laws for Neural Language Models\" paper by Kaplan et al. (2020), containing bibliographic entries for sources cited throughout the document, specifically entries for papers on machine learning theory, transformer architectures, and neural network optimization.",
+      "text_sha256": "8a6ad730915f15ee662bade64d31f2e420293941b6b489d4dbeedf0f44085c99",
+      "window_index": 3
+    },
+    "0ee8fb63f19aea44ec0d0e57c836eb12ed22ded19c4896724496a020d2c4064b": {
+      "context": "This is the table of contents from \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), listing the eight main sections and appendices with their corresponding page numbers, providing an overview of the paper's structure covering topics from introduction through discussion and supplementary materials.",
+      "text_sha256": "08b8544402c21573b1d566e6abd21228d25029d9b5e0ca37b7638ea235b30a7a",
+      "window_index": 0
+    },
+    "0f48be6314c250e22df30869a4a786d7be965ee329304819df406fa9248e0762": {
+      "context": "This chunk is from Section 8 (Discussion) of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It summarizes the main empirical findings about power-law scaling relationships between language model loss and model size (N), dataset size (D), and compute (C_min), and discusses implications for future research directions including theoretical understanding, generalization to other domains, and practical considerations for training large models.",
+      "text_sha256": "dcc4918c3c5372b60c39f4ea12784f85dd5132a0f1bf60519daa3e55a204d6e3",
+      "window_index": 2
+    },
+    "126846ed7b7e2e20a13163506a7a838c7b39b7104725f5fa7843f9b7037f6c51": {
+      "context": "This chunk is part of the References section of the \"Scaling Laws for Neural Language Models\" paper by Kaplan et al. (2020), containing bibliography entries for sources cited throughout the document, specifically the final entries covering works on language model pretraining, network architectures, and training optimization.",
+      "text_sha256": "cad22bb46ad04816949a027312da174f1cc5c75ac760d33128b29361681aa4d2",
+      "window_index": 3
+    },
+    "12968ee1a7eeb78860af2a1ec82b069100e5db487071dea99704f52bf5d570f0": {
+      "context": "Section 6.2 \"Predictions from L(N,S_min)\" in the paper \"Scaling Laws for Neural Language Models\" (Kaplan et al., 2020) derives theoretical predictions for optimal compute allocation in language model training. This chunk demonstrates how the L(N,S_min) equation from Section 5 can be used to predict the loss as a function of compute C_min and optimal model size N(C_min), with predictions validated against empirical results shown in Figures 13 and 14.",
+      "text_sha256": "aef90240dbe023b24a2e8f21e37acf4c5a19adfa4f51b991b9b3ff1876dc9acb",
+      "window_index": 1
+    },
+    "13084a63c6f7522415ebb31176db11ab37ea1e5fc4b9d7ad56bb89547bffb5cf": {
+      "context": "This chunk is part of the References section of the Kaplan et al. 2020 paper on scaling laws for neural language models. It contains bibliographic entries for works cited throughout the document, specifically entries [Goo01], [GRK17], and [HAD19] that are referenced in the main text and appendices.",
+      "text_sha256": "9e8b78e72c918ea5b0c960a7e32d374486f4a44504658b941dfb745d8e032c74",
+      "window_index": 3
+    },
+    "161511d5575d54fd218fe04adb32c55f4c96c8fb5faa5c30754d3811022a5568": {
+      "context": "This chunk lists the author affiliations and email addresses from the title page of \"Scaling Laws for Neural Language Models,\" a 2020 paper by Kaplan et al. that empirically investigates how language model performance scales with model size, dataset size, and compute budget.",
+      "text_sha256": "ec311b11b0ce150fbdf896ccbe287366a4fd29e3c65be79713c4f1d8ea326380",
+      "window_index": 0
+    },
+    "1c6e1196ecda6643a7cdb40b2557e958ce145a69174b38a0f8dcdb6c50782b72": {
+      "context": "This chunk appears in Section 3.2.2 \"Generalization Among Data Distributions\" of the Kaplan et al. 2020 paper on scaling laws for language models. It discusses how Transformer models trained on WebText2 generalize to other text distributions and presents findings about transfer learning performance across different datasets.",
+      "text_sha256": "5f195db31f3fd734ecc64347ef67cefb9146f2ac5bb7a0eab9dd84b0dcaa1038",
+      "window_index": 0
+    },
+    "1e4c8ffc38c46776529b27fa27e01caec327b22452246802e623cdb9a77a0b3d": {
+      "context": "This chunk appears in Section 2.1 \"Parameter and Compute Scaling of Transformers\" of the Kaplan et al. 2020 paper on scaling laws for language models. It defines the key architectural hyperparameters used to parameterize Transformer models in their study, establishes the notation for model size N as non-embedding parameters, and provides the formulas for computing parameter counts and FLOPs per token across different Transformer components, which are foundational to understanding the scaling relationships studied throughout the paper.",
+      "text_sha256": "9d3232585537a8bbf8db79d8dcc24badffe35d392ccbdad17787368d676149f8",
+      "window_index": 0
+    },
+    "213f01273854635a9bc59005180c8e573ddee72625e94e2f3d470b3adc93b151": {
+      "context": "This chunk is from section D.6 \"Learning Rate Schedules and Error Analysis\" in the appendix of the Kaplan et al. 2020 paper on scaling laws for neural language models. It discusses experimental findings on how learning rate schedules affect model performance, presents a rule of thumb for setting learning rates based on model size (parameter count N), and notes that power-law fits better describe performance trends than logarithmic functions.",
+      "text_sha256": "e608dd81c5f14f888fdacbc214d54b1d57089ce0b9fb28dfa4e69fe91e2085a4",
+      "window_index": 3
+    },
+    "2186ec906994d68d0e53ee57f47e4a7ec127f867e36a2bd28a9fc9484a7d20ea": {
+      "context": "This is the Acknowledgements section of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), which lists the individuals thanked for their contributions to discussions and feedback during the development of the research on scaling laws for transformer language models.",
+      "text_sha256": "3ee3c66e4fca3cfcaeef075e2881b5d17b6958eede035c1fea04a6b44f70935e",
+      "window_index": 2
+    },
+    "24fa0ec1c84a88f218635bf04398cf87f5d05f14416342bce93f87a5abdf3fc9": {
+      "context": "This chunk appears in Appendix D.2 titled \"Universal Transformers\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It compares the scaling behavior of standard Transformers versus recurrent Transformers that reuse parameters, examining their performance as functions of model size (N) and compute (C).",
+      "text_sha256": "f929ada12e61b0a0a2f59ec0b418781dbd08bd3a65ca56766619c77a34765685",
+      "window_index": 2
+    },
+    "2bded42061e854123ebabd3c55d34a911c2c5e796fd96bb0dfae360c6ccbabec": {
+      "context": "This reference appears in the References section of the Kaplan et al. (2020) paper on scaling laws for neural language models. The citation to Sennrich et al.'s work on subword units is referenced on page 6 of the document, likely in connection with tokenization methods used in the language model experiments.",
+      "text_sha256": "1d4ebbe4870c2943060839a3055b2e4d6948b45500e9a6b7f975345a45c664eb",
+      "window_index": 3
+    },
+    "319544fb18c34bdb9ee2b272fc3897af0fc6142898ecf23cee68b985e8b5ba4f": {
+      "context": "This chunk appears in Section 1 (Introduction) of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It establishes the motivation for studying language modeling performance and introduces the paper's focus on empirically investigating how language modeling loss depends on model architecture, model size, computing power, and dataset size, with particular emphasis on the Transformer architecture and power-law scaling relationships.",
+      "text_sha256": "538cef7c97345c259f17f99fd2bc29fce900d81742f57e81a249d43dabcd587f",
+      "window_index": 0
+    },
+    "31fc08d362ae7b72f2909013b05c0af661ceadd0cb18c317a8a5e395e7389c34": {
+      "context": "This chunk appears in Section 3 \"Empirical Results and Basic Power Laws\" of the Kaplan et al. 2020 paper on scaling laws for language models. It describes the experimental methodology and initial findings showing that Transformer performance depends weakly on architectural shape parameters when non-embedding parameter count N is held fixed, supporting the paper's key finding that performance depends strongly on scale rather than model architecture details.",
+      "text_sha256": "ea0ae17c715dfaf5cce6102df54942531e3208ac932825b5440be79200783fbe",
+      "window_index": 0
+    },
+    "340d10c1bb5da60b55b89e103079684e32853614f111d91013e6dd4b071a156a": {
+      "context": "This chunk appears in Appendix A of the Kaplan et al. 2020 paper on scaling laws for neural language models. It provides a comprehensive summary of the key power-law scaling relationships between loss and various training parameters (model size N, dataset size D, compute C, batch size B, and training steps S) that are derived and empirically fitted throughout the paper, along with the fitted exponent values and optimal parameters for compute-efficient training.",
+      "text_sha256": "b484095124cf851ac5b78db5c661cf6a706e4a972b24543639091070bb036fc0",
+      "window_index": 2
+    },
+    "38453efdabe0bd266b42a8fac8ba95eef5a1220ade8c1d20bba7fe8bc48354c0": {
+      "context": "This is the List of Figures section from the appendix of the Kaplan et al. 2020 paper on scaling laws for neural language models. It provides a table of contents for figures 18-24, including Figure 22 on learning rate schedule scans (discussed in section D.6), Figure 23 on power-law versus logarithmic fits (discussed in section D.7), and Figure 24 on generalization versus network depth (discussed in section D.8).",
+      "text_sha256": "e988034fbd5b26d9c4c9a7fcb6a5f31f0af11d311accd49dd5e50784bce9ef06",
+      "window_index": 3
+    },
+    "3f56227624b16c76c35169f590ce292e3470fb887e4eef359bc9a9e5a12417e2": {
+      "context": "This chunk is part of the References section of the Kaplan et al. 2020 paper on scaling laws for neural language models. It contains bibliographic entries for sources cited throughout the document, specifically covering references [DGV+18] through [Goo01], which are cited in various sections discussing generalization, optimization, and language modeling experiments.",
+      "text_sha256": "48cb1cba29cdcf3c433789c8b969d0bcd9897f14720726c8578eea15ed29cc96",
+      "window_index": 3
+    },
+    "3f67b06067ec17d74bd7be641cdb2573785fb499ef0316b6b2ef559eff5b9e55": {
+      "context": "This chunk appears in Appendix D.4 \"Sample Efficiency vs Model Size\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It discusses how larger Transformer models achieve better sample efficiency and faster training, presenting empirical evidence from Figures 19-21 showing the relationship between model size, training steps, and loss across different token positions in the context window.",
+      "text_sha256": "9bd6a1c9645b14bd5ed3e60e2584d85b82a323717e2898014ff4231b8d3b9f05",
+      "window_index": 2
+    },
+    "4502a7cfc1cbe973fd83f591c96dda37f2e0522df9cf1dd26a84ad2a74125a84": {
+      "context": "This notation section appears in the introduction of the Kaplan et al. 2020 paper on scaling laws for language models. Section 1.3 defines key variables and symbols used throughout the paper to describe language model performance, including loss metrics, model parameters, compute budgets, dataset sizes, and power-law exponents that characterize how performance scales with these factors.",
+      "text_sha256": "0801dc4f20c369ce15b247a04cdba92f29879ac2827e1a2d9eab1d354d94c22d",
+      "window_index": 0
+    },
+    "4a62bf50c9837dddf03bc1aa31848d6c732a1e883d8b5c56756ec3935ee79565": {
+      "context": "This chunk appears in Section 5.3 \"Lower Bound on Early Stopping Step\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It discusses how the scaling law L(N,S_min) from Section 5.2 can be used to estimate when early stopping should occur during data-limited training, deriving an inequality that relates the early stopping step to overfitting and the converged loss at infinite data.",
+      "text_sha256": "73d14b42e29948ac62a6238768f6bb81448e29dc20d4fcc79d1f1346f3cf2c25",
+      "window_index": 1
+    },
+    "4d27a11a05e682ccba88187ffa4cbc7e5b41fb930145da9384ddc1404d83b35a": {
+      "context": "This chunk appears in Section 2.3 (Datasets) of the Kaplan et al. 2020 paper on scaling laws for language models. It describes the WebText2 dataset used for training the Transformer models studied throughout the paper, including its composition, size, tokenization, and test/validation splits.",
+      "text_sha256": "fac9c1313c2ec3555745b6177814d54e8749cd0042a0a1482bda1c32ac3fff9c",
+      "window_index": 0
+    },
+    "53b58ff4be6344d50e948660bfa1243c449f44e6edca85a88b0c5c77e361bc21": {
+      "context": "This chunk appears in Appendix B of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), specifically in section B titled \"Empirical Model of Compute-Efficient Frontier.\" It introduces a notational convention used throughout the appendix regarding the adjustment of compute (C), training steps (S), and the compute scaling exponent (\u03b1_C) to the critical batch size, which is essential for understanding the subsequent derivations of optimal training parameters.",
+      "text_sha256": "5035ab103de052b15467d25e4118c920c040725dd55cbba79efbc7f9b9bdec53",
+      "window_index": 2
+    },
+    "58adb712abd571131e01522fe6a117e19fffd374fd1bf225ebe1cf1240a89fe0": {
+      "context": "This chunk appears in Section 5.1 \"Adjustment for Training at B_crit(L)\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It explains the critical batch size concept from prior work and how it applies to Transformer language models, establishing the theoretical foundation for optimizing the allocation of compute between model size and training time discussed in Section 6.",
+      "text_sha256": "b2f2c4e1c5cadaf8811bb267d9513eef19a95fa06f54d1c3cf0d28c445ce0527",
+      "window_index": 1
+    },
+    "5a59019cb8f428147ddb54efb86e09beb2a0a3495b40a14b6b35fdb051cc0058": {
+      "context": "This chunk is part of the References section of the Kaplan et al. 2020 paper on scaling laws for neural language models. It contains bibliographic citations for works cited throughout the paper, including references to optimization methods, neural network architectures, and empirical studies on deep learning scaling.",
+      "text_sha256": "0f12b85935f023ce95a09368a32bcba7b01a6ac9d082158a74585a4d081fcb44",
+      "window_index": 3
+    },
+    "69d0907f484a8d38dd9d5851a0d20b02553da39549c97a9d9273537bc3614a5e": {
+      "context": "This chunk is the introduction to Section 5 \"Scaling Laws with Model Size and Training Time\" in the Kaplan et al. 2020 paper on scaling laws for neural language models. It outlines the section's goals: defining a universal training step S_min using prior work, fitting loss as a function of model size N and training time via Equation (1.6), and using these results to predict optimal compute allocation between model size and training duration.",
+      "text_sha256": "d6a767c41c3b22549fbd719bb769460be93a609ac033e1760508b87b9519d331",
+      "window_index": 1
+    },
+    "6be24d19ba5efc811f3f430c8476b301a5fa152bea1ee6a79a9704a732f35449": {
+      "context": "This chunk lists author affiliations from the title page of the paper \"Scaling Laws for Neural Language Models\" by Jared Kaplan and colleagues, indicating the institutional affiliations of the research team at Johns Hopkins University and OpenAI.",
+      "text_sha256": "4d210a7b713bdfcc74ecb59cf0ccc81409a33ca73b6b80506ca2941d99cb57f6",
+      "window_index": 0
+    },
+    "71317344573ba02a2d813fa73fd87bcf77ce8322b02d02e5829a8843668c3273": {
+      "context": "This chunk is part of the References section of the \"Scaling Laws for Neural Language Models\" paper by Kaplan et al. (2020). It contains bibliographic citations for works cited throughout the document, including references to papers on neural network training, generalization, language models, and deep learning optimization that support the paper's analysis of scaling laws.",
+      "text_sha256": "aa53e17bfc1f7a158b1fa7d2273a79955a75e7d64175f06c7558bfde8db177a6",
+      "window_index": 3
+    },
+    "756941d5aec8776fc186653be16f9f7b5782082fa5beb2cb99f4f7670a02e7e6": {
+      "context": "This chunk appears in Section 3.1 \"Approximate Transformer Shape and Hyperparameter Independence\" of the Kaplan et al. 2020 paper on scaling laws for language models. It describes empirical findings showing that Transformer architecture hyperparameters like layer depth, attention heads, and feed-forward dimension have minimal impact on performance when total non-embedding parameter count N is held constant, supporting the paper's key finding that performance depends strongly on scale but weakly on model shape.",
+      "text_sha256": "287028060bd9f68c90bd9c14414923f83cf2f022bf29504158f04d88ef399c8e",
+      "window_index": 0
+    },
+    "78342ebc11b3a882fb1a9489ba3e18e5557e29ecd9ba6e5b8ade9ceb60cfc3a6": {
+      "context": "This chunk appears in Section D.5 \"Context Dependence\" of the appendix to the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It discusses how language model loss scales as a power-law function of token position within a context window and compares performance across different context lengths (n_ctx values), relating to the broader findings about scaling laws with model size and compute presented throughout the paper.",
+      "text_sha256": "7a5590686414f10d0f15f541647d792d90077b7240933d6dfc6870796237485f",
+      "window_index": 2
+    },
+    "79f0f420bc12e293b67ec2991cdead58b2e80693247a80a319f1f3611da9095b": {
+      "context": "This chunk appears in Appendix B.1 \"Defining Equations\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It derives the mathematical framework for compute-efficient training by starting from Equation (1.6) and establishing the conditions for optimal model size and training steps given a fixed compute budget, with references to the critical batch size defined in Equation (5.2).",
+      "text_sha256": "76a6b17855844f5ef5e253c18ac2ccc8c3fdd509c12fb6bae3a3c91d4ca5f782",
+      "window_index": 2
+    },
+    "7ac6d88e4e6d3ff763e6511fdcc906ee3ff88ac65663fcf27012799fab78703d": {
+      "context": "This chunk is Section 1.1 of the \"Scaling Laws for Neural Language Models\" paper by Kaplan et al. (2020), presenting the key findings summary that outlines the main empirical discoveries about how Transformer language model performance scales with model size, dataset size, and compute budget.",
+      "text_sha256": "a64090fad678536ee6cebc3d16c6e3a9f0e32812e2311d1453c04c403dbdb0e4",
+      "window_index": 0
+    },
+    "7c1fb716b18f9b3bfb483554b45ac9c22152c51efaeccf51c04d15a9cede8310": {
+      "context": "This chunk is from the List of Tables section in the appendix of the Kaplan et al. 2020 paper on scaling laws for neural language models. It provides an index of tables referenced throughout the document, including tables for parameter and compute counts for Transformers, fits to loss functions L(N,D) and L(N,S), key trend equations, and trends for compute-efficient training, along with the beginning of the References section listing cited works.",
+      "text_sha256": "2c142e11a299e6c13612161f9dd11e2a6fea20ec5f9206c079ac270550b39f6b",
+      "window_index": 3
+    },
+    "7ee09168e796f7259c310f280dda45d1245af2f4b54076b2b5f141729ed030b1": {
+      "context": "This figure caption appears in the Introduction section of \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), illustrating the key finding on optimal allocation of compute budget discussed in Section 6 and summarized in the abstract. The figure demonstrates how to distribute increased computational resources across model size, batch size, and training steps for maximally compute-efficient training.",
+      "text_sha256": "ccbda224f2fa3720441a912fdfff54000a8b39940928cbffd8bfe02463c8abb5",
+      "window_index": 0
+    },
+    "8a64b8f9435371a86564bed72c0eb102c347a6d8377fcbb92347f442d5461ba2": {
+      "context": "This chunk appears in Section 3.2.1 \"Comparing to LSTMs and Universal Transformers\" of the Kaplan et al. 2020 paper on scaling laws for language models. It compares the performance of LSTM and Transformer architectures as functions of non-embedding parameter count N, and discusses recurrent Transformers, building on the empirical scaling results presented in Section 3.2 regarding how performance depends on model size.",
+      "text_sha256": "fc374493a4932e9fa89510536e9374481ab620bbc05d6566439dfc3c1f3087b2",
+      "window_index": 0
+    },
+    "8d6a23b17b969ccf986360a6684992eab80a22b3ad1a651f7d5814167500e421": {
+      "context": "Section 7 (Related Work) of the Kaplan et al. 2020 paper on scaling laws for neural language models, which reviews prior research on power-law scalings in machine learning and compares the paper's findings on language model scaling with model size, dataset size, and compute to related work in density estimation, random forests, EfficientNets, and studies of generalization in overparameterized models.",
+      "text_sha256": "72018c2a48f83963386aa92199f07606907a0235ab61a00541b8400916a8d7cf",
+      "window_index": 2
+    },
+    "8fd19b8fc31cf9681fbc537614a8e71aefdc33401f0f274b692bda13e625bef9": {
+      "context": "This chunk is from Section 5.2 \"Results for L(N,S_min) and Performance with Model Size and Compute\" in the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It presents empirical fits to Equation (1.6), which describes how loss depends on model size N and training time (measured in steps S_min) in the infinite data limit, and introduces Table 3 with the fitted parameters for the power-law scaling exponents and constants.",
+      "text_sha256": "0005043d5094fdda6dde284d04e3763f211bd32e9aadc803a1e1ac5abe304df8",
+      "window_index": 1
+    },
+    "90393d89aa72598bf61faeb7bb12e608560d1fb13ab27785108cf3e584c43c8d": {
+      "context": "This chunk appears in Appendix B.4 \"Suboptimal Model Sizes\" of the Kaplan et al. 2020 scaling laws paper. It derives expressions for the compute cost of using suboptimal model sizes relative to the compute-efficient frontier, showing the trade-offs between model size, training steps, and total compute budget when deviating from optimal scaling.",
+      "text_sha256": "fc7628eae732cb4cb440f6bbb0228f8d29cfad7d103e1881d1b19394745255c3",
+      "window_index": 2
+    },
+    "90731f5c60319adffdbea78904170f94f19a4c07ec8060d26c6e73fbf4825c16": {
+      "context": "Section 4.2 of the paper \"Scaling Laws for Neural Language Models\" presents empirical results for fitting the loss function L(N,D) to data varying both model size N and dataset size D. This section reports the fitted parameters for Equation (1.5) using 10% dropout regularization and early stopping, discusses the quality of the fit across different dataset sizes, and derives relationships between dataset size and model size needed to control overfitting in language model training.",
+      "text_sha256": "16f752efc652bde4ee9065844841b60811725451a1ad8e09761013feca4fae33",
+      "window_index": 1
+    },
+    "9f7d913e8fac971efe4f4dadd4e2cc85ba4c1142c15cdef1e9d59be14f98d9f6": {
+      "context": "This chunk is from Section B.2 \"Efficient Training\" in Appendix B of the Kaplan et al. 2020 paper on scaling laws for neural language models. It derives the optimal loss and model size as functions of compute budget for compute-efficient training, building on the defining equations presented in Section B.1 and the power-law relationships established in the main paper (Equations 1.5 and 1.6).",
+      "text_sha256": "867e25bbcac481ac9e8f974016a885afbc1c93b72f92b6a88e0fcc180e0ac6df",
+      "window_index": 2
+    },
+    "a523719a865a2612e174b40aa4473976d3eb8aeaaaf06cfdb8f74bc00c4340d1": {
+      "context": "This chunk appears in Section 3.2 \"Performance with Non-Embedding Parameter Count N\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It presents empirical results showing how Transformer language model performance scales with the number of non-embedding parameters N, demonstrating power-law relationships across different model sizes trained on the WebText2 dataset and tested on multiple text distributions.",
+      "text_sha256": "9f86697bb21025717801fb4c3b6ff36ef2d7c9a60d959520ada977b5dddc4ecb",
+      "window_index": 0
+    },
+    "a686590169a19873399b8669c64d2c9609c2434f0462ad647c20d096dbf3d4ba": {
+      "context": "Section 3.3 of the paper \"Scaling Laws for Neural Language Models\" presents empirical trends for test loss as a function of dataset size and training compute. This chunk describes experiments training a 36-layer, 1280-embedding model on WebText2 subsets, introduces the compute formula C = 6NBS, and explains how power-law relationships fit the observed performance trends, noting that results use fixed batch size and will be refined later using adjusted compute values.",
+      "text_sha256": "4fb1b0d4591e975c570a039eb69de3bff28254f7c4c3504962038fdeefd5820a",
+      "window_index": 1
+    },
+    "a6b80b0cb447244e643f8ebc728d2571b10dad08653b5b09d4f271469f0bdcc4": {
+      "context": "This chunk is part of the References section of the \"Scaling Laws for Neural Language Models\" paper (arxiv-kaplan-2020), listing bibliographic citations for works cited throughout the document, including references to papers on data parallelism, adaptive learning rates, model scaling, and neural network architectures.",
+      "text_sha256": "8224fd3cfd2e96f1b516fdaf3a5a5337e96caab832c5d722cc6eee50b8e03446",
+      "window_index": 3
+    },
+    "a845e0a3d7b5f7f752a22ce89f00239204c78c7f0044b8e92a24a8618ae4bdc4": {
+      "context": "This chunk appears in section D.7 \"Fit Details and Power Law Quality\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It discusses the methodology for fitting power-law functions to performance metrics L(N), L(C), and L(D), which represent loss as a function of model parameters, compute, and dataset size respectively, and explains exclusion criteria for certain model sizes in the fitting process.",
+      "text_sha256": "bfae7a132ddedccd833c013d082d44bd2be36697329686adc821086a4d6bf135",
+      "window_index": 3
+    },
+    "a8652e0e0c3345ca4479d285ec24ff924834166f218ea74d99784646d5924848": {
+      "context": "This is part of the \"List of Figures\" section in the Kaplan et al. (2020) paper on scaling laws for neural language models, providing a comprehensive index of all figures referenced throughout the document with their corresponding page numbers.",
+      "text_sha256": "13d207b175e42e28b0cae2799cab6ba9aed7c47b2f1989d22067ab9a193acd2c",
+      "window_index": 3
+    },
+    "a8bd71aa9308b142cf29ffcef53d49a1f137ce62a78659e4cc51e6968e05fcb9": {
+      "context": "This chunk is from Section 4.1 \"Proposed L(N,D) Equation\" in the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It explains the three theoretical principles underlying the parameterization of the loss function L(N,D), which models test loss as a function of both model size N and dataset size D (in tokens). The section justifies why this particular formulation was chosen and how it satisfies requirements for rescaling, limiting behavior, and analyticity.",
+      "text_sha256": "a54fd8b52c6d64eb136f3ab8cdd3202f449fbf52321d0920572771e4d19ed2ee",
+      "window_index": 1
+    },
+    "b727245655c6069602ab6efb764e757d4f90cabe7880b800d369acbfafa38de5": {
+      "context": "This chunk appears in Appendix D.1 titled \"Early Stopping and Test vs Train\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It references Figure 16 and the early stopping analysis from Section 5.3, which examines the relationship between overfitting, early stopping steps, and performance across different dataset sizes.",
+      "text_sha256": "de8035cd367c5a5b5b7a01cc8656a7cb72f3073b5b1583148ac546c60ba5cd70",
+      "window_index": 2
+    },
+    "bfc2cd198e6b28a854680d3cabbbee2af428c27e1bcc994eb76efa13b8dca7d4": {
+      "context": "This chunk is from Section 6.3 \"Contradictions and a Conjecture\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It discusses the apparent contradiction between compute-efficient training scaling laws L(C_min) and data-limited scaling L(D), analyzing their intersection point and conjecturing that it may represent the maximum performance achievable by Transformer language models before scaling laws break down.",
+      "text_sha256": "5ab254bdd68e46339cd05d68e7b90e3b0b5b7a6935675a7f5c09e23ff7737173",
+      "window_index": 2
+    },
+    "c75be473019c064fc001f4ff0ec503000df862425fef88f01a98c691c3e57f5b": {
+      "context": "This chunk appears in Section 2 (Background and Methods) of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), describing the datasets and model architectures used in their empirical study of language model scaling laws. It specifies the training data (WebText2), tokenization approach, loss metric, and the primary model types (Transformers, LSTMs, and Universal Transformers) investigated throughout the paper.",
+      "text_sha256": "f43853e0bc894493ef4b75268810aa1932671574b9802a9f63b5632e85d13853",
+      "window_index": 0
+    },
+    "cedbd6fd2761ece86bd84414cf9ac3e0ab04d962d4118599061a940972ee8457": {
+      "context": "This chunk appears in Section 6.1 \"Optimal Performance and Allocations\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It discusses how to determine the optimal model size N(C_min) for a given compute budget C_min, and derives scaling relationships showing that optimal language model scaling should predominantly increase model size while keeping training steps relatively constant.",
+      "text_sha256": "5f8e0e1b7ccb2123551778a90f20b879122656a52aae09534d7462745fed8363",
+      "window_index": 1
+    },
+    "d662dc4fedfb26105050ef58a912f64b5629f590d45b86a69c9fc2bebce9ce39": {
+      "context": "This chunk is the introduction to Section 4 \"Charting the Infinite Data Limit and Overfitting\" in the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It transitions from the basic scaling laws presented in Section 3 to the study of how model size N and dataset size D interact, introducing Equation (1.5) which describes the joint scaling of test loss with both parameters.",
+      "text_sha256": "77f1bef05cf0145667cd79cdda81a7c5cd73353358767f3151f009efc5c20956",
+      "window_index": 1
+    },
+    "eb77ede500c49a7a0da8d169786a01c9fcf79fbad224484bd81458ec90323aed": {
+      "context": "This chunk appears in Section B.3 \"Comparison to Inefficient\" of the appendix in the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It compares compute-efficient training procedures to typical training approaches by defining a convergence factor and quantifying the computational savings achieved through efficient training strategies.",
+      "text_sha256": "c1a6c232cbcebb61a78d02bf6877159bfc2b7092ccca55f4c8f3d7856b3fb325",
+      "window_index": 2
+    },
+    "f3a5e20e9bddb80b064aa683cd2a75d7790a9c61eaceeaf9181b18a27361bdd4": {
+      "context": "This chunk appears in Section 1.2 \"Summary of Scaling Laws\" of the Kaplan et al. 2020 paper on scaling laws for language models. It presents the key findings about optimal allocation of compute budget when training Transformer models, deriving predictions from Equation (1.6) about how model size, batch size, training steps, and dataset size should scale with available compute, and discusses the implications for sample efficiency and practical training considerations.",
+      "text_sha256": "e98a7700618b0d8f80573a5583ea8ad04731fbf690911ea0d2f7d04a64490016",
+      "window_index": 0
+    },
+    "f52191bfa458fde57f31989e4330c8d605428ad554cd2ec1221c9e63ef64056c": {
+      "context": "This chunk appears in Appendix D.3 \"Batch Size\" of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020). It describes the methodology for measuring the critical batch size B_crit(L) using empirical data and fits to Equation (5.1), which is a key parameter in the paper's analysis of compute-efficient training for Transformer language models.",
+      "text_sha256": "230f96235528a5ef103ccbdc5f44d986cc5489c2620cbaf78b3ced1596176ed4",
+      "window_index": 2
+    },
+    "f6a649ac0b4ca53df614ee4f84750e3865dc80d72fb0a376d2e382caec4ea4f4": {
+      "context": "This chunk appears in Appendix C of the paper \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), which discusses limitations and caveats to the empirical scaling laws for language model performance presented throughout the paper. The section lists six major caveats regarding theoretical understanding, critical batch size predictions, small data regime exploration, compute estimation, hyperparameter tuning, and learning rate selection that could affect the validity and applicability of the proposed scaling relations.",
+      "text_sha256": "71b1df61c40f48ab144f1d2bccffb05099fdae0d82274330b625d43e9b35c820",
+      "window_index": 2
+    },
+    "f92e3456023423b36f172f79690cb90a42b413f255d64684b53cb6f666d7ffa0": {
+      "context": "This is the abstract and contributions section of \"Scaling Laws for Neural Language Models\" by Kaplan et al. (2020), a paper studying empirical scaling laws for Transformer language model performance on cross-entropy loss as a function of model size, dataset size, and compute budget.",
+      "text_sha256": "016c1c83738a62c2275b2f510ec3a51390d977baa0102df60e54bcd4c3918a63",
+      "window_index": 0
+    },
+    "f942adfa636a5b64da0f12c36482d3aedd758a237366af6f6bfe0abb7514c67e": {
+      "context": "This chunk appears in section D.8 \"Generalization and Architecture\" of the Kaplan et al. (2020) paper on scaling laws for neural language models. It presents findings on how network depth affects generalization performance across different datasets when model parameter count is held constant.",
+      "text_sha256": "8d3346500e7a0a0a492816c04097282ef705aa908bae5bf239539831172732fe",
+      "window_index": 3
+    },
+    "f9430a164b9baa46c66c5eac06598f14deeba741f4f179389e37f1ee354ebd29": {
+      "context": "This chunk appears in Section 6.3 \"Contradictions and a Conjecture\" of the Kaplan et al. 2020 paper on scaling laws for neural language models. It discusses how to interpret the leveling off of the loss function L(C_min) by introducing artificial noise to the training dataset, and explains why the critical intersection point identified in Equation 6.8 remains meaningful even after performance plateaus.",
+      "text_sha256": "f50076abff165e8b44d27f0990c042f0194aeb435afe07f855dcf969daf3497e",
+      "window_index": 2
+    }
+  },
+  "doc_id": "arxiv-kaplan-2020-scaling-laws",
+  "generated_at": "2026-08-29T21:50:33Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

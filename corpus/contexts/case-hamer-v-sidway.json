@@ -1,0 +1,33 @@
+{
+  "contexts": {
+    "00c7b3fb219366240f7c64253717274d705d801e80ffcf41762c4050e6206466": {
+      "context": "In Hamer v. Sidway, a New York Court of Appeals case decided in 1891, this section of the Opinion of the Court discusses why defendant's cited cases are inapplicable to the consideration question at issue, then addresses the Statute of Frauds defense and establishes that the uncle became indebted to his nephew on January 31, 1875, before presenting the nephew's letter demanding payment and the uncle's subsequent reply.",
+      "text_sha256": "e14259c2330ac77553d8129de25ee08c45713644ac0f3f94a26fffe8181a903c",
+      "window_index": 0
+    },
+    "01e7b47fd0ddb6294686f0f2f289b394540c9ce4fd9149ed9005edc8d1fb126d": {
+      "context": "In Hamer v. Sidway, a New York Court of Appeals case from 1891, this section of the opinion applies the legal definition of consideration to the facts of the case and cites supporting precedents. The court explains that the nephew's forbearance from using tobacco and liquor constitutes valid consideration for the uncle's promise of $5,000, even if the forbearance benefited the nephew, and then discusses similar cases including Shadwell v. Shadwell, Lakota v. Newton, Talbott v. Stemmons, and Lindell v. Rokes to support this position on consideration in contracts.",
+      "text_sha256": "9c11dadb55a61cc6ea3c375deb209f69da6b5ba63f335d2217e37576eea42373",
+      "window_index": 0
+    },
+    "4d8920ad38d6b45015ae351b3cb4d3b1e25ab0bc06281177d0dfc0338338a250": {
+      "context": "This is the opening section of Hamer v. Sidway, a New York Court of Appeals decision from 1891, presenting the central legal question and the court's analysis of contract consideration. The chunk establishes the factual dispute\u2014whether William E. Story's promise to pay his nephew $5,000 for abstaining from liquor, tobacco, swearing, and gambling until age 21 was supported by valid consideration\u2014and sets forth the legal framework defining consideration through multiple authoritative sources, including the Exchequer Chamber definition and scholarly authorities on contract law.",
+      "text_sha256": "15ab060085d4e2cdef4614ad621e6d0f6a6b36d543f5b1d8279cf5168e7c928c",
+      "window_index": 0
+    },
+    "5695c6cfe210ba311d85514bdd5e49c1069defedaf98c1666decfc0faf70c0d2": {
+      "context": "In Hamer v. Sidway, a New York Court of Appeals case decided in 1891, this section from the Opinion of the Court analyzes whether the uncle's letter created a trust relationship rather than a simple debtor-creditor relationship, which is critical to determining whether the plaintiff's claim is barred by the Statute of Limitations. The court examines the uncle's language and intent in his February 6th letter responding to his nephew's demand for the promised $5,000, ultimately concluding that the letter established a valid trust.",
+      "text_sha256": "fa4f60b4bcd5fdcd6610f3bfc954e5a55da0a63cbe454eb4205fa35a18068898",
+      "window_index": 0
+    },
+    "d534fcef9df8885106111b747b188d32faa1a7d2ef5318d5e9f5b3bf919854fb": {
+      "context": "In Hamer v. Sidway, a New York Court of Appeals case from 1891, this section presents the uncle's February 6 letter responding to the nephew's demand for the promised $5,000 upon reaching age 21, and analyzes whether the uncle's letter and the nephew's assent created a trust relationship or merely a debtor-creditor relationship, which determines whether the action is barred by the Statute of Limitations.",
+      "text_sha256": "3ac8b76c967b0368f7d557ad8d3d8f991406e168bdd76175c3bc762ba4a09e1f",
+      "window_index": 0
+    }
+  },
+  "doc_id": "case-hamer-v-sidway",
+  "generated_at": "2026-08-29T22:26:10Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

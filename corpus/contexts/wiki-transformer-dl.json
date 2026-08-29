@@ -1,0 +1,588 @@
+{
+  "contexts": {
+    "020864fe107ee059228eea9eee2ccfb972af0309d0d5aca91d8c94f62221500c": {
+      "context": "This chunk appears in the \"Attention with seq2seq\" subsection of the History section of the Wikipedia article on Transformer (deep learning architecture). It describes Google Translate's 2016 transition to Google Neural Machine Translation, exemplifying the practical application of seq2seq models with LSTM components before the introduction of transformer architecture in 2017.",
+      "text_sha256": "e4fe7a7ab2a19d0a5be42c8436398ad4599ef464861bbe86667960e2141def41",
+      "window_index": 2
+    },
+    "02d213ad23eebd0b4fe312dd113566793f610042d38aadafb0fa1af427777baa": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning) under the \"Subsequent work\" section, specifically within the \"Efficient implementation\" subsection on \"Speculative decoding.\" Multi-Token Prediction is presented as an alternative technique to speculative decoding for accelerating token generation in transformer models by trading accuracy for speed.",
+      "text_sha256": "27d44133f7e68cc8552bb02ca6eed329b0c4725e226f75734407a3491f02b031",
+      "window_index": 5
+    },
+    "03b2bce7f3451e8c2f8b2f49bc50f7424269aa8dc68bef14dc8086bffeec057a": {
+      "context": "This chunk is the \"See also\" section from the Wikipedia article on Transformer (deep learning architecture), listing related topics and concepts including seq2seq, neural network circuits, Perceiver, Vision transformer, large language models, BERT, generative pre-trained transformers, and T5.",
+      "text_sha256": "48d099e86327c823ebc3c44a5e02da21e627af0939b030a0fd7abbed9f4b6868",
+      "window_index": 5
+    },
+    "06f852946b89be77e095a099301e1825e800c03078b75e50faae79b8ab27fc57": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 14-16, which are foundational citations to early neural network research from the 1980s, including works on connectionist models and parallel distributed processing that provide historical context for the development of transformer architectures.",
+      "text_sha256": "8619b4aba7e88228792d10b54eca961faa88faa37b5758e5d31b3b7fd0b4e589",
+      "window_index": 6
+    },
+    "08289a2f1c9ba5590f2466bcc854dec1496f385bc90f2f972a67ad4c692e9080": {
+      "context": "This chunk is from the \"Masked attention\" section of the Transformer (deep learning) Wikipedia article's Architecture section. It explains how causal masking is implemented in transformer models to prevent tokens from attending to future tokens during autoregressive decoding, using a mask matrix added before the softmax operation in the attention calculation.",
+      "text_sha256": "64185739a279118e012f76061b3ee836af25f59e125177b456bfeabf2b9b1dd5",
+      "window_index": 3
+    },
+    "0a51b389136ac3cc074d9a9845ad9f2a91532724a82eafb920a63c1ef978fe0e": {
+      "context": "This chunk is from the \"Parallelizing attention\" subsection of the History section in the Wikipedia article on Transformer (deep learning architecture). It describes the development leading to the 2017 publication of the original transformer model, including the 2016 decomposable attention mechanism and Jakob Uszkoreit's hypothesis that attention without recurrence could be sufficient for language translation, which became the foundation for the \"Attention is all you need\" paper.",
+      "text_sha256": "2844aa83e512d66c659c62394d32dcec85a27c87848d81a23e9f9d0c3ceab2fb",
+      "window_index": 2
+    },
+    "0aa07e910556060d577373154cb4aec49c5f02b47a2f2ae3aa83000d5cf80d2d": {
+      "context": "This chunk is from the \"Feedforward network\" section of the Transformer (deep learning) architecture article on Wikipedia. It describes the structure and components of feedforward network (FFN) modules, which are 2-layered multilayer perceptrons used in transformer models, including their mathematical formulation, activation functions, and the terminology for the intermediate layer size across different model architectures like GPT and BERT.",
+      "text_sha256": "60cae645636f61550aa993c21e885eab538e64564ea730e46285f3bd1cd9ff16",
+      "window_index": 3
+    },
+    "0c2e3309cd623909235ed8e0fd8a024f5b2a95ed333c8b28b218e1b72ff90371": {
+      "context": "This chunk is from the Embedding section of the Transformer (deep learning) architecture article on Wikipedia. It explains how token identifiers are converted into embedding vectors using lookup tables and one-hot representations, and defines key terminology like hidden size and embedding size that are referenced throughout the transformer architecture documentation.",
+      "text_sha256": "816b5421a6ff9453f3767c87eeca26a3cd6f25e09c2deadd04b7e4cb194b330e",
+      "window_index": 3
+    },
+    "0daa68bb428a31697ca035df26b645f7dd40ee9cb83f7372d85f8422afb574b5": {
+      "context": "This chunk is the edit link for the \"Full transformer architecture\" section in the Wikipedia article on Transformer (deep learning architecture), which appears at the end of the document excerpt after the detailed descriptions of encoder and decoder components.",
+      "text_sha256": "dff5a417752cb591ad06d56a36301cd08dfda86ec33708def7351a299cde5a5f",
+      "window_index": 3
+    },
+    "0f742e5df1ef5699813910ec80151cf360c2b3ba3cfc95c49bbca75e034b93b2": {
+      "context": "This chunk appears in the Architecture section of the Wikipedia article on Transformer (deep learning), specifically introducing the primary components that all transformers share, including tokenizers, embedding layers, transformer layers, and un-embedding layers.",
+      "text_sha256": "3f50deebcebc2571f9648093fc521481afd534e8dea34a968b74d815a46fa48b",
+      "window_index": 2
+    },
+    "103be1cf4c1ed23d2842a31a1f311336674b992dee83a062aa84a43cff4d12df": {
+      "context": "This chunk appears in the Tokenization section of the Transformer (deep learning) Wikipedia article's Architecture section. It describes specific subword tokenization algorithms and their software implementations used in transformer models to convert text into numerical representations.",
+      "text_sha256": "126f11dd4657f2fc859bd04d1bfd888eee0ff270d3baab32f8f954422d2ddf35",
+      "window_index": 2
+    },
+    "11d536beb4576c5c2f583d576181346d05336846882ea649597601be7742f793": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning) under the \"Subsequent work\" section, specifically in the \"Sub-quadratic transformers\" subsection. It introduces the problem of expensive training for transformer architectures with long inputs and describes several efficient approaches including Swin transformer, SepTr, and the Long Range Arena benchmark.",
+      "text_sha256": "962db88cbeab49067c497d6f6e78a057771ccd37e681388f8f5caf11e02c6409",
+      "window_index": 5
+    },
+    "167c4bca46c72aa19b29bc3de1a41f21496e4c170763eacfff3359d88212991f": {
+      "context": "This chunk from the Wikipedia article on Transformer (deep learning) is part of a series navigation box that categorizes the article within the broader Machine learning topic, listing various learning paradigms and problem types relevant to machine learning and data mining.",
+      "text_sha256": "75b71a032b7d89e425d5381dff4cd1eb8e5891d4b52121ddeaea5c2fbe54dd3c",
+      "window_index": 1
+    },
+    "17b5cff81f2d0825f8d84d01e3097e47a3eadde9863e908f087d284337314fe2": {
+      "context": "This chunk is from the Further reading section of the Wikipedia article on Transformer (deep learning architecture). It lists related topics organized into categories including benchmarks and evaluation tools for language models, datasets used in AI training, major AI organizations, and key people in the field.",
+      "text_sha256": "52e7e4dc6310ec2d951c761c88252448d37833c6e9b623a5aaa82363349beb05",
+      "window_index": 9
+    },
+    "186b6b1fbfce0b3c0cfc9b6108887ca018207d61e460a2181a11fd8260be2328": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture), specifically within a navigation box listing implementations of artificial intelligence organized by category. The chunk covers audio-visual and text-based AI implementations, including applications like handwriting recognition, speech synthesis, text-to-image models, text-to-video models, music generation, world models, and text-based language models and systems.",
+      "text_sha256": "5f64448ae55f214f057c4a9c678a912ea25ed75067402fd4cae4e042fd03510f",
+      "window_index": 8
+    },
+    "1c4f438f6bf797ce2d3b09371497d384c2b22379c3445e1a3f2cb9ef7165b73d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries numbered 31-34, including citations for papers on attention models, the history of transformer development at Google, LSTM networks for machine reading, and RNN alternatives for the transformer era.",
+      "text_sha256": "cef0fd837087f3816f999aed01d50bf471a7812055aa0d2561d2a95491fb95e2",
+      "window_index": 6
+    },
+    "1d1ee05434c239f89a80714e55b4d54d8dea7518573de798605e2467d8ef8ff8": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 7-10, which document applications of transformers in reinforcement learning and speech recognition, including papers on Decision Transformers, stabilizing transformers for reinforcement learning, robust speech recognition, and robotic learning tasks.",
+      "text_sha256": "77cc5c647e70e97134978910efc3cb4420565fd0b9ead8158943f07131109009",
+      "window_index": 6
+    },
+    "1d26bcd222d8af5885aee487819bb42ab62a74ab9edd692f81fcf0bff6bbf50f": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 56-60, which include references to academic papers and resources on transformer-related topics such as language learning paradigms (UL2), output embeddings, attention models, transformer architecture illustrations, and GPT2 model documentation.",
+      "text_sha256": "04055c01ce91e478c72d6f91f3a2d76d51e7855a0fc00db8fce2ba1565eedae5",
+      "window_index": 6
+    },
+    "201e91f890b028bb21e12ff2bafc9c96b1ea896a4c4a50d951388e259a3bfb0c": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It is part of a navigation sidebar or footer that lists related topics in artificial intelligence, organized by category including Google and DeepMind projects, machine learning neural network architectures, and generative AI models and chatbots.",
+      "text_sha256": "ce8caa9395a4ddc5dfaa8aecaf83be0f0473c10b38355f472981de837cf9a9f9",
+      "window_index": 8
+    },
+    "203b9498d60553f32d33a0a30087ea04d3eb81e3ce5e848616d32a14153abd00": {
+      "context": "This chunk is from the \"Attention with seq2seq\" subsection of the History section in the Wikipedia article on Transformer (deep learning). It describes the development of sequence-to-sequence models in the early 2010s, including early encoder-decoder architectures using LSTMs and GRUs, their limitations with fixed-size output vectors, and the introduction of the RNN search model with attention mechanisms to address these bottlenecks in machine translation tasks.",
+      "text_sha256": "c16b057e93842c39254bde6ded62683f8e9f73e364c2bb15242e5fc9511e8a15",
+      "window_index": 2
+    },
+    "21bb63ace829734fb54ad560afc511479294fa1fe1d4a3e0237352973df3eb42": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture), under the section \"Subsequent work > Efficient implementation > Speculative decoding\". It explains speculative decoding as a method to accelerate token decoding in transformer models, contrasting it with standard autoregressive decoding and providing examples using GPT-3 and GPT-3-small models. The section also briefly introduces multi-token prediction as an alternative approach.",
+      "text_sha256": "ed4af7495d38cd1f7b6faf42d84076f8663e0762344be0629e204d625c40708d",
+      "window_index": 5
+    },
+    "25a3d6458d32f0ae70d1e9043bc3437111b08e7f9908ab0292f8bdd875f41fbd": {
+      "context": "This chunk is from the \"AI boom era\" subsection of the History section in the Wikipedia article on Transformer (deep learning architecture). It describes the development and deployment of transformer-based models following the 2017 publication of \"Attention is all you need,\" including ELMo, BERT, Google Translate updates, the GPT series, and ChatGPT's emergence in 2022.",
+      "text_sha256": "5bd3cc2fa81ade47e5f7f1656a4570f596305f450875e445f99cb580a375196b",
+      "window_index": 2
+    },
+    "2a07015c7489351fe546631079d8f55f1fd8d6d86a7bdf93d1b2b004836abf4e": {
+      "context": "This chunk appears in the \"AI boom era\" section of the History section of the Wikipedia article on Transformer (deep learning architecture). It describes applications of transformer models beyond natural language processing, including multimodal, vision, speech, and robotics applications, as well as generative models like DALL-E, Stable Diffusion, and Sora that emerged following the 2017 publication of the original \"Attention is All You Need\" transformer paper.",
+      "text_sha256": "b80cb36b731e4989f690d6cf57e53c0cba8aa185853fc6828f8f5724d6e0fcc1",
+      "window_index": 2
+    },
+    "2d24c63bc370dad68a6626663bcf1a55810376b57c3ecd0cb59e4d8ae37cdb61": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It lists various application domains and social/economic impacts of artificial intelligence, organized under a \"Social and economic\" category that covers topics like AI's effects in architecture, education, healthcare, marketing, video games, visual art, military applications, and workplace impacts.",
+      "text_sha256": "1c912f5669c99f1c22acd572954a2f33ddffe09fa85d80acca0e8ba6f5508617",
+      "window_index": 8
+    },
+    "314f4f8864414e17d88612ffa0a631be569ac22fdfad3f35358d12ee909b7794": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture) as part of the machine learning series navigation template. It lists mathematical foundations topics, journals and conferences, and related articles that provide context for understanding transformers within the broader field of machine learning and artificial intelligence.",
+      "text_sha256": "fddd87bcc2a2ffbef57a7b5723ebf29a2a4ffd949fdf803fb01f9cb28d8c8c30",
+      "window_index": 1
+    },
+    "32fb8a2952b6c6e1f47eedd79920fff8ee8942e4f9f469a8871ca6c562471744": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 76-78, which document research on efficient memory management and serving techniques for large language models, specifically focusing on PagedAttention technology and the vLLM framework.",
+      "text_sha256": "e6ba733fe9bc8d037ce1f7754db1038a519f116bcbf7c1865561a6e523288f8e",
+      "window_index": 7
+    },
+    "36ab34f5fed4e97a66aadd64aab78505b760203459d5ce14c0e4b172627fe641": {
+      "context": "This chunk is part of the language versions section at the top of the Wikipedia article on Transformer (deep learning architecture), listing links to the article in various languages including Russian, Simple English, Serbian, Swedish, Thai, Turkish, Ukrainian, and Vietnamese.",
+      "text_sha256": "c97d52bd8317ad2f9b0b4f8b59ddca027cb87a44fe894f635c36064a60c4e36a",
+      "window_index": 1
+    },
+    "37d693ab405a6b3847228e2d6299fe9113028127322764f0b1407bde05dae63d": {
+      "context": "This chunk is from the \"Alternative activation functions\" section under \"Subsequent work\" in the Wikipedia article on Transformer (deep learning architecture). It describes how the original transformer used ReLU activation, and discusses alternative activation functions like SwiGLU and GELU that were adopted by various language models including Llama, PaLM, GPT-1, and BERT.",
+      "text_sha256": "a298306780b8583e139fdf95e19a4822c6690972de6ad55bd7b7335cdf4ed239",
+      "window_index": 4
+    },
+    "39944c7a96e9a53ebfc9b1a8794fc0e8e935ee827507a68e1bb2dcb14b7d46b8": {
+      "context": "This chunk is from the \"Tokenization\" subsection (section 11) of the Architecture section in the Wikipedia article on Transformer (deep learning). It explains the three-step process of converting input text into numerical representations through preprocessing, tokenization, and integer mapping, and discusses vocabulary size, subword tokenizers, and special tokens like [UNK].",
+      "text_sha256": "c6666b74a7eb4b41430bcda1ff6ed983bc0df9723a54ea6a81e50ce1c9c879c1",
+      "window_index": 2
+    },
+    "3d38ba5659ebec4fefa6354f902b4f1651c7b38488c96702a11bc859929d84cf": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains numbered citations 84-88 documenting research papers and technical reports related to transformer optimization techniques, including FlashAttention-2, Generalized Multi-Query Attention (GQA), and the PaLM language model.",
+      "text_sha256": "2d12511bdc468718b280d0c27077defbed1307ae58ba94f084f0013d46df3e30",
+      "window_index": 7
+    },
+    "3ddbe0851070e045585ba88ad6d470113b9a3d92140edfdcdf196c0fe79a73c5": {
+      "context": "This section from the Wikipedia article on Transformer (deep learning) describes the sublayers within the full transformer architecture. It explains the composition of encoder and decoder layers, including the role of residual connections and layer normalization (LayerNorm), and contrasts two normalization conventions: post-LN and pre-LN, noting that pre-LN is easier to train.",
+      "text_sha256": "8cbada29755c9b0b1b063107cf400dee55f12ead2faed83346b2549116909fd0",
+      "window_index": 4
+    },
+    "447530c759ec7cc2dbc99a8b039b00e823557e870707496746821d63246f87e6": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 71-75, which are academic references related to positional encoding and position representations in transformer models, including papers on positional information learning, rotary position embeddings, and attention mechanisms with position representations.",
+      "text_sha256": "4cd3cff261466c819da03cb3b4a94581926dd5afd91df8a920c0592bcce209e8",
+      "window_index": 7
+    },
+    "45c3597f5fe79af082d75d01c810fcdcd40c8f344427272eaea0379c4f0c7769": {
+      "context": "This chunk is a section header and edit link for the \"Training\" section in the Wikipedia article on Transformer (deep learning architecture). It marks the beginning of a major section that discusses methods for training transformer models, including training stabilization techniques, pretrain-finetune approaches, and various language modeling tasks.",
+      "text_sha256": "f2c0b2c92bad987c3d17b51f00187576fbe56333020d65ad0e26a78b3afb4f53",
+      "window_index": 2
+    },
+    "4ca22cfcb56a2badabb3000aff635493ab15a1138f936bfbe1996a776d3fd5ce": {
+      "context": "This chunk appears in the \"Terminology\" section of the \"Full transformer architecture\" section of the Wikipedia article on Transformer (deep learning). It describes common architectural variations of the transformer model, including encoder-only, decoder-only, encoder-decoder, and prefixLM variants, explaining their typical use cases and example implementations.",
+      "text_sha256": "46f57a3a524ae9160f172ad38141e66097176dcfb3ae7dce99a175df06dfe288",
+      "window_index": 4
+    },
+    "4e32565d85c006ea6109af2e05344e1dfec3ad89a07472f5325298d56e32d528": {
+      "context": "This chunk appears in the Terminology section of the Full transformer architecture section of the Wikipedia article on Transformer (deep learning). It discusses mixed seq2seq models as a variation of the standard transformer architecture, providing a real-world example of how Google Translate combined transformer and RNN components for practical efficiency reasons.",
+      "text_sha256": "759e2d3d1223b07bfcb96ad219d113b9b4489d052e1db2f16296327760470dc8",
+      "window_index": 4
+    },
+    "4f230a8f1f431984e9f9d929633fb2ff7928c4477f18c3a3296cf9f499663ddf": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 101-104, which reference academic papers on efficient transformer variants and techniques, including reversible residual networks, sparse transformers, and attention-free transformers.",
+      "text_sha256": "9f8e46790ae1328b43971a43a70367b43c02281958d8f1cd523bd47266a39722",
+      "window_index": 7
+    },
+    "4f771a6a92f1c5f80e9f7c8afc88a0e8806a255b67c0b96e6d3f1ef9bd83f9cc": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture), under the section \"Subsequent work > Alternative normalizations.\" It discusses alternative normalization techniques that can replace LayerNorm in transformer models, including RMSNorm used in the Llama series, ScaleNorm, and FixNorm.",
+      "text_sha256": "11fa2e6811cc6a6af3d96e043ac8c008aa3817038ebfb78929b93aabc17f96c9",
+      "window_index": 4
+    },
+    "516aca82222ca03592100ccbee4e85ae68ee9fcd7ded12106c3623568a6a5ffb": {
+      "context": "This chunk appears in the \"Efficient implementation\" section under \"Subsequent work\" in the Wikipedia article on Transformer (deep learning) architecture. It describes the software frameworks and libraries used to implement transformer models, including TensorFlow, PyTorch, and the Hugging Face Transformers library.",
+      "text_sha256": "2bd2c76b13f67df92e25fcccb9f67aa41414c925ad2df70fae07473c5bd58b47",
+      "window_index": 4
+    },
+    "536b60f536221e97908fb542aec4815dfa019e93c8052a26950df899b47f6ee7": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically the \"Encoder-decoder (overview)\" section under Architecture. It explains the overall structure and purpose of encoder and decoder layers in the original transformer model, including their use of self-attention, cross-attention, feed-forward networks, residual connections, and layer normalization.",
+      "text_sha256": "87bd9b035d313fa5157b9be92dee9f9271b57841a5f6a2935ddecf8491c94c47",
+      "window_index": 3
+    },
+    "5498921227ff68998f1d65edd2367aa237067eff8f79afb480d46766f1100a25": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically the \"Multihead attention\" subsection under \"Scaled dot-product attention\" in the Architecture section. It explains how multiple attention heads work together in a transformer model, describing the role of projection matrices (W^Q, W^K, W^V, W^O) and providing a concrete example using GPT-2 model dimensions.",
+      "text_sha256": "9641acf599e1cbb6c314196f0fec6b82121e53dfe8c7b58fd5794bc3eaf2c010",
+      "window_index": 3
+    },
+    "5ac84b308a9096cfee6a78987065b81e346a5b1c778fc39d4898378c71a74609": {
+      "context": "This chunk is part of the machine learning series navigation template in the Wikipedia article on Transformer (deep learning architecture). It lists supervised learning methods and related machine learning topics including neural networks, clustering, dimensionality reduction, structured prediction, and anomaly detection algorithms that provide context for understanding transformers within the broader machine learning landscape.",
+      "text_sha256": "f1ca7d6470229962ccf3d411b7dc5e8459f9ddc55d8762141de8f0a5e4c7fb81",
+      "window_index": 1
+    },
+    "5ebbfca9e93e03b37686f3b1b795692965c1c2c654b8723a39b9b13199d8d0c7": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 24-26, which reference foundational papers on sequence-to-sequence learning and recurrent neural network architectures (GRU and LSTM cells) that preceded and influenced the development of transformer models.",
+      "text_sha256": "3f1aebcf3877fe3af5126d472f9cab8534f903e63eaac549cabbf7c0239c879a",
+      "window_index": 6
+    },
+    "5ebc7c1947cdd880229ce2098eee5d8208e9a8038b43d5081042111466f9ad9e": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries numbered 94-97, listing academic papers and technical reports related to transformer models and their optimization, including works on multi-token prediction, the DeepSeek-V3 model, the Reformer efficient transformer, and the Swin Transformer for vision tasks.",
+      "text_sha256": "d2c05c0281df612b9905886dbe5eeac4bdce718236969c0e902f2852b00b9ed2",
+      "window_index": 7
+    },
+    "608cff7a2046c37b07825c30f329fef7e3f85a56e180420f76fb5b1e40b3ad13": {
+      "context": "This chunk is from the \"Tasks\" subsection under the \"Training\" section of the Wikipedia article on Transformer (deep learning architecture). It describes three classes of language modeling tasks used to train transformers: masked tasks, autoregressive tasks, and prefixLM tasks, explaining how each class works and which transformer models use them.",
+      "text_sha256": "b8b2965e3ed60ab011466aed912d8cd0e52119d2313266d3e327e43d9132e7e1",
+      "window_index": 2
+    },
+    "633b98ecd4c9361d1cede0c02218a911db92a5c7773767cd503a1172443b32bf": {
+      "context": "This chunk from the Wikipedia article on Transformer (deep learning architecture) provides the foundational definition and overview of transformers in the opening section. It explains that transformers are neural network architectures based on multi-head attention mechanisms, describes their core components including tokenization and word embeddings, and outlines their key advantages over recurrent neural networks and modern variants used in large language models.",
+      "text_sha256": "abc7db26ef7634c4d6173e06d5abf7aec9276604e61037b15821ab0cdc82c4d4",
+      "window_index": 1
+    },
+    "6473f6f67e5e96efb589b85c95b7c7e810aca94ec440e137d570b05daeb5037d": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Transformer (deep learning) and lists the 35 languages into which the article has been translated, providing links to each language version of the page.",
+      "text_sha256": "234514891f96aa0a7e5e8a4f407fb8784b88881168321ba06f13145cc9d52f3b",
+      "window_index": 1
+    },
+    "696de8ebaf67373e7883dc0547bef74a109cee4537ba754222e4f023f5cbf0b8": {
+      "context": "This is a maintenance notice at the beginning of the History section of the Wikipedia article on Transformer (deep learning architecture), indicating that the section's writing style may not meet encyclopedic standards and referencing the Timeline of machine learning as related content.",
+      "text_sha256": "9337a9d5cf907fb7206699d96d464a7c6362d4dc72eea353beedc61d02cbbf75",
+      "window_index": 2
+    },
+    "6b65302a9a93bff44498678ea0fe779e037acbbfe66f5efb76629d6b0a669255": {
+      "context": "This chunk appears in the hidden categories section at the end of the Wikipedia article on Transformer (deep learning architecture). It lists maintenance and quality control categories that track article issues such as missing references, style problems, and potential original research, rather than substantive content categories.",
+      "text_sha256": "48001a30a95e10f98c5b63f3659f6321c5820eb768300694f51bd640926e73f5",
+      "window_index": 9
+    },
+    "6ca797c39816fc6a9fd966e6b506ab959b4962976d5329899d3568ae357c107e": {
+      "context": "This chunk is a section header marker for \"Subsequent work\" in the Wikipedia article on Transformer (deep learning architecture), which begins a major section covering developments and variations that came after the original transformer design.",
+      "text_sha256": "448122896080e8096d77c1bf257dd4932711c8391b83f127aeab0481433e3c31",
+      "window_index": 4
+    },
+    "7118f914a6c7837a038ece1b178146a35cbcd39f6a2693f2956c47bdc3a72820": {
+      "context": "This chunk is from the \"Predecessors\" subsection of the History section in the Wikipedia article on Transformer (deep learning). It discusses the evolution of sequence modeling before transformers, covering recurrent neural networks, the Elman network, the vanishing-gradient problem, LSTM and its gating mechanisms, and early neural network architectures like fast weight controllers that preceded the transformer architecture published in 2017.",
+      "text_sha256": "670c69880cf15b7a900e172a34a5b680b1f175b4f0228e487aefbff1666f87ff",
+      "window_index": 2
+    },
+    "73671b589a8fc1cc8fe6524fc48d936eaa636902abbd33ba7dd82c444600204d": {
+      "context": "This chunk is part of the pseudocode section in the Wikipedia article on Transformer (deep learning architecture). It shows the decoder portion of a standard pre-LN encoder-decoder transformer implementation, specifically the second and third sublayers of each decoder layer (cross-attention and feedforward network) followed by the final output generation step, adapted from \"Formal Algorithms for Transformers.\"",
+      "text_sha256": "3730268489f22c516d8fe6664fd1e812e4f4154cbf6635fe5f9c66e9ffc47199",
+      "window_index": 4
+    },
+    "74b0c01dc7d3294e4b94b1ea8068ea3d8a2d3eea70712b20943d0af502e4bbf7": {
+      "context": "This chunk is the section header and introduction to the \"Scaled dot-product attention\" subsection within the Architecture section of the Wikipedia article on Transformer (deep learning). It serves as a brief transition that references the main article on dot-product attention before the detailed explanation of attention heads that follows.",
+      "text_sha256": "4ecd3946ef3edd6edb72831949528743f82fbeacff1149dd5eb27df0575198a1",
+      "window_index": 3
+    },
+    "74c1e7914ced029430bcafc4eb6611ffd57c01a21422812dffd20772ea458612": {
+      "context": "This chunk introduces the pseudocode section of the Wikipedia article on Transformer deep learning architecture. It provides a standard pre-LN encoder-decoder transformer implementation adapted from \"Formal Algorithms for Transformers,\" following the earlier discussion of sublayers and the distinction between post-LN and pre-LN normalization conventions in the Full transformer architecture section.",
+      "text_sha256": "d0bfe45d5cd9c30a7946da9ea62782e77bb1ed652626fa067dd21c9a081adad0",
+      "window_index": 4
+    },
+    "7574c52d1c94adb5d41b2b6137a0f9ed8f0a47490bfaeb229a07571dd2b14eb7": {
+      "context": "This chunk is part of the Wikipedia article on Transformer (deep learning architecture) and appears in the navigation sidebar under the \"Neural networks\" section of a broader \"Machine learning\" series template. It lists various neural network architectures and related topics, including recurrent neural networks (LSTM, GRU), generative models (GAN, Diffusion model), convolutional neural networks, and the Transformer itself, followed by sections on reinforcement learning, learning with humans, model diagnostics, and mathematical foundations.",
+      "text_sha256": "3df197a67db2ff50636c500ba5a2ef534857ee75d0475cd83fcec8cefbcb2d79",
+      "window_index": 1
+    },
+    "775ead243cfdc5421a4a02e565ab1b240c09f90c3206ff9f69ae80f3b2952839": {
+      "context": "This chunk is from the Notes section at the end of the Wikipedia article on Transformer (deep learning architecture). It contains two footnotes that provide supplementary information referenced elsewhere in the article: the first note about Gated Recurrent Units reducing complexity, and the second about alternative architectures like RWKV and state space models that avoid certain transformer limitations.",
+      "text_sha256": "c8deec7aec16cf3d841c80d13648c4b0e330b02010bd2321e2e5f0eef7aaf702",
+      "window_index": 5
+    },
+    "7c42205e0d61349b3d8063bb28e9c88d186ebb84b478fa9ad9a1320e36a71171": {
+      "context": "This chunk is from the Further reading section of the Wikipedia article on Transformer (deep learning architecture). It lists related topics organized into categories including chatbots and AI applications, agents and coding tools, software frameworks, and hardware infrastructure used in transformer-based systems.",
+      "text_sha256": "d3eaa36eaa2d260999296e34e1ca57604b993785973dbccb56d0c65b43f206ea",
+      "window_index": 9
+    },
+    "7f5d5f6bf87386f88c124514f0ae0bd28c1ea04b2df3cb09233247ffa046154e": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It is part of a comprehensive navigation and reference section that lists related artificial intelligence concepts, including fundamental machine learning techniques like backpropagation, attention mechanisms, gradient descent, and reinforcement learning approaches.",
+      "text_sha256": "08336529ea2115bf3f4fc953f70404032858a6c2861c06a08579bb2f67ceebb2",
+      "window_index": 8
+    },
+    "821c83e1a2e61b98329ca20d42e15480f61c4b31b1771806999ec2e8e0e2e413": {
+      "context": "This chunk is from the \"Positional encoding\" section of the Transformer (deep learning) architecture article. It explains how positional encodings provide the transformer model with information about token positions in a sequence, defines the mathematical function used for positional encoding in the original transformer paper, and describes why this particular encoding function allows shifts to be computed as linear transformations.",
+      "text_sha256": "5535fd2dcdc4e6c37c5a6a60144fadd9a31e50722c516ba6fd744aa91b4af174",
+      "window_index": 3
+    },
+    "86062d3fc1dadcb52c5ac50d318a03ebb89bb5caa012d0ad41f8f720c9577203": {
+      "context": "This chunk is from the \"Attention head\" subsection under \"Scaled dot-product attention\" in the Architecture section of the Wikipedia article on Transformer (deep learning). It explains the attention mechanism formula and defines key dimensional parameters (query size, key size, value size, and head dimension) that govern how attention heads operate in both self-attention and cross-attention configurations.",
+      "text_sha256": "586758375f42fab87623dbbe04f564a542976fcb0f84565101dc7262f4a9edb6",
+      "window_index": 3
+    },
+    "892140522840b99ad00e55cf2233a67c0f799802c35f41e742bbe5f05ce40c94": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It lists prominent researchers and scientists in artificial intelligence and machine learning, organized under a \"People\" category, followed by a \"Neural network architectures\" subsection that includes the Transformer architecture and related neural network models.",
+      "text_sha256": "d6fc4393283df84d681ba131ead6fd18005a6326d5db809bda7896f128c965b2",
+      "window_index": 8
+    },
+    "89ce65e698cda8eac1467e9d5c014d524d083bb23edcf9cea1e5b1e37a8c2a88": {
+      "context": "This chunk contains the Wikipedia navigation and interface elements from the Transformer (deep learning) article, including language links, editing tools, and page action options that appear at the top of the article page.",
+      "text_sha256": "bc96196fbed1fff9e8bc23684c63b126c8fad909e6176eecf7e7796bbfb6aa89",
+      "window_index": 1
+    },
+    "92734e5081b8f9819c3e1618515a06ae2135f048cc80b70cb7f101431d41c7b1": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work\" section under \"Alternative positional encodings.\" It describes Relative Position Encodings as an alternative method to the original sinusoidal positional encoding used in transformers, comparing it to ALiBi (Attention with Linear Biases) which was discussed in the immediately preceding subsection.",
+      "text_sha256": "37416e8af02d2d7d7bf538a3cc4d839da7d01d81baf1cfb05afad48eabe3fcb5",
+      "window_index": 4
+    },
+    "939edbf8ac1e352e61f75e419dc79062e14fd1fcd8d9fd35edb5fa8958576be5": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 52-55, which cite key papers on transformer models and training techniques, including Raffel et al.'s work on the T5 (Text-to-Text Transformer) model and references to masked language modeling and causal language modeling tasks used in transformer training.",
+      "text_sha256": "724091fcd1b823a2b7e4e13b96a03d1a4103154a951cb71d65cf98d557b4d520",
+      "window_index": 6
+    },
+    "9cd47f4cdc29cc2354f0e3e11249078b32abd54cc9808fc886f64b14e0d4b13a": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work\" section under \"Efficient implementation\" subsection titled \"FlashAttention\". It describes FlashAttention as a communication-avoiding algorithm for efficiently implementing the transformer attention mechanism on GPUs through block-wise matrix multiplications and careful cache management.",
+      "text_sha256": "a3ec5971844800a5342d1c913299cbc3f18f529b5d731a56d68c45721c80ed43",
+      "window_index": 4
+    },
+    "9f67baf2e08b7f08b301fa92c69016ca1e1b87136a7044b3f3991f885f921720": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture) within a navigation/reference section at the end of the article. It lists related concepts and models in the field of generative AI and large language models, including challenges like prompt injection and hallucination, as well as specific language model implementations like BERT, GPT, Claude, and Llama, followed by chatbot and assistant applications.",
+      "text_sha256": "fae6df37d2bcadebcd327cc3073a875f22af4d4272cc7e323c9b4a9978393ccb",
+      "window_index": 8
+    },
+    "a0baba2ef1652662ea8fd978804ff5128ddd2fd7f2f8004dc75e3aa0d011bfc7": {
+      "context": "This chunk is from the Applications section of the Wikipedia article on Transformer (deep learning architecture). It describes the successful applications of transformers in natural language processing tasks and other domains, listing major large language models like GPT-2, GPT-3, GPT-4, BERT, and ChatGPT, along with specific NLP subtasks and non-NLP applications such as protein folding and chess evaluation.",
+      "text_sha256": "6949dfe0f9ab8fe68bb06c7e438f320ade66c7feede9a1f591cb3e5d95c8fcce",
+      "window_index": 5
+    },
+    "a48f1196f0a6d11ccffa6f0e4fdde8b8d40d9d67cbdb277f102e4d7a92f9f7ac": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 112-115, which cite papers on transformer-based architectures and applications including Perceiver IO, Parti, Phenaki, and Muse models used for various generative tasks.",
+      "text_sha256": "1659e30c91ce736378645b8c7551d6cb65b2c06505e04591d5ec33fffc7592c4",
+      "window_index": 7
+    },
+    "a6b9e244c4a415e7fe4eaf3bfef01172580ed9b9b83612d1d41a90973dc14abf": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 21-23, which reference academic papers on transformer variants and related neural network architectures, including works on linear attention mechanisms, fast weight programming, and RNN encoder-decoder models for machine translation.",
+      "text_sha256": "ea1b7b5c1bb4fcaa73fd293dd09dcf8f7810cb026d6f75615f03263bcaa3db6d",
+      "window_index": 6
+    },
+    "a8c59450ba146412727bce7c38c1cfb161728222aa6f9a68249f5124d7f69d52": {
+      "context": "This chunk from the Wikipedia article on Transformer (deep learning) covers the historical origins and applications of transformers. It describes the 2017 proposal of the original transformer architecture in the \"Attention Is All You Need\" paper by Google researchers, the predecessors developed for machine translation, and the diverse modern applications of transformers across natural language processing, computer vision, reinforcement learning, audio, multimodal learning, robotics, and chess, as well as pre-trained systems like GPTs and BERT.",
+      "text_sha256": "9a64d4d7b6d1127324103d39a7ed899da878cfa547e346ad95f63ca21201278e",
+      "window_index": 1
+    },
+    "a92c066f70f249d04aa3e01d85e6ae972d8907443723694550279249e60084f5": {
+      "context": "This is the first reference in the References section of the Wikipedia article on Transformer (deep learning architecture). It cites the foundational 2017 paper \"Attention is All You Need\" by Vaswani et al., published at NIPS 2017, which introduced the transformer architecture.",
+      "text_sha256": "6b5584c74861856f4f01f1e2db5a9f554ab37513c5ed91956c5e171870be089a",
+      "window_index": 6
+    },
+    "ab7bb8ab4a812612be2f8f4a7960dce38ba3ba54461878dedda73545a87b1bed": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 11-13, which cite key papers and announcements related to transformer applications and implementations, including work on chess-playing transformers, the Transformers library for natural language processing, and the BERT pre-training announcement.",
+      "text_sha256": "a009d362833d1c02d9ac6dbda520761a4ccabf4caca807ce9d18e08f84c5f2a2",
+      "window_index": 6
+    },
+    "abf63ff0746feec3b93e1282ed8dfa0b03f9d66cdefd705550066a9e78a9f62c": {
+      "context": "This chunk is part of the language navigation section at the top of the Wikipedia article on Transformer (deep learning), listing links to the article in various languages including Persian, French, Irish, Galician, Hebrew, Armenian, Indonesian, Italian, Japanese, Karakalpak, Korean, Norwegian Nynorsk, Polish, and Portuguese.",
+      "text_sha256": "ca2c3f6fd4a0f4d3bbb6a1b104302f8ce4d11e96713d05cd3b36bb630d2cd352",
+      "window_index": 1
+    },
+    "abfc47971dc1f3a91fa0fe23163ebf328c1b8295238f5a24e406d93ec1506b08": {
+      "context": "This chunk is from the \"Methods for stabilizing training\" subsection under the \"Training\" section of the Wikipedia article on Transformer (deep learning architecture). It discusses techniques for addressing convergence difficulties in transformer models, including learning rate warmup and layer normalization placement strategies.",
+      "text_sha256": "9157fd0770558e322bb89d207fc6297afe21b36403d4a9353da057218a9a08dd",
+      "window_index": 2
+    },
+    "ac0c254269de4734ad21989739f3af5b8c564d5cd26ef33984627b986444e34c": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture) within a navigation/reference section that organizes related concepts and topics. It is part of a \"Generative AI\" subsection that lists key concepts related to language models and transformers, including fundamental machine learning concepts like attention, tokenization, and training methods, as well as links to related Wikipedia articles on these topics.",
+      "text_sha256": "78c34bf5df14e33f3c9651d8f130d2356cd7ec5ce3dcbf2f07d71f25426d284c",
+      "window_index": 8
+    },
+    "acf4351a9332f5994226bb18d9ee95e8d106b0162cd4fb94dd66f19e1af0e96a": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains three numbered reference citations (116-118) documenting papers on transformer applications in text-to-image generation and medical information extraction, including works on zero-shot text-to-image generation and autoregressive models for content generation.",
+      "text_sha256": "51ad8ec4b9a854b71a83735b38cf79339869a9f29c98ed80da3f798741e7fe74",
+      "window_index": 7
+    },
+    "b100224a953fd37730496b1b8df3bb30cf4f2b35c3629a8ce0a51fef4bed1f90": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries numbered 89-93, citing academic papers and technical reports related to transformer model optimization, including work on generalized multi-query attention, mixture-of-experts language models, speculative decoding for inference acceleration, and large language model decoding techniques.",
+      "text_sha256": "4e1e7aca93161651003825375b347a10282e4a7739bbd2a9ae9637da4f128409",
+      "window_index": 7
+    },
+    "b33e800b74e48875f8dad28b72eae67d3dc0560e1f859ffa740dab34db87a464": {
+      "context": "This chunk is from the \"Pretrain-finetune\" subsection under the \"Training\" section of the Wikipedia article on Transformer (deep learning) architecture. It describes the standard training methodology for transformers, including the two-stage process of pretraining on large unlabeled datasets followed by fine-tuning on task-specific data, and lists common pretraining and fine-tuning tasks used in transformer models.",
+      "text_sha256": "37488db3fd771a4174dcd816c4421ca896af325828f4ee0195bc45d69a51e489",
+      "window_index": 2
+    },
+    "b3add58251a444b7dc00b81fadea81a4f252169a6bf7a8975cb3aaa933359278": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 35-38, which cite foundational papers and resources related to transformer development, including references to Tensor2Tensor for neural machine translation and the BERT pre-training model.",
+      "text_sha256": "48d463aeb04c3183d20a93fa40387831e7c396c8e8430cc52ffb3c8ffc499d86",
+      "window_index": 6
+    },
+    "b4397036325fd092a43f149f85728c526c89fcca5aa74d6dd72fd071c005229e": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work\" section under \"Alternative positional encodings.\" It describes ALiBi (Attention with Linear Biases), an alternative method for encoding positional information in transformer models that differs from the original sinusoidal positional encoding and can be combined with other positional encoding approaches like RoPE.",
+      "text_sha256": "59e7db201a59a061b40a1ab6d512d856d20cac75424033f7fbb7c36e9f936823",
+      "window_index": 4
+    },
+    "b4d36aac4144840a3b4c76a817f9c9ec2121e7f1283c6edeb243304d0b2f2bef": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 68-70, which reference academic papers on transformer normalization, positional encoding in transformers, and convolutional sequence-to-sequence learning models.",
+      "text_sha256": "a222636bb2d8251c1b854181645bcabf6285082f3d617ab5352fe44e8bbf005c",
+      "window_index": 7
+    },
+    "b4f3b1ffa7a4da212414992444ffa5f5c54b5232f4896cf3a97bca4a1c77c1ea": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains numbered bibliography entries 105-108 citing academic papers and technical reports related to transformer models and their applications, including work on attention mechanisms, protein modeling, and transformer-based chatbots.",
+      "text_sha256": "90eb2bc43fac96c2f81172d3ca96da70fe47a71424739c4fc97d5b568d099e85",
+      "window_index": 7
+    },
+    "b6c162f83fa76a99030112c232411bb5fafe1b3c3e55728eebd404c02da0ceb7": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Transformer (deep learning architecture) and contains maintenance notices indicating the article needs more citations and has reliability issues, followed by a figure caption describing a standard transformer architecture with encoder and decoder components.",
+      "text_sha256": "fc47b3a041eae5d06872fc6f9fec2579544d69cadc98545a1a31edb7296fc5ae",
+      "window_index": 1
+    },
+    "be2d57dfa2eda464325b7791c1be656a1753e604390f6caeaddebe0b58ac0a3c": {
+      "context": "This chunk appears in the Positional encoding section of the Transformer architecture documentation, following the mathematical definition of positional encoding as a complex function. It clarifies that despite the complex number notation used in the positional encoding formula, practical implementations use real number operations without loss of functionality.",
+      "text_sha256": "e5ec2425c4fe1517a08bbaa5e505cd80b44af9a7d3fe85eb6a0fba0297f285e3",
+      "window_index": 3
+    },
+    "bea2b3cc385492ccbd4409066d38d3b8a02e709b2a28a2cc52f99f6c3b880030": {
+      "context": "This chunk is part of the Further reading section of the Wikipedia article on Transformer (deep learning architecture). It lists notable people in AI and machine learning, followed by social, economic, and governance topics related to artificial intelligence, and concludes with article categories and metadata.",
+      "text_sha256": "91d19ee2bf42e9c66a88ee2bf3f92d300d44b2559674d5ac92fa864bad39db6e",
+      "window_index": 9
+    },
+    "c0ad4572e09722f9cb58d841d8bc0781f0e14065c9c218774e986538cfebcd4c": {
+      "context": "This section from the Wikipedia article on Transformer deep learning architecture discusses Multi-Query Attention under the \"Subsequent work > Efficient implementation\" subsection. It explains how Multi-Query Attention modifies the standard Multihead Attention mechanism to improve inference speed, and introduces related concepts like grouped-query attention (GQA) and Multihead Latent Attention (MLA) as alternatives for optimizing KV caching in transformer models.",
+      "text_sha256": "382d046e6863a5c7eafa0d437b19fa6b7dd8a9b2b0766dadc1713127ea815c80",
+      "window_index": 4
+    },
+    "ce0800269b9a41c3842d4934e783ed2f072ccb22d2d6ae9e26fef0bc2df4796c": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 61-63, which are academic references cited throughout the article to support claims about transformer models, BERT's attention mechanisms, XLNet pretraining, and transformer applications in machine translation.",
+      "text_sha256": "bbde531b805471e6dc32d0fa8ab8f963bf970e26b1422d9563fed6aa3a975fb2",
+      "window_index": 6
+    },
+    "d3cc067ec946ff328901839edebececcf15accd989cbc4ca226295478bd12686": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 2-6, which cite foundational papers and resources related to transformers, including the Long Short-Term Memory (LSTM) paper by Hochreiter and Schmidhuber, OpenAI's work on language models, and early attention mechanism papers by Bahdanau and Luong that preceded the transformer architecture.",
+      "text_sha256": "f281cfdcd25cbbf3b83fe923cb2b829e05055ae5eff64d80235c3844b5f02185",
+      "window_index": 6
+    },
+    "d781c52d94920b08218aa0f24da9756208791c564d4b597baa560dcbef7cd9cb": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture), under the section \"Subsequent work > Sub-quadratic transformers > Random Feature Attention\". It describes Random Feature Attention (2021), a technique that uses Fourier random features to approximate transformer attention mechanisms with linear time complexity, and contrasts it with the later Performer (2022) approach.",
+      "text_sha256": "f6d1f27efa606eb37ddbbbef65480249e72fc5276de5bfe16e0f1cea01e57868",
+      "window_index": 5
+    },
+    "d79b8495d905785afe41920be655006a9b68176117e8dabeb263322e6e693950": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It is part of an extensive navigation and reference section that lists related concepts in artificial intelligence, including machine learning techniques, AI applications, and implementations across various domains like audio-visual processing, text, and decision-making systems.",
+      "text_sha256": "f2f72eabc2beccc5a474179e008ccaa0e1ae464d087c7322eb1a3bb9123047a8",
+      "window_index": 8
+    },
+    "d7d7e51e3ec43ae1e95a5c109ba7d201e37d7a35ea5ed1c0a6fc2b8128465b57": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It is part of an extensive navigation/reference section that lists related topics in artificial intelligence, including decisional AI systems, reasoning systems, cognitive architectures, knowledge bases, and notable people who contributed to the field of AI and machine learning.",
+      "text_sha256": "cd27a0de3a905275239edd0217195aa0469d883006cf2ba07af0d05e87b0c729",
+      "window_index": 8
+    },
+    "deee3ffd12030de54b9949e03958d62be0443adb2d990292cacf96b92782cd0e": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 39-43, which document key applications and developments of transformer models, including BERT's deployment in Google Search, Google Translate's advances, and the creation and introduction of ChatGPT by OpenAI.",
+      "text_sha256": "bbdc1a6c4353083cc2466465cca56ede1dc5c67c5150e9f8a35f6171f7d05a99",
+      "window_index": 6
+    },
+    "e1d2464a16197d90af8507664d91f4ad16fa0388527674a831d341b8454c6a39": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 109-111, which are bibliographic entries for academic papers related to transformer applications, including Visual Instruction Tuning, speech recognition, and the Perceiver architecture for general perception tasks.",
+      "text_sha256": "064cd722ae52feeb85209c9963e3fa7a38e5820ef1a6c72a14fbe26a8e2c1eeb",
+      "window_index": 7
+    },
+    "e2e67c6b8aba4230047cd6a7aefc081183488ec82e9ae429f753ccb369921516": {
+      "context": "This chunk is from the Decoder section of the Transformer (deep learning) Wikipedia article's Architecture section. It describes the structure and function of decoder layers in transformer models, including their three major components: causally masked self-attention, cross-attention (encoder-decoder attention), and feed-forward networks, as well as how they differ from encoder layers.",
+      "text_sha256": "0dab4d4d574674e685a88c20efb1ff79b9b8dd7dc2f75c0f66de2682486bc3ae",
+      "window_index": 3
+    },
+    "e44d08f1e6eb201096713def8577ce5b2f6f741764ed6d2d5b523b2d41cdcf5d": {
+      "context": "This pseudocode is from the \"Pseudocode\" section of the Wikipedia article on Transformer (deep learning architecture), specifically under \"Full transformer architecture.\" It provides a standard pre-LN encoder-decoder transformer implementation adapted from \"Formal Algorithms for Transformers,\" showing the complete algorithmic flow including tokenization, embedding, positional encoding, and the processing through encoder and decoder layers with their respective sublayers.",
+      "text_sha256": "74325063dc441142e3dc676f55ccf556c9582bf91b0df36789cd04c4fd42367d",
+      "window_index": 4
+    },
+    "e4aefab38e46d25d798bc15976c841f2a8cfcfef19f413c377c49ac870276017": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning) under the section \"Subsequent work > Sub-quadratic transformers > Alternative attention graphs.\" It discusses methods to reduce the computational complexity of transformer attention mechanisms, including Reformer, sparse attention approaches like BigBird, and attention-free transformers, as alternatives to the standard O(N\u00b2) scaling of traditional attention graphs.",
+      "text_sha256": "b8db62581d8943f8e862841b455f10ef50277ae213a429b849827400d0d82c0c",
+      "window_index": 5
+    },
+    "e5bcd7fb3d7de1f28b904b32cdb9eb38d0d22b11d753ca6b36310d9e2f6787a7": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It is part of a navigation sidebar listing neural network architectures, followed by sections on political and social/economic topics related to artificial intelligence. The chunk specifically lists various neural network architecture types including LSTM, GRU, CNN, and others, along with political and socioeconomic aspects of AI such as AI safety, regulation, and environmental impact.",
+      "text_sha256": "71753fb2e24d9ecd32806f0f03f988eaefddd668eafa6318be62da4b045a062e",
+      "window_index": 8
+    },
+    "e68c05b3150a4827f99ea1a69278a7ad58f1cfcf9d6b639d8438c0f89c09f3fb": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture) within a section listing Google DeepMind's generative AI models and related projects. It includes a chronological list of Google's AI models from 2019 to 2025, organized under \"Models\" and \"Other\" categories, followed by a \"See also\" section referencing foundational transformer concepts like the \"Attention Is All You Need\" paper.",
+      "text_sha256": "af4747a2cc589b00adc569432f8fb2560d9f3aa10ffc0a2a7223e6dbcd03f8b0",
+      "window_index": 8
+    },
+    "e8511b19a4094561001762833b64c5bcfcd5513e471d4aa24d7dfdd7596113ff": {
+      "context": "This chunk is from the \"Encoder\" section of the Transformer (deep learning) Wikipedia article's Architecture section. It describes the structure and function of encoder layers, which are fundamental components of the transformer architecture that process input sequences through self-attention and feed-forward mechanisms.",
+      "text_sha256": "0940f2e428128592f14ee11429856e766a753bd7ce1cedb56fbf17474a48f190",
+      "window_index": 3
+    },
+    "e8a383f06f5df35c4ffc8df2232b74f01c4df5c5d59bbcc0c17081ef4cf1925b": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 64-67, which cite academic papers on transformer architectures and their components, including formal algorithms for transformers, GLU variants, Gaussian Error Linear Units (GELUs), and Root Mean Square Layer Normalization techniques.",
+      "text_sha256": "18d52ce251fee109c375684cdab5a2e591fda333ee23fb7a2ba519b90c7c59c3",
+      "window_index": 6
+    },
+    "ec65b4e97fd69e691a9660949750362e3c9a697b90f8d6301796eff592b5f666": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 48-51, which are academic papers and sources cited throughout the article that discuss various aspects of transformer models, including attention mechanisms (Performers), convolutional alternatives (ConvNet for the 2020s), image synthesis applications (Rectified Flow Transformers), and architectural components like layer normalization in transformers.",
+      "text_sha256": "2e3e8b160b7c13932f865a93aebaa7f13a4a8f9457ab45d00cf5a25abf3d0951",
+      "window_index": 6
+    },
+    "eee3c9fee385439f9c2ae14b3261bed5e524723713000dd3a4b8552e29f7a4d5": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 98-100, which reference academic papers and blog posts about transformer variants and efficiency improvements, including SepTr for audio processing, Long Range Arena benchmark, and Reformer.",
+      "text_sha256": "fbd845354f5aa16509642dd142235630e10f4d1007a5d4a0e4b63c0452c34aa3",
+      "window_index": 7
+    },
+    "f0a6ba82ccbb83501e1cad1a252ac3f55514069423ad863fc97df059f1e945aa": {
+      "context": "This is the table of contents from the Wikipedia article on Transformer (deep learning architecture), providing an overview of all major sections including History, Training, Architecture, Full transformer architecture, Subsequent work, Applications, and reference materials.",
+      "text_sha256": "a944d7afcc7229dacd40e1885601c1eff233085f5af8cf08418a336b0f23c259",
+      "window_index": 0
+    },
+    "f109e2c2915ff9d664edfada3b500739f629f763ed65e143ac1f97a93e04f5df": {
+      "context": "This chunk is from the \"Further reading\" section of the Wikipedia article on Transformer (deep learning architecture). It lists academic papers, patents, and educational resources related to transformers and their applications in language models, including works on formal algorithms, inner workings of transformer-based models, and modern LLM architecture design.",
+      "text_sha256": "cf1dc778eebe617853e191dbe67f0aea872f4b3781caf305039f206f5ee90368",
+      "window_index": 8
+    },
+    "f5e291dfa32267ca058ad775e169b9ed8014abfa91801a34dd2c4de62b434957": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains citations 27-30, which are academic papers and articles related to sequence-to-sequence learning, attention-based neural machine translation, and the development of neural machine translation systems that preceded and influenced transformer architecture.",
+      "text_sha256": "34e2218879fec341839111b06741c9d5496eddc1b5021a0b9a7727b3bc83f210",
+      "window_index": 6
+    },
+    "f68daf19d47f4482f7736136ceac87c15e205fdb4ade2d3a494e1da80170d996": {
+      "context": "This chunk appears in the Multimodality section of the Transformer (deep learning) Wikipedia article, which discusses how transformers are adapted for different input and output modalities beyond text. The chunk specifically describes transformer-based architectures used for image generation tasks, including DALL-E 1, Parti, Muse, and Phenaki, explaining their different architectural approaches and generation methods.",
+      "text_sha256": "9cdd05e933dcd73dff7d6b1f5748d345951d5c2473792567012ee976ded55e52",
+      "window_index": 5
+    },
+    "f70e2417c1198fe4e1df73f1757e4616518538c8878641e8211316a35eb0b981": {
+      "context": "This chunk is from the \"Un-embedding\" section of the Transformer (deep learning) architecture article on Wikipedia. It explains how un-embedding layers function as the inverse of embedding layers, converting output vectors into probability distributions over tokens. The section references the embedding matrix M and embedding size d_emb from the earlier \"Embedding\" section, and describes weight tying as an optimization technique used in transformer architectures.",
+      "text_sha256": "92e87b5f858ae99832deb34cded877f946b0f0c14cb476af67d7d1402f95d6bb",
+      "window_index": 3
+    },
+    "f7c6e5a4da15954d956b9a91f4d7b6cd9eb67703ca770ddb2db3464bb420b9f5": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work > Efficient implementation > FlashAttention\" section. It describes FlashAttention-2 and FlashAttention-4, which are improved versions of FlashAttention, an algorithm that implements the transformer attention mechanism efficiently on GPUs.",
+      "text_sha256": "0ba874042f6bfe2e89ad5a9bc25790b248b7f6843680d9d4f0b1f6ea1903a979",
+      "window_index": 4
+    },
+    "f8eedcf48c158008b5863d212621bac803223b91db5babf8cdd444543403a591": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 17-20, which cite foundational papers on neural network concepts including fast-weight memories, correlation theory of brain function, dynamic connections in neural networks, and fast weights for memory deblurring\u2014all historical precursors to transformer architecture development.",
+      "text_sha256": "300eda25c9d521ae482e62f7da23fdf69097a77329c4483ffe05515c56ae9d95",
+      "window_index": 6
+    },
+    "f9acbca9d17f2c8f7456ab22bf7b9ff6d96f8519492a81be63cdb87ea37eb74b": {
+      "context": "This chunk is from the Multimodality section of the Wikipedia article on Transformer (deep learning architecture). It discusses how transformers can be adapted for different input and output modalities beyond text, including vision, speech, and multimodal applications, with examples like Vision Transformers, LLaVA, Conformer, Whisper, and Perceivers.",
+      "text_sha256": "c361de41885834596f83eb8cf17e3e97e5dee8558292e533e356bb7356bcaabe",
+      "window_index": 5
+    },
+    "fa6cf6b23a7a550ab67db718e8dbc659c6da07d0b8e8ce2e3317e38a4b773c12": {
+      "context": "This chunk is from the References section of the Wikipedia article on Transformer (deep learning architecture). It contains bibliography entries 44-47, which cite foundational and applied transformer research papers including OpenAI's fine-tuning work, multi-task learning approaches, Vision Transformers for image recognition, and the Conformer model for speech recognition.",
+      "text_sha256": "990d5a239a8ba441c4378fbf9e2c950c327c4111cd43a57d65e7e13444c71a92",
+      "window_index": 6
+    },
+    "fb0d7ff7d231367575f25fb0fa1a5e3853bd3f3a82bbc3be873d56b6ad83e1be": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work > Efficient implementation > KV caching\" section. It explains KV caching, an optimization technique for autoregressive transformer inference that saves computed key and value vectors to avoid recomputation, and introduces related concepts like PagedAttention, prefilling, and disaggregated inference.",
+      "text_sha256": "8c50bc85c979ddace451c386672a7195b9b97c73c3cf60af9bcc0ed8a6fc2728",
+      "window_index": 4
+    },
+    "fd0901338d12158b21d82c2aa578ffdf75bd7c2f9c371ab96995d3a7e24e48b6": {
+      "context": "This chunk is from the Wikipedia article on Transformer (deep learning architecture), specifically in the \"Subsequent work\" section under \"Alternative positional encodings\" subsection titled \"RoPE\". It explains RoPE (rotary positional embedding) as an alternative method to the sinusoidal positional encoding used in the original transformer, describing its mathematical formulation and key benefit of making dot-products depend only on relative positions between vectors.",
+      "text_sha256": "fb0798e76ab5f52aeded20153cba6d5560993b4ca7389189e960c010fa8e6487",
+      "window_index": 4
+    },
+    "fd3a9cc28a1f81a4db650ae2a5ff6e3d18a2e611a96af58849d67451dd570248": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Transformer (deep learning) and contains metadata about the current page revision, including the editor name (Nurg), timestamp (05:06, 3 July 2026), and links to view the page history and previous versions.",
+      "text_sha256": "85cd48fee4d0571392ef0d489f0117c50ff0971232751ddef3f0736682a53b8d",
+      "window_index": 1
+    },
+    "fd7b1ebab6e5ca4e61920a35f1098595e5da9eb1f9d30467feda35362ae3bef9": {
+      "context": "This chunk appears in the Wikipedia article on Transformer (deep learning architecture), under the section \"Subsequent work > Alternative positional encodings.\" It discusses various positional encoding methods used in transformers as alternatives to the original sinusoidal approach, including learned positional encodings and implicit positional encoding through causal masking.",
+      "text_sha256": "72ad25d70a70755db05bface7099ba5641187d096fe3d1f7488333dd276109e9",
+      "window_index": 4
+    },
+    "fdf28da0fed289749398079dab7db0bca08eaf07962b11f55c8b094d6c12c451": {
+      "context": "This chunk is from the \"Attention head\" subsection under \"Scaled dot-product attention\" in the Architecture section of the Wikipedia article on Transformer (deep learning). It explains how scaled dot-product attention units work in transformers, describing the three weight matrices (query, key, value), how attention weights are computed using dot products, and the matrix formulation of the attention mechanism.",
+      "text_sha256": "e964125b60090a946ef578cd8c8c200788fb2dfb6e459d3a97844e03833b4927",
+      "window_index": 3
+    },
+    "ff33a9971bab1a5e27af2ae54ced2e56912b8cbab7d4fa107b2d89536a45d29d": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Transformer (deep learning architecture). It contains numbered citations 79-83, which document sources related to large language model inference optimization techniques, including FlashAttention and related efficiency improvements for transformer models.",
+      "text_sha256": "695d242bf904de54ed00185f2e37f60cbb46d3381124129fa9de49ebfee695c5",
+      "window_index": 7
+    }
+  },
+  "doc_id": "wiki-transformer-dl",
+  "generated_at": "2026-08-29T22:00:33Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

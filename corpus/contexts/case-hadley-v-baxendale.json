@@ -1,0 +1,63 @@
+{
+  "contexts": {
+    "01a2bf36a8001413aa2e10d3fbfb1fd17c90c2d2f75d09b06e2fd7052f562207": {
+      "context": "This chunk from Hadley v. Baxendale describes the facts of the case as presented at trial before Judge Crompton at the Gloucester Assizes, including the plaintiffs' milling business, the broken crank shaft, the defendants' role as carriers under the name Pickford & Co., the delayed delivery to Greenwich, and the jury's verdict awarding damages. The defendants subsequently sought a new trial on grounds of misdirection regarding the remoteness of damages.",
+      "text_sha256": "6e9784c522e0ca77f68fd842bab2180b67d3a91d2d200fa5e4b15fe6599a86dd",
+      "window_index": 0
+    },
+    "0b0b2b1a99dda0e83ccfb50ce68a1bb077948b5286ed72f823d924fcfadb8ea2": {
+      "context": "This chunk is from the defendants' oral arguments in Hadley v. Baxendale, a landmark 1854 English contract law case concerning damages for delayed delivery of a mill's crank shaft by common carriers. The defendants' counsel argue that the plaintiffs' claimed lost profits are too remote and unrecoverable, citing the legal principle that only proximate damages naturally flowing from breach should be awarded, not speculative consequential damages.",
+      "text_sha256": "d6b22119c500113143079950b0d6c1ca13dced04b2443a44daf6a6096e3b9148",
+      "window_index": 0
+    },
+    "35530f8683a51421e642ff08ced9c960c5660cd26b4d46106fb3ba4537c3e1da": {
+      "context": "This chunk is from the oral arguments section of Hadley v. Baxendale, specifically the plaintiffs' counsel's response (Keating and Dowdeswell) arguing why the jury's damages award should stand. The counsel contends that the loss of profits claimed by the millers is not too remote and cites precedent cases and legal authorities on the measure of damages in contract breach cases.",
+      "text_sha256": "6fda54c4ec042f8617bae0961a9993301e9b408fcc87d6085e13e35200b39d36",
+      "window_index": 0
+    },
+    "5ca6f6fb52b42d783422677b03bdfdcb0651377a6a3b89255d5ec9c902dede5e": {
+      "context": "This chunk appears in the footer navigation section of the Hadley v. Baxendale case webpage on Justia, providing links to legal resource categories and does not relate to the substantive content of the 1854 contract damages case.",
+      "text_sha256": "fe19b77d70fdd2cdca2de395c2e648239614774eea3ae6d755a6405ec05ee8ea",
+      "window_index": 0
+    },
+    "7040261d8ba1a395ccfdba10deac724b74253b34899149a387095fb5085cf31a": {
+      "context": "In Hadley v. Baxendale (1854), a landmark English contract law case heard before the Court of Exchequer, this chunk contains the court's holding on the rule for calculating damages in breach of contract cases. Justice Alderson establishes that damages should be limited to losses that arise naturally from the breach or were reasonably contemplated by both parties at the time of contracting, and that special circumstances unknown to the breaching party cannot form the basis for liability.",
+      "text_sha256": "4de7e272eaef1db2febf4cc9510720dd1fa7448b0f73d88cf6af8bff79eaaa29",
+      "window_index": 0
+    },
+    "7a955598385cfc5b1ef8347675086ade9d656afac1ef792c866ce4055c55ce19": {
+      "context": "In Hadley v. Baxendale, a landmark 1854 English contract law case concerning damages for delayed delivery of a mill shaft by carriers, the plaintiffs' counsel cited precedent cases during oral arguments to support their position that loss of profits should be recoverable. This chunk from the plaintiffs' counsel's argument references cases like Ingram v. Lawson, Bodley v. Reynolds, Kettle v. Hunt, Black v. Baxendale, Brandt v. Bowlby, and Waters v. Towers to establish that damages for business losses resulting from breach of contract are properly recoverable and should be determined by a jury.",
+      "text_sha256": "cb04cdd47a80b55cbdde13c21bb0e875d1d722ece01c404357df988571506e9c",
+      "window_index": 0
+    },
+    "90d1953ca29c81f9d984f828fabbad7da80621e834e3e11c6b99940f72749649": {
+      "context": "This chunk appears in the oral arguments section of Hadley v. Baxendale, specifically in the defendants' counsel's submission arguing that the damages awarded by the jury were too remote. The defendants' lawyers cite precedent cases to support their position that carriers should not be liable for consequential losses beyond the natural and immediate result of breach, and argue that without a special contract, the defendants' duty as common carriers was limited to safe delivery within reasonable time.",
+      "text_sha256": "518fe04e8e3112619bbd9ef7ae4445bb94b4c14456264fa3f1ed24b8ff4e47e0",
+      "window_index": 0
+    },
+    "9c9444573fba2c33e9184a661bd9bcd7c1c89b6850a245641f565cbdbf063a81": {
+      "context": "This chunk from Hadley v. Baxendale (1854) presents the first count of the declaration in this landmark English contract law case heard in the Court of Exchequer. It establishes the factual background: Hadley and his partner, millers in Gloucester, hired the common carrier Pickford & Co. (the defendants Baxendale and others) to transport a broken crank shaft from their steam mill to W. Joyce & Co. engineers in Greenwich for repair, with a promised delivery date. The defendants failed to deliver the shaft on time, causing the mill to remain shut down and resulting in lost profits, which forms the basis for the damages claim in the case.",
+      "text_sha256": "711d4aa182bae4760b0565f14c2ed18550386fb79ee4481dca70215d4e7bffb9",
+      "window_index": 0
+    },
+    "b03cc6f6bd4bd85a2b7f50552b5e85f43eb7eb9d39554b5c3ba4129963f8e930": {
+      "context": "This chunk contains the conclusion of the defendants' arguments and the beginning of the Court's judgment in Hadley v. Baxendale, a landmark 1854 English contract law case concerning damages for breach of a carrier's contract. The chunk includes Baron Alderson's statement that a new trial is necessary and his explanation that the jury must be given a definite rule for calculating damages, referencing prior cases like Blake v. Midland Railway Company and Alder v. Keighley.",
+      "text_sha256": "f1197ffc319301c0c17ee86171256e1795bbad8603f61743a409884f4b192b3b",
+      "window_index": 0
+    },
+    "bc9603a5321d053947b11417f04347f471dfe829528fd070e26865e9ceb05c0e": {
+      "context": "This chunk appears at the end of the Hadley v. Baxendale case document and contains footer navigation links and website information for Justia, the legal research platform hosting the case. It is not substantive legal content related to the case itself.",
+      "text_sha256": "64981b56467bd0b6f2287145e6af8dffe753abf1ccdb172103e670aa24e46a05",
+      "window_index": 0
+    },
+    "e8970ffd38715391e80acefe0c9a0a0396db5755c287b1c9cff8c76b04df2fcb": {
+      "context": "This chunk from Hadley v. Baxendale (1854) presents the second count of the declaration, which alleges that the defendants, as common carriers trading under the name Pickford & Co., breached their duty of care in transporting a broken steam-engine crank shaft from Gloucester to Greenwich. The chunk details the plaintiffs' allegations of negligence, the resulting five-day delay in mill operations, and the consequent loss of profits and business opportunity, for which the plaintiffs claimed 300 pounds in damages.",
+      "text_sha256": "ca21bf8de285a95d7fa9d627d8f2363137f64c4c6e988fd9e45a080cff44f262",
+      "window_index": 0
+    }
+  },
+  "doc_id": "case-hadley-v-baxendale",
+  "generated_at": "2026-08-29T22:26:00Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,268 @@
+{
+  "contexts": {
+    "05fd9f95255a5e63f49cfbef747a04a007ff75c464163ee25b942119d2d01cfc": {
+      "context": "This chunk is from Section 3.1 \"Free / freely given\" of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679. It explains the requirement that consent must be freely given as one of the four essential elements of valid consent defined in Article 4(11) of the GDPR, and provides guidance on when consent is not considered free, including situations involving imbalance of power, bundling with terms and conditions, and lack of genuine choice.",
+      "text_sha256": "6dd9e9316048e0734c9e7009b42d091ae790d7a2e719819a85adc5209aea7bf4",
+      "window_index": 0
+    },
+    "0b6a96367241d5ab391e757d714c245ccea84910ee081d1160d13c2cdfcf868f": {
+      "context": "This chunk is from Section 6 of the EDPB Guidelines on Consent, titled \"Interaction Between Consent and Other Lawful Grounds in Article 6 GDPR.\" It explains that controllers cannot switch from consent to alternative lawful bases for processing and must establish their lawful basis before collecting data.",
+      "text_sha256": "13add8e806816116d222f2c9542afa6859d1b7d1cb566b2e91683afecd9ef5e3",
+      "window_index": 3
+    },
+    "12eadb419b2cc9ff2646eedca830d44be278d12748b519871abea42fa6f98b16": {
+      "context": "This chunk is from Section 5.1 \"Demonstrate consent\" of the EDPB Guidelines on Consent. It explains the controller's obligation under Article 7(1) of the GDPR to demonstrate that valid consent was obtained from a data subject, including methods for documenting consent, retention requirements, and the duration of consent validity.",
+      "text_sha256": "9deffbef9dd5df7e39fbac1c6d185ee2942280071d0b3dab8d938b17284ee802",
+      "window_index": 3
+    },
+    "144276a53a47ef340fe955d5f8e1ce6b03fe69b44d0a47e878634d1704862c68": {
+      "context": "This chunk is from section 3.2 \"Specific\" of the EDPB Guidelines on Consent, which discusses the requirement that consent must be specific to particular purposes. It addresses granularity in consent requests and the need for separate opt-in options for each processing purpose, with footnotes referencing GDPR recitals and WP29 opinions on purpose limitation and consent definitions.",
+      "text_sha256": "bae6b5153f283596624d2902b845970d7e5ff09d6b416871e35a6c320d07cf7a",
+      "window_index": 2
+    },
+    "15ea6cbe24a4ec2e08dafa5d9d77056c9e88f3b31e34219286e10d12e2b6f196": {
+      "context": "This chunk from the EDPB Guidelines on Consent contains Examples 19 and 20, which illustrate practical scenarios of obtaining explicit consent for processing special categories of data under Article 9 of the GDPR. These examples appear in Section 4 on Obtaining Explicit Consent and demonstrate situations where explicit consent is required and can be considered freely given when processing health data for specific requested services.",
+      "text_sha256": "e5cc8cbfdbee96a3f7800f5cee3454d5f2b4ed9d91011b2390b6135471ac2ec4",
+      "window_index": 3
+    },
+    "1756b3ed9d44f999108cd850bed23107cde3295d1204839d5ce13779da0903a4": {
+      "context": "This chunk is from section 7.2 \"Scientific research\" of the EDPB Guidelines on Consent. It defines scientific research purposes under the GDPR, explains how consent functions as a legal basis for research activities, and discusses the flexibility allowed under Recital 33 regarding purpose specification in scientific research projects, including the processing of special categories of data under Article 9 GDPR.",
+      "text_sha256": "a74e0ab1a38598c55d5bd0dc5ad971f9c2ff04fc514f1d8080c5229e40f9032e",
+      "window_index": 4
+    },
+    "1a37834fa83f5a29ba00cd4455187915b5df837fcbba59d54bd6ff797afcd0cb": {
+      "context": "This chunk is from section 3.1.2 \"Conditionality\" of the EDPB Guidelines on Consent. It explains the application and scope of Article 7(4) GDPR, which addresses whether consent is freely given when the performance of a contract is made conditional on consenting to unnecessary personal data processing. The chunk discusses the burden of proof on controllers and clarifies that offering equivalent alternative services by the same controller may preserve free consent, but offering alternatives through different controllers does not.",
+      "text_sha256": "2419eec4b05c5b5ad9c92e27ffe91c029dffb74072d5f0ac2951ebfc564ca4bc",
+      "window_index": 1
+    },
+    "1a48b12fad13b5ff519db09b79e7224c1677b91e583867e168b270d40f9db6b7": {
+      "context": "This chunk is from Section 7.1 \"Children (Article 8)\" of the EDPB Guidelines on Consent, which addresses the enhanced data protection requirements for processing children's personal data under Article 8 of the GDPR. It explains the rationale for special protections, the age thresholds for valid consent (16 years or parental authorization for those under 16, with Member State flexibility down to 13 years), and the conditions under which Article 8 applies.",
+      "text_sha256": "4de6524a63e3a371de45758886709348594acf8971044a8b281b89f5b6ad10ee",
+      "window_index": 3
+    },
+    "1c13e69a850536a632aa5fb8d5516dfa5776a106a2cf49c681ee9a5c0edf580d": {
+      "context": "This chunk appears in section 7.2 on Scientific Research within the EDPB Guidelines on Consent. It addresses the requirement that data subjects must be able to withdraw consent when it serves as the lawful basis for processing personal data, and clarifies that this withdrawal right applies to scientific research without exception, requiring controllers to delete personal data upon withdrawal requests.",
+      "text_sha256": "604470043224092764056fc88c3931d091cb6c3b9b1c44a8ad0627c3525e084d",
+      "window_index": 4
+    },
+    "1caa98e855ecfd673b3a8be26f85e3c599636f3af318ede6b676cb53334ece0c": {
+      "context": "This chunk contains footnotes 22, 23, and 24 from the EDPB Guidelines on Consent, section 3.1.2 on Conditionality. Footnote 22 provides the full text of Article 7(4) GDPR and Recital 43 GDPR regarding when consent is presumed not to be freely given in relation to contract performance. Footnotes 23 and 24 reference supporting WP29 opinions and clarify that when data processing is necessary for contract performance, Article 6(1)(b) is the appropriate lawful basis rather than consent.",
+      "text_sha256": "8e83d5fe377e7c765bc8cafbea90087d0783adaeed7b84718187df3a2007f24b",
+      "window_index": 1
+    },
+    "20a1c58788a46de067062c8116528efec747ed7c39f41fdda0b6a17e65080a91": {
+      "context": "This chunk is from section 3.3.1 \"Minimum content requirements for consent to be 'informed'\" of the EDPB Guidelines on Consent. It specifies the six mandatory elements of information that controllers must provide to data subjects for consent to be considered informed under Article 6(1)(a) GDPR, including controller identity, processing purposes, data types, withdrawal rights, automated decision-making information, and data transfer risks.",
+      "text_sha256": "d09f7e31bdb9f542d854b947ea9039b56e5bfab201262dfc3f586579bf02afe6",
+      "window_index": 2
+    },
+    "22c95ad9fbc6dc5ff22bdfd540d66d87b044175a3011763518a17ff972d07fc9": {
+      "context": "This chunk comprises the Introduction section (Section 1) of the EDPB Guidelines 05/2020 on Consent under Regulation 2016/679. It establishes the document's purpose of providing thorough analysis of consent requirements under the GDPR, explains that consent is one of six lawful bases for processing personal data under Article 6, and outlines key principles including that valid consent requires genuine choice and control for data subjects without detriment.",
+      "text_sha256": "cdfd9ff7c6b73fd1629aeda0b25a5de23a5bd1efcce9af6cf3f34cce1988099f",
+      "window_index": 0
+    },
+    "23cc9d01a163434f032e3994502fd677908ee62bb468885bdc93a408063e13af": {
+      "context": "This is the version and adoption date information for the EDPB Guidelines 05/2020 on consent under Regulation 2016/679, appearing at the beginning of the document after the title.",
+      "text_sha256": "38d4d5ffd32ae81100564bd943c5a20ad7ec26698452ded0d330266e9014373b",
+      "window_index": 0
+    },
+    "2bc4c925378bd0fb2e636026a6bcf5b3bd075866703b3f3b10e1a4c1a3230dff": {
+      "context": "This chunk is from Section 5.2 \"Withdrawal of Consent\" in the EDPB Guidelines on Consent. It explains the requirements under Article 7(3) of the GDPR for how controllers must enable data subjects to withdraw consent, including the principle that withdrawal must be as easy as giving consent and can be done at any time through the same or equivalent interface.",
+      "text_sha256": "3943f7b77fb7e3459c7bd24cc27faf0739cc55d446fb7e977677627e35562144",
+      "window_index": 3
+    },
+    "3043397b661c65dd897c172abc8fba478d65ba6af652d37c0e6a2190afda6e24": {
+      "context": "This chunk is from section 3.1.2 \"Conditionality\" of the EDPB Guidelines on Consent. It explains how Article 7(4) GDPR addresses the requirement that consent be freely given by prohibiting the bundling or tying of consent to contract performance when the personal data are not necessary for that contract, and defines what constitutes \"necessary for the performance of a contract\" under GDPR Article 6(1)(b).",
+      "text_sha256": "612ad9521ee83e65b9776940571a26fd8ecb051fcd710aca8cf646c51acc003b",
+      "window_index": 1
+    },
+    "418646d39d3e6179d0dfc63ff78d9ce231bf0decdce4e21ac50d6a5b4a171365": {
+      "context": "This chunk appears in section 3.3 \"Informed\" of the EDPB Guidelines on Consent, which discusses the requirement that consent must be informed under the GDPR. The chunk establishes the foundational principle that transparency and accessible information are essential for valid informed consent, and explains the consequences of non-compliance with these requirements.",
+      "text_sha256": "6dcce735c99aa69840ca87714ad48b845d320d7711452497632e4ea484a04cc3",
+      "window_index": 2
+    },
+    "44066dfd9dc4f592744388bc16832c0d0b7676e361c0dc596601305fc0ceb30e": {
+      "context": "This chunk is part of the table of contents from the EDPB Guidelines 05/2020 on consent under Regulation 2016/679, listing section headings and page numbers for topics including demonstrating consent, withdrawal of consent, interaction with other lawful grounds, specific areas of concern including children, scientific research, data subject rights, and consent under the previous Directive 95/46/EC.",
+      "text_sha256": "0dfbaf52887c105a0c53f34e2e3da756d2edfe1b699fe69d0b5e6cae8fb5651e",
+      "window_index": 0
+    },
+    "53678a38a6b5fd67d44b5d9d32394cb92db35daaf2584b03635923d67c6df4b3": {
+      "context": "This is the table of contents entry for the Preface section of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679, which introduces the document and explains updates made to earlier Article 29 Working Party guidance on consent requirements.",
+      "text_sha256": "c5f4ff92f8b68ccec7fb7e3e1d7e3257d9a75c1df518b837d17d983519bcab96",
+      "window_index": 0
+    },
+    "57c8f4b6a9835c1a7aff30f47bebbf9db69e22abb81927fc0bdfae79ad0ff479": {
+      "context": "This chunk is from Section 5 \"Additional Conditions for Obtaining Valid Consent\" of the EDPB Guidelines on Consent. It introduces Article 7 of the GDPR, which establishes requirements for controllers to demonstrate valid consent, maintain records of consent, and ensure the right to withdraw consent. The chunk serves as an overview for the detailed guidance on demonstrating consent and withdrawal procedures that follow in sections 5.1 and 5.2.",
+      "text_sha256": "76b45333576870f0bf3a5766e8f48206f84e581f8809626a08d21db32ba487d8",
+      "window_index": 3
+    },
+    "5894148ccbc32015de1ae173d61674e5be6a021b8b3f2aba78e5bbf1ca91200d": {
+      "context": "This chunk is from Section 4 \"Obtaining Explicit Consent\" of the EDPB Guidelines on Consent under the GDPR. It explains when explicit consent is required, the GDPR's higher standard for consent compared to previous directives, and how explicit consent must be expressed through clear affirmative action or written statements, with references to specific GDPR articles including Article 9 on special categories of data, Article 49 on international transfers, and Article 22 on automated decision-making.",
+      "text_sha256": "742ec45d06eb12cd9f56b30e6fd84d58d49a8946916c452b5a63c740a83e88bf",
+      "window_index": 3
+    },
+    "58f48398923885460f5f075d73ac4baa16956dd48bff4a1b49dca8d203e67d43": {
+      "context": "This chunk is from the EDPB Guidelines on Consent, section 3.3.2 \"How to provide information,\" specifically Example 13. It discusses the requirements for layered privacy notices when obtaining informed consent, clarifying that while contact details of a data protection officer need not appear in the first information layer, critical information like controller identity and processing purpose must be accessible to demonstrate valid informed consent under Article 6 GDPR.",
+      "text_sha256": "84cffd22982b41cd9f3d253bae95a660a66b8104fa0cebda9a5279b875f5536c",
+      "window_index": 2
+    },
+    "5b6ae25ff273661d7f07b54822536729016caa77e413cbc93c494d0a87a33086": {
+      "context": "This chunk appears in section 7.3 \"Data subject's rights\" of the EDPB Guidelines on Consent. It explains how consent as a lawful basis for processing affects the data subject rights available under the GDPR, specifically addressing data portability, the right to object, withdrawal of consent, and rights to erasure, restriction, rectification and access.",
+      "text_sha256": "fb960708f55482298df871a4651dba3ddde71ac45221f3aa3aa2aa6eaf5d5174",
+      "window_index": 4
+    },
+    "5bd314eb3f1ef5db2b0e84b6c5bf913eaa5051fb28cc1e5c7753246869ff4445": {
+      "context": "This chunk is from the EDPB Guidelines on Consent, section 3.4 \"Unambiguous indication of wishes,\" which discusses how data subjects must provide clear affirmative action to consent under GDPR Article 4(11). The chunk covers paragraphs 81-89, addressing prohibited consent mechanisms like pre-ticked boxes and opt-out constructions, valid physical motions for indicating consent, the problem of click fatigue in digital contexts, and the use of browser settings as an alternative consent mechanism.",
+      "text_sha256": "75a3816b449e8d6c5f91dd133893f5bbe0c1f48286c6a5a6997e70b3663f4ce7",
+      "window_index": 2
+    },
+    "5d1c23a168f78b880b2fbc34c0fda7f67ae2070913061d9aa50558379a4c9aa1": {
+      "context": "This chunk is from section 3.1.3 \"Granularity\" of the EDPB Guidelines on Consent, which explains that when data processing involves multiple purposes, data subjects must be able to give separate consent for each purpose rather than bundling all purposes together. The section references Recital 43 and Recital 32 of the GDPR and includes Example 7 demonstrating invalid non-granular consent in a retail marketing context.",
+      "text_sha256": "64591c33feb0d5599e3cd26375c24da6d176d288430c0abdea5dbd2d5cd93dea",
+      "window_index": 1
+    },
+    "647209737a6192ae9cb2a801bc3153018ddb9ebba74a29c008669542252aafd0": {
+      "context": "This chunk is from section 3.1.1 \"Imbalance of power\" in the EDPB Guidelines on Consent. It discusses how public authorities face inherent power imbalances that make consent problematic as a lawful basis for data processing under GDPR, while providing examples of limited circumstances where public authorities may appropriately use consent, such as voluntary email subscriptions for non-essential services or optional data merging for administrative efficiency.",
+      "text_sha256": "573e4e0a75ebad9573ea4438f26a27f082c2ebb808ec1f63444eea61d67a8005",
+      "window_index": 1
+    },
+    "66b368af7b6afff227fc4e47f73c80a4f2f1373f748de36499e921c767531fb4": {
+      "context": "This chunk is from section 3.1.2 \"Conditionality\" of the EDPB Guidelines on Consent, which discusses how Article 7(4) GDPR requires assessment of whether consent is freely given when tied to contract performance. The chunk addresses the prohibition of cookie walls and explains that access to services cannot be made conditional on consent to store information on user terminal equipment, with Example 6a illustrating invalid consent when website content is blocked without accepting cookies.",
+      "text_sha256": "e07f2c226467db0c010aa5491047899ee63937ad37d10eb765f3861ef86098ab",
+      "window_index": 1
+    },
+    "706c9ba47ae186ad50d46ca46d3c3356a79b4109feca235386e2098a709aa986": {
+      "context": "This chunk appears in Section 5.2 \"Withdrawal of Consent\" of the EDPB Guidelines on Consent, which discusses the requirements under Article 7(3) of the GDPR for withdrawing consent. The chunk specifically addresses the consequences of consent withdrawal, including the obligation to delete data and the prohibition against silently switching to alternative lawful bases for processing without notifying the data subject.",
+      "text_sha256": "e1bdd1ed7040c2fa161edd54de563e77f4993b3281b6cff188f669092faae1cd",
+      "window_index": 3
+    },
+    "70bc2abd1b0986f9290a2f5f48d3b9975f58bb7c8a00640cda7cba8983fc91f8": {
+      "context": "This chunk is from section 3.1.4 \"Detriment\" of the EDPB Guidelines on Consent, which discusses the requirement that controllers must demonstrate consent can be refused or withdrawn without negative consequences. The section explains what constitutes detriment under Recital 42 of the GDPR and provides examples distinguishing between situations where withdrawal causes detriment (invalidating consent) versus loss of permissible incentives (not constituting detriment).",
+      "text_sha256": "9fad10870c044421de8e81b5046e525f3b9543366bf2baa9bd374911c109585c",
+      "window_index": 1
+    },
+    "72634e0befc2e7013306004abb2c75f1e22497ea24ed8a8af035f90f677ed03c": {
+      "context": "This chunk appears in the Preface section of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679. It explains that the document is an updated version of the Article 29 Working Party's 2018 Guidelines on consent, with revisions made to address two specific areas: the validity of consent in cookie wall scenarios and scrolling-related consent examples, with updates to the Conditionality and Unambiguous indication of wishes sections.",
+      "text_sha256": "c5b20fe1793f4422f3ee808936938a72052adf972390a9dcd7151efd8aa35d5e",
+      "window_index": 0
+    },
+    "7f4c5a9b4b7105cc95eb4d097418e2c737b36c43c23cda18b1372b8d2d901c70": {
+      "context": "This chunk is from section 3.1.1 \"Imbalance of power\" in the EDPB Guidelines on Consent. It discusses how imbalances of power between controllers and data subjects\u2014particularly in employment relationships and public authority contexts\u2014make it unlikely that consent can be freely given, and provides examples of when consent may be valid despite such imbalances, such as when employees face no adverse consequences for refusing consent.",
+      "text_sha256": "5155b2cbbb1433f2d29c944cada69e0fed1c594b88c3a91025469e5f213e6fd5",
+      "window_index": 1
+    },
+    "81cda029db07f48272b28fcb9a88fb1fcc3a4f86dc85f086efeded5c8dba9726": {
+      "context": "This section from the EDPB Guidelines on Consent addresses the transition requirements for consent obtained under the previous Directive 95/46/EC to comply with GDPR standards. Paragraphs 168-171 explain specific scenarios where existing consent must be renewed, including when no records are kept, when consent was based on implied actions like pre-ticked boxes, and when IT systems need revision to demonstrate valid consent and enable withdrawal mechanisms.",
+      "text_sha256": "677e1a45bfdb9728e4a502f6acefd66dd4f382bc9fd25615df305b0684ce8a8f",
+      "window_index": 5
+    },
+    "82c30f8f61118e5a546c813217415d9fb7ba3f41a616fc034ac5c1f1d4d98086": {
+      "context": "This chunk is from Section 4 \"Obtaining Explicit Consent\" of the EDPB Guidelines on Consent, specifically paragraphs 94-99, which detail the various methods and formats through which explicit consent can be validly obtained under the GDPR, including electronic forms, email, telephone conversations, website consent screens, electronic signatures, and two-stage verification processes.",
+      "text_sha256": "83cd168b1aeeca8a47114a5a9b5d52b6ca977966680896f3c7f22f3f32b07c5b",
+      "window_index": 3
+    },
+    "84ce9dc64c52db70a8bbc6846f42c8fa9b66e5d3cc353f86656027816a6c4361": {
+      "context": "This chunk appears in the Introduction section (Section 1) of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679. It discusses the relationship between GDPR consent requirements and the ePrivacy Directive (2002/58/EC), explaining that GDPR consent conditions apply to ePrivacy-regulated activities and referencing relevant Article 29 Working Party opinions on consent definition and legitimate interests.",
+      "text_sha256": "b531826e0d95213e4a4b12e86a42b70e1a6d367397ec98c7c51ac20d01afaa79",
+      "window_index": 0
+    },
+    "884fba28d04523a2a08f1f79c732602e8d7672054f45f1781c6e796876ff7a1a": {
+      "context": "This chunk is from Section 3.2 \"Specific\" of the EDPB Guidelines on Consent, which explains the requirement that valid consent under Article 6(1)(a) GDPR must be given for specific purposes. The section details three key compliance mechanisms: purpose specification as a safeguard against function creep, granularity in consent requests, and clear separation of consent information from other matters. It includes examples demonstrating when new consent is required for different processing purposes.",
+      "text_sha256": "ee94ccc8405ad56374e5610e0bb8276260abe1e73e6c9716ef769ae959e5e824",
+      "window_index": 2
+    },
+    "88eadd6d9d204834e41af6b9e2b7a8e03ed5ab595bbb54a2b8eee95eaeb0487a": {
+      "context": "This chunk is from section 3.3.2 \"How to provide information\" of the EDPB Guidelines on Consent, which explains the practical requirements for presenting information to data subjects when seeking consent under the GDPR. It covers the form and accessibility standards for consent information, including the use of clear language, layered presentation, and audience-specific considerations.",
+      "text_sha256": "ec4c52485fd2eb0b94242deec23a14693f27ac23640ee77f372fd44122ed009a",
+      "window_index": 2
+    },
+    "8a24f030072604a40b46ea4308a9a5a2f46b5bf23ada3e6ad1e807735c470b84": {
+      "context": "This chunk from EDPB Guidelines 05/2020 on Consent appears in Section 2 \"Consent in Article 4(11) of the GDPR\" and provides the legal definition of consent under the GDPR, explaining how it compares to the previous Directive 95/46/EC framework and introducing the key elements of valid consent that are detailed in subsequent sections of the guidelines.",
+      "text_sha256": "09c5e4304fa83f7ee1482159e1676131e773a8dcadb64b9f2ab3a102bc58a9e9",
+      "window_index": 0
+    },
+    "8b870c2964a0364a942c48ab9509c92507cc0c26f9dde350b49dfc5280095360": {
+      "context": "This chunk appears in the Version history section of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679, documenting the release dates and changes made across different versions of the guidelines document.",
+      "text_sha256": "c662dd24d39837a3911d75817cfaa934c366971bafc0f0c70ed9c01680275717",
+      "window_index": 0
+    },
+    "a1d21132a1339d93880063ff24fc093d0fff92e54cf625a8fe783b4f033f334d": {
+      "context": "This chunk is from Section 8 of the EDPB Guidelines on Consent, which addresses the transition of consent obtained under the previous Directive 95/46/EC to compliance with the GDPR. It explains that existing consents remain valid if they meet GDPR standards, but controllers must review their processes before May 25, 2018, and may need to alter consent mechanisms to comply with the new requirements.",
+      "text_sha256": "7d4efa657c2a1bae4fc39924ab03807c5b8da809f6e61031cd229ed5bf93ab1c",
+      "window_index": 5
+    },
+    "a2185f887d02666ba6134328efd478a810c1351568f9e15ae09a419854f9a88f": {
+      "context": "This chunk appears in section 3.4 \"Unambiguous indication of wishes\" of the EDPB Guidelines on Consent, specifically in paragraph 90, which addresses the timing requirement for obtaining consent under the GDPR. It explains that consent must be obtained before data processing begins and discusses when new consent is required if processing purposes change.",
+      "text_sha256": "538dc3dd83dd858db28cf8e5d41477bd1eb5f2871f436423e50c959508facbc5",
+      "window_index": 2
+    },
+    "ab069ab2f8af41ba5628e748b14ef412d686f7069e8bc51360e7b03e9f979297": {
+      "context": "This chunk is from section 7.1.1 \"Information society service\" of the EDPB Guidelines on Consent. It defines the term \"information society service\" as referenced in Article 4(25) GDPR and Directive 2015/1535, explaining the key criteria (distance, electronic means, individual request) and providing European Court of Justice case law on how this definition applies to online services and composite services with both online and physical components.",
+      "text_sha256": "386dec0c3a1ef3c2f67c95b5ca16c2bffc1c9985f475acd50a21a146c2c47fa0",
+      "window_index": 4
+    },
+    "ac2c71aac67ebffcbe72a1afd3bf0d5916083df150d2c7b74826c62ede9ee0da": {
+      "context": "This is a footnote reference in the EDPB Guidelines on Consent, section 3.1.1 on Imbalance of Power, specifically supporting paragraph 22 which discusses when employers may rely on consent as a lawful basis for processing employee data in exceptional circumstances where consent is freely given.",
+      "text_sha256": "2fa1d7e64337def33236ecf49ff382f81f7e30f8ed8b14c61257f7a9195ba53a",
+      "window_index": 1
+    },
+    "b613fdf00bd3c5b25eae5dee421fa7018bf07eb8d673cd16f187c127ad4aad8e": {
+      "context": "This is the preamble section of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679, which lists the legal basis and references upon which the European Data Protection Board adopted these guidelines on valid consent requirements under the GDPR.",
+      "text_sha256": "2bdc7a261c8278e8c084b404f116ea26f2bf91b233f3e4bd8515a53766590c73",
+      "window_index": 0
+    },
+    "c126fdbf9a744aa7ad39acd6ff383ffd50a13ea8a922031eccaaf8f0d5e28160": {
+      "context": "This chunk is from section 7.1.4 \"Children's consent and parental responsibility\" of the EDPB Guidelines on Consent. It provides guidance on how controllers should verify parental responsibility and obtain parental consent for processing children's data under Article 8 GDPR, including a practical example of an online gaming platform implementing age verification and parental authorization procedures.",
+      "text_sha256": "62ef592ba0f6fc73086b4559646f8106ed46db0163c4aff4ab5a723749d6e5c1",
+      "window_index": 4
+    },
+    "c53abf5716cf9f7c08c698b310b676f3a2e3a8fa9bbaacd9cc2e0ac73dc4fdf7": {
+      "context": "This chunk is from section 7.2 \"Scientific research\" of the EDPB Guidelines on Consent. It addresses how controllers must handle consent when research purposes cannot be fully specified at the outset, discussing the application of Recital 33 of the GDPR, the requirement to specify purposes, and the safeguards (including transparency, data minimization, and anonymization) that controllers should implement when obtaining consent for scientific research activities.",
+      "text_sha256": "6db0d5fb979f99e85f2fa81e0aa4ebfe04ebf86f99281bc59923f4436772d4ad",
+      "window_index": 4
+    },
+    "c734f33033f2317eef726d8b7f0e9d6151bc150b271422bf47097e534d2a5dc2": {
+      "context": "This chunk from the EDPB Guidelines on Consent (May 2020) is part of section 5.2 on \"Withdrawal of consent\" and illustrates Article 7(3) GDPR requirements through Example 22 and subsequent paragraphs. It demonstrates how controllers must ensure consent withdrawal is as easy as giving consent, and explains the legal consequences when consent is withdrawn, including the obligation to stop processing and delete data unless another lawful basis applies.",
+      "text_sha256": "551e60cd3305eec3c67bffea47334ea491a215ed51f78aa4faca348cee83567b",
+      "window_index": 3
+    },
+    "d42e5769ce1f5ef1ae3053f6d497060bce1b704073f60e4c5b9ddfd2249697e3": {
+      "context": "This chunk is from section 7.1.4 \"Children's consent and parental responsibility\" of the EDPB Guidelines on Consent. It discusses how controllers can verify parental consent for children's data processing under Article 8 GDPR, including practical implementation steps, the proportionality of verification measures, and children's rights to modify or withdraw consent once they reach the age of digital consent. The chunk also addresses exceptions for preventive or counselling services and clarifies the relationship between GDPR consent requirements and national contract law.",
+      "text_sha256": "c7b0904c7b592f9ac67d518b193e9083690c4f8ea6857ed7e2d24a9e6e4c5ade",
+      "window_index": 4
+    },
+    "d45e189acb780557836464aa676326b140693ac89d5a64676e28dbd1cfb37453": {
+      "context": "This is the table of contents from EDPB Guidelines 05/2020 on consent under Regulation 2016/679, listing all major sections and subsections of the document including topics such as the definition of consent in Article 4(11), elements of valid consent (freely given, specific, informed, unambiguous), obtaining explicit consent, withdrawal of consent, and specific areas of concern like children and scientific research.",
+      "text_sha256": "7cad4e58901d1989eb0ec98cf25f83ec8f80009bf7450971c6c5257b9405d9af",
+      "window_index": 0
+    },
+    "db3e501823ebfc0abce97de0197c9ce2daace60a7759e86b72e40ea4eda918fa": {
+      "context": "This chunk is from section 3.4 \"Unambiguous indication of wishes\" of the EDPB Guidelines on Consent, which explains the requirement under Article 4(11) GDPR that valid consent must be given through an unambiguous statement or clear affirmative action by the data subject, and details what forms of consent expression are and are not acceptable.",
+      "text_sha256": "f80119471064c9c30db39102ed65f35dc722ffa72a5dc8c843b8ebf41ddf4ad7",
+      "window_index": 2
+    },
+    "f2534fbebb24e50d3f9177218690ee5991347685aa9225cece4970904599d4ec": {
+      "context": "This chunk appears in Section 3 \"Elements of Valid Consent\" of the EDPB Guidelines 05/2020 on consent under Regulation 2016/679. It restates the definition of consent from Article 4(11) of the GDPR and introduces the framework for analyzing the four key requirements for valid consent: freely given, specific, informed, and unambiguous.",
+      "text_sha256": "81e42e97c8c336dbfed1ec4a948ccc92efe5d1c9983e8697661d1a0aec96934d",
+      "window_index": 0
+    },
+    "fa9756cfe30d38f2c83fdec0445e4b31dd91357e72844296a45957b740b23006": {
+      "context": "This chunk is from section 7.1.3 \"Age\" of the EDPB Guidelines on Consent, which addresses the age requirements for obtaining valid consent from children under Article 8 GDPR. It explains Member States' discretion to set a lower age of digital consent (minimum 13 years), controllers' obligations to verify age appropriately, and the proportionality requirements for age verification mechanisms when providing information society services to children.",
+      "text_sha256": "559c3f82219cf7b6085286f319b7ebd997e459af54a1a145bbb4ad1771d51c50",
+      "window_index": 4
+    },
+    "fd5d503d806d10d35ae0f2e2600820d27dfb1736ea5d3d2e6d6ff16f2bfb26c3": {
+      "context": "This chunk is from section 7.1.2 \"Offered directly to a child\" in the EDPB Guidelines on Consent. It explains how the phrase \"offered directly to a child\" in Article 8 GDPR determines the scope of application for consent requirements when information society services are provided to children, specifically addressing when Article 8 does not apply based on service provider declarations and evidence.",
+      "text_sha256": "605fef50a215447a0de468f96159d6bf337a08c9a3c87e2cf84c65ac092448b3",
+      "window_index": 4
+    },
+    "ffe8c8486679c30dd72e249bd5b3e8fca7e1490e8135b16284ab8a7c35fdc9c0": {
+      "context": "This chunk is from section 3.3.2 \"How to provide information\" in the EDPB Guidelines on Consent, which discusses how controllers must present consent information to data subjects in a clear and accessible manner. Paragraphs 71-74 specifically address the requirement that consent requests must be clearly distinguishable and separate from other matters, including guidance on layered information presentation, integration with information duties under Articles 13 and 14 GDPR, and practical examples demonstrating compliant approaches to obtaining informed consent.",
+      "text_sha256": "4518dbf988ca8c2bde61b5a2b2ba56fb78416f80978a49bb12923126d5bbb101",
+      "window_index": 2
+    }
+  },
+  "doc_id": "edpb-guidelines-consent",
+  "generated_at": "2026-08-29T22:18:28Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

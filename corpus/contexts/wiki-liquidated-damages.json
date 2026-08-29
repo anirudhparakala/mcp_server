@@ -1,0 +1,133 @@
+{
+  "contexts": {
+    "05dfa051a35df9914eee9e0844b3e18c25aba02b141ffadbdd9005f95e87fa62": {
+      "context": "This chunk is from the References section of the Wikipedia article on Liquidated damages. References 14-20 provide citations for legal sources and court cases discussed throughout the article, including Uniform Commercial Code provisions, construction law materials, and Australian court decisions regarding bank fees and penalties.",
+      "text_sha256": "161334e01411dce190fd45341c4c883478038ffa1ac5c8ea3021e96cdeec6129",
+      "window_index": 1
+    },
+    "09001fe16d28b5e6a2985cc21d1ce54d7a7b765f202bbf5b24b65f21a8c3fdcd": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, under the \"Insurance\" section. It discusses how insurance can be used to cover the financial obligation when liquidated damages clauses are triggered in a contract.",
+      "text_sha256": "d84e31fe755b2f3566a6bcc83e140e346713696ef063560e1a767aa69b610ef8",
+      "window_index": 1
+    },
+    "0982817c0ce8430b64069d47b27636ed44f9ae60402395ffa67c88b19f91cc7d": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, specifically in section 1.1 titled \"The definition and scope extended\" under the Common law section. It explains how Australia's legal definition of liquidated damages differs from the general common law definition by extending applicability beyond breaches to situations involving secondary stipulations.",
+      "text_sha256": "8d256e5245e53b20c76ee5defdda70c4d529098fbd1c407e6edc317ff3805518",
+      "window_index": 0
+    },
+    "0f7834f3355db6293e84eefc11a282cef352eb7b0c585791577973bf3830845b": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, in the introductory section that defines the concept and explains its general purpose and legal constraints. It follows the definition of liquidated damages as compensation amounts designated by parties during contract formation and precedes the detailed discussion of common law requirements for enforcing such clauses.",
+      "text_sha256": "fb0111f0821b3ea948f4d5939da10be2ef622e7e7476f1a4c1813317075bc53e",
+      "window_index": 0
+    },
+    "178ea9fd69304e9cc79e22debee73788e917a4f813518ab7d39ff1c50b032731": {
+      "context": "This chunk appears in the \"See also\" section of the Wikipedia article on Liquidated damages, providing cross-references to related legal concepts and topics including penalty clauses, English law penalties, and punitive damages.",
+      "text_sha256": "617e5c0ee578e583dac73753193f0b93f638162befab50a8701f5fc1f6e8c92e",
+      "window_index": 1
+    },
+    "1b8fda671a0899f9e6154a3175bbf1cfb5f9b389be87b73cb699bf7a1e704925": {
+      "context": "This chunk is an edit link for section 5 of the Wikipedia article on Liquidated damages, which introduces the subsection \"The law applied to bank and credit card charges\" under the Common law section.",
+      "text_sha256": "5d83f9d2a3805787615d6e8c8ddafc7b6ed406a68372069fec835f6d476fc960",
+      "window_index": 0
+    },
+    "1d27bdbb53eee02d2183391549179580a5367585d7bbf9b1a94e326b9649e7b5": {
+      "context": "This chunk is from the Wikipedia article on Liquidated damages, specifically the section \"Liquidated damages > Common law > The law applied to bank and credit card charges > Australia.\" It documents a series of Australian court cases from 2012-2016 involving ANZ Bank's credit card and exception fees, tracing how courts at different levels ruled on whether these fees constituted unenforceable penalties under liquidated damages law.",
+      "text_sha256": "60a2dedb32474b4aa23e64ba0e140f5a079a2f3e89a307e6f6e010171530b0f3",
+      "window_index": 1
+    },
+    "3c17cdeb9ba55ede8307f938e1085db48977e4114aabffbdc26cad88896da0c7": {
+      "context": "This chunk contains references 21-25 from the Wikipedia article on Liquidated damages, specifically supporting the section on civil law systems. Reference 21 cites a comparison of the French legal concept of \"clause p\u00e9nale\" with liquidated damages, reference 22 cites Japan's Civil Code provisions on liquidated damages, and references 23-25 cite Louisiana Civil Code articles on stipulated damages, which is the civil law term for liquidated damages used in that U.S. state.",
+      "text_sha256": "f12ba3b1c6c5dc13c182e1d14a118e6fd8bc90910c15605e8449bee89050e1f0",
+      "window_index": 1
+    },
+    "57bfa5f9f010e6d65eaaeda75a2e76b5a2bb0fc57f630beeafe4dbb4747a10c6": {
+      "context": "This chunk contains references 26-28 from the Wikipedia article on Liquidated damages. Reference 26 cites Louisiana Civil Code Article 2012 regarding the enforceability of stipulated damages unless manifestly unreasonable. Reference 27 supports the discussion of liquidated damages in Islamic law as a mechanism to overcome contractual uncertainty. Reference 28 addresses the topic of liquidated damages insurance covered in the Insurance section of the article.",
+      "text_sha256": "f0242bc02576fac207778777757d43becf5ca469e55fa2eb6b6929e45bd4bce6",
+      "window_index": 1
+    },
+    "5d6dc45bbf26226f852ea733d9b3531c38e669aba1d0a4dad464c5d00d23521e": {
+      "context": "This chunk is a navigation template from the Wikipedia article on Liquidated damages, appearing at the beginning of the document. It provides a comprehensive index of contract law topics organized by categories including Formation, Vitiating factors & defences, Terms & interpretation, Performance & breach, Remedies, and other contract law concepts, with cross-references to related Wikipedia articles.",
+      "text_sha256": "618d72d9f3e46e6c871b83f0fa586c809c789f56ee74b160a3a365356aaa55b6",
+      "window_index": 0
+    },
+    "62e0d4720922bea3db55a747a06792c7f2c493fbfe6c382e234606a103b7a5fe": {
+      "context": "This chunk contains references 8-13 from the Wikipedia article on Liquidated damages, appearing in the References section at the end of the document. These citations support various sections of the article, including foundational legal scholarship on liquidated damages and penalties, discussions of enforceability of liquidated damages clauses, and Australian case law on bank fees and penalties.",
+      "text_sha256": "0a746f52da53d057de71aafec0ce0ac59bb88ccfd8059e816aec9c3c4fb9c920",
+      "window_index": 1
+    },
+    "638a3e6f2807b5e424418ca4444ddc1ebbf8e10db5c06d892e84f29cbbe8d1a5": {
+      "context": "This chunk is from the Wikipedia article on Liquidated damages, specifically from section 1.4.1 titled \"The law applied to bank and credit card charges > United Kingdom.\" It discusses how UK courts and regulators have applied liquidated damages law to bank overdraft and credit card penalty charges, including the 2007 Office of Fair Trading investigation and the 2009 Supreme Court ruling in Office of Fair Trading v Abbey National plc.",
+      "text_sha256": "1b4441f5a3e86858a559fbb2afefe1c1bdc4f2456d42217a5c7b7e4e372d25cd",
+      "window_index": 0
+    },
+    "82354d812b0a2f1a6d78a0eb402f01913facf460424f6f3df95ef71107668bd6": {
+      "context": "This is the table of contents for the Wikipedia article on Liquidated damages, outlining the main sections and subsections covered in the document, including Common law principles, Other legal systems, Insurance applications, and references.",
+      "text_sha256": "526a771a1d5f248dc8839b7de573b556df9b917311142f783bd8f94967560f5f",
+      "window_index": 0
+    },
+    "8ab9f6b4fdf05011ed533935a317efa00e7f3804afba75ace97280e5002e7243": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, under the section \"Other legal systems > Islamic law,\" which discusses how different legal systems treat liquidated damages provisions. The chunk explains the Islamic law perspective on liquidated damages and the concept of gharar.",
+      "text_sha256": "664c5babda4731672405d25730adc48cbe86501c633f4f4481d8e330c244cc5b",
+      "window_index": 1
+    },
+    "8e1f8b7da5e9cdf2959eeaaabf72a7e8bac9ed38686a7bd144123ded198fcf92": {
+      "context": "This chunk is a section header for \"Liquidated damages > Other legal systems\" in the Wikipedia article on liquidated damages, which introduces a new major section comparing how different legal systems treat liquidated damages beyond common law jurisdictions.",
+      "text_sha256": "0cabea346655811ffdb9d0894cf422ccf3b3d955b01ef1c40bc45e01b5d9c91c",
+      "window_index": 1
+    },
+    "96e9372667a4f700c4b489e3755f187bae3c673205161a28196d63d465e07716": {
+      "context": "This chunk contains Wikipedia metadata and navigation elements from the Liquidated damages article, including edit history information, download options, and revision details for the article last edited on June 24, 2026.",
+      "text_sha256": "bb0bc9522fa84c4690f3b436f11b02bf89cf5211e349243136d64cd1778c3b55",
+      "window_index": 0
+    },
+    "98cd89b69d9c76a5ec375e2b3dd2872af2f91647742547368f18df59f87c0a57": {
+      "context": "This chunk is from the References section of the Wikipedia article on Liquidated damages, containing the first seven numbered citations that support claims made throughout the article, including references to construction law, American legal encyclopedias, fair trading guidance, and key court cases from the UK and Australia.",
+      "text_sha256": "430154a5e6caa40d740769a27b8cdc6a7157ce078de265b7626dd5f090ee569c",
+      "window_index": 1
+    },
+    "9e6cd137875bc1553eb53f7dd34af45175a693ea58d5ab602716f3f475559585": {
+      "context": "This chunk from the Wikipedia article on Liquidated damages contains the language selection and navigation tools available at the top of the article, allowing readers to access the article in multiple languages and perform various editing and viewing functions.",
+      "text_sha256": "9dc0c7cb68c93defddd89d175eb60f4f6613b28d5e870cc68c54ad5ee8b8ab3c",
+      "window_index": 0
+    },
+    "aef1a4dd9660d3ffe52748e36505968e1e9ecbd3898eca22b8cb7e38a9905e13": {
+      "context": "This chunk from the Wikipedia article on Liquidated Damages provides the foundational definition and explanation of liquidated damages (also called liquidated and ascertained damages or LADs), describing them as predetermined compensation amounts designated by contract parties for breach. It contrasts liquidated damages with unliquidated damages and explains the concept of damages being \"at large.\"",
+      "text_sha256": "01a0b5243230c843700a76ecc41e77bc5c244f6ff44a93ed1cd747efebc6f486",
+      "window_index": 0
+    },
+    "af2f75dcba54c0d865e1fff237c62d085d34a12a4559a51f4f85d945b80db544": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, specifically in the \"Common law\" section under the subsection titled \"Uniform Commercial Code.\" It explains how the Uniform Commercial Code Section 2-718(1) regulates liquidated damages in U.S. contracts for the sale of goods, and how this statutory rule parallels the common law approach used in other contract types across most U.S. states.",
+      "text_sha256": "d37b17d42e4ae08a6c75c0c31517bd4a5ceca7c9da18a0159c80436d862281e1",
+      "window_index": 0
+    },
+    "c822aaa7bb7858f59fd349792e5bc4bb08ead46d864c32e05f8070a4251574b6": {
+      "context": "This chunk appears in the Wikipedia article on Liquidated damages, under the section \"Other legal systems > Civil law.\" It compares how civil law jurisdictions treat liquidated damages differently from common law systems, specifically examining provisions in the French Civil Code, Japanese Civil Code, and Louisiana Civil Code regarding contractual penalties and stipulated damages.",
+      "text_sha256": "029a5f518ed45c6d33fd7a0a92ec0321e01385e3618bed26024d8d924b44fbd3",
+      "window_index": 1
+    },
+    "cd41eacf98a9891114edc51ef809531397f62318805d6003528d06f7bd1e397e": {
+      "context": "This chunk appears in the \"Case law\" subsection (section 1.3) under the \"Common law\" section of the Wikipedia article on liquidated damages. It presents judicial precedents and rulings that illustrate how courts apply and enforce liquidated damages clauses in practice, particularly in construction contracts and disputes involving both liquidated and unliquidated damages claims.",
+      "text_sha256": "e662d3423a5d2974a69ea97ffac8a658596e50339d6659b6b56250c9f67a636d",
+      "window_index": 0
+    },
+    "d544edb5c6d243b8062173afe0f5e7987b6afdb1510b977af4634971a3940a98": {
+      "context": "This chunk is part of the table of contents and navigation structure from the Wikipedia article on Liquidated damages. It appears in the contract law template section that outlines remedies available for breach of contract, listing liquidated damages alongside other legal remedies such as specific performance and rescission, as well as quasi-contractual obligations and dispute resolution mechanisms.",
+      "text_sha256": "0758be3bbc5132a9ea4213fc9cfc5ee95a89238942cdfdc5065f0c183f015635",
+      "window_index": 0
+    },
+    "e773b3040806a34d20b254e6e01fb0c05698616cae1e64ec2d99c9b2b3c25223": {
+      "context": "This chunk appears in the \"See also\" section at the end of the Wikipedia article on Liquidated damages. It lists related legal concepts and a landmark UK Supreme Court case, Cavendish Square Holding BV v Talal El Makdessi, along with cross-references to related topics such as unspecified claims and penal bonds.",
+      "text_sha256": "5ee611934561e0197d49b32f35682cfae6e5463bacc1d14887878049606de948",
+      "window_index": 1
+    },
+    "f121adb596fa9dc2d7b2e5784b58301eb8929c877d91c3e106806ab3dad0ee16": {
+      "context": "This chunk is from the \"Common law\" section of the Wikipedia article on liquidated damages. It explains the foundational principles governing liquidated damages clauses under common law, including the distinction between enforceable liquidated damages and unenforceable penalty clauses, the two conditions required for enforcement, and provides a practical example illustrating when such clauses are appropriate.",
+      "text_sha256": "57f2a2bfd7ab50ddcf4492ef170caa9ec278d15d0b2c69f9a6715a765ba2c3d6",
+      "window_index": 0
+    }
+  },
+  "doc_id": "wiki-liquidated-damages",
+  "generated_at": "2026-08-29T22:29:10Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

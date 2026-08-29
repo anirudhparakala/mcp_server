@@ -1,0 +1,143 @@
+{
+  "contexts": {
+    "14aafb07c077343465ce4570142a770369e9374890352885fb9e52f404137a0d": {
+      "context": "This chunk is from Section 2.04 (Evidence of Indebtedness) through Section 2.07 (Payments and Computations) of Article II (Amounts and Terms of the Loans) in a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l. as Borrowers and three Luxembourg entities as Lenders. These sections establish the procedures for maintaining loan records, evidencing indebtedness through notes, calculating interest rates, and making loan payments.",
+      "text_sha256": "092007cd7d6fc709e6720ea05ba2a294d521d9a2c6213aa1b1896d8aaa6e2661",
+      "window_index": 0
+    },
+    "2720634c8ef0fe8ea0cfff0448f19926ddfc1c8ce5759fa55fe308b655b8b90b": {
+      "context": "This chunk is part of Exhibit C, the Form of Notice of Borrowing, in a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. (U.S. Borrower), Borden Luxembourg S. \u00e0 r. l. (Foreign Borrower), and three Luxembourg lenders. The chunk contains the borrower's certifications required under Section 2.02 of the Credit Agreement, confirming that representations and warranties are true and no defaults exist prior to making a proposed loan borrowing.",
+      "text_sha256": "232c04aced2cfe97b873c031be8c8408f387c22978d661fcdde38acda040e5f0",
+      "window_index": 2
+    },
+    "2b3c914fb159961312bd48f4f3996f82c683c29b991df6db7ce4f76a7734ea8f": {
+      "context": "This chunk contains Section 5.08 through Section 5.12 from Article V (Miscellaneous) of a commercial loan agreement. Section 5.08 establishes confidentiality obligations for lenders regarding borrower information, with exceptions for affiliates, other lenders, assignees, and legally required disclosures. The subsequent sections address governing law (New York), severability, execution in counterparts, and jurisdiction provisions for the loan agreement.",
+      "text_sha256": "25faf5dddbe1a6aa1be8722801fc965f8434b346ffa5cf2689bb06aa7cd531be",
+      "window_index": 1
+    },
+    "319b44a420882a7eb52441c5dcd1a7f71aed5dbec7963f120cea7a21236726c2": {
+      "context": "This excerpt is from a commercial loan agreement filed with the SEC. The chunk contains provisions from Article II (regarding tax withholding and indemnification), Article III (conditions to loans), and the beginning of Article IV (events of default), establishing the lenders' conditions for making loans, the circumstances triggering defaults, and tax treatment obligations between borrowers and lenders.",
+      "text_sha256": "97ecc88ce3e599076dbede2b5abbabbb38ed51060e32be9acd3c93a0693076da",
+      "window_index": 1
+    },
+    "3c177b0d6e38e3dff7e33ce5a6afc563eb7b3c53c37a56bb413890174627d3f2": {
+      "context": "This chunk appears in a credit agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. (U.S. Borrower), Borden Luxembourg S. \u00e0 r. l. (Foreign Borrower), and three Luxembourg lenders. It contains Schedule 2.01 listing the lenders and their commitments totaling $100,000,000, followed by Exhibit A presenting the Form of Assignment and Acceptance, which governs the transfer of lender rights and obligations under the Credit Agreement.",
+      "text_sha256": "ca4ec2cc6f3f0b11b1adf7f9439363a0bb14bde3f48906471d018a12a0be9371",
+      "window_index": 2
+    },
+    "3dc4e65d9cf469687a564d334639f7b667e829889f9e62af2bd76aab45db1670": {
+      "context": "This chunk is from Exhibit B (Form of Note) and Exhibit C (Form of Notice of Borrowing) of a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. (U.S. Borrower), Borden Luxembourg S. \u00e0 r. l. (Foreign Borrower), and three Luxembourg lenders. Exhibit B describes the promissory note evidencing loans and its governance under New York law, while Exhibit C provides the template for borrowing notices that borrowers must submit to request loans under Section 2.02 of the Credit Agreement.",
+      "text_sha256": "6fb1a1cf0a76989a3d3619d95495299dfb07b4b4c1426e9b6b282326ff636b1a",
+      "window_index": 2
+    },
+    "46855f1c7ec8e9a7e45cd61df0e212a64ae4a632fd7facbab53261b0cb11e02a": {
+      "context": "This chunk is from Article V (Miscellaneous) of a commercial loan agreement, specifically Sections 5.12 through 5.14, which address jurisdiction and venue provisions, waiver of jury trial rights, and the survival of covenants and representations after loan execution. The agreement governs loans made to Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l. by lenders including Apollo Management, L.P.",
+      "text_sha256": "470ce818c48826a503efe812b4dbf7f7c4d4724f3e8203638713c79ea2a647c2",
+      "window_index": 1
+    },
+    "49d584f5f9cf16209131408d2d3c776e3156bfac45fc0e23c1be76afbb2ae6d0": {
+      "context": "This chunk is part of the table of contents from a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and three Luxembourg lenders. It lists the sections and articles of the agreement including Article II on Amounts and Terms of the Loans (Sections 2.05-2.08 covering Interest on Loans, Prepayments, Payments and Computations, and Taxes), Article III on Conditions to Loans, Article IV on Events of Default, and Article V on Miscellaneous provisions.",
+      "text_sha256": "a820b52081bba7a8b8122e6e8af1a96ca53772e859af286c26079ccaf03c87e8",
+      "window_index": 0
+    },
+    "5b223e6a62ef1656d426647e8b650bf9b9619b9a8ee75c44c9ef48ee144c0f8b": {
+      "context": "This chunk is from Exhibit A (Form of Assignment and Acceptance) of a Credit Agreement dated March 3, 2009 among Hexion Specialty Chemicals, Inc., Borden Luxembourg S. \u00e0 r. l., and three Luxembourg lenders. It contains sections 3-8 of the Assignment and Acceptance form, detailing the assignee's confirmations and obligations, the effective date procedures, the assignor's release from obligations, payment procedures, governing law, and execution provisions.",
+      "text_sha256": "6a5b2077dee9b8282c565740ed897c3820656b65d859321c01ae9f46f65d3b4a",
+      "window_index": 2
+    },
+    "5d07c0421858e5167d5900a6aa6bc87337e6c77cc527c11f5aa2353911eafb23": {
+      "context": "This is the title page and table of contents for Exhibit 10.4, a Credit Agreement dated March 3, 2009, between Hexion Specialty Chemicals, Inc. as U.S. Borrower, Borden Luxembourg S. \u00e0 r. l. as Foreign Borrower, and three Luxembourg entities as Lenders, establishing a term loan facility. The table of contents lists the agreement's five main articles covering definitions, loan amounts and terms, conditions to loans, events of default, and miscellaneous provisions.",
+      "text_sha256": "8ee139103e28b8f9fd2b1467429f4e9341614516b56cf76285eda98457a8c9a6",
+      "window_index": 0
+    },
+    "6472ac175fafb749830d1d6f695110b312152f2530619ed1b7434a1ac0feb4b7": {
+      "context": "This chunk contains key defined terms and interpretive provisions from Article I (Definitions and Accounting Terms) and the beginning of Article II (Amounts and Terms of the Loans) of a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l. as borrowers and three Luxembourg entities as lenders. The definitions include Senior Secured Credit Agreement, Statutory Reserves, Tax, and Voting Stock, along with sections on computation of time periods, accounting terms, and other interpretive provisions that govern how terms are construed throughout the agreement.",
+      "text_sha256": "c7bb69b60ab0687661ab9a0f874da4a1bd3eda6f0ea0b02b8f99355d4a992d2c",
+      "window_index": 0
+    },
+    "65495d275faf620e6c61e57598f1555d9c774f412c52be414bd97761cd726b0c": {
+      "context": "This chunk contains the table of contents and opening pages of a Credit Agreement dated March 3, 2009, between Hexion Specialty Chemicals, Inc. as U.S. Borrower, Borden Luxembourg S. \u00e0 r. l. as Foreign Borrower, and three Luxembourg lenders. It lists the agreement's five main articles covering definitions, loan amounts and terms, conditions to loans, events of default, and miscellaneous provisions, along with schedules and exhibits, followed by the preliminary statement describing a $100,000,000 term loan for general corporate purposes.",
+      "text_sha256": "a763d370b4506697f7dd20bef2761b465018698c7c632c18ba0f7265afeea547",
+      "window_index": 0
+    },
+    "663e4aec87e162ee793c473c68c02bee132629073df55828b7c518caecf0b8d8": {
+      "context": "This chunk from a credit agreement dated March 3, 2009 contains the signature pages and Schedule 2.01 identifying the parties and their authorized signatories. It lists Hexion Specialty Chemicals, Inc. as the U.S. Borrower, Borden Luxembourg S. \u00e0 r. l. as the Foreign Borrower, and three lenders (Euro V, Euro VI, and AAA Co-Invest VI), along with Schedule 2.01 showing the lenders' commitments totaling $100,000,000.",
+      "text_sha256": "0dfd888f16a64c4918fed8de4f6a50de36d5db430809364e534592763f9581d8",
+      "window_index": 2
+    },
+    "7811270ce526a0a4d6a093ee966357235380dd9ab6c8a135f7a081c6bdfee7f4": {
+      "context": "This chunk is from Section 1.01 (Certain Defined Terms) of Article I (Definitions and Accounting Terms) in the Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and three Luxembourg lenders. It contains key defined terms used throughout the agreement, including Lender Tax, Lenders, LIBO Rate, Loans, Loan Documents, Maturity Date, Note, Notice of Borrowing, Other Taxes, Person, Register, Related Parties, Required Lenders, and Second Secured Notes Indenture.",
+      "text_sha256": "bd725b254783c70ccf44bb19ebcc3926235881a70791e4d9df601be93f4a49a2",
+      "window_index": 0
+    },
+    "8aac11e996594eb6cc2beb72c5e1f9ddd9c7997d23ee0860a63cde68a3f8c9eb": {
+      "context": "This chunk contains the preamble and Article I of a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. (U.S. Borrower), Borden Luxembourg S. \u00e0 r. l. (Foreign Borrower), and three Luxembourg lenders. Article I establishes definitions and accounting terms essential to interpreting the agreement, including key financial terms such as Adjusted LIBO Rate, Applicable Margin (2.25% per annum), Commitment ($100,000,000), and other operational definitions referenced throughout the document.",
+      "text_sha256": "59edfbe245b1b5a857c138858e83947505bd61b8cf305566e68a08480375ff05",
+      "window_index": 0
+    },
+    "9357c323acf6cea666d8dc5a163487b2944ea9be2cba4e4c031ae3f8eaa3867e": {
+      "context": "This chunk is from Article IV (Events of Default) of a commercial loan agreement. It specifies four types of defaults that trigger the lenders' right to declare outstanding loans immediately due and payable: payment defaults on principal, interest, or other amounts due (with a five business day cure period), covenant defaults (with a 30-day cure period after notice), defaults under a Second Secured Notes Indenture, and assertions that loan documents are not valid obligations. The section concludes with the lenders' remedies upon occurrence of these events.",
+      "text_sha256": "044826348b52a9517b6ba893903ea214f51f2cc6ac387f8346b7c34a90b1ae0a",
+      "window_index": 1
+    },
+    "967684cb8eb6c08c6202bb40896f84415a11cad607f179586dbcfbe70a64b565": {
+      "context": "This chunk is from Article V (Miscellaneous) of a commercial loan agreement, specifically Sections 5.04(c), 5.05, 5.06, and 5.07. Section 5.04(c) addresses liability limitations for Indemnified Parties as defined in Section 5.04(b), Section 5.05 covers the Lenders' right of set-off upon Event of Default, Section 5.06 establishes the binding effect of the agreement, and Section 5.07 governs assignments and participations of Lender rights and obligations under the Loan Documents.",
+      "text_sha256": "78464be1a5cd94857bc740bcf41e8a4a98c86d338eabfd9f412f671c52772722",
+      "window_index": 1
+    },
+    "a20343f9df929327f7f9173b71d51dea13a8492a268cbaf762915442ed7b6450": {
+      "context": "This chunk is from Section 5.07 (Assignments and Participations) in Article V (Miscellaneous) of a commercial loan agreement. It describes the procedures and conditions for lenders to assign their rights and obligations under the loan documents to affiliates or other parties, including execution requirements, the role of the Register, and representations made by assigning and assignee lenders.",
+      "text_sha256": "f4360c4527772293a6f28d7116ac65511bf97d4e2f291975f9fdb292cfc35d22",
+      "window_index": 1
+    },
+    "aa40682d941b55f7fe8d7f7c71299215cd502dceb132c5beb59d3f10321fd02c": {
+      "context": "This chunk is from Section 1.01 (Certain Defined Terms) of Article I (Definitions and Accounting Terms) in the Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l. as Borrowers and three Luxembourg entities as Lenders. It contains key defined terms used throughout the agreement including Confidential Information, Default, Default Rate, Dollars, ERISA, Events of Default, Flow Through Entity, GAAP, Governmental Approval, Indemnified Party, Interest Payment Date, and Interest Period.",
+      "text_sha256": "6405b53e6aaf563f18bac500a6fee11b8c3f4939b5a8813e5d6e230ff5bc441b",
+      "window_index": 0
+    },
+    "b2c2f0641cdb4d4aa9463c99d084a69a676abcf25c88a0941dab259455946191": {
+      "context": "This chunk is from Article V (Miscellaneous) of a commercial loan agreement, containing Sections 5.01 through 5.04 that establish procedural rules for amendments, notices, waivers, and cost allocation between the Borrowers (Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l.) and the Lenders in this secured credit facility.",
+      "text_sha256": "49d3fedcf8cbd803d2fe27ce4ec75b8827c947a7aef0347e7d5796b273bda108",
+      "window_index": 1
+    },
+    "bd891ef6e847f9548a67f18e2b47b0c65cbcef73d5bcc2fe784a744b6a1f9738": {
+      "context": "This chunk contains signature blocks and Schedule 1 from Exhibit A (Form of Assignment and Acceptance) of a Credit Agreement dated March 3, 2009 among Hexion Specialty Chemicals, Inc., Borden Luxembourg S. \u00e0 r. l., and three Luxembourg lenders. The chunk also includes the beginning of Exhibit B (Form of Note), which is a promissory note template for loans made under the Credit Agreement.",
+      "text_sha256": "5a3018930892a2493676747c9842e2596bc005747363f2c79d44ff6c8e6dc7bf",
+      "window_index": 2
+    },
+    "c7dde46077c1a6e4421620bf7dc72ec001d58857beaff776c25e53d832660bd0": {
+      "context": "This chunk contains Article II of the Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. (U.S. Borrower), Borden Luxembourg S. \u00e0 r. l. (Foreign Borrower), and three Luxembourg lenders, covering the amounts and terms of the loans including loan mechanics, making loans, repayment obligations, and evidence of indebtedness.",
+      "text_sha256": "27253f3a7f1b4c1c4c5c5a5b15c93d78449145c2a0c71411931a6ea783db1ca4",
+      "window_index": 0
+    },
+    "caf69ff247b6c365f47c21c11493417c4f31f1df9e42309af1cf06b121243962": {
+      "context": "This chunk is from Section 2.08 (Taxes) of Article II (Amounts and Terms of the Loans) in the Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and Borden Luxembourg S. \u00e0 r. l. as Borrowers and three Luxembourg entities as Lenders. Section 2.08 establishes the tax obligations and withholding requirements for borrower payments under the agreement.",
+      "text_sha256": "3fc127bb0a7a1f450930e10a567bf3a0c83d021f9544fd126bda6f5d0d4fef86",
+      "window_index": 0
+    },
+    "cc495e289580f1c226573dcb6f5ce1a56fa32f1d0b61549a4bf0fabb0e3c9ca1": {
+      "context": "This is the table of contents from Exhibit 10.4, a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. as U.S. Borrower, Borden Luxembourg S. \u00e0 r. l. as Foreign Borrower, and three Luxembourg lenders. The table of contents lists the major articles and sections of the agreement, including Article I on Definitions and Accounting Terms, Article II on Amounts and Terms of the Loans, Article III on Conditions to Loans, Article IV on Events of Default, and Article V on Miscellaneous provisions, along with their corresponding page numbers.",
+      "text_sha256": "b6e9ec77a715a624d7f33ed30d5f708afd974422e3b2f9ce5633604ccfc9a511",
+      "window_index": 0
+    },
+    "d9ae07496dcce642b1046888b195ee8d7517daef746c38b03923d3076366550c": {
+      "context": "This chunk is from Section 5.07 (Assignments and Participations) of Article V (Miscellaneous) in a commercial loan agreement. It details the procedures and restrictions for lenders assigning their rights and obligations under the loan documents, including confidentiality requirements for assignees, security interests with Federal Reserve Banks, borrower rights to require lender substitution under Section 2.08, and foreign borrower assignment rights to affiliates.",
+      "text_sha256": "e97e986eb448907a8d2a11c49d17cf4767a789e205ec1aaba3f459361b20accd",
+      "window_index": 1
+    },
+    "dc5d40aa9dd6c052eb07e36e630a0e7fa12300f717b0940987459ec55b85a2c8": {
+      "context": "This chunk is from Section 5.04 (Costs and Expenses) of Article V (Miscellaneous) in a commercial loan agreement. It details the borrowers' obligations to reimburse lenders for costs and expenses related to loan administration and enforcement, and establishes an indemnification provision protecting lenders and their affiliates from claims and damages arising from the agreement and loan documents, with exceptions for certain tax matters governed by Section 2.08 and for negligence or misconduct by the indemnified parties.",
+      "text_sha256": "23f40c9f4b440f98b91c8bab251f25325f78a59508052bd7433098f20d3d77cf",
+      "window_index": 1
+    },
+    "f8c0045174d2a5657c652d5e2716c46f398062a1018a472924d5a771f443e1e2": {
+      "context": "This chunk is part of the table of contents for a Credit Agreement dated March 3, 2009 between Hexion Specialty Chemicals, Inc. and Luxembourg-based lenders. It lists sections 5.03 through 5.09 of Article V (Miscellaneous), which cover topics including No Waiver and Remedies, Costs and Expenses, Right of Set-off, Binding Effect, Assignments and Participations, Confidentiality, and Governing Law.",
+      "text_sha256": "59fe018ef946753e5d6fb2b9240ba86448f0ca47e4ec52957c84a5a6b2e1d172",
+      "window_index": 0
+    }
+  },
+  "doc_id": "edgar-commercial-contract",
+  "generated_at": "2026-08-29T22:27:45Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

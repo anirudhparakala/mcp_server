@@ -1,0 +1,238 @@
+{
+  "contexts": {
+    "03d235d7c45321a3855a3aa956fe027fb0babd7a712d02f9c01491049125997f": {
+      "context": "This chunk appears in the Reporting Summary section at the end of the AlphaFold paper published in Nature, which describes the journal's standards for reproducibility and transparency in scientific reporting.",
+      "text_sha256": "ee22caecffc1747c677b7a61b7de851d877b306717f2bc56b946e7e8b169f658",
+      "window_index": 2
+    },
+    "1a75e8a406edc246a1bc86b81e270fc5a8f8a18f58434d26c0e48a399577e5d2": {
+      "context": "This chunk appears in the AlphaFold paper's \"Full algorithm details\" section, which provides an overview of where comprehensive technical information about the neural network architecture and training procedures can be found in the supplementary materials.",
+      "text_sha256": "eb5402eea7328fd63ba224611b248dbf9f3d5c9360b9e82d758e56b7c0e706b8",
+      "window_index": 1
+    },
+    "234cc8903f724cb3e8cb4ba256b3449e53f9d0f37d76f992cf28493833505a6a": {
+      "context": "This is the introduction and abstract section of the Nature paper \"Highly accurate protein structure prediction with AlphaFold\" by Jumper et al., published in July 2021. The chunk outlines the fundamental problem of protein structure prediction, describes the limitations of existing computational methods, and introduces AlphaFold as the first method capable of predicting protein structures with atomic accuracy, validated through the CASP14 competition.",
+      "text_sha256": "98ec78983fee4f732a2251ebd3ce80668711bf1f729ab5746b0a4a076d305f29",
+      "window_index": 0
+    },
+    "2b36c8cd492b2467dc04558bbc123d0ff3c6df11566aae07093c20992d2844ee": {
+      "context": "This chunk appears in the \"Metrics\" section of the AlphaFold paper, which describes the evaluation methods used to assess the accuracy of predicted protein structures. The section explains the various metrics employed to compare AlphaFold's predicted structures against experimentally determined structures from the Protein Data Bank (PDB), including lDDT, GDT, TM-score, and r.m.s.d. measurements.",
+      "text_sha256": "f8cef2a84bb5b198efe5ea9c433721791b14ed18e163c055e1077db781451680",
+      "window_index": 2
+    },
+    "3c15394ed77e43029d494829ae8fbdf01617fd60553b20389987483254ce234f": {
+      "context": "This chunk appears in the Competing interests section of the AlphaFold paper, disclosing patent applications filed by several authors related to machine learning for protein structure prediction, while noting that other authors have no competing interests to declare.",
+      "text_sha256": "77839ed2e5dc44b7b816046363374f8ff8424378c60808c9950b77032bd00d94",
+      "window_index": 2
+    },
+    "40a82ac77b9f5c71577f265576203ed3a18107ac78ae01484c3b09b7531a8af1": {
+      "context": "This chunk is from the \"Article\" section of the AlphaFold paper, specifically within the results validation portion that follows the CASP14 performance section. It describes the validation of AlphaFold's accuracy on recent PDB structures deposited after the training data cutoff, demonstrating that the model's high accuracy extends beyond CASP14 test cases to general protein structure predictions, and introduces key accuracy metrics including pLDDT, lDDT-C\u03b1, and TM-score.",
+      "text_sha256": "b6985c4876b7cb09761bd70a493a8db49e82825a42b3a5991e72fbe3e6c05582",
+      "window_index": 0
+    },
+    "42b051b897ac5a8265b526e3f849f67192cff2692cc7ec08e3c6aac50819f795": {
+      "context": "This sentence appears in the \"Reporting summary\" section of the AlphaFold paper, which provides information about the research design and reproducibility standards for the study. It directs readers to the Nature Research Reporting Summary for additional details on how the research was conducted and reported.",
+      "text_sha256": "16f4d7e686decb400c63ba38f25dc9981b88616e551b936f3f87aa6f1f8b35ec",
+      "window_index": 2
+    },
+    "44f4a9e0406d2b20d43979b27fa63a83647f3fb1462b0dc36d5eaf2cb992cdd5": {
+      "context": "This chunk describes the Invariant Point Attention (IPA) module, a key component of AlphaFold's neural network architecture detailed in the \"Full algorithm details\" section. The IPA module is part of AlphaFold's structure prediction system that combines multiple representations to update predictions while maintaining geometric invariance in 3D space.",
+      "text_sha256": "621f4234f7637415134056a7de612ea2feb4a694f9c68635eddbc6e35e5d4db8",
+      "window_index": 1
+    },
+    "473149088d01fff29f3085a338ee920eb4999d68b3cd0d63f749352b4b10d9d3": {
+      "context": "This chunk contains references 41-55 from the AlphaFold paper's reference list, covering foundational work in protein structure prediction using neural networks, deep learning approaches, attention mechanisms, and related computational methods that informed AlphaFold's development.",
+      "text_sha256": "2010d10b2776ff37b48346cd72283b9777e44c504b59813cdee5a51cab196e8f",
+      "window_index": 1
+    },
+    "4c26c6bd3dd22444dd6b1aba9fc26e7e950c5115a0d610768466f329be099d15": {
+      "context": "This is the reference list from the AlphaFold paper, specifically references 1-14 that support the Related Work section discussing the history of protein structure prediction methods and the development of neural network approaches to the problem.",
+      "text_sha256": "066817236e7801dd24bc441ccb6b71b2430be2e87bf679777bfc8fab1aada051",
+      "window_index": 1
+    },
+    "4e4f09c5d2ca1b6122542287342efa0640a9d18400acfde93efcbf1a11dfb979": {
+      "context": "This statement appears in the \"Online content\" section of the AlphaFold paper published in Nature, providing a reference link to supplementary materials and additional information related to the main research on protein structure prediction using deep learning.",
+      "text_sha256": "5c7752fa1e5afd080dbf4217e6e8820f94481372e740fe13fdf804fc06c9ea1a",
+      "window_index": 1
+    },
+    "524493cbf8a295fdb2b2fb70b8faa2b9ddf5546ad51b03a58449c8058b475e73": {
+      "context": "This chunk is from the Discussion section of the AlphaFold paper, which explains the design methodology and implications of AlphaFold, a neural network for protein structure prediction. The section discusses how AlphaFold combines bioinformatics and physical approaches, its ability to handle challenging structural cases, its computational efficiency, and its potential impact on structural biology and the broader field of bioinformatics.",
+      "text_sha256": "e192cc9695db20a07b5ab7ec7c5e713f24f13ea1a29a2c9d55ed281a5d22fd06",
+      "window_index": 1
+    },
+    "5417a206777865629b159ea3a6f5cacaee060080f64eb150919fc19cf3364127": {
+      "context": "This is a reference list from the AlphaFold paper describing the computational methods and software tools used for protein structure prediction. References 59-73 document key tools and libraries cited throughout the paper, including HHblits (reference 61) and jackhmmer (reference 68) for multiple sequence alignment searches, MMseqs2 (reference 64) and FAMSA (reference 65) for sequence clustering and alignment, OpenMM (reference 69) for structure relaxation, and TensorFlow (reference 70), Sonnet (reference 71), and NumPy (reference 72) for neural network development and data analysis.",
+      "text_sha256": "977c7404d09c7f2159cb026ea96066a350e1d5e2b5f93776ae8fe63023333324",
+      "window_index": 2
+    },
+    "5d9814d3acb42c5b5bbea31c2cc25392a859eb96c1a7a91f0cb45371f55c9acc": {
+      "context": "This chunk appears in the \"Inputs and data sources\" section of the AlphaFold paper, describing the software tools and databases used for multiple sequence alignment (MSA) searches and structure prediction, as well as quantitative analysis of how different sequence data sources (BFD, MGnify, and UniRef) impact prediction accuracy measured in GDT units.",
+      "text_sha256": "b122230310311f595123383e0bf13e3686debd13301f0ccb40d02edaba8437a5",
+      "window_index": 2
+    },
+    "6754100a057ee693e3a2cf7ab8dcadde16d68e87c9ecd83cded84da7d7735a36": {
+      "context": "This chunk contains the final references and licensing information from the AlphaFold paper, including citations 56-58 and the Creative Commons Attribution 4.0 International License statement that applies to the entire published work.",
+      "text_sha256": "cd5dc5e253865031de8ebbf21bda9f2009be42b1a48be2ea037c9fc6b2a132d8",
+      "window_index": 1
+    },
+    "698d327e19fc2848023e988b47e79d694a7f3946057aa733feedcd50f66b1319": {
+      "context": "This chunk is part of Figure 5's caption in the AlphaFold paper, specifically describing panel (a) which analyzes the effect of MSA depth on protein structure prediction accuracy. It explains the methodology for computing MSA depth and the statistical analysis used to generate the curves shown in the figure, which demonstrates how multiple sequence alignment depth impacts AlphaFold's prediction performance across different protein templates.",
+      "text_sha256": "bbcf8d7747422508befa23d36b88dd8e26437431bf8d4584bdc2cecd242a91c4",
+      "window_index": 1
+    },
+    "6c212b2b53943888243fb62daac36d083ffdb6c4c1bf4163409a232ed1f3bd19": {
+      "context": "This chunk from \"Highly accurate protein structure prediction with AlphaFold\" presents Figure 1 and accompanying results from the CASP14 assessment, demonstrating AlphaFold's superior performance in protein structure prediction with backbone accuracy of 0.96 \u00c5 compared to the next best method's 2.8 \u00c5, along with examples of predicted structures and the model architecture overview.",
+      "text_sha256": "e6efadeb21d2d578764205ababdbfa9d6efafa530443407148f3946c70aa5bcd",
+      "window_index": 0
+    },
+    "76642d960e8b993198020f141dda17c29fdb1dd877bf7694bf9263a57e7908df": {
+      "context": "This chunk appears in the \"Reporting for specific materials, systems and methods\" section of the AlphaFold 2021 paper's supplementary information, which provides instructions to authors for disclosing the relevance of various experimental materials, systems, and methods to their study.",
+      "text_sha256": "2c36f1734cc138481bb1c3a8953ef827968306a28ff478f8107c978983bcf9c0",
+      "window_index": 3
+    },
+    "7875bbde880290832bdb2a990fc4f8b8db22c3f9dae600507a822e53efcf8cc1": {
+      "context": "This is a section of the references list from the AlphaFold paper published in Nature. The references cited here (numbered 28-40) support various technical aspects of the AlphaFold protein structure prediction algorithm, including computer vision techniques, deep learning methods, protein structure assessment metrics, and related work in protein structure prediction.",
+      "text_sha256": "11a8b3afbcd33d4c79f204e4963cb46470db54b8d0e1c7309f8f2f191077c08f",
+      "window_index": 1
+    },
+    "796516922475769433e05b9fd28e51a00f8fc25d5b858ddf5ef0baa670134b07": {
+      "context": "This section from the AlphaFold paper describes the inference regimen for making protein structure predictions. It explains how the five trained models are used at prediction time, including computational performance metrics on different GPU hardware, the effects of ensemble averaging on speed and accuracy, and memory requirements for proteins of varying lengths.",
+      "text_sha256": "fee732b8380043cb3a56e196940fa5f61b989cb4584fe9de4aa2b7c7ae2bf0d0",
+      "window_index": 2
+    },
+    "8313102a50eb74869e2a8637b4d4f745aabf939f845f23dc3ee37d2aa25a0075": {
+      "context": "This section appears at the end of the AlphaFold 2021 paper's Nature Research reporting summary, under \"Reporting for specific materials, systems and methods.\" It documents which experimental materials, systems, and analytical methods were relevant to the study, with checkboxes indicating that none of the listed materials or methods (antibiotics, cell lines, ChIP-seq, flow cytometry, etc.) were involved in this computational protein structure prediction research.",
+      "text_sha256": "9e08a2b40e53eb15b1f3eca80eef9b8a9b4866ee0cd8dfa5ad20f80db65325b8",
+      "window_index": 3
+    },
+    "8587d5daa710144c8aaa30f5c074ce77bccca9b99d8a1d7c53afdfd268e99d06": {
+      "context": "This chunk appears in the \"The AlphaFold network\" section of the paper \"Highly accurate protein structure prediction with AlphaFold\" by Jumper et al. (2021). It introduces the key architectural innovations of AlphaFold that enable accurate protein structure prediction, including novel neural network designs for processing multiple sequence alignments and pairwise features, and describes how the network directly predicts 3D atomic coordinates from protein sequences.",
+      "text_sha256": "7643f713182459865a0a468f0697dbe43394f9989d31aa173c2e57fe73dda8e9",
+      "window_index": 0
+    },
+    "9447e33ed5abac470ffe6e0e0b451d06bf7b41f8d14b1caf18ecc64c5dbf1063": {
+      "context": "This chunk is from the \"Inputs and data sources\" section of the AlphaFold paper, describing the datasets and databases used to train and run the AlphaFold neural network for protein structure prediction. It details the construction and composition of the Big Fantastic Database (BFD), a custom-built sequence database, and lists the specific versions of public datasets including the PDB, UniRef90, Uniclust30, and MGnify used during both model training and inference.",
+      "text_sha256": "f6d43b1d3b4541cf35f97eff6d91a0fcfaac64492fada89fd0dbfba560dfa69a",
+      "window_index": 2
+    },
+    "9979d3135822bdaa6d7615e62ae89137c16873b957de7812bbc23f65d689d90e": {
+      "context": "This chunk is from the Code availability section of the AlphaFold paper, listing the specific software tools, libraries, and their versions used for structure relaxation, BFD database construction, and data analysis in the AlphaFold protein structure prediction study.",
+      "text_sha256": "9358e84b159904a0d3b795ecde39a623e6c9657acbf95f04fb7f7f06a0b3f0a2",
+      "window_index": 2
+    },
+    "99fd3416079586f140423da0a4179ceabb999048b4ed7e9c6872b60be682386d": {
+      "context": "This chunk appears in the \"Field-specific reporting\" section of the Nature Research reporting summary for the AlphaFold paper, where authors must select the research category that best fits their study. The AlphaFold authors selected \"Life sciences\" as their field classification.",
+      "text_sha256": "f94d01d5959684d4ff7071a8c8789d045a9ba48982276dc7178f7a8b5789b9b9",
+      "window_index": 3
+    },
+    "9db4632c474fbd160a4f52f56f37d51cfe7e82939d6e2b9471198804147d0bea": {
+      "context": "This chunk is from the \"Training regimen\" section of the AlphaFold paper, describing the methods used to train the neural network model for protein structure prediction. It details the PDB data sources, computational resources (TPU v3), training procedures including loss functions (FAPE loss, cross-entropy loss, BERT-like loss), and the multi-stage training approach involving initial training, fine-tuning, and ensemble model creation with different random seeds.",
+      "text_sha256": "fe73e4c93efe7c7a4bbcbe11681df3e07f75a9440276fbbea5996aad47f26902",
+      "window_index": 2
+    },
+    "9dcc5a363df027307264c80403f45c8428791feb8f48722078fb3dc0b075e91e": {
+      "context": "This is a reference list from the AlphaFold paper, specifically citations 15-27 that support discussions of protein structure prediction methods, assessment techniques including CASP (Critical Assessment of Protein Structure Prediction), and computational approaches to predicting protein contacts and structures from sequence information.",
+      "text_sha256": "1b7add4729862979f1cdfd9668a2804f3169a673ad0cf1f407365e3c25ccff5e",
+      "window_index": 1
+    },
+    "a02e30a8acd8c966df83c30d957b5b8fe9c810299191fe583b9bcbe2c2fc88e2": {
+      "context": "This section is from the \"Data availability\" portion of the AlphaFold paper, which documents all public databases and datasets used for training and inference of the AlphaFold protein structure prediction model. It specifies the versions and download dates of the Protein Data Bank (PDB), PDB70, UniRef90, BFD, Uniclust30, and MGnify databases that were used for template searching and multiple sequence alignment (MSA) construction during both model training and prediction time.",
+      "text_sha256": "ad007c403599dde51fa35ef4ffae0eaa807c3fe81e5eaba70d3e6f9987f93f52",
+      "window_index": 2
+    },
+    "a827eeb94c5612014ff9c7a2a4b3097a51d1b1ad3f3c18bbf4ca0124091da8c8": {
+      "context": "This section contains the reference citations for the AlphaFold paper, specifically references 74-84, which support various aspects of the methods including software tools (XLA compiler, TensorFlow), computational techniques (deep learning for contact prediction), and experimental protein structures used for validation and comparison in the study.",
+      "text_sha256": "be439b2b700166f45e07843d8fa2a35a0002b7980ec05197a4b39e2a7d5b7176",
+      "window_index": 2
+    },
+    "a8807d161ff294deb97f5824b83d40c0879dbde064f7e99c42dd48c75b736231": {
+      "context": "This chunk is part of the Reporting Summary section at the end of the AlphaFold paper, which provides a checklist for statistical reporting requirements mandated by Nature Research to ensure reproducibility and transparency of the published work.",
+      "text_sha256": "28a0652efa603d6619c9b5905d33d506649456695462be160a537e5aa7ab74f9",
+      "window_index": 2
+    },
+    "a889c518e6aba247e3495d3917dc278b6b932d4aa114b9aad5dc3722969957c2": {
+      "context": "This chunk appears in the \"Software and code\" section under \"Policy information about availability of data\" in the AlphaFold 2021 paper. It specifies the databases and data sources used for training and prediction in the AlphaFold model, including PDB structures, sequence databases (UniRef90, BFD, Uniclust30, MGnify), and the specific versions and download dates of these resources.",
+      "text_sha256": "d885619074c0ff72731daa0b92d8c0e223a4181a469b5c1adec33442b30d991c",
+      "window_index": 3
+    },
+    "aee0339e851a66b1a2f22420a707c07681dd72d9b941c4d579b161ebda164435": {
+      "context": "This chunk is from the \"Software and code\" section of the AlphaFold 2021 paper's supplementary information, detailing the software, libraries, and tools used for developing and analyzing the AlphaFold model. It includes information about neural network frameworks, sequence alignment tools, structure relaxation software, and data analysis packages, along with policies on code and data availability from the corresponding authors John Jumper and Demis Hassabis.",
+      "text_sha256": "d9dde970c91c83bab507c1e0569f0dc97677c3c3c0e3a3e0b1353c2abb49c810",
+      "window_index": 3
+    },
+    "bd950ebebb85513866828e75c6ffb02b9929dddf2376083a49af2179316d6cd1": {
+      "context": "This chunk appears in the \"Training with labelled and unlabelled data\" section of the AlphaFold paper, describing the training procedures used to enhance the accuracy of the AlphaFold neural network architecture beyond supervised learning on PDB structures. It explains two key training innovations: self-distillation using predicted structures from unlabelled sequences, and masked MSA training with a BERT-style objective.",
+      "text_sha256": "7efc328218d32f87e84d49e915d56309482e6bc97f8e74a413d925bd3eed4064",
+      "window_index": 0
+    },
+    "c088e253cb178cb036afb47af0d3d1dfe92260958857b2f2c5f969c531b31746": {
+      "context": "This chunk appears in the \"Additional information\" section at the end of the AlphaFold paper published in Nature, providing standard publication details including links to supplementary materials, contact information for correspondence, peer reviewer acknowledgments, and reprint permissions.",
+      "text_sha256": "ab288e594997167b99b7d8cc61804c663f3da1dd1fcbe6026eb3d65f7c9a36ec",
+      "window_index": 2
+    },
+    "cd9f1db8c0e6028102748afa3537d706784babbf06b0a56eef5340e4b019db0d": {
+      "context": "This chunk appears in the \"MSA depth and cross-chain contacts\" section of the AlphaFold paper, discussing key limitations of the AlphaFold protein structure prediction model. It explains how MSA (multiple sequence alignment) depth affects prediction accuracy and describes AlphaFold's weakness with heteromeric protein complexes compared to its strength with homomers.",
+      "text_sha256": "fc49a00b26c0e31a430de95292f69b8f9afa3b4bd6e28cff577881a9a3a16633",
+      "window_index": 1
+    },
+    "dc4b20e2609fcf597a19830d28e309793bdf9b218ddf7c30d6eee335088204a9": {
+      "context": "This chunk describes the Evoformer, a key neural network component of AlphaFold presented in the \"Highly accurate protein structure prediction with AlphaFold\" paper. The Evoformer section explains how the network architecture treats protein structure prediction as a graph inference problem and details the mechanisms for updating multiple sequence alignment (MSA) and pair representations that form the trunk of the AlphaFold network before the structure module.",
+      "text_sha256": "22c99a8de26e4f096ffae95fa25a4ea11e47e9b6f3a9e956edddcdbabaeceef3",
+      "window_index": 0
+    },
+    "dc924519a12cad32e54007468ef48b0ff4d4162e60fcd4a40f5c06b06aa153fa": {
+      "context": "This chunk from the introduction of \"Highly accurate protein structure prediction with AlphaFold\" describes two historical approaches to computational protein structure prediction\u2014the physical interaction programme and the evolutionary programme\u2014and explains why existing methods have fallen short before introducing AlphaFold's novel approach tested in the CASP14 assessment.",
+      "text_sha256": "b01cd5f5115677d9c0b20223c9d6b7a7d32c0b015e36fed15b0f843af2930faf",
+      "window_index": 0
+    },
+    "e29c343883f5d2d6b8ae852820664d11e460756aee386bd063da7e03f4222766": {
+      "context": "This chunk appears in the \"Related work\" section of the AlphaFold paper, providing historical context on protein structure prediction methods and the development of neural network approaches that preceded AlphaFold's breakthrough.",
+      "text_sha256": "5878fb8b6e4f7fef3c3a328d2f0e6281ccc0b7f97109d3f12567960df54f7814",
+      "window_index": 1
+    },
+    "e5ef616b6d61ce88155d6f17c5a72752bf866aacd0ac38d7bd8bd53c53e5c53d": {
+      "context": "This section appears at the end of the AlphaFold paper published in Nature and lists acknowledgements and author contributions for the research. It credits individuals and teams who contributed to developing AlphaFold's neural network architecture, training, data systems, and inference capabilities, as well as those who managed the project and provided technical support.",
+      "text_sha256": "984a11b5ac7eec169bccc8cb6d56a77e408f89661947c7c2fecf9a1bce75b346",
+      "window_index": 2
+    },
+    "e8c3371f66334e0f26a14cf23b71139bbd94d937ca3777acc4e77f9a19f8cef1": {
+      "context": "This chunk is from the \"Code availability\" section of the AlphaFold paper, which lists the software tools, libraries, and their versions used for developing the AlphaFold neural network model for protein structure prediction. It specifies the open-source repositories and version numbers for the machine learning frameworks (TensorFlow, Sonnet, JAX, Haiku), the sequence search tools (HHBlits, HHSearch, jackhmmer), and the XLA compiler used in the AlphaFold implementation.",
+      "text_sha256": "bbcef07552911335e135bd41d1060de05feb6e66f0d605eb54d5a5a4d5d90c84",
+      "window_index": 2
+    },
+    "eeaa59cc06e3856427cb0b7037bb22c3646402e39f438ff39064788bdb0fd5e6": {
+      "context": "This chunk describes the structure module component of AlphaFold, which is part of the \"End-to-end structure prediction\" section of the paper \"Highly accurate protein structure prediction with AlphaFold\" by Jumper et al. The structure module operates on the output from the Evoformer trunk to generate the final 3D protein structure, using representations like residue gas, invariant point attention (IPA), and frame-aligned point error (FAPE) loss for accurate atomic coordinate prediction.",
+      "text_sha256": "42d19229127275a771b6defa823af70fca3245319cf4cab2d09af8bbf7c2cf33",
+      "window_index": 0
+    },
+    "efb410bcabc44a17ce5799d47a3cf857fb1a128cc3d86ddbe45603b914672353": {
+      "context": "This section from the AlphaFold paper describes the creation and filtering of the test set of recent PDB sequences used for evaluation, including the criteria for dataset construction, template identity filtering procedures, and MSA depth analysis methods. It appears under the \"Test set of recent PDB sequences\" subsection within the Methods section.",
+      "text_sha256": "c8b172451b55e4b0c5ed2a6218408193d13d533bca528f921476c6355283418e",
+      "window_index": 2
+    },
+    "f6745ae753c23849cfd2478632557b4b918609fe88d4a5e07dc7f3ce66280bde": {
+      "context": "This chunk is from the \"Interpreting the neural network\" section of the AlphaFold paper, which explains how the model predicts protein structure through analysis of intermediate structures generated across the 48 Evoformer blocks. The section demonstrates that AlphaFold makes iterative improvements to protein structure predictions, with examples from CASP14 benchmark targets showing how network depth affects prediction difficulty for different proteins.",
+      "text_sha256": "c82c8cf6291bf4b0113fc387b6a29ed506b83fd5e7f31e278d6bb9b095a70e32",
+      "window_index": 1
+    },
+    "f8a30fdfb7e9b899afdb45624db1f6725f3128c4ace4760d2441e97385c9d6e1": {
+      "context": "This chunk appears in the \"Life sciences study design\" section of the AlphaFold 2021 paper's supplementary information, which documents the study design and methodology disclosure requirements. It details the sample selection criteria, data exclusions applied to the PDB dataset, and explains why replication, randomization, and blinding are not applicable to this computational protein structure prediction study.",
+      "text_sha256": "8c7f94a1b40063b23308bbac4d3acb86064a3793a576560b2312dea3d8b79483",
+      "window_index": 3
+    },
+    "f8e9eb90803217b5994e4d53db448ef503691bff745b477939568c010000742c": {
+      "context": "This section from \"Highly accurate protein structure prediction with AlphaFold\" describes the architectural details of the Evoformer block and structure module, which are key components of the AlphaFold neural network. The chunk explains how the pair representation uses triangle-based update operations and how information flows between the MSA and pair representations to enable accurate protein structure prediction.",
+      "text_sha256": "318e1df674e12c97c00652b843fc4054829b232dc14f26d6c33f81fedfd1f827",
+      "window_index": 0
+    },
+    "fcf53a347965909fe177994d9c894536ae725ec26e9f821e1be9fc01795e7739": {
+      "context": "This chunk describes the two main stages of the AlphaFold neural network architecture from the paper \"Highly accurate protein structure prediction with AlphaFold\" by Jumper et al. (2021). It explains the trunk stage, which uses the Evoformer block to process multiple sequence alignments and residue pair information, and the structure module stage, which generates explicit 3D protein coordinates through iterative refinement. This section appears under \"The AlphaFold network\" heading and provides foundational architectural details before more specific subsections on the Evoformer and end-to-end structure prediction.",
+      "text_sha256": "bf45d6466aec5c9ff6f5a949c792e0e2dd3aed2df576414901fc1b29b0a81831",
+      "window_index": 0
+    }
+  },
+  "doc_id": "paper-jumper-2021-alphafold",
+  "generated_at": "2026-08-29T21:57:04Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

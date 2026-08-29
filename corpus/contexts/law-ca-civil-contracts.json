@@ -1,0 +1,33 @@
+{
+  "contexts": {
+    "11edf469affc1ef3c35567a4f7d7fdc65b0c421380ee475107cf512838e885a0": {
+      "context": "This note appears in the California Civil Code, Division 3 (Obligations), Part 2 (Contracts), Title 1 (Nature of a Contract), Chapter 1 (Definition), indicating when Chapter 1 covering sections 1549-1550.5 was originally enacted into law.",
+      "text_sha256": "655ca9f1e8435b1d3704644e6ec0dce63574a13829ca941659be6a7e53789aa4",
+      "window_index": 0
+    },
+    "12f03236d1882f96bb9fa6990b2751418714204077d043ab2c949e2c58c3f334": {
+      "context": "This amendment note appears at the beginning of Division 3 (Obligations) of the California Civil Code, indicating that the heading for this division was modified by legislation enacted in 1988.",
+      "text_sha256": "933931494c2fdff828e0f8f89b9b389d06b9aafb1c6c8465d00aa2304c5bb28a",
+      "window_index": 0
+    },
+    "b30356677dc891912dd049fcef084bb06420aca1aff4bb07b70de4d8ec2dccce": {
+      "context": "This chunk is a legislative note indicating when Title 1 (Nature of a Contract) of Part 2 (Contracts) in Division 3 (Obligations) of the California Civil Code was originally enacted, appearing in the code structure hierarchy before the substantive sections defining contracts.",
+      "text_sha256": "b4196f7991e3c7447a208b8a4636dc81fe9af34f21dc3ca67dee568f311dc1e6",
+      "window_index": 0
+    },
+    "bd488bc364e1fa2cdfabb5895fab32729fc08cf2e2374fd7702f5e94bb638b86": {
+      "context": "This note appears in the California Civil Code under Part 2 (Contracts), indicating when this section of the code governing contract law was originally enacted into law.",
+      "text_sha256": "47d5ec13e54d015265a28365c51a46ccf44c492d542dde6118bbdca50e97e4e4",
+      "window_index": 0
+    },
+    "dca9bfd8c63f8a1af35436671c5afd29b078430d826e2a4cf8bcd32848bf40b0": {
+      "context": "California Civil Code Section 1550 establishes the four essential elements required for a contract to exist under Title 1 (Nature of a Contract), Part 2 (Contracts) of Division 3 (Obligations).",
+      "text_sha256": "4eaf610dc15bda89e8cc3dffde37e07a62ea40d1b34e55ef96452e194e089ffd",
+      "window_index": 0
+    }
+  },
+  "doc_id": "law-ca-civil-contracts",
+  "generated_at": "2026-08-29T22:25:39Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

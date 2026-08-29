@@ -1,0 +1,258 @@
+{
+  "contexts": {
+    "04a5e146840cc682ac592c55ea731173edda9948b07b19f61610a3845ef2333c": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Articles 65-68 covering dispute resolution by the Board, urgency procedures, information exchange, and the establishment of the European Data Protection Board. It details the procedures for the Board's binding decisions in cases of supervisory authority conflicts, the composition and legal status of the European Data Protection Board, and expedited decision-making processes for urgent data protection matters.",
+      "text_sha256": "4655281079dae58b15fa3e0958e28e87d86d0466bf4d797ad39beb96c7af079d",
+      "window_index": 5
+    },
+    "070b18efc3002704925850c40fe575ad70223c0161d234a1d01b56dcbc5f6d63": {
+      "context": "This chunk contains definitions (8) through (21) from Article 4 of the General Data Protection Regulation (GDPR) 2016/679, which provides key terminology for the regulation including processor, recipient, third party, consent, personal data breach, genetic data, biometric data, data concerning health, main establishment, representative, enterprise, group of undertakings, and binding corporate rules.",
+      "text_sha256": "eab377753f14a0e26a27fc94383b59fa86f638920e534b51d3664f83ca63ec07",
+      "window_index": 0
+    },
+    "070e5685737ce2e1de390c45b59963c31fc092f00534389fee58e230277db178": {
+      "context": "This chunk from EU Regulation 2016/679 (GDPR) covers Articles 21-23, which are part of Chapter III on the rights of the data subject. Article 21 establishes the data subject's right to object to processing based on Articles 6(1)(e) or (f), including for direct marketing and profiling. Article 22 addresses automated individual decision-making and profiling rights. Article 23 describes how Union or Member State law may restrict the obligations and rights provided in Articles 12-22 for purposes such as national security, public security, and criminal prosecution.",
+      "text_sha256": "7803f27fa681abcf55c15c54bfc58a31068996d6eb21269989cd5453028bc646",
+      "window_index": 1
+    },
+    "074c9c95a213a49eb498b618433c63a1d01870dbbbf1f5e01bd6343db51add2c": {
+      "context": "This chunk from EU Regulation 2016/679 (General Data Protection Regulation) contains definitions from Article 4 and the beginning of Chapter II on Principles. It defines key terms including supervisory authority, supervisory authority concerned, cross-border processing, relevant and reasoned objection, information society service, and international organisation, followed by Article 5 on principles relating to processing of personal data and Article 6 on lawfulness of processing.",
+      "text_sha256": "8e5e638f6cc15624c7e8d2827f5cf335fc4c1935f3d59c72ad1462fd95fd4ed8",
+      "window_index": 0
+    },
+    "08601bbb453ae8a9df7e1e9b6c8ef3b9159b67d8f68c67ccf9bbd55a4ca511db": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically Chapter VII on Cooperation and Consistency, Section 1 on Cooperation. It contains Article 60 paragraphs 9-12 on cooperation between the lead supervisory authority and other supervisory authorities concerned, followed by Article 61 on mutual assistance between supervisory authorities. These articles establish procedures for how supervisory authorities must cooperate and exchange information when handling cross-border data protection matters and complaints.",
+      "text_sha256": "684927cc0685e6c72a2e99d5776f8414db45b156236a276a9d76ec4c9f13c2ae",
+      "window_index": 4
+    },
+    "122e4fa5f594c54f7593528d85f6044c430dce219355a66b2ef7cb12c57aab44": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), Chapter V on Transfers of Personal Data to Third Countries or International Organisations. It contains Article 47 on Binding Corporate Rules, which specifies the detailed requirements that binding corporate rules must include (points g through n), followed by Articles 48 and 49 covering transfers not authorized by Union law and derogations for specific situations.",
+      "text_sha256": "25a6731173a3d74219c3b47891b9da57658855bd6f4b27c2fa2e7a8caa35e19a",
+      "window_index": 3
+    },
+    "16d725baff310435a1e24f33ff5a14a76f3d57a8d0badd9a97732263919285ac": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), specifically from Chapter IX on provisions relating to specific processing situations. It contains Article 88 on processing in the context of employment, Article 89 on safeguards and derogations for archiving, scientific research, and statistical purposes, Article 90 on obligations of secrecy, and the beginning of Article 91 on existing data protection rules of churches and religious associations. These articles establish specific rules and derogations that Member States may implement for particular data processing scenarios.",
+      "text_sha256": "764319cc64e4fbc5b244c676a242620c10ab72700c01082d2cf3bd5b7b004c70",
+      "window_index": 6
+    },
+    "176d831b5fe5d2c1b23d91f78ae40b1125bc62f4164d979f6a23a45ffb261162": {
+      "context": "This chunk is from Article 49 (Derogations for specific situations) of the GDPR, which is part of Chapter V on Transfers of personal data to third countries or international organisations. It specifies the conditions under which personal data transfers to third countries may occur in the absence of adequacy decisions or appropriate safeguards, including derogations for vital interests, public registers, and compelling legitimate interests, along with documentation requirements.",
+      "text_sha256": "ff4aabc5edbbe3115c23b345f3da947db5215d1215066fa7fd850d55dd5b4701",
+      "window_index": 3
+    },
+    "17f2be3bba20163fa844531eabca4b3dd3e5044eec063bdbcb94f2938e707263": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Chapter VI on supervisory authorities. It covers Articles 54-57, which establish the rules for supervisory authority establishment (Article 54), independence requirements (Article 52), member qualifications (Article 53), and the competence and tasks of supervisory authorities (Articles 55-57). The chunk details provisions on staff obligations, professional secrecy duties, territorial competence, lead supervisory authority designation for cross-border processing, and the core monitoring and enforcement tasks supervisory authorities must perform.",
+      "text_sha256": "6c718be2b28f5a7480e8e670341902eb3bcca9700776cd7b0fe67a97617b72e4",
+      "window_index": 4
+    },
+    "19c1bb114dda0cf49a801b47b9960c79954ce5c2ca375548a927f338f3885edf": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), specifically Article 57 (Tasks) and Article 58 (Powers) under Chapter VI, Section 2 (Competence, tasks and powers). Article 57 outlines the mandatory tasks that each supervisory authority must perform on its territory, including monitoring and enforcing the GDPR, handling complaints, cooperating with other supervisory authorities, and managing various certification and code of conduct procedures. Article 58 then details the investigative, corrective, and authorisation powers supervisory authorities possess to carry out these tasks.",
+      "text_sha256": "083812681cd50aff26b02ea496ad4ecfb1ed9694539324d8af1e14d1c8d4a53e",
+      "window_index": 4
+    },
+    "1b03e8be5728bcf4109b220e81c7d6dc56d86e25ccccd9de11e2f6e584b5903a": {
+      "context": "This chunk is from Chapter XI (Final provisions) of EU Regulation 2016/679 (GDPR), specifically Article 97 on Commission reports. It outlines the Commission's obligation to submit periodic evaluation and review reports on the Regulation's application, including examination of Chapter V on transfers to third countries and Chapter VII on cooperation and consistency, along with Articles 98 and 99 covering review of other data protection legal acts and the Regulation's entry into force and application dates.",
+      "text_sha256": "2431cd19d1f9664c80b1ebd13902bca233eac23ade042da50227a4433ee51a15",
+      "window_index": 6
+    },
+    "1fb780ce5d6830aebe553819304abf753a1e5cf21cdc2999e42a1d6350d0debb": {
+      "context": "This excerpt from EU Regulation 2016/679 (GDPR) covers enforcement mechanisms and specific processing situations. It begins with provisions on administrative fines under Article 83, then presents Article 84 on penalties for GDPR infringements, followed by Chapter IX articles (85-88) addressing processing in specific contexts including freedom of expression, public documents, national identification numbers, and employment.",
+      "text_sha256": "158aecdd6d617035d94b8e2f530fdf8aa4370b89c549c93ce0365cfe0cc08726",
+      "window_index": 6
+    },
+    "20ac76b1e73d914945793a58d5577a0ef4602e1c5a30eb306ea388b26411df87": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Chapter VI on supervisory authorities and Chapter VII on cooperation and consistency. It covers Article 58 paragraph 5 on supervisory authority powers to bring infringements to judicial authorities, Article 59 on activity reports, and Articles 60-62 detailing the cooperation procedures between lead supervisory authorities and other supervisory authorities concerned in cross-border processing cases, including mechanisms for reaching consensus and handling objections through the consistency mechanism referenced in Article 63.",
+      "text_sha256": "3f53668e84367f3d10371110df926dfa34c8600691247e1bf6220710d225c7ff",
+      "window_index": 4
+    },
+    "29ed91006b8f406d736f3776760674341b98e3b081cbca0bbb46bdde9277fd02": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), specifically Section 3 on \"Data protection impact assessment and prior consultation.\" It contains Article 34 paragraph 4 regarding supervisory authority requirements for communicating personal data breaches to data subjects, followed by Article 35 which establishes the mandatory data protection impact assessment (DPIA) requirements that controllers must conduct before processing operations likely to result in high risk to natural persons' rights and freedoms.",
+      "text_sha256": "987cd0c8da12475670237654df5815a6fadb1aac09b8da01b05eb87e9ff650f4",
+      "window_index": 2
+    },
+    "3051fc9feb37db449bef8a066aba40f51ff997ead010c0998d5a6f3c4483d05f": {
+      "context": "This chunk is Article 12 of the General Data Protection Regulation (GDPR) 2016/679, located in Chapter III (Rights of the data subject), Section 1 (Transparency and modalities). It establishes requirements for controllers to provide transparent information and communication to data subjects regarding their rights under Articles 15-22 and 34, including timeframes for responses, fees, and use of standardized icons.",
+      "text_sha256": "52d54a3a89af8dd9ae5059171868f6e460b8bea3a0283e117da3a079238391ee",
+      "window_index": 0
+    },
+    "3094468239a33a9d83ce8f41f1b53e4af8d29244294bef863718fcc32827a7c2": {
+      "context": "This chunk is from Chapter V of the GDPR (Regulation 2016/679), which covers \"Transfers of personal data to third countries or international organisations.\" It includes Article 45 paragraphs 3-9 on \"Transfers on the basis of an adequacy decision,\" detailing the Commission's process for deciding whether third countries ensure adequate data protection levels and the mechanisms for periodic review and amendment of such decisions, as well as the beginning of Article 46 on \"Transfers subject to appropriate safeguards\" which outlines alternative mechanisms when adequacy decisions are absent.",
+      "text_sha256": "a6e44982bfe011c4605047d81d512a4585a0c2e0fd803b4763ac466df5c30027",
+      "window_index": 3
+    },
+    "36d27a0b17db0885d31f5d94356df4709553e2a8d460e4ae28e31c6ef4c1eaf5": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Section 2 on \"Security of personal data\" and Section 3 on \"Data protection impact assessment and prior consultation.\" It contains Article 32 on security of processing (paragraphs 2-4), Article 33 on notification of personal data breaches to the supervisory authority, and Article 34 on communication of personal data breaches to data subjects, establishing requirements for assessing security risks, reporting breaches within 72 hours, and notifying affected individuals.",
+      "text_sha256": "1d2e777646669a872c04cc5837edc9e705b039ef71c5f0c1fcc71d8c66a10a0d",
+      "window_index": 2
+    },
+    "3880611c5b6239f0a1b3f4a17dfa748daa146f1d71eb0420974dc815acdd9104": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Chapter II (Principles) and Chapter III (Rights of the Data Subject). It contains Articles 7-9, which detail the conditions for obtaining valid consent from data subjects, special rules for children's consent in information society services, and restrictions on processing special categories of personal data such as racial origin, political opinions, genetic data, and health information.",
+      "text_sha256": "77510bce7439703b7a8f0be560b4fb523c041f38fb5f6ee7f7fdd27db16c46b4",
+      "window_index": 0
+    },
+    "415161d43de26dd8db5d0e4e7c2d7e27da758c72886397650edfed8164efced5": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), Chapter VI on Independent Supervisory Authorities, specifically Articles 41-43 covering monitoring of approved codes of conduct and certification mechanisms. The chunk includes the conclusion of Article 41 on accreditation revocation, the complete Article 42 on data protection certification, and the beginning of Article 43 on certification bodies, which establish the framework for voluntary certification mechanisms and the bodies authorized to issue them.",
+      "text_sha256": "bd13cd7039a8a821511437b47c48e0690f1da60e018150b118861a49ae72118b",
+      "window_index": 3
+    },
+    "43a0b2f7533e494bf3f1905416b1043050d46ada3b9563d4532ad04429ca3a46": {
+      "context": "This chunk is from the GDPR (Regulation 2016/679), specifically from Section 3 on the European Data Protection Board (Articles 68-70). It covers the composition and independence of the Board, including provisions for joint representatives when multiple supervisory authorities exist in a Member State, the Commission's participation rights, and the Board's core tasks in ensuring consistent application of the Regulation, including monitoring, advising the Commission, and issuing guidelines on various data protection matters.",
+      "text_sha256": "307d1692b0cca45666c05a135f0582568d006695a5f65bb68ed5c7fea87d61b6",
+      "window_index": 5
+    },
+    "4b849d9dad76816f4f387f897a8b07a484346e384d2b69c9aaade307a35e111e": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Section 4 on Data Protection Officers (Article 39) and Section 5 on Codes of Conduct and Certification (Article 40). It covers the data protection officer's duty to consider risk in performing tasks, and the framework for developing, approving, and implementing codes of conduct by associations and other bodies to specify application of the GDPR across various processing sectors.",
+      "text_sha256": "b0e1597e49fda0dd9f46de88c701de9ba8fd68b249ae757edef6289660d6fbde",
+      "window_index": 2
+    },
+    "56be91898f97d8d38a3327a369dbff99d955b6f0aeb85c9471cb13a8e74c367e": {
+      "context": "This chunk is from Chapter VIII (Remedies, liability and penalties) of the GDPR (Regulation 2016/679). It contains Article 81 on suspension of proceedings between courts in different Member States, Article 82 establishing the right to compensation and liability of controllers and processors for GDPR infringements, and the beginning of Article 83 on general conditions for imposing administrative fines by supervisory authorities.",
+      "text_sha256": "439fbdda54e440ac8fad4d6ed771dbb789fe06d0333fd42b2a2c747caef64f85",
+      "window_index": 5
+    },
+    "654fafe4c4351aa5d64b7f84c6d7c19ac864275efdbcb038432b334a4fff1cfa": {
+      "context": "This chunk is from the GDPR (Regulation 2016/679), Section 4 on Data Protection Officers, specifically Articles 37-39. It covers the mandatory designation requirements for data protection officers, their position and independence within organizations, and their core tasks and responsibilities in ensuring GDPR compliance.",
+      "text_sha256": "271d854f8c44e8bc0f87b3798bd832dc599e0fcf7148cc18ccc32d69f7076ff0",
+      "window_index": 2
+    },
+    "69cd144544a5e900bd482c4e14a65ea6ac2f68451f32ebcea37592cc626fd44e": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically covering Articles 40-41 on codes of conduct and their monitoring. Article 40 paragraphs 7-11 detail the approval process for codes of conduct across multiple Member States, including Board review and Commission decision-making for general validity. Article 41 establishes the framework for monitoring compliance with approved codes of conduct through accredited bodies, including their accreditation requirements, responsibilities, and the supervisory authority's oversight powers.",
+      "text_sha256": "194cb73faba7b62f714a22c29b68cb7cd804430f2d52701bc1a7e266066bcb2f",
+      "window_index": 3
+    },
+    "6af02c15f85c384f6ecf3708c0bbfce27f6c6f090d0414cf5c7fc333cf765010": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically Chapter IV on Controller and Processor, Section 1 on General Obligations. It contains Articles 26, 27, and 28, which define the responsibilities of joint controllers, the requirement for representatives of controllers or processors not established in the Union, and the obligations governing processors acting on behalf of controllers.",
+      "text_sha256": "8470b0b0c04003ae646564a9b5958a446db96bc461d9ecbaa7de134df3ec884f",
+      "window_index": 1
+    },
+    "6cc3c2cb6a7f7a23939d88a851094a2a6041a4da8482d707f9b131bae7215a7b": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679 and covers Articles 13 and 14, which specify the information controllers must provide to data subjects. Article 13 details information requirements when personal data are obtained directly from the data subject, while Article 14 addresses information requirements when personal data have not been obtained from the data subject. Both articles establish transparency obligations regarding processing purposes, legal basis, data recipients, storage periods, and data subject rights.",
+      "text_sha256": "04e12ae63f9d6928a259f828b700ec816611073a52d54467d0e78a5427c84ceb",
+      "window_index": 1
+    },
+    "712f31b83429b6759fcb51c3950a0fa76d39ed41ca267fda5bf0a2f25b1905be": {
+      "context": "This chunk from EU Regulation 2016/679 (General Data Protection Regulation) covers Article 2 on material scope, Article 3 on territorial scope, and the beginning of Article 4 on definitions. These articles establish which processing activities the GDPR applies to, its geographic reach, and key terms used throughout the regulation such as personal data, processing, controller, and profiling.",
+      "text_sha256": "0cd4c235dddc987757b1d9e3a5d7464b64a60cd30bbbb303bba6a246e1c5ff37",
+      "window_index": 0
+    },
+    "75d0d72f2c3cb617c2c194369636fcc4959ab873fdf126dddc59f110a0acd38e": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically Article 15 on the Right of access by the data subject, along with Articles 16-17 covering the right to rectification and the right to erasure. These provisions fall under Chapter III, Section 3 titled \"Rectification and erasure,\" and detail the information and rights data subjects have regarding access to their personal data and the ability to correct or delete it.",
+      "text_sha256": "8064063b60ef97977961da7dc317e0a9f176ba79f4ae172b2dd6098fa1f066a7",
+      "window_index": 1
+    },
+    "79e4fb49fce2cb6086700618da8c010f11acff40df195ba8b20b7080cf5637b9": {
+      "context": "This chunk is from Article 58 (Powers) of the GDPR, which is part of Chapter VI (Independent Supervisory Authorities), Section 2 (Competence, Tasks and Powers). It details the investigative powers, corrective powers, and authorisation and advisory powers that each supervisory authority must have when enforcing the Regulation.",
+      "text_sha256": "4955459d5767f135f3fef911a4cd353a01ccfa57350aab2f627e3d4cffb2a15e",
+      "window_index": 4
+    },
+    "84c6aa8c9bff6ba7fa58fd8b14ca83dae53fcd1fe446fd6761bfe07e1ac02dfe": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), Chapter V on \"Transfers of personal data to third countries or international organisations.\" It covers Article 46 on \"Transfers subject to appropriate safeguards\" and Article 47 on \"Binding corporate rules,\" detailing the mechanisms and requirements for lawfully transferring personal data outside the EU/EEA, including approved codes of conduct, certification mechanisms, contractual clauses, and binding corporate rules that must be approved by supervisory authorities.",
+      "text_sha256": "40557b8c6ced96316babe3bd2283225790fe4655bfc288b108c05f50d403ad7a",
+      "window_index": 3
+    },
+    "8a15d25f9c586c45ed167456c4a29714f960063d4a39beaa58f09ad347225a9f": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Articles 64-65 covering the consistency mechanism and dispute resolution procedures. Article 64 addresses the Board's opinion procedure where supervisory authorities must consider the Board's opinion and communicate their response within two weeks, while Article 65 establishes the Board's binding decision-making authority in cases of conflicting supervisory authority views or non-compliance with the Board's opinions, including timelines and voting procedures for such decisions.",
+      "text_sha256": "f247c27dccccb9d7c24b7947bac6ded0a97075394eb88975d3fd26e310a5b237",
+      "window_index": 5
+    },
+    "8bab7a5d5970475e07fa9f7f7f9254fc6a9dc963504d77a4a133f2f615ecbe71": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), specifically from Section 3 on Data Protection Impact Assessment and Prior Consultation, and Section 4 on Data Protection Officer. It contains Article 35 paragraph 10, Article 36 on Prior Consultation procedures, and the beginning of Article 37 on Designation of the Data Protection Officer, outlining when controllers and processors must consult supervisory authorities and when they must designate a data protection officer.",
+      "text_sha256": "d42752edbbd42206316b8d0ef4f9cb8fb75ff055413aea042225f3fba2e193c0",
+      "window_index": 2
+    },
+    "8f1ad1d85abdae9d81afdd1517a222d673e815604a8cfd5e19ecd9ccc65a073c": {
+      "context": "This chunk is from Article 70 of EU Regulation 2016/679 (GDPR), which outlines the tasks of the European Data Protection Board. It lists the Board's responsibilities including issuing guidelines on personal data transfers, drawing up guidelines for supervisory authorities on administrative fines, reviewing practical application of guidelines, establishing reporting procedures for infringements, approving certification criteria, and maintaining registers of decisions and certifications.",
+      "text_sha256": "26a9fb2aceed85bebbe00f0c79240626c86f0cc541e861dd5deacd329b49f65d",
+      "window_index": 5
+    },
+    "93e8833a3535748316189e17e9b3301dd4faffc061b2fbe60f441eb25fa45c22": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Chapter VII on Cooperation and Consistency. It covers Article 62 on joint operations of supervisory authorities, Article 63 on the consistency mechanism, and Article 64 on the Board's opinion procedures. These articles establish the framework for how data protection supervisory authorities across EU Member States cooperate and ensure consistent application of GDPR requirements, including procedures for issuing opinions on specific regulatory measures.",
+      "text_sha256": "98ba2023ec4e88b26ef2259374240f8130e95fafe984ef7f8a49c3f7e433cad3",
+      "window_index": 4
+    },
+    "9f5ab197ba42c43b960e9a64a8d9192eb030f9122d27f7f598e4eb345bcb1663": {
+      "context": "This chunk contains Article 6 (Lawfulness of processing) and the beginning of Article 7 (Conditions for consent) from Chapter II (Principles) of the General Data Protection Regulation (GDPR) 2016/679. Article 6 establishes the six legal bases under which personal data processing is lawful, including consent, contract performance, legal obligation, vital interests, public task, and legitimate interests, along with provisions for Member State adaptation and compatibility assessment for further processing.",
+      "text_sha256": "09b793ac3ed5b30fe0924471a8d656cd41678f278b320ef19bdc3a7ea372a3c1",
+      "window_index": 0
+    },
+    "a0937eb8a89b9311af433cfadc2fe0db7dd8428d8e6055280bdc5ab72c1c4baa": {
+      "context": "This chunk is from Article 14, Section 2 of EU Regulation 2016/679 (GDPR), which specifies additional information that controllers must provide to data subjects when personal data have not been obtained directly from the data subject. The chunk details seven categories of information (a-g) necessary for fair and transparent processing, along with timing requirements in Section 3 and exceptions in Section 5.",
+      "text_sha256": "2fc70e26f9e7cef8b375d373e377231d0fd47ca004631738aadeca2aff49131e",
+      "window_index": 1
+    },
+    "ab9aee913d9fc88527fdf6e70a6a2d3366404afcecee246b784afd79201f4ae9": {
+      "context": "This chunk from EU Regulation 2016/679 (GDPR) covers Articles 91-97, spanning Chapter IX on specific processing situations through Chapter XI on final provisions. It includes Article 91 on existing data protection rules of churches and religious associations, Chapter X on delegated acts and implementing acts (Articles 92-93), and Chapter XI on final provisions including the repeal of Directive 95/46/EC, relationships with other directives, and Commission reporting requirements.",
+      "text_sha256": "a797ed423dbf4d764a34ece688519c143b1ce5c6376921a37b82ddf583ccf086",
+      "window_index": 6
+    },
+    "b1e8832653282ad0c112fb3a8cbbe15347b955efe3cd1753813f4d90d3d7f359": {
+      "context": "This chunk is from Article 83 (General conditions for imposing administrative fines) in Chapter VIII (Remedies, liability and penalties) of EU Regulation 2016/679 (GDPR). It details the factors supervisory authorities must consider when imposing administrative fines for GDPR infringements, including the manner of discovery, prior compliance history, and adherence to codes of conduct, as well as the specific fine amounts and categories of violations subject to different penalty levels.",
+      "text_sha256": "6b74155129564464694ddc8b38993afa20b6ae8c34fd858250991407f00df53e",
+      "window_index": 5
+    },
+    "bd561f4246e496d331606ea7f44eaebeb1bb0d285944e96b14a3502aaf6cbabc": {
+      "context": "This chunk from the EU General Data Protection Regulation (GDPR) 2016/679 contains exceptions to the prohibition on processing special categories of personal data, found in Article 9, paragraph 2, points (g) through (j). It also includes Article 10 on processing criminal conviction data, Article 11 on processing without identification, and the beginning of Article 12 on transparent information and data subject rights, all part of Chapter II (Principles) and Chapter III (Rights of the Data Subject) of the regulation.",
+      "text_sha256": "1d37395d826f96e6b903f5365f96d35312ba161f833d6aa2db900de852f47eb3",
+      "window_index": 0
+    },
+    "c3bbbd016841f2ff0b2fa626b786856a8031ba024402b7afc18e0f1aa2565d44": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679, specifically from Chapter VI covering the establishment, independence, and organization of supervisory authorities. It includes provisions on supervisory authority cooperation and consistency (introductory section), Article 52 on independence requirements, Article 53 on general conditions for supervisory authority members, and the beginning of Article 54 on rules for establishment of supervisory authorities, including appointment procedures, term duration, and reappointment eligibility.",
+      "text_sha256": "5585254a02f2e0381502dc807dced800f34ddf91851fef78165e6923e7280458",
+      "window_index": 4
+    },
+    "c9e45a80a0925947d4886bb2fcd549517ca29aa2d1dfb4305f2dc63a92da8460": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR) and covers Article 23 on Restrictions, which outlines the grounds under which Union or Member State law may restrict data subject rights and controller obligations, followed by Article 24 on the Responsibility of the Controller, Article 25 on Data Protection by Design and by Default, and the beginning of Article 26 on Joint Controllers. These articles are part of Chapter IV on Controller and Processor obligations.",
+      "text_sha256": "77b61e9a94691c4d2e7cf4092304b651506cb93deccad0894670820ea57d7cc3",
+      "window_index": 1
+    },
+    "cb8e4a7a6decaa4e4930ad233012ce42468adeec1abb33b741b36275db289c30": {
+      "context": "This chunk is from Chapter VIII (Remedies, liability and penalties) of EU Regulation 2016/679 (GDPR). It covers Articles 77-81, which establish the rights of data subjects to lodge complaints with supervisory authorities, seek judicial remedies against supervisory authorities and controllers/processors, obtain representation, and procedures for suspending parallel proceedings. These articles form part of the enforcement and remedy mechanisms under the GDPR.",
+      "text_sha256": "5a35d5d2641925f40a89741bb525e68c2b5b7387b8cd2d8db387116216ac1219",
+      "window_index": 5
+    },
+    "d465afcd5a0186ed1907cddbb7f5e26fc3adae40e0400b816ebd5e23252d8fde": {
+      "context": "This chunk from EU Regulation 2016/679 (GDPR) contains the obligations of data processors under Article 28, including requirements for confidentiality, security measures, assistance to controllers, data deletion or return, and audit cooperation. It also covers provisions for sub-processors (Article 28(4)), use of codes of conduct and certifications as safeguards (Article 28(5-8)), and related articles on processing instructions (Article 29) and record-keeping (Article 30).",
+      "text_sha256": "e5b95a6d009d5fbb9e6965cadb6230a2fa838c4bc993ee5ee9bbec8c920c1239",
+      "window_index": 2
+    },
+    "d6ce07ce621a3f608cd57f787450abb6a178f9f1ff280c3fe804ac4e1fd045cd": {
+      "context": "This chunk is from Article 30 (Records of processing activities) of the EU General Data Protection Regulation (GDPR) 2016/679, which specifies the mandatory record-keeping requirements for controllers and processors. It details what information must be included in processing activity records and establishes exemptions for smaller organizations, while also referencing related obligations under Article 32 (Security of processing) and other articles concerning data transfers and special categories of data.",
+      "text_sha256": "25e557b631c4281c5df9234b94a4ef65900fcc27c3bfaec56c99595c46c6a987",
+      "window_index": 2
+    },
+    "d71b15a7e77e1d8f83700537736e378d5e288b1051fd5eabb5f9a76f2bc73489": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) 2016/679 and covers Article 43 on certification bodies (paragraphs 7-9) and the beginning of Chapter V on transfers of personal data to third countries or international organisations (Articles 44-45). It addresses the revocation of certification body accreditation, the Commission's powers to adopt delegated and implementing acts for data protection certification mechanisms, and the foundational principles and adequacy decision procedures for international data transfers.",
+      "text_sha256": "2b03c2bff03aed6580c70f6db227fa4f9754c2c4f5bd5cde581b4f5fd6c46949",
+      "window_index": 3
+    },
+    "dc197ea49609b9205c4ad28cea3bd57b23fa142f1f695d13e9060c980b2ac81a": {
+      "context": "This chunk from EU Regulation 2016/679 (GDPR) covers Articles 70-76 within Section 3 on the European Data Protection Board. It details the Board's tasks including issuing opinions and guidelines, its reporting obligations, decision-making procedures, the role of the Chair and deputy chairs, the secretariat's functions provided by the European Data Protection Supervisor, and confidentiality rules governing Board discussions and document access.",
+      "text_sha256": "494e2adfa82b2baff0fb50f7decc15a9a6470b0b1443d4dbf3d54dbc5b12c568",
+      "window_index": 5
+    },
+    "dd0c8ecd085c00cb3cbc32e13317a48034aa157ed01c5f28219049cdf38da8b0": {
+      "context": "This chunk is from Article 43 (Certification bodies) of the GDPR (Regulation 2016/679), which specifies the requirements and accreditation procedures for certification bodies that issue data protection certifications under Article 42. The chunk details how certification bodies must be accredited, the criteria they must meet, and their responsibilities in issuing and withdrawing certifications.",
+      "text_sha256": "b73c497838c8efefb90f6f03574d5cb46179a77576f6257d84ae15c37f033143",
+      "window_index": 3
+    },
+    "df2ac6f60d72846de42b22b02e9a92d72000dbbb17962edc2ec296330740f238": {
+      "context": "This chunk is the opening section of Regulation (EU) 2016/679, the General Data Protection Regulation (GDPR), adopted on 27 April 2016. It includes the title page, publication information, and the beginning of Chapter I on General Provisions, containing Article 1 on the subject-matter and objectives of the regulation and Article 2 on material scope, which defines which types of personal data processing the regulation applies to and which activities are excluded.",
+      "text_sha256": "fac68abc99335431643ebbce699603ce14a20378aa231bdbaca08a5de8e57ba6",
+      "window_index": 0
+    },
+    "f0db79238316b0b01bf8ae8e2e8dc10e2f218f9bc8600c03b0c8cee86c89482d": {
+      "context": "This chunk is from the EU General Data Protection Regulation (GDPR) Regulation 2016/679, specifically from Chapter III covering the rights of the data subject. It includes Articles 17-21, which detail the data subject's rights to erasure (right to be forgotten), restriction of processing, notification obligations, data portability, and the right to object, along with exceptions to these rights based on public interest, legal claims, and other specified grounds.",
+      "text_sha256": "713944c0eb2ee58469c624620a8ca1507ff29261f958d93d44e0e0585934809b",
+      "window_index": 1
+    },
+    "f257a83763596e43587c9c0f5ba377c412f4d515ba46e28ea569ac785bed5ad2": {
+      "context": "This chunk is from EU Regulation 2016/679 (GDPR), Chapter VII on Cooperation and Consistency, Section 1 on Cooperation. It contains Article 61 on Mutual Assistance (paragraphs 8-9) and Article 62 on Joint Operations of Supervisory Authorities (paragraphs 1-7), which establish procedures for supervisory authorities to cooperate across Member States in enforcing data protection rules, including provisions for provisional measures and joint investigations.",
+      "text_sha256": "01d7999a4177105c15a405918631ff383f537ceaa1d1faf2629ca2783b9c65f0",
+      "window_index": 4
+    }
+  },
+  "doc_id": "eurlex-gdpr-2016-679",
+  "generated_at": "2026-08-29T22:04:18Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}
