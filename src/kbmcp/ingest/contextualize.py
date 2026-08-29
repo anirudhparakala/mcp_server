@@ -208,8 +208,17 @@ def make_client(cfg: dict) -> tuple:
         import anthropic  # lazy: [corpus] extra only; the pinned-context path must work without it
     except ImportError:
         return None, "the anthropic SDK is not installed (pip install -e \".[corpus]\")"
+    # An identity-linked API key is rejected with a 400 unless every request names
+    # the workspace it acts in ("anthropic-workspace-id is required when
+    # authenticating with an identity-linked API key"). Sent as a default header
+    # only when configured, so a plain key is unaffected.
+    headers = {}
+    workspace = (os.environ.get("ANTHROPIC_WORKSPACE_ID") or "").strip()
+    if workspace and workspace != "PASTE_YOUR_WORKSPACE_ID_HERE":
+        headers["anthropic-workspace-id"] = workspace
     try:
-        client = anthropic.Anthropic(max_retries=int(cfg.get("max_retries", 5)))
+        client = anthropic.Anthropic(max_retries=int(cfg.get("max_retries", 5)),
+                                     default_headers=headers or None)
     except Exception as exc:  # noqa: BLE001 -- any credential-resolution failure means "no client"
         return None, f"no Anthropic credentials resolved ({exc})"
     # Constructing is NOT the credential check: the SDK builds a client with

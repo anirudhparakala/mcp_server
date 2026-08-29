@@ -391,3 +391,23 @@ def test_load_pin_file_degrades_on_a_corrupt_file(safe_tmp_path):
     assert ctx.load_pin_file(safe_tmp_path, "slug") == {}   # regenerate, do not crash
     ctx.contexts_path_for(safe_tmp_path, "arr").write_text("[1,2,3]", encoding="utf-8")
     assert ctx.load_pin_file(safe_tmp_path, "arr") == {}    # non-object JSON too
+
+
+def test_make_client_sends_the_workspace_id_header_when_set(monkeypatch):
+    """Identity-linked API keys are rejected with a 400 unless every request names
+    the workspace it acts in ('anthropic-workspace-id is required when
+    authenticating with an identity-linked API key')."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-test-not-a-real-key")
+    monkeypatch.setenv("ANTHROPIC_WORKSPACE_ID", "wrkspc_01TEST")
+    client, reason = ctx.make_client({"max_retries": 5})
+    assert client is not None and reason == "ok"
+    assert client.default_headers.get("anthropic-workspace-id") == "wrkspc_01TEST"
+
+
+def test_make_client_omits_the_workspace_header_when_unset(monkeypatch):
+    """A plain (non-identity-linked) key must not have an empty header forced on it."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-test-not-a-real-key")
+    monkeypatch.delenv("ANTHROPIC_WORKSPACE_ID", raising=False)
+    client, reason = ctx.make_client({"max_retries": 5})
+    assert client is not None
+    assert "anthropic-workspace-id" not in {k.lower() for k in client.default_headers}
