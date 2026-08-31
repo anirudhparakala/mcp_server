@@ -777,3 +777,74 @@ def test_build_graph_resolves_arxiv_reference_across_undeclared_manifest_scope(s
     assert len(edges) == 1
     assert edges[0]["to_chunk"] == "target-c0"
     conn.close()
+
+
+# --- stale CKB detection (finding C): scope keys derive from manifest.url plus
+# corpus/raw/*.meta.json. If the CKB predates a re-fetch, no derived doc_id
+# matches any row in docs, the entire cross-document graph silently vanishes,
+# and the CLI still exits 0. Zero matches must be a loud error, not silence. ---
+
+def test_stale_ckb_reports_an_error_when_no_derived_doc_id_matches(safe_tmp_path):
+    """The DB's doc_id ("SOME-OLD-DOC-ID") does not match what the manifest
+    would derive for slug "gdpr" (doc_id_for below always returns a
+    "DERIVED-..." id, which is never used as an actual doc_id in this DB) --
+    simulating a CKB built before a manifest re-fetch/re-pin."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="gdpr", url_original="gdpr", domain="law_aireg",
+                      format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id="SOME-OLD-DOC-ID", canonical_url="gdpr", domain="law_aireg",
+                   format="html")
+    ops.insert_chunk(conn, chunk_id="gdpr22", doc_id="SOME-OLD-DOC-ID", chunk_index=0,
+                     chunk_type="text",
+                     text="Article 22\nAutomated individual decision-making\n1.\nThe data subject")
+
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: f"DERIVED-{slug.upper()}")
+    assert stats["errors"]
+    assert any("stale" in e.lower() for e in stats["errors"])
+    conn2 = ops.get_db(ckb)
+    conn2.close()
+
+
+def test_matching_ckb_reports_no_stale_error(safe_tmp_path):
+    """Regression guard: when derived doc_ids DO match docs rows (the normal
+    case), the stale-CKB check must not fire a false positive."""
+    conn = _two_doc_ckb()
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["errors"] == []
+    conn2 = ops.get_db(ckb)
+    conn2.close()

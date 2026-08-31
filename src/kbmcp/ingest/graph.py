@@ -280,10 +280,29 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
         if not resolve_refs:
             return stats
 
+        # Stale-CKB guard (finding C): scope keys derive from manifest.url plus
+        # corpus/raw/*.meta.json. If the CKB predates a re-fetch, no derived
+        # doc_id matches any row in `docs`, every chunk falls back to
+        # `{self}` (see below), and the cross-document graph silently
+        # vanishes. Zero matches across the WHOLE manifest is the signature
+        # of that, not "nothing to resolve" -- surface it loudly instead of
+        # exiting 0 on an empty graph.
+        derived_doc_ids = {slug: _doc_id(slug) for slug in by_slug}
+        present_doc_ids = {r[0] for r in conn.execute("SELECT doc_id FROM docs").fetchall()}
+        matched = sum(1 for did in derived_doc_ids.values()
+                      if did is not None and did in present_doc_ids)
+        if derived_doc_ids and matched == 0:
+            stats["errors"].append(
+                "CKB is stale relative to the manifest: none of the "
+                f"{len(derived_doc_ids)} manifest doc_ids derived a doc_id "
+                "present in the CKB's docs table. Rebuild the CKB "
+                "(python -m kbmcp.ingest.build) before re-running the graph pass."
+            )
+
         # doc_id -> the scope of doc_ids its references may resolve into
         scope_by_doc = {}
         for slug in by_slug:
-            did = _doc_id(slug)
+            did = derived_doc_ids[slug]
             if did is None:
                 continue
             resolved = {_doc_id(s) for s in scope_for(slug, by_slug)}
