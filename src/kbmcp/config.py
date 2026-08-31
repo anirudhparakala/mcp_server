@@ -13,6 +13,7 @@ class CorpusConfig:
     chunk: dict
     contextualize: dict
     graph: dict
+    bm25: dict
     verify: dict
     raw: dict
 
@@ -26,6 +27,7 @@ def load_corpus_config(path) -> CorpusConfig:
         chunk=data.get("chunk", {}),
         contextualize=data.get("contextualize", {}),
         graph=data.get("graph", {}),
+        bm25=data.get("bm25", {}),
         verify=data.get("verify", {}),
         raw=data,
     )

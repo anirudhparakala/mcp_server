@@ -68,6 +68,17 @@ graph:
   # anchor to the next chunk of the same document (review round 2, finding B).
   min_anchor_body_chars: 200
 
+bm25:
+  tokenize: "porter unicode61"   # FTS5 tokenizer: porter stemming over unicode61
+  weights:
+    context: 1.0                 # per-column bm25() weights; text outranks context
+    text: 2.0
+  top_k: 50                      # lexical candidates handed to Phase 2's RRF fusion
+  # k1/b are NOT tunable: FTS5 fixes them at k1=1.2, b=0.75. RRF consumes ranks
+  # rather than raw scores, so this costs less than it appears -- but it is a real
+  # constraint. If Phase 3 calibration shows BM25 ranking is the T1/T2 bottleneck,
+  # swap the engine behind the BM25Store interface rather than hunting for a knob here.
+
 verify:
   fixtures: corpus/benchmark/structure_fixtures.yaml
 

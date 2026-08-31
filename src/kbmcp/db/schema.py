@@ -1,4 +1,4 @@
-"""CKB SQLite schema — 5 tables (sources, docs, chunks, edges, ingest_runs).
+"""CKB SQLite schema — 5 content tables plus `bm25_meta` (lexical index fingerprint; the FTS5 table itself is owned by `index/bm25_store.py`).
 
 Trimmed from the RAG project's 9-table schema per the ingest design spec §7:
 session/metrics tables are dropped. JSON-valued columns hold lists/dicts as
@@ -68,6 +68,16 @@ CREATE TABLE IF NOT EXISTS ingest_runs (
     status        TEXT,
     config_json   TEXT,
     stats_json    TEXT
+);
+
+CREATE TABLE IF NOT EXISTS bm25_meta (
+    id             INTEGER PRIMARY KEY CHECK (id = 1),
+    chunk_count    INTEGER NOT NULL,
+    chunks_digest  TEXT NOT NULL,
+    tokenize       TEXT NOT NULL,
+    weights_json   TEXT NOT NULL,
+    schema_version INTEGER NOT NULL,
+    built_at       TEXT NOT NULL
 );
 """
 
