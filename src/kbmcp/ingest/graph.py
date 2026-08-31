@@ -16,11 +16,17 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .citations import anchors_to_dict, extract_anchors, extract_references
+from .citations import (
+    anchors_to_dict,
+    extract_anchors,
+    extract_heading_path_anchor,
+    extract_references,
+    extract_text_anchors,
+)
 from ..db import ops
 
 
-def build_anchor_index(conn) -> dict:
+def build_anchor_index(conn, min_anchor_body_chars: int = 0) -> dict:
     """{(doc_id, kind, value): chunk_id} -- the FIRST chunk that defines each anchor.
 
     Documents restate section identifiers (annexes, tables of contents), and the
@@ -31,17 +37,50 @@ def build_anchor_index(conn) -> dict:
     header lines in a chunk's text (EUR-Lex GDPR/AI-Act), and the last element of
     a chunk's heading_path (leginfo CA Commercial Code, where the section number
     lives in the breadcrumb, not the text) -- see citations.extract_anchors.
+
+    min_anchor_body_chars (review round 2, finding B): the chunker routinely ends
+    a chunk right after the NEXT article's header line, e.g.
+    "...\\nArticle 30\\nRecords of processing activities\\n1." (36 chars of body) --
+    measured live, 58 of 196 cross-document edges landed on such a chunk. When a
+    TEXT-derived header match is followed by fewer than this many characters in
+    its own chunk, that chunk does not claim the anchor; the next chunk of the
+    same document does instead (the chunker having split the header from its
+    body). If no next chunk exists, losing the anchor entirely is worse than a
+    marginal one, so it falls back to the original header chunk. heading_path-
+    derived anchors already point at their own section's chunk and are never
+    affected by this threshold. Defaults to 0 (no thresholding) so existing
+    callers that don't pass it keep their prior behaviour exactly.
     """
     rows = conn.execute(
         "SELECT chunk_id, doc_id, text, heading_path_json FROM chunks "
         "ORDER BY doc_id, chunk_index"
     ).fetchall()
-    index: dict = {}
+
+    by_doc: dict = {}
     for row in rows:
-        heading_path = json.loads(row["heading_path_json"])
-        for anchor in extract_anchors(row["text"], heading_path):
-            key = (row["doc_id"], anchor.kind, anchor.value)
-            index.setdefault(key, row["chunk_id"])   # first definer wins
+        by_doc.setdefault(row["doc_id"], []).append(row)
+
+    index: dict = {}
+    for doc_id, doc_rows in by_doc.items():
+        for i, row in enumerate(doc_rows):
+            heading_path = json.loads(row["heading_path_json"])
+            hp_anchor = extract_heading_path_anchor(heading_path)
+            if hp_anchor is not None:
+                key = (doc_id, hp_anchor.kind, hp_anchor.value)
+                index.setdefault(key, row["chunk_id"])   # first definer wins
+
+            text = row["text"] or ""
+            for anchor, end in extract_text_anchors(text):
+                key = (doc_id, anchor.kind, anchor.value)
+                if key in index:
+                    continue                              # first definer wins
+                body_len = len(text) - end
+                if body_len >= min_anchor_body_chars:
+                    index[key] = row["chunk_id"]
+                elif i + 1 < len(doc_rows):
+                    index[key] = doc_rows[i + 1]["chunk_id"]   # header/body split across chunks
+                else:
+                    index[key] = row["chunk_id"]          # no successor -- don't lose the anchor
     return index
 
 
@@ -140,7 +179,8 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
     conn = ops.get_db(ckb_path)
     try:
         stats["anchors"] = persist_anchors(conn)
-        anchor_index = build_anchor_index(conn)
+        anchor_index = build_anchor_index(
+            conn, min_anchor_body_chars=cfg.get("min_anchor_body_chars", 0))
 
         edge_types = cfg.get("edge_types", ["adjacent", "references"])
         resolve_refs = cfg.get("resolve", True) and "references" in edge_types

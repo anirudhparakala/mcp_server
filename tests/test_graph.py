@@ -93,6 +93,107 @@ def test_anchor_index_reaches_heading_path_only_anchors():
     conn.close()
 
 
+# --- min_anchor_body_chars (review round 2, finding B): a text-derived header match
+# followed by too little body in its own chunk must not claim the anchor -- the
+# chunker routinely ends a chunk right after the NEXT article's header line, e.g.
+# "...\nArticle 30\nRecords of processing activities\n1." (36 chars of body). ---
+
+def _doc_with_two_chunks(conn, *, doc_id, slug, chunk0_text, chunk1_text):
+    ops.insert_source(conn, canonical_url=slug, url_original=slug, domain="law_aireg",
+                      format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id=doc_id, canonical_url=slug, domain="law_aireg", format="html")
+    ops.insert_chunk(conn, chunk_id=f"{doc_id}-c0", doc_id=doc_id, chunk_index=0,
+                     chunk_type="text", text=chunk0_text)
+    ops.insert_chunk(conn, chunk_id=f"{doc_id}-c1", doc_id=doc_id, chunk_index=1,
+                     chunk_type="text", text=chunk1_text)
+
+
+def test_header_split_from_its_body_anchors_the_next_chunk():
+    """The concrete measured case: chunk 0 ends right after the header line with
+    only a few characters of body; the real body lives in chunk 1. With the
+    threshold configured, chunk 1 -- not chunk 0 -- must claim the anchor."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    _doc_with_two_chunks(
+        conn, doc_id="GDPR2", slug="gdpr2",
+        chunk0_text="...end of Article 29's text.\nArticle 30\nRecords of processing "
+                     "activities\n1.",                              # 36 chars after "Article 30"
+        chunk1_text="Each controller and each processor shall maintain a record of "
+                     "processing activities under its responsibility. " * 3,  # long real body
+    )
+    idx = graph.build_anchor_index(conn, min_anchor_body_chars=200)
+    assert idx[("GDPR2", "article", "30")] == "GDPR2-c1"
+    conn.close()
+
+
+def test_header_with_sufficient_body_still_anchors_itself():
+    """A normal header-then-body chunk (the common case) must still anchor itself
+    once the threshold is applied, not defer to the next chunk."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    _doc_with_two_chunks(
+        conn, doc_id="GDPR3", slug="gdpr3",
+        chunk0_text="Article 30\nRecords of processing activities\n1.\n"
+                     "Each controller and each processor shall maintain a record of "
+                     "processing activities under its responsibility. " * 3,
+        chunk1_text="unrelated later content",
+    )
+    idx = graph.build_anchor_index(conn, min_anchor_body_chars=200)
+    assert idx[("GDPR3", "article", "30")] == "GDPR3-c0"
+    conn.close()
+
+
+def test_no_qualifying_chunk_falls_back_to_the_header_chunk():
+    """When the header is the LAST chunk of the document (no next chunk to defer
+    to), losing the anchor entirely is worse than a marginal one -- it must still
+    fall back to the original header chunk."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="gdpr4", url_original="gdpr4", domain="law_aireg",
+                      format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id="GDPR4", canonical_url="gdpr4", domain="law_aireg", format="html")
+    ops.insert_chunk(conn, chunk_id="GDPR4-c0", doc_id="GDPR4", chunk_index=0, chunk_type="text",
+                     text="...end of Article 29's text.\nArticle 30\nRecords of processing "
+                          "activities\n1.")     # only chunk in the doc; no successor to defer to
+    idx = graph.build_anchor_index(conn, min_anchor_body_chars=200)
+    assert idx[("GDPR4", "article", "30")] == "GDPR4-c0"
+    conn.close()
+
+
+def test_heading_path_derived_anchor_is_unaffected_by_the_body_threshold():
+    """min_anchor_body_chars applies to TEXT-derived anchors only -- heading_path
+    anchors (leginfo docs) already point at their own section's chunk and must
+    resolve identically no matter how large the threshold is."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="ucc-article-1b", url_original="ucc-article-1b",
+                      domain="law_contract", format="html", license="x", license_ok=True,
+                      version="v1")
+    ops.insert_doc(conn, doc_id="UCC1B", canonical_url="ucc-article-1b", domain="law_contract",
+                   format="html")
+    ops.insert_chunk(conn, chunk_id="u0b", doc_id="UCC1B", chunk_index=0, chunk_type="text",
+                     text="short",   # deliberately shorter than any realistic threshold
+                     heading_path=["DIVISION 1", "CHAPTER 2", "1303."])
+    idx = graph.build_anchor_index(conn, min_anchor_body_chars=200)
+    assert idx[("UCC1B", "section", "1303")] == "u0b"
+    conn.close()
+
+
+def test_default_min_anchor_body_chars_preserves_prior_unthresholded_behaviour():
+    """Existing callers that don't pass min_anchor_body_chars must keep working
+    exactly as before: a short body must not get bumped to the next chunk."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    _doc_with_two_chunks(
+        conn, doc_id="GDPR5", slug="gdpr5",
+        chunk0_text="Article 30\nshort body\n",
+        chunk1_text="unrelated later content",
+    )
+    idx = graph.build_anchor_index(conn)   # no threshold argument at all
+    assert idx[("GDPR5", "article", "30")] == "GDPR5-c0"
+    conn.close()
+
+
 def _two_doc_ckb():
     conn = ops.get_db(":memory:")
     create_all_tables(conn)
@@ -378,3 +479,56 @@ def test_build_graph_records_a_per_chunk_error_and_keeps_going(safe_tmp_path, mo
     assert stats["references_resolved"] == 1      # LATER sorts after EDPB and still ran
     conn2 = ops.get_db(ckb)
     conn2.close()
+
+
+def test_build_graph_honours_configured_min_anchor_body_chars(safe_tmp_path):
+    """min_anchor_body_chars must actually reach build_anchor_index through
+    build_graph's cfg, not just be accepted (review round 2, finding B)."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    for slug in ("gdpr", "citer"):
+        ops.insert_source(conn, canonical_url=slug, url_original=slug, domain="law_aireg",
+                          format="html", license="x", license_ok=True, version="v1")
+        ops.insert_doc(conn, doc_id=slug.upper(), canonical_url=slug, domain="law_aireg",
+                       format="html")
+    ops.insert_chunk(conn, chunk_id="gdpr-c0", doc_id="GDPR", chunk_index=0, chunk_type="text",
+                     text="...end of Article 29's text.\nArticle 30\nRecords of processing "
+                          "activities\n1.")                       # header, thin body
+    ops.insert_chunk(conn, chunk_id="gdpr-c1", doc_id="GDPR", chunk_index=1, chunk_type="text",
+                     text="Each controller and each processor shall maintain a record of "
+                          "processing activities under its responsibility. " * 3)  # real body
+    ops.insert_chunk(conn, chunk_id="citer-c0", doc_id="CITER", chunk_index=0, chunk_type="text",
+                     text="As required by Article 30, records must be kept.")
+
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: citer\n  url: citer\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n",
+        encoding="utf-8")
+    base_cfg = {"extractors": ["legal", "academic"], "resolve": True,
+                "edge_types": ["references"], "record_unresolved": True}
+
+    unthresholded = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", base_cfg,
+                                      doc_id_for=lambda slug: slug.upper())
+    assert unthresholded["references_resolved"] == 1
+    conn = ops.get_db(ckb)
+    edge = [r for r in ops.get_edges_from(conn, "citer-c0") if r["edge_type"] == "references"][0]
+    assert edge["to_chunk"] == "gdpr-c0"          # default: no threshold, lands on the thin chunk
+    conn.close()
+
+    thresholded = graph.build_graph(ckb, manifest, safe_tmp_path / "raw",
+                                    dict(base_cfg, min_anchor_body_chars=200),
+                                    doc_id_for=lambda slug: slug.upper())
+    assert thresholded["references_resolved"] == 1
+    conn = ops.get_db(ckb)
+    edge = [r for r in ops.get_edges_from(conn, "citer-c0") if r["edge_type"] == "references"][0]
+    assert edge["to_chunk"] == "gdpr-c1"          # configured: defers to the chunk with real body
+    conn.close()

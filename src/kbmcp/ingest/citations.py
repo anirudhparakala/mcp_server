@@ -28,13 +28,17 @@ too, and a substring match there would anchor the wrong section.
 
 import re
 from dataclasses import dataclass
+from typing import Optional
 
 # --- anchors: standalone header lines only (re.M, anchored both ends) ---
+# Measured corpus-wide: only "article" and "recital" ever match a standalone text
+# line here. leginfo's numeric sections ("1303.") never appear as their own text
+# line -- they live in heading_path instead (see _HEADING_PATH_SECTION_RE below) --
+# so a text-line `section` pattern here would be dead code (0 anchors corpus-wide;
+# verified 2026-08-11, review round 2, finding D).
 _ANCHOR_PATTERNS = (
     ("article", re.compile(r"^[ \t]*Article[ \t]+(\d+[a-z]?)[ \t]*$", re.M)),
     ("recital", re.compile(r"^[ \t]*Recital[ \t]+(\d+)[ \t]*$", re.M)),
-    # leginfo renders "1303." as its own line above the section body
-    ("section", re.compile(r"^[ \t]*(\d{4})\.[ \t]*$", re.M)),
 )
 
 # --- anchors: heading_path last element (leginfo docs; see module docstring).
@@ -88,14 +92,16 @@ def _anchor_line_spans(text: str) -> list:
     return spans
 
 
-def extract_anchors(text: str, heading_path=None) -> list:
-    """Section identifiers this chunk DEFINES.
+def extract_text_anchors(text: str) -> list:
+    """[(Anchor, match_end)] for standalone header-line anchors in `text` alone --
+    the text-derived half of extract_anchors, with each match's end position kept.
 
-    Combines two sources, de-duplicated, source-then-pattern order preserved:
-    standalone header lines in `text`, and -- when `heading_path` is given and
-    non-empty -- its last element, if that element (in full) is a section
-    identifier such as "1201." (leginfo CA Commercial Code chunks carry the
-    section number there instead of as a text line).
+    First occurrence per (kind, value), pattern-then-position order preserved.
+    Exposed separately (not just folded into extract_anchors) so a caller such as
+    build_anchor_index can see where the header match ends and decide whether the
+    chunk has enough body left after it to be the anchor's home (review round 2,
+    finding B) -- the chunker routinely ends a chunk right after the NEXT article's
+    header line, leaving almost no real body behind it.
     """
     found = []
     seen = set()
@@ -105,14 +111,46 @@ def extract_anchors(text: str, heading_path=None) -> list:
                 key = (kind, m.group(1))
                 if key not in seen:
                     seen.add(key)
-                    found.append(Anchor(kind, m.group(1)))
+                    found.append((Anchor(kind, m.group(1)), m.end()))
+    return found
+
+
+def extract_heading_path_anchor(heading_path) -> Optional[Anchor]:
+    """The section identifier at the LAST heading_path element, if any -- the
+    heading_path-derived half of extract_anchors (leginfo CA Commercial Code
+    chunks carry the section number there, e.g. "1201.", instead of as a text
+    line). Anchored both ends (fullmatch semantics) so a breadcrumb element
+    containing digits, e.g. "CHAPTER 2. ... [1201 - 1206]", never matches as a
+    substring.
+    """
     if heading_path:
         m = _HEADING_PATH_SECTION_RE.match(heading_path[-1].strip())
         if m:
-            key = ("section", m.group(1))
-            if key not in seen:
-                seen.add(key)
-                found.append(Anchor("section", m.group(1)))
+            return Anchor("section", m.group(1))
+    return None
+
+
+def extract_anchors(text: str, heading_path=None) -> list:
+    """Section identifiers this chunk DEFINES.
+
+    Combines two sources, de-duplicated, source-then-pattern order preserved:
+    standalone header lines in `text` (extract_text_anchors), and -- when
+    `heading_path` is given and non-empty -- its last element, if that element
+    (in full) is a section identifier such as "1201." (leginfo CA Commercial Code
+    chunks carry the section number there instead of as a text line;
+    extract_heading_path_anchor).
+    """
+    found = []
+    seen = set()
+    for anchor, _end in extract_text_anchors(text):
+        key = (anchor.kind, anchor.value)
+        seen.add(key)
+        found.append(anchor)
+    hp_anchor = extract_heading_path_anchor(heading_path)
+    if hp_anchor is not None:
+        key = (hp_anchor.kind, hp_anchor.value)
+        if key not in seen:
+            found.append(hp_anchor)
     return found
 
 
