@@ -353,3 +353,52 @@ def test_build_does_not_prune_when_a_document_errored(safe_tmp_path, monkeypatch
     conn = ops.get_db(ckb)
     assert ops.count_rows(conn, "docs") == 2                    # nothing deleted
     conn.close()
+
+
+def test_force_rebuild_does_not_orphan_edges_or_raise_fk_error(safe_tmp_path):
+    """review round 2, finding A: _delete_doc only deleted chunks, but
+    edges.from_chunk/to_chunk are FOREIGN KEY REFERENCES chunks.chunk_id and
+    get_db turns on PRAGMA foreign_keys. Once the M5 graph has run, `build --force`
+    -- the documented rebuild path, and the exact command that applies newly
+    generated context pins -- aborted with sqlite3.IntegrityError on any document
+    with outgoing or incoming edges. _delete_doc must clear edges on BOTH sides
+    before deleting chunks, and no orphan edge rows may survive a rebuild."""
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    stats = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG)
+    assert stats["docs"] == 1 and not stats["errors"]
+
+    tiny_did = mk_doc_id("https://ex/tiny", "v1")
+    conn = ops.get_db(ckb)
+    tiny_chunks = ops.get_chunks_for_doc(conn, tiny_did)
+    assert len(tiny_chunks) >= 1
+    tiny_chunk_id = tiny_chunks[0]["chunk_id"]
+
+    # An unrelated chunk in the SAME doc's own space is enough to exercise both
+    # directions of the FK without pulling in a second manifest entry (which the
+    # prune pass at the end of a full build would otherwise delete on its own,
+    # muddying what this test is isolating).
+    ops.insert_chunk(conn, chunk_id="ghost-c0", doc_id=tiny_did, chunk_index=999,
+                     text="ghost chunk standing in for a real cross-referencing chunk",
+                     chunk_type="text")
+    ops.insert_edge(conn, from_chunk=tiny_chunk_id, to_chunk="ghost-c0",
+                    edge_type="references", provenance="out", confidence=1.0,
+                    created_at="2026-08-11T00:00:00Z")
+    ops.insert_edge(conn, from_chunk="ghost-c0", to_chunk=tiny_chunk_id,
+                    edge_type="references", provenance="in", confidence=1.0,
+                    created_at="2026-08-11T00:00:00Z")
+    assert ops.count_rows(conn, "edges") == 2
+    conn.close()
+
+    # Must not raise sqlite3.IntegrityError.
+    stats2 = build.build_ckb(manifest, raw, safe_tmp_path / "parsed", ckb, CFG, force=True)
+    assert stats2["docs"] == 1 and not stats2["errors"]
+
+    conn = ops.get_db(ckb)
+    orphans = conn.execute(
+        "SELECT edge_id FROM edges WHERE from_chunk = ? OR to_chunk = ?",
+        (tiny_chunk_id, tiny_chunk_id),
+    ).fetchall()
+    assert orphans == []                       # neither direction survived as an orphan
+    assert ops.count_rows(conn, "edges") == 0
+    conn.close()

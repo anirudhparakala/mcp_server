@@ -168,7 +168,19 @@ def _doc_present(conn, did) -> bool:
 
 
 def _delete_doc(conn, did) -> None:
-    """Remove a doc and its chunks (chunks first, for the FK); commit. No-op if absent."""
+    """Remove a doc and its chunks (edges, then chunks, then the doc row, for the FK);
+    commit. No-op if absent.
+
+    edges.from_chunk (NOT NULL) and edges.to_chunk (nullable) both REFERENCE
+    chunks.chunk_id, and ops.get_db turns on PRAGMA foreign_keys. Once the M5 graph
+    has run, deleting a doc's chunks without first deleting edges that point at them
+    -- from EITHER side -- raises sqlite3.IntegrityError (review round 2, finding A).
+    """
+    conn.execute(
+        "DELETE FROM edges WHERE from_chunk IN (SELECT chunk_id FROM chunks WHERE doc_id = ?) "
+        "OR to_chunk IN (SELECT chunk_id FROM chunks WHERE doc_id = ?)",
+        (did, did),
+    )
     conn.execute("DELETE FROM chunks WHERE doc_id = ?", (did,))
     conn.execute("DELETE FROM docs WHERE doc_id = ?", (did,))
     conn.commit()
