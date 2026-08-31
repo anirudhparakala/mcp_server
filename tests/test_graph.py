@@ -1,6 +1,7 @@
 from kbmcp.db import ops
 from kbmcp.db.schema import create_all_tables
 from kbmcp.ingest import graph
+from kbmcp.ingest.manifest import SourceEntry
 
 
 def _ckb(conn_path=":memory:"):
@@ -644,3 +645,135 @@ def test_stats_report_chunks_scanned_not_a_dishonest_anchors_count(safe_tmp_path
                               doc_id_for=lambda slug: slug.upper())
     assert stats["chunks_scanned"] == 4
     assert "anchors" not in stats
+
+
+# --- document-level arxiv/doi anchors, scope-exempt resolution (finding B):
+# citations.py extracts arxiv/doi references, but until now build_anchor_index
+# only ever registered section-level anchors, so these references could never
+# resolve -- 128 arXiv references in the corpus, zero of them resolvable. ---
+
+def _entries_for(*slug_url_pairs):
+    return [
+        SourceEntry(doc_id=slug, url=url, format="html", license="x",
+                    license_ok=True, version="v1")
+        for slug, url in slug_url_pairs
+    ]
+
+
+def _corpus_with_arxiv_target():
+    """CITER inline-cites an arXiv ID; TARGET is the actual in-corpus document
+    at that arXiv URL. No `references:` relationship declared anywhere."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    for slug in ("citer", "target"):
+        ops.insert_source(conn, canonical_url=slug, url_original=slug, domain="ai",
+                          format="html", license="x", license_ok=True, version="v1")
+        ops.insert_doc(conn, doc_id=slug.upper(), canonical_url=slug, domain="ai", format="html")
+    ops.insert_chunk(conn, chunk_id="citer-c0", doc_id="CITER", chunk_index=0, chunk_type="text",
+                     text="Our approach builds on the transformer, see arXiv:1706.03762 "
+                          "for details.")
+    ops.insert_chunk(conn, chunk_id="target-c0", doc_id="TARGET", chunk_index=0, chunk_type="text",
+                     text="Attention Is All You Need. We propose the Transformer...")
+    ops.insert_chunk(conn, chunk_id="target-c1", doc_id="TARGET", chunk_index=1, chunk_type="text",
+                     text="Section 2. Background. ...")
+    return conn
+
+
+def test_build_anchor_index_registers_document_level_arxiv_anchor_at_first_chunk():
+    conn = _corpus_with_arxiv_target()
+    entries = _entries_for(("citer", "https://example.org/citer"),
+                           ("target", "https://arxiv.org/abs/1706.03762"))
+    idx = graph.build_anchor_index(conn, manifest_entries=entries,
+                                   doc_id_for=lambda slug: slug.upper())
+    assert idx[("TARGET", "arxiv", "1706.03762")] == "target-c0"   # first chunk, not target-c1
+    conn.close()
+
+
+def test_build_anchor_index_without_manifest_entries_registers_no_document_anchors():
+    """Existing callers that don't pass manifest_entries must keep working
+    exactly as before -- no arxiv/doi keys appear at all."""
+    conn = _corpus_with_arxiv_target()
+    idx = graph.build_anchor_index(conn)
+    assert not any(kind in ("arxiv", "doi") for _doc, kind, _value in idx)
+    conn.close()
+
+
+def test_arxiv_reference_resolves_regardless_of_citing_documents_scope():
+    conn = _corpus_with_arxiv_target()
+    entries = _entries_for(("citer", "https://example.org/citer"),
+                           ("target", "https://arxiv.org/abs/1706.03762"))
+    idx = graph.build_anchor_index(conn, manifest_entries=entries,
+                                   doc_id_for=lambda slug: slug.upper())
+    from kbmcp.ingest.citations import Reference
+    # CITER's scope is itself alone -- no declared `references: [target]` -- yet
+    # the arXiv identifier must still resolve: it's globally unique.
+    target = graph.resolve_reference(Reference("arxiv", "1706.03762", "arXiv:1706.03762"),
+                                     from_doc_id="CITER", scope_doc_ids={"CITER"},
+                                     anchor_index=idx)
+    assert target == "target-c0"
+    conn.close()
+
+
+def test_arxiv_id_naming_a_document_outside_the_corpus_stays_unresolved():
+    conn = _corpus_with_arxiv_target()
+    entries = _entries_for(("citer", "https://example.org/citer"),
+                           ("target", "https://arxiv.org/abs/1706.03762"))
+    idx = graph.build_anchor_index(conn, manifest_entries=entries,
+                                   doc_id_for=lambda slug: slug.upper())
+    from kbmcp.ingest.citations import Reference
+    target = graph.resolve_reference(Reference("arxiv", "9999.99999", "arXiv:9999.99999"),
+                                     from_doc_id="CITER", scope_doc_ids={"CITER"},
+                                     anchor_index=idx)
+    assert target is None
+    conn.close()
+
+
+def test_section_level_references_are_not_made_scope_exempt():
+    """The scope-exemption is specific to arxiv/doi kinds -- a section-kind
+    reference (Article 22) must still be rejected when the citing document's
+    manifest scope doesn't include the defining document, even when
+    document-level anchors are ALSO registered in the same index."""
+    conn = _two_doc_ckb()
+    entries = _entries_for(("gdpr", "https://eur-lex.example/gdpr"),
+                           ("aiact", "https://eur-lex.example/aiact"),
+                           ("edpb", "https://eur-lex.example/edpb"))
+    idx = graph.build_anchor_index(conn, manifest_entries=entries,
+                                   doc_id_for=lambda slug: slug.upper())
+    from kbmcp.ingest.citations import Reference
+    target = graph.resolve_reference(Reference("article", "22", "Article 22(1)"),
+                                     from_doc_id="EDPB", scope_doc_ids={"EDPB"},  # GDPR not in scope
+                                     anchor_index=idx)
+    assert target is None
+    conn.close()
+
+
+def test_build_graph_resolves_arxiv_reference_across_undeclared_manifest_scope(safe_tmp_path):
+    """Acceptance case: an arXiv reference in document X resolves to document
+    Y's first chunk even though the manifest declares NO `references:`
+    relationship between them."""
+    conn = _corpus_with_arxiv_target()
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: citer\n  url: https://example.org/citer\n  domain: ai\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: target\n  url: https://arxiv.org/abs/1706.03762\n  domain: ai\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["references_resolved"] == 1
+
+    conn = ops.get_db(ckb)
+    edges = [r for r in ops.get_edges_from(conn, "citer-c0") if r["edge_type"] == "references"]
+    assert len(edges) == 1
+    assert edges[0]["to_chunk"] == "target-c0"
+    conn.close()

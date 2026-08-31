@@ -12,8 +12,11 @@ derived from their fields, so repeated runs converge instead of accumulating.
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
+from typing import Optional
+from urllib.parse import urlparse
 
 from .citations import (
     anchors_to_dict,
@@ -24,8 +27,34 @@ from .citations import (
 )
 from ..db import ops
 
+# Kinds that are scope-exempt during resolution (see candidates_for): arXiv IDs
+# and DOIs are globally unique identifiers, unlike a bare section number, so a
+# reference to one may resolve to any document in the corpus, not just the
+# citing document's manifest-declared scope (finding B).
+_SCOPE_EXEMPT_KINDS = frozenset({"arxiv", "doi"})
 
-def build_anchor_index(conn, min_anchor_body_chars: int = 0) -> dict:
+_DOI_RE = re.compile(r"\b(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)", re.I)
+
+
+def _arxiv_id_from_url(url: str) -> Optional[str]:
+    """The bare arXiv ID (e.g. "1706.03762") an arxiv.org URL names, or None."""
+    host = urlparse(url).netloc.lower()
+    if not (host == "arxiv.org" or host.endswith(".arxiv.org")):
+        return None
+    from .fetch import _arxiv_id
+    return _arxiv_id(url)
+
+
+def _doi_from_url(url: str) -> Optional[str]:
+    """The DOI a URL names, lowercased to match extract_references' matching
+    (its pattern is case-insensitive) even if the manifest URL and a citing
+    chunk's text differ in case."""
+    m = _DOI_RE.search(url)
+    return m.group(1).lower() if m else None
+
+
+def build_anchor_index(conn, min_anchor_body_chars: int = 0, *,
+                       manifest_entries=None, raw_dir=None, doc_id_for=None) -> dict:
     """{(doc_id, kind, value): chunk_id} -- the FIRST chunk that defines each anchor.
 
     Documents restate section identifiers (annexes, tables of contents), and the
@@ -49,6 +78,15 @@ def build_anchor_index(conn, min_anchor_body_chars: int = 0) -> dict:
     derived anchors already point at their own section's chunk and are never
     affected by this threshold. Defaults to 0 (no thresholding) so existing
     callers that don't pass it keep their prior behaviour exactly.
+
+    manifest_entries/raw_dir/doc_id_for (fix wave 2, finding B): when
+    manifest_entries is given, also register one DOCUMENT-level anchor per
+    manifest source whose `url` names an arXiv ID and/or a DOI, pointing at
+    that document's first chunk (lowest chunk_index) -- citations.py extracts
+    `arxiv`/`doi` references from chunk text, but until now nothing ever
+    defined an anchor for them, so they could never resolve. All three
+    parameters default to None/unused so existing callers keep their prior
+    behaviour exactly (no arxiv/doi keys appear in the returned index).
     """
     rows = conn.execute(
         "SELECT chunk_id, doc_id, text, heading_path_json FROM chunks "
@@ -80,6 +118,24 @@ def build_anchor_index(conn, min_anchor_body_chars: int = 0) -> dict:
                     index[key] = doc_rows[i + 1]["chunk_id"]   # header/body split across chunks
                 else:
                     index[key] = row["chunk_id"]          # no successor -- don't lose the anchor
+
+    if manifest_entries is not None:
+        by_slug = {e.doc_id: e for e in manifest_entries}
+        for entry in manifest_entries:
+            real_doc_id = doc_id_for_slug(entry.doc_id, by_slug, raw_dir, doc_id_for=doc_id_for)
+            if real_doc_id is None:
+                continue
+            doc_rows = by_doc.get(real_doc_id)
+            if not doc_rows:
+                continue                      # manifest source has no chunks in this CKB
+            first_chunk_id = doc_rows[0]["chunk_id"]   # doc_rows is chunk_index-ordered
+            arxiv_id = _arxiv_id_from_url(entry.url)
+            if arxiv_id:
+                index.setdefault((real_doc_id, "arxiv", arxiv_id), first_chunk_id)
+            doi = _doi_from_url(entry.url)
+            if doi:
+                index.setdefault((real_doc_id, "doi", doi), first_chunk_id)
+
     return index
 
 
@@ -118,12 +174,20 @@ def scope_for(slug: str, entries_by_slug: dict) -> set:
 
 
 def candidates_for(reference, *, scope_doc_ids: set, anchor_index: dict) -> list:
-    """Chunk IDs within `scope_doc_ids` that define `reference`.
+    """Chunk IDs that define `reference`.
+
+    Scoped to `scope_doc_ids` for ordinary section-level kinds. `arxiv`/`doi`
+    references are scope-exempt (finding B): those identifiers are globally
+    unique, so a citation to one may resolve against ANY document in the
+    anchor index, regardless of the citing document's manifest-declared scope.
 
     The raw candidate list, not collapsed to a single verdict -- callers that need
     to tell "out of corpus" (0 candidates) apart from "ambiguous" (>1 candidates)
     for stats/config purposes use this instead of resolve_reference.
     """
+    if reference.kind in _SCOPE_EXEMPT_KINDS:
+        return [chunk for (_doc_id, kind, value), chunk in anchor_index.items()
+                if kind == reference.kind and value == reference.value]
     targets = []
     for doc_id in scope_doc_ids:
         chunk = anchor_index.get((doc_id, reference.kind, reference.value))
@@ -196,7 +260,8 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
     try:
         stats["chunks_scanned"] = persist_anchors(conn)
         anchor_index = build_anchor_index(
-            conn, min_anchor_body_chars=cfg.get("min_anchor_body_chars", 0))
+            conn, min_anchor_body_chars=cfg.get("min_anchor_body_chars", 0),
+            manifest_entries=entries, raw_dir=raw_dir, doc_id_for=doc_id_for)
 
         edge_types = cfg.get("edge_types", ["adjacent", "references"])
         resolve_refs = cfg.get("resolve", True) and "references" in edge_types
