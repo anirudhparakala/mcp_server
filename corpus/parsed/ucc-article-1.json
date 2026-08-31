@@ -4,7 +4,7 @@
   "name": "ucc-article-1",
   "origin": {
     "mimetype": "text/html",
-    "binary_hash": 18304870614691844602,
+    "binary_hash": 7602531811609997841,
     "filename": "ucc-article-1.html"
   },
   "furniture": {
@@ -1781,7 +1781,7 @@
       "prov": [],
       "orig": "Up^",
       "text": "Up^",
-      "hyperlink": "\\faces\\codes_displayexpandedbranch.xhtml?lawCode=COM&division=1.&title=&part=&chapter=2.&article=&goUp=Y"
+      "hyperlink": "\\faces\\codes_displayexpandedbranch.xhtml?lawCode=COM&division=1.&title=&part=&chapter=3.&article=&goUp=Y"
     },
     {
       "self_ref": "#/texts/107",
@@ -1896,26 +1896,38 @@
           "$ref": "#/texts/114"
         },
         {
-          "$ref": "#/texts/177"
+          "$ref": "#/texts/128"
         },
         {
-          "$ref": "#/texts/190"
+          "$ref": "#/texts/133"
         },
         {
-          "$ref": "#/texts/210"
+          "$ref": "#/texts/147"
         },
         {
-          "$ref": "#/texts/217"
+          "$ref": "#/texts/150"
         },
         {
-          "$ref": "#/texts/221"
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/163"
+        },
+        {
+          "$ref": "#/texts/167"
+        },
+        {
+          "$ref": "#/texts/170"
         }
       ],
       "content_layer": "body",
       "label": "section_header",
       "prov": [],
-      "orig": "CHAPTER 2. General Definitions and Principles of Interpretation [1201 - 1206]",
-      "text": "CHAPTER 2. General Definitions and Principles of Interpretation [1201 - 1206]",
+      "orig": "CHAPTER 3. Territorial Applicability and General Rules [1301 - 1310]",
+      "text": "CHAPTER 3. Territorial Applicability and General Rules [1301 - 1310]",
       "formatting": {
         "bold": true,
         "italic": false,
@@ -1934,8 +1946,8 @@
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "( Chapter 2 enacted by Stats. 1963, Ch. 819. )",
-      "text": "( Chapter 2 enacted by Stats. 1963, Ch. 819. )",
+      "orig": "( Chapter 3 added by Stats. 2006, Ch. 254, Sec. 30. )",
+      "text": "( Chapter 3 added by Stats. 2006, Ch. 254, Sec. 30. )",
       "formatting": {
         "bold": false,
         "italic": true,
@@ -1988,10 +2000,185 @@
         },
         {
           "$ref": "#/texts/127"
-        },
-        {
-          "$ref": "#/texts/128"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1301.",
+      "text": "1301.",
+      "hyperlink": "javascript:submitCodesValues('1301.','2.3','2023','210','3', 'id_22775524-7dc1-11ee-af93-9b7a567ae902')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) Except as otherwise provided in this section, when a transaction bears a reasonable relation to this state and also to another state or nation, the parties may agree that the law either of this state or of the other state or nation shall govern their rights and duties.",
+      "text": "(a) Except as otherwise provided in this section, when a transaction bears a reasonable relation to this state and also to another state or nation, the parties may agree that the law either of this state or of the other state or nation shall govern their rights and duties."
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) In the absence of an agreement effective under subdivision (a), and except as provided in subdivision (c), this code applies to transactions bearing an appropriate relation to this state.",
+      "text": "(b) In the absence of an agreement effective under subdivision (a), and except as provided in subdivision (c), this code applies to transactions bearing an appropriate relation to this state."
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(c) If one of the following provisions specifies the applicable law, that provision governs and a contrary agreement is effective only to the extent permitted by the law so specified:",
+      "text": "(c) If one of the following provisions specifies the applicable law, that provision governs and a contrary agreement is effective only to the extent permitted by the law so specified:"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1) Section 2402.",
+      "text": "(1) Section 2402."
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2) Section 4102.",
+      "text": "(2) Section 4102."
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(3) Section 5116.",
+      "text": "(3) Section 5116."
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(4) Section 6103.",
+      "text": "(4) Section 6103."
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(5) Section 8110.",
+      "text": "(5) Section 8110."
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(6) Sections 9301 to 9307, inclusive.",
+      "text": "(6) Sections 9301 to 9307, inclusive."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(7) Sections 10105 and 10106.",
+      "text": "(7) Sections 10105 and 10106."
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8) Section 11507.",
+      "text": "(8) Section 11507."
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(9) Section 12107.",
+      "text": "(9) Section 12107."
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/texts/114"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Amended by Stats. 2023, Ch. 210, Sec. 3. (SB 95) Effective January 1, 2024.)",
+      "text": "(Amended by Stats. 2023, Ch. 210, Sec. 3. (SB 95) Effective January 1, 2024.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/129"
         },
@@ -2003,10 +2190,77 @@
         },
         {
           "$ref": "#/texts/132"
-        },
-        {
-          "$ref": "#/texts/133"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1302.",
+      "text": "1302.",
+      "hyperlink": "javascript:submitCodesValues('1302.','2.3','2006','254','30', 'id_5aa567fe-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/texts/128"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) Except as otherwise provided in subdivision (b) or elsewhere in this code, the effect of provisions of this code may be varied by agreement.",
+      "text": "(a) Except as otherwise provided in subdivision (b) or elsewhere in this code, the effect of provisions of this code may be varied by agreement."
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/texts/128"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) The obligations of good faith, diligence, reasonableness, and care prescribed by this code may not be disclaimed by agreement. The parties, by agreement, may determine the standards by which the performance of those obligations is to be measured if those standards are not manifestly unreasonable. Whenever this code requires an action to be taken within a reasonable time, a time that is not manifestly unreasonable may be fixed by agreement.",
+      "text": "(b) The obligations of good faith, diligence, reasonableness, and care prescribed by this code may not be disclaimed by agreement. The parties, by agreement, may determine the standards by which the performance of those obligations is to be measured if those standards are not manifestly unreasonable. Whenever this code requires an action to be taken within a reasonable time, a time that is not manifestly unreasonable may be fixed by agreement."
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/texts/128"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(c) The presence of certain provisions of this code of the phrase \"unless otherwise agreed,\" or words of similar import, does not imply that the effect of other provisions may not be varied by agreement under this section.",
+      "text": "(c) The presence of certain provisions of this code of the phrase \"unless otherwise agreed,\" or words of similar import, does not imply that the effect of other provisions may not be varied by agreement under this section."
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/texts/128"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by Stats. 2006, Ch. 254, Sec. 30. Effective January 1, 2007.)",
+      "text": "(Added by Stats. 2006, Ch. 254, Sec. 30. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/134"
         },
@@ -2045,19 +2299,237 @@
         },
         {
           "$ref": "#/texts/146"
-        },
-        {
-          "$ref": "#/texts/147"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1303.",
+      "text": "1303.",
+      "hyperlink": "javascript:submitCodesValues('1303.','2.3','2006','254','23', 'id_70be739e-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) A \"course of performance\" is a sequence of conduct between the parties to a particular transaction that exists if:",
+      "text": "(a) A \"course of performance\" is a sequence of conduct between the parties to a particular transaction that exists if:"
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1) the agreement of the parties with respect to the transaction involves repeated occasions for performance by a party; and",
+      "text": "(1) the agreement of the parties with respect to the transaction involves repeated occasions for performance by a party; and"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2) the other party, with knowledge of the nature of the performance and opportunity for objection to it, accepts the performance or acquiesces in it without objection.",
+      "text": "(2) the other party, with knowledge of the nature of the performance and opportunity for objection to it, accepts the performance or acquiesces in it without objection."
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) A \"course of dealing\" is a sequence of conduct concerning previous transactions between the parties to a particular transaction that is fairly to be regarded as establishing a common basis of understanding for interpreting their expressions and other conduct.",
+      "text": "(b) A \"course of dealing\" is a sequence of conduct concerning previous transactions between the parties to a particular transaction that is fairly to be regarded as establishing a common basis of understanding for interpreting their expressions and other conduct."
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(c) A \"usage of trade\" is any practice or method of dealing having such regularity of observance in a place, vocation, or trade as to justify an expectation that it will be observed with respect to the transaction in question. The existence and scope of such a usage must be proved as facts. If it is established that such a usage is embodied in a trade code or similar record, the interpretation of the record is a question of law.",
+      "text": "(c) A \"usage of trade\" is any practice or method of dealing having such regularity of observance in a place, vocation, or trade as to justify an expectation that it will be observed with respect to the transaction in question. The existence and scope of such a usage must be proved as facts. If it is established that such a usage is embodied in a trade code or similar record, the interpretation of the record is a question of law."
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(d) A course of performance or course of dealing between the parties or usage of trade in the vocation or trade in which they are engaged or of which they are or should be aware is relevant in ascertaining the meaning of the parties' agreement, may give particular meaning to specific terms of the agreement, and may supplement or qualify the terms of the agreement. A usage of trade applicable in the place in which part of the performance under the agreement is to occur may be so utilized as to that part of the performance.",
+      "text": "(d) A course of performance or course of dealing between the parties or usage of trade in the vocation or trade in which they are engaged or of which they are or should be aware is relevant in ascertaining the meaning of the parties' agreement, may give particular meaning to specific terms of the agreement, and may supplement or qualify the terms of the agreement. A usage of trade applicable in the place in which part of the performance under the agreement is to occur may be so utilized as to that part of the performance."
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(e) Except as otherwise provided in subdivision (f), the express terms of an agreement and any applicable course of performance, course of dealing, or usage of trade must be construed whenever reasonable as consistent with each other. If such a construction is unreasonable:",
+      "text": "(e) Except as otherwise provided in subdivision (f), the express terms of an agreement and any applicable course of performance, course of dealing, or usage of trade must be construed whenever reasonable as consistent with each other. If such a construction is unreasonable:"
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1) express terms prevail over course of performance, course of dealing, and usage of trade;",
+      "text": "(1) express terms prevail over course of performance, course of dealing, and usage of trade;"
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2) course of performance prevails over course of dealing and usage of trade;",
+      "text": "(2) course of performance prevails over course of dealing and usage of trade;"
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(3) course of dealing prevails over usage of trade.",
+      "text": "(3) course of dealing prevails over usage of trade."
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(f) Subject to Section 2209, a course of performance is relevant to show a waiver or modification of any term inconsistent with the course of performance.",
+      "text": "(f) Subject to Section 2209, a course of performance is relevant to show a waiver or modification of any term inconsistent with the course of performance."
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(g) Evidence of a relevant usage of trade offered by one party is not admissible unless that party has given the other party notice that the court finds sufficient to prevent unfair surprise to the other party.",
+      "text": "(g) Evidence of a relevant usage of trade offered by one party is not admissible unless that party has given the other party notice that the court finds sufficient to prevent unfair surprise to the other party."
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/texts/133"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1205 by Stats. 2006, Ch. 254, Sec. 23. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1205 by Stats. 2006, Ch. 254, Sec. 23. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/148"
         },
         {
           "$ref": "#/texts/149"
-        },
-        {
-          "$ref": "#/texts/150"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1304.",
+      "text": "1304.",
+      "hyperlink": "javascript:submitCodesValues('1304.','2.3','2006','254','19', 'id_6f8a8776-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/texts/147"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Every contract or duty within this code imposes an obligation of good faith in its performance and enforcement.",
+      "text": "Every contract or duty within this code imposes an obligation of good faith in its performance and enforcement."
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/texts/147"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1203 by Stats. 2006, Ch. 254, Sec. 19. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1203 by Stats. 2006, Ch. 254, Sec. 19. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/151"
         },
@@ -2066,19 +2538,117 @@
         },
         {
           "$ref": "#/texts/153"
-        },
-        {
-          "$ref": "#/texts/154"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1305.",
+      "text": "1305.",
+      "hyperlink": "javascript:submitCodesValues('1305.','2.3','2006','254','11', 'id_6d1fa1e6-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/texts/150"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) The remedies provided by this code shall be liberally administered to the end that the aggrieved party may be put in as good a position as if the other party had fully performed but neither consequential or special damages nor penal damages may be had except as specifically provided in this code or by other rule of law.",
+      "text": "(a) The remedies provided by this code shall be liberally administered to the end that the aggrieved party may be put in as good a position as if the other party had fully performed but neither consequential or special damages nor penal damages may be had except as specifically provided in this code or by other rule of law."
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/texts/150"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) Any right or obligation declared by this code is enforceable by action unless the provision declaring it specifies a different and limited effect.",
+      "text": "(b) Any right or obligation declared by this code is enforceable by action unless the provision declaring it specifies a different and limited effect."
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/texts/150"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1106 by Stats. 2006, Ch. 254, Sec. 11. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1106 by Stats. 2006, Ch. 254, Sec. 11. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/155"
         },
         {
           "$ref": "#/texts/156"
-        },
-        {
-          "$ref": "#/texts/157"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1306.",
+      "text": "1306.",
+      "hyperlink": "javascript:submitCodesValues('1306.','2.3','2023','210','4', 'id_22e9c606-7dc1-11ee-af93-9b7a567ae902')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/texts/154"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A claim or right arising out of an alleged breach may be discharged in whole or in part without consideration by agreement of the aggrieved party in a signed record.",
+      "text": "A claim or right arising out of an alleged breach may be discharged in whole or in part without consideration by agreement of the aggrieved party in a signed record."
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/texts/154"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Amended by Stats. 2023, Ch. 210, Sec. 4. (SB 95) Effective January 1, 2024.)",
+      "text": "(Amended by Stats. 2023, Ch. 210, Sec. 4. (SB 95) Effective January 1, 2024.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/158"
         },
@@ -2093,10 +2663,89 @@
         },
         {
           "$ref": "#/texts/162"
-        },
-        {
-          "$ref": "#/texts/163"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1307.",
+      "text": "1307.",
+      "hyperlink": "javascript:submitCodesValues('1307.','2.3','2006','254','17', 'id_6eeee3b2-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/texts/157"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1) A bill of lading, policy or certificate of insurance, official weigher's or inspector's certificate, consular invoice, or any other document authorized or required by the contract to be issued by a third party is admissible as evidence of the facts stated in the document by the third party in any action arising out of the contract that authorized or required the document.",
+      "text": "(1) A bill of lading, policy or certificate of insurance, official weigher's or inspector's certificate, consular invoice, or any other document authorized or required by the contract to be issued by a third party is admissible as evidence of the facts stated in the document by the third party in any action arising out of the contract that authorized or required the document."
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/texts/157"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2) In any action arising out of the contract that authorized or required the document referred to in subdivision (1):",
+      "text": "(2) In any action arising out of the contract that authorized or required the document referred to in subdivision (1):"
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/texts/157"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) A document in due form purporting to be the document referred to in subdivision (1) is presumed to be authentic and genuine. The presumption is a presumption affecting the burden of producing evidence.",
+      "text": "(a) A document in due form purporting to be the document referred to in subdivision (1) is presumed to be authentic and genuine. The presumption is a presumption affecting the burden of producing evidence."
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/texts/157"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) If the document is found to be authentic and genuine, the facts stated in the document by the third party are presumed to be true. The presumption is a presumption affecting the burden of proof.",
+      "text": "(b) If the document is found to be authentic and genuine, the facts stated in the document by the third party are presumed to be true. The presumption is a presumption affecting the burden of proof."
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/texts/157"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1202 by Stats. 2006, Ch. 254, Sec. 17. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1202 by Stats. 2006, Ch. 254, Sec. 17. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/164"
         },
@@ -2105,1529 +2754,155 @@
         },
         {
           "$ref": "#/texts/166"
-        },
-        {
-          "$ref": "#/texts/167"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1308.",
+      "text": "1308.",
+      "hyperlink": "javascript:submitCodesValues('1308.','2.3','2006','254','26', 'id_72091b12-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/texts/163"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a) A party that with explicit reservation of rights performs or promises performance or assents to performance in a manner demanded or offered by the other party does not thereby prejudice the rights reserved. Such words as \"without prejudice,\" \"under protest\" or the like are sufficient.",
+      "text": "(a) A party that with explicit reservation of rights performs or promises performance or assents to performance in a manner demanded or offered by the other party does not thereby prejudice the rights reserved. Such words as \"without prejudice,\" \"under protest\" or the like are sufficient."
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/texts/163"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(b) Subdivision (a) does not apply to an accord and satisfaction.",
+      "text": "(b) Subdivision (a) does not apply to an accord and satisfaction."
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/texts/163"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1207 by Stats. 2006, Ch. 254, Sec. 26. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1207 by Stats. 2006, Ch. 254, Sec. 26. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/168"
         },
         {
           "$ref": "#/texts/169"
-        },
-        {
-          "$ref": "#/texts/170"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1309.",
+      "text": "1309.",
+      "hyperlink": "javascript:submitCodesValues('1309.','2.3','2006','254','27', 'id_7254a304-85f6-11db-a73d-a6a081de931e')",
+      "level": 5
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/texts/167"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A term providing that one party or that party's successor in interest may accelerate payment or performance or require collateral or additional collateral \"at will\" or when the party \"deems itself insecure,\" or words of similar import, means that the party has power to do so only if that party in good faith believes that the prospect of payment or performance is impaired. The burden of establishing lack of good faith is on the party against which the power has been exercised.",
+      "text": "A term providing that one party or that party's successor in interest may accelerate payment or performance or require collateral or additional collateral \"at will\" or when the party \"deems itself insecure,\" or words of similar import, means that the party has power to do so only if that party in good faith believes that the prospect of payment or performance is impaired. The burden of establishing lack of good faith is on the party against which the power has been exercised."
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/texts/167"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Added by renumbering Section 1208 by Stats. 2006, Ch. 254, Sec. 27. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1208 by Stats. 2006, Ch. 254, Sec. 27. Effective January 1, 2007.)",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/texts/112"
+      },
+      "children": [
         {
           "$ref": "#/texts/171"
         },
         {
           "$ref": "#/texts/172"
-        },
-        {
-          "$ref": "#/texts/173"
-        },
-        {
-          "$ref": "#/texts/174"
-        },
-        {
-          "$ref": "#/texts/175"
-        },
-        {
-          "$ref": "#/texts/176"
         }
       ],
       "content_layer": "body",
       "label": "section_header",
       "prov": [],
-      "orig": "1201.",
-      "text": "1201.",
-      "hyperlink": "javascript:submitCodesValues('1201.','2.2','2023','210','1', 'id_21866570-7dc1-11ee-af93-9b7a567ae902')",
+      "orig": "1310.",
+      "text": "1310.",
+      "hyperlink": "javascript:submitCodesValues('1310.','2.3','2006','254','28', 'id_72a05206-85f6-11db-a73d-a6a081de931e')",
       "level": 5
-    },
-    {
-      "self_ref": "#/texts/115",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(a) Unless the context otherwise requires, words or phrases defined in this section, or in the additional definitions contained in other divisions of this code that apply to particular divisions or chapters thereof, have the meanings stated.",
-      "text": "(a) Unless the context otherwise requires, words or phrases defined in this section, or in the additional definitions contained in other divisions of this code that apply to particular divisions or chapters thereof, have the meanings stated."
-    },
-    {
-      "self_ref": "#/texts/116",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(b) Subject to definitions contained in other divisions of this code that apply to particular divisions or chapters thereof:",
-      "text": "(b) Subject to definitions contained in other divisions of this code that apply to particular divisions or chapters thereof:"
-    },
-    {
-      "self_ref": "#/texts/117",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) \"Action,\" in the sense of a judicial proceeding, includes recoupment, counterclaim, setoff, suit in equity, and any other proceeding in which rights are determined.",
-      "text": "(1) \"Action,\" in the sense of a judicial proceeding, includes recoupment, counterclaim, setoff, suit in equity, and any other proceeding in which rights are determined."
-    },
-    {
-      "self_ref": "#/texts/118",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) \"Aggrieved party\" means a party entitled to pursue a remedy.",
-      "text": "(2) \"Aggrieved party\" means a party entitled to pursue a remedy."
-    },
-    {
-      "self_ref": "#/texts/119",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(3) \"Agreement,\" as distinguished from \"contract,\" means the bargain of the parties in fact, as found in their language or inferred from other circumstances, including course of performance, course of dealing, or usage of trade as provided in Section 1303.",
-      "text": "(3) \"Agreement,\" as distinguished from \"contract,\" means the bargain of the parties in fact, as found in their language or inferred from other circumstances, including course of performance, course of dealing, or usage of trade as provided in Section 1303."
-    },
-    {
-      "self_ref": "#/texts/120",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(4) \"Bank\" means a person engaged in the business of banking, and includes a savings bank, savings and loan association, credit union, and trust company.",
-      "text": "(4) \"Bank\" means a person engaged in the business of banking, and includes a savings bank, savings and loan association, credit union, and trust company."
-    },
-    {
-      "self_ref": "#/texts/121",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(5) \"Bearer\" means a person in possession of a negotiable instrument, document of title, or certificated security that is payable to bearer or endorsed in blank.",
-      "text": "(5) \"Bearer\" means a person in possession of a negotiable instrument, document of title, or certificated security that is payable to bearer or endorsed in blank."
-    },
-    {
-      "self_ref": "#/texts/122",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(6) \"Bill of lading\" means a document evidencing the receipt of goods for shipment issued by a person engaged in the business of transporting or forwarding goods.",
-      "text": "(6) \"Bill of lading\" means a document evidencing the receipt of goods for shipment issued by a person engaged in the business of transporting or forwarding goods."
-    },
-    {
-      "self_ref": "#/texts/123",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(7) \"Branch\" includes a separately incorporated foreign branch of a bank.",
-      "text": "(7) \"Branch\" includes a separately incorporated foreign branch of a bank."
-    },
-    {
-      "self_ref": "#/texts/124",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(8) \"Burden of establishing\" a fact means the burden of persuading the trier of fact that the existence of the fact is more probable than its nonexistence.",
-      "text": "(8) \"Burden of establishing\" a fact means the burden of persuading the trier of fact that the existence of the fact is more probable than its nonexistence."
-    },
-    {
-      "self_ref": "#/texts/125",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(9) \"Buyer in ordinary course of business\" means a person that buys goods in good faith, without knowledge that the sale violates the rights of another person in the goods, and in the ordinary course from a person, other than a pawnbroker, in the business of selling goods of that kind. A person buys goods in the ordinary course if the sale to the person comports with the usual or customary practices in the kind of business in which the seller is engaged or with the seller's own usual or customary practices. A person that sells oil, gas, or other minerals at the wellhead or minehead is a person in the business of selling goods of that kind. A buyer in ordinary course of business may buy for cash, by exchange of other property, or on secured or unsecured credit, and may acquire goods or documents of title under a preexisting contract for sale. Only a buyer that takes possession of the goods or has a right to recover the goods from the seller under Division 2 (commencing with Section 2101) may be a buyer in ordinary course of business. \"Buyer in ordinary course of business\" does not include a person that acquires goods in a transfer in bulk or as security for or in total or partial satisfaction of a money debt.",
-      "text": "(9) \"Buyer in ordinary course of business\" means a person that buys goods in good faith, without knowledge that the sale violates the rights of another person in the goods, and in the ordinary course from a person, other than a pawnbroker, in the business of selling goods of that kind. A person buys goods in the ordinary course if the sale to the person comports with the usual or customary practices in the kind of business in which the seller is engaged or with the seller's own usual or customary practices. A person that sells oil, gas, or other minerals at the wellhead or minehead is a person in the business of selling goods of that kind. A buyer in ordinary course of business may buy for cash, by exchange of other property, or on secured or unsecured credit, and may acquire goods or documents of title under a preexisting contract for sale. Only a buyer that takes possession of the goods or has a right to recover the goods from the seller under Division 2 (commencing with Section 2101) may be a buyer in ordinary course of business. \"Buyer in ordinary course of business\" does not include a person that acquires goods in a transfer in bulk or as security for or in total or partial satisfaction of a money debt."
-    },
-    {
-      "self_ref": "#/texts/126",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(10) \"Conspicuous,\" with reference to a term, means so written, displayed, or presented that, based on the totality of the circumstances, a reasonable person against whom it is to operate ought to have noticed it. Whether a term is \"conspicuous\" or not is a decision for the court.",
-      "text": "(10) \"Conspicuous,\" with reference to a term, means so written, displayed, or presented that, based on the totality of the circumstances, a reasonable person against whom it is to operate ought to have noticed it. Whether a term is \"conspicuous\" or not is a decision for the court."
-    },
-    {
-      "self_ref": "#/texts/127",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(11) [Reserved]",
-      "text": "(11) [Reserved]"
-    },
-    {
-      "self_ref": "#/texts/128",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(12) \"Contract,\" as distinguished from \"agreement,\" means the total legal obligation that results from the parties' agreement as determined by this code and as supplemented by any other applicable laws.",
-      "text": "(12) \"Contract,\" as distinguished from \"agreement,\" means the total legal obligation that results from the parties' agreement as determined by this code and as supplemented by any other applicable laws."
-    },
-    {
-      "self_ref": "#/texts/129",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(13) \"Creditor\" includes a general creditor, a secured creditor, a lien creditor, and any representative of creditors, including an assignee for the benefit of creditors, a trustee in bankruptcy, a receiver in equity, and an executor or administrator of an insolvent debtor's or assignor's estate.",
-      "text": "(13) \"Creditor\" includes a general creditor, a secured creditor, a lien creditor, and any representative of creditors, including an assignee for the benefit of creditors, a trustee in bankruptcy, a receiver in equity, and an executor or administrator of an insolvent debtor's or assignor's estate."
-    },
-    {
-      "self_ref": "#/texts/130",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(14) \"Defendant\" includes a person in the position of defendant in a counterclaim, cross-claim, or third-party claim.",
-      "text": "(14) \"Defendant\" includes a person in the position of defendant in a counterclaim, cross-claim, or third-party claim."
-    },
-    {
-      "self_ref": "#/texts/131",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(15) \"Delivery,\" with respect to an electronic document of title, means voluntary transfer of control and, with respect to an instrument, a tangible document of title, or an authoritative tangible copy of a record evidencing chattel paper, means voluntary transfer of possession.",
-      "text": "(15) \"Delivery,\" with respect to an electronic document of title, means voluntary transfer of control and, with respect to an instrument, a tangible document of title, or an authoritative tangible copy of a record evidencing chattel paper, means voluntary transfer of possession."
-    },
-    {
-      "self_ref": "#/texts/132",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(16) \"Document of title\" includes a bill of lading, dock warrant, dock receipt, warehouse receipt, or order for the delivery of goods, and also any other document which in the regular course of business or financing is treated as adequately evidencing that the person in possession of it is entitled to receive, hold, and dispose of the document and the goods it covers. To be a document of title, a document must purport to be issued by or addressed to a bailee and purport to cover goods in the bailee's possession which are either identified or are fungible portions of an identified mass.",
-      "text": "(16) \"Document of title\" includes a bill of lading, dock warrant, dock receipt, warehouse receipt, or order for the delivery of goods, and also any other document which in the regular course of business or financing is treated as adequately evidencing that the person in possession of it is entitled to receive, hold, and dispose of the document and the goods it covers. To be a document of title, a document must purport to be issued by or addressed to a bailee and purport to cover goods in the bailee's possession which are either identified or are fungible portions of an identified mass."
-    },
-    {
-      "self_ref": "#/texts/133",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(17) \"Fault\" means a default, breach, or wrongful act or omission.",
-      "text": "(17) \"Fault\" means a default, breach, or wrongful act or omission."
-    },
-    {
-      "self_ref": "#/texts/134",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(18) \"Fungible goods\" means:",
-      "text": "(18) \"Fungible goods\" means:"
-    },
-    {
-      "self_ref": "#/texts/135",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(A) Goods of which any unit, by nature or usage of trade, is the equivalent of any other like unit; or",
-      "text": "(A) Goods of which any unit, by nature or usage of trade, is the equivalent of any other like unit; or"
-    },
-    {
-      "self_ref": "#/texts/136",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(B) Goods that by agreement are treated as equivalent.",
-      "text": "(B) Goods that by agreement are treated as equivalent."
-    },
-    {
-      "self_ref": "#/texts/137",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(19) \"Genuine\" means free of forgery or counterfeiting.",
-      "text": "(19) \"Genuine\" means free of forgery or counterfeiting."
-    },
-    {
-      "self_ref": "#/texts/138",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(20) \"Good faith,\" except as otherwise provided in Division 5 (commencing with Section 5101), means honesty in fact and the observance of reasonable commercial standards of fair dealing.",
-      "text": "(20) \"Good faith,\" except as otherwise provided in Division 5 (commencing with Section 5101), means honesty in fact and the observance of reasonable commercial standards of fair dealing."
-    },
-    {
-      "self_ref": "#/texts/139",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(21) \"Holder\" means:",
-      "text": "(21) \"Holder\" means:"
-    },
-    {
-      "self_ref": "#/texts/140",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(A) the person in possession of a negotiable instrument that is payable either to bearer or, to an identified person that is the person in possession;",
-      "text": "(A) the person in possession of a negotiable instrument that is payable either to bearer or, to an identified person that is the person in possession;"
-    },
-    {
-      "self_ref": "#/texts/141",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(B) the person in possession of a document of title if the goods are deliverable either to bearer or to the order of the person in possession; or",
-      "text": "(B) the person in possession of a document of title if the goods are deliverable either to bearer or to the order of the person in possession; or"
-    },
-    {
-      "self_ref": "#/texts/142",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(C) the person in control, other than pursuant to subdivision (g) of Section 7106, of a negotiable electronic document of title.",
-      "text": "(C) the person in control, other than pursuant to subdivision (g) of Section 7106, of a negotiable electronic document of title."
-    },
-    {
-      "self_ref": "#/texts/143",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(22) \"Insolvency proceeding\" includes an assignment for the benefit of creditors or other proceeding intended to liquidate or rehabilitate the estate of the person involved.",
-      "text": "(22) \"Insolvency proceeding\" includes an assignment for the benefit of creditors or other proceeding intended to liquidate or rehabilitate the estate of the person involved."
-    },
-    {
-      "self_ref": "#/texts/144",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(23) \"Insolvent\" means:",
-      "text": "(23) \"Insolvent\" means:"
-    },
-    {
-      "self_ref": "#/texts/145",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(A) having generally ceased to pay debts in the ordinary course of business other than as a result of bona fide dispute;",
-      "text": "(A) having generally ceased to pay debts in the ordinary course of business other than as a result of bona fide dispute;"
-    },
-    {
-      "self_ref": "#/texts/146",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(B) being unable to pay debts as they become due; or",
-      "text": "(B) being unable to pay debts as they become due; or"
-    },
-    {
-      "self_ref": "#/texts/147",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(C) being insolvent within the meaning of federal bankruptcy law.",
-      "text": "(C) being insolvent within the meaning of federal bankruptcy law."
-    },
-    {
-      "self_ref": "#/texts/148",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(24) \"Money\" means a medium of exchange that is currently authorized or adopted by a domestic or foreign government. The term includes a monetary unit of account established by an intergovernmental organization or by agreement between two or more countries. The term does not include an electronic record that is a medium of exchange recorded and transferable in a system that existed and operated for the medium of exchange before the medium of exchange was authorized or adopted by the government.",
-      "text": "(24) \"Money\" means a medium of exchange that is currently authorized or adopted by a domestic or foreign government. The term includes a monetary unit of account established by an intergovernmental organization or by agreement between two or more countries. The term does not include an electronic record that is a medium of exchange recorded and transferable in a system that existed and operated for the medium of exchange before the medium of exchange was authorized or adopted by the government."
-    },
-    {
-      "self_ref": "#/texts/149",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(25) \"Organization\" means a person other than an individual.",
-      "text": "(25) \"Organization\" means a person other than an individual."
-    },
-    {
-      "self_ref": "#/texts/150",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(26) \"Party,\" as distinguished from \"third party,\" means a person that has engaged in a transaction or made an agreement subject to this code.",
-      "text": "(26) \"Party,\" as distinguished from \"third party,\" means a person that has engaged in a transaction or made an agreement subject to this code."
-    },
-    {
-      "self_ref": "#/texts/151",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(27) \"Person\" means an individual, corporation, business trust, estate, trust, partnership, limited liability company, association, joint venture, government, governmental subdivision, agency, or instrumentality, or any other legal or commercial entity. The term includes a protected series, however denominated, of an entity if the protected series is established under law other than this code that limits, or limits if conditions specified under the law are satisfied, the ability of a creditor of the entity or of any other protected series of the entity to satisfy a claim from assets of the protected series.",
-      "text": "(27) \"Person\" means an individual, corporation, business trust, estate, trust, partnership, limited liability company, association, joint venture, government, governmental subdivision, agency, or instrumentality, or any other legal or commercial entity. The term includes a protected series, however denominated, of an entity if the protected series is established under law other than this code that limits, or limits if conditions specified under the law are satisfied, the ability of a creditor of the entity or of any other protected series of the entity to satisfy a claim from assets of the protected series."
-    },
-    {
-      "self_ref": "#/texts/152",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(28) \"Present value\" means the amount as of a date certain of one or more sums payable in the future, discounted to the date certain by use of either an interest rate specified by the parties if that rate is not manifestly unreasonable at the time the transaction is entered into or, if an interest rate is not so specified, a commercially reasonable rate that takes into account the facts and circumstances at the time the transaction is entered into.",
-      "text": "(28) \"Present value\" means the amount as of a date certain of one or more sums payable in the future, discounted to the date certain by use of either an interest rate specified by the parties if that rate is not manifestly unreasonable at the time the transaction is entered into or, if an interest rate is not so specified, a commercially reasonable rate that takes into account the facts and circumstances at the time the transaction is entered into."
-    },
-    {
-      "self_ref": "#/texts/153",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(29) \"Purchase\" means taking by sale, lease, discount, negotiation, mortgage, pledge, lien, security interest, issue or reissue, gift, or any other voluntary transaction creating an interest in property.",
-      "text": "(29) \"Purchase\" means taking by sale, lease, discount, negotiation, mortgage, pledge, lien, security interest, issue or reissue, gift, or any other voluntary transaction creating an interest in property."
-    },
-    {
-      "self_ref": "#/texts/154",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(30) \"Purchaser\" means a person that takes by purchase.",
-      "text": "(30) \"Purchaser\" means a person that takes by purchase."
-    },
-    {
-      "self_ref": "#/texts/155",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(31) \"Record\" means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form.",
-      "text": "(31) \"Record\" means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form."
-    },
-    {
-      "self_ref": "#/texts/156",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(32) \"Remedy\" means any remedial right to which an aggrieved party is entitled with or without resort to a tribunal.",
-      "text": "(32) \"Remedy\" means any remedial right to which an aggrieved party is entitled with or without resort to a tribunal."
-    },
-    {
-      "self_ref": "#/texts/157",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(33) \"Representative\" means a person empowered to act for another, including an agent, an officer of a corporation or association, and a trustee, executor, or administrator of an estate.",
-      "text": "(33) \"Representative\" means a person empowered to act for another, including an agent, an officer of a corporation or association, and a trustee, executor, or administrator of an estate."
-    },
-    {
-      "self_ref": "#/texts/158",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(34) \"Right\" includes remedy.",
-      "text": "(34) \"Right\" includes remedy."
-    },
-    {
-      "self_ref": "#/texts/159",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(35) \"Security interest\" means an interest in personal property or fixtures which secures payment or performance of an obligation. \"Security interest\" includes any interest of a consignor and a buyer of accounts, chattel paper, a payment intangible, or a promissory note in a transaction that is subject to Division 9 (commencing with Section 9101). \"Security interest\" does not include the special property interest of a buyer of goods on identification of those goods to a contract for sale under Section 2401, but a buyer may also acquire a \"security interest\" by complying with Division 9 (commencing with Section 9101). Except as otherwise provided in Section 2505, the right of a seller or lessor of goods under Division 2 (commencing with Section 2101) or Division 10 (commencing with Section 10101) to retain or acquire possession of the goods is not a \"security interest,\" but a seller or lessor may also acquire a \"security interest\" by complying with Division 9 (commencing with Section 9101). The retention or reservation of title by a seller of goods notwithstanding shipment or delivery to the buyer under Section 2401 is limited in effect to a reservation of a \"security interest.\"",
-      "text": "(35) \"Security interest\" means an interest in personal property or fixtures which secures payment or performance of an obligation. \"Security interest\" includes any interest of a consignor and a buyer of accounts, chattel paper, a payment intangible, or a promissory note in a transaction that is subject to Division 9 (commencing with Section 9101). \"Security interest\" does not include the special property interest of a buyer of goods on identification of those goods to a contract for sale under Section 2401, but a buyer may also acquire a \"security interest\" by complying with Division 9 (commencing with Section 9101). Except as otherwise provided in Section 2505, the right of a seller or lessor of goods under Division 2 (commencing with Section 2101) or Division 10 (commencing with Section 10101) to retain or acquire possession of the goods is not a \"security interest,\" but a seller or lessor may also acquire a \"security interest\" by complying with Division 9 (commencing with Section 9101). The retention or reservation of title by a seller of goods notwithstanding shipment or delivery to the buyer under Section 2401 is limited in effect to a reservation of a \"security interest.\""
-    },
-    {
-      "self_ref": "#/texts/160",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "Whether a transaction in the form of a lease creates a \"security interest\" is determined pursuant to Section 1203.",
-      "text": "Whether a transaction in the form of a lease creates a \"security interest\" is determined pursuant to Section 1203."
-    },
-    {
-      "self_ref": "#/texts/161",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(36) \"Send,\" in connection with a record or notification, means:",
-      "text": "(36) \"Send,\" in connection with a record or notification, means:"
-    },
-    {
-      "self_ref": "#/texts/162",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(A) to deposit in the mail, deliver for transmission, or transmit by any other usual means of communication, with postage or cost of transmission provided for, addressed to any address reasonable under the circumstances; or",
-      "text": "(A) to deposit in the mail, deliver for transmission, or transmit by any other usual means of communication, with postage or cost of transmission provided for, addressed to any address reasonable under the circumstances; or"
-    },
-    {
-      "self_ref": "#/texts/163",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(B) to cause the record or notification to be received within the time it would have been received if properly sent under subparagraph (A).",
-      "text": "(B) to cause the record or notification to be received within the time it would have been received if properly sent under subparagraph (A)."
-    },
-    {
-      "self_ref": "#/texts/164",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(37) \"Sign\" means, with present intent to authenticate or adopt a record:",
-      "text": "(37) \"Sign\" means, with present intent to authenticate or adopt a record:"
-    },
-    {
-      "self_ref": "#/texts/165",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(A) execute or adopt a tangible symbol; or",
-      "text": "(A) execute or adopt a tangible symbol; or"
-    },
-    {
-      "self_ref": "#/texts/166",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(B) attach to or logically associate with the record an electronic symbol, sound, or process.",
-      "text": "(B) attach to or logically associate with the record an electronic symbol, sound, or process."
-    },
-    {
-      "self_ref": "#/texts/167",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "\"Signed,\" \"signing,\" and \"signature\" have corresponding meanings.",
-      "text": "\"Signed,\" \"signing,\" and \"signature\" have corresponding meanings."
-    },
-    {
-      "self_ref": "#/texts/168",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(38) \"Spouse\" includes \"registered domestic partner,\" as required by Section 297.5 of the Family Code.",
-      "text": "(38) \"Spouse\" includes \"registered domestic partner,\" as required by Section 297.5 of the Family Code."
-    },
-    {
-      "self_ref": "#/texts/169",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(39) \"State\" means a state of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands, or any territory or insular possession subject to the jurisdiction of the United States.",
-      "text": "(39) \"State\" means a state of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands, or any territory or insular possession subject to the jurisdiction of the United States."
-    },
-    {
-      "self_ref": "#/texts/170",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(40) \"Surety\" includes a guarantor or other secondary obligor.",
-      "text": "(40) \"Surety\" includes a guarantor or other secondary obligor."
     },
     {
       "self_ref": "#/texts/171",
       "parent": {
-        "$ref": "#/texts/114"
+        "$ref": "#/texts/170"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "(41) \"Term\" means a portion of an agreement that relates to a particular matter.",
-      "text": "(41) \"Term\" means a portion of an agreement that relates to a particular matter."
+      "orig": "An obligation may be issued as subordinated to performance of another obligation of the person obligated, or a creditor may subordinate its right to performance of an obligation by agreement with either the person obligated or another creditor of the person obligated. Subordination does not create a security interest as against either the common debtor or a subordinated creditor.",
+      "text": "An obligation may be issued as subordinated to performance of another obligation of the person obligated, or a creditor may subordinate its right to performance of an obligation by agreement with either the person obligated or another creditor of the person obligated. Subordination does not create a security interest as against either the common debtor or a subordinated creditor."
     },
     {
       "self_ref": "#/texts/172",
       "parent": {
-        "$ref": "#/texts/114"
+        "$ref": "#/texts/170"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "(42) \"Unauthorized signature\" means a signature made without actual, implied, or apparent authority. The term includes a forgery.",
-      "text": "(42) \"Unauthorized signature\" means a signature made without actual, implied, or apparent authority. The term includes a forgery."
-    },
-    {
-      "self_ref": "#/texts/173",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(43) \"Warehouse receipt\" means a receipt issued by a person engaged in the business of storing goods for hire.",
-      "text": "(43) \"Warehouse receipt\" means a receipt issued by a person engaged in the business of storing goods for hire."
-    },
-    {
-      "self_ref": "#/texts/174",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(44) \"Writing\" includes printing, typewriting, or any other intentional reduction to tangible form. \"Written\" has a corresponding meaning.",
-      "text": "(44) \"Writing\" includes printing, typewriting, or any other intentional reduction to tangible form. \"Written\" has a corresponding meaning."
-    },
-    {
-      "self_ref": "#/texts/175",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(45) \"Electronic\" means relating to technology having electrical, digital, magnetic, wireless, optical, electromagnetic, or similar capabilities.",
-      "text": "(45) \"Electronic\" means relating to technology having electrical, digital, magnetic, wireless, optical, electromagnetic, or similar capabilities."
-    },
-    {
-      "self_ref": "#/texts/176",
-      "parent": {
-        "$ref": "#/texts/114"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Amended by Stats. 2023, Ch. 210, Sec. 1. (SB 95) Effective January 1, 2024.)",
-      "text": "(Amended by Stats. 2023, Ch. 210, Sec. 1. (SB 95) Effective January 1, 2024.)",
-      "formatting": {
-        "bold": false,
-        "italic": true,
-        "underline": false,
-        "strikethrough": false,
-        "script": "baseline"
-      }
-    },
-    {
-      "self_ref": "#/texts/177",
-      "parent": {
-        "$ref": "#/texts/112"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/178"
-        },
-        {
-          "$ref": "#/texts/179"
-        },
-        {
-          "$ref": "#/texts/180"
-        },
-        {
-          "$ref": "#/texts/181"
-        },
-        {
-          "$ref": "#/texts/182"
-        },
-        {
-          "$ref": "#/texts/183"
-        },
-        {
-          "$ref": "#/texts/184"
-        },
-        {
-          "$ref": "#/texts/185"
-        },
-        {
-          "$ref": "#/texts/186"
-        },
-        {
-          "$ref": "#/texts/187"
-        },
-        {
-          "$ref": "#/texts/188"
-        },
-        {
-          "$ref": "#/texts/189"
-        }
-      ],
-      "content_layer": "body",
-      "label": "section_header",
-      "prov": [],
-      "orig": "1202.",
-      "text": "1202.",
-      "hyperlink": "javascript:submitCodesValues('1202.','2.2','2006','254','18', 'id_048B1705-F777-4995-90E3-5322ADD55BFF')",
-      "level": 5
-    },
-    {
-      "self_ref": "#/texts/178",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(a) Subject to subdivision (f), a person has \"notice\" of a fact if the person:",
-      "text": "(a) Subject to subdivision (f), a person has \"notice\" of a fact if the person:"
-    },
-    {
-      "self_ref": "#/texts/179",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) has actual knowledge of it;",
-      "text": "(1) has actual knowledge of it;"
-    },
-    {
-      "self_ref": "#/texts/180",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) has received a notice or notification of it; or",
-      "text": "(2) has received a notice or notification of it; or"
-    },
-    {
-      "self_ref": "#/texts/181",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(3) from all the facts and circumstances known to the person at the time in question, has reason to know that it exists.",
-      "text": "(3) from all the facts and circumstances known to the person at the time in question, has reason to know that it exists."
-    },
-    {
-      "self_ref": "#/texts/182",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(b) \"Knowledge\" means actual knowledge. \"Knows\" has a corresponding meaning.",
-      "text": "(b) \"Knowledge\" means actual knowledge. \"Knows\" has a corresponding meaning."
-    },
-    {
-      "self_ref": "#/texts/183",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(c) \"Discover,\" \"learn,\" or words of similar import refer to knowledge rather than to reason to know.",
-      "text": "(c) \"Discover,\" \"learn,\" or words of similar import refer to knowledge rather than to reason to know."
-    },
-    {
-      "self_ref": "#/texts/184",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(d) A person \"notifies\" or \"gives\" a notice or notification to another person by taking such steps as may be reasonably required to inform the other person in ordinary course, whether or not the other person actually comes to know of it.",
-      "text": "(d) A person \"notifies\" or \"gives\" a notice or notification to another person by taking such steps as may be reasonably required to inform the other person in ordinary course, whether or not the other person actually comes to know of it."
-    },
-    {
-      "self_ref": "#/texts/185",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(e) Subject to subdivision (f), a person \"receives\" a notice or notification when:",
-      "text": "(e) Subject to subdivision (f), a person \"receives\" a notice or notification when:"
-    },
-    {
-      "self_ref": "#/texts/186",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) it comes to that person's attention; or",
-      "text": "(1) it comes to that person's attention; or"
-    },
-    {
-      "self_ref": "#/texts/187",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) it is duly delivered in a form reasonable under the circumstances at the place of business through which the contract was made or at another location held out by that person as the place for receipt of such communications.",
-      "text": "(2) it is duly delivered in a form reasonable under the circumstances at the place of business through which the contract was made or at another location held out by that person as the place for receipt of such communications."
-    },
-    {
-      "self_ref": "#/texts/188",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(f) Notice, knowledge, or a notice or notification received by an organization is effective for a particular transaction from the time it is brought to the attention of the individual conducting that transaction and, in any event, from the time it would have been brought to the individual's attention if the organization had exercised due diligence. An organization exercises due diligence if it maintains reasonable routines for communicating significant information to the person conducting the transaction and there is reasonable compliance with the routines. Due diligence does not require an individual acting for the organization to communicate information unless the communication is part of the individual's regular duties or the individual has reason to know of the transaction and that the transaction would be materially affected by the information.",
-      "text": "(f) Notice, knowledge, or a notice or notification received by an organization is effective for a particular transaction from the time it is brought to the attention of the individual conducting that transaction and, in any event, from the time it would have been brought to the individual's attention if the organization had exercised due diligence. An organization exercises due diligence if it maintains reasonable routines for communicating significant information to the person conducting the transaction and there is reasonable compliance with the routines. Due diligence does not require an individual acting for the organization to communicate information unless the communication is part of the individual's regular duties or the individual has reason to know of the transaction and that the transaction would be materially affected by the information."
-    },
-    {
-      "self_ref": "#/texts/189",
-      "parent": {
-        "$ref": "#/texts/177"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Added by Stats. 2006, Ch. 254, Sec. 18. Effective January 1, 2007.)",
-      "text": "(Added by Stats. 2006, Ch. 254, Sec. 18. Effective January 1, 2007.)",
-      "formatting": {
-        "bold": false,
-        "italic": true,
-        "underline": false,
-        "strikethrough": false,
-        "script": "baseline"
-      }
-    },
-    {
-      "self_ref": "#/texts/190",
-      "parent": {
-        "$ref": "#/texts/112"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/191"
-        },
-        {
-          "$ref": "#/texts/192"
-        },
-        {
-          "$ref": "#/texts/193"
-        },
-        {
-          "$ref": "#/texts/194"
-        },
-        {
-          "$ref": "#/texts/195"
-        },
-        {
-          "$ref": "#/texts/196"
-        },
-        {
-          "$ref": "#/texts/197"
-        },
-        {
-          "$ref": "#/texts/198"
-        },
-        {
-          "$ref": "#/texts/199"
-        },
-        {
-          "$ref": "#/texts/200"
-        },
-        {
-          "$ref": "#/texts/201"
-        },
-        {
-          "$ref": "#/texts/202"
-        },
-        {
-          "$ref": "#/texts/203"
-        },
-        {
-          "$ref": "#/texts/204"
-        },
-        {
-          "$ref": "#/texts/205"
-        },
-        {
-          "$ref": "#/texts/206"
-        },
-        {
-          "$ref": "#/texts/207"
-        },
-        {
-          "$ref": "#/texts/208"
-        },
-        {
-          "$ref": "#/texts/209"
-        }
-      ],
-      "content_layer": "body",
-      "label": "section_header",
-      "prov": [],
-      "orig": "1203.",
-      "text": "1203.",
-      "hyperlink": "javascript:submitCodesValues('1203.','2.2','2006','254','20', 'id_5D033405-FBCE-487D-ABA2-39886DB3107B')",
-      "level": 5
-    },
-    {
-      "self_ref": "#/texts/191",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(a) Whether a transaction in the form of a lease creates a lease or security interest is determined by the facts of each case.",
-      "text": "(a) Whether a transaction in the form of a lease creates a lease or security interest is determined by the facts of each case."
-    },
-    {
-      "self_ref": "#/texts/192",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(b) A transaction in the form of a lease creates a security interest if the consideration that the lessee is to pay the lessor for the right to possession and use of the goods is an obligation for the term of the lease and is not subject to termination by the lessee, and:",
-      "text": "(b) A transaction in the form of a lease creates a security interest if the consideration that the lessee is to pay the lessor for the right to possession and use of the goods is an obligation for the term of the lease and is not subject to termination by the lessee, and:"
-    },
-    {
-      "self_ref": "#/texts/193",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) the original term of the lease is equal to or greater than the remaining economic life of the goods;",
-      "text": "(1) the original term of the lease is equal to or greater than the remaining economic life of the goods;"
-    },
-    {
-      "self_ref": "#/texts/194",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) the lessee is bound to renew the lease for the remaining economic life of the goods or is bound to become the owner of the goods;",
-      "text": "(2) the lessee is bound to renew the lease for the remaining economic life of the goods or is bound to become the owner of the goods;"
-    },
-    {
-      "self_ref": "#/texts/195",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(3) the lessee has an option to renew the lease for the remaining economic life of the goods for no additional consideration or for nominal additional consideration upon compliance with the lease agreement; or",
-      "text": "(3) the lessee has an option to renew the lease for the remaining economic life of the goods for no additional consideration or for nominal additional consideration upon compliance with the lease agreement; or"
-    },
-    {
-      "self_ref": "#/texts/196",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(4) the lessee has an option to become the owner of the goods for no additional consideration or for nominal additional consideration upon compliance with the lease agreement.",
-      "text": "(4) the lessee has an option to become the owner of the goods for no additional consideration or for nominal additional consideration upon compliance with the lease agreement."
-    },
-    {
-      "self_ref": "#/texts/197",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(c) A transaction in the form of a lease does not create a security interest merely because:",
-      "text": "(c) A transaction in the form of a lease does not create a security interest merely because:"
-    },
-    {
-      "self_ref": "#/texts/198",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) the present value of the consideration the lessee is obligated to pay the lessor for the right to possession and use of the goods is substantially equal to or is greater than the fair market value of the goods at the time the lease is entered into;",
-      "text": "(1) the present value of the consideration the lessee is obligated to pay the lessor for the right to possession and use of the goods is substantially equal to or is greater than the fair market value of the goods at the time the lease is entered into;"
-    },
-    {
-      "self_ref": "#/texts/199",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) the lessee assumes risk of loss of the goods;",
-      "text": "(2) the lessee assumes risk of loss of the goods;"
-    },
-    {
-      "self_ref": "#/texts/200",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(3) the lessee agrees to pay, with respect to the goods, taxes, insurance, filing, recording, or registration fees, or service or maintenance costs;",
-      "text": "(3) the lessee agrees to pay, with respect to the goods, taxes, insurance, filing, recording, or registration fees, or service or maintenance costs;"
-    },
-    {
-      "self_ref": "#/texts/201",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(4) the lessee has an option to renew the lease or to become the owner of the goods;",
-      "text": "(4) the lessee has an option to renew the lease or to become the owner of the goods;"
-    },
-    {
-      "self_ref": "#/texts/202",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(5) the lessee has an option to renew the lease for a fixed rent that is equal to or greater than the reasonably predictable fair market rent for the use of the goods for the term of the renewal at the time the option is to be performed; or",
-      "text": "(5) the lessee has an option to renew the lease for a fixed rent that is equal to or greater than the reasonably predictable fair market rent for the use of the goods for the term of the renewal at the time the option is to be performed; or"
-    },
-    {
-      "self_ref": "#/texts/203",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(6) the lessee has an option to become the owner of the goods for a fixed price that is equal to or greater than the reasonably predictable fair market value of the goods at the time the option is to be performed.",
-      "text": "(6) the lessee has an option to become the owner of the goods for a fixed price that is equal to or greater than the reasonably predictable fair market value of the goods at the time the option is to be performed."
-    },
-    {
-      "self_ref": "#/texts/204",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(7) in the case of a motor vehicle, as defined in Section 415 of the Vehicle Code, or a trailer, as defined in Section 630 of that code, that is not to be used primarily for personal, family, or household purposes, that the amount of rental payments may be increased or decreased by reference to the amount realized by the lessor upon sale or disposition of the vehicle or trailer. Nothing in this paragraph affects the application or administration of the Sales and Use Tax Law (Part 1 (commencing with Section 6001) of Division 2 of the Revenue and Taxation Code).",
-      "text": "(7) in the case of a motor vehicle, as defined in Section 415 of the Vehicle Code, or a trailer, as defined in Section 630 of that code, that is not to be used primarily for personal, family, or household purposes, that the amount of rental payments may be increased or decreased by reference to the amount realized by the lessor upon sale or disposition of the vehicle or trailer. Nothing in this paragraph affects the application or administration of the Sales and Use Tax Law (Part 1 (commencing with Section 6001) of Division 2 of the Revenue and Taxation Code)."
-    },
-    {
-      "self_ref": "#/texts/205",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(d) Additional consideration is nominal if it is less than the lessee's reasonably predictable cost of performing under the lease agreement if the option is not exercised. Additional consideration is not nominal if:",
-      "text": "(d) Additional consideration is nominal if it is less than the lessee's reasonably predictable cost of performing under the lease agreement if the option is not exercised. Additional consideration is not nominal if:"
-    },
-    {
-      "self_ref": "#/texts/206",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) when the option to renew the lease is granted to the lessee, the rent is stated to be the fair market rent for the use of the goods for the term of the renewal determined at the time the option is to be performed; or",
-      "text": "(1) when the option to renew the lease is granted to the lessee, the rent is stated to be the fair market rent for the use of the goods for the term of the renewal determined at the time the option is to be performed; or"
-    },
-    {
-      "self_ref": "#/texts/207",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) when the option to become the owner of the goods is granted to the lessee, the price is stated to be the fair market value of the goods determined at the time the option is to be performed.",
-      "text": "(2) when the option to become the owner of the goods is granted to the lessee, the price is stated to be the fair market value of the goods determined at the time the option is to be performed."
-    },
-    {
-      "self_ref": "#/texts/208",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(e) The \"remaining economic life of the goods\" and \"reasonably predictable\" fair market rent, fair market value, or cost of performing under the lease agreement must be determined with reference to the facts and circumstances at the time the transaction is entered into.",
-      "text": "(e) The \"remaining economic life of the goods\" and \"reasonably predictable\" fair market rent, fair market value, or cost of performing under the lease agreement must be determined with reference to the facts and circumstances at the time the transaction is entered into."
-    },
-    {
-      "self_ref": "#/texts/209",
-      "parent": {
-        "$ref": "#/texts/190"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Added by Stats. 2006, Ch. 254, Sec. 20. Effective January 1, 2007.)",
-      "text": "(Added by Stats. 2006, Ch. 254, Sec. 20. Effective January 1, 2007.)",
-      "formatting": {
-        "bold": false,
-        "italic": true,
-        "underline": false,
-        "strikethrough": false,
-        "script": "baseline"
-      }
-    },
-    {
-      "self_ref": "#/texts/210",
-      "parent": {
-        "$ref": "#/texts/112"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/211"
-        },
-        {
-          "$ref": "#/texts/212"
-        },
-        {
-          "$ref": "#/texts/213"
-        },
-        {
-          "$ref": "#/texts/214"
-        },
-        {
-          "$ref": "#/texts/215"
-        },
-        {
-          "$ref": "#/texts/216"
-        }
-      ],
-      "content_layer": "body",
-      "label": "section_header",
-      "prov": [],
-      "orig": "1204.",
-      "text": "1204.",
-      "hyperlink": "javascript:submitCodesValues('1204.','2.2','2023','210','2', 'id_22035da2-7dc1-11ee-af93-9b7a567ae902')",
-      "level": 5
-    },
-    {
-      "self_ref": "#/texts/211",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "Except as otherwise provided in Divisions 3, 4, 5, 6, and 12, a person gives value for rights if the person acquires them:",
-      "text": "Except as otherwise provided in Divisions 3, 4, 5, 6, and 12, a person gives value for rights if the person acquires them:"
-    },
-    {
-      "self_ref": "#/texts/212",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(1) in return for a binding commitment to extend credit or for the extension of immediately available credit, whether or not drawn upon and whether or not a chargeback is provided for in the event of difficulties in collection;",
-      "text": "(1) in return for a binding commitment to extend credit or for the extension of immediately available credit, whether or not drawn upon and whether or not a chargeback is provided for in the event of difficulties in collection;"
-    },
-    {
-      "self_ref": "#/texts/213",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(2) as security for, or in total or partial satisfaction of, a preexisting claim;",
-      "text": "(2) as security for, or in total or partial satisfaction of, a preexisting claim;"
-    },
-    {
-      "self_ref": "#/texts/214",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(3) by accepting delivery under a preexisting contract for purchase; or",
-      "text": "(3) by accepting delivery under a preexisting contract for purchase; or"
-    },
-    {
-      "self_ref": "#/texts/215",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(4) in return for any consideration sufficient to support a simple contract.",
-      "text": "(4) in return for any consideration sufficient to support a simple contract."
-    },
-    {
-      "self_ref": "#/texts/216",
-      "parent": {
-        "$ref": "#/texts/210"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Amended by Stats. 2023, Ch. 210, Sec. 2. (SB 95) Effective January 1, 2024.)",
-      "text": "(Amended by Stats. 2023, Ch. 210, Sec. 2. (SB 95) Effective January 1, 2024.)",
-      "formatting": {
-        "bold": false,
-        "italic": true,
-        "underline": false,
-        "strikethrough": false,
-        "script": "baseline"
-      }
-    },
-    {
-      "self_ref": "#/texts/217",
-      "parent": {
-        "$ref": "#/texts/112"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/218"
-        },
-        {
-          "$ref": "#/texts/219"
-        },
-        {
-          "$ref": "#/texts/220"
-        }
-      ],
-      "content_layer": "body",
-      "label": "section_header",
-      "prov": [],
-      "orig": "1205.",
-      "text": "1205.",
-      "hyperlink": "javascript:submitCodesValues('1205.','2.2','2006','254','21', 'id_7024f2ba-85f6-11db-a73d-a6a081de931e')",
-      "level": 5
-    },
-    {
-      "self_ref": "#/texts/218",
-      "parent": {
-        "$ref": "#/texts/217"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(a) Whether a time for taking an action required by this code is reasonable depends on the nature, purpose, and circumstances of the action.",
-      "text": "(a) Whether a time for taking an action required by this code is reasonable depends on the nature, purpose, and circumstances of the action."
-    },
-    {
-      "self_ref": "#/texts/219",
-      "parent": {
-        "$ref": "#/texts/217"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(b) An action is taken \"seasonably\" if it is taken at or within the time agreed or, if no time is agreed, at or within a reasonable time.",
-      "text": "(b) An action is taken \"seasonably\" if it is taken at or within the time agreed or, if no time is agreed, at or within a reasonable time."
-    },
-    {
-      "self_ref": "#/texts/220",
-      "parent": {
-        "$ref": "#/texts/217"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Added by renumbering Section 1204 by Stats. 2006, Ch. 254, Sec. 21. Effective January 1, 2007.)",
-      "text": "(Added by renumbering Section 1204 by Stats. 2006, Ch. 254, Sec. 21. Effective January 1, 2007.)",
-      "formatting": {
-        "bold": false,
-        "italic": true,
-        "underline": false,
-        "strikethrough": false,
-        "script": "baseline"
-      }
-    },
-    {
-      "self_ref": "#/texts/221",
-      "parent": {
-        "$ref": "#/texts/112"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/222"
-        },
-        {
-          "$ref": "#/texts/223"
-        }
-      ],
-      "content_layer": "body",
-      "label": "section_header",
-      "prov": [],
-      "orig": "1206.",
-      "text": "1206.",
-      "hyperlink": "javascript:submitCodesValues('1206.','2.2','2006','254','25', 'id_71becba0-85f6-11db-a73d-a6a081de931e')",
-      "level": 5
-    },
-    {
-      "self_ref": "#/texts/222",
-      "parent": {
-        "$ref": "#/texts/221"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "Whenever this code creates a \"presumption\" with respect to a fact, or provides that a fact is \"presumed,\" the trier of fact must find the existence of the fact unless and until evidence is introduced that supports a finding of its nonexistence.",
-      "text": "Whenever this code creates a \"presumption\" with respect to a fact, or provides that a fact is \"presumed,\" the trier of fact must find the existence of the fact unless and until evidence is introduced that supports a finding of its nonexistence."
-    },
-    {
-      "self_ref": "#/texts/223",
-      "parent": {
-        "$ref": "#/texts/221"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [],
-      "orig": "(Repealed and added by Stats. 2006, Ch. 254, Sec. 25. Effective January 1, 2007.)",
-      "text": "(Repealed and added by Stats. 2006, Ch. 254, Sec. 25. Effective January 1, 2007.)",
+      "orig": "(Added by renumbering Section 1209 by Stats. 2006, Ch. 254, Sec. 28. Effective January 1, 2007.)",
+      "text": "(Added by renumbering Section 1209 by Stats. 2006, Ch. 254, Sec. 28. Effective January 1, 2007.)",
       "formatting": {
         "bold": false,
         "italic": true,
