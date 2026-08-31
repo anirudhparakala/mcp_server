@@ -14,7 +14,6 @@ import argparse
 import json
 import sys
 from datetime import datetime, timezone
-from pathlib import Path
 
 from .citations import (
     anchors_to_dict,
@@ -174,11 +173,11 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
             return None
         return mk_doc_id(entry.url, meta["resolved_version"])
 
-    stats = {"anchors": 0, "references_resolved": 0, "references_unresolved": 0,
-             "ambiguous": 0, "adjacent": 0, "errors": []}
+    stats = {"chunks_scanned": 0, "references_resolved": 0, "references_unresolved": 0,
+             "ambiguous": 0, "self_citations": 0, "adjacent": 0, "errors": []}
     conn = ops.get_db(ckb_path)
     try:
-        stats["anchors"] = persist_anchors(conn)
+        stats["chunks_scanned"] = persist_anchors(conn)
         anchor_index = build_anchor_index(
             conn, min_anchor_body_chars=cfg.get("min_anchor_body_chars", 0))
 
@@ -221,7 +220,8 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
                     if len(candidates) == 1:
                         target = candidates[0]
                         if target == row["chunk_id"]:
-                            continue    # self-citation: cites the section it defines
+                            stats["self_citations"] += 1  # cites the section it defines
+                            continue
                         ops.insert_edge(conn, from_chunk=row["chunk_id"], to_chunk=target,
                                         edge_type="references", provenance=ref.raw,
                                         confidence=1.0, created_at=_now())
@@ -229,12 +229,17 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
                     elif len(candidates) > 1:
                         stats["ambiguous"] += 1        # more than one candidate; guessing is worse
                     else:
+                        # The counter reflects rows actually WRITTEN, not references
+                        # merely seen: record_unresolved=false must not inflate
+                        # references_unresolved past what's in the DB, or
+                        # edges == adjacent + resolved + unresolved breaks (the
+                        # invariant the acceptance step checks).
                         if cfg.get("record_unresolved", True):
                             ops.insert_edge(conn, from_chunk=row["chunk_id"],
                                             to_external_ref=f"{ref.kind}:{ref.value}",
                                             edge_type="references", provenance=ref.raw,
                                             confidence=0.0, created_at=_now())
-                        stats["references_unresolved"] += 1
+                            stats["references_unresolved"] += 1
             except Exception as exc:
                 # One bad chunk must not lose the whole graph -- record and continue.
                 stats["errors"].append(f"{row['chunk_id']}: {exc}")
@@ -255,9 +260,10 @@ def main(argv=None) -> int:
 
     cfg = load_corpus_config(a.config).graph
     stats = build_graph(a.ckb, a.manifest, a.raw_dir, cfg)
-    print(f"anchors={stats['anchors']} adjacent={stats['adjacent']} "
+    print(f"chunks_scanned={stats['chunks_scanned']} adjacent={stats['adjacent']} "
           f"references_resolved={stats['references_resolved']} "
-          f"unresolved={stats['references_unresolved']} errors={len(stats['errors'])}",
+          f"unresolved={stats['references_unresolved']} ambiguous={stats['ambiguous']} "
+          f"self_citations={stats['self_citations']} errors={len(stats['errors'])}",
           file=sys.stderr)
     return 0 if not stats["errors"] else 1
 

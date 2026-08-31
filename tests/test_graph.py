@@ -540,3 +540,107 @@ def test_build_graph_honours_configured_min_anchor_body_chars(safe_tmp_path):
     edge = [r for r in ops.get_edges_from(conn, "citer-c0") if r["edge_type"] == "references"][0]
     assert edge["to_chunk"] == "gdpr-c1"          # configured: defers to the chunk with real body
     conn.close()
+
+
+def test_self_citations_are_counted_not_silently_dropped(safe_tmp_path):
+    """A chunk that both defines and cites the same section (e.g. 'Article 22'
+    restated inline within its own body) is correctly skipped -- no edge to
+    itself -- but until now that skip was counted in no stat at all, so the
+    numbers didn't reconcile (review round 2, finding D)."""
+    conn = ops.get_db(":memory:")
+    create_all_tables(conn)
+    ops.insert_source(conn, canonical_url="gdpr6", url_original="gdpr6", domain="law_aireg",
+                      format="html", license="x", license_ok=True, version="v1")
+    ops.insert_doc(conn, doc_id="GDPR6", canonical_url="gdpr6", domain="law_aireg", format="html")
+    ops.insert_chunk(conn, chunk_id="gdpr6-c0", doc_id="GDPR6", chunk_index=0, chunk_type="text",
+                     text="Article 22\nAutomated individual decision-making\n1.\nAs referred to "
+                          "in Article 22, the data subject shall have the right.")
+
+    ckb = safe_tmp_path / "ckb.sqlite"
+    disk = ops.get_db(ckb)
+    conn.backup(disk)
+    conn.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr6\n  url: gdpr6\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["self_citations"] == 1
+    assert stats["references_resolved"] == 0
+    assert stats["ambiguous"] == 0
+    assert stats["references_unresolved"] == 0
+    conn = ops.get_db(ckb)
+    assert ops.get_edges_from(conn, "gdpr6-c0") == []   # still no self-edge
+    conn.close()
+
+
+def test_record_unresolved_false_keeps_the_unresolved_counter_matching_rows_written(safe_tmp_path):
+    """record_unresolved: false must skip WRITING the placeholder row, and the
+    references_unresolved counter must reflect that -- otherwise
+    edges == adjacent + references_resolved + references_unresolved breaks,
+    which is exactly the invariant the acceptance step checks (review round 2,
+    finding D)."""
+    ckb = safe_tmp_path / "ckb.sqlite"
+    src = _two_doc_ckb()
+    disk = ops.get_db(ckb)
+    src.backup(disk)
+    src.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["adjacent", "references"], "record_unresolved": False}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["references_unresolved"] == 0    # Article 9999 was seen but never written
+    conn = ops.get_db(ckb)
+    assert ops.count_rows(conn, "edges") == \
+        stats["adjacent"] + stats["references_resolved"] + stats["references_unresolved"]
+    # and no placeholder row for the out-of-corpus reference actually exists
+    assert ops.get_edges_from(conn, "edpb1") == []
+    conn.close()
+
+
+def test_stats_report_chunks_scanned_not_a_dishonest_anchors_count(safe_tmp_path):
+    """stats['anchors'] actually counted CHUNKS PROCESSED (persist_anchors' return
+    value), not anchors found -- 2803 vs. 227 on the real corpus. Renamed to
+    chunks_scanned so the number means what it says (review round 2, finding D)."""
+    ckb = safe_tmp_path / "ckb.sqlite"
+    src = _two_doc_ckb()          # 4 chunks total: gdpr22, aiact22, edpb0, edpb1
+    disk = ops.get_db(ckb)
+    src.backup(disk)
+    src.close()
+    disk.close()
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text(
+        "- doc_id: gdpr\n  url: gdpr\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: aiact\n  url: aiact\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n"
+        "- doc_id: edpb\n  url: edpb\n  domain: law_aireg\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n  references: [gdpr]\n",
+        encoding="utf-8")
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["adjacent", "references"], "record_unresolved": True}
+
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["chunks_scanned"] == 4
+    assert "anchors" not in stats
