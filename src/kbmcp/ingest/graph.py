@@ -155,23 +155,40 @@ def build_adjacent_edges(conn) -> int:
     return made
 
 
-def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None) -> dict:
-    """Resolve every chunk's citations into edges. Re-runnable and deterministic."""
+def doc_id_for_slug(slug: str, by_slug: dict, raw_dir, *, doc_id_for=None):
+    """The database doc_id (sha256) a manifest SLUG resolves to, or None.
+
+    Derivation: manifest `url` + the `resolved_version` pinned in
+    corpus/raw/<slug>.meta.json, via models.ids.doc_id -- the one place this
+    mapping is computed, shared by build_graph (reference-resolution scope)
+    and verify_graph (mapping benchmark from_slug/to_slug into DB doc_ids).
+
+    `doc_id_for` (tests only) overrides the derivation entirely, including for
+    a slug with no entry in `by_slug` -- callers that scope resolution to a
+    manifest's declared `references:` may ask about a slug that names another
+    document outside the manifest, and the override must still answer that.
+    """
+    if doc_id_for is not None:
+        return doc_id_for(slug)
     from ..models.ids import doc_id as mk_doc_id
     from .fetch import read_meta
+
+    entry = by_slug.get(slug)
+    meta = read_meta(raw_dir, slug) if entry is not None else None
+    if entry is None or meta is None:
+        return None
+    return mk_doc_id(entry.url, meta["resolved_version"])
+
+
+def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None) -> dict:
+    """Resolve every chunk's citations into edges. Re-runnable and deterministic."""
     from .manifest import load_manifest
 
     entries = load_manifest(manifest_path)
     by_slug = {e.doc_id: e for e in entries}
 
     def _doc_id(slug: str):
-        if doc_id_for is not None:
-            return doc_id_for(slug)
-        entry = by_slug.get(slug)
-        meta = read_meta(raw_dir, slug) if entry is not None else None
-        if entry is None or meta is None:
-            return None
-        return mk_doc_id(entry.url, meta["resolved_version"])
+        return doc_id_for_slug(slug, by_slug, raw_dir, doc_id_for=doc_id_for)
 
     stats = {"chunks_scanned": 0, "references_resolved": 0, "references_unresolved": 0,
              "ambiguous": 0, "self_citations": 0, "adjacent": 0, "errors": []}
