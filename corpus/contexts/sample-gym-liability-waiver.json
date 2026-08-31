@@ -1,0 +1,53 @@
+{
+  "contexts": {
+    "4674f3e4113481573b88d60e56837aaf1b29f6f81d0420496dc33327cd77263c": {
+      "context": "This chunk is Section 8 (Acknowledgment) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent document. It contains the member's final acknowledgment of understanding the agreement's terms and the signature block where the member, facility representative, and other required information are recorded.",
+      "text_sha256": "9d729cd13b0fc0fceb382e6643892ecbce1b2949f0fd2f50b5be760133a4dc0a",
+      "window_index": 0
+    },
+    "4e770378afbe795f48448f0a51fabdf84d1db9d099798fef3cdba4ac9a4775d5": {
+      "context": "This chunk is from Section 6 (Photography and Media Consent) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent document. It describes the optional consent provision allowing members to authorize or decline the facility's use of their photographs or videos for promotional purposes, which is explicitly stated as separate from and not required for membership.",
+      "text_sha256": "67a898d6fcae30d607f34b8efedb7feaa1cf46a702d787ed6141755435694263",
+      "window_index": 0
+    },
+    "521997a6d490c654f621c096a35be6472ee6aa1dd8138fff35fbfc2269281df1": {
+      "context": "This chunk is Section 3 (Indemnification) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent agreement. It specifies the Member's obligation to protect the Released Parties (defined in Section 2 as the Facility, its owners, officers, employees, trainers, and agents) from financial liability and legal costs arising from claims related to the Member's actions or breach of the agreement.",
+      "text_sha256": "0cc330f583690223aaf357758b739d4f113ace6dec32ab6dbae36060302d0126",
+      "window_index": 0
+    },
+    "7be6fece7433b074f91e1a3218487a624aec395e576edafae78255cce7827dfb": {
+      "context": "This chunk is Section 2 (Release and Waiver of Liability) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent agreement. It specifies the legal release that members sign when joining the facility, detailing which parties are protected from liability and the scope of claims the member waives.",
+      "text_sha256": "49c73656ea7bf2dd4f9e47cd25442a50779cc02fe8664ecd806c925cf0356f7f",
+      "window_index": 0
+    },
+    "9c462ec66d6b323a306447a4ab914e2f0d72c2469923dc59f079306561e658f5": {
+      "context": "This chunk is Section 4 (Medical Representations and Fitness to Participate) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent agreement. It establishes the member's representations regarding their physical fitness and medical status, and clarifies that facility staff cannot provide medical advice.",
+      "text_sha256": "93e7a824213410c4ae8285110bcd82b8ce525a8175f5c72ca820d06fb5300879",
+      "window_index": 0
+    },
+    "9d8975d1253882ccba045f6303d6024f40b324023e7a8efcbb28e518daeab2bd": {
+      "context": "This chunk is Section 7 (Governing Law and Severability) of the Summit Ridge Fitness Membership Liability Waiver, which specifies the legal jurisdiction governing the agreement, addresses severability of provisions, and outlines consequences for non-compliance with facility rules.",
+      "text_sha256": "a4852a7bb0507c1dff1c703fa9b3f568c9f3999b8517c8d20790d6e9c522c258",
+      "window_index": 0
+    },
+    "bf054b35242f1f9fd668b2e61ad88f603258d4ece2d47c78188452f812f4d038": {
+      "context": "This chunk appears in Section 1 (Assumption of Risk) of the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent document. It outlines the specific physical risks associated with gym participation that members acknowledge and accept when using the facility's equipment and services.",
+      "text_sha256": "2c6da83cb63f5cfb5cd78e6aa34c4928747c96162579dd2c82531b957d200949",
+      "window_index": 0
+    },
+    "bfdfea22572e87cd737a73abe2ad81f3043befff7d597e89ae5d287c709837da": {
+      "context": "This chunk is Section 5 of the Summit Ridge Fitness Membership Liability Waiver, titled \"Informed Consent to Physical Activity and Data Processing.\" It outlines the member's consent to participate in physical activity and describes how the facility collects and processes personal data for membership administration, health-and-safety screening, and access control, including the member's right to withdraw consent.",
+      "text_sha256": "369a48a02c1bf04f21d39efcb2c881d80a049b67ca5814882b35480f61598ce7",
+      "window_index": 0
+    },
+    "d22bf8c3922e495479ee1976b7b271b97d9ff3e3cf2ad8bf83f749cbe33feb1f": {
+      "context": "This is the introductory preamble to the Summit Ridge Fitness Membership Liability Waiver, Release of Liability, and Informed Consent document. It establishes that the agreement is a legally binding contract and introduces the key parties: Summit Ridge Fitness (the \"Facility\") and the member (the \"Member\"), whose agreement to all terms in the document is required to use the facility's services and equipment.",
+      "text_sha256": "1a011c60bee7708db8c034b90a312e9a429d7581079543d15cea3eea673ab7c4",
+      "window_index": 0
+    }
+  },
+  "doc_id": "sample-gym-liability-waiver",
+  "generated_at": "2026-08-31T19:44:30Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

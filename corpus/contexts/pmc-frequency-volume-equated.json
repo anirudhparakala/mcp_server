@@ -1,0 +1,173 @@
+{
+  "contexts": {
+    "20741c6fd41288e2ffc3390a8129b64ea4c329a6acd736e35d0882597c48992d": {
+      "context": "This is the abstract from a PLoS ONE research article by Neves et al. (2022) titled \"Effect of different training frequencies on maximal strength performance and muscle hypertrophy in trained individuals-a within-subject design.\" The abstract summarizes the study's objective, methods, and key findings regarding how training frequency affects strength and muscle growth in resistance-trained individuals.",
+      "text_sha256": "476a25877aeb61347dc09e50457d8948073590e1d8389de20b357356e369f4bd",
+      "window_index": 0
+    },
+    "208e24107544d64dd29b991fa7c917313fc017c9349b714f6d9433f628bb8f23": {
+      "context": "This chunk from the Introduction section of a PLoS ONE research article by Neves et al. (2022) establishes the theoretical background for a study comparing resistance training frequencies on strength and muscle hypertrophy in trained individuals. It defines key concepts including training frequency, total training volume (TTV), and muscle protein synthesis (MPS), while reviewing prior research limitations and justifying the study's within-subject experimental design approach.",
+      "text_sha256": "b34632f0012e85f8cb7d51653bd3096dddb0861e4dcf57685616d72f61fb221f",
+      "window_index": 0
+    },
+    "2a3a03e4d65b2db785ca295483424591101b0374cfea7ba5d34b62b8e804701b": {
+      "context": "This chunk comprises the first eight references from the References section of a document examining resistance training frequency and volume effects on muscle hypertrophy and strength gains. These foundational citations cover resistance training prescription guidelines, meta-analyses on training frequency and volume, and position stands from the American College of Sports Medicine.",
+      "text_sha256": "5d7eb90421f54146c4f0865f0ee8badc39fe367d7f20fdd71a0162089eba6aef",
+      "window_index": 2
+    },
+    "2eda0f28795ad0fd9d21a38da72911398b72336d4074be0662c4b1609bec540b": {
+      "context": "This chunk describes the maximum dynamic strength testing procedures used in a study examining the effect of different training frequencies on strength performance and muscle hypertrophy in trained individuals. It details the 1RM test protocol for the unilateral leg press 45\u00b0 exercise, including warm-up procedures, equipment setup, range of motion specifications, and testing parameters.",
+      "text_sha256": "f6243f0fa48073ec37247cfe615e56d70d0f563d9f0179b358446c651a29e624",
+      "window_index": 0
+    },
+    "30cc0b7d92d995fb3052446c38ff971d2dc6b3c9a456c82f0dac7c0de575c067": {
+      "context": "This chunk describes the experimental design section of a PLoS ONE research article by Neves et al. (2022) investigating the effect of different training frequencies on maximal strength and muscle hypertrophy in trained individuals. The chunk explains the within and between-subject experimental design methodology, defining the two main conditions (RTEV with equalized total training volume and RTUV with unequalized total training volume), the participant distribution across frequencies (1x/week versus 3x/week), and the exercise protocol (unilateral leg press 45\u00b0).",
+      "text_sha256": "b27196c64ea9132997540ada7625e809f8ed6ea84ce3cdd1f07425d0c7a65e2c",
+      "window_index": 0
+    },
+    "376a1a01cd0df4f7c17296743eaae21ec7e09e1b69f2e766b17d279707123bd8": {
+      "context": "This chunk from the Introduction section of a PLoS ONE research article by Neves et al. (2022) states the study's primary aim and hypothesis. The study compares the effects of different weekly resistance training (RT) frequencies (one versus three times per week) on maximal strength performance and muscle hypertrophy in trained individuals using two experimental conditions: RTEV (resistance training with equalized total training volume) and RTUV (resistance training with unequalized total training volume).",
+      "text_sha256": "291de18bb5ab848dc9b01cb21e9b4118757cf3cd1b416efcd2f5ac38c23fe887",
+      "window_index": 0
+    },
+    "3b0af03fcd225971bb3fd61b88cd323eb1a72a7decb48b595047215bac491abd": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 40-46 are cited studies examining the relationship between training frequency (measured in days or sessions per week) and muscular adaptations, including muscle thickness, strength gains, and body composition changes in trained populations.",
+      "text_sha256": "d63ed5620310b136aefd93238d3c80e5ed03ea3430294a6dfdaf7afc66d7c0fb",
+      "window_index": 2
+    },
+    "3c6352345d0ee6ba8c0703158e513b62366a4985339f3981734f567298a2c519": {
+      "context": "This chunk is from the Conclusion section of a research study comparing resistance training (RT) frequencies in trained individuals. It summarizes the main findings regarding the effects of training one versus three times per week on maximum dynamic strength (1RM) and quadriceps femoris cross-sectional area (CSA), with comparisons between equalized total training volume (RTEV) and unequalized total training volume (RTUV) conditions.",
+      "text_sha256": "f0c40ee74e644282e2571fc803003a1cff1aabb774cdb2e2f072cf28af2987c5",
+      "window_index": 1
+    },
+    "41ba04d8dcf2f7113636e957a499655cf1c0afbe7ed8c371dbe0fc71288ef63c": {
+      "context": "This figure caption appears in the Supporting Information section of a study comparing resistance training frequencies with equalized and unequalized total training volumes. S1 Fig presents effect size data with confidence intervals for between-subject comparisons of the highest training frequency (three times per week) across both 1RM strength and quadriceps femoris CSA measurements in the RTEV and RTUV conditions.",
+      "text_sha256": "38d309c76a52ea0c6f44d9d26cb29e1b330a6e37fbbe47237b50d5336d8ef222",
+      "window_index": 1
+    },
+    "4a9971bd8c24745acacb043936ed6082df8e9bafabdfbb62d4c87d06d365bb94": {
+      "context": "This chunk is from the Statistical analysis section of a PLoS ONE research article by Neves et al. (2022) examining the effect of different training frequencies on maximal strength and muscle hypertrophy. The section describes the statistical methods used to analyze 1RM (maximal dynamic strength) and CSA (quadriceps femoris cross-sectional area) data collected in two experimental conditions: RTEV (resistance training with equalized total training volume) and RTUV (resistance training with unequalized total training volume).",
+      "text_sha256": "a610a1dd86a62beeb31afbf30e0220dea14ec4a27db6da13bc0a572a0350bda3",
+      "window_index": 0
+    },
+    "51db35dd71f8ddbc395687858329e598c677e72edfde57a306dc975edf4c8088": {
+      "context": "This chunk describes the participant selection criteria and characteristics for a study published in PLoS ONE (2022) investigating the effect of different training frequencies on maximal strength and muscle hypertrophy in trained individuals. The section is titled \"Participants\" and specifies the demographic details, training experience, strength requirements, health criteria, and ethical approval for the 24 male subjects enrolled in the 9-week resistance training protocol.",
+      "text_sha256": "d403cad81408f90070ddd22949b8252b8acf227f2bb0ac8c3c3d72a7424cf707",
+      "window_index": 0
+    },
+    "5c36b6621c4173e07f09a87a9c4aa4f498fffdbd7f570a0b688e7b6eb21c5aaf": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 27-29 specifically address training frequency and volume guidelines for muscle hypertrophy, while references 30-36 provide methodological sources for statistical analysis, strength assessment, and comparative training studies.",
+      "text_sha256": "2726aaa2fa16aa6c51568782d13b7a604eeda51cfb3e40904f10ead264bbb18e",
+      "window_index": 2
+    },
+    "610daa56d707d6a921ad7f5127863f435d9755ab013ee3b983cc3dc320c81acd": {
+      "context": "This chunk describes the resistance training protocols section of a study by Neves et al. (2022) published in PLoS ONE, which examined the effect of different training frequencies on maximal strength and muscle hypertrophy in trained individuals. The chunk details the 9-week unilateral leg press exercise program, the two experimental conditions (RTEV with equalized total training volume and RTUV with unequalized total training volume), the weekly set structure, and the linear periodization model used across three-week phases.",
+      "text_sha256": "875edda7e9212630572cc1455b807af6998bc5584fe6d42426348653efc98483",
+      "window_index": 0
+    },
+    "6289736b3d4a7f34c35c086328aee438140b7aeadcef2cb9492c594c79ce1f94": {
+      "context": "Table 2 from the study \"Effect of different training frequencies on maximal strength performance and muscle hypertrophy in trained individuals\" presents pre- and post-training measurements of unilateral leg press 45\u00b0 one-repetition maximum (1RM) strength and quadriceps femoris cross-sectional area (CSA) across both experimental conditions: RTEV (resistance training with equalized total training volume) and RTUV (resistance training with unequalized total training volume), comparing one versus three times per week training frequencies.",
+      "text_sha256": "92eef2e4ac60972330b606b31a6ef310cb8d6dba04ccc98f1a3f25cb5070ef61",
+      "window_index": 0
+    },
+    "6d31d35c3f2bfd24ff768b628bcb3e514a951434d7c3b33b798674ee9c4f0f64": {
+      "context": "This is the author and affiliation information for a PLoS ONE research article titled \"Effect of different training frequencies on maximal strength performance and muscle hypertrophy in trained individuals-a within-subject design\" published in 2022, with corresponding author Ricardo P. Neves from the University of S\u00e3o Paulo.",
+      "text_sha256": "a9766e619ab75ec73ae2e20cb6330f4f19b91818b7023a93c5cd8fa843174fa8",
+      "window_index": 0
+    },
+    "77c9e2ce5b5e694fe57f51173d2209db652e7b427053822dc9b926bf878de500": {
+      "context": "This section from the Discussion compares the present study's findings with prior research on resistance training (RT) frequency and total training volume (TTV) in trained individuals. It explains how the study's within-subject experimental design comparing equalized (RTEV) and unequalized (RTUV) training volume conditions addresses limitations in previous between-subject studies, and discusses the implications of these methodological differences for understanding strength gains across different RT frequencies.",
+      "text_sha256": "acaf7b524fe53c3e9639eb119184959939735017685956c91629c32c6cef5a86",
+      "window_index": 1
+    },
+    "7b277920a5ec2c35f25006c69ef994ab502bf51b4d71d3f90f993492db41b443": {
+      "context": "This chunk describes the pre-training assessment procedures in a PLoS ONE study by Neves et al. (2022) examining the effect of different training frequencies on maximal strength and muscle hypertrophy. It details the timeline and methods for subject selection and baseline measurements, including half-squat 1RM testing, familiarization sessions with the unilateral leg press 45\u00b0 1RM test, and pre- and post-training measurements of 1RM and quadriceps femoris cross-sectional area (CSA).",
+      "text_sha256": "43f72fcd6621a263c7681674e688f0afe1d1f30e20604ce79441d4a9d57a9d3e",
+      "window_index": 0
+    },
+    "7d9a7aac2657c9bbb1626c41c39aa39e4b79bc63b8bcd31952c2c6901273f2f8": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 37-39 are cited studies examining the relationship between training frequency, training volume, and muscular adaptations in resistance-trained individuals, with particular focus on whether frequency or volume is the primary driver of strength and hypertrophy gains.",
+      "text_sha256": "703acf26bb03c1080afcb188d4a5988e1024463f1dc2306d23e5536f15b21db1",
+      "window_index": 2
+    },
+    "7df0da6ebca48ce73b52c891ce23aa604263eed0af2a1e7cc7e74de50aa7c3d5": {
+      "context": "This section from the Results of a study comparing resistance training frequencies presents effect size analyses and individual percentage changes in maximum dynamic strength (1RM) and quadriceps muscle cross-sectional area (CSA) between one and three times weekly training under two conditions: RTEV (equalized total training volume) and RTUV (unequalized total training volume). The findings show that higher training frequency with greater total training volume produced significant improvements in the RTUV condition but not in the RTEV condition.",
+      "text_sha256": "10b98736d7b9dacfbddedaf6cdb9dfff9b8bc5afff060c95007df38e9e2d88e5",
+      "window_index": 1
+    },
+    "7f70dfb2d2ccc10c68578dc7fd3241f241a51e58b7c03756c688529b3b67794c": {
+      "context": "This section describes the muscle cross-sectional area (CSA) measurement methodology in a PLoS ONE study by Neves et al. (2022) examining the effect of different training frequencies on maximal strength and muscle hypertrophy in trained individuals. The chunk details the magnetic resonance imaging protocol and computerized planimetry procedures used to measure quadriceps femoris CSA as one of the study's primary dependent variables.",
+      "text_sha256": "d6da4c3d2216c1d65a057498ebf86462b2ef67ebd6f5d6e971a29255279fb375",
+      "window_index": 0
+    },
+    "81a639306c554ae3d4001e195f4561a3f5d45a92e6cdff7d373b7511711ca56e": {
+      "context": "This chunk is from the Discussion section of a research study examining the effects of resistance training frequency on strength and muscle hypertrophy. It presents the main findings comparing two conditions: RTEV (resistance training with equalized total training volume) and RTUV (resistance training with unequalized total training volume), and contrasts these results with prior research by McLester Jr. et al. The chunk discusses how baseline strength levels and experimental design differences may explain variations in outcomes between studies.",
+      "text_sha256": "95917debd86ace406048faeab513295aa20ec384ade968d692828fb29c60a7a4",
+      "window_index": 1
+    },
+    "84cb053f882dc24d804523363c47d6ed4241cbe346165619f3e830bd27af354c": {
+      "context": "This chunk comprises references 9-16 from the References section of a document examining resistance training frequency and volume effects on muscle hypertrophy and strength. These citations support research on training volume as an effective variable, dose-response relationships between weekly training volume and muscle mass gains, and comparisons of different training frequencies and session distributions for neuromuscular adaptations.",
+      "text_sha256": "a05d57148cd0f5c142abfab5f18cbd48c691f813bef1fb3d46ef5ac6d39b425b",
+      "window_index": 2
+    },
+    "850ed3edc38f3e5e1a20c071b9ba44b48acafe1714107af27b47b4d1e7fca5e3": {
+      "context": "This chunk is from the Results section of a study comparing resistance training at different weekly frequencies (one versus three times per week) in trained individuals. It presents baseline measurements and primary findings for two conditions: RTEV (resistance training with equalized total training volume) and RTUV (resistance training with unequalized total training volume), measuring changes in unilateral leg press 1RM strength and quadriceps femoris cross-sectional area (CSA).",
+      "text_sha256": "3ee717b214b2974ec192cd5e31fabefd8263f9213bfbac1fe2a2629a59be4375",
+      "window_index": 1
+    },
+    "8f30dc216861d21ea9bf4cb040fe2f372ffc86cba016e286881765f2347a4209": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 20-26 focus on studies examining the relationship between training frequency, muscle protein synthesis, muscular adaptations, and hypertrophy outcomes in resistance-trained populations.",
+      "text_sha256": "5c42d696ac83dc90b00311fe0142be5550f4eac11b1c49ad363aadf56b05b0c5",
+      "window_index": 2
+    },
+    "a5505f84de6eaa7097839041e5df7e2fec01bc3e61f9f04f14e2779819c6110b": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 47-53 cover studies examining various resistance training methodologies including pyramid systems, rest intervals, exercise selection, and repetition maximum protocols in trained populations.",
+      "text_sha256": "118e0054819db6e84c4826f54a3d253f46db66c19bc2d456c11f973c4640ccb6",
+      "window_index": 2
+    },
+    "acd17be83497c94b65224b662531eb53e34cea7b267fd01d402b138831b1cca4": {
+      "context": "This chunk appears in the Discussion section of a study comparing resistance training frequencies with equalized and unequalized total training volume (RTEV and RTUV conditions). It lists the study's limitations regarding cross-sectional area (CSA) measurements of the quadriceps femoris muscle, the use of a single exercise (unilateral leg press 45\u00b0), potential cross-education effects, and constraints of the equalized volume protocol in trained individuals.",
+      "text_sha256": "3618ac61800a5c3357d048a6a3ce0c4ac164ba77d614eebcdfbbbe15e0420417",
+      "window_index": 1
+    },
+    "c3fbc6c229a7c9e4430ffe9e8304cc040b4273457230e33bea15f24c4bd6d2a5": {
+      "context": "This chunk is from the Discussion section of a study comparing resistance training (RT) frequencies with equalized and unequalized total training volume (RTEV and RTUV conditions). It discusses findings related to quadriceps femoris cross-sectional area (CSA) changes measured by magnetic resonance imaging across different weekly RT frequencies in trained individuals, and compares these results to prior research using different measurement methods.",
+      "text_sha256": "7d4e34439b79c510fce9be8f94ab90340d1943aa4f67282fd8ca5da612bfe7f2",
+      "window_index": 1
+    },
+    "c5524ba4129c2dd1ca1d09bb1ff8dbb3dd73f11771f553952b8c355fa9a2128a": {
+      "context": "This section appears in the Author Contributions portion of a research study comparing resistance training frequencies with equalized and unequalized total training volumes (RTEV and RTUV conditions). It lists the specific roles and responsibilities of each author who contributed to the study investigating the effects of different weekly training frequencies on leg press strength and quadriceps muscle cross-sectional area in trained individuals.",
+      "text_sha256": "deb2f8da876e4e716c442ffcf5613a01e1d4838f4749888869a76c446e01bb2b",
+      "window_index": 1
+    },
+    "caf2d0abd6357859cc37967bcc4819e3ab5b9a285f030944c84cb9b319c98d8f": {
+      "context": "This chunk is part of the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. References 17-19 are cited studies examining training frequency distribution, periodization models, and protein synthesis mechanisms related to resistance training adaptations.",
+      "text_sha256": "a780698c6f7605251e5de8ca4686b2000131f86c8f17a5fe0afc712aa96eab4c",
+      "window_index": 2
+    },
+    "d104a358e525fed4a31456b8832e811a9ef26c450df8b8f0dcfba0d72711bc4a": {
+      "context": "This is the citation and publication metadata for a PLoS ONE research article examining the effects of different resistance training frequencies on strength and muscle hypertrophy in trained individuals using a within-subject experimental design.",
+      "text_sha256": "636e76c1dc8c69286eb863c00f84c59a28a4644b8112e468ace7228242f88fcb",
+      "window_index": 0
+    },
+    "d223b3bd7aca318b539a740e516137201b8ec37d25776f9d7f47a2c928fb85ae": {
+      "context": "This acknowledgment section appears at the end of a research study comparing resistance training frequencies with equalized and unequalized total training volumes, thanking the organization that performed magnetic resonance imaging measurements used to assess quadriceps femoris cross-sectional area changes in trained individuals.",
+      "text_sha256": "20ccbac9047cc84270cee43f36f07c3911ea1c6be00006981bbeabd9a38c585c",
+      "window_index": 1
+    },
+    "d90ac08e16c8903464a9907919a52ec2bcc80d8bfe394df9d38a76b8967ba969": {
+      "context": "This chunk is from the \"Resistance training protocols\" section of a PLoS ONE research article by Neves et al. (2022) examining the effect of different training frequencies on strength and muscle hypertrophy. It describes the specific implementation details of the 9-week unilateral leg press training program, including how sets were distributed across weekly frequencies and how total training volume (TTV) was equalized in the RTEV condition with a concrete numerical example.",
+      "text_sha256": "951449417d5a65380c1a6a779c1ac953d307ecc00efb68f122a92a0d67cf3104",
+      "window_index": 0
+    },
+    "f187464b1a1cfe49f6e92ae2e7d87979ba0530840876ed110d86f190d9af2d9e": {
+      "context": "This is reference 54 in the References section of a document about resistance training frequency and volume effects on muscle hypertrophy and strength. It is a position stand by the International Society of Sports Conditioning and Athletic Training (IUSCA) providing evidence-based recommendations for resistance training to maximize muscle hypertrophy in athletic populations.",
+      "text_sha256": "1d400cedbf0227a6e6f505cd64b3a90b97a6fe8b3bf8e1b1c7f5de55b10b0f63",
+      "window_index": 2
+    }
+  },
+  "doc_id": "pmc-frequency-volume-equated",
+  "generated_at": "2026-08-31T19:37:01Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

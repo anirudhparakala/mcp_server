@@ -1,0 +1,313 @@
+{
+  "contexts": {
+    "00fcbb4b081069f3bcff02ef29d1fac6963756d9bafc20d15ba4bdd57cd27b55": {
+      "context": "This chunk is from the Background section of the ISSN nutrient timing position statement, which provides historical context and explains the evolution of nutrient timing research from its conceptualization in the 1970s-1980s through the current updated position stand. It describes the original 2008 ISSN position stand on nutrient timing, defines nutrient timing as purposeful nutrient ingestion to impact exercise adaptation, and outlines the scope of the updated document focusing on carbohydrates and proteins while noting emerging research on micronutrients and ergogenic aids.",
+      "text_sha256": "d636faa5c43de6824208e50b9c33ac3f62ee21087cacb24f1e93c8e1a252efa1",
+      "window_index": 0
+    },
+    "0253e9c2300c0ba46c97f3a284e75cb845b80c57f99c0ce4607d2b3c2b31756a": {
+      "context": "This chunk appears in the \"Timing and distribution of meals - time of day considerations\" section of an ISSN position stand on nutrient timing. It discusses research examining how the timing of caloric intake throughout the day affects weight loss, body composition, and metabolic markers, with particular focus on studies comparing breakfast-heavy versus dinner-heavy caloric distributions in sedentary populations.",
+      "text_sha256": "1ac431fc6bca5148e61e899d8c51d5b8ec9ad48a87272d90562a7449878b67e0",
+      "window_index": 3
+    },
+    "072e4336955ff6324f22e343622633ee1a7d3c3ee40f0258401cad03689d81a0": {
+      "context": "This chunk appears in the \"Resistance training\" section of an ISSN position stand on nutrient timing, specifically within the subsection discussing post-exercise protein timing. It synthesizes research findings on whether the timing of protein ingestion relative to resistance workouts affects muscle adaptations, and concludes with practical recommendations for athletes regarding post-workout feeding.",
+      "text_sha256": "1908adc9979594a5dbb6d8a15cccef5ee4d0b9bad275c9af7d46cfb935a22c48",
+      "window_index": 3
+    },
+    "0a34ab72a76dfbf765cc76aae98f8019ecf604504eb1000b8162abf0690155f6": {
+      "context": "This chunk contains references 119-129 from the References section of an article on nutrient timing in sports nutrition. These citations focus on protein timing, amino acid sensitivity, muscle protein synthesis, and resistance training adaptations, covering studies on the post-exercise anabolic window and the effects of protein intake timing on muscle hypertrophy and strength gains.",
+      "text_sha256": "3197a53e83c6e9b439c2476f0b92a369f73dc43b156165c0d43a0c9cbae153be",
+      "window_index": 6
+    },
+    "17f9560c15292d6017f78ec3190f8230a0b707c5bebdb7bdcfd15da9b4ec5d47": {
+      "context": "This chunk appears in the \"Endurance training\" section of a document on nutrient timing for exercise performance. It discusses research on amino acid and protein consumption during endurance exercise, specifically citing a study by Pasiakos and colleagues examining the effects of essential amino acids (EAA) with varying leucine levels on muscle protein synthesis (MPS) rates in cyclists.",
+      "text_sha256": "051770b9b12850362bb4032cc3f7c18fc9f54f164cdd60766e54c6fa940c6cdb",
+      "window_index": 2
+    },
+    "1b211b38e7d8fb273e325ffcad26cab257998562fc4a27e09e8184b7f6bf665e": {
+      "context": "This chunk appears in the \"Availability of data and materials\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing, indicating that no supplementary datasets or materials are available for this review article.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 4
+    },
+    "243b1a81f86e521a286dd0442d8bd2a56d7c3236ac9ec3f98bc54abab385db87": {
+      "context": "This chunk appears at the end of a document about nutrient timing and lists the submission guidelines and benefits offered by BioMed Central for manuscript submission, serving as a standard call-to-action footer for journal submissions.",
+      "text_sha256": "79fd1a648334fd7022df675ba2b825dddfb03204cd5db188099199c1a749201b",
+      "window_index": 8
+    },
+    "2b101d19bf3bd5256c5e2cd436e8a16b317bb1ebe366c27ca7a0c75862359a6f": {
+      "context": "This chunk is part of the References section of a document on nutrient timing, containing citations 160-162 that address muscle protein synthesis responses to nutrition and exercise, as well as the relationship between sleep timing and metabolic outcomes.",
+      "text_sha256": "1f9c2e6acd0ce152d67001e00cd68caa845ccbfca96e168df929acc7a0450790",
+      "window_index": 7
+    },
+    "2c847d2e813a333b91305e46fe1998e696d453e94aac693347f5fe3b8dbff0d1": {
+      "context": "This chunk contains the abstract and position statement from the ISSN nutrient timing position stand, which presents 12 key recommendations regarding the timing of macronutrients (carbohydrates and proteins) for exercising adults and trained individuals to optimize exercise performance and body composition. The abstract summarizes the main evidence-based conclusions on nutrient timing strategies, including guidelines for carbohydrate and protein intake around exercise, meal frequency, and amino acid supplementation.",
+      "text_sha256": "63b5b132d8ef5352b05e1d3321646b3518e416aa2477ce85ed58f184ec2052cd",
+      "window_index": 0
+    },
+    "321137a2e1749e4c9ac9e89b08b402ee414bf5d88031b57342b1b45fdbb1c9c4": {
+      "context": "This chunk is from the \"Resistance training\" section of an ISSN position stand on nutrient timing. It discusses explanations for discrepant findings between studies examining protein ingestion timing around resistance exercise, specifically comparing the Hoffman et al., Andersen et al., Schoenfeld et al., and Candow et al. studies, and analyzes factors such as protein source quality, measurement methodology, caloric intake, training volume, and protein dosage that may account for different outcomes regarding pre- versus post-workout protein timing.",
+      "text_sha256": "3b28aa727e38056220cd36cfb5dbbbd0f7b0bc348b5a547a480a6587db3e7fb2",
+      "window_index": 3
+    },
+    "34b6e827bcc64c274129add74c5b5fab1b30cf9882bfc721f614e9b7c3eac14c": {
+      "context": "This chunk is part of the References section of a document on nutrient timing, specifically covering citations 163-172 that focus on nighttime feeding, pre-sleep protein ingestion, and their effects on metabolism, muscle protein synthesis, and cardiometabolic health in various populations.",
+      "text_sha256": "a624501a8c0c16aee528e0abf848ddc46802c6edd07ca577cf22f014295c26b1",
+      "window_index": 7
+    },
+    "3873e80d27d8a68595a84d89ac409ea5ceb533d3129944627ce7fd6f686cdf9a": {
+      "context": "This statement appears in the \"Ethics approval and consent to participate\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing, indicating that the entire document represents an official consensus statement reviewed and approved by the ISSN Research Committee.",
+      "text_sha256": "215918f16e0274046441c527714278b1c733ccb89718479728a696b23b8fe619",
+      "window_index": 4
+    },
+    "4f359c9305434d5ee48a3d2a6c9d360401306040474a3fe8e26dfd86ded63556": {
+      "context": "This chunk appears in the \"Pre-sleep protein intake\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing. It discusses two long-term studies examining the effects of casein protein consumption before sleep on muscle mass, strength, and body composition in young adults, comparing the findings and implications for nighttime protein feeding strategies.",
+      "text_sha256": "14fcbd97c04df31cf6200ee33ade980f8ad830ec880cd296c0790d22064e5b62",
+      "window_index": 4
+    },
+    "51b1577dd93a863ccf99c04675629c9c0aa6023aad7e72dfa69645c7b0974b62": {
+      "context": "This chunk contains points 8-12 from the International Society of Sports Nutrition (ISSN) position statement on nutrient timing, which provides evidence-based recommendations on the timing of macronutrients for exercising adults and trained individuals. These specific points address pre- and post-exercise protein feeding strategies, meal frequency effects on body composition, optimal protein dosing intervals, and nighttime casein protein consumption for muscle protein synthesis.",
+      "text_sha256": "b681f6fae3301a1a058236cb6bdd860e0c303426a639571432d837046bbdda6b",
+      "window_index": 0
+    },
+    "54243d383d64a1f80d3902bfb99e92fd0f278dfea97413578834ec1034279d2e": {
+      "context": "This chunk comprises references 151-159 from the References section of a document on nutrient timing. These citations document foundational and empirical research on protein timing, protein types, and their effects on body composition, muscle protein synthesis, and metabolic outcomes in various populations.",
+      "text_sha256": "3e1eb2db8e9a1e82775668a501ce8c6cbabcfe346b780219ed167aef56bccfe0",
+      "window_index": 7
+    },
+    "5ba36b5ebb3570ad2a1575fe77dffea4dc237de37ad5a394cdd16e7191553218": {
+      "context": "This section appears in the \"Competing interests\" portion of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing, disclosing financial relationships and affiliations between the manuscript authors and supplement or nutrition companies relevant to the document's topic.",
+      "text_sha256": "0ba9fdbd8b979d6536005cd9cf53dd10ebafdb748e4160f1d48f011a84969d0a",
+      "window_index": 4
+    },
+    "5c705dcd3377e65fed743b549663976f04eb3c652d74d84eddd8a2a30c097e09": {
+      "context": "This chunk is part of the References section of a document on nutrient timing in sports nutrition. References 90-100 cover studies examining the effects of protein, carbohydrate, and amino acid supplementation timing on muscle protein synthesis, resistance exercise performance, and muscle damage, as well as creatine supplementation research.",
+      "text_sha256": "bfb7cff59e90b10475b1ee1da77115de5a9590feec0a64c0b7d8d8f9c8a2abbb",
+      "window_index": 6
+    },
+    "6410af443c10377b1751c51279315d46727227cdbf851b7532588ccc260817fd": {
+      "context": "This chunk appears in the \"Practical applications\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing. It provides evidence-based recommendations for athletes regarding protein timing around workouts, meal frequency, daily protein intake, pre-sleep protein consumption, and energy intake timing to optimize muscle protein synthesis (MPS), body composition, and exercise performance.",
+      "text_sha256": "736772f77161aae5675c23b2fa062d0f0a524aa17cf385d84595c2b202a1c82f",
+      "window_index": 4
+    },
+    "6a0caebd9bcebd47845bea971bc769de954bf4819edaf8663aa9c52afe7e738f": {
+      "context": "This chunk from the \"Endurance training\" section of a nutrient timing review discusses carbohydrate loading protocols in the days before endurance competition and pre-competition feeding strategies. It covers classic research on glycogen supercompensation techniques and recommendations for carbohydrate intake timing and amounts before prolonged exercise, including sex-specific considerations for female athletes.",
+      "text_sha256": "b23f2eb91928f498e4e077e92a521f416e3031345da9207063609e088b2c5cb2",
+      "window_index": 1
+    },
+    "6d8eb248f3ba4c5ca3eb1ab0e029838c55f7d06a36ce2b4c8d688f0cc9a80cd2": {
+      "context": "This chunk appears in the \"Timing and distribution of protein feeding\" section of an ISSN (International Society of Sports Nutrition) position paper on nutrient timing. It discusses limitations of protein feeding studies, introduces the protein pacing model developed by Arciero and colleagues, and explores the \"muscle full\" effect theory regarding optimal spacing between protein feedings for maximizing muscle protein synthesis (MPS) rates.",
+      "text_sha256": "03503c0e3cfcda43c073e7f93c470f14c2e612062f4df4adc602f5e2f6f5c30a",
+      "window_index": 4
+    },
+    "6e978ed0f1da29b93cdc9c63a27dce9912440034a0023bd64898bf8c5b7992ee": {
+      "context": "This section from the References of an International Society of Sports Nutrition position stand on nutrient timing contains citations 101-109, which focus on the roles of insulin, amino acids, and protein supplementation timing in regulating muscle protein synthesis and adaptation following resistance exercise.",
+      "text_sha256": "522b60b17899acfb869f72dd8fe77c68f7323f3372f8b0d17566d648d247f024",
+      "window_index": 6
+    },
+    "6ffddf1750c0dfdd70162875eb77560a8490e6b81856ec9115591eb31d4eccb3": {
+      "context": "This chunk appears in the \"Resistance training\" section of an ISSN nutrient timing position stand and presents early research comparing the effects of protein ingestion timing (before versus after resistance exercise) on muscle protein synthesis rates, muscle fiber size, and training adaptations, citing studies by Tipton, Andersen, and Hoffman.",
+      "text_sha256": "ff7f4ce4d889519c2ea7f944f33f4d8e7b05cb87592ab62dfdc9352e228ddb56",
+      "window_index": 3
+    },
+    "76cb942729bf3446bcd11d48da50a2ee6e6a3fd61384031972300dd8d4d4e257": {
+      "context": "This chunk is from the \"Endurance training\" section under the \"Carbohydrate + protein combinations\" subsection of a nutrient timing review article. It discusses pre-exercise and post-exercise ingestion strategies combining carbohydrate and protein for endurance athletes, presenting research findings on how these combinations affect exercise performance, glycogen recovery, and muscle damage.",
+      "text_sha256": "d78ccbbe915a90d87d95ebfea7c51c5b87f2ba5e70bed9e4261848d95d2c0397",
+      "window_index": 1
+    },
+    "78024a86a966fcc7f0e70e6ee893556acc311fed7228c5d6db678dc7ca14d6e3": {
+      "context": "This chunk is from the \"Resistance exercise\" section of an article on nutrient timing, specifically discussing acute studies examining the effects of consuming carbohydrate and protein or essential amino acids (EAA) during resistance training sessions. The chunk presents findings from multiple studies by Bird and colleagues and Beelen and colleagues that measured acute performance, hormonal responses, muscle damage markers, and muscle protein synthesis rates.",
+      "text_sha256": "608dd68ff55e363e9d6a91927941b6d0b7b9d02efa5af30c62db89e1f93a8c84",
+      "window_index": 2
+    },
+    "7d4e827909b3b2379aa2b22f94927e9e078d795e74a0d309e12226c3d4ac18c7": {
+      "context": "This chunk is part of the References section of a document on nutrient timing in sports nutrition. It contains citations 12-24, which include studies on iron supplementation and exercise, caffeine timing, creatine supplementation, protein timing around resistance training, carbohydrate intake during exercise, and nutritional strategies for athletic performance.",
+      "text_sha256": "a9dad73ad1ed05f8d45f73a04bd425d7bb7c47f643ee0abea3dae160234845f9",
+      "window_index": 6
+    },
+    "7de942542b7bde381575dba8268a788267cb25acc0990c99fb0d16d6451d3154": {
+      "context": "This chunk is from the \"Timing and distribution of meals - time of day considerations\" section of an ISSN nutrient timing position stand. It discusses research on how the timing of caloric intake throughout the day affects weight loss and body composition, including studies by Keim and colleagues and observational research on meal timing patterns in free-living populations.",
+      "text_sha256": "5c074ff72963223764b0129cacbc78de9c040a8f4416faf42e455c2da69a8b9a",
+      "window_index": 3
+    },
+    "7fdcbd4240254774bb90da796eb7b9f884ffca81e1b9f9697657bfb578b0a069": {
+      "context": "This chunk is from the \"Timing and distribution of protein feeding\" section of an ISSN (International Society of Sports Nutrition) position stand on nutrient timing. It presents research by Moore and colleagues examining how different patterns of protein ingestion affect muscle protein synthesis (MPS) rates and protein turnover following resistance exercise, concluding that intermediate-sized 20-gram doses consumed every 3 hours produce the most favorable protein synthesis responses.",
+      "text_sha256": "5722bb31d4aa42723d0c41d7e1d644b50af49b6898058ea6847a48e86fe1e73d",
+      "window_index": 4
+    },
+    "81d700711f662fb2559e373585c367cb6376ce1ce3a2696ccdff021f189cab76": {
+      "context": "This chunk appears in the \"Availability of data and materials\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing, indicating that no supplementary datasets or materials are available for this review article.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 4
+    },
+    "835e796a1dce709381a715459a419188951c4d88dfb58a5afe44625c5c4a7624": {
+      "context": "This is the author details section from a document on nutrient timing, listing the institutional affiliations of 18 contributing authors from exercise science, nutrition, and health performance laboratories across universities in the United States and South Africa.",
+      "text_sha256": "3f5e25d9a54907499a34525facbf443506987aa8184c3a18f25c7ef74d09e5f4",
+      "window_index": 5
+    },
+    "8987404c523d07ed79a6a0f5b6e9af81313a8a668e3c9c37880d3e38d8359b71": {
+      "context": "This chunk is from the \"Resistance training\" section of an ISSN nutrient timing document. It discusses protein timing around resistance exercise, specifically examining post-exercise protein administration and comparing studies that administered protein both before and after workouts versus those using protein during exercise, with emphasis on how protein dose and participant characteristics affect training adaptations.",
+      "text_sha256": "666bfe0453eab95232c8585fa16474759b4174fe33d9052071eef5af9888252d",
+      "window_index": 3
+    },
+    "8b85aa9f3d716f3e4f4d5909996422bc3ebe0efeeb69a1f82159853ac51b90e5": {
+      "context": "This chunk is from a scientific review on nutrient timing strategies, specifically from the \"Resistance training\" section that follows an extensive discussion of carbohydrate timing for endurance training. The chunk summarizes findings on carbohydrate administration timing in resistance exercise and concludes with a comprehensive review of all carbohydrate timing recommendations across different exercise types.",
+      "text_sha256": "01274bc440be68728f1ad3ca307670b4d935522c42ba3373f072a1c0f5d948c7",
+      "window_index": 1
+    },
+    "8bd1db863bffd047bafe10c6b63e35c136fad1a7e6b87d639a010a13c18cd377": {
+      "context": "This concluding statement appears at the end of the \"Meal frequency\" section of an ISSN nutrient timing position stand. It acknowledges that while the section focused on meal frequency's effects on weight loss and body composition, other physiological outcomes related to meal frequency exist but fall outside the scope of this document, and directs readers to a separate ISSN position stand on meal frequency for additional information.",
+      "text_sha256": "da1c96b4a48e1157b7b28d5af6929765842e6e87afcacc2ce837393824aa4bb6",
+      "window_index": 3
+    },
+    "8bf549d360bfb40aa9eb2ff5cefce00d27430bcc3bf219408c27f656bc167653": {
+      "context": "This is the author list for the International Society of Sports Nutrition (ISSN) position statement on nutrient timing, which provides evidence-based recommendations regarding the timing of macronutrients for exercise performance and body composition in healthy, exercising adults and highly trained individuals.",
+      "text_sha256": "73e5f3c5a36b386814d75085658840f7c6a31ce6936030a6e6355e4262445c19",
+      "window_index": 0
+    },
+    "91f46a3e6854033b94631b318049b0c02d319f9b80c0d1ae9eec2837d77204c0": {
+      "context": "This section is part of the References list from a document on nutrient timing in sports nutrition. References 79-89 focus on studies examining the effects of carbohydrate-protein supplementation on exercise performance, muscle recovery, and muscle damage across various exercise modalities including cycling, endurance exercise, and resistance training.",
+      "text_sha256": "e9e2022f78f6e5cad56feda55c6d61cd206e0353d00de9324af0e6b9f22616ca",
+      "window_index": 6
+    },
+    "96ef99054bba0bbbfd6639ef0f17312ba55ee6cbfc326c46d6ba4622df7bd017": {
+      "context": "This chunk appears in the \"Endurance training\" section of a nutrient timing review article, specifically addressing carbohydrate timing strategies for intermittent sports and post-exercise recovery. It discusses research on carbohydrate administration during intermittent team-sport activities and presents landmark findings on post-exercise carbohydrate ingestion timing for muscle glycogen restoration, including the seminal work by Ivy and colleagues on optimal timing windows for carbohydrate feeding after exercise.",
+      "text_sha256": "3003e2df3bb40e12b086b71d7fbda956bdae315045b3055dc14a66a3dfb55c9c",
+      "window_index": 1
+    },
+    "977908a612464347d817fd22a98e513d5bdf7983d2e982f68554c458aaf2522d": {
+      "context": "This chunk appears in the \"Authors' contributions\" section of a scientific review article on nutrient timing published by the International Society of Sports Nutrition (ISSN). It describes the roles of the manuscript's authors in preparing and reviewing the document.",
+      "text_sha256": "d09712cc4381bb3f79e8e2835b7f33d1f9f6f8179fc9c3a6cf933754b80c4f48",
+      "window_index": 4
+    },
+    "98d1c65daf1f42e2dd1d3e8addab19989337e92c9b8d63b18fc2e23ccfed0d14": {
+      "context": "This chunk appears in the \"Endurance training\" section of a nutrient timing review article, specifically within the subsection discussing post-exercise carbohydrate ingestion and muscle glycogen recovery. It summarizes key findings about when timed carbohydrate ingestion is most important versus when daily total carbohydrate intake becomes the primary consideration for glycogen restoration in endurance athletes.",
+      "text_sha256": "3709ee195a40597965361c6500e450208230c553d8a6b0a4e83c6e8ef2ff14a9",
+      "window_index": 1
+    },
+    "9b7caab3cc5358f3cf63617f0e4821d2337371feb6c30c4ea54f98f27444f15e": {
+      "context": "This chunk is from the \"Resistance training\" section of an ISSN nutrient timing document, specifically discussing post-exercise protein timing studies. It examines research comparing the effects of consuming protein immediately after resistance exercise versus delayed consumption, including work by Tipton, Esmarck, and Schoenfeld on muscle protein synthesis (MPS) rates, strength gains, and muscle hypertrophy in response to different protein ingestion timing protocols.",
+      "text_sha256": "1c4748f91dcff5ee19fe3202ba01098858032d5777120f57d5939a0d350ab1be",
+      "window_index": 3
+    },
+    "9df4734f92479c55bb25e79f4b354e5f2e5c4a1ad925e3b5946dff5bd15e1004": {
+      "context": "This chunk is from the \"Endurance training\" section of a nutrient timing review article, specifically addressing carbohydrate delivery during the exercise bout itself. It discusses research on the timing and frequency of carbohydrate feedings during continuous aerobic exercise and presents conflicting findings about whether the pattern of carbohydrate administration affects endurance performance.",
+      "text_sha256": "ae492c07055111b07b68db3caa593d23a1c17723ce4af01e6ab9ba9a64376c48",
+      "window_index": 1
+    },
+    "9e7e432756a71f88af3afc44aa432b4c1fac247bd2cf744a815574857e4fedc4": {
+      "context": "This is the beginning of the References section from a document on nutrient timing in sports nutrition. The references cited here cover foundational research on nutrient timing, muscle glycogen synthesis, protein supplementation, and mineral supplementation (calcium and iron) in relation to exercise performance and recovery.",
+      "text_sha256": "1305e0eed27cde32e1a3d9d06c1dc9a39ca85f2b96acd5cb496b6f8915a34a48",
+      "window_index": 6
+    },
+    "a43aa50a9c0acf58f2d40d5dd3e88a6cc39148e13d9d8662b43dd0e7cec54b2b": {
+      "context": "This chunk is from the \"Meal frequency\" section of an ISSN nutrient timing document. It reviews the definition of meal frequency as the number of daily feeding episodes and examines research on whether increasing meal frequency affects weight loss and body composition, comparing early epidemiological studies with more recent controlled experiments.",
+      "text_sha256": "01794b0f11c63185c1aaccd22b527d31e96d622bd74c143d920286dccc490824",
+      "window_index": 3
+    },
+    "a747bee9970770bdd852f2b955479f69fd6c4e41a585ae95d264647fea25b301": {
+      "context": "This chunk is from the \"Endurance training\" section of a document on nutrient timing strategies for athletic performance. It discusses pre-competition carbohydrate feeding recommendations in the final hours before endurance events, addressing concerns about rebound hypoglycemia and the timing of carbohydrate ingestion relative to exercise onset.",
+      "text_sha256": "e2a57b591eab8f0ee456405b5da512f2b262a2589af50630b67acb24b57b71c8",
+      "window_index": 1
+    },
+    "a7ca0668634e6142f19a12799840f22913f94017292ccab95d85efc6c340b661": {
+      "context": "This chunk is part of the References section of an article on nutrient timing in sports nutrition. It contains citations 30-42, which document research on carbohydrate intake timing, muscle glycogen utilization, and pre-exercise and post-exercise feeding strategies for endurance performance.",
+      "text_sha256": "fd82ed620e2b0df2a267bf0c1c5b72052c87467f6e7bedf3437e84c38c6dd9c1",
+      "window_index": 6
+    },
+    "a809b4cb489bd0c7890e5ef2d445a4fb53ee3e57236780acf9774f9fd5ac205f": {
+      "context": "This chunk is part of the References section of a document on nutrient timing in sports nutrition. References 110-118 cite studies examining the effects of protein supplementation timing on muscle adaptations, protein synthesis, and amino acid signaling in response to resistance exercise.",
+      "text_sha256": "2062e092f73f0c3918e35f8cbb3a751f4dac10ee72d9cd15292c510b701a0ecc",
+      "window_index": 6
+    },
+    "ad2f46b478ac4d1d2701d4565fc5eebccaec4314de163cbff09856516669269c": {
+      "context": "This chunk appears in the \"Resistance exercise\" section of a nutrient timing document and discusses the mechanisms and evidence regarding carbohydrate and protein supplementation during and after resistance training. It explains how insulin affects muscle protein synthesis (MPS), presents research findings on whether adding carbohydrate to protein provides additional benefits, and concludes with summary recommendations about nutrient timing for different athlete populations engaged in resistance and endurance training.",
+      "text_sha256": "70a3eb08ea0c7a3fc439e361fd09538ba4b28682199182f8b01a6d9e8a5dd936",
+      "window_index": 2
+    },
+    "ae8cb4d53d4135c6d52d7fc79df17e22aae6afe17f3e8e327b314091b6125cde": {
+      "context": "This statement appears in the Publisher's Note section at the end of the ISSN nutrient timing position stand document, serving as a standard disclaimer regarding the publisher's neutrality on jurisdictional matters related to the published research on nutrient timing and sports nutrition.",
+      "text_sha256": "e23de2474afa8657899fd15dffc7f7d06b7a72343c3a6c58c795a9da5cb9e548",
+      "window_index": 4
+    },
+    "b429314ca6b08cd463296ac9f5a52691bf0692feac4a1a92acef4e9f3735345e": {
+      "context": "This chunk comprises references 141-150 from the References section of a document on nutrient timing in sports nutrition. These citations cover studies on meal frequency effects on weight loss and body composition, muscle hypertrophy, and the timing and distribution of protein intake during exercise recovery.",
+      "text_sha256": "2208ad52dc83dcfe3efa47eaa491f182615c7a4a67e2f347c83b439563cdc586",
+      "window_index": 6
+    },
+    "b5958f696e51d9f1e69ea040f0230061d3c6ae0c3011fb96f506a56c0316a89d": {
+      "context": "This chunk is from the Carbohydrate section of the ISSN nutrient timing position statement, which provides evidence-based recommendations on macronutrient timing for exercising adults. It discusses the critical role of glycogen stores during moderate to high-intensity exercise, recommended daily carbohydrate intake levels (5-12 g/kg/day), and considerations for different athlete populations including sex differences and sport-specific needs.",
+      "text_sha256": "c01a2948097d85390abb0be65cf73bbe4b11a8d8c23ade8a8a6ba228b2c21208",
+      "window_index": 0
+    },
+    "b65bb9624bdd24e4097be89639ffbb219d4e4df5e0ea0832e6245856301b8808": {
+      "context": "This chunk appears in the \"Endurance training\" section under \"Carbohydrate + protein combinations\" in a nutrient timing document. It discusses conflicting research findings on whether adding protein to carbohydrate enhances post-exercise muscle glycogen recovery, concluding that protein benefits glycogen resynthesis only when carbohydrate intake is below 1.2 g/kg/h.",
+      "text_sha256": "5d88494850e6db7a31fa2a0fd4bb9b24e4fb42579cfdd0222fdc363be91e2159",
+      "window_index": 1
+    },
+    "bba1f1d1d59148f77f601449a6b4afad7fe9723529d02cd4b90a53cc66eda042": {
+      "context": "This chunk is from the \"Resistance exercise\" section of a nutrient timing review article, specifically discussing chronic studies that examine the long-term effects of carbohydrate and protein supplementation combined with resistance training over weeks to months. The chunk compares findings from multiple studies including Bird et al., Hulmi and colleagues, and Cribb and Hayes regarding how nutrient timing and composition affect muscle fiber development, strength gains, and resistance training adaptations.",
+      "text_sha256": "9cb19fad6d58d820793d9ada1a33d9adf5d9a211eeb3827460549a2ee47bb6bd",
+      "window_index": 2
+    },
+    "c05d830adcc5471fab425b84d21147f6aed2de0b063ca7227df9a2077218e845": {
+      "context": "This chunk is from the \"Resistance exercise\" section of a document on nutrient timing, specifically examining studies on carbohydrate and protein ingestion before and around resistance training sessions. It discusses early research by Kraemer, Baty, Tipton, Fujita, and White on how pre-exercise and post-exercise nutrient timing affects muscle protein synthesis (MPS) rates, exercise performance, and muscle damage markers during resistance training.",
+      "text_sha256": "154e0ba23bcad01c4e75c916418d112feea52213a3d7730c1c7b8ee57f0d447b",
+      "window_index": 2
+    },
+    "c37bf8c1aa1216d6574f0abec2793e9f7086baed5cd992c5a8aaa5ce46b6676e": {
+      "context": "This chunk is part of the References section of an International Society of Sports Nutrition position stand on nutrient timing. References 55-66 focus on carbohydrate ingestion timing and dosage during and after exercise, covering topics such as endurance performance in cyclists, carbohydrate supplementation effects on glycogen resynthesis, and inflammatory responses to exercise with varying carbohydrate intake patterns.",
+      "text_sha256": "8068408f50c7d4f0e5a3bd98cef926fad24db4a054d02f4ab49205876803fa56",
+      "window_index": 6
+    },
+    "ce544da90e35df54dffb418ac68afca29b254d41f249f40929a4d738a864a7f9": {
+      "context": "This chunk contains references 67-78 from the References section of an International Society of Sports Nutrition position stand on nutrient timing. These citations document research on carbohydrate supplementation during and after exercise, including studies on intermittent running recovery, muscle glycogen resynthesis following resistance exercise, and the effects of carbohydrate-protein supplements on endurance performance and muscle damage.",
+      "text_sha256": "a7c60b629f0fe2bd250b108db83e18fdbe723f9f9778cd3a07af958328627e68",
+      "window_index": 6
+    },
+    "ce84f9bd1c7c8bd16978e850db06529b544803f292d4a5d83f7f2a8d9aa48693": {
+      "context": "This section from the References of an International Society of Sports Nutrition position stand on nutrient timing includes citations 130-140, which address meal timing, meal frequency, and their effects on weight loss, body composition, and metabolic parameters in humans and animals.",
+      "text_sha256": "70cb73d00890ba3bbf35d0c5f9ec3903935f07c45a8e74800aa0616a3a3198f3",
+      "window_index": 6
+    },
+    "d7304e2c9131a29fbb13ec0cc45337698c2c7875db011e18cd356c06a2c0d8c3": {
+      "context": "This chunk contains references 173-175 from the References section of a document on nutrient timing, specifically focusing on studies examining the effects of protein timing and supplementation on muscle adaptation, body composition, and cardiovascular outcomes in exercise and training contexts.",
+      "text_sha256": "e9440d71802cfa9f9b9490bb2af98d7df7568d96dac86ba7df4f4456e885b3b4",
+      "window_index": 7
+    },
+    "e3d2f64be731a0b6b1bb72625bad58d42cca8eaa7f5ab66015d1a2506f64c1c9": {
+      "context": "This chunk is from the Conclusions section of an ISSN (International Society of Sports Nutrition) position paper on nutrient timing. It synthesizes key takeaways about nutrient timing research, emphasizing that findings require appropriate context due to individual factors, that most research needs further investigation, and that the ISSN recommends practical application of nutrient timing strategies when they offer potential benefits without harm.",
+      "text_sha256": "106db8586b9554a17d516c9b8c1754585709a8831f993bb21523206016bf7e18",
+      "window_index": 4
+    },
+    "e797bc4e996a39159e96416b2d3e8cf9b65ce619efe6210fe83af689201889ec": {
+      "context": "This chunk is part of the References section of a document on nutrient timing in sports nutrition. References 25-29 focus on studies examining the effects of protein and carbohydrate coingestion during recovery from endurance exercise, muscle glycogen resynthesis, substrate utilization during exercise, and sex-based differences in glucose metabolism during endurance activities.",
+      "text_sha256": "81f8aeb9c0a855a4af6f9512a951b2792dadfbf3daa212137127baf9d69a92fc",
+      "window_index": 6
+    },
+    "ea8ef2411dd10256dbf348a9d4204769b53459bcc9900b4f11bde37ca54cc964": {
+      "context": "This chunk is from the \"Endurance training\" section of a nutrient timing review article, specifically discussing carbohydrate delivery during exercise. It presents key studies examining how carbohydrate feeding timing and dosage during prolonged endurance exercise affects performance and glycogen utilization, including research by Widrick et al., Febbraio and colleagues, Newell et al., and reviews by Colombani et al. and Pochmuller et al.",
+      "text_sha256": "b5cc2cc57c2a6d06318c141e14938f7d880c81d10ab32ebc0e7cafdf96383401",
+      "window_index": 1
+    },
+    "f497680063dcef3bcdf310854f1fb3c674dc48e3e934914f47daa479ae5da18c": {
+      "context": "This chunk is from the \"Pre-sleep protein intake\" section of an International Society of Sports Nutrition (ISSN) position stand on nutrient timing. It discusses research findings on the effects of consuming protein 30 minutes before sleep on muscle protein synthesis (MPS), metabolic rate, fat oxidation, and insulin response in various populations.",
+      "text_sha256": "2d3cf2d3547759e539caec6eea74533e83d159f01f8a1e2d26ddbad76619d50d",
+      "window_index": 4
+    },
+    "f9b76dd0022af6f3536a6f494e00784c9b232904d7d5ca88bb955a4f9fff7899": {
+      "context": "This chunk appears in the \"Practical applications\" section of an International Society of Sports Nutrition (ISSN) position paper on nutrient timing. It provides the first set of evidence-based recommendations regarding carbohydrate and energy intake timing strategies for athletes, covering prolonged exercise, high-intensity exercise, glycogen replenishment, and protein-carbohydrate combinations.",
+      "text_sha256": "1ca408881880bbd0ae1ca418642580c6baab921ba49293337340b5621320ab75",
+      "window_index": 4
+    },
+    "fde1d469644aeb9ec26bcdd47d03ed14bb3453a429ae4323c18c68217f68cc46": {
+      "context": "This chunk is part of the References section of a document on nutrient timing in sports nutrition. It contains citations 43-54, which are scientific studies examining the effects of carbohydrate timing and intake on exercise performance, muscle glycogen metabolism, and glucose kinetics during various types of physical activity.",
+      "text_sha256": "c14fe369ab71e29043c2c9c27bfaf9d8f4c11c4d1db35f0d5ecf56f3bc4c48c5",
+      "window_index": 6
+    }
+  },
+  "doc_id": "issn-nutrient-timing",
+  "generated_at": "2026-08-31T19:19:49Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,203 @@
+{
+  "contexts": {
+    "0da327bd1c422966a719eef6bae918a71470613669ae52aa53d0a3f98cc9bd1f": {
+      "context": "This chunk contains the final two references (citations 68-69) from the References section of a 2024 systematic review and meta-analysis on dose-response relationships in strength and conditioning by Swinton, Schoenfeld, and Murphy. Reference 68 addresses plyometric training variables for vertical jump performance, while reference 69 examines resistance training effects on strength and hypertrophy in women.",
+      "text_sha256": "f3a2afad62a2485e80c210e6bbdf6b09b95075c29a734d0790465096dfa64b40",
+      "window_index": 3
+    },
+    "11051a9740ae0cb9062c2b2a3d884fc61639448a9f056d0f443f8114e3e4a45a": {
+      "context": "This chunk appears in Section 2.1 (Overview of Meta-analysis) of the Swinton et al. 2024 meta-analysis on dose-response relationships in resistance exercise. It describes the methodological approach used to conduct the meta-analysis, including the database composition, inclusion criteria for resistance-only or resistance-dominant interventions, effect size calculations, and the hierarchical modeling framework employed to analyze training dose effects across multiple outcome domains in strength and conditioning.",
+      "text_sha256": "ef1e925529be5bfcfa58db01ef7f6f013a401dd8bb73cacd65df81a980c27b47",
+      "window_index": 0
+    },
+    "159eafeb2d798992c41fbf81c768d1c66d143e6c30ed0d5f659bbc6789ed24a2": {
+      "context": "This chunk from the Discussion section of a meta-analysis on dose-response relationships in resistance training examines how different load intensities (expressed as percentage of 1-repetition maximum or %1RM) affect various physical performance outcomes. It specifically compares the dose-response profiles for sprint performance, jump performance, and power production, explaining why optimal loading differs by outcome domain and providing practical recommendations for practitioners selecting appropriate loads for specific training goals.",
+      "text_sha256": "6687c6bcff39168974a993a4b8cf27b7dbb67a4f75dd559dffd7e3676cc31ada",
+      "window_index": 2
+    },
+    "1af6a0e04e0564510ccf21cff7594f2fd1a5780a98346133576249fb7cbd4faf": {
+      "context": "This chunk is from the References section of a systematic review and meta-analysis on dose-response relationships in resistance training, authored by Swinton, Schoenfeld, and Murphy. References 16 and 17 are cited studies examining the effects of resistance training frequency on muscle hypertrophy and strength development in various populations.",
+      "text_sha256": "427fcf12407114fbd81263f45e1659e2ea8db8b4ffc4fc328151c6a69ff0e2ed",
+      "window_index": 3
+    },
+    "2a278d93d26c07416213f56b58f0dcea21f4ac7febb4094eb08b0d22a6f9c93e": {
+      "context": "This chunk comprises references 9-15 from the References section of a 2024 systematic review and meta-analysis on dose-response relationships in resistance training by Swinton, Schoenfeld, and Murphy. These citations document key meta-analytic studies examining resistance training variables including training volume, frequency, and load intensity on strength and muscle mass outcomes.",
+      "text_sha256": "ad402fbd76bc9cc8e9d027f92303c7bd974ce901c388d4df219bee52547922ed",
+      "window_index": 3
+    },
+    "2ecc817819218106409c04608c2dce54113594051b957d00170de4598fdb4331": {
+      "context": "This chunk is from section 3.4 (Level 3 Predictors) of a dose-response meta-analysis examining resistance training interventions. It presents the analysis of outcome domain as the only level 3 predictor, comparing effect sizes across different performance measures (strength, change of direction, jump, power, and sprint) and demonstrating improved model performance when outcome domain is included alongside time as a predictor.",
+      "text_sha256": "87a6887916094c9af343b1b86f97fc8e0c9756cdde913d626a74ee4fc81e1dd4",
+      "window_index": 1
+    },
+    "33cf4e0cc7dc7ac0d899bb30f86fee7f91424fc58d3a72e91ef4e82e0ada1c99": {
+      "context": "This chunk contains references 50-56 from the References section of a 2024 dose-response review article by Swinton, Schoenfeld, and Murphy. These citations cover literature on change of direction ability, agility testing, strength training load prescription, velocity-based training feedback, plyometric exercise intensity, and muscle activation patterns during resistance training.",
+      "text_sha256": "1c6ae3b7fb1c69f07825b17fbad1213bb46bb6033becccc383900bff730855b2",
+      "window_index": 3
+    },
+    "3538eb2ac14a02dd566d6ca6e1f64a576a609b6e55a4427b353d224df97adb62": {
+      "context": "This table appears in Section 2.3 (Inclusion Criteria and Data Extraction) of the Swinton et al. 2024 meta-analysis on dose-response modelling of resistance exercise. It defines the standardized criteria used to categorize overall intensity and volume for each training mode (resistance training, plyometric, ballistic, sprint, change of direction, and combined training) included in the meta-analysis, which analyzed 295 studies examining relationships between training variables and improvements across outcome domains in strength and conditioning.",
+      "text_sha256": "3ff591603a6dab3698ab0e38e8d7ae862934d3da7cf82330493f9ac9a8c90ed5",
+      "window_index": 0
+    },
+    "3bfeac510d077245a940b9f3df8e2ba288ea252868ca84778c96bc389540254c": {
+      "context": "This chunk contains references 43-49 from the References section of a systematic review and meta-analysis on dose-response relationships in strength and conditioning by Swinton, Schoenfeld, and Murphy. These citations support research on sprint performance, strength training, and biomechanical factors related to athletic performance, including studies on force application, maximal strength, squat training, and resisted sled training effects.",
+      "text_sha256": "c3afab309c74409a6ba1dc9c0825797d3d6d3f176c1790b4ec0c20ab9bd8ee22",
+      "window_index": 3
+    },
+    "49f1a9a0c09d8ad2b8cb9cb825a62f79ca4569bcd8b816c7725659ecf4e9c0ed": {
+      "context": "This chunk is from the References section of \"Dose-Response\" by Swinton, Schoenfeld, and Murphy, containing citations 17-26 that support the systematic review and meta-analysis methodology. The references include key works on resistance training frequency and dose-response relationships, as well as statistical methods and software tools used for the meta-analytic analysis, including Bayesian modeling approaches and effect size estimation techniques.",
+      "text_sha256": "e128f46de2484b9bc89377295bf7c0736b988534d0e8008e35c81da4e188dcfe",
+      "window_index": 3
+    },
+    "5a843c2e5a77ea5a8a0830119812fd9acb696b372f8baecae8339c3f5b80be07": {
+      "context": "This chunk from the Declarations section of the Swinton et al. 2024 dose-response review article discloses conflicts of interest, funding sources, author contributions, and open access licensing information for the systematic review and meta-analysis examining resistance training dose-response relationships.",
+      "text_sha256": "d858b9575e32e447eb76aca208c1a88ea202c894527e7b2d83fa3b73590b2c67",
+      "window_index": 3
+    },
+    "6be04cab79c99a0a4d3a3174a498423a532962fb0e79432b4fe2206f9eaa2330": {
+      "context": "This chunk contains author affiliation information and the final references (61-67) from the References section of the Swinton et al. 2024 dose-response review article. The author affiliations identify Paul Alan Swinton as corresponding author at Robert Gordon University, Brad J. Schoenfeld at CUNY Lehman College, and Andrew Murphy at Greater Western Sydney Giants. The references cited cover topics including power training, resistance training methods, and sex differences in athletic performance.",
+      "text_sha256": "2783ae9b3117460fb2ff20a0f4c5bee43fcae98f65b96078feb5a91fda794980",
+      "window_index": 3
+    },
+    "6c68148bb894f1dbafc13d40d57bd328d66484506a822a97e5aea01dc345ceab": {
+      "context": "This chunk contains references 35-42 from the References section of a 2024 systematic review and meta-analysis on dose-response relationships in strength and conditioning by Swinton, Schoenfeld, and Murphy. The references cover studies on countermovement jump mechanics, sprint performance training in athletes, mechanical determinants of sprinting, and training transfer principles relevant to the review's examination of resistance training interventions.",
+      "text_sha256": "24de9ad70b08671c2c091e83e832f2f2d29cdd78c43f64f0c40dddf74704a92c",
+      "window_index": 3
+    },
+    "6cb5c7ce163728e08d7d4de5babe9806dcff037b5be520d36f944dbe6ba565b4": {
+      "context": "This chunk from the Discussion section of a meta-analysis on dose-response relationships in resistance exercise examines the influence of training frequency, volume, and participant training status on physical performance outcomes. It presents findings on sets per session, repetitions, and training status categories, comparing results to previous meta-analyses in strength and conditioning research.",
+      "text_sha256": "2ae34e92d017fbe8a5d05963d141d13586243b15447ac2b65a0609226e7c896a",
+      "window_index": 2
+    },
+    "6e8cc5a0e3e2869499100141599e4dfc18ce639ff14c1b4354a0b266fad1485c": {
+      "context": "This is the abstract section of \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning: A Meta-analysis\" by Swinton, Schoenfeld, and Murphy (2024). The abstract summarizes the background, objectives, methods, results, and conclusions of a meta-analysis examining how resistance training variables (frequency, volume, intensity) affect multiple performance outcomes including strength, power, jumping, change of direction, and sprinting across 295 studies with 6,710 participants.",
+      "text_sha256": "9b554f7516c5a4851604d46813516431144d68df6d10a25e8a03aec289d01165",
+      "window_index": 0
+    },
+    "73c98224723f0b7e0c641c98b5c2523bb5e50e3a90372b7428f6f977d6268db2": {
+      "context": "This section from the Discussion of a meta-analysis on dose-response relationships in resistance exercise examines sex differences in training responses and identifies limitations of the study. It discusses findings regarding male versus female adaptations to resistance training, notes the underrepresentation of female participants in strength and conditioning research, and outlines methodological constraints of the meta-analysis including challenges in quantifying training variables across heterogeneous interventions.",
+      "text_sha256": "3f37c37d1023bab762ea0ea3eb7260c10c192230b3caf9dcff2cb061c95e394d",
+      "window_index": 2
+    },
+    "7bce1f52f3995b5d23632fd22e518c0e1c64a9bf6d3034888a8d5ee81c9e3551": {
+      "context": "This is the author and publication information for the meta-analysis titled \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning: A Meta-analysis\" by Swinton, Schoenfeld, and Murphy, which investigates dose-response relationships between resistance training variables and outcomes including strength, power, and athletic performance.",
+      "text_sha256": "a77f420a79ee58000b56d1525a25efcd89a07e068828ee1efdf59a1ddf995894",
+      "window_index": 0
+    },
+    "848e23e71e6a73e1cdf017c25a88fcd56ef5bf93b52b5ee8e57e4e5dfe51c101": {
+      "context": "This chunk appears in the Introduction section of the meta-analysis paper \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning\" by Swinton et al. (2024). It establishes the foundational importance of resistance exercise in strength and conditioning practice and introduces the concept of training specificity, which is central to the paper's investigation of dose-response relationships across different outcome domains.",
+      "text_sha256": "92b3f65bd37f98606a5eb8312d56779ea3d8473bf9902d761a7cd63ed9811966",
+      "window_index": 0
+    },
+    "881d488a7859f43bbb58aa7d0e46f7db50866bb2d9ee87ac1529ea1700e1adde": {
+      "context": "This chunk is from Table 3 in the \"pmc-swinton-2024-dose-response\" document, which presents the best performing models at each stage of analysis for resistance-only training interventions. The table displays model parameters including ELPD-LOO values, standard deviations across hierarchical levels, and additional included variables at stages 2+3+4 and 2+3*4, along with accompanying text discussing model performance and the final best performing model that includes average number of sets per session and smoothed intensity of load.",
+      "text_sha256": "b17bce128a90c4f0cced5d1831ed9732a696b336df7c5b942beedf8b1ffd1b3d",
+      "window_index": 1
+    },
+    "8a3445bc5fe866c3803b5e771fd3e51c0d379c789cf318fe58835d6ecc83c91f": {
+      "context": "This section from the Discussion of a 2024 meta-analysis on dose-response relationships in resistance exercise compares effect sizes across different outcome domains in strength and conditioning (S&C). It explains why maximum strength showed the greatest improvements while sprint performance showed the lowest, discussing factors like testing specificity, training methods, and the complexity of sprinting movements.",
+      "text_sha256": "37f94d7287fabc84dcb2fa407a3e2640917244686516b65c24e5e44a8aa2d5b9",
+      "window_index": 2
+    },
+    "929c92acae36b304c7a896d8ce1f520ac18c93985c208c5daf172cf0552186f4": {
+      "context": "Section 3.5 (Level 4 Predictors) of a dose-response meta-analysis examining resistance training interventions. This section evaluates how training variables including volume, intensity, session frequency, exercise count, repetitions, and sets affect effect sizes on athletic performance outcomes, using ELPD-LOO model comparison to assess predictive performance.",
+      "text_sha256": "701e3810b03f20028a4aea8cb1823eb67d88490f41f5418d08e237df81e3fc83",
+      "window_index": 1
+    },
+    "94c555620da9b3ea90c7acdfa072f18e05056b94c43c5a4de705183c35b963d6": {
+      "context": "This chunk is the Conclusion section (Section 5) of a meta-analysis on dose-response relationships between resistance exercise and physical performance outcomes in strength and conditioning (S&C) research. It summarizes the main findings regarding how intervention duration, training intensity, load magnitude (%1RM), and outcome domains (strength, jump performance, power, sprinting) influence the effectiveness of resistance training.",
+      "text_sha256": "654a93878f802fdb61c3e10f2f94345a08a3583ccda289c14067f10b99961a22",
+      "window_index": 2
+    },
+    "9a1176a6542e98e468d48721f3d5a9983b65f9d914cf43541ceb1d19eba992fe": {
+      "context": "This chunk is from the Discussion section of a meta-analysis on dose-response relationships between resistance exercise and physical performance in strength and conditioning (S&C). It presents the primary findings regarding factors influencing training outcomes, including intervention duration, outcome type, volume, and loading intensity, and introduces the analysis of intervention length as a key dose-response variable.",
+      "text_sha256": "23caaff6b9e591f04fd44f17d31f009b7e2139c4c7d3ba8a2ff681e915c245c3",
+      "window_index": 2
+    },
+    "a2824621e1792adb9918ebb94bbec0327d37f9f83ad100ad4d59afca4cf214e1": {
+      "context": "Section 3.3 of a dose-response meta-analysis examining resistance training interventions describes the analysis of Level 2 predictors, specifically time of measurement following baseline. The chunk presents findings on how intervention duration affects mean pooled effect sizes, with both binary and linear time predictors investigated, and reports model performance improvements that led to time being included as a continuous predictor in all subsequent analyses.",
+      "text_sha256": "256bd591aa34d4d5f138263076fbe678d0ef0e7499633f1f9197fd718eea05d9",
+      "window_index": 1
+    },
+    "a7038391d0fa9bcc96b3e78d0c16b6622dd07f0658834864d3f6b912c6434a7b": {
+      "context": "This chunk contains the first eight references from the References section of a systematic review and meta-analysis on dose-response relationships in strength and conditioning by Swinton, Schoenfeld, and Murphy. The references cover foundational literature on interpreting effect sizes in strength training, resistance training science, muscular strength development, and dose-response relationships for strength gains in athletes.",
+      "text_sha256": "033f36c2a3d7fc9d73144bea75029c8f170762bb15df4d86544ab13713b40a34",
+      "window_index": 3
+    },
+    "ab10d5875bd7fcd8c900731c8785c00076d4352751cbe08df81998df2e6a27f3": {
+      "context": "This chunk from the Introduction section of \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning: A Meta-analysis\" by Swinton et al. (2024) reviews previous meta-analytic research on dose-response relationships in strength and conditioning, including studies by Grgic et al., Ralston et al., Cuthbert et al., and Schoenfeld et al., before articulating the rationale and purpose of the current comprehensive meta-analysis investigating resistance training across multiple outcome domains.",
+      "text_sha256": "0ec0a3f007a0e37232c0dfb7632247645bf10080b1bf8f656222e2daa6344ffb",
+      "window_index": 0
+    },
+    "ad16600ad47749dc3547fa85ce9a0558cbb97d25b49514e34faa229a62dae0bc": {
+      "context": "This chunk appears in section 3.1 \"Descriptions of Data\" of the meta-analysis \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning\" by Swinton et al. (2024). It provides a comprehensive overview of the study sample characteristics, including the total number of studies, participants, and groups analyzed, their demographic breakdown by sex and training status, intervention duration, and the distribution of outcome measures across five domains: maximum strength, power, jump performance, sprint performance, and change of direction performance.",
+      "text_sha256": "10d275c41d66d1755f3396f8e3a5ae96a39a360088e98eff26f6836a934c8dde",
+      "window_index": 0
+    },
+    "b5fe26904e6743fd4f9b7744ddab71471a2e3866502506eba8fe6c4af3f2c020": {
+      "context": "This chunk from the Discussion section of a meta-analysis on dose-response relationships in resistance exercise examines change of direction (COD) and agility performance outcomes, and discusses how training intensity influences improvements across different physical performance domains in strength and conditioning research.",
+      "text_sha256": "1769a64ca9e47ced0650532bac1be59241f4668c3a5eca77194b48e238e3a06d",
+      "window_index": 2
+    },
+    "bbddca4bd08ea1b2f289d75f0bd8e4d640bc6da1627a61931c6619fd24a8d529": {
+      "context": "This chunk is part of the References section of \"Dose-Response Relationships in Strength and Conditioning\" by Swinton, Schoenfeld, and Murphy. References 27-34 include methodological sources on statistical analysis (outlier identification, Bayesian data analysis), strength training dose-response, and performance measurement techniques for countermovement jump and sprint assessments used in the systematic review and meta-analysis.",
+      "text_sha256": "a0fb87ba12ceb27248d9da97484a5ca9ace714297eac11d8d996772038f4f4f1",
+      "window_index": 3
+    },
+    "bf5a56409fb1c5fbffc483ba25f000680fdcc35b9f1faabe8d33cb3148b0a1fb": {
+      "context": "This chunk is from section 3.6 \"Cross-Level Interactions Between Levels 3 and 4\" of a dose-response meta-analysis examining resistance training effects on athletic performance outcomes. It reports findings on interactions between outcome domain (a Level 3 predictor) and training variables (Level 4 predictors), specifically testing whether the relationship between sets/intensity and performance differs across outcome domains like strength, jump, power, change of direction, and sprint.",
+      "text_sha256": "65cb11356e780358fb1a7255404ab49f4203afd7129aa40c0d6ad0499567da8a",
+      "window_index": 1
+    },
+    "bf702efa9af214dd9f60e81d41f1809a47b1c504e5930728c8225f6aa385c87d": {
+      "context": "This table presents the best performing multilevel models at each sequential stage of analysis for resistance-only training interventions, showing 197 studies with 1,876 outcomes. It is part of section 3.5 (Level 4 Predictors) and section 3.6 (Cross-Level Interactions) of a dose-response meta-analysis examining how training characteristics predict effect sizes across different outcome domains including strength, jump, power, change of direction (COD), and sprint performance.",
+      "text_sha256": "5c625961589930b1203ab86cfc680173df63526c0daf6a0ba1b9f34dbf39bef9",
+      "window_index": 1
+    },
+    "c78235cf614664dd41fadedebb1458b240cd094af6c8ce483bcb77836c26f055": {
+      "context": "Section 2.3 of the Swinton et al. 2024 meta-analysis on dose-response relationships in resistance exercise describes the inclusion criteria, data extraction procedures, and definitions used to categorize outcome domains and training variables for the meta-analysis of 295 studies examining resistance training effects on strength, power, jump performance, sprint performance, and change of direction performance.",
+      "text_sha256": "bbf9cbde1c006340fbb4f285173cad523df5f4920e533ec30857c64570c3b4bd",
+      "window_index": 0
+    },
+    "e0d757319e1c0de09cbda3c79a6035a4317e76aef5de71e9ae4044ec61063e78": {
+      "context": "This chunk presents the null model results from the meta-analysis examining dose-response relationships in resistance training. Section 3.2 reports the baseline statistical findings after outlier removal, showing the pooled mean effect size and between-study variability across all 295 studies included in the analysis.",
+      "text_sha256": "703f947f9922ec3c58fb041ffe4af8026a1c5a03a47eab1fff31cf5a37aa077b",
+      "window_index": 0
+    },
+    "e18a04bf6ae4e1a2f1af42d8413a4b7b21b745d34c4109333e8cbe66c0b3d64d": {
+      "context": "Section 2.2 (Search Strategy and Reporting) of the Swinton et al. 2024 meta-analysis on dose-response relationships in resistance exercise describes the database search strategy used to identify studies, including the electronic databases searched (Embase, Medline, Web of Science, SPORTDiscus, Google Scholar), hand-searched journals, Boolean search terms combining keywords related to training modes and outcome measures, and reporting guidelines followed (PRISMA 2020).",
+      "text_sha256": "fd7f285b5a901044fc94b5414b0a6c1818e8ee8dc47002a62003cddfd08a5574",
+      "window_index": 0
+    },
+    "e90a0b0b72d0c24b69516dd07e3a0dd9fdc6763271fab30db83681148ce8225c": {
+      "context": "This chunk appears in the Key Points section and Introduction of the Swinton et al. 2024 meta-analysis on dose-response relationships in resistance training. The Key Points summarize the main findings regarding intervention duration, training intensity, and outcome domains, while the Introduction section reviews prior research on dose-response relationships in strength and conditioning, including seminal work by Rhea and colleagues on training sets, intensity, and frequency effects across different participant populations.",
+      "text_sha256": "d4b79de7e9774059c1e751dfc830f0e4bd3f892c4edf21481bb55478fba7359e",
+      "window_index": 0
+    },
+    "ecb51860978885ea9f4331eaa93cda57ab17f5606a424c66171adee49f3523be": {
+      "context": "This chunk is from Section 2.4 (Statistical Analysis) of the meta-analysis \"Dose-Response Modelling of Resistance Exercise Across Outcome Domains in Strength and Conditioning\" by Swinton et al. (2024). It describes the methods used to calculate effect sizes, apply bias corrections for small sample sizes, construct nested four-level mixed-effects meta-analytic models with predictors at multiple levels, and compare candidate models using predictive accuracy metrics to investigate dose-response relationships in resistance training interventions.",
+      "text_sha256": "3ba716d33329c4b88711ec97c184356ded52e72e0a62ddfdca3f2faf75cf460d",
+      "window_index": 0
+    },
+    "edf7b521ccee8024b2dd14424c7924946b1fd9c364b46b9a1b112340a7d3b777": {
+      "context": "This chunk is from Table 2 in the \"pmc-swinton-2024-dose-response\" document, which presents the best performing models at each stage of analysis for resistance training interventions. The table displays model parameters and performance metrics (ELPD-LOO values) as predictors are sequentially added across hierarchical levels, comparing models with different combinations of variables including time, outcome domain, average number of sets, and intensity of load.",
+      "text_sha256": "c491a85f78b76581b8ba92e0a8628da6063ab358ab2fef38b9e0d5560bedcc5b",
+      "window_index": 1
+    },
+    "f4fd60bf5f970be1f953947720c944580c2d4b306fcea57e698e3922a59d44f5": {
+      "context": "This chunk contains references 57-60 from the References section of a 2024 systematic review and meta-analysis on dose-response relationships in strength and conditioning by Swinton, Schoenfeld, and Murphy. The references cited here relate to sprint training methods, sprint running mechanics, and jumping performance, which are key performance outcomes examined in the review's investigation of resistance training effects on athletic performance.",
+      "text_sha256": "700689e9da85c498df5e3d1ba1e6411d05dc3c1f778b9f9923a4a79101f93674",
+      "window_index": 3
+    },
+    "fa3f4e4536a634a0f9e1fef06e63d5ffadf3e74efa318edeb1e8124b135e4bba": {
+      "context": "Table 2 from the Swinton 2024 dose-response meta-analysis presents the best performing multilevel models at each sequential stage of analysis for the complete dataset of 291 studies with 3004 outcomes, including both resistance-only and resistance-dominant training interventions. The table displays model parameters and performance metrics (ELPD-LOO values) as predictors are progressively added across levels 2-4, starting with the null model and sequentially incorporating time, outcome domain, and training variables like sets and intensity of load.",
+      "text_sha256": "8d3527a1c0d2743aade41f06297e3bd6a25f14f5ecaa98dcaf61b4e9d1fe8396",
+      "window_index": 1
+    }
+  },
+  "doc_id": "pmc-swinton-2024-dose-response",
+  "generated_at": "2026-08-31T19:38:17Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

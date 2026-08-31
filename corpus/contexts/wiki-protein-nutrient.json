@@ -1,0 +1,273 @@
+{
+  "contexts": {
+    "03773b922358323ff708afd3bf65074c8453bf4bca5df2a53ef52f9c387dcc6e": {
+      "context": "This chunk appears in the Wikipedia article \"Protein (nutrient)\" and lists the available language versions of the article, showing that the content is available in 25 different languages including Arabic, Bengali, Catalan, Spanish, French, Hindi, Indonesian, Italian, and others.",
+      "text_sha256": "b930ab3f6c0ca47a7b9f65a30b7d274335a4f7ffd8f28da0bff28b4fc6750933",
+      "window_index": 0
+    },
+    "06209a505103afe1caf183392a79aefa557be333c240abf518404fb3c3fffd8d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). References 55 and 56 are citations supporting content about the health effects of protein intake, specifically regarding protein consumption and kidney disease, including studies on low protein diets for chronic kidney disease patients and comparisons of high versus normal/low protein diets on renal function.",
+      "text_sha256": "778fd84d95d0980d64e015a2ab8704e0178f11e934c481de437cfa11004845e2",
+      "window_index": 3
+    },
+    "0eab87f34c943c4c5389aa68283dc20b082451cbd2a6ac437c2d137f40442ff6": {
+      "context": "This chunk is from the \"Protein deficiency\" section of the Wikipedia article on Protein (nutrient). It describes protein-energy malnutrition (PEM), its causes, symptoms including kwashiorkor, and its prevalence globally and in industrialized countries.",
+      "text_sha256": "d5e02499e9b73a8bc0686c0c0a5438942cebeab52ebd27afeac6594f50dcecb4",
+      "window_index": 1
+    },
+    "1591456822d21a1056f12ed563d8831fdada3c5c2316cea9545e5deb0212290e": {
+      "context": "This section from the Wikipedia article on Protein (nutrient) discusses animal-based protein sources under the \"Sources\" section. It includes a table showing the environmental impact of farmed animal products relative to their contribution of calories and proteins, followed by examples of animal-based protein foods such as meat, dairy, eggs, fish, and cereals, along with specific cereal sources with protein concentrations greater than 7%.",
+      "text_sha256": "1eaf04439b118b1182cd75ca5f44462fec7cc60a4f7d36af499be450ade4510f",
+      "window_index": 0
+    },
+    "18938105521cc8704fb52c65f7ce7aa0b4b9877e4e1f309ff6955b273201e8cd": {
+      "context": "This chunk is from the \"Testing in foods\" section of the Wikipedia article on Protein (nutrient), specifically the \"True protein\" subsection. It explains the distinction between true protein and crude protein measurement methods used in the food industry, particularly in dairy, and describes various analytical techniques including amino acid analysis, near-infrared reflectance technology, and Kjeldahl methods for determining protein content in foods.",
+      "text_sha256": "2fecc96ecc7bf87552f053f8a82effe974a24b714df5ac6c80575f351790f2f6",
+      "window_index": 1
+    },
+    "1fd2161e90c548ddc2ae9a3406e6e91ff59680069ad9c79993cf9d1ec36a89ea": {
+      "context": "This chunk appears in the \"Digestion > Newborn\" section of the Wikipedia article on Protein (nutrient), explaining how newborn mammals differ from adults in their ability to digest and absorb proteins, specifically their capacity to absorb intact proteins for passive immunity transfer through milk.",
+      "text_sha256": "5a582380db3ed7fc9220ec189f6e15227a0c3f9a82379bda34caaa02404c5817",
+      "window_index": 1
+    },
+    "252db6e3fd6c26db7c27c886ac88b311e27a415b00875a36726edda6ff886ab0": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 8-10, which are academic sources supporting claims made elsewhere in the article about essential amino acids, amino acid metabolism, and protein foods in human health and nutrition.",
+      "text_sha256": "22d88509c43f225f36d5a54118de547b54a4668eb76e1bd42c36ceb1c8a01d54",
+      "window_index": 3
+    },
+    "308312c2779a53e620567881e347d6a918029bcd402d1d99266963b7d3462e29": {
+      "context": "This chunk is from the \"Dietary recommendations\" section of the Wikipedia article on Protein (nutrient). It presents the official US and Canadian Dietary Reference Intake guidelines for daily protein consumption, including Recommended Dietary Allowances (RDAs) for different age groups and actual consumption data from national surveys.",
+      "text_sha256": "cd47b86dfb23598c982129bf3b69b98618a097aaaf53780ae5e867176fe024a8",
+      "window_index": 1
+    },
+    "30af241281a97b11919a5021b49c724d42fadfc58b50d8d2cfae18d950be5e62": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 11 and 12, which are academic sources addressing plant-based protein sources and global protein supply requirements for populations, respectively.",
+      "text_sha256": "742c6d38d1b03d10f44e2d3ff128099e51916b59ecb6ba8b89709342c4bccbe3",
+      "window_index": 3
+    },
+    "35f0cdf5736506a75b9d58337cb719acb0e4910a76848248b24a890dc1f3d6b7": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 64-68 that support claims made elsewhere in the article, including references to the 2015-2020 Dietary Guidelines for Americans regarding protein food intake recommendations, information on protein deficiency diseases like marasmus and kwashiorkor, and sources on human nutrition and food culture.",
+      "text_sha256": "190a518069ffe64095eebf47f4bbf6c35c324acea55460f683c29a9c1e5ea452",
+      "window_index": 4
+    },
+    "38200e531077e72ee148f22b0b3f5b8482eb986764a4959184450a7c7dbe1038": {
+      "context": "This chunk is from the \"Digestion\" section of the Wikipedia article on Protein (nutrient). It describes the process by which proteins are broken down into amino acids and absorbed in the gastrointestinal tract, including the roles of digestive enzymes like pepsin, trypsin, and chymotrypsin, and explains how absorption rates vary depending on protein source.",
+      "text_sha256": "bd981f4e3713eeca7ce1c8ed6e83aa2a578f7bbace48d7877c051f7a89ac5989",
+      "window_index": 1
+    },
+    "3fa98f19fa727016703451e3f68940ef11b70d03e86996a739e524c4eda601ec": {
+      "context": "This color key appears in the Wikipedia article on Protein (nutrient) within the Sources section, specifically below a table comparing amino acid content across different protein sources including legumes, cereals, nuts, fruits, and animal products.",
+      "text_sha256": "b468a5ff8d3df59127b8c525d2f42db5c041e1bc7a2ae4adc0bbebbf05c13f95",
+      "window_index": 0
+    },
+    "42b5e8f58d3e7c66297dea6d26451c9bc39b6073bacd6b8c064bfee5e3b22005": {
+      "context": "This chunk is from the \"Protein quality\" section of the Wikipedia article on Protein (nutrient), which falls under the broader \"Testing in foods\" topic. It explains how protein quality is assessed based on amino acid composition and describes multiple rating systems including biological value, net protein utilization, and PDCAAS, which was adopted by the FDA and FAO/WHO in 1993 as the standard method for determining protein quality.",
+      "text_sha256": "ffa0ad0e9339ae30694585c436367cf96028f3ec6171f79fa6b1677731eccab8",
+      "window_index": 1
+    },
+    "478747bd3beef0dad1f48cb68952428a4b4645158049bda316cc0181ff831cb7": {
+      "context": "This chunk is from the \"Sources\" section (section 2) of the Wikipedia article on Protein (nutrient). It discusses the global distribution of protein sources, including plant-based and animal-derived foods, insects as protein sources in various regions, and manufactured protein powders, while noting that balanced diets do not require protein supplements.",
+      "text_sha256": "507b9d07748e780ab7cb2fee3e462b0a8ddef5b780f3baa4da0395bde3037090",
+      "window_index": 0
+    },
+    "494a6df0e261b8bd66c2ca550d37ba4ff1b3a60667a813e0a22c1ba851779c8e": {
+      "context": "This chunk is from the \"Active people\" subsection under \"Dietary recommendations\" in the Wikipedia article on Protein (nutrient). It discusses elevated protein intake requirements for athletes and active individuals compared to the standard 0.8 g/kg recommendation for sedentary people, providing specific intake ranges for different types of exercise.",
+      "text_sha256": "53b199a0749455c37a6cc9790f219af35139b08ae05b556b0c5d7b5bb220fc4e",
+      "window_index": 1
+    },
+    "506333d1a7b96904bdc48a686f8e7a4e2a1b66865fe803d59853392568d6e5ce": {
+      "context": "This chunk is from the \"Ruminant metabolizable protein\" section of the Wikipedia article on Protein (nutrient), which falls under the broader \"Testing in foods\" topic. It discusses how the standard text for beef cattle feed protein requirements evolved to replace crude protein measurement with the concept of metabolizable protein, which is specific to ruminant nutrition where microbes convert nonprotein nitrogen to proteins.",
+      "text_sha256": "485c8165787edba5401c557d44a1f2ec82fa2e1aafe1b5793a2e50e805e0fd3b",
+      "window_index": 1
+    },
+    "556a0691765c72b9ce8fac0984aab5a6de7ce605fd0a5ec24ef81e24e816a4a1": {
+      "context": "This chunk appears in the Wikipedia article on Protein (nutrient), under the section \"Dietary recommendations > Special populations > Chronic kidney disease.\" It discusses protein consumption recommendations for individuals with chronic kidney disease, including evidence that reducing protein intake may slow progression to end-stage kidney disease and the effects of low-protein diets on kidney function.",
+      "text_sha256": "171f5b78dd5a81e708dcdd786f871ce23034dfd7ef218d38e81300a8ae2e3ed7",
+      "window_index": 1
+    },
+    "65a04273250cc1c1a842f850944c4e6ed2dd05a274c2a019944284e1fe4904fa": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 57-60, which support various topics discussed in the main article including phenylketonuria as a condition affecting protein metabolism, amino acid absorption kinetics, and the relationship between dietary protein intake and bone health.",
+      "text_sha256": "4a7d46cff8afa2e751227289900df56f48522666f23461dc2f73e8a458b485e7",
+      "window_index": 3
+    },
+    "6ccfc9546c81adac6c11c65129597dcc7e2f7754e25935b9899010b75ff9a628": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 5-7, which are foundational sources on dietary protein and amino acid requirements, including the Institute of Medicine's Dietary Reference Intakes guidelines and research on adult amino acid requirements.",
+      "text_sha256": "8f6d606a0de8a0e85c0227bb182a6da36c28b6c1b33190b1068955443f625135",
+      "window_index": 3
+    },
+    "6d25869b4685c9b946cfb6122704dcdef7b8ff454a2a7258fc884c3322efdd22": {
+      "context": "This chunk contains references 61-63 from the References section of the Wikipedia article on Protein (nutrient). These citations support claims about the health effects of dietary protein intake, specifically regarding blood pressure, overall health outcomes, and chronic kidney disease.",
+      "text_sha256": "e7bbd00c986ec679d5ae23489bb3d0b450d7b20179101836c8fd6101e301ad42",
+      "window_index": 3
+    },
+    "6f0880d01bc9edddfef461c1fb33f927e4a55d6a8d64336db49fe5c415131cee": {
+      "context": "This chunk is from the \"Excess consumption\" section of the Wikipedia article on Protein (nutrient). It discusses the metabolic fate of excess amino acids, the body's protein regulation mechanisms, and the physiological effects of excessive protein intake on calcium excretion and bone density.",
+      "text_sha256": "e41a7ad1d22324b885c1f7c2b591f1e83629e04a2468d217f59f05b0c00f8e08",
+      "window_index": 1
+    },
+    "71af7dbd2c3e1ac16e9b0a54d8ecdf039e04c7fa528a82642eeb1cf4ed31edb0": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). References 18-20 cite sources discussing alternative and emerging protein sources, including game meat as a protein source, photovoltaic-driven microbial protein production, and microbe-based food production methods.",
+      "text_sha256": "81a4c1f70ea82e2c614abeaabb9e499fef470a529e761461184ee25fb57b4114",
+      "window_index": 3
+    },
+    "7af6d87a55ca4b6470d2e74e0a3f1c1e40a677da88e8b27b29064db10f923c74": {
+      "context": "This chunk is from the \"Dietary requirements\" section of the Wikipedia article on Protein (nutrient). It discusses the various factors that determine how much protein a person needs in their diet, including energy intake, body weight, physical activity level, and life stage, as well as conditions that increase protein requirements such as pregnancy, childhood growth, and recovery from illness or injury.",
+      "text_sha256": "25635f08aa6d0f0f44f8b3b44ed037d2d0526d9d1ab839bd27060e3032cd5023",
+      "window_index": 1
+    },
+    "7f15929e2f36a6a83758c60960697877943833297bf5622bd8bd528bc4a2d509": {
+      "context": "This chunk appears in the \"Excess consumption\" section of the Wikipedia article on Protein (nutrient), discussing the effects of high protein diets on weight loss, cardiovascular health, and body composition, as well as dietary guidelines from the 2015-2020 Dietary Guidelines for Americans regarding protein intake recommendations.",
+      "text_sha256": "89a0561f3ffaec803a95dd6f52e0dec5c5aca3b5bd771e8009d7f2d4e5c8c287",
+      "window_index": 1
+    },
+    "8509eff5966f36c43110697af9e77028856982a3ff85d15023ff8e51b40aaa85": {
+      "context": "This chunk appears in the Wikipedia article on Protein (nutrient), under the section \"Dietary recommendations > Special populations > Phenylketonuria.\" It explains the specific protein dietary requirements for individuals with phenylketonuria (PKU), a genetic disorder requiring restriction of the amino acid phenylalanine.",
+      "text_sha256": "e06a1d3648a377bbf38438562be184860a8d1069bb09c4ad9304508597be7e43",
+      "window_index": 1
+    },
+    "89b907e22de4aff648efac5715c0e40c77fe447bbaf3832014f3fb896df03d32": {
+      "context": "This chunk appears in the Wikipedia article on Protein (nutrient), under the section \"Dietary recommendations > Special populations > Protein allergies.\" It defines food allergies as abnormal immune responses to proteins in food and lists the eight foods responsible for approximately 90% of allergic reactions.",
+      "text_sha256": "a488eadb0672b390a080ade464ac5a64492fe875f5edc72105af6dfb79a4feca",
+      "window_index": 1
+    },
+    "93dccbfbc8653116f2b16398a990ef347b343096832db00e70534966e5a8e531": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). References 21-23 address methods for analyzing and measuring protein content in foods, including conversion factors for calculating protein from nitrogen content and techniques for determining non-protein nitrogen in milk and dairy products.",
+      "text_sha256": "b6907c974d89ad2eb3c517b8d33ed4570680ae796043cf5a9a81a949832bce35",
+      "window_index": 3
+    },
+    "975bf7ebeeb07f278a278286c2aadc5296dfd82c06319999dde26a8d1f792b12": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). References 24 and 25 are citations for studies on nitrogen-to-protein conversion factors for edible insects, which relates to methods of measuring and analyzing protein content in food sources.",
+      "text_sha256": "d2aedb2cc1a24cf701f961bc2817b1c5c441168b11f3de338eab7100bd2f6ef2",
+      "window_index": 3
+    },
+    "9d34f7d3fe4c42fb317f07dad97df4cf3874dbf47a88f61cbc8dfeb306097223": {
+      "context": "This is the \"See also\" section from the Wikipedia article on Protein (nutrient), which lists related topics and concepts including dietary approaches, protein sources, and nutritional considerations relevant to protein as a nutrient.",
+      "text_sha256": "01b8789aae9a8e5af7d92884de26317fdefdde1a209dc640a47c377400d2ade2",
+      "window_index": 2
+    },
+    "9fbbafa797442e3f453febb378f48ddf9e0cad4b6a25a47492482c27647398ab": {
+      "context": "This chunk appears in the hidden categories section at the end of the Wikipedia article on Protein (nutrient), listing metadata categories that classify the article's characteristics such as citation formatting, date usage conventions, and statements requiring sources.",
+      "text_sha256": "e754cde7268aec4fac8ef3bbe0d5a70a8c86a0a4ea6cc579c8fd10bd3cb0624a",
+      "window_index": 4
+    },
+    "a0d9552a1f32f72773a7efa5f215efba93f5b5f99c4aa11e5a90a45597ff068f": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 31-34, which include sources on protein testing methods, food analysis standards, and nutrient requirements for beef cattle.",
+      "text_sha256": "567e9c5007be0bd297189c1bdf144977587712c1b14b32d9c391f332a058ee62",
+      "window_index": 3
+    },
+    "a1a43efbefe65a46a4802cdbeadaab17777da8854b531877b1a05961ec4d7a21": {
+      "context": "This chunk is from the \"Functions\" section (section 1) of the Wikipedia article on Protein (nutrient). It describes the structural and functional roles of proteins in the human body, including their presence in cells and tissues, their role in creating cellular messengers and transport molecules, and how amino acid composition determines protein structure and function.",
+      "text_sha256": "135316ad0d3094231df1f117684251db199675d8905cf5ab93d619c8cee5b3b6",
+      "window_index": 0
+    },
+    "a2cb840a2c73c421f3f8503196f6217869b0de72938586535327abeb2a0c9c6a": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 26-30, which support discussions about non-protein nitrogen in foods, protein measurement methods, food protein adulteration risks, and genetic evaluation of true protein content in animal products.",
+      "text_sha256": "49923270bfcef754462c6c6a81d17ccf3f755fa76febf416dad9813af42a59a4",
+      "window_index": 3
+    },
+    "a41b480bb437dfe27ae1181aa8e847fe1e37f6241d003e868d4275e60bb110e7": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 52-54, which include sources on dietary protein requirements for athletes, nutrition guidelines from the International Olympic Committee, and information on food allergies related to protein intake.",
+      "text_sha256": "34b1982f98950c5ac1c48710c1e6bee1c755bf3c17342bbc06edfcd449340a12",
+      "window_index": 3
+    },
+    "a84af4d60609f2373b849502ca31f0c4834c465a4cc9c608bf21d1102a622362": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 38-40, which are academic sources related to protein digestion and amino acid absorption in the human gastrointestinal tract, including studies on ileal losses of nitrogen and amino acids, gastrojejunal kinetics of protein digestion, and intestinal nitrogen movements following milk ingestion.",
+      "text_sha256": "da672e1c0be2bbdea5c10c5c1da657ebb3581c5bf9bc050dedc5fa9783e0aaca",
+      "window_index": 3
+    },
+    "ab68c9bb6bb7493a4136cf3e675c58104a6a7ed1cb6ed85bcdc81f7bfa78ed0b": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains the first four numbered reference citations, including sources from MedlinePlus on protein functions and diet, an Oklahoma State University extension publication on protein and the body, and a clinical nutrition study on macronutrient requirements for exercise.",
+      "text_sha256": "f2c4aac88c4197d3a79926a297aee8810c516d0701eec7f54a6b8c1d30c1fc6b",
+      "window_index": 3
+    },
+    "ab7a91f8720e3d12cc68a5359010d31a5c9347d60962dc5ebc92bbffe7ccbd4a": {
+      "context": "This chunk is from the \"Nitrogen-based crude protein\" subsection (section 3.1) under \"Testing in foods\" in the Wikipedia article on Protein (nutrient). It explains the Kjeldahl and Dumas methods for measuring protein concentration in food, discusses crude protein content calculation, and describes limitations of nitrogen-based protein measurement including non-protein nitrogen (NPN) contamination issues.",
+      "text_sha256": "5b3de06dc576bf4020a98b93c0e18eb1c1dd8210a38b68151586b09b128bc41b",
+      "window_index": 0
+    },
+    "ab9c920ee699475f3e2d63e3847cdc0b86461f5850e656c8513ec3924b40526f": {
+      "context": "This chunk from the Wikipedia article on Protein (nutrient) introduces the nine essential amino acids that humans must obtain from dietary sources, lists them by name, and discusses the debate over whether there are eight or nine essential amino acids. It also describes five amino acids the body can synthesize and six conditionally essential amino acids, before concluding with common dietary protein sources including grains, legumes, nuts, seeds, meats, dairy, fish, and eggs.",
+      "text_sha256": "b78d0a6c625249ed53ed156a8cec6dc5c8d3b607d640c31d29a18df1d3702b02",
+      "window_index": 0
+    },
+    "af5ffcb4dae8d4d3305351c5e8dee0c3e0c4f3aaabf2b166563dfc5173800bb4": {
+      "context": "This chunk appears in the Wikipedia article \"Protein (nutrient)\" and contains language links and navigation tools from the article's header section, allowing readers to access the article in multiple languages and view editing options.",
+      "text_sha256": "52017ad920157780e746bbe5ca58d0a2b4820a19440d4182b00af8c763b6446b",
+      "window_index": 0
+    },
+    "b06d81ba5de200bfbfdc7d671de2dfcd31fa731ed690254497ba440975f8018e": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Protein (nutrient), serving as the introductory material and navigation elements. It includes the article's disambiguation note clarifying that the article focuses on protein as a nutrient rather than protein as a molecular class, and introduces the foundational concept that amino acids are the building blocks of protein.",
+      "text_sha256": "82d15bda4799ee607f5cff8f9d6cf8c4c563b8c8e521b045aecafb9a5187f89d",
+      "window_index": 0
+    },
+    "b23e124ea336e90fbb0d2a5942c55c4599add6bc3b4609156cba89efbb3c8c0c": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 35-37, which are academic sources cited throughout the article to support claims about non-protein nitrogen sources in animal nutrition, protein quality evaluation, and the digestion of dietary proteins in the gastrointestinal tract.",
+      "text_sha256": "daa0ad24698c04a3f5cfd24522e886453a1d7385c60a6dd522e8c9c85d38757b",
+      "window_index": 3
+    },
+    "b32b085c375396238abc75765a50676bfbf660e8c22d7f7387149793da60d52b": {
+      "context": "This section from the Wikipedia article on Protein (nutrient) discusses aerobic exercise protein needs, specifically addressing how endurance athletes differ from strength-building athletes in their protein requirements and the recommended protein intake levels for individuals performing endurance activities.",
+      "text_sha256": "37767e16ff05620f7644f49acc0d4a1ab24e0e306c01669be0e01734345f835b",
+      "window_index": 1
+    },
+    "b38185c139e3d0f6dd09db98be57d4f77016d13c84103f6cf0bdd26455a25ac8": {
+      "context": "This table appears in the \"Sources\" section of the Wikipedia article on Protein (nutrient) and compares the amino acid composition of different protein food groups, including legumes, cereals and whole grains, nuts and seeds, fruits, and animal sources, showing relative densities of lysine, threonine, tryptophan, and sulfur-containing amino acids across these categories.",
+      "text_sha256": "d421d2c198319bbd44c7f112abef6d463bf8b58cf936b2434a178a1d534720a5",
+      "window_index": 0
+    },
+    "bbc20efe0edc9042a32ebd6f5e80f48f726dd07f6347259ad3724a5df306f4aa": {
+      "context": "This is the table of contents for the Wikipedia article on Protein (nutrient), listing all major sections including Functions, Sources (with subsections on animal-based and non-animal-based protein), Testing in foods (covering nitrogen-based crude protein, true protein, ruminant metabolizable protein, and protein quality), Digestion, Dietary requirements, Dietary recommendations (with subsections on active people and exercise protein needs), Excess consumption, Protein deficiency, and References.",
+      "text_sha256": "a89fab7182b5dee156091c4c7589d29920db0a6343a52f66c3293e45c10b2894",
+      "window_index": 0
+    },
+    "bbee04af9973a3a2675c64a7b93fafaf127d47737cdffd38504fcf79afbad132": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 43-46, which are academic sources cited throughout the article to support claims about protein requirements for active individuals, amino acid requirements in human nutrition, protein needs for strength athletes, and dietary intake data from the U.S. Department of Agriculture.",
+      "text_sha256": "7675f58deff7280dd28bb02620a54dd302ac26ce101ffa66c46e0b7b2dc7ea9c",
+      "window_index": 3
+    },
+    "bfe997e3e1348d7cc6ebf8900d40f8fd413c6bf14142d7a0dd001311784b8228": {
+      "context": "This chunk is a section header for \"Special populations\" within the \"Dietary recommendations\" section of the Wikipedia article on Protein (nutrient). It marks the beginning of subsections discussing protein requirements and considerations for specific groups with unique dietary needs, including those with protein allergies, chronic kidney disease, and phenylketonuria.",
+      "text_sha256": "d8a04bb77d751aac7827f348a86c7e7cdec4534256510e29bc559240e6611921",
+      "window_index": 1
+    },
+    "c145ba9c1d83935daaefaa228e7243895c73ab13784553fc13db8a1f2cc55d27": {
+      "context": "This chunk from the Wikipedia article on Protein (nutrient) appears in the introductory section and covers the fundamental definition and characteristics of proteins as essential nutrients. It explains that proteins are polymer chains of amino acids, their role as structural components and fuel sources in the human body, their energy density compared to carbohydrates, and how they are digested and broken down to release essential amino acids for absorption.",
+      "text_sha256": "6be3017cc9871fdef91e4273225c0cf11857b8c20bfa7b2e13a120a43df30c2a",
+      "window_index": 0
+    },
+    "c2645c293960204b2738de445d42ad2da609eef3da8da1386f1e2aaf2defc277": {
+      "context": "This chunk is the section header for \"Testing in foods\" (section 3) in the Wikipedia article on Protein (nutrient), which discusses methods used to measure and analyze protein content in food products.",
+      "text_sha256": "bae7dfde70d4dc5c98bf163c7fb155d66c0a6724496a3d55b9e0e63172eaea48",
+      "window_index": 0
+    },
+    "c4a9001549224440b9118634369d925bbcedf96d86e04185e853dc0e1a335263": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Protein (nutrient). It contains citations 13-17, which include sources on edible insects as protein sources, athlete protein requirements, amino acid content in foods, and environmental impacts of meat and dairy consumption.",
+      "text_sha256": "a976c83eb87835229dbe83c1581b13ca8eef21c66daea1cebc26c47818f83303",
+      "window_index": 3
+    },
+    "ce681a8fcb36af2cd8de48d9ae5f669127031ed2dafab0b157166a96a92eceb9": {
+      "context": "This chunk is from the References section of the Wikipedia article on Protein (nutrient). It contains citations 41 and 42, which are academic sources cited throughout the article to support claims about protein's role in nutrition, immunoglobulins in milk, and dietary protein intake in humans.",
+      "text_sha256": "f0479428aa794624a3893cd42da4da63c87b7e2693778dcf431714cbec5a3530",
+      "window_index": 3
+    },
+    "d38d29d9cc71b4671be6e5295fea2c2287be8ada39508a9d47f11f0cda7bb0df": {
+      "context": "This chunk is from the Wikipedia article on Protein (nutrient), specifically in the section \"Dietary recommendations > Anaerobic exercise protein needs.\" It discusses protein intake requirements for individuals performing strength training and anaerobic sports, contrasting their needs with sedentary individuals.",
+      "text_sha256": "cb734b0294118e8cc57dcdd00c7a52f742eed267e739fb8584d30ad17891de84",
+      "window_index": 1
+    },
+    "d73a8a736e6b2dfa73916e29cefe8a1940d578ad42e8e1029d17ff6197732d72": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Protein (nutrient). It contains citations 47-51, which are academic sources and resources cited throughout the article that address topics including protein requirements, protein intake recommendations, protein oxidation during exercise, dietary protein for athletes and elderly populations, and adaptations to endurance and strength training.",
+      "text_sha256": "030d05e2d5f83f4e44192fc68bede309dc162d2b0abe009e065f6d4a12567c1c",
+      "window_index": 3
+    },
+    "f79c96f24d9e14ac2ce3c607086b48439bed8ea43d7555aa253180f0aa880c93": {
+      "context": "This chunk is from the \"Non-animal-based protein\" subsection (section 2.2) of the Wikipedia article on Protein (nutrient). It describes plant-based sources of protein, including legumes, nuts, seeds, grains, vegetables, and fruits, and lists specific examples with protein concentrations greater than 7%. The section also covers an emerging technology for microbial protein production.",
+      "text_sha256": "1125979811520769c877b245532df909a69347dc87515eb717dd043ffe3c6730",
+      "window_index": 0
+    }
+  },
+  "doc_id": "wiki-protein-nutrient",
+  "generated_at": "2026-08-31T19:44:17Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

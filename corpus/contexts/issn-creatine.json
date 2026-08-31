@@ -1,0 +1,303 @@
+{
+  "contexts": {
+    "09081d5db346630c4b0c67f8132074ef6f3df1a65a1487b4fee497b36b4c4783": {
+      "context": "This chunk is from the Conclusion section of an International Society of Sports Nutrition (ISSN) position stand on creatine supplementation. It summarizes the ISSN's overall assessment that creatine monohydrate is safe and ergogenic, and argues that policy decisions should be based on scientific evidence rather than anecdotal claims or misinformation.",
+      "text_sha256": "fa5c88a4cfcf886d1850e7d4d1f87f5df98d9e4305eb12db1c02061795c4fe54",
+      "window_index": 2
+    },
+    "0d4b2d86ea3ef7da44621b055b5487e96f94e92814ef7f16265e47bd1d52c24b": {
+      "context": "This is the author list for the International Society of Sports Nutrition position stand on creatine supplementation safety and efficacy, appearing immediately after the document title and before the abstract.",
+      "text_sha256": "0515356bbfeeeb7ab69fa8246a9137b98ac94cbd0517d5cd2c1c614a4124bb22",
+      "window_index": 0
+    },
+    "0f07ef38f34332fb9b1c02b321955ba3880273dc31c3afc84d568d9118ae28c7": {
+      "context": "This chunk is from the References section of a document on creatine supplementation. It contains citations 192-203, which cover research on phosphocreatine's protective effects on ischemic myocardium, creatine's effects on aging populations, blood lipids, liver function, oxidative stress, cardiac function, exercise-induced apoptosis, and type 2 diabetes management.",
+      "text_sha256": "6ae4e438c5c342b51607955e54da0c583a414c1d9ac4da8a183ed32c6ac21c36",
+      "window_index": 4
+    },
+    "11234b1d916641746a9aa9be74e9c222b06a9c6143cbb742bbb4342b5be76c88": {
+      "context": "This statement appears in the Publisher's Note section at the end of an International Society of Sports Nutrition position stand on creatine supplementation, serving as a standard publisher disclaimer regarding jurisdictional neutrality.",
+      "text_sha256": "e23de2474afa8657899fd15dffc7f7d06b7a72343c3a6c58c795a9da5cb9e548",
+      "window_index": 2
+    },
+    "132348c8aefcc564fc42487adf34b37cfa0882927624efea6e504550ccf4049b": {
+      "context": "This chunk is from the \"Supplementation protocols\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It describes the most effective dosing strategies for creatine monohydrate supplementation, including loading protocols (5g four times daily for 5-7 days), maintenance doses (3-5g daily), and alternative gradual loading methods, as well as factors affecting creatine retention and recovery of baseline levels after supplementation cessation.",
+      "text_sha256": "1f779da665a97a63a6ae40c1bfc27cc1ca054a31f135e7093e9ff45a81a702fe",
+      "window_index": 0
+    },
+    "14fed441eafbd2b308de87fdcb0a1b10842aaab508d62b50bd2350eecc7de2e2": {
+      "context": "This chunk contains the official Position of the International Society of Sports Nutrition (ISSN) on creatine supplementation, presented as nine numbered conclusions following the Safety section of the document. The position synthesizes the scientific evidence reviewed throughout the document regarding creatine monohydrate's efficacy, safety profile, and appropriate use in various populations including athletes, children, and clinical populations.",
+      "text_sha256": "db6e96b2445b13054c7e7bcf5aa6fccf5ce69bd1929d87a6d71bcaf621532814",
+      "window_index": 2
+    },
+    "17879cee407591deab12eaba391287cbc4705a2667486e6ba83658c2c811ff6d": {
+      "context": "This chunk is from the Background section of the International Society of Sports Nutrition position stand on creatine supplementation, which reviews the role and safety of creatine as an ergogenic aid in exercise, sport, and medicine. It introduces the main topics covered in the document, including creatine's effects on athletic performance, recovery, injury prevention, and various clinical applications in neurodegenerative and other diseases.",
+      "text_sha256": "6513ae7288bb3ce5c92e0c1161a0f968ea41b3422971737074817a025dac18b4",
+      "window_index": 0
+    },
+    "18c2ece8ad17049f5c9dd13f06c96da5871e68de95f809c96a8f49b51139fce1": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 115-123, which are academic sources examining the effects of creatine supplementation on thermoregulation, exercise performance in heat conditions, and related physiological responses in athletes and trained individuals.",
+      "text_sha256": "400672abe8c5ff9128bcf0a52b0ff1021e806fa51003739b5fee680bdcc21e9b",
+      "window_index": 3
+    },
+    "1969ea531c1015e0726e89fcb91512edaa04f745a030fc1e03ba5aa3f5b8c867": {
+      "context": "This chunk appears in the \"Pregnancy\" section of a peer-reviewed article on creatine supplementation. The section discusses potential medical uses of creatine, exploring how maternal creatine supplementation during pregnancy may promote fetal neural development and reduce birth asphyxia complications, based on evidence from animal studies and observations of creatine level changes in human pregnancy.",
+      "text_sha256": "cf3d7a690a5c8ae7012b9d018abf6501f914b48879fae6412c0ed49431b2da50",
+      "window_index": 1
+    },
+    "19db2ef6c1bab3631ba1443eb875896fcdcd59cd28152754000825f0ff6bb76b": {
+      "context": "This chunk is from the \"Brain and spinal cord neuroprotection\" section of a scientific review on creatine supplementation. It discusses research findings on how creatine supplementation may provide neuroprotective benefits against traumatic brain injury (TBI), spinal cord injury (SCI), and cerebral ischemia, citing multiple animal studies that demonstrate creatine's protective mechanisms and potential therapeutic applications.",
+      "text_sha256": "6747c9f0a6e8ac56c2d9073983ea8685c9c8768d9747b69ce4ed15766daad194",
+      "window_index": 1
+    },
+    "2485f0908019cebe2f69bee7fe50365abe32ea8e315d2101e6128a478de2b6e6": {
+      "context": "This chunk appears in the \"Other applications in sport and training\" section of the International Society of Sports Nutrition position stand on creatine supplementation safety and efficacy. It introduces additional benefits of creatine beyond its primary ergogenic value, including enhanced recovery, injury prevention, and faster injury rehabilitation in athletes undergoing intense training.",
+      "text_sha256": "39189836c730300a3413ea6b99341a9b03c49e1e614216c365b4a8ede2be83d3",
+      "window_index": 0
+    },
+    "28bcf00f5c4867833d35b0301bc23f6f45f1e225d87a57816c2a305af929df20": {
+      "context": "This section from the References list of a scientific article on creatine contains citations 86-100, covering studies on creatine supplementation effects on athletic performance across various populations including males, females, NCAA athletes, and military personnel, as well as position statements from major nutrition and sports medicine organizations regarding athletic performance and nutrition.",
+      "text_sha256": "db63709148423b9efa189275bba8f54da4370a2e2ba7b668f644924e656605fa",
+      "window_index": 3
+    },
+    "29cd642ba698bfd85b019ede02b8e4497cf991bd5466346e0a20baf099e77aa7": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 229-241, which cover studies on maternal and prenatal creatine supplementation, adverse events related to dietary supplements, and creatine use in athletes. The references span topics including creatine's effects during pregnancy, birth outcomes, safety concerns, and athletic performance.",
+      "text_sha256": "c8d513a5cfdbffe89711e18bfe95cf010d1e5051a6693a5b1e3c2a61f32eb236",
+      "window_index": 4
+    },
+    "305cb1292388d711c8e7523cde4ddcfd3cd2b51022d92db045e463bf7db22a85": {
+      "context": "This section from the References list of a document on creatine supplementation contains citations 138-150, covering research on creatine's neuroprotective effects in traumatic brain injury, spinal cord injury, stroke, and cerebral ischemia in animal models, as well as studies on creatine deficiency syndromes and inborn errors of creatine metabolism.",
+      "text_sha256": "f144a18f32513b143aba5595403b090aa1869233d4c7af252dbd78a77adcdf33",
+      "window_index": 3
+    },
+    "335ef13b5b6b7ff989d03eadd3946925a92b5bd0db1318e174a5c98f45adbf28": {
+      "context": "This chunk is from the \"Ergogenic value\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It presents Table 1 listing the potential ergogenic benefits of creatine supplementation and discusses how creatine increases muscle availability of creatine and phosphocreatine (PCr) to enhance exercise capacity and training adaptations across different age groups, with specific applications for power/strength athletes and intermittent sprint sports.",
+      "text_sha256": "85914db8dab7feb58e4f694483f97b16c1cd2706d3a5f56f2c2a008c46875e69",
+      "window_index": 0
+    },
+    "3513c636fae697432b452ef6ce746908d8b826a3232ebee2ec95e99fa852290f": {
+      "context": "This chunk comprises references 242-256 from the References section of a document on creatine supplementation. These citations focus on the safety and adverse effects of creatine supplementation, particularly regarding renal and kidney function in athletes and various populations, as well as general reviews of potential side effects and the rationale for creatine use in sports.",
+      "text_sha256": "6f28d5ef339c1f27acfa989ff85e804e96d5d2391f93d4f02bc858c9917bf8dc",
+      "window_index": 4
+    },
+    "3c53d75b99c457c90a335d7115d9e1c0c36523415bf775b8553be113f6c244f3": {
+      "context": "This section from the References list of a document on creatine supplementation contains citations 59-70, which document research studies examining the effects of various forms of creatine supplementation on athletic performance and body composition across different sports including swimming, football, ice hockey, and resistance training.",
+      "text_sha256": "f278f1bc9a0e1f05a41f5438dfeea13c9cd464877643137eb3767f2721b7d90a",
+      "window_index": 3
+    },
+    "3e30bb514aa5a998f552f5967e51244dac44cf2927b1ee75d47d75e35b0366de": {
+      "context": "This chunk is from the \"Creatine synthesis deficiencies\" section under \"Potential medical uses of creatine\" in a scientific review of creatine supplementation. It defines creatine deficiency syndromes as inborn errors of metabolism and describes clinical studies investigating high-dose creatine monohydrate supplementation as a therapeutic treatment for children and adults with these genetic conditions, including AGAT, GAMT, and CRTR deficiencies.",
+      "text_sha256": "ec57363b86c767934a620d719b1ac002342af3f766ed21b368c7af6541168e78",
+      "window_index": 1
+    },
+    "495b6bfecc07685e5806da5d07c8d1f4793519c1ce3930914f6585c9a2aeb33a": {
+      "context": "This chunk is from the \"Bioavailability\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It discusses the absorption and stability of creatine monohydrate, the most commonly studied form of creatine, including how plasma creatine levels peak after ingestion, methods for measuring creatine effects on tissues, and why creatine degrades to creatinine in solution but maintains nearly 100% absorption in the gastrointestinal tract.",
+      "text_sha256": "8eb4f8d16440dda7ef7abba2c586f0150519924b54d9cbd4f2ffc962e844ab51",
+      "window_index": 0
+    },
+    "54e4abc79e736bcff6cae8717b7ef7bed4ac6a9ff2f1a0bbcbda1d15ae9addc7": {
+      "context": "This acknowledgements section appears in the International Society of Sports Nutrition (ISSN) official position stand on creatine supplementation, thanking researchers and participants who contributed to the studies and reviews cited throughout the document's comprehensive analysis of creatine's safety and efficacy.",
+      "text_sha256": "262623216a162a1bceadecec62b5e7a6aa8bafe88c22f03502d093a9d39807b2",
+      "window_index": 2
+    },
+    "567f1764336343d8272578af38b0abe6da74d8d51d458633e495f22d1a53bc1f": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 204-217, covering studies on creatine's effects in type 2 diabetes, age-related diseases, cancer, elderly populations, bone health, osteoarthritis, fibromyalgia, and psychiatric conditions including depression and bipolar disorder.",
+      "text_sha256": "f739be99b441d7e1d19f151bba75e89914c7d67b0b6622b6d9178ab185d6acdd",
+      "window_index": 4
+    },
+    "5836a0c2feda15bb0c88b28d75c5dfcc0365c69390cb78b01c98ff916334c1d6": {
+      "context": "This chunk is from the \"Aging\" section under \"Potential medical uses of creatine\" in a document reviewing creatine supplementation. It summarizes evidence that creatine supplementation may improve multiple health outcomes in aging populations, including metabolic, cardiovascular, musculoskeletal, and cognitive benefits, with specific examples from clinical studies in elderly individuals and patients with type 2 diabetes.",
+      "text_sha256": "8e138ae1ef1a1c954fefef842434989522d261f536eee11331c9566a8fec8bef",
+      "window_index": 1
+    },
+    "59cfabaac2679801e5a691944e5ffc3c832eafa463f9bd7787b57f51731841c5": {
+      "context": "This chunk appears in the \"Authors' contributions\" section of an International Society of Sports Nutrition position stand on creatine supplementation, describing how the manuscript was prepared and approved to represent the official position of the organization.",
+      "text_sha256": "bff35e2faa3b81bfc41a22e0a494b20db616b733f9379306966ff44b9edfae63",
+      "window_index": 2
+    },
+    "5b94b3bd35aec20bcaf5f989096d2be62b6306cb8f20a949367183a63ddd804d": {
+      "context": "This chunk appears in the \"Neurodegenerative diseases\" section under \"Potential medical uses of creatine\" in a scientific review of creatine supplementation. It discusses clinical trial evidence for creatine's therapeutic effects in treating neuromuscular and neurodegenerative conditions including muscular dystrophies, Huntington's disease, Parkinson's disease, and amyotrophic lateral sclerosis, while noting safety data from long-term supplementation studies.",
+      "text_sha256": "d453303ebc23f9cffa83b665c31b69658d4fe6c2b213931fc5c3acbfa209d982",
+      "window_index": 1
+    },
+    "60c24f977545e22e576774122922adca9964fe882840b0d179e551b493c9152a": {
+      "context": "This chunk appears in the \"Metabolic role\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It explains the primary metabolic functions of creatine, specifically how the creatine kinase/phosphocreatine (CK/PCr) system generates and shuttles energy (ATP) within cells to support exercise performance and cellular metabolism.",
+      "text_sha256": "43dddafb9839b5231679b4cdc4d6ed2e63b95ce3ede976a6898f829f4e6044e4",
+      "window_index": 0
+    },
+    "60cebb0f4e0a18a77afa72ad3dc7cd3f312381ba5c7231b2d422a324531fae7a": {
+      "context": "This chunk is part of the References section of a document about creatine supplementation. It contains citations 43-58, which cover research on creatine's effects on elderly populations, cognitive function, sarcopenia, bone health, exercise performance, muscle metabolism, creatine retention, supplementation safety, and the pharmacokinetics and chemical properties of creatine.",
+      "text_sha256": "6512d4d325d1a757418ff41faf80dd48caf5a173058fcdb1476b846120a7e9b8",
+      "window_index": 3
+    },
+    "63347d488bc1f5554aa9dbdc2938b49aaff3de2190275374bdb53ade995d259f": {
+      "context": "This chunk is from the \"Enhanced rehabilitation from injury\" section of a scientific review on creatine supplementation. It discusses research findings on how creatine supplementation affects muscle atrophy rates, strength recovery, and rehabilitation outcomes in individuals undergoing limb immobilization or recovering from various injuries including spinal cord injury and ACL surgery.",
+      "text_sha256": "86a034799ee08d35792acb011c0dac4be0aa0683ef0694e7844ea155c75b90f4",
+      "window_index": 1
+    },
+    "7a9e85986eba336f3606c77983a883977cda096f1fb866550116bc7b014e062b": {
+      "context": "This chunk appears in the \"Prevalence of use in sport\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It discusses the legal status of creatine in sports organizations, consumption rates among athletes and the general population, and comparative health risks of creatine use versus other substances used by NCAA athletes.",
+      "text_sha256": "743ec0f5fe562b0e5f2e96edb052d864f51e58774d0e159fea42b00f4d302c06",
+      "window_index": 0
+    },
+    "7e249eaffaf98d013eaa20d0679b2b5371dee56ca34570292fffcfddb280348f": {
+      "context": "This statement appears in the \"Ethics approval and consent to participate\" section of an International Society of Sports Nutrition (ISSN) position stand on creatine supplementation, confirming that the entire document represents the official position of the ISSN after review by their Research Committee.",
+      "text_sha256": "215918f16e0274046441c527714278b1c733ccb89718479728a696b23b8fe619",
+      "window_index": 2
+    },
+    "808e537966d9ace70bfa5818c50b3690f9427ea1b4e1ae915f79c627a36af4ed": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 124-137, which cover studies on creatine's effects on thermoregulation, hydration, athletic performance, rehabilitation, and neuroprotection in various conditions including spinal cord injury and traumatic brain injury.",
+      "text_sha256": "08a06057d0963bf39632cd8f7f7b94bc49781e529c457fbc6f37b071363ba28a",
+      "window_index": 3
+    },
+    "808e7989bf3f2c53d70b49b50818b5e4ced112c109f5200babce79c09e99cea4": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation and its effects on health, exercise performance, and disease treatment. References 15-27 cover topics including creatine deficiency syndromes, creatine synthesis and transport in the central nervous system, cognitive effects of creatine supplementation, cellular energy metabolism, and the creatine kinase system.",
+      "text_sha256": "fbc5caffc7842df4d1322c3520aca7552e4694822c0a7ea7e016800133a39117",
+      "window_index": 3
+    },
+    "85f493cba945f69c1eb158add001336ab38980872538635a2aac944f20aafb3e": {
+      "context": "This chunk appears in the \"Metabolic role\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It describes the basic biochemistry and physiology of creatine, including its natural sources, distribution in the body, storage capacity, daily requirements, synthesis pathways, and how different populations such as vegetarians and athletes have varying creatine needs.",
+      "text_sha256": "3f7089715f370b31cd531cb0af79e67fa51ea9cc1fa506164d21d60bd34cc1e0",
+      "window_index": 0
+    },
+    "8b0f95c412b7fa6d2518d4f494e95d05e435cc5072b86fb3f18283d125b52f23": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 179-191, which cover research on creatine's effects in amyotrophic lateral sclerosis (ALS) and cardiovascular applications, including studies on brain metabolite markers, skeletal muscle properties, and myocardial protection during ischemia.",
+      "text_sha256": "12909f8f0155e79693647a98957e7c49b3aa57c4eb1bdb7fa7fcbfc5edaaa4b1",
+      "window_index": 3
+    },
+    "8fea623eadfd3168916a70dec11a6618a578ae2f04dcc984a94f3f71ecd7c513": {
+      "context": "This chunk is from the \"Enhanced tolerance to exercise in the heat\" section of a scientific review on creatine supplementation. It discusses how creatine monohydrate's osmotic properties promote fluid retention and hyper-hydration, and presents multiple studies demonstrating that creatine supplementation improves exercise performance and thermoregulation during heat stress while maintaining safety.",
+      "text_sha256": "f1814f457d82fefc1251dfa488f690f00283d872ceb61c9f065c84a304624fb7",
+      "window_index": 1
+    },
+    "8ff501e666c947d9d5f57d2d259fcf35e0cb586164ec972fb487ef625dee0a21": {
+      "context": "This chunk appears in the Safety section of an International Society of Sports Nutrition position stand on creatine supplementation. It provides an overview of the safety profile of creatine monohydrate, summarizing evidence from over 1,000 studies and addressing commonly reported side effects and health concerns.",
+      "text_sha256": "a9ae5b9a1e8ea3c214e32f27afb9b5a07d6e3d3688297817fcae43df80e44985",
+      "window_index": 2
+    },
+    "9e0f1d12d5c30461d401350203243c4348ccd782b1b3585d895b2208768b193c": {
+      "context": "This reference appears in the References section of a document about creatine supplementation. It is cited among studies examining creatine's effects on neurodegenerative diseases, specifically amyotrophic lateral sclerosis (ALS), where creatine supplementation is investigated as a potential neuroprotective treatment.",
+      "text_sha256": "ab00f647405acd1959dfe7b50766dc9f880c59fe43a170cfe60dbdefa0ab3b25",
+      "window_index": 3
+    },
+    "a0fc5e27fcc0056cd29a55af4df528d796abe4abd7d82b1843c01a7e1644b1cc": {
+      "context": "This chunk appears in the \"Ischemic heart disease\" section under \"Potential medical uses of creatine,\" discussing the therapeutic applications of creatine supplementation in clinical populations. It explains how creatine and phosphocreatine support heart function during ischemic events and the potential benefits of prophylactic creatine supplementation for patients at risk of myocardial ischemia or stroke.",
+      "text_sha256": "df20ed93c9e82918c49d0fb128297426ca3fbfb69b99e32f72a4e500f8fb4d40",
+      "window_index": 1
+    },
+    "b2108e0de22a1649b9576e5ebf7831625299236cb109e56375f720fd6505736b": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. References 257-269 focus on the safety and effects of creatine supplementation, particularly regarding renal function, kidney health in various patient populations, and homocysteine levels, as well as general safety considerations for creatine use.",
+      "text_sha256": "bc0bc7790729410d37ab3a15b174e28221dfe6c6239eb061d9d722067331fed0",
+      "window_index": 4
+    },
+    "b50b95026a389f8b5b0722feb14adf9ef1d6b826630f3e441107c5952af7944b": {
+      "context": "This chunk is the introductory statement to the \"Potential medical uses of creatine\" section of a scientific review article on creatine supplementation. It serves as a transition from sports performance and injury prevention applications to clinical therapeutic applications, introducing subsections covering creatine synthesis deficiencies, neurodegenerative diseases, ischemic heart disease, aging, and pregnancy.",
+      "text_sha256": "ef46cf8ec2bc40895ce14cd8feb83dfc3b780ebf55768b84837b69ee1474b2ef",
+      "window_index": 1
+    },
+    "bbd198da64ba83d4ab03ba56a16ae61280889112c9b585dd15cd6ef6a120277d": {
+      "context": "This phrase appears in the \"Availability of data and materials\" section of an International Society of Sports Nutrition position stand on creatine supplementation, indicating that no datasets or materials are available to share for this review article.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 2
+    },
+    "c05a3d54bd6880e803ad326ca28b3dac9e76ecb42c236a3dc383ae011281f03d": {
+      "context": "This chunk appears in the \"Competing interests\" section of an International Society of Sports Nutrition (ISSN) position stand on creatine supplementation. It discloses the financial relationships and potential conflicts of interest for all authors who contributed to this official position statement on creatine monohydrate safety and efficacy.",
+      "text_sha256": "12602a8702325469df46d43c436549a079d38e707c3922df84aa14b5a5a81ed4",
+      "window_index": 2
+    },
+    "c6330d2328bb3f65bf1bafe163f6a6ae4340febe4baaaeb1c2e73b985592f99c": {
+      "context": "This is the abstract from the International Society of Sports Nutrition position stand on creatine supplementation, authored by Kreider and colleagues. It summarizes the document's main findings regarding creatine's effects on exercise performance, recovery, injury prevention, and clinical applications in various disease states, as well as its safety profile across different populations.",
+      "text_sha256": "97fcda0c6d06f2dba679276e4a0f651ec342497ccfe7a02307b82148fcf960fa",
+      "window_index": 0
+    },
+    "c80744c96ae22cff58a8051417b59452812e9fd478f9071d86a35c7ca8cbdeed": {
+      "context": "This section of the References list from a scientific article on creatine supplementation contains citations 101-114, covering studies on dietary supplement use among athletes, creatine's effects on muscle performance and recovery, and safety assessments of long-term creatine supplementation in sports populations.",
+      "text_sha256": "82e35faa1efea27eea5b0462b31481c5402fa51396c5decccb30cb0eaf5f3997",
+      "window_index": 3
+    },
+    "d02a37f062c84ffb72c6504bcd2ac5a00d8934c9af10880f08644c922bbab130": {
+      "context": "This statement appears in the Funding section of an International Society of Sports Nutrition (ISSN) position stand on creatine monohydrate supplementation, indicating the financial support received for preparing this official scientific review and position document.",
+      "text_sha256": "fffc71db03811cef8f1c494a4b344d2e5de00d2002b506c1d3095fba817a1367",
+      "window_index": 2
+    },
+    "d29598e13f8f0ef6e5e5fe69bbb747c0e2999f81efa89c64c6afda9bd26acbc6": {
+      "context": "This chunk lists the author affiliations and institutional addresses for the International Society of Sports Nutrition position stand on creatine supplementation, appearing in the Author details section at the end of the document.",
+      "text_sha256": "20de5f2f8f9ae713344c83a0628c1cac614b421cda0805a052bc5efc7aa3e507",
+      "window_index": 2
+    },
+    "d66d6766cd4054050b1ecbddcc96c94d77cf688aa38aea36e95c71bdffb3afb1": {
+      "context": "This chunk is from the Safety section of an International Society of Sports Nutrition position stand on creatine supplementation. It addresses concerns about creatine's effects on renal function, reviewing case reports that prompted concern and presenting multiple clinical studies demonstrating that creatine supplementation does not impair kidney function in healthy or clinical populations.",
+      "text_sha256": "f7f834d0a216e49cf47535e226896bb586650d5628ecaffac4778fcb2bbba24e",
+      "window_index": 2
+    },
+    "d677102949025a81c59d8a2e8a26a155dce86246d865cabfd0bc4f60c7244aa0": {
+      "context": "This chunk appears in the \"Enhanced recovery\" subsection under \"Other applications in sport and training\" in the International Society of Sports Nutrition position stand on creatine supplementation. It presents research evidence demonstrating how creatine supplementation can improve post-exercise recovery through enhanced glycogen restoration, reduced muscle damage markers, and decreased inflammatory responses in athletes.",
+      "text_sha256": "990ebce2969bb771902ebf03732a3abae5f85b25d556dc8a22964cc767334311",
+      "window_index": 0
+    },
+    "db530cd6f4ff51fe410f9b8b9e73eca14e2635f3c4df16a1b402fd6e5c9df771": {
+      "context": "This chunk is from the Safety section of an International Society of Sports Nutrition position stand on creatine supplementation. It addresses the safety profile of creatine monohydrate across different age groups, particularly focusing on adolescents and younger populations, and refutes claims that product label warnings against use by those under 18 years old are scientifically justified.",
+      "text_sha256": "f3cddd20ad9bdfaeec5f8ca1bc3cfdb68bdd8a3ccb705d5e88dc2856fedcca1f",
+      "window_index": 2
+    },
+    "dede1e860e441bde1591ec7db5b4857ff522c17678eb389bdd492ed5c76aefbc": {
+      "context": "This chunk is part of the References section of a document about creatine supplementation. It contains citations 71-85, which document research studies on the effects of creatine supplementation on athletic performance, body composition, and strength across various populations including rugby players, soccer players, resistance-trained individuals, and older adults.",
+      "text_sha256": "6156c37d39328b9d4ef718c267ac8d26aa0c76d5af3d92721a327c465e092e46",
+      "window_index": 3
+    },
+    "dfd573a825bb6f2beddba4a06735f83abaaa2d254753189725b5234b794fa9d6": {
+      "context": "This chunk appears in the \"Aging\" section under \"Potential medical uses of creatine\" in a document reviewing creatine supplementation. It discusses how creatine supplementation affects cognitive function and brain creatine content in various populations, including healthy subjects, sleep-deprived individuals, and elderly participants, and explores alternative creatine precursors like GAA for enhancing brain creatine levels.",
+      "text_sha256": "20835d90ba577b88690fa8fc76d79b8b42545f3c3e93620fd19793618bb845de",
+      "window_index": 1
+    },
+    "e17546246b049a4c09e135e639ef98b45e0645ed401a52fed30576b9b685f73b": {
+      "context": "This phrase appears in the \"Availability of data and materials\" section of an International Society of Sports Nutrition position stand on creatine supplementation, indicating that no datasets or materials are available to share for this review article.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 2
+    },
+    "e77163dd6fa2c0414c6c5123f8bbd9cac8996bac9a20c92440780913acd2a2e8": {
+      "context": "This chunk is from the \"Injury prevention\" section of a document on creatine supplementation. It presents multiple studies demonstrating that creatine supplementation reduces musculoskeletal injuries, dehydration, and muscle cramping in athletes while showing no adverse side effects, contrary to unsubstantiated reports.",
+      "text_sha256": "e36399e8270cd15fc1faa2516d92b3cc89bc0e9f3dd8279990144a8ccbbbe19e",
+      "window_index": 1
+    },
+    "e7eb9d785eed83a7c360e9b2c9263423d7d4e78a4a2f7f1f6f3160609aab8652": {
+      "context": "This chunk appears in the concluding section of a BioMed Central article about creatine, presenting the publisher's standard manuscript submission guidelines and benefits offered to authors who submit their research to BioMed Central journals.",
+      "text_sha256": "79fd1a648334fd7022df675ba2b825dddfb03204cd5db188099199c1a749201b",
+      "window_index": 5
+    },
+    "ef94d7139f425c2de0e248690f31402f6fad9d2ba3906b103ea1113d4008c9cd": {
+      "context": "References section of a scientific article on creatine, containing citations 164-177 that document studies on creatine supplementation for treating neuromuscular and neurodegenerative diseases including Duchenne muscular dystrophy, Huntington's disease, Parkinson disease, and mitochondrial cytopathies.",
+      "text_sha256": "9fbee67378a5b885452fcde7d25af3cf2e3ae558ecd1dd8c293f31daa56b85e9",
+      "window_index": 3
+    },
+    "f3ca9c953053d0ad766446056c2a09eb4b7977a28f12f0eaf2c55854a99dfe9d": {
+      "context": "This chunk is part of the References section of a scientific article on creatine supplementation. It contains citations 28-42, which cover topics including creatine kinase structure and function, creatine transport mechanisms, creatine's effects on various health conditions including cancer and cardiovascular disease, and creatine supplementation in aging and elderly populations.",
+      "text_sha256": "cd706bce03c1f8cabad202163e4387a488a6ce214b974dc923fb3363064415b9",
+      "window_index": 3
+    },
+    "f5b4e2d698413abf05cf50f6d76a3814cea75e5f997d28cee3c0b0f756f9f22d": {
+      "context": "This chunk is part of the References section of a document on creatine supplementation. It contains citations 151-163, which focus on creatine's therapeutic applications in treating various metabolic and neuromuscular disorders, including guanidinoacetate methyltransferase (GAMT) deficiency, gyrate atrophy, and Duchenne muscular dystrophy.",
+      "text_sha256": "36db8d587fb7ccebf56152967efbb6d3e1b17a5b344b2896df191dc06ac0e290",
+      "window_index": 3
+    },
+    "f87cfa3b38d1485b50cc9ad524c26c791b518381a42801756b394cb9ed6fbe21": {
+      "context": "This chunk comprises the first fourteen references from the References section of a scientific article on creatine supplementation. The references cover foundational topics including creatine kinase genes and evolution, the biochemistry of the creatine kinase reaction, creatine's roles in health and disease, and early research on creatine supplementation in exercise and muscle metabolism.",
+      "text_sha256": "3b7a38b76df90e8a4ffc0d311f399c1a36dbf821ec862042083b0bc5e2e0603e",
+      "window_index": 3
+    },
+    "f9b718fb1759a21612648e6a36fe0163f67480cdcf1f4cbb2b7ba536d6d451fb": {
+      "context": "This chunk is from Table 2 and the following discussion in the \"Ergogenic value\" section of the International Society of Sports Nutrition position stand on creatine supplementation. It lists examples of specific sport events that may be enhanced by creatine supplementation, organized by the mechanism of benefit (increased phosphocreatine, reduced muscle acidosis, oxidative metabolism, and increased body mass), and concludes with the ISSN's consensus that creatine monohydrate is an effective ergogenic aid for athletes across numerous sports.",
+      "text_sha256": "3871e8bd60b728450eeb95e77fe5e2a8c400acdf023fb155e402a56127e803ab",
+      "window_index": 0
+    },
+    "fa1e778d1b9db68a51c17ea25169f6109af4020897ebe7a729c9739edbf7ecc1": {
+      "context": "This chunk is from the References section of a document on creatine supplementation. It contains citations 218-228, which focus on the effects of creatine supplementation on brain function and cognitive performance, as well as emerging research on creatine's role in pregnancy and neonatal outcomes.",
+      "text_sha256": "8bf59dfd9da183b3c8057f161afe91d5d4905ea114c8d3e1fcb79d884ff9746b",
+      "window_index": 4
+    }
+  },
+  "doc_id": "issn-creatine",
+  "generated_at": "2026-08-31T19:21:29Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

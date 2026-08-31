@@ -35,6 +35,11 @@
       "text_sha256": "55590e9339fe1bbd78bc3311b0d6dc50beadf41f15f33a4f0e1b9f32294c5e01",
       "window_index": 0
     },
+    "53464cccb96d91d534455e2597bcac7009a6121c4d9363e0c6051d7c7a74e3d6": {
+      "context": "This chunk is from the Bibliography section of the Wikipedia article on Breach of contract. It lists academic literature sources cited in the article, beginning with Seddon's \"Law of Contract\" textbook, followed by international authority identifiers for cataloging purposes and article categories.",
+      "text_sha256": "132471e89a30e76bfae0f19b05bf715651f09003440718eb9d55a4ead63225bc",
+      "window_index": 2
+    },
     "536b659c248880f00873b8f39032d1c802e3e11af4d12e1149b29dc1c764bc7d": {
       "context": "This chunk is from the Wikipedia article on Breach of contract, specifically the section on Anticipatory breach. It defines anticipatory breach (also called renunciatory breach or breach by anticipatory repudiation) as an unequivocal indication that a party will not perform future contractual obligations, and explains the innocent party's rights to terminate immediately or wait for the performance date.",
       "text_sha256": "c69de50486048ff636bd97c9a4b05ab55968da22dc8585449ab74e55fed1ed9c",
@@ -44,6 +49,11 @@
       "context": "This chunk is part of the Contract Law template in the Wikipedia article on Breach of contract, specifically within the \"Performance & breach\" section and subsequent sections covering Remedies, Quasi-contractual obligations, Rights of third parties, Duties of parties, and Dispute resolution. It provides an overview of legal concepts and remedies related to contract law across multiple jurisdictions.",
       "text_sha256": "0758be3bbc5132a9ea4213fc9cfc5ee95a89238942cdfdc5065f0c183f015635",
       "window_index": 0
+    },
+    "7bcd3e5c8e68a05d8f4e178ae8e19344d9d419e7590ba9e43b134e7345db647a": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Breach of contract, containing citations 31 and 32 that support legal principles discussed in the main article. Reference 31 cites the Australian High Court case Foran v Wight, and reference 32 cites the academic textbook Principles of Contract Law by Paterson, Robertson, and Duke.",
+      "text_sha256": "c0ff067cff4f248eb42748a076c44a8f19a7dbac95127a2e72ea36dd40715552",
+      "window_index": 2
     },
     "7d232dbafa8e9d9e189e02eb2c990740357a5ad7525db5a072c79e2e7696add9": {
       "context": "This chunk is from the \"Right to terminate for breach\" section (section 8) of the Wikipedia article on Breach of contract. It explains the three circumstances under which a party has the right to terminate a contract: breach of a condition, repudiatory breach, and renunciatory (anticipatory) breach. The section also details the procedural requirements for terminating a contract for repudiatory breach and clarifies that an innocent party is not obligated to exercise this right.",
@@ -162,7 +172,7 @@
     }
   },
   "doc_id": "wiki-breach-of-contract",
-  "generated_at": "2026-08-29T22:30:01Z",
+  "generated_at": "2026-08-31T19:15:54Z",
   "model": "claude-haiku-4-5",
   "prompt_version": 1
 }

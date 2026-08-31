@@ -1,0 +1,278 @@
+{
+  "contexts": {
+    "0198db978c5cb02e3fd3ac74930a777b32e8749ba0ca0faf419b052de663eecb": {
+      "context": "This section from the Muscle hypertrophy Wikipedia article lists exercises organized by muscle groups, including hamstrings, adductors, and calves, with notation indicating whether each exercise is compound (c) or isolated (i). The chunk concludes with a \"See also\" section referencing related topics like bodybuilding and weight training, and includes a legend explaining the exercise classification system.",
+      "text_sha256": "8d38627d0676522003a81550ff2c7f36224ac310c3619045d94d42f25a5abb6b",
+      "window_index": 3
+    },
+    "02c38d2dfe938fa8c17d0b4c353c0fec72530cc50a2388bae4c4065ed7592fb6": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. References 35-37 specifically address protein intake and its role in muscle protein synthesis and muscle-building, supporting the article's discussion of nutritional factors in muscle hypertrophy development.",
+      "text_sha256": "eb7baf55fbb45dee1acd396437409bdb053e534298af7f266b919bd1d3de1076",
+      "window_index": 2
+    },
+    "046fff24165ebb8de0df1c88de873cad74547c26e42aa3b6819aa6ddc985a386": {
+      "context": "This section from the Wikipedia article on Muscle hypertrophy discusses time under tension (TUT) as a training factor affecting hypertrophy. It is part of section 4.2 under \"Training factors affecting hypertrophy,\" which examines how the duration muscles are stressed during repetitions influences muscle growth through various contraction speeds and tempos.",
+      "text_sha256": "f5b6347720db8ece719192fe2ac7ce3f3b1fd8620d748e5f1a7b38847ac7c543",
+      "window_index": 0
+    },
+    "0d87a4e40bfe9ed24ac40e4db84851728d70848c97781aa02c2268c7d8acab5d": {
+      "context": "This chunk is from the Wikipedia article on Muscle hypertrophy, specifically the section \"Training factors affecting hypertrophy\" under the subsection \"Eccentric contraction emphasis.\" It explains how eccentric contractions, where muscles lengthen under tension, promote muscle growth through higher mechanical tension and molecular signaling, and contrasts this with concentric contractions where muscles shorten.",
+      "text_sha256": "7f865e768f4f98ba5edd76892b17685d1cf97c164f0b7a11bfa2a217b7c17f17",
+      "window_index": 1
+    },
+    "1110ce5cb5f57819cc9dbdf38c854c39f9501ff71751322f2e48f5f5bb4b579a": {
+      "context": "This reference appears in the Further reading section of the Muscle hypertrophy Wikipedia article, providing a key scientific citation about the genetic basis of muscle growth, specifically documenting a case of myostatin mutation causing extreme muscle hypertrophy in a child.",
+      "text_sha256": "c0d6b08ccaf6bbd404d263f82d79f2f2655069d42d6fd7500c175b4a343fd0c6",
+      "window_index": 3
+    },
+    "1597213636d46e4b3d0524be97706bc129ebe7a80f68fff71da87fcd89b06ee5": {
+      "context": "This chunk is a section header edit link from the Wikipedia article on Muscle hypertrophy, specifically marking the beginning of the section \"Changes in protein synthesis and muscle cell biology associated with stimuli,\" which follows the section on eccentric contraction emphasis and precedes subsections on protein synthesis and microtrauma.",
+      "text_sha256": "3b48832bc9d6f82fd7fa0fa8be3ed794c05472578e527af4669506f8f1adf03a",
+      "window_index": 1
+    },
+    "22955143ed9a4826f0f0e99fb67a7c957f02c672e51917985c7ce51d29045e93": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 31 and 32, which are academic sources cited throughout the article to support claims about muscle growth mechanisms, including research on myonuclei acquisition during overload exercise and hormonal regulation of protein metabolism.",
+      "text_sha256": "8705213760de20bf430ccc35b8f0eb12cc707d4e60516b58b594e113a9dd67bd",
+      "window_index": 2
+    },
+    "22cf1d83ec5c0db26220845fb43dc818d5e0e2fac28498dea6db819b1cdc0bc2": {
+      "context": "This is the \"See also\" section at the end of the Wikipedia article on Muscle hypertrophy, which lists related topics and concepts including anabolism, muscle atrophy, muscle dystrophy, myostatin, and pseudohypertrophy that connect to the broader subject of muscle growth and adaptation.",
+      "text_sha256": "7132f9037c63a08225b524fff752cc25d1898e78110434b00792252e2af9b85c",
+      "window_index": 1
+    },
+    "247df83f1f9c9e5d95e137d1bfed733568bd622d4bfc39eecd2ce0521c543503": {
+      "context": "This is the table of contents for the Wikipedia article on Muscle hypertrophy, listing all major sections and subsections including hypertrophy stimulation methods, non-training factors, training factors, and related topics like protein synthesis and pathology.",
+      "text_sha256": "98fe09b7568b8ecf9d3e5c9a87bad57109048d01f55d7d6532970885e3b982f2",
+      "window_index": 0
+    },
+    "352eb8ea66e1a7576a8e192eb316590f0fd4d17e51c773e5daf0d2edf7b61987": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. References 51 and 52 cite sources discussing pathological aspects of muscle hypertrophy, including its association with metabolic disorders and muscular dystrophy, which represent disease-related contexts distinct from the exercise-induced hypertrophy discussed in earlier sections of the article.",
+      "text_sha256": "d7985d7a6cead21d3f26ab2377ced37249e884178768969a8a98ba6488b9d3a4",
+      "window_index": 2
+    },
+    "3b6595eb60d2ac0ff973a4ea4cc037378acd916f73147cf6b7fa0396be6e9824": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 11 and 12, which are academic sources cited throughout the article to support claims about the relationship between muscle swelling and hypertrophy from resistance training, as well as genetic influences on muscle strength and body composition.",
+      "text_sha256": "d5ab6449d7d1b6f8eb15d6be621e1b20f261e3de40eec2c43173b72511b63535",
+      "window_index": 2
+    },
+    "3db7123f430df53225cc083f8857804c957baf9762d03e7ea0cdc4c6eaa10a0d": {
+      "context": "This chunk is from the Further reading section of the Muscle hypertrophy Wikipedia article, containing academic references on muscle hypertrophy research including studies on the Akt/mTOR pathway's role in skeletal muscle growth, muscle hypertrophy responses to resistance training in older women, and comparative hypertrophy studies between men and women.",
+      "text_sha256": "664ae59ba97f2648d58b1cacef059af7d2b17610f3670cd6534a97e5b59d6489",
+      "window_index": 3
+    },
+    "3e444132fe72131ab09b8a58fe685398c7dfe38b9ca21ae6b68a926fc815b24d": {
+      "context": "This chunk is from the \"Strength training\" subsection (1.1) under \"Hypertrophy stimulation\" in the Wikipedia article on Muscle hypertrophy. It explains how strength training and resistance training induce muscle hypertrophy through neural and muscular adaptations, progressive overload, and mechanical tension activation of the mTOR pathway for protein synthesis.",
+      "text_sha256": "690630e9c6897bca0d821a5bbc82084a7192d716b1f0c4e2b2a2deb637212b1b",
+      "window_index": 0
+    },
+    "5278630c1dba0c1af963afeff0a60ca701ba0143542f518623813519fc76fc3f": {
+      "context": "This chunk is from the \"Range of motion\" subsection (4.1) under \"Training factors affecting hypertrophy\" (section 4) in the Wikipedia article on Muscle hypertrophy. It discusses how range of motion (ROM) during resistance training exercises affects muscle hypertrophy, comparing full ROM versus partial ROM training approaches.",
+      "text_sha256": "58e69cafb64911910907c78aa724a9bbfeb0d7b33b2cba1741a851564e4120f7",
+      "window_index": 0
+    },
+    "574b94e91dc5b5592c8da2c0987fa41355dec3b4dd5a89b0f7c9b14b944ff068": {
+      "context": "This chunk is from the \"Glycogen\" subsection (section 3.4) under \"Non-training factors affecting hypertrophy\" in the Wikipedia article on Muscle hypertrophy. It explains the role of glycogen as an energy source during high-intensity exercise and its importance for workout performance and recovery.",
+      "text_sha256": "407d6185fa3a6145d199fc447daded17764a506b1c8a658d6e3153565ba6ff85",
+      "window_index": 0
+    },
+    "5fbdddaecf54f62e63fb59601660cd78b481a78fa7f98634b454b902ff6177ef": {
+      "context": "This chunk is from the \"Myofibrillar vs. sarcoplasmic hypertrophy\" section of the Wikipedia article on Muscle hypertrophy. It explains the distinction between two types of muscle hypertrophy: sarcoplasmic hypertrophy, which increases muscle cell fluid volume without strength gains and is more prominent in bodybuilders, and myofibrillar hypertrophy, which increases contractile proteins and strength and is more dominant in Olympic weightlifters.",
+      "text_sha256": "bdcaddadf9ce0cdfb8d768a074f8f8fb14db21fb78066330cdfc5cbcd3168246",
+      "window_index": 1
+    },
+    "617c5b848df0e65c11f4939df6300a8f563f373ead1269535b1b41fb66a4d515": {
+      "context": "This chunk appears in the \"Protein synthesis\" section under \"Changes in protein synthesis and muscle cell biology associated with stimuli\" in the Wikipedia article on Muscle hypertrophy. It discusses recommended daily protein intake levels for athletes and bodybuilders seeking to build muscle, comparing bodybuilding practices with scientific recommendations and expert opinions on optimal protein consumption.",
+      "text_sha256": "130f3de7d41e31722faea40dbeae301dfcbe42417b7eab98ead3ea6e835ed972",
+      "window_index": 1
+    },
+    "62e69966d34050cf188fef9b1ab8a65445ebd4e3e6bc383afbe934025bb88768": {
+      "context": "This chunk is from the Muscle hypertrophy Wikipedia article and lists specific exercises organized by muscle groups targeted, including triceps, forearms, abdomen, lower back, hips, buttocks, quadriceps, and hamstrings. Each exercise is labeled as either compound (c) or isolated (i) to indicate the type of movement.",
+      "text_sha256": "28daaf94d1c2e99551c2106509df31f3a29cee81c6ae3e13d8c1365ceb95d7f2",
+      "window_index": 3
+    },
+    "65ae2c3409eb3e5f256457fc3c2fe7b4c067536e12aec092bbb18e6abf3c7a07": {
+      "context": "This chunk appears in the Wikipedia article on Muscle hypertrophy and lists the 18 languages into which the article has been translated, including Arabic, Bengali, German, Spanish, and others. It is part of the article's header metadata showing available language versions of the document.",
+      "text_sha256": "a5e50388ed4add1bf5c1c3392493d638f31f8b3ba73a958d4ec461d790ed4ab1",
+      "window_index": 0
+    },
+    "66a1b5feb1085f9e93d4257356f217e92b07e923c507d74286faa223baa53c6c": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 13-15, which include sources on genetic factors affecting muscle fiber type and gender differences in muscle characteristics, as well as a reference to drug scheduling regulations.",
+      "text_sha256": "f8bfd7df2805617e23ecdfe0308c3ee46846eb3e8067e152423005e02fbc5249",
+      "window_index": 2
+    },
+    "6e8ddba08c3d059d6c3d073d6ad972d7b96ee5ae306a0daef22f207a9fd0039f": {
+      "context": "This chunk contains the Wikipedia article metadata and navigation elements for the Muscle hypertrophy article, including language links, editing tools, and page information options that appear at the top of the Wikipedia page.",
+      "text_sha256": "df9215fc28ce944a15d8a44f8107e3fac78f548309680b2d929262c903c9151f",
+      "window_index": 0
+    },
+    "73c74915ce7da266c6c8651813328b6922be9d0e6176c316cce7f30bf637c3b2": {
+      "context": "This chunk is an edit link for section 6 of the Wikipedia article on Muscle hypertrophy, which corresponds to the \"Non-training factors affecting hypertrophy\" section that covers genetics, testosterone, diet, and glycogen as factors influencing muscle growth.",
+      "text_sha256": "b92153c3dc68e6610195da1d7634ec9ed250e592faf76f2437f4b847cabb9e55",
+      "window_index": 0
+    },
+    "7da6086e52b6e4ec8746e8f6d6375be0beb3a6091edbfd8998e0881eb505b5a8": {
+      "context": "This chunk is from the Genetics subsection (section 3.1) under Non-training factors affecting hypertrophy in the Wikipedia article on Muscle hypertrophy. It discusses how biological factors like DNA and genetics influence muscle hypertrophy, presenting research on the heritability of lean body mass and muscle fiber proportion.",
+      "text_sha256": "2209ba4bd84f188e1dda2cdeee02c7ca97142608a868a08f63e3932b4b79e43c",
+      "window_index": 0
+    },
+    "84443b19794f8ba23bd0fb291c7ad309ea6993f79c401307534816d31bad1656": {
+      "context": "This chunk appears in the Muscle hypertrophy Wikipedia article's \"Further reading\" section and related topics area, listing exercise physiology and related concepts as cross-references to the main article on muscle hypertrophy.",
+      "text_sha256": "ab329d352b2099b4f0d93bdc7a635db6b7b08c2fffc81fbfb980fb46009d2f4e",
+      "window_index": 3
+    },
+    "8af949049f76b097b5650613ecd0952f68598e1940bfa197fadabdc266e62c4e": {
+      "context": "This section on blood flow restriction training is part of the \"Hypertrophy stimulation\" section (section 1) of the Wikipedia article on muscle hypertrophy, which discusses various methods that can increase muscle cell volume as an adaptive response to generate force or resist fatigue.",
+      "text_sha256": "73de17c0c94c76e8ff32dd215194bc4e952ba7bedcfd5e4cd0631f56316f8b0b",
+      "window_index": 0
+    },
+    "8e8e55c446faf79423a13360c6d6c28499c62c5d9bca9931e1e16d9a07e79964": {
+      "context": "This chunk is from the \"Microtrauma\" section of the Wikipedia article on Muscle hypertrophy, which discusses the role of tiny damage to muscle fibers in the muscle growth process and explains how the body responds to this damage through repair and adaptation.",
+      "text_sha256": "deb1f1e21483516376f509470446a45ba366c1872b6ae275d6871e58bb10dde9",
+      "window_index": 1
+    },
+    "91b4907970da979cccd62a3a456fef4269f87b60baccfc1e5e8edcde5820c124": {
+      "context": "This chunk is part of the Further reading section of the Muscle hypertrophy Wikipedia article, containing academic references on skeletal muscle hypertrophy research, including studies on strength conditioning effects in older men and signaling pathways involved in muscle growth and atrophy.",
+      "text_sha256": "2421b9aa59ee208d89c8752343b64dea136e08739f827c6a8d3f66ec63442b7b",
+      "window_index": 3
+    },
+    "928bcc62b9775d734cb72c6a80f658af22ea221708eb979aa59f6feefc0f51db": {
+      "context": "This section from the Wikipedia article on Muscle hypertrophy discusses testosterone as a non-training factor affecting hypertrophy. It explains testosterone's role as a major growth hormone, gender differences in muscle development, and the effects and risks of anabolic steroid use.",
+      "text_sha256": "b76b1ad31dd5ff4fc6a4ccaab48e849380925fe1e4ae114f0a941ee811af58f8",
+      "window_index": 0
+    },
+    "9ad9ca6c1d426a28587dcef3e148bbc4984033df24f7a39df1756a17b3e0671f": {
+      "context": "This chunk appears in the Wikipedia article on Muscle hypertrophy in the hidden categories section at the end of the document, listing maintenance and quality control categories that track various editorial issues and citation needs for the article.",
+      "text_sha256": "74ca2f5faa10c9aab98a95588c5ffd1f99bbcc062799d2548ec2e85a608ccc0d",
+      "window_index": 3
+    },
+    "9b5eb3d2a5762270d0e1b9ff9c783929da531957e9c0829e9808dd64da350372": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 5-7, which are academic sources discussing resistance training variables and techniques for optimizing muscle hypertrophy, including an umbrella review and systematic review of advanced resistance training methods.",
+      "text_sha256": "2ad240cd6a078604bb43a0aaac89616ec6115f69ffe6fb6fd6c4d5f9b5211537",
+      "window_index": 2
+    },
+    "9cc266fef12223c9f464377355bdb07b832011c0d67c1b6aca3456549bbf2831": {
+      "context": "This chunk is from the \"Anaerobic training\" subsection (section 1.3) under \"Hypertrophy stimulation\" in the Wikipedia article on Muscle hypertrophy. It discusses how anaerobic exercises and strength training produce muscle hypertrophy, contrasting them with aerobic exercise which does not effectively increase muscle size.",
+      "text_sha256": "78dc2191c68a6063b1eb059e013cf98d7c294a410b9018eba04cabab2d617d82",
+      "window_index": 0
+    },
+    "9da3e875b7b3cb6673ca4e671dd5fe1b802ead743c97827b7ad4f83af03f54c5": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 29 and 30 are cited sources discussing eccentric muscle contractions and their role in skeletal muscle remodeling, which relate to mechanisms of muscle hypertrophy induced by resistance training.",
+      "text_sha256": "b3379a42932ffd938dcda3300768922efc6ccdc059794613c8d1b8571ec166c6",
+      "window_index": 2
+    },
+    "a1b5a1c590265439556be2e71276e73621d710e68fad0c9f2f3fcce5220b0e53": {
+      "context": "This is the introductory section of the Wikipedia article on Muscle hypertrophy, defining the term and its two main types: sarcoplasmic hypertrophy and myofibrillar hypertrophy. It establishes that muscle hypertrophy involves an increase in skeletal muscle size through growth of muscle cells and is central to bodybuilding activities.",
+      "text_sha256": "178e1f3b7d2ce90f33cc351b9a7af0c42caf2b5f2bc733cc0ca1554f2ea7c0f3",
+      "window_index": 0
+    },
+    "a1f0536ebb874eaa702af0e6b66fde4373c943b54c411374dc0d471dbb0145d3": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 27 and 28 cite scientific studies on resistance training adaptations and eccentric muscle contractions, which are topics discussed in the main body of the muscle hypertrophy article.",
+      "text_sha256": "c1a30b42f571cd17990d8c7d27e9936e8e99fd3a25094a1d2f83755aee9a5a10",
+      "window_index": 2
+    },
+    "a31aac2fe2f0364c706ac5a6ce86f7c6451d9dbacd98583a523606784815e443": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 24-26 are citations supporting information about resistance training techniques and muscle protein synthesis in relation to muscle hypertrophy, including work by Schoenfeld on hypertrophy mechanisms and a study on time under tension during resistance exercise.",
+      "text_sha256": "80ec9af8973306579f3d038a7a883e057fb4dd9d61e2562c97d93de34085980a",
+      "window_index": 2
+    },
+    "a40a67bc6861878d6a01a93dbb2e227323dfe5106e211861685d44dffd41cfd3": {
+      "context": "This chunk is from the \"In sports\" section of the Wikipedia article on Muscle hypertrophy, which discusses how increased muscle hypertrophy is applied and observed across various professional sports disciplines, including both strength-focused sports like boxing and Olympic weightlifting, and skill-based sports like basketball and football.",
+      "text_sha256": "b115ff7ec75b4265757a71468b8fa7b743bef31a44b3b6ec0a0908a095a168e9",
+      "window_index": 1
+    },
+    "a46cf7d3bc3fe0496f503fd8585da795a94df8869c19eaa2512c1ee872afcbe7": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 38-40 are citations supporting information about protein requirements for athletes engaged in strength training and exercise, which relates to nutritional factors affecting muscle growth and hypertrophy.",
+      "text_sha256": "7964c3f33a1990391719afa348c75f66e55f1aee0c3e160c823f4d6d50565b5e",
+      "window_index": 2
+    },
+    "abaf319f9daa2dfed31e5c819cd10ada3bf52794933b7d5fb1b38d940923cfec": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 8-10, which are academic sources addressing physiological adaptations related to muscle training, including intramuscular lipid storage, capillary patterns, and vascular growth in response to exercise.",
+      "text_sha256": "13d9b964b9979c540311b7329bd2ded55f283a28923cd2b40a88824d51c2d461",
+      "window_index": 2
+    },
+    "adc4a426fe7702b6c785ef8babe98d558bd8e804f333259c7530f99cf9fb5d4b": {
+      "context": "This chunk is from the \"Protein synthesis\" subsection under \"Changes in protein synthesis and muscle cell biology associated with stimuli\" in the Wikipedia article on Muscle hypertrophy. It explains how protein biosynthesis occurs at the cellular level and its role in muscle hypertrophy, including the incorporation of contractile proteins into myofibrils, the effects of cortisol on protein synthesis, and recommended protein intake guidelines for muscle growth.",
+      "text_sha256": "df2b55e504fa8ad7bdeaed088a57dca4c8c6f21dccfc4cfe31124010254a7917",
+      "window_index": 1
+    },
+    "b566e4b19c5fccfffb7063ac5c36a463b85def62601b86c25f8bd6b085789ade": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. References 49 and 50 cite sources discussing muscle hypertrophy in clinical and pathological contexts, including its relationship to health and disease, and its occurrence in specific medical conditions like familial partial lipodystrophy.",
+      "text_sha256": "b51a13ce290485432330a257729ecb14eed963f994369b86b999910c32964bb1",
+      "window_index": 2
+    },
+    "b57b69f699c3924f4453a493f60923d8a4b0119f605c4d9366180da08abc7e09": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. It contains citations 21-23, which are academic sources cited throughout the article to support claims about resistance training techniques, training variables, and the mechanisms of muscle hypertrophy.",
+      "text_sha256": "eec3d07540c2b211894e394d5b9398bfb8a709c6619f3100b795e888a429b357",
+      "window_index": 2
+    },
+    "b705709c9ef8b4fb88461524ccd84f26fe83a4409e2c8ce7115715b5575fdcad": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. It contains the first four numbered citations that support claims made throughout the article, including foundational texts on strength training and conditioning, muscle hypertrophy development, resistance training effects on protein synthesis, and early skeletal muscle adaptations to high-intensity resistance training.",
+      "text_sha256": "4997f5085b562cd84aa44c971446d268f739bdcfa87b476a02b153616bbfccff",
+      "window_index": 2
+    },
+    "b836d1bcb8d02362f3e8953676a6ca59913dc739455d5230b9c03a6f28e21634": {
+      "context": "This chunk appears in the \"Hypertrophy stimulation\" section (section 1) of the Wikipedia article on Muscle hypertrophy, serving as an introductory explanation of how various stimuli trigger muscle cell growth as an adaptive response to increase force generation and fatigue resistance.",
+      "text_sha256": "f3a37ca3c62dc741e69ed8830f4360b3ba08b1534e2f341fdc94cd35c2e0b352",
+      "window_index": 0
+    },
+    "bf4f5ec972df2ac1912fdd44e73d8289f8782e07936170353e44215dd39b4695": {
+      "context": "This chunk appears in the Muscle hypertrophy Wikipedia article's navigation and categorization section, listing types of exercise related to muscle hypertrophy. It categorizes exercises into aerobic exercise, anaerobic exercise, and other exercise types, along with related fitness and exercise topics that connect to the main article on muscle hypertrophy.",
+      "text_sha256": "c0fab96e8f23137755fab1be6cab45769b60ad3fae5566d825d4dfa39e433c5c",
+      "window_index": 3
+    },
+    "c7edd7f3e581d32b555caf0214b9c1dbf1550e6e81dcc24daf3552132612a256": {
+      "context": "This chunk is from the References section of the Wikipedia article on Muscle hypertrophy. References 33 and 34 are citations supporting the article's discussion of muscle protein synthesis in response to resistance training and exercise, specifically regarding how fed state protein synthesis changes with training and how muscle protein synthesis is coordinated after exercise.",
+      "text_sha256": "9c4ea0fd680d2267934d8d846bc449ddddd6c21df18715676b6899ab6cdff154",
+      "window_index": 2
+    },
+    "c8cbfcfd9f47a22d956bbb2b7f96b465a262f4608c1637d17f5272ba90dd90b5": {
+      "context": "This chunk is from the \"Temporary swelling\" section (section 2) of the Wikipedia article on Muscle hypertrophy. It explains transient hypertrophy, the temporary increase in muscle size during workouts due to increased blood flow, and describes the physiological mechanisms causing muscle swelling including phosphocreatine accumulation, lactate production, and water uptake in muscle cells.",
+      "text_sha256": "2811359b30b690687f67719c50493db6ba023d21217f4db1c1cf9baa73510584",
+      "window_index": 0
+    },
+    "c9fd22b691509f0801e90c30422d42907f5cd2d71f8e64a96bdbd2b207f713ae": {
+      "context": "This chunk is from the \"Diet\" subsection (section 3.3) under \"Non-training factors affecting hypertrophy\" in the Wikipedia article on Muscle hypertrophy. It discusses how dietary factors, particularly positive energy balance and protein intake, contribute to muscle hypertrophy alongside training methods.",
+      "text_sha256": "08dab433d912b818aab1054cf9006a7afecd08e38031e94263a3c2f5b553d25a",
+      "window_index": 0
+    },
+    "d52216743a93cc3e14626a8f0532bae07d9cbd51e057dcd6f7a3f2a5f4a06fe4": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 45-48 include citations supporting research on protein synthesis, strength training science, weight gain in athletes, and the distinction between muscle hypertrophy and pseudohypertrophy.",
+      "text_sha256": "64c419e61c52a47c8f5920dfc7b38ac916f4e3e75d759832ad0bbd6255765962",
+      "window_index": 2
+    },
+    "d6bd160885bc2c87051d0629b64b673e2bd944ef12f4639e87762141f9da3042": {
+      "context": "This chunk contains references 19 and 20 from the References section of the Wikipedia article on Muscle hypertrophy. Reference 19 is a systematic review examining protein supplementation's effects on muscle mass and strength gains from resistance training, while reference 20 discusses the relationship between carbohydrates, physical training, and sport performance.",
+      "text_sha256": "df56c4921dbf3b5a954666062016a31744058b3bebb519e4b4d49ce366fd213c",
+      "window_index": 2
+    },
+    "dfae459bf2b51a580d3a70ceb8c93f3b0a548a72651243b75eec9826a3931803": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy, containing citations 41-44 that support claims about protein metabolism, muscle regeneration, and resistance training outcomes discussed in the main article.",
+      "text_sha256": "e34c090f0a5a198dc5a2ae471987ad348b4e287c34e85abbd4ab6225e86765e2",
+      "window_index": 2
+    },
+    "e1a75c3280a8ebe5c07a6fd60bd06f22cc9cf55f48be6d2c433651119216a81b": {
+      "context": "This section from the Wikipedia article on Muscle hypertrophy discusses the Pathology of muscle hypertrophy, explaining how neuromuscular diseases can cause true muscle hypertrophy independent of training, resulting in a pseudoathletic appearance, and listing specific diseases that produce muscle hypertrophy including muscular dystrophies, metabolic myopathies, and lipodystrophy.",
+      "text_sha256": "3afde0fec131e9e6bfa910b40c726245d347f5f19a7785f075f533d48a605801",
+      "window_index": 1
+    },
+    "e4a7ee3f16433174902e6151729df48eb5724b1d074f443864f5eeebf15435ec": {
+      "context": "This chunk is from the \"Training factors affecting hypertrophy\" section (section 4) of the Wikipedia article on Muscle hypertrophy. It introduces the overall topic of how training variables like frequency, intensity, volume, time under tension, and contraction types influence muscle growth through resistance training and anabolic pathways.",
+      "text_sha256": "d6c55570858a7d0ac7f89503beae750c1de3f688583d12c3f91559a5cc85673a",
+      "window_index": 0
+    },
+    "e51add9968668ff416187fd4bd871499634a817d8fab6e9658bba1b1545dceca": {
+      "context": "This chunk is from the Muscle hypertrophy Wikipedia article's exercise reference section, listing specific exercises organized by target muscle groups (pectorals, lats, trapezius, deltoids, biceps, and triceps). Each exercise is marked as either compound (c) or isolated (i) to indicate exercise type.",
+      "text_sha256": "9c54bb29a2f92655cffefacc4f225da87af668decc518c4b3fe267ba56e545c0",
+      "window_index": 3
+    },
+    "fecdc015b459da3d5c1e87a5729ee774669cc2909cfedccf023c9846e81f8744": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Muscle hypertrophy. References 16-18 address the legal and health consequences of anabolic steroid use, including the Controlled Substances Act and studies on sudden cardiac death and androgen abuse in athletes, topics relevant to discussions of performance-enhancing drugs in the context of muscle growth.",
+      "text_sha256": "081d6fd1e9be595ac0d72d5fc55ba9c81c1beec3ca92309a42a526442849bf09",
+      "window_index": 2
+    }
+  },
+  "doc_id": "wiki-muscle-hypertrophy",
+  "generated_at": "2026-08-31T19:42:28Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}
