@@ -387,13 +387,16 @@ def test_build_graph_counts_ambiguous_separately_and_emits_no_edge(safe_tmp_path
     conn.close()
 
 
-def test_build_graph_honours_configured_max_targets_per_reference(safe_tmp_path):
-    """Changing max_targets_per_reference must actually change behaviour, not
-    just be accepted: at the default (1) a 2-candidate reference is ambiguous;
-    raising it to 2 must reclassify that same reference as unresolved instead
-    (still no edge -- a single candidate is still required to emit one). This
-    proves the config value is read, not merely accepted (review round 1,
-    finding 3)."""
+def test_build_graph_treats_any_multi_candidate_reference_as_ambiguous(safe_tmp_path):
+    """max_targets_per_reference was removed (review round 2, finding C): more
+    than one in-scope candidate is ALWAYS ambiguous and gets no edge -- never
+    written as an external reference (which is what the old
+    `elif len(candidates) > max_targets` branch did for a 2-candidate reference
+    once max_targets_per_reference was raised to 2: it fell into the unresolved
+    branch and was recorded with to_external_ref="article:22", a false claim
+    that an in-corpus citation points outside the corpus). A stray
+    max_targets_per_reference key left in a config dict (e.g. an un-migrated
+    file) must be silently ignored, not change behaviour."""
     ckb = safe_tmp_path / "ckb.sqlite"
     src = _two_doc_ckb()
     disk = ops.get_db(ckb)
@@ -411,21 +414,26 @@ def test_build_graph_honours_configured_max_targets_per_reference(safe_tmp_path)
         "  license: x\n  license_ok: true\n  version: v1\n"
         "  references: [gdpr, aiact]\n",
         encoding="utf-8")
-    base_cfg = {"extractors": ["legal", "academic"], "resolve": True,
-                "edge_types": ["references"], "record_unresolved": True}
+    cfg = {"extractors": ["legal", "academic"], "resolve": True,
+           "edge_types": ["references"], "record_unresolved": True,
+           "max_targets_per_reference": 2}   # stray/legacy key: must have no effect
 
-    strict = graph.build_graph(ckb, manifest, safe_tmp_path / "raw",
-                               dict(base_cfg, max_targets_per_reference=1),
-                               doc_id_for=lambda slug: slug.upper())
-    assert strict["ambiguous"] == 1
-    assert strict["references_unresolved"] == 1
+    stats = graph.build_graph(ckb, manifest, safe_tmp_path / "raw", cfg,
+                              doc_id_for=lambda slug: slug.upper())
+    assert stats["ambiguous"] == 1                 # Article 22(1): GDPR and AIACT both define it
+    assert stats["references_unresolved"] == 1     # Article 9999: nowhere in the corpus
+    assert stats["references_resolved"] == 0
 
-    lenient = graph.build_graph(ckb, manifest, safe_tmp_path / "raw",
-                                dict(base_cfg, max_targets_per_reference=2),
-                                doc_id_for=lambda slug: slug.upper())
-    assert lenient["ambiguous"] == 0               # 2 candidates <= configured max of 2
-    assert lenient["references_unresolved"] == 2   # Article 22(1) AND Article 9999: still no edge
-    assert lenient["references_resolved"] == 0
+    conn = ops.get_db(ckb)
+    # edpb0 cites the ambiguous Article 22(1) -- no edge at all, not even a placeholder
+    edpb0_refs = [r for r in ops.get_edges_from(conn, "edpb0") if r["edge_type"] == "references"]
+    assert edpb0_refs == []
+    # edpb1 cites Article 9999, truly out of corpus -- the one and only unresolved edge
+    edpb1_refs = [r for r in ops.get_edges_from(conn, "edpb1") if r["edge_type"] == "references"]
+    assert len(edpb1_refs) == 1
+    assert edpb1_refs[0]["to_external_ref"] == "article:9999"
+    assert edpb1_refs[0]["confidence"] == 0.0
+    conn.close()
 
 
 def test_build_graph_records_a_per_chunk_error_and_keeps_going(safe_tmp_path, monkeypatch):

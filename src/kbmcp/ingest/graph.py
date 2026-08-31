@@ -208,7 +208,6 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
             resolved = {_doc_id(s) for s in scope_for(slug, by_slug)}
             scope_by_doc[did] = {d for d in resolved if d is not None}
 
-        max_targets = cfg.get("max_targets_per_reference", 1)
         extractors = tuple(cfg.get("extractors", ["legal", "academic"]))
         rows = conn.execute(
             "SELECT chunk_id, doc_id, text FROM chunks ORDER BY doc_id, chunk_index"
@@ -227,8 +226,8 @@ def build_graph(ckb_path, manifest_path, raw_dir, cfg: dict, *, doc_id_for=None)
                                         edge_type="references", provenance=ref.raw,
                                         confidence=1.0, created_at=_now())
                         stats["references_resolved"] += 1
-                    elif len(candidates) > max_targets:
-                        stats["ambiguous"] += 1        # too many candidates; guessing is worse
+                    elif len(candidates) > 1:
+                        stats["ambiguous"] += 1        # more than one candidate; guessing is worse
                     else:
                         if cfg.get("record_unresolved", True):
                             ops.insert_edge(conn, from_chunk=row["chunk_id"],
