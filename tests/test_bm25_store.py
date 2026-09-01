@@ -205,3 +205,127 @@ def test_build_raises_actionable_error_when_bm25_meta_is_missing(safe_tmp_path):
             bs.BM25Store(conn, CFG).build()
     finally:
         conn.close()
+
+
+# BM25 IDF collapses on a corpus of 1-3 documents: with a term in most of them,
+# FTS5 clamps the score to ~1.7e-06. Ranking order still holds, but the tests
+# would be asserting a clamping artifact instead of ranking behaviour. Padding
+# the corpus with non-matching chunks restores realistic IDF (scores 0.9-2.7).
+# Measured 2026-08-31; ordering is identical padded or not.
+PAD = [(f"pad{i}", "", "unrelated filler material about barbells") for i in range(8)]
+
+
+def _built(safe_tmp_path, rows, cfg=None):
+    conn = _ckb(safe_tmp_path / "t.sqlite", rows)
+    bs.BM25Store(conn, cfg or CFG).build()
+    return conn, bs.BM25Store(conn, cfg or CFG)
+
+
+def test_query_returns_positive_descending_scores(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [
+        ("c0", "", "protein synthesis protein protein"),
+        ("c1", "", "protein synthesis"),
+        ("c2", "", "unrelated material"),
+    ] + PAD)
+    try:
+        out = store.query("protein")
+        assert [cid for cid, _ in out] == ["c0", "c1"]
+        assert all(s > 0 for _, s in out)
+        assert out[0][1] >= out[1][1]
+    finally:
+        conn.close()
+
+
+def test_context_only_term_retrieves_the_chunk(safe_tmp_path):
+    """The whole point of M4: a term that appears ONLY in the generated context
+    must still retrieve its chunk."""
+    conn, store = _built(safe_tmp_path, [
+        ("c0", "This section of the GDPR concerns automated decision-making.",
+         "The data subject shall have the right not to be subject to a decision."),
+        ("c1", "", "Unrelated text about barbell training."),
+    ] + PAD)
+    try:
+        assert [cid for cid, _ in store.query("GDPR")] == ["c0"]
+    finally:
+        conn.close()
+
+
+def test_text_hit_outranks_context_only_hit(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [
+        ("ctx_only", "hypertrophy", "filler filler filler"),
+        ("in_text", "filler", "hypertrophy filler filler"),
+    ] + PAD)
+    try:
+        assert [cid for cid, _ in store.query("hypertrophy")][0] == "in_text"
+    finally:
+        conn.close()
+
+
+def test_stemming_matches_singular_and_plural(safe_tmp_path):
+    """The reference's hand-rolled stemmer failed 7 of 9 legal pairs; porter
+    must collide damage/damages."""
+    conn, store = _built(safe_tmp_path, [("c0", "", "liquidated damage clause")] + PAD)
+    try:
+        assert [cid for cid, _ in store.query("damages")] == ["c0"]
+    finally:
+        conn.close()
+
+
+def test_negation_is_indexed_not_discarded(safe_tmp_path):
+    """The reference dropped 'not' as a stopword, making these two identical."""
+    conn, store = _built(safe_tmp_path, [
+        ("neg", "", "the principal shall not be subject to transfer"),
+        ("pos", "", "the principal shall be subject to transfer"),
+    ] + PAD)
+    try:
+        assert [cid for cid, _ in store.query("not")] == ["neg"]
+    finally:
+        conn.close()
+
+
+def test_query_honours_top_k(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [(f"c{i}", "", "protein") for i in range(5)])
+    try:
+        assert len(store.query("protein", top_k=2)) == 2
+    finally:
+        conn.close()
+
+
+def test_hazard_queries_do_not_raise(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "", "Article 22 damages protein")])
+    try:
+        for q in HAZARD_QUERIES:
+            store.query(q)   # must not raise
+    finally:
+        conn.close()
+
+
+def test_empty_and_punctuation_only_queries_return_empty(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "", "anything")])
+    try:
+        assert store.query("") == []
+        assert store.query("--- ???") == []
+    finally:
+        conn.close()
+
+
+def test_query_before_build_raises(safe_tmp_path):
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
+    try:
+        with pytest.raises(bs.BM25NotBuiltError):
+            bs.BM25Store(conn, CFG).query("text")
+    finally:
+        conn.close()
+
+
+def test_query_raises_when_index_is_present_but_incomplete(safe_tmp_path):
+    """A build that dies after the DDL but before the fingerprint leaves
+    chunks_fts present but empty. That must raise, not return zero hits."""
+    conn, store = _built(safe_tmp_path, [("c0", "", "protein")] + PAD)
+    try:
+        conn.execute("DELETE FROM bm25_meta")
+        conn.commit()
+        with pytest.raises(bs.BM25NotBuiltError):
+            store.query("protein")
+    finally:
+        conn.close()

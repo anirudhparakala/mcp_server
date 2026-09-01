@@ -133,6 +133,50 @@ class BM25Store:
         self.conn.commit()
         return count
 
+    def _index_exists(self) -> bool:
+        """True only when a COMPLETE index is present.
+
+        Presence of chunks_fts alone is not enough: a build that fails after the
+        DDL but before the fingerprint write leaves the table present but empty,
+        because SQLite auto-commits DDL outside the surrounding transaction. A
+        presence-only check would let query() return zero hits for a broken index
+        instead of raising.
+        """
+        has_table = self.conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'chunks_fts'"
+        ).fetchone() is not None
+        if not has_table:
+            return False
+        try:
+            return self.conn.execute(
+                "SELECT 1 FROM bm25_meta WHERE id = 1").fetchone() is not None
+        except sqlite3.OperationalError:
+            return False   # bm25_meta absent entirely -> not built
+
+    def query(self, text: str, top_k=None) -> list:
+        """Top lexical matches as (chunk_id, score), best first.
+
+        Scores are returned POSITIVE and DESCENDING. FTS5's bm25() is negative
+        with more-negative meaning a better match; negating here keeps the
+        contract downstream RRF and not-found code expects.
+        """
+        if not self._index_exists():
+            raise BM25NotBuiltError(
+                "BM25 index not built: run BM25Store.build() (or "
+                "`python -m kbmcp.index.bm25_store`) first"
+            )
+        match = to_match_query(text)
+        if not match:
+            return []
+        limit = self.top_k if top_k is None else top_k
+        rows = self.conn.execute(
+            "SELECT chunk_id, bm25(chunks_fts, 0.0, ?, ?) AS score FROM chunks_fts "
+            "WHERE chunks_fts MATCH ? ORDER BY score ASC, chunk_id ASC LIMIT ?",
+            (float(self.weights.get("context", 1.0)),
+             float(self.weights.get("text", 2.0)), match, limit),
+        ).fetchall()
+        return [(r["chunk_id"], -float(r["score"])) for r in rows]
+
 
 def to_match_query(text: str) -> str:
     """Turn free user text into a safe FTS5 MATCH expression.
