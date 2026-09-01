@@ -153,6 +153,26 @@ class BM25Store:
         except sqlite3.OperationalError:
             return False   # bm25_meta absent entirely -> not built
 
+    def is_stale(self) -> bool:
+        """True when the index does not match the chunks currently in the DB.
+
+        Guards the desync class that bit M5: an index built from a superseded
+        chunk set returns chunk_ids that no longer exist, silently.
+        """
+        if not self._index_exists():
+            return True
+        row = self.conn.execute("SELECT * FROM bm25_meta WHERE id = 1").fetchone()
+        if row is None:
+            return True
+        count, digest = corpus_digest(self.conn)
+        return (
+            row["chunk_count"] != count
+            or row["chunks_digest"] != digest
+            or row["tokenize"] != self.tokenize
+            or json.loads(row["weights_json"]) != self.weights
+            or row["schema_version"] != SCHEMA_VERSION
+        )
+
     def query(self, text: str, top_k=None) -> list:
         """Top lexical matches as (chunk_id, score), best first.
 
@@ -193,3 +213,30 @@ def to_match_query(text: str) -> str:
     """
     tokens = _TOKEN_RE.findall(text or "")
     return " OR ".join('"%s"' % t for t in tokens)
+
+
+def main(argv=None) -> int:
+    import argparse
+    import sys
+
+    from ..config import load_corpus_config
+    from ..db import ops
+    from ..db.schema import create_all_tables
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.index.bm25_store")
+    p.add_argument("--ckb", default="ckb/ckb.sqlite")
+    p.add_argument("--config", default="config/corpus_config.yaml")
+    a = p.parse_args(argv)
+
+    conn = ops.get_db(a.ckb)
+    try:
+        create_all_tables(conn)
+        count = BM25Store(conn, load_corpus_config(a.config).bm25).build()
+        print(f"bm25: indexed {count} chunks", file=sys.stderr)
+    finally:
+        conn.close()
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

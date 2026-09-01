@@ -329,3 +329,60 @@ def test_query_raises_when_index_is_present_but_incomplete(safe_tmp_path):
             store.query("protein")
     finally:
         conn.close()
+
+
+def test_is_stale_false_right_after_build(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "ctx", "text")])
+    try:
+        assert store.is_stale() is False
+    finally:
+        conn.close()
+
+
+def test_is_stale_true_before_any_build(safe_tmp_path):
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
+    try:
+        assert bs.BM25Store(conn, CFG).is_stale() is True
+    finally:
+        conn.close()
+
+
+def test_is_stale_true_after_a_chunk_is_added(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "", "text")])
+    try:
+        ops.insert_chunk(conn, chunk_id="c1", doc_id="doc1", chunk_index=1,
+                         chunk_type="text", text="new")
+        assert store.is_stale() is True
+    finally:
+        conn.close()
+
+
+def test_is_stale_true_after_context_is_added(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "", "text")])
+    try:
+        conn.execute("UPDATE chunks SET context = 'later' WHERE chunk_id = 'c0'")
+        conn.commit()
+        assert store.is_stale() is True
+    finally:
+        conn.close()
+
+
+def test_is_stale_true_when_config_changes(safe_tmp_path):
+    conn, _ = _built(safe_tmp_path, [("c0", "", "text")])
+    try:
+        reweighted = bs.BM25Store(conn, dict(CFG, weights={"context": 5.0, "text": 1.0}))
+        assert reweighted.is_stale() is True
+    finally:
+        conn.close()
+
+
+def test_cli_builds_the_index(safe_tmp_path):
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
+    conn.close()
+    assert bs.main(["--ckb", str(safe_tmp_path / "t.sqlite"),
+                    "--config", "config/corpus_config.yaml"]) == 0
+    conn = ops.get_db(safe_tmp_path / "t.sqlite")
+    try:
+        assert conn.execute("SELECT COUNT(*) FROM chunks_fts").fetchone()[0] == 1
+    finally:
+        conn.close()
