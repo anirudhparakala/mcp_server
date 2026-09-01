@@ -40,8 +40,11 @@ def _now() -> str:
 def corpus_digest(conn) -> tuple:
     """(chunk_count, sha256 hex) over every chunk's id, context and text.
 
-    Ordered by chunk_id for determinism, and fields are joined with the ASCII
-    unit separator, matching the house ID scheme's collision-safe convention.
+    Ordered by chunk_id for determinism, and fields are separated by the ASCII
+    unit separator (0x1F), matching the house ID scheme's join convention --
+    the corpus's extracted text does not contain a literal 0x1F (measured: 0 of
+    2803 live chunks), so this is not the collision-proof guarantee the ID
+    scheme has over its own fields, just a separator absent from real text.
 
     Covers CONTENT, not just ids: chunk_id is sha256(url, version, chunk_index)
     and does not depend on text, so an id-only digest would miss a re-parse or a
@@ -74,7 +77,14 @@ class BM25Store:
         self.top_k = cfg.get("top_k", DEFAULT_TOP_K)
 
     def build(self) -> int:
-        """Drop and rebuild the FTS5 index over all chunks; return the count."""
+        """Drop and rebuild the FTS5 index over all chunks; return the count.
+
+        Precondition: `conn` must already carry the full CKB schema (i.e.
+        `kbmcp.db.schema.create_all_tables(conn)` has been run on it). build()
+        owns only the `chunks_fts` table -- it deliberately does not create
+        `bm25_meta` or any content table itself, since that split belongs to
+        db/schema.py.
+        """
         if not _SAFE_TOKENIZE_RE.fullmatch(self.tokenize):
             raise BM25BuildError(
                 f"unsafe bm25.tokenize value {self.tokenize!r}: expected only "
@@ -103,13 +113,23 @@ class BM25Store:
             "ORDER BY chunk_id"
         )
         count, digest = corpus_digest(self.conn)
-        self.conn.execute("DELETE FROM bm25_meta")
-        self.conn.execute(
-            "INSERT INTO bm25_meta (id, chunk_count, chunks_digest, tokenize, "
-            "weights_json, schema_version, built_at) VALUES (1, ?, ?, ?, ?, ?, ?)",
-            (count, digest, self.tokenize, json.dumps(self.weights, sort_keys=True),
-             SCHEMA_VERSION, _now()),
-        )
+        try:
+            self.conn.execute("DELETE FROM bm25_meta")
+            self.conn.execute(
+                "INSERT INTO bm25_meta (id, chunk_count, chunks_digest, tokenize, "
+                "weights_json, schema_version, built_at) VALUES (1, ?, ?, ?, ?, ?, ?)",
+                (count, digest, self.tokenize, json.dumps(self.weights, sort_keys=True),
+                 SCHEMA_VERSION, _now()),
+            )
+        except sqlite3.OperationalError as exc:
+            if "no such table" in str(exc).lower():
+                raise BM25BuildError(
+                    "the CKB has no bm25_meta table, so the index fingerprint cannot "
+                    "be recorded. This happens on a CKB built before the lexical index "
+                    "existed. Call kbmcp.db.schema.create_all_tables(conn) on it first "
+                    "(the `python -m kbmcp.index.bm25_store` CLI does this for you)."
+                ) from exc
+            raise
         self.conn.commit()
         return count
 

@@ -134,10 +134,12 @@ def test_build_writes_fingerprint(safe_tmp_path):
 
 
 def test_build_is_deterministic(safe_tmp_path):
+    """Insertion order differs between the two CKBs, so this passes only because
+    corpus_digest sorts by chunk_id -- delete that ORDER BY and it fails."""
     rows = [("c0", "ctx zero", "text zero"), ("c1", "ctx one", "text one")]
     digests = []
-    for name in ("a.sqlite", "b.sqlite"):
-        conn = _ckb(safe_tmp_path / name, rows)
+    for name, ordered in (("a.sqlite", rows), ("b.sqlite", list(reversed(rows)))):
+        conn = _ckb(safe_tmp_path / name, ordered)
         try:
             bs.BM25Store(conn, CFG).build()
             digests.append(conn.execute(
@@ -178,9 +180,28 @@ def test_rebuild_is_idempotent(safe_tmp_path):
 def test_build_rejects_an_unsafe_tokenize_value(safe_tmp_path):
     conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "ctx", "text")])
     try:
+        bs.BM25Store(conn, CFG).build()          # a good index exists first
         bad = dict(CFG, tokenize="unicode61'); DROP TABLE chunks; --")
         with pytest.raises(bs.BM25BuildError):
             bs.BM25Store(conn, bad).build()
+        # validation runs BEFORE the DROP, so the existing index survives intact
         assert conn.execute("SELECT COUNT(*) FROM chunks").fetchone()[0] == 1
+        assert conn.execute("SELECT COUNT(*) FROM chunks_fts").fetchone()[0] == 1
+    finally:
+        conn.close()
+
+
+def test_build_raises_actionable_error_when_bm25_meta_is_missing(safe_tmp_path):
+    """Simulates a CKB built before bm25_meta existed in the schema -- true of
+    every CKB already in the wild, including the shipped release asset. build()
+    deliberately owns only chunks_fts (not the content tables), so a missing
+    bm25_meta must fail with an actionable BM25BuildError telling the caller to
+    run create_all_tables, not a raw sqlite3.OperationalError."""
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "ctx", "text")])
+    try:
+        conn.execute("DROP TABLE bm25_meta")
+        conn.commit()
+        with pytest.raises(bs.BM25BuildError, match="create_all_tables"):
+            bs.BM25Store(conn, CFG).build()
     finally:
         conn.close()
