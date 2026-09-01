@@ -4,6 +4,8 @@ Hermetic: every test builds a tiny CKB under safe_tmp_path. Never depends on
 ckb/ckb.sqlite existing.
 """
 
+import sqlite3
+
 import pytest
 
 from kbmcp.index import bm25_store as bs
@@ -64,15 +66,21 @@ def test_create_all_tables_creates_bm25_meta(safe_tmp_path):
         conn.close()
 
 
-def test_bm25_meta_holds_at_most_one_row(safe_tmp_path):
+def test_bm25_meta_rejects_a_second_row(safe_tmp_path):
+    """Both halves of single-row enforcement: a different id is out of domain,
+    and a duplicate id=1 collides with the primary key. The second case is the
+    one that matters -- it is why build() must clear the row before inserting."""
     conn = ops.get_db(safe_tmp_path / "t.sqlite")
     try:
         create_all_tables(conn)
         ins = ("INSERT INTO bm25_meta (id, chunk_count, chunks_digest, tokenize, "
                "weights_json, schema_version, built_at) VALUES (?,1,'d','t','{}',1,'now')")
         conn.execute(ins, (1,))
-        with pytest.raises(Exception):
-            conn.execute(ins, (2,))   # CHECK (id = 1) rejects a second row
+        with pytest.raises(sqlite3.IntegrityError):
+            conn.execute(ins, (2,))   # CHECK (id = 1) rejects a different id
+        with pytest.raises(sqlite3.IntegrityError):
+            conn.execute(ins, (1,))   # PRIMARY KEY rejects a duplicate row
+        assert conn.execute("SELECT COUNT(*) FROM bm25_meta").fetchone()[0] == 1
     finally:
         conn.close()
 
