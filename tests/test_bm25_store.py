@@ -376,6 +376,29 @@ def test_is_stale_true_when_config_changes(safe_tmp_path):
         conn.close()
 
 
+def test_is_stale_true_when_tokenizer_changes(safe_tmp_path):
+    """A tokenizer change alters how every row was indexed, so the index must
+    be considered stale even though the chunks are untouched."""
+    conn, _ = _built(safe_tmp_path, [("c0", "", "text")])
+    try:
+        retokenized = bs.BM25Store(conn, dict(CFG, tokenize="unicode61"))
+        assert retokenized.is_stale() is True
+    finally:
+        conn.close()
+
+
+def test_is_stale_true_when_schema_version_changes(safe_tmp_path):
+    """A stored fingerprint from an older index layout must not be trusted."""
+    conn, store = _built(safe_tmp_path, [("c0", "", "text")])
+    try:
+        conn.execute("UPDATE bm25_meta SET schema_version = ? WHERE id = 1",
+                     (bs.SCHEMA_VERSION + 1,))
+        conn.commit()
+        assert store.is_stale() is True
+    finally:
+        conn.close()
+
+
 def test_cli_builds_the_index(safe_tmp_path):
     conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
     conn.close()
@@ -386,3 +409,27 @@ def test_cli_builds_the_index(safe_tmp_path):
         assert conn.execute("SELECT COUNT(*) FROM chunks_fts").fetchone()[0] == 1
     finally:
         conn.close()
+
+
+def test_cli_returns_1_on_build_failure(safe_tmp_path, monkeypatch):
+    """A CKB predating bm25_meta must yield an actionable message and exit 1,
+    not a traceback.
+
+    Deviates from the coordinator's literal fixture: `_ckb()` itself calls the
+    real `create_all_tables`, so bm25_meta already exists on disk before
+    `main()` ever runs -- monkeypatching `bs.create_all_tables` to a no-op
+    alone does not remove it (verified empirically: without the DROP below,
+    build() succeeds and rc is 0, not 1). The DROP TABLE actually recreates
+    the "predates bm25_meta" state -- the same technique already used by
+    test_build_raises_actionable_error_when_bm25_meta_is_missing above -- and
+    the monkeypatch stops main()'s own create_all_tables call from silently
+    repairing it before build() runs, so the except branch is what's on trial.
+    """
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
+    conn.execute("DROP TABLE bm25_meta")
+    conn.commit()
+    conn.close()
+    monkeypatch.setattr(bs, "create_all_tables", lambda conn: None)  # simulate legacy CKB
+    rc = bs.main(["--ckb", str(safe_tmp_path / "t.sqlite"),
+                  "--config", "config/corpus_config.yaml"])
+    assert rc == 1

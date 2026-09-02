@@ -6,11 +6,17 @@ FTS5 lives inside ckb.sqlite rather than in a sidecar artifact, so the shipped
 CKB stays a single file and the index cannot drift from the chunks it indexes.
 """
 
+import argparse
 import hashlib
 import json
 import re
 import sqlite3
+import sys
 from datetime import datetime, timezone
+
+from ..config import load_corpus_config
+from ..db import ops
+from ..db.schema import create_all_tables
 
 _TOKEN_RE = re.compile(r"\w+", re.UNICODE)
 
@@ -216,13 +222,6 @@ def to_match_query(text: str) -> str:
 
 
 def main(argv=None) -> int:
-    import argparse
-    import sys
-
-    from ..config import load_corpus_config
-    from ..db import ops
-    from ..db.schema import create_all_tables
-
     p = argparse.ArgumentParser(prog="python -m kbmcp.index.bm25_store")
     p.add_argument("--ckb", default="ckb/ckb.sqlite")
     p.add_argument("--config", default="config/corpus_config.yaml")
@@ -233,6 +232,9 @@ def main(argv=None) -> int:
         create_all_tables(conn)
         count = BM25Store(conn, load_corpus_config(a.config).bm25).build()
         print(f"bm25: indexed {count} chunks", file=sys.stderr)
+    except BM25BuildError as exc:
+        print(f"bm25: build failed: {exc}", file=sys.stderr)
+        return 1
     finally:
         conn.close()
     return 0
