@@ -68,6 +68,27 @@ def corpus_digest(conn) -> tuple:
     return n, h.hexdigest()
 
 
+def invalidate(conn: sqlite3.Connection) -> None:
+    """Drop the BM25 fingerprint so is_stale()/query() treat the index as not
+    built. A no-op when bm25_meta does not exist (a CKB predating the lexical
+    index has nothing to invalidate).
+
+    Ownership: this module owns the index, so anything that rewrites chunks
+    out from under it -- e.g. ingest/build.py's --force rebuild -- calls this
+    rather than hand-writing `DELETE FROM bm25_meta` itself. Does not touch
+    chunks_fts: leaving the stale table behind is harmless, since
+    BM25Store._index_exists() requires the bm25_meta row too, and the next
+    real build() drops and repopulates chunks_fts wholesale anyway.
+    """
+    try:
+        conn.execute("DELETE FROM bm25_meta")
+        conn.commit()
+    except sqlite3.OperationalError as exc:
+        if "no such table" in str(exc).lower():
+            return  # nothing to invalidate on a CKB that predates bm25_meta
+        raise
+
+
 class BM25Store:
     """FTS5-backed lexical index over the CKB's chunks.
 
@@ -81,6 +102,22 @@ class BM25Store:
         self.tokenize = cfg.get("tokenize", DEFAULT_TOKENIZE)
         self.weights = dict(cfg.get("weights", DEFAULT_WEIGHTS))
         self.top_k = cfg.get("top_k", DEFAULT_TOP_K)
+
+    def _row_cursor(self) -> sqlite3.Cursor:
+        """A cursor with row_factory = sqlite3.Row, independent of the caller's
+        connection-level setting.
+
+        __init__ accepts any connection and never sets or checks
+        conn.row_factory -- only kbmcp.db.ops.get_db happens to set it. Phase 2
+        opens the shipped read-only CKB directly (e.g. a plain
+        sqlite3.connect("file:...?mode=ro", uri=True)), which leaves it at the
+        tuple default. Setting row_factory on a per-call cursor rather than on
+        self.conn keeps this store's dict-style row access working without
+        mutating a connection a caller may be sharing elsewhere.
+        """
+        cur = self.conn.cursor()
+        cur.row_factory = sqlite3.Row
+        return cur
 
     def build(self) -> int:
         """Drop and rebuild the FTS5 index over all chunks; return the count.
@@ -96,6 +133,26 @@ class BM25Store:
                 f"unsafe bm25.tokenize value {self.tokenize!r}: expected only "
                 "lowercase letters, digits, underscores and spaces"
             )
+
+        # Clear the fingerprint FIRST, in its own committed transaction. SQLite
+        # auto-commits DDL but not DML, so a crash after the DROP/CREATE would
+        # otherwise leave chunks_fts empty while the PREVIOUS build's bm25_meta
+        # row survives the rollback -- is_stale() would then report a completely
+        # empty index as fresh, and every query would silently return no hits.
+        # Failing "not built" is recoverable; failing "fresh but empty" is not.
+        try:
+            self.conn.execute("DELETE FROM bm25_meta")
+            self.conn.commit()
+        except sqlite3.OperationalError as exc:
+            if "no such table" in str(exc).lower():
+                raise BM25BuildError(
+                    "the CKB has no bm25_meta table, so the index fingerprint cannot "
+                    "be recorded. This happens on a CKB built before the lexical index "
+                    "existed. Call kbmcp.db.schema.create_all_tables(conn) on it first "
+                    "(the `python -m kbmcp.index.bm25_store` CLI does this for you)."
+                ) from exc
+            raise
+
         self.conn.execute("DROP TABLE IF EXISTS chunks_fts")
         try:
             self.conn.execute(
@@ -120,7 +177,6 @@ class BM25Store:
         )
         count, digest = corpus_digest(self.conn)
         try:
-            self.conn.execute("DELETE FROM bm25_meta")
             self.conn.execute(
                 "INSERT INTO bm25_meta (id, chunk_count, chunks_digest, tokenize, "
                 "weights_json, schema_version, built_at) VALUES (1, ?, ?, ?, ?, ?, ?)",
@@ -167,7 +223,8 @@ class BM25Store:
         """
         if not self._index_exists():
             return True
-        row = self.conn.execute("SELECT * FROM bm25_meta WHERE id = 1").fetchone()
+        row = self._row_cursor().execute(
+            "SELECT * FROM bm25_meta WHERE id = 1").fetchone()
         if row is None:
             return True
         count, digest = corpus_digest(self.conn)
@@ -195,7 +252,7 @@ class BM25Store:
         if not match:
             return []
         limit = self.top_k if top_k is None else top_k
-        rows = self.conn.execute(
+        rows = self._row_cursor().execute(
             "SELECT chunk_id, bm25(chunks_fts, 0.0, ?, ?) AS score FROM chunks_fts "
             "WHERE chunks_fts MATCH ? ORDER BY score ASC, chunk_id ASC LIMIT ?",
             (float(self.weights.get("context", 1.0)),

@@ -331,6 +331,48 @@ def test_query_raises_when_index_is_present_but_incomplete(safe_tmp_path):
         conn.close()
 
 
+def test_crash_mid_rebuild_leaves_honest_not_built_state(safe_tmp_path, monkeypatch):
+    """Whole-branch review finding 1 (CRITICAL): SQLite auto-commits DDL but not
+    the DML that follows it, so on a REBUILD the DROP/CREATE/INSERT into
+    chunks_fts can survive a crash while the surrounding transaction that would
+    have written bm25_meta never commits. Pre-fix, build() cleared bm25_meta
+    LAST, so the crash left the PREVIOUS build's fingerprint row intact next to
+    an empty chunks_fts table -- is_stale() then compared the surviving row
+    against the (unchanged) live corpus, found a match, and reported a broken,
+    empty index as fresh; query() then silently returned zero hits instead of
+    raising. The fix clears bm25_meta FIRST, in its own committed transaction,
+    so any crash after that point leaves an honest "not built" state.
+    """
+    path = safe_tmp_path / "t.sqlite"
+    conn = _ckb(path, [("c0", "", "protein")] + PAD)
+    try:
+        bs.BM25Store(conn, CFG).build()
+    finally:
+        conn.close()
+
+    def boom(c):
+        raise RuntimeError("simulated crash mid-rebuild")
+    monkeypatch.setattr(bs, "corpus_digest", boom)
+
+    conn = ops.get_db(path)
+    try:
+        with pytest.raises(RuntimeError):
+            bs.BM25Store(conn, CFG).build()
+    finally:
+        conn.close()   # simulate the crash: any uncommitted DML is discarded
+
+    monkeypatch.undo()   # the "crash" is over; corpus_digest works again
+
+    conn = ops.get_db(path)
+    try:
+        store = bs.BM25Store(conn, CFG)
+        assert store.is_stale() is True
+        with pytest.raises(bs.BM25NotBuiltError):
+            store.query("protein")
+    finally:
+        conn.close()
+
+
 def test_is_stale_false_right_after_build(safe_tmp_path):
     conn, store = _built(safe_tmp_path, [("c0", "ctx", "text")])
     try:
@@ -433,3 +475,93 @@ def test_cli_returns_1_on_build_failure(safe_tmp_path, monkeypatch):
     rc = bs.main(["--ckb", str(safe_tmp_path / "t.sqlite"),
                   "--config", "config/corpus_config.yaml"])
     assert rc == 1
+
+
+# ---------------------------------------------------------------------------
+# Finding 3: BM25Store must not require the caller's connection to already
+# have row_factory = sqlite3.Row. Phase 2 opens the shipped read-only CKB
+# directly with a plain sqlite3.connect(...) (e.g. a "file:...?mode=ro" URI),
+# which never touches row_factory -- only kbmcp.db.ops.get_db happens to set
+# it today.
+# ---------------------------------------------------------------------------
+
+def test_query_works_without_caller_setting_row_factory(safe_tmp_path):
+    path = safe_tmp_path / "t.sqlite"
+    conn = _ckb(path, [("c0", "", "protein")] + PAD)
+    try:
+        bs.BM25Store(conn, CFG).build()
+    finally:
+        conn.close()
+
+    plain = sqlite3.connect(str(path))   # no row_factory set -- rows are tuples
+    try:
+        assert plain.row_factory is None
+        out = bs.BM25Store(plain, CFG).query("protein")
+        assert [cid for cid, _ in out] == ["c0"]
+    finally:
+        plain.close()
+
+
+def test_is_stale_works_without_caller_setting_row_factory(safe_tmp_path):
+    path = safe_tmp_path / "t.sqlite"
+    conn = _ckb(path, [("c0", "", "protein")] + PAD)
+    try:
+        bs.BM25Store(conn, CFG).build()
+    finally:
+        conn.close()
+
+    plain = sqlite3.connect(str(path))   # no row_factory set -- rows are tuples
+    try:
+        assert plain.row_factory is None
+        assert bs.BM25Store(plain, CFG).is_stale() is False
+    finally:
+        plain.close()
+
+
+def test_query_does_not_mutate_the_callers_row_factory(safe_tmp_path):
+    """The fix must set row_factory on a local cursor, not on self.conn --
+    mutating a shared connection's row_factory would surprise a caller that
+    holds other cursors on the same connection."""
+    path = safe_tmp_path / "t.sqlite"
+    conn = _ckb(path, [("c0", "", "protein")] + PAD)
+    try:
+        bs.BM25Store(conn, CFG).build()
+    finally:
+        conn.close()
+
+    plain = sqlite3.connect(str(path))
+    try:
+        bs.BM25Store(plain, CFG).query("protein")
+        bs.BM25Store(plain, CFG).is_stale()
+        assert plain.row_factory is None
+    finally:
+        plain.close()
+
+
+# ---------------------------------------------------------------------------
+# Finding 2: nothing invalidates the index when chunks are rewritten. A public
+# invalidate(conn) drops the fingerprint (a no-op when bm25_meta does not
+# exist), so ingest/build.py can call it after a successful --force rebuild
+# without hand-writing index SQL.
+# ---------------------------------------------------------------------------
+
+def test_invalidate_clears_the_fingerprint(safe_tmp_path):
+    conn, store = _built(safe_tmp_path, [("c0", "", "protein")] + PAD)
+    try:
+        assert store.is_stale() is False
+        bs.invalidate(conn)
+        assert store.is_stale() is True
+        with pytest.raises(bs.BM25NotBuiltError):
+            store.query("protein")
+    finally:
+        conn.close()
+
+
+def test_invalidate_is_a_noop_when_bm25_meta_is_absent(safe_tmp_path):
+    conn = _ckb(safe_tmp_path / "t.sqlite", [("c0", "", "text")])
+    try:
+        conn.execute("DROP TABLE bm25_meta")
+        conn.commit()
+        bs.invalidate(conn)   # must not raise
+    finally:
+        conn.close()

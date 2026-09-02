@@ -15,6 +15,7 @@ from pathlib import Path
 from ..config import load_corpus_config
 from ..db import ops
 from ..db.schema import create_all_tables
+from ..index import bm25_store
 from ..models.ids import chunk_id as mk_chunk_id
 from ..models.ids import doc_id as mk_doc_id
 from . import contextualize as ctxmod
@@ -144,6 +145,15 @@ def _run_build(conn, entries, raw_dir, parsed_dir, cfg, ctx_cfg, contexts_dir, c
             stats["errors"].append({"doc_id": "*", "error": f"--require-context: {msg}"})
         else:
             print(f"[note] {msg}", file=sys.stderr)
+
+    # Whole-branch review finding 2: build_ckb deletes and rewrites chunks (under
+    # --force, and via prune above) with no idea a BM25 index exists -- this
+    # module never mentions chunks_fts/bm25. Left alone, a rebuilt CKB that
+    # already had an index would keep silently serving chunk_ids from the
+    # superseded chunk set, because query() checks only that the index is
+    # PRESENT, not that it is fresh. Ownership of the index stays in
+    # index/bm25_store.py; invalidate() is a no-op on a CKB that never had one.
+    bm25_store.invalidate(conn)
 
     conn.execute(
         "INSERT INTO ingest_runs (ingest_run_id, started_at, finished_at, status, stats_json) "

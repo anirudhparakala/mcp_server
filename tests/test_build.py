@@ -1,7 +1,11 @@
 from pathlib import Path
+
+import pytest
+
 from kbmcp.ingest import build
 from kbmcp.ingest.fetch import write_meta
 from kbmcp.db import ops
+from kbmcp.index import bm25_store as bs
 from kbmcp.models.ids import doc_id as mk_doc_id, chunk_id as mk_chunk_id
 
 FIX = Path(__file__).resolve().parent / "fixtures"
@@ -402,3 +406,39 @@ def test_force_rebuild_does_not_orphan_edges_or_raise_fk_error(safe_tmp_path):
     assert orphans == []                       # neither direction survived as an orphan
     assert ops.count_rows(conn, "edges") == 0
     conn.close()
+
+
+def test_build_ckb_force_invalidates_a_stale_bm25_index(safe_tmp_path):
+    """Whole-branch review finding 2: build_ckb --force deletes and rewrites
+    every chunk with no idea a BM25 index exists (ingest/build.py never
+    mentions chunks_fts or bm25). Left alone, a --force rebuild on a CKB that
+    already has an index would leave it silently serving chunk_ids from the
+    superseded chunk set. build_ckb must call bm25_store.invalidate() itself
+    once a force rebuild succeeds, so the index reports not-built/stale
+    instead of serving dangling data."""
+    manifest, raw = _mini_corpus(safe_tmp_path)
+    ckb = safe_tmp_path / "ckb.sqlite"
+    parsed = safe_tmp_path / "parsed"
+    build.build_ckb(manifest, raw, parsed, ckb, CFG)
+
+    conn = ops.get_db(ckb)
+    try:
+        bm25_cfg = {"tokenize": "porter unicode61",
+                    "weights": {"context": 1.0, "text": 2.0}, "top_k": 50}
+        store = bs.BM25Store(conn, bm25_cfg)
+        store.build()
+        assert store.is_stale() is False
+    finally:
+        conn.close()
+
+    stats = build.build_ckb(manifest, raw, parsed, ckb, CFG, force=True)
+    assert stats["docs"] == 1 and not stats["errors"]
+
+    conn = ops.get_db(ckb)
+    try:
+        store = bs.BM25Store(conn, bm25_cfg)
+        assert store.is_stale() is True
+        with pytest.raises(bs.BM25NotBuiltError):
+            store.query("anything")
+    finally:
+        conn.close()
