@@ -33,25 +33,42 @@ class TokenizerDriftError(RuntimeError):
 
 def _offline_error_types() -> tuple:
     """Exception types that mean 'the hub is unreachable', not 'you configured
-    this wrong'. Built defensively: the available classes vary with the installed
-    huggingface_hub / requests versions."""
-    types = [OSError]          # covers socket errors and requests' ConnectionError subclasses
+    this wrong'. Built defensively: the classes vary with the installed
+    huggingface_hub / requests / httpx versions.
+
+    httpx matters specifically: huggingface_hub >= 1.x uses httpx, and
+    httpx.ConnectError does NOT subclass OSError, so an OSError-only tuple
+    would let a genuinely offline build crash.
+    """
+    types = [OSError]          # socket errors, and requests' ConnectionError subclasses
     try:
         from huggingface_hub.utils import HfHubHTTPError, LocalEntryNotFoundError
         types += [HfHubHTTPError, LocalEntryNotFoundError]
-    except Exception:  # noqa: BLE001 — older/newer hub versions expose different names
+    except Exception:  # noqa: BLE001 — hub versions expose different names
+        pass
+    try:
+        import httpx
+        types.append(httpx.TransportError)   # covers ConnectError, ReadTimeout, etc.
+    except Exception:  # noqa: BLE001 — httpx may not be installed on older stacks
         pass
     return tuple(types)
 
 
 _OFFLINE_ERRORS = _offline_error_types()
 
+_HUB_TIMEOUT_S = 10.0  # generous for a single metadata call; a hung endpoint must
+                       # surface as an offline error, not stall the build forever
+
 
 def resolve_tokenizer_revision(model: str) -> str:
-    """The tokenizer repo's current commit sha on Hugging Face."""
+    """The tokenizer repo's current commit sha on Hugging Face.
+
+    Bounded: a hung endpoint must surface as an offline error (which
+    check_tokenizer_revision tolerates), not stall the build forever.
+    """
     from huggingface_hub import HfApi
 
-    return HfApi().model_info(model).sha
+    return HfApi().model_info(model, timeout=_HUB_TIMEOUT_S).sha
 
 
 def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False, resolver=None):

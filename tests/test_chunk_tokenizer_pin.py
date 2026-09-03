@@ -84,3 +84,14 @@ def test_revision_is_threaded_through_to_from_pretrained(monkeypatch):
     ch._chunker("some/model", 800, "deadbeef")
     assert seen == {"model": "some/model", "revision": "deadbeef"}
     ch._chunker.cache_clear()
+
+
+def test_httpx_connect_error_is_treated_as_offline():
+    """huggingface_hub >= 1.x uses httpx, and httpx.ConnectError does NOT subclass
+    OSError -- an OSError-only tuple would crash a genuinely offline build."""
+    httpx = pytest.importorskip("httpx")
+
+    def unreachable(model):
+        raise httpx.ConnectError("connection refused")
+
+    assert ch.check_tokenizer_revision(CFG, resolver=unreachable) is None
