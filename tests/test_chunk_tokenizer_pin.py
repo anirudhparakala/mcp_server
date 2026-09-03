@@ -52,3 +52,35 @@ def test_revision_is_part_of_the_chunker_cache_key():
     import inspect
     params = list(inspect.signature(ch._chunker.__wrapped__).parameters)
     assert params == ["model", "max_tokens", "revision"]
+
+
+def test_a_misconfigured_model_id_is_not_silently_treated_as_offline():
+    """An auth error or bad model id must propagate. Swallowing it would skip the
+    drift check and let from_pretrained succeed from local cache with an unknown
+    revision -- the exact bypass this function prevents."""
+    def bad_model(model):
+        raise ValueError("Repository Not Found for url: ...")
+    with pytest.raises(ValueError):
+        ch.check_tokenizer_revision(CFG, resolver=bad_model)
+
+
+def test_revision_is_threaded_through_to_from_pretrained(monkeypatch):
+    """The signature test proves the cache key; this proves the wiring."""
+    seen = {}
+
+    class _FakeTok:
+        pass
+
+    def fake_from_pretrained(model, **kwargs):
+        seen["model"] = model
+        seen["revision"] = kwargs.get("revision")
+        return _FakeTok()
+
+    monkeypatch.setattr(ch, "AutoTokenizer",
+                        type("A", (), {"from_pretrained": staticmethod(fake_from_pretrained)}))
+    monkeypatch.setattr(ch, "HuggingFaceTokenizer", lambda **kw: object())
+    monkeypatch.setattr(ch, "HybridChunker", lambda **kw: object())
+    ch._chunker.cache_clear()          # the lru_cache would otherwise hide the call
+    ch._chunker("some/model", 800, "deadbeef")
+    assert seen == {"model": "some/model", "revision": "deadbeef"}
+    ch._chunker.cache_clear()

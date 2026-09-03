@@ -31,6 +31,22 @@ class TokenizerDriftError(RuntimeError):
     """Raised when the resolved tokenizer revision differs from the pinned one."""
 
 
+def _offline_error_types() -> tuple:
+    """Exception types that mean 'the hub is unreachable', not 'you configured
+    this wrong'. Built defensively: the available classes vary with the installed
+    huggingface_hub / requests versions."""
+    types = [OSError]          # covers socket errors and requests' ConnectionError subclasses
+    try:
+        from huggingface_hub.utils import HfHubHTTPError, LocalEntryNotFoundError
+        types += [HfHubHTTPError, LocalEntryNotFoundError]
+    except Exception:  # noqa: BLE001 — older/newer hub versions expose different names
+        pass
+    return tuple(types)
+
+
+_OFFLINE_ERRORS = _offline_error_types()
+
+
 def resolve_tokenizer_revision(model: str) -> str:
     """The tokenizer repo's current commit sha on Hugging Face."""
     from huggingface_hub import HfApi
@@ -56,7 +72,12 @@ def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False, reso
     pinned = chunk_cfg.get("tokenizer_revision")
     try:
         resolved = resolver(model)
-    except Exception:  # noqa: BLE001 — offline is not a build failure
+    except _OFFLINE_ERRORS:
+        # Genuinely unreachable: skip the check rather than block a build that
+        # would otherwise succeed. Anything else -- a bad model id, an auth error
+        # on a gated repo -- propagates, because silently skipping the check there
+        # would let from_pretrained succeed from local cache with an UNKNOWN
+        # revision, which is the failure this function exists to prevent.
         return None
     if pinned and resolved != pinned and not allow_drift:
         raise TokenizerDriftError(
