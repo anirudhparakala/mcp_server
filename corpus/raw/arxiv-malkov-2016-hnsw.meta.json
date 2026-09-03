@@ -1,0 +1,14 @@
+{
+  "content_hash": "f78da128a3ea9ac08d37cfe6c4b641f371f88adb677d6d2bf637d90bad8d414a",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-malkov-2016-hnsw",
+  "fetched_at": "2026-07-23T17:06:10Z",
+  "final_url": "https://arxiv.org/pdf/1603.09320v4",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-malkov-2016-hnsw.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v4",
+  "source_url": "https://arxiv.org/abs/1603.09320"
+}

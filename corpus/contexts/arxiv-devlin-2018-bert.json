@@ -1,0 +1,288 @@
+{
+  "contexts": {
+    "00948f9d840140a3f9670b6f3789d9ba93f76a5a6f9247e3db74fbcbc4b543a0": {
+      "context": "This chunk is from Section 5.3 \"Feature-based Approach with BERT\" in the Ablation Studies section of the BERT paper. It compares the feature-based approach to the fine-tuning approach by applying BERT to the CoNLL-2003 Named Entity Recognition task, demonstrating that BERT is effective for both methods.",
+      "text_sha256": "6a3ac4f5869411f83b4250fcd6a31e749772797628ca4cde4bf9384a46171a47",
+      "window_index": 1
+    },
+    "0144d52a8ba326bf5225eff2a1542dd3dfcfa1aea4f0267ebdadf862818a8d5b": {
+      "context": "This chunk appears at the end of the table of contents for the BERT paper (arXiv:1810.04805), listing Appendix C which contains additional ablation studies examining the effect of training steps and different masking procedures used in BERT's pre-training phase.",
+      "text_sha256": "89ea86088f5072c93f368d3fd5e8eb895a08045660c545dd113ebac618a658b1",
+      "window_index": 0
+    },
+    "01bcc1f2fdea966e5246a4735f3725e2e5e25bf77939ff6557e67166cdae5184": {
+      "context": "This chunk appears in the BERT paper's Appendix A, section A.1 \"Illustration of the Pre-training Tasks,\" specifically under the subsection \"Next Sentence Prediction.\" It provides concrete examples demonstrating how BERT's next sentence prediction pre-training task works, showing input sentence pairs labeled as either \"IsNext\" (consecutive sentences) or \"NotNext\" (random sentences).",
+      "text_sha256": "b750d41f1cb863e6660f76f34dcccad696dbac77d3d2ed0600644572ab638f85",
+      "window_index": 2
+    },
+    "0213c27faf34d7c396b16241943a2d38f14af408bb80d060e23e81bc4190df97": {
+      "context": "This chunk is from Appendix C.2 \"Ablation for Different Masking Procedures\" in the BERT paper, which presents an ablation study evaluating different masking strategies used during the masked language model (MLM) pre-training objective. The study compares three masking approaches (Mask, Same, and Rnd) and their effects on downstream tasks like MNLI and NER, examining both fine-tuning and feature-based approaches.",
+      "text_sha256": "325ffe47438d75d9079cc1fe2dc999b24153162a05763fb99b8bfa48fb28f6cf",
+      "window_index": 3
+    },
+    "03614a81aade04bab452dcfab74f94f6038e2a82c9f30f891a96781bdc6c0b5e": {
+      "context": "This chunk describes MNLI (Multi-Genre Natural Language Inference), one of the benchmark tasks detailed in Appendix B, Section B.1 of the BERT paper, which provides descriptions of the GLUE benchmark experiments used to evaluate BERT's performance.",
+      "text_sha256": "f7c64d3677dad8b90ee049c4696b3acaa6b0efce0cda7b4369258d154c5d6c2b",
+      "window_index": 3
+    },
+    "08b9f51cf6797ab5022a9bf48e2ec7ef162536632f1b51a45764bf826ed56cb4": {
+      "context": "This chunk is from Section 3.2 \"Fine-tuning BERT\" in the BERT paper, which explains how to adapt the pre-trained BERT model for downstream NLP tasks. It describes the fine-tuning approach where task-specific inputs and outputs are plugged into BERT and all parameters are jointly optimized, covering how different task types (paraphrasing, entailment, question answering, classification) map to BERT's sentence A and B inputs and output representations.",
+      "text_sha256": "099d5a36bb015a8c6e590a1e4b36372143ac06c30a4a83833e225fa82201e21b",
+      "window_index": 1
+    },
+    "0929ec74326602840eb9f5c52f5ed2f9b85f63fefabac3f59d2427ef933febdb": {
+      "context": "Section 4.4 of the BERT paper describes fine-tuning results on the SWAG (Situations With Adversarial Generations) dataset, a sentence-pair completion task that evaluates commonsense inference. This section explains how BERT is adapted for this task and reports performance improvements over baseline systems.",
+      "text_sha256": "b483421e46c0cdf31430a82fc2e930f322d6dca7abbe4622eba754109b72921c",
+      "window_index": 1
+    },
+    "113ac65088dec9466c587c4dd26ad321e48c2dc684063f3fc47a220d2d4ab456": {
+      "context": "Section 5.2 \"Effect of Model Size\" in the BERT paper's ablation studies, which investigates how increasing the number of layers, hidden units, and attention heads in BERT models impacts fine-tuning performance on downstream NLP tasks like GLUE, comparing BERT BASE and BERT LARGE against prior Transformer architectures.",
+      "text_sha256": "69c5ca5ed59ff127896d206d5b0e08c67e2aa42ee05dfe0114a6b515c447f1f9",
+      "window_index": 1
+    },
+    "1277db842274655961207037c42b6ed82e94ca30e53b89579f0bc0d3b7b8b287": {
+      "context": "This chunk contains the arXiv document header and navigation elements for the paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. (arXiv:1810.04805v2), providing links to access the abstract, PDF, and report issues with the HTML version of the paper.",
+      "text_sha256": "86b74da8a5837c237d922679137ff67bb27c81cb34cda9dc5166d84fc7832f1f",
+      "window_index": 0
+    },
+    "19c54b5ab2096a2a9e0cb431aecb4feaf84fbb41c1f6932e6392370bef6ab62b": {
+      "context": "This chunk appears in section 2.3 \"Transfer Learning from Supervised Data\" of the BERT paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. (2018). It discusses prior work on transfer learning approaches from supervised tasks and computer vision, providing background context for the related work section that precedes the introduction of BERT's methodology.",
+      "text_sha256": "c38e86ffabb3ae73d3303cbfb8f775ffe73deda88f75b689f5972d63bcf8f386",
+      "window_index": 0
+    },
+    "20bbf0e2dfe7e5cfcab176df6420450569eac8de5404238e3c5badba61f24895": {
+      "context": "This sentence appears in Section 2 (Related Work) of the BERT paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. It introduces the Related Work section, which reviews existing approaches to pre-training language representations before discussing BERT's novel contributions.",
+      "text_sha256": "18f350b0cca5ee5dc15ff25e9041e4e7b32f53c51ef0bb547b42b464cce2dc9f",
+      "window_index": 0
+    },
+    "20f9e5d96ad61a87aaabd90d631e8c6a134e64c7ca2e1472bb439b16e9bc43f7": {
+      "context": "This chunk appears in section 2.1 \"Unsupervised Feature-based Approaches\" of the BERT paper, which reviews historical methods for learning word and sentence representations prior to BERT. The chunk discusses traditional word embedding techniques and their generalization to sentence-level representations, providing background on pre-training approaches that preceded BERT's masked language model approach.",
+      "text_sha256": "28f6a4bc4a9925f3338f0b3cf0a546a8862f024058ae01b51730731e07afc6da",
+      "window_index": 0
+    },
+    "218a05008a76783132f1d992b04eaa39d6bbadafd0e90b3bdd760f490e6ae2cf": {
+      "context": "This figure appears in Appendix A, Section A.4 of the BERT paper, which compares the architectural differences between BERT, OpenAI GPT, and ELMo. The section discusses how BERT's bidirectional Transformer architecture differs from the left-to-right approach of GPT and the LSTM-based approach of ELMo, highlighting that BERT is jointly conditioned on both left and right context across all layers.",
+      "text_sha256": "b7717bf8cce76d5d5cb6fd50a1897a7a32298d91f0889310cdd91b2f3f1e1627",
+      "window_index": 2
+    },
+    "2317eb1641f810beedf75c9ea87e5d4b47d43d16dd7c94c1841d7ff46811b898": {
+      "context": "This is the author and affiliation information for the paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" published on arXiv (1810.04805), appearing immediately after the paper title.",
+      "text_sha256": "f5c27e82203253dce673ae0454734bf8e5b8a676408f6ade851d156a9d4dcc49",
+      "window_index": 0
+    },
+    "240e91ad8bb88c6faeeebe631bb7b460b04e0f980d1af900c4ba68abcdb4c2da": {
+      "context": "This section appears in Appendix A.4 of the BERT paper, which compares BERT with two other popular representation learning models: ELMo and OpenAI GPT. The chunk details the architectural and training differences between BERT and GPT, explaining that BERT's bidirectionality and dual pre-training tasks (masked language modeling and next sentence prediction from Section 3.1) are the primary sources of its empirical improvements over GPT.",
+      "text_sha256": "a0e1b69ec28beea98c9283e8c5543bfa7c35eccbd16dc24423c9e5e70b803668",
+      "window_index": 2
+    },
+    "283b01ad4819feee790cf00c826673e35f9b258c6e08023317d868094f02f03a": {
+      "context": "This chunk describes the STS-B dataset in Appendix B, Section B.1 of the BERT paper, which provides detailed descriptions of the GLUE Benchmark tasks used for evaluating BERT's performance on natural language understanding.",
+      "text_sha256": "11218b7f9af726eb766dba028b8cabedaf69aaa41da2e886c95caab6e75c75a2",
+      "window_index": 3
+    },
+    "2a403c2e55aca826b34c834f188ad85def47384f76b34e38ab02be368f94969e": {
+      "context": "This chunk is part of the References section of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding,\" listing bibliographic entries for works cited throughout the document that relate to language understanding, neural network architectures, and natural language processing tasks.",
+      "text_sha256": "40bb82e7fdb5a160c781a84dcdc6a991137ea806648ab570155e72c4e93d1afc",
+      "window_index": 2
+    },
+    "2af39b4ba8c02cba98eabdeb83ac67a43ecc6837e4bf3230780f5e4ac093970a": {
+      "context": "This section from the BERT paper's Appendix A.2 describes the pre-training procedure for BERT, detailing how training input sequences are generated using two text spans with next sentence prediction, the masking strategy applied at 15% rate, and the complete training configuration including batch size, optimizer settings, hardware setup, and sequence length scheduling used to pre-train both BERT BASE and BERT LARGE models.",
+      "text_sha256": "c494688ae329e5a69a39e913c72d0f1142d00fc926d7f299de433181b623e0b3",
+      "window_index": 2
+    },
+    "314c32eae00dff9ea9a24b6e4da8435bb0d165e498857c58b2c1f44735de2bd3": {
+      "context": "This chunk describes the QQP (Quora Question Pairs) dataset in Appendix B, Section B.1 of the BERT paper, which provides detailed descriptions of the tasks included in the GLUE benchmark used for evaluating BERT's performance.",
+      "text_sha256": "18fb504678bd3986a61f4642aa135ac84855a849e1c14463e1ee0c65bf86a90d",
+      "window_index": 3
+    },
+    "39afecbe7bb34277026a587a6635a5d813258e2cae8a51e0f8cd1b6506b3afce": {
+      "context": "This chunk appears in Section 3.1 of the BERT paper under \"Task #2: Next Sentence Prediction (NSP)\", which describes one of the two unsupervised pre-training tasks used to train BERT. The chunk explains the NSP task design, its motivation for downstream tasks like question answering and natural language inference, and the pre-training data sources used (BooksCorpus and Wikipedia).",
+      "text_sha256": "fdb7d1104ba29da049ab8d2434bbc3599926b7325a89fee991009526c31823c1",
+      "window_index": 0
+    },
+    "3bf7413e416b576e0a229305c6a97730dbfd6cb515c2785363331a4123b3f3af": {
+      "context": "This chunk is from the Introduction section (Section 1) of the BERT paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. It discusses the effectiveness of language model pre-training for NLP tasks, compares existing feature-based and fine-tuning approaches like ELMo and OpenAI GPT, identifies limitations of unidirectional language models, and introduces BERT's key innovation of using masked language modeling (MLM) to enable bidirectional pre-training.",
+      "text_sha256": "22778e8108ebf6aa3b5e6995a3f4f4cac000842fe50da9b478182536eefe99db",
+      "window_index": 0
+    },
+    "3e831b7831a2b6ed6d1c97097c653067cf7cff27156068b800c2053799e5259c": {
+      "context": "This chunk appears in Appendix A, Section A.1 of the BERT paper, under \"Illustration of the Pre-training Tasks\" and specifically under \"Masked LM and the Masking Procedure.\" It explains the masking procedure used during BERT's pre-training phase, detailing how tokens are randomly masked, replaced with random words, or kept unchanged at different rates, and discusses the advantages and convergence properties of this masked language modeling approach.",
+      "text_sha256": "0120166b287f8c178180b5eec6ec4f59c595bfc559d172db200ca2d7d87582b1",
+      "window_index": 2
+    },
+    "4220430b88bb0a4970c97fb568bb5224a1a9e553c60d55c84e8912908fa4e052": {
+      "context": "This chunk appears in the Introduction section of the BERT paper by Devlin et al. (arXiv:1810.04805), where the authors outline the main contributions of their work on bidirectional pre-training for language understanding. The bullet points summarize how BERT differs from prior approaches like OpenAI GPT and ELMo, and highlight its achievements across multiple NLP tasks.",
+      "text_sha256": "534e92e67a8129649d27ceb00b91f0f9214a64e7adb1c9b4f926fd9176e0f203",
+      "window_index": 0
+    },
+    "427994abd62bd764cec63bd8acef1012b75df2d11b341cf126ea748ce91e1e6a": {
+      "context": "Section 4.2 of the BERT paper describes fine-tuning BERT on the Stanford Question Answering Dataset (SQuAD v1.1), a benchmark task for question answering where the model must predict answer text spans in passages. This section explains BERT's approach to the task, including the use of start and end vectors during fine-tuning, the mathematical formulation for computing answer span probabilities, and experimental results comparing BERT's performance to existing systems on the SQuAD leaderboard.",
+      "text_sha256": "b2b5d78298498f8d538ac308c033dd59fa6a97ed50d863e9e9c78e0af13be9c6",
+      "window_index": 1
+    },
+    "4552cf6815dc239fed58e2e95a82f408b2f6987b6e7d25887c6f8cbf77da21c8": {
+      "context": "This chunk appears in the \"Model Architecture\" subsection of Section 3 (BERT) in the paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. It describes the architectural foundation of BERT, including its multi-layer bidirectional Transformer encoder design, key hyperparameters (L, H, A), and specifications for two model variants: BERT BASE and BERT LARGE, contrasting BERT's bidirectional self-attention with GPT's unidirectional approach.",
+      "text_sha256": "cbf1395770ecf2bccaf6d24eb1134d2e14c5a5f2b7e7c6b13dd0c20806794417",
+      "window_index": 0
+    },
+    "47dcf054afac2ea1566fdf066c8e8b8d392304fee0c67f42c121c1ae4df2eaa8": {
+      "context": "This chunk is part of the References section of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding,\" listing bibliographic entries for works cited throughout the document related to language modeling, word embeddings, sentence representations, and natural language understanding tasks.",
+      "text_sha256": "63242ac9a47afb135ac3df1c853df460e1ffd4b52435610134a5e799f646f5d0",
+      "window_index": 2
+    },
+    "4b069b0018d3457eafa50b6ddc4c9c84b24375cb54d3df4effb197f1e24084c4": {
+      "context": "This chunk appears in Section 3 of the BERT paper by Devlin et al. (2018), which introduces the BERT model and its detailed implementation. The section outlines the two-step framework that defines BERT: pre-training on unlabeled data using different pre-training tasks, and fine-tuning on labeled downstream tasks. The chunk emphasizes BERT's key architectural advantage of maintaining a unified architecture across different tasks with minimal modifications between pre-training and fine-tuning phases.",
+      "text_sha256": "fb353094976266185db7ee80645dae66d3af150356e29bf6180819262e0f1a31",
+      "window_index": 0
+    },
+    "4b889a262da7ff0597eaa8967c74e571dfa9822b54a5be4a5486ec74d4340eff": {
+      "context": "This chunk appears in Section 4.3 of the BERT paper's Experiments section, describing how BERT is fine-tuned for the SQuAD v2.0 question answering task, which extends SQuAD v1.1 by allowing unanswerable questions. The chunk explains the model architecture modifications and training procedures specific to handling questions without answers in the passage.",
+      "text_sha256": "03774be6381278f432c01cc070c32ffdde3a0cf6b4077e269005d23818aebe31",
+      "window_index": 1
+    },
+    "53fa808e727142e34d9d99683e7bf75f49e28b278b4836470a2e79bcc37cce9c": {
+      "context": "This chunk is from Section 5.1 \"Effect of Pre-training Tasks\" in the Ablation Studies section of the BERT paper. It presents ablation experiments comparing BERT's bidirectional pre-training approach against two alternative pre-training objectives: one without the Next Sentence Prediction (NSP) task and another using Left-to-Right (LTR) language modeling instead of masked language modeling (MLM), demonstrating the importance of bidirectionality for downstream task performance.",
+      "text_sha256": "4ce6e3e5ed4be08cd3d2b67302d83d4659f3715336ef52a4f836cc4315e0e224",
+      "window_index": 1
+    },
+    "5d75f0bc0162b9f6ed14796876505673f263d25d23f5b963551c35b813162328": {
+      "context": "This chunk appears in section 2.1 \"Unsupervised Feature-based Approaches\" of the BERT paper, which reviews related work on pre-training language representations. It discusses ELMo and related models that extract context-sensitive features using bidirectional language models, contrasting them with BERT's approach to bidirectional pre-training.",
+      "text_sha256": "c5f777db26d053df4a5655e6f31e4c749061780105b28855ab9c9cafa3839eab",
+      "window_index": 0
+    },
+    "5db014b648de4756ae70667e5688dcd72ce34df782c9d907c9f62157b4c3c757": {
+      "context": "This chunk appears in section 3.1 \"Pre-training BERT\" under the subsection \"Task #1: Masked LM\" in the BERT paper by Devlin et al. (2018). It explains the masked language model (MLM) pre-training objective, which is one of two key unsupervised tasks used to pre-train BERT. The chunk describes the motivation for using masking to enable bidirectional training, the masking procedure where 15% of tokens are randomly selected and replaced with [MASK], random tokens, or left unchanged, and how this approach addresses the pre-training/fine-tuning mismatch problem.",
+      "text_sha256": "37e67e1767a3010ab2387950cf78de43f9f66f5c1cf3aaf77cf61b6fb9e98008",
+      "window_index": 0
+    },
+    "60ec5e1a0a5d91a53f75b31e42af234adfcd31600d9c7dd966bdc450c5603047": {
+      "context": "This chunk introduces Section 5 (Ablation Studies) of the BERT paper, which systematically evaluates different components and design choices of the BERT model to understand their individual contributions to performance. The section includes studies on pre-training tasks, model size effects, and feature-based approaches, with additional details in Appendix C.",
+      "text_sha256": "7a347297423e53b536b273c331bb3718188fe800cef6de8a5f681da13d3a400f",
+      "window_index": 1
+    },
+    "618c69415bd97aa57de7b22a83b64bc40af2a80e6bfe12783db2ce0799d4a8c4": {
+      "context": "This chunk describes the RTE (Recognizing Textual Entailment) task in Appendix B, Section B.1 of the BERT paper, which provides detailed descriptions of the GLUE benchmark experiments used to evaluate BERT's performance on various natural language understanding tasks.",
+      "text_sha256": "7860c753b349852bc774e9abcfa659973111dcb350427eb5b93e10c2fe09dd0b",
+      "window_index": 3
+    },
+    "646a3415d8a80820411fb95e826f8f8ae9f981925ca360b15987611b504eb8ba": {
+      "context": "This chunk describes the CoLA dataset in Appendix B, Section B.1 of the BERT paper, which provides detailed descriptions of the GLUE Benchmark tasks used for evaluating BERT's performance on natural language understanding.",
+      "text_sha256": "2107c8e13aa26c88a0a1dfd7db3d0fc1f90bd41ecd9e3a3fc6c90d95627c2aa4",
+      "window_index": 3
+    },
+    "6a553f8ea69bd92f3ab5979304b3766b072720d88cb63b3b3047cfdfd246089b": {
+      "context": "This chunk appears in Appendix B of the BERT paper, specifically in section B.1 titled \"Detailed Descriptions for the GLUE Benchmark Experiments.\" It introduces the GLUE benchmark datasets used to evaluate BERT's performance on natural language understanding tasks, referencing Table 9 and citing Wang et al. (2018a) as the original source of dataset descriptions.",
+      "text_sha256": "01c71acae1c2a4579533b88f7fc111a03b514dd0292296906299bc5a356e32bb",
+      "window_index": 2
+    },
+    "6fee68029be8aa30a4c0aa1c19842d01a4bed536b43a903c548da556cb862f1d": {
+      "context": "This chunk is part of the References section of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding.\" It contains bibliographic entries for key related works in natural language processing and representation learning, including foundational papers on word embeddings (GloVe, word2vec), contextual representations (ELMo, Peters et al.), attention mechanisms, and reading comprehension datasets that are cited throughout the BERT paper.",
+      "text_sha256": "18e4f98054bf298c08ca410b5ff85c3a02d2029fdca644d06477b76b76e302bd",
+      "window_index": 2
+    },
+    "7c9d1d80d7631a95617639ae05f99c41dcce003cfb3c15147649fc9fbfebb3b7": {
+      "context": "This chunk is part of the References section of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding.\" It contains bibliographic entries for works cited throughout the paper, including references to foundational NLP datasets and methods like the Cloze procedure, CoNLL-2003 named entity recognition task, the Transformer architecture, and the GLUE benchmark for natural language understanding evaluation.",
+      "text_sha256": "107d2775306768cd3a770cf9503ac7effde8fc9230ebb13fd021b2fdcbf5d585",
+      "window_index": 2
+    },
+    "802d85630d3a00a350428c370951e034280f2224f44e3a230ebe3cef3ecafdf3": {
+      "context": "This chunk describes QNLI, one of the benchmark tasks detailed in Appendix B.1 of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding.\" It explains how the Stanford Question Answering Dataset was converted into a binary classification task for evaluating BERT's performance.",
+      "text_sha256": "63878e01b6b1629e2eccd6195ab19c635e19451c4709902d21a8c95c954b88c4",
+      "window_index": 3
+    },
+    "9015206d846d07750893120310734348bc825c6b14badb359deef213e47721fd": {
+      "context": "This section appears at the end of the BERT paper on arXiv and provides instructions for reporting HTML rendering errors in the paper's web version, rather than being part of the core research content about BERT pre-training or experimental setup.",
+      "text_sha256": "2c4490804b2e5e7057d2405d7eaa489df1f4ffb958026dbee0e71f53f0d59f73",
+      "window_index": 3
+    },
+    "90285b8450210bda83484e6b17a4ab97f1c46c340795015b7694dc7651da37a8": {
+      "context": "This chunk is from the References section of the BERT paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.\" It contains the first portion of the bibliography, listing citations from Akbik et al. (2018) through Chen et al. (2018), which are foundational works in natural language processing, language modeling, and machine learning that informed BERT's development.",
+      "text_sha256": "13b20002e146c9e395bff433e4a096129767bfe928d8f486906637f8817aafc9",
+      "window_index": 2
+    },
+    "9a83064454dcf94449024b757fc3460a00ced964f3c36970b170b3bd40386998": {
+      "context": "This chunk describes SST-2, one of the GLUE benchmark tasks detailed in Appendix B.1 of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding.\" SST-2 is a sentiment classification benchmark used to evaluate BERT's fine-tuning performance.",
+      "text_sha256": "5be05a687651fd3b4e82e4c75a5f563badec49ba9b45875628ac138541fffa91",
+      "window_index": 3
+    },
+    "a2e3ffa0b17c593610858c9f7cf1c8103fd76628a1d311f04fac310389811a83": {
+      "context": "This chunk is from the \"Input/Output Representations\" subsection of Section 3 (BERT) in the paper \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. It describes how BERT constructs its input representations using WordPiece embeddings, special tokens like [CLS] and [SEP], and segment embeddings to handle both single sentences and sentence pairs for downstream tasks.",
+      "text_sha256": "26da1e41c76ad06085eb5532cac77f61cb6fe9ca15bed0d0a80f65e4256a6d6d",
+      "window_index": 0
+    },
+    "bd0c134ddb74f2ede515f5a1e03a9a6fbea10e725e60124b5a02ab62732cd52f": {
+      "context": "This sentence appears in Section 4 (Experiments) of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding,\" introducing the experimental evaluation section where the authors demonstrate BERT's performance across multiple natural language processing tasks including GLUE, SQuAD, SWAG, and others.",
+      "text_sha256": "8144c573a092dd2bb4e55d526c53d2e625b24a652388732a44e4ef1e6b2cb4ef",
+      "window_index": 1
+    },
+    "bd98f18d0488b0994fe06c098de4a337efeb6e393d878042ea22414d76b4d8cc": {
+      "context": "This chunk describes the MRPC dataset in Appendix B.1 of the BERT paper, which provides detailed descriptions of the GLUE Benchmark tasks used for evaluating BERT's performance on natural language understanding.",
+      "text_sha256": "ea34d670cc6875e390b16b302f93e9ba0c6df9f7e746af87ce574bcead7d6923",
+      "window_index": 3
+    },
+    "be72ba9d05b58598a82f5758f89f66b1cc47c05ea297a1947856021559b9808c": {
+      "context": "Section 4.1 of the BERT paper describes fine-tuning results on the GLUE benchmark, a collection of diverse natural language understanding tasks. This section explains the methodology for applying BERT to GLUE, including input representation using the [CLS] token, classification layer parameters, training hyperparameters, and comparative results showing BERT's performance improvements over prior state-of-the-art systems.",
+      "text_sha256": "ed3aa315e3b552954ebaab1641fa5f059a116c13d453b6cc9fa61054def2a24a",
+      "window_index": 1
+    },
+    "c29b92f4ab897054f8dc080791710f2a8c2499b3c1b6754d830c8178764ddae2": {
+      "context": "This section appears in Appendix A.5 of the BERT paper and describes how BERT is adapted for different downstream tasks through fine-tuning. It explains the architecture modifications needed for sequence-level tasks like classification and token-level tasks like named entity recognition, defining key special tokens ([CLS] and [SEP]) and notation used in the fine-tuning illustrations.",
+      "text_sha256": "e0700e15bc43bf8458697507819e9965c7e2373fe70496adf29f585e2244a2d5",
+      "window_index": 2
+    },
+    "c37a5773c4e9601bdfca28fc17911487adc71133c77381b035a90960f9ca3478": {
+      "context": "This section appears in Appendix A.3 of the BERT paper and provides the fine-tuning procedure for BERT models. It specifies the hyperparameter ranges recommended for adapting pre-trained BERT to downstream tasks, including batch size, learning rate, and number of training epochs.",
+      "text_sha256": "b3806c29e248fc59eaa9d54ddf4782c87430b28f3e041c1bcc6389164bfca6e1",
+      "window_index": 2
+    },
+    "c6935ed6c52fc853536f5daee1a20c186caa39bf356a60812b4334b0d246b0da": {
+      "context": "This chunk appears in section 2.2 \"Unsupervised Fine-tuning Approaches\" of the BERT paper, which reviews related work on pre-training language representations. The section discusses how sentence and document encoders have been pre-trained from unlabeled text and fine-tuned for downstream tasks, contrasting this approach with feature-based methods and highlighting OpenAI GPT's achievements on the GLUE benchmark.",
+      "text_sha256": "58bf35c0274a48d42d83f46a30784832f3da21ffec88bf17c46ad3ec7595b56f",
+      "window_index": 0
+    },
+    "d0b743ddc856c0eeafda8ed3230da0620bc03a5c069c7a00994f0b55d27111b3": {
+      "context": "This chunk is from Appendix C.1 \"Effect of Number of Training Steps\" in the BERT paper, which presents an ablation study analyzing how pre-training duration impacts fine-tuning performance on the MNLI task and compares masked language model (MLM) pre-training convergence to left-to-right (LTR) pre-training.",
+      "text_sha256": "48f54553e3a45ce7f136932db798448ca19b3d17fe3a8ae6154c5671105de2fc",
+      "window_index": 3
+    },
+    "d2ac37b5f430f7fd015c3107bac6b2d5a829a8ba0997512acdf494551e6b76e4": {
+      "context": "This chunk is from the References section and introductory material to the Appendix of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding.\" It contains the final bibliography entries (Wu et al. through Zhu et al.) and introduces the three-part appendix structure covering implementation details, experimental setup, and ablation studies.",
+      "text_sha256": "56334bbd688fcd2a2e922ad841ac97c6d85a3ae596729b3ed506b78b8e725b77",
+      "window_index": 2
+    },
+    "d63e47c05f91ba1be3d6b0132160b46941d33767f98e5aef050d1008232e3de6": {
+      "context": "This chunk appears in Section 3.1 \"Pre-training BERT\" of the BERT paper by Devlin et al. (2018), where the authors explain their novel pre-training approach. The chunk introduces the key distinction between BERT's pre-training methodology and prior work by ELMo and OpenAI GPT, stating that BERT uses two unsupervised tasks instead of traditional directional language models, which are detailed in the following subsections on Masked LM and Next Sentence Prediction.",
+      "text_sha256": "063ff48b2a1ea64a41d39c17ec56dda2484684392b3ec82893de906ad6a9b663",
+      "window_index": 0
+    },
+    "d7232731b7d4659a8618e0e010c984368572384baac74aa12fbf8feafcfc4edf": {
+      "context": "This is the table of contents for the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding\" by Devlin et al. (arXiv:1810.04805), outlining the paper's main sections including the abstract, introduction, related work on unsupervised and supervised approaches, the BERT model architecture and pre-training tasks (Masked LM and Next Sentence Prediction), experiments on benchmarks like GLUE and SQuAD, ablation studies, and appendices with additional implementation details and comparisons to ELMo and OpenAI GPT.",
+      "text_sha256": "272231aad3a7c571a4d7175209e18eca17f668b5a07d7cc6011ced0301d9ace1",
+      "window_index": 0
+    },
+    "dd32c2fecd7ba4157490926b357a7193dc4a04748030930950610f9ec87a7011": {
+      "context": "This chunk appears in the BERT paper's Appendix A, specifically in section A.1 titled \"Illustration of the Pre-training Tasks,\" which provides detailed examples of BERT's two main pre-training objectives: Masked LM and Next Sentence Prediction.",
+      "text_sha256": "4bcb9b12864a9e7a55b3542a8276cd861fa7cd5c4838ed556261a87b94c2ae9a",
+      "window_index": 2
+    },
+    "e032cdeb6c774f70c3c390486ba820dc74b02c4e6ad8e9a506ca7b54ebea7aff": {
+      "context": "This chunk appears in Section 6 (Conclusion) of the BERT paper \"Pre-training of Deep Bidirectional Transformers for Language Understanding,\" where the authors summarize their main contribution of using deep bidirectional Transformer architectures for pre-training language models that can be applied to diverse downstream NLP tasks.",
+      "text_sha256": "9d7299494ad62aba3a23dbcbb713530a24a5310d161d12023d16ff27e2075815",
+      "window_index": 1
+    },
+    "e9541d965676f0370b2a76fc1565baff2278d93a4ed419c0711e61b983b25ee7": {
+      "context": "This chunk is the Abstract section of the BERT paper (arXiv:1810.04805) by Devlin et al. from Google AI Language. It introduces BERT (Bidirectional Encoder Representations from Transformers), a new language representation model designed for pre-training deep bidirectional representations, and summarizes its state-of-the-art performance across eleven NLP tasks including GLUE, MultiNLI, and SQuAD benchmarks.",
+      "text_sha256": "fa6cdd933d7b805bf30597b3f37a1e703fdf2669e0a201939340067353c2e6f5",
+      "window_index": 0
+    },
+    "fc1d3889d57756e6dad15b5841c29a1c08be9f3df000f3947d99070706d138fd": {
+      "context": "This chunk describes the Winograd NLI dataset in Appendix B, Section B.1 of the BERT paper, which provides detailed descriptions of all tasks in the GLUE benchmark used for evaluating BERT's performance on natural language understanding tasks.",
+      "text_sha256": "e40e006baf0b0c7ee308d79b8f3712f6a66becbaa1101e3db516f236af22b041",
+      "window_index": 3
+    }
+  },
+  "doc_id": "arxiv-devlin-2018-bert",
+  "generated_at": "2026-08-29T21:40:32Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

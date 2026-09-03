@@ -1,0 +1,898 @@
+{
+  "contexts": {
+    "00155b563ab7a8fdb9d694ddf6af6582e5755aaa4ae54e2ae74a918ee5021f98": {
+      "context": "This chunk is from Chapter XIII (Final Provisions) of the EU Artificial Intelligence Act (Regulation 2024/1689), specifically Articles 108-111. It contains amendments to existing EU regulations concerning artificial intelligence systems that are safety components, requiring that Chapter III, Section 2 requirements of the AI Act be taken into account when adopting delegated and implementing acts. Article 111 establishes transitional provisions for AI systems and general-purpose AI models already on the market before specified dates.",
+      "text_sha256": "30dce69b9f6778db9908f1d9b66431f93c619197962867f5da00539d74a69a87",
+      "window_index": 17
+    },
+    "005370ecd023fed6d882f3d5434fc353006ef8ccbec95c02346aa5a83f36ab5c": {
+      "context": "This section from the EU AI Act (Regulation 2024/1689) addresses exemptions for Ireland and Denmark from certain AI prohibitions, and establishes prohibitions on AI-predicted criminal behavior profiling and untargeted facial recognition database creation. Recitals (40)-(43) explain the legal basis for member state opt-outs under EU protocols and detail specific unacceptable AI practices related to law enforcement and biometric identification that are prohibited under Article 5 of the Regulation.",
+      "text_sha256": "9f510d5958cc1f3672e8563ecdf6a798b634e814acfd1ed8b4e59fbd467b401b",
+      "window_index": 1
+    },
+    "005dc4f2989e0a4335d37c5d83b0388ceb544118082a84a4a35d0cf1dd7d19c2": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Article 6 on Classification rules for high-risk AI systems and Article 7 on Amendments to Annex III, both located in Chapter III Section 1. The chunk details conditions under which AI systems listed in Annex III are classified as high-risk, exceptions to that classification, documentation requirements for providers, and the Commission's authority to amend Annex III based on specific risk assessment criteria.",
+      "text_sha256": "cca358fcca9741248aa2ff56854853ea897e05671db880a8b705f216b70aab54",
+      "window_index": 9
+    },
+    "013f96a72208cf3638da1334d2a5ac27f4811e82bd0d453d34cdf6630ecb4d6e": {
+      "context": "This chunk is from Article 74 of the EU AI Act (Regulation 2024/1689), specifically Section 3 on Enforcement within Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance. It details the designation and powers of market surveillance authorities responsible for monitoring and enforcing compliance of AI systems with the Regulation, including special provisions for AI systems in regulated sectors like finance and law enforcement, and procedures for coordinated market surveillance activities across Member States.",
+      "text_sha256": "046eb177d294deceb79d0971578306babde3461cbd75a135a723b231d0657e86",
+      "window_index": 15
+    },
+    "0277034dd9250bb18d77a8cab8c79740cc1b88e282b509c7456d4541ae1db039": {
+      "context": "This section from the EU AI Act (Regulation 2024/1689) addresses cybersecurity requirements and conformity assessment procedures for high-risk AI systems. Recitals 77-79 explain how high-risk AI systems can demonstrate compliance with cybersecurity requirements through horizontal cybersecurity regulations, the application of conformity assessment procedures including derogations for critical products, and the definition of provider responsibility for placing high-risk AI systems on the market or into service.",
+      "text_sha256": "9c0b994d1d123690c52e98e0a835d1157ad22313ed1f8c5bbab9b633c3066ceb",
+      "window_index": 3
+    },
+    "0283437e42eda951fd5a75bc648a0db390af85a44e2e7eb5d4cf66946a4e0ca6": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from ANNEX II and the beginning of ANNEX III. ANNEX II lists criminal offences referenced in Article 5(1), first subparagraph, point (h)(iii), including terrorism, trafficking, and organized crime. ANNEX III defines high-risk AI systems pursuant to Article 6(2), categorizing them by application area including biometrics and critical infrastructure, which are subject to stricter regulatory requirements under the Act.",
+      "text_sha256": "07efe29d3a84d1d183423526de36cf94f8a523f336124d6d7e14b4245f89bffe",
+      "window_index": 18
+    },
+    "029b9e0640122cf5faba507c32c102314c24b3e9f5ca5a0b2efe28268287f622": {
+      "context": "This chunk is from the preamble (recitals 173-175) of EU Regulation 2024/1689 on Artificial Intelligence (AI Act). It addresses delegated and implementing powers, specifying that the Commission should be delegated authority to amend various provisions of the Regulation including high-risk AI system classifications, general-purpose AI model rules, and technical documentation requirements, while establishing review and evaluation timelines for the Commission to assess the Regulation's effectiveness and adapt it to technological developments.",
+      "text_sha256": "b0d10742499efaaca00fb9bb6fa1796748a45d67da1db51fd6ce6adc0c2236ec",
+      "window_index": 7
+    },
+    "0393478c8fe0a4cfa43cb15db4e5099280bdd6545ed5ecd282510bef29264fd7": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses mandatory requirements for high-risk AI systems, specifically covering recitals 69-71 on data protection and privacy, bias detection in personal data processing, and technical documentation requirements that providers must maintain throughout the AI system's lifecycle.",
+      "text_sha256": "7bd74ca31a6ade85d467dda542e630e8a82219a54e85b10264b18d5d01c29b86",
+      "window_index": 3
+    },
+    "03c8d6b77cc990593cd71308e9d326619e93ee34a141a1ebfc39b782517ebd45": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 44-46 from the preamble, which establish foundational principles for AI regulation. Recital 44 addresses the prohibition of emotion recognition AI systems in workplace and education contexts due to scientific concerns and discriminatory risks. Recital 45 clarifies that existing Union law prohibitions remain unaffected. Recital 46 introduces the concept of high-risk AI systems and their mandatory compliance requirements under the Regulation, referencing applicable Union harmonisation legislation and the New Legislative Framework.",
+      "text_sha256": "637b0cda88a937d2a7dfacaa195f3376fbd868324cd9790b4732846f4a441fa6",
+      "window_index": 2
+    },
+    "0961cbe0379cf0d2a15fc4756ad3fe109cd3c9b7377f26dd888b90fcc717de42": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses the classification procedures and obligations for general-purpose AI models with systemic risks, specifically covering recitals 112-114. It details the notification requirements providers must follow when their models meet high-impact capability thresholds, the Commission's authority to designate models as systemic risk models, and the additional obligations imposed on providers of such models regarding risk mitigation and cybersecurity protection.",
+      "text_sha256": "205b91f92751b4fbbc24686dbb6210c7797aa3231cb814cb845b7ba98802473c",
+      "window_index": 5
+    },
+    "09b793681d2750ba4d302da0498d86b176685885cd752537b1418e333f6c6293": {
+      "context": "This chunk is from Article 67 (Advisory Forum) and Article 68 (Scientific Panel of Independent Experts) in Chapter VII (Governance), Section 1 (Governance at Union level) of the EU AI Act 2024. It describes the composition, appointment, term of office, and functions of the advisory forum established to provide technical expertise to the Board and Commission, as well as the establishment and tasks of the scientific panel of independent experts to support enforcement activities under the Regulation.",
+      "text_sha256": "bb6ded41150bfdb709e68daaa0bdf89fb569dc50de5bdbd0f04846e0dcd413dc",
+      "window_index": 14
+    },
+    "0a6759871ba9c2736f7b0cbed58326d51eb77a378eb8f512e5365b07bb6036eb": {
+      "context": "This chunk contains definitions (7) through (24) from Article 3 of the EU AI Act (Regulation 2024/1689), defining key terms related to AI system distribution, market placement, conformity assessment, and regulatory compliance that are essential for understanding the regulation's requirements for providers, deployers, and other operators in the AI supply chain.",
+      "text_sha256": "75496a26f0f4104ac932f7741ca6b7431ab837e3409fb511b3685243d3918660",
+      "window_index": 8
+    },
+    "0cac30144eb8c70968a1cc097392184fce73d43091a537c645e86bc58ddd21e6": {
+      "context": "This is recital (59) from the EU AI Act (Regulation 2024/1689), part of the preamble section explaining the rationale for classifying AI systems used by law enforcement authorities as high-risk. The recital discusses the power imbalance inherent in law enforcement use of AI, the risks of discrimination and fundamental rights violations, and specifies which law enforcement AI applications should be classified as high-risk, including systems for assessing criminal risk, evaluating evidence reliability, and profiling in criminal investigations.",
+      "text_sha256": "f0745e3178ed611bce3c55bf1d28f438e31cc8d169cba69a926edd8252d5a193",
+      "window_index": 2
+    },
+    "0e2e878a4119f3808d0d7ba3df9455a73e7e3cb9c4a1bebbb6c76644a8113df0": {
+      "context": "This chunk is part of the EU AI Act (Regulation 2024/1689) footnotes section, containing references 34-38 that cite related EU regulations and directives on political advertising transparency, measuring instruments, cybersecurity, and website accessibility that are relevant to the AI Act's implementation and compliance framework.",
+      "text_sha256": "fa827a5c9ee8e71dbf852910dbcf721cf5ebfc0b6c57a54c0a98b964000101c6",
+      "window_index": 18
+    },
+    "0ea6280955428759161b88326e7b2200554610e3d3120afb02f3232b60297a03": {
+      "context": "This chunk from Article 60 of the EU AI Act 2024 outlines the cumulative conditions that providers and prospective providers of high-risk AI systems must meet to conduct testing in real world conditions outside AI regulatory sandboxes. The conditions cover approval requirements, registration procedures, data protection safeguards, testing duration limits, protection of vulnerable subjects, informed consent, oversight mechanisms, and reversibility of AI decisions.",
+      "text_sha256": "9097bf47fb5360fc22ec2156b895ba1df45cee6132ceb99315abbc26da29233a",
+      "window_index": 14
+    },
+    "11058ba1f46aac15cb79b9d766adfd25c69c09487f3eeea392a0ffae871ea782": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals (60) and (61) explaining the classification of AI systems as high-risk in two critical areas: migration, asylum and border control management, and administration of justice and democratic processes. These recitals justify why AI systems used in these contexts pose significant risks to fundamental rights and vulnerable populations, requiring them to meet mandatory requirements under the Regulation.",
+      "text_sha256": "290208795dd424a5c99827cd182500aaccc2b8e870817adf777777bc5334d9e2",
+      "window_index": 2
+    },
+    "12cf7f54d4c183a9e3b2d70bedd16cb8adc3573d1f54df37c771f29a9ca11be0": {
+      "context": "This chunk appears in the EU AI Act (Regulation 2024/1689) in a section containing footnote references to related EU legislation. It lists three key regulations and directives that are referenced in the document: Regulation (EU) 2019/2144 on motor vehicle type-approval requirements, Regulation (EC) No 810/2009 establishing the Visa Code, and Directive 2013/32/EU on international protection procedures. These citations provide legal context for provisions within the AI Act.",
+      "text_sha256": "1b8b3bdaaa6ded2d9f7a7a498f323bcf66067bbeba950b933864d542f41c41d4",
+      "window_index": 18
+    },
+    "132813ab17416aaf8e09f83fde03c58c814dadeaba8792c4ac4dd1dc510e6571": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Article 41 on Common Specifications within Chapter III on Conformity Assessment. It establishes the conditions under which the Commission may adopt implementing acts to create common specifications for high-risk AI systems and general-purpose AI models when European standardisation organisations fail to deliver adequate harmonised standards, and defines the legal presumption of conformity for systems meeting these specifications.",
+      "text_sha256": "3816deedbb1e8d4f5137d6c2154f8aac9e7d19cf1747e02abb7f960a1c9de396",
+      "window_index": 12
+    },
+    "1548bb1500627b4905e81928ed2b0355561698a8956ccd876d8d197b84ef0c37": {
+      "context": "This chunk is from Article 9 (Risk management system) and Article 10 (Data and data governance) in Section 2 (Requirements for high-risk AI systems) of Chapter III (High-Risk AI Systems) of the EU AI Act (Regulation 2024/1689). It details the mandatory risk management procedures and data governance practices that providers of high-risk AI systems must establish and maintain throughout the system's lifecycle.",
+      "text_sha256": "a7d773096cc716ba802f13842f099af6de079f3f7091ff3137dda2a34b63f159",
+      "window_index": 9
+    },
+    "160d7e8f8b9bc7e80ef188ab0fef1ba85b41c97ff80efdaa27f30d90232c8c2f": {
+      "context": "This chunk appears in the footnotes section at the end of the EU Artificial Intelligence Act (Regulation 2024/1689). It contains citations to related EU regulations and directives on medical devices, machinery, aviation security, and vehicle approval that are referenced throughout the AI Act, particularly in the amendments to sectoral legislation outlined in Articles 102-109.",
+      "text_sha256": "c29d9aa4179dbd281576908d5722be351fb5ac0bf5a99b2806420af8fcbb489b",
+      "window_index": 17
+    },
+    "166bfce8a6607b4722f0a7e9e61992173690a9790fc333354419e07c95a1d213": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 84-87, which establish the conditions under which distributors, importers, deployers, and other third parties are considered providers of high-risk AI systems and must assume provider obligations. It also addresses the responsibilities of general-purpose AI system providers and former providers in the AI value chain, as well as product manufacturers whose products contain high-risk AI systems as safety components.",
+      "text_sha256": "5c172a1130944a8983d8b68cac6019fb17289c141726d378a0d62c0559e4011e",
+      "window_index": 4
+    },
+    "16e7a48d35300c639a3bf4b5f1df58d2cfda3a2a7f909038f05309bf963e529c": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers Articles 81-84, which are part of the enforcement and market surveillance procedures for AI systems. Article 81 describes the Union safeguard procedure for resolving disputes between Member States regarding AI system compliance measures. Articles 82-83 address procedures for compliant systems that still present risks and formal non-compliance issues respectively. Article 84 establishes Union AI testing support structures to assist with compliance evaluation.",
+      "text_sha256": "3798cad15fb3d846465bd108c3bbad981c66720ab15a53c29d0356a7d857de72",
+      "window_index": 16
+    },
+    "17ce5882bf537651ce52741eb46a4be84147c05beb4aea8200c4d0340f65b7c4": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) presents the foundational principles for regulating artificial intelligence systems. Recitals 26-28 establish the risk-based regulatory approach that structures the entire regulation, explain the seven ethical principles for trustworthy AI developed by the AI HLEG, and introduce the prohibition of unacceptable AI practices including manipulative and exploitative uses that violate fundamental rights and Union values.",
+      "text_sha256": "49c28707b1492f1c2f5770f14af21045bbaf8a588c8c4ede89ad49a4c5ad48d8",
+      "window_index": 1
+    },
+    "18a4a7c3fed0f43118a69e2678e4e09916c04d71d07c52a97782491b1f0b53eb": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers Article 25 on responsibilities along the AI value chain and Article 26 on obligations of deployers of high-risk AI systems. It specifies how provider responsibilities transfer when AI systems are substantially modified or repurposed, requirements for written agreements between providers and third-party suppliers, and the technical and organizational measures deployers must implement including human oversight and input data management for high-risk AI systems.",
+      "text_sha256": "f102cfec8d19635e273bd76b4036d7aaaeff56777502f652c5de786f936f82a5",
+      "window_index": 10
+    },
+    "195f6e3a182ce9493b3fbc1b0291bc14c62de811de2120053546914353931007": {
+      "context": "This chunk is from ANNEX VIII of EU Regulation 2024/1689 (the AI Act), which specifies the information that must be submitted upon registration of high-risk AI systems in accordance with Article 49. Section A details requirements for providers registering high-risk AI systems under Article 49(1), Section B covers providers registering AI systems under Article 49(2) that are deemed not-high-risk, and Section C outlines information deployers must submit for high-risk AI systems under Article 49(3).",
+      "text_sha256": "15f7414439a2327c66f4fc5f8676cad3a4eb81e6ef8bbcde109fcaae3428e4d3",
+      "window_index": 19
+    },
+    "1b0bae4551d602d8647717f5fef0e6e81dc993926180a695a6f7c0ded525312f": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses transparency and copyright compliance obligations for providers of general-purpose AI models. Recitals 104-106 establish exceptions to transparency requirements for free and open-source general-purpose AI models, while maintaining obligations regarding training data summaries and copyright law compliance, particularly regarding the reservation of rights under Directive (EU) 2019/790.",
+      "text_sha256": "c183a998738620ed74d99fd279e3f09d291d77ab0cedbd51e220ff38f1802403",
+      "window_index": 4
+    },
+    "1b4f84524be87970cca937e302bfff05d6adadb5dd789112c78d3d3a4f0b4114": {
+      "context": "This chunk is from Article 10 (Data and data governance) in Section 2 (Requirements for high-risk AI systems) of the EU AI Act. It specifies the data governance practices and quality criteria that providers of high-risk AI systems must implement for training, validation, and testing datasets, including requirements for bias detection, data management, and conditions for processing special categories of personal data.",
+      "text_sha256": "8ae117ade61d72585c79eb17e08ada42a83322107818d3b71d078b9c43c6db55",
+      "window_index": 9
+    },
+    "1bbf0e1f43555ba0027ff69ee8776a6fed8d0fd262654b4d33a6f30abb84bc04": {
+      "context": "This chunk is from Annex IV of the EU AI Act (Regulation 2024/1689), which specifies the technical documentation requirements that AI system providers must compile. The chunk details subsections 2 through 6 of the required documentation, covering the detailed description of AI system elements and development processes, monitoring and control information, performance metrics, risk management, and lifecycle changes.",
+      "text_sha256": "b3b7c788b9328993324469e9c9541ffad1711bf298b3edf8aaa9d6965977d633",
+      "window_index": 18
+    },
+    "1be6643b021a5fcee66f56f655e4c04b08ef338fbc5bea69d105d155cef2e8db": {
+      "context": "This excerpt from the EU AI Act (Regulation 2024/1689) addresses transparency and human oversight requirements for high-risk AI systems. Recital 72 establishes transparency obligations requiring high-risk AI systems to be accompanied by instructions for use with information about characteristics, capabilities, limitations, and risks to health, safety, and fundamental rights. Recital 73 specifies human oversight measures that providers must implement before placing high-risk AI systems on the market, including enhanced requirements for biometric identification systems requiring verification by at least two natural persons.",
+      "text_sha256": "fea403ff34974cd820873b6bfe5c5460bac97848ddff06e3462884825e9077f2",
+      "window_index": 3
+    },
+    "1c6dab6bb7b3e3be36463ca89ec33abc98051bd770183043b917368a6fecd233": {
+      "context": "This chunk is from the preamble (recitals 54-55) of the EU AI Act (Regulation 2024/1689), specifically addressing the classification of high-risk AI systems. Recital 54 discusses the classification of biometric systems as high-risk, including remote biometric identification and emotion recognition systems, while excluding biometric verification for authentication purposes. Recital 55 addresses high-risk AI systems used as safety components in critical infrastructure management, including digital infrastructure, road traffic, and utility supply systems.",
+      "text_sha256": "ca150a52d782048ca8c0e1611d7ec96c20e518e36f12ad010b5d70ee21a9d116",
+      "window_index": 2
+    },
+    "1d91b9a5c4ff1bf04902420341ba79e4ec80e2babb0ace2e31fdcee28b45ec3a": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses provider obligations and accessibility requirements for high-risk AI systems. Recital (80) discusses accessibility compliance for persons with disabilities under international conventions and EU directives, while recitals (81)-(83) outline quality management systems, conformity assessment procedures, the role of authorized representatives for third-country providers, and the obligations of operators along the AI value chain including importers and distributors.",
+      "text_sha256": "69554827600cc8d397f83c8da5c1d5bf6c86ba96bf78fa06ab07e1d58aa7b870",
+      "window_index": 3
+    },
+    "1f24a10ea59a71c5185f96492f3164fe82baf0a7c23b0a594cb9d4d3894afe32": {
+      "context": "This chunk contains footnote references to EU legislative instruments cited in the EU Artificial Intelligence Act (Regulation 2024/1689). These footnotes appear at the end of the document and reference sectoral EU regulations on marine equipment, rail interoperability, motor vehicles, and civil aviation that are amended by or related to the AI Act's requirements for artificial intelligence systems used as safety components.",
+      "text_sha256": "d5a4d8f20320b9859ae07d67af3d907c28084e9656e7a6f72eeed2f5eef348ca",
+      "window_index": 17
+    },
+    "1f63dde79ee04fbe29878d58d7caa01250659d3befd7918820bf505ea160144a": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Chapter VI on Measures in Support of Innovation. It contains Article 58 on detailed arrangements for AI regulatory sandboxes, including requirements for procedures, participation periods, and testing infrastructure (points g-i), followed by Article 59 on further processing of personal data for developing certain AI systems in the public interest within the sandbox, specifying eligible areas and conditions for such processing.",
+      "text_sha256": "94f77259bdd5ddd20e1ef5dd8d39190946ac61eae61f59e23ea198bb28639bf5",
+      "window_index": 13
+    },
+    "1f8bcc78ca0380a1f8cc008d0b4de42cfc142bc5c7e85bb25c91cfc2de241c7c": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 2 on Requirements for High-Risk AI Systems. It contains Article 13 on transparency and provision of information to deployers, detailing mandatory information that must be included in instructions for use for high-risk AI systems, followed by Article 14 on human oversight requirements for such systems.",
+      "text_sha256": "29213924bec18efda1efdb44abbbe582ac328cba3cc128df4b210f1becf2818a",
+      "window_index": 9
+    },
+    "211be452e90260c581e5d4add4fce0fb746effa9b8ab646bae9e17191c6c2fc4": {
+      "context": "This chunk is from ANNEX VII of EU Regulation 2024/1689 (the AI Act), specifically sections 4 and 5 covering the conformity assessment procedure based on quality management system assessment and technical documentation assessment. Section 4 details the control of technical documentation by notified bodies, including requirements for access to training data and models, issuance of Union technical documentation assessment certificates, and procedures for handling non-conformity. Section 5 describes the surveillance obligations of notified bodies to ensure providers maintain compliance with approved quality management systems.",
+      "text_sha256": "22fe10da8c6bb064557c207c76eb62f404d974287aee48dd1f7c06eb17ca0440",
+      "window_index": 19
+    },
+    "24fe9ae61984d4b4f1d65bd8e90f78ac1881d39a6a243764c6b35d6fc70e4ea2": {
+      "context": "This section from the EU AI Act (Regulation 2024/1689) addresses transparency and disclosure obligations for AI systems that interact with natural persons or generate synthetic content. Recitals 132 and 133 establish requirements for notifying users when they interact with AI systems, particularly regarding impersonation and deception risks, and mandate technical solutions for marking and detecting artificially generated or manipulated content.",
+      "text_sha256": "61ebc1185d7f555bc72cf820cc7fc72553d80cf85bbb8dad51d45e0db57d8769",
+      "window_index": 5
+    },
+    "251b79ea3e46150b97f76e65c4ccdd046351b7ec52e968374ad5a567c881b66f": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter VII on Governance, Section 2 on National Competent Authorities. It contains Articles 68-70, covering the establishment and duties of the scientific panel of independent experts (Article 68), Member States' access to these experts (Article 69), and the designation and responsibilities of national competent authorities including notifying authorities and market surveillance authorities (Article 70).",
+      "text_sha256": "5a2ecac9d497df2ac0d6c4a84030ab9d715f6b41a479fad0bc0c882c85f8f488",
+      "window_index": 14
+    },
+    "2537d3308f6386550f02bdf281dd0070e31dfe22749e9bd342e47c03d8b92a4c": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses the classification and legal implications of high-risk AI systems used in electoral contexts. Recital 62 specifies that AI systems intended to influence election outcomes or voting behavior must be classified as high-risk, while Recital 63 clarifies that such classification does not automatically authorize uses under other Union or national laws, particularly regarding personal data protection and emotional state detection.",
+      "text_sha256": "35bb613c9b02ff6e6b602f8ea9284806b6092267fc0fc401e6ad71ba7bdbaf06",
+      "window_index": 3
+    },
+    "2829aa6f40002aeb517f407aa360e9720764345b6395cdc7b3d38ae5304cdc06": {
+      "context": "This chunk is from the preamble (recitals) of EU Regulation 2024/1689, the Artificial Intelligence Act, specifically recitals (17) and (18). These recitals define key notions used throughout the regulation: \"remote biometric identification system\" and \"emotion recognition system,\" distinguishing between real-time and post systems, and clarifying what is excluded from these definitions.",
+      "text_sha256": "af6516bd61eeb1fd62079614cb927f604d418b80139ffd601f2aac76df3c799a",
+      "window_index": 0
+    },
+    "2933f5657060497fb58ff39f3125b29b2ad374f99d843b5e77265d266c64bb35": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 5 of Chapter IX on \"Supervision, investigation, enforcement and monitoring in respect of providers of general-purpose AI models.\" It covers Article 90 on alerts of systemic risks by the scientific panel, Article 91 on the Commission's power to request documentation and information from general-purpose AI model providers, and Article 92 on the Commission's power to conduct evaluations of such models for compliance assessment and systemic risk investigation.",
+      "text_sha256": "a5896a789325e82e3ec40bd7ef1635dfb8d131410b50f9aa432abeee26b25a2c",
+      "window_index": 16
+    },
+    "2b3fc7fc816a9bccc5d0777540470bd5d03ed537d8b859352b8296e75b901653": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers provisions on national competent authority reporting requirements, the establishment of an EU database for high-risk AI systems (Chapter VIII, Article 71), and the beginning of Chapter IX on post-market monitoring and market surveillance. It includes Article 72 on post-market monitoring systems that providers of high-risk AI systems must establish.",
+      "text_sha256": "d8070dde7b4e5d8a74f41e68dccb02e74c9d257f48315f2ba196d359f503a503",
+      "window_index": 15
+    },
+    "2ea1313f7a061c21f7fb1303d2948b4bdb19857d1878f172bf5f1e2eeeb5ef93": {
+      "context": "This chunk comprises recitals (3) through (7) from the preamble of Regulation (EU) 2024/1689, the Artificial Intelligence Act. These recitals establish the regulatory rationale for the Act, explaining the need for harmonized EU rules on AI to prevent market fragmentation, protect fundamental rights, and ensure trustworthy AI development while supporting innovation across the Union's internal market.",
+      "text_sha256": "9ebb905a3cab44922dabf092e1e876962cfc881c600fcd24cddfc3ecb28653ca",
+      "window_index": 0
+    },
+    "2f43f60b0ae28bc9cfbe8eeead938f1c70f93520a5da4b6ea1665c71b951e4f2": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and contains two sections: the end of Annex XII on transparency information that providers of general-purpose AI models must supply to downstream providers integrating the model into AI systems, and the complete Annex XIII establishing criteria for designating general-purpose AI models with systemic risk under Article 51.",
+      "text_sha256": "2ccdb633828fd1b308d25ee08adb21c50bbd17bafe570c7269da43cc8c6d3ea8",
+      "window_index": 19
+    },
+    "311cffa6d30fbc59e76ec14610da2b785c5c238c6bf69a9fee6a1b4b79215c17": {
+      "context": "This chunk is from Article 36 (Changes to notifications) and Article 37 (Challenge to the competence of notified bodies) in Section 4 (Notifying authorities and notified bodies) of the EU AI Act (Regulation 2024/1689). It details the procedures for notifying authorities to manage changes to notified body designations, including suspension, restriction, or withdrawal, and the conditions under which certificates remain valid during such changes. It also establishes the Commission's authority to investigate and challenge the competence of notified bodies that assess conformity of high-risk AI systems.",
+      "text_sha256": "b842e99b48ff1d1b3b5585323370d75c9ae1e87e4fcc3a0ec68cdeebd557db7d",
+      "window_index": 11
+    },
+    "35452bd02e7b170c206cfb3af927e15d1c61ca387ced54dfca7bbef619c14afa": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance, Section 3 on Enforcement. It covers Articles 74-76 detailing the powers and procedures of market surveillance authorities for monitoring and controlling AI systems in the Union market, including their access rights to documentation, training data, and source code of high-risk AI systems, as well as their supervision of testing in real-world conditions.",
+      "text_sha256": "11d4f16b7524b3325d90f79d8418d0a87d27b56aa6721b03a5f604da8e8f5819",
+      "window_index": 15
+    },
+    "35f21a086218834fd4433813ec2052d1bd339a1ab0c80634c70e3f969c8d6c9c": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers the enforcement and remedies provisions in recitals 168-172, addressing how compliance with the regulation will be enforced through penalties, fines, and complaint mechanisms, as well as rights for affected persons and whistleblower protections.",
+      "text_sha256": "6212fd662e7825e7c45ba7ea6d2d096bb723aad5f7a755831fb9719829abdfa6",
+      "window_index": 7
+    },
+    "366d026a455b9ccc573f2e41ddd31e771106aea7a52e4668031a59f244c51b6c": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Articles 46-48 within Chapter III on Conformity Assessment. Article 46 addresses derogations from conformity assessment procedures for high-risk AI systems in exceptional circumstances, Article 47 establishes requirements for EU declarations of conformity that providers must prepare for high-risk AI systems, and Article 48 specifies CE marking requirements for high-risk AI systems to indicate compliance with the regulation.",
+      "text_sha256": "edeec74de34e3bca6dfe81c5497bb2796cfb41e714d6e8338181b792d8eda5d6",
+      "window_index": 12
+    },
+    "3708b1148d7f9a3a2b5fd59801c02cd743dd684e50849717bba0fcc0cee4a459": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers the governance and enforcement framework for the regulation, specifically addressing the roles and responsibilities of national competent authorities, market surveillance authorities, and notifying authorities in supervising AI system compliance at the Member State level, as well as post-market monitoring requirements for providers of high-risk AI systems.",
+      "text_sha256": "d7f30f1df1e90bb420cfc4bad17c607f82f642f3c44d0ff0b3523b0cae14f3ed",
+      "window_index": 6
+    },
+    "37d6e00e122c8677cda13ba2f73d69ca7e42dee2cef33fa8ba23ccfd7f6b27ab": {
+      "context": "This chunk contains footnote references 17-21 from the EU Artificial Intelligence Act (Regulation 2024/1689), listing related EU directives and regulations that the AI Act amends or references, including directives on unfair commercial practices, medical devices, and critical entity resilience.",
+      "text_sha256": "82c3e54581f6a5ff6eed4d4f62951b502a1b855df238b8572b947cae82eaa2c7",
+      "window_index": 17
+    },
+    "3927e6b1667cdee437479959f7ef6b9100cc2ac01a2d45c029863f2d24ec04b1": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the preamble recitals (56) and (57). These recitals explain the classification of AI systems as high-risk in two critical domains: education and employment. Recital (56) addresses AI systems used in education and vocational training that determine access, admission, learning evaluation, or student behavior monitoring. Recital (57) covers AI systems used in employment, worker management, and self-employment access, particularly for recruitment, selection, promotion, and performance monitoring. Both recitals justify high-risk classification based on the significant impact these systems have on individuals' fundamental rights, livelihoods, and",
+      "text_sha256": "c9630f1ab88cadb9604955d459a8a29ca277b210b44f19ea2cf608f4164162eb",
+      "window_index": 2
+    },
+    "3b10874c6b466f3068290217b83c2b86f067faff555994b21b9eec6ce0e630eb": {
+      "context": "This chunk from the preamble of EU Regulation 2024/1689 (Artificial Intelligence Act) addresses the territorial scope and applicability of the regulation. Recitals 21-23 establish that the AI Act applies to AI system providers and deployers both within and outside the Union, with specific provisions for third-country operators and exemptions for public authorities engaged in law enforcement and judicial cooperation under international agreements.",
+      "text_sha256": "e0425e2345fbe6d1dd27cacd4548c3b109755da1433045ccde9ad31c700d24fc",
+      "window_index": 0
+    },
+    "3db6dad8439c29740e6e6ca9eb5ceeae0e5d184e1e2406fc47080792e5fee963": {
+      "context": "This chunk is from the preamble of the EU AI Act (Regulation 2024/1689), specifically recital (29), which explains the prohibition on manipulative and exploitative AI practices. It details how AI systems that use subliminal or deceptive techniques to distort human behavior and cause significant harm should be prohibited, while clarifying exceptions for lawful medical treatment and legitimate commercial practices.",
+      "text_sha256": "cdd2111af592699574dac68168a7d00cb6ab0be277ecf8b29352a92fb5cc88f9",
+      "window_index": 1
+    },
+    "3de7ab5f38fe279e582ccfc697f69718268cbdc9106866ea74536bad54e6e883": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Article 54 on \"Authorised representatives of providers of general-purpose AI models\" and the beginning of Article 55 on \"Obligations of providers of general-purpose AI models with systemic risk.\" It details the tasks and responsibilities that authorised representatives must perform on behalf of third-country providers, including verification of technical documentation referenced in Annex XI and cooperation with the AI Office, as well as the additional obligations imposed on providers of general-purpose AI models identified as presenting systemic risks.",
+      "text_sha256": "62f9b0709bc1109c33d873aa1c8b5cb47ec44ac79868d31de3ec2b0ccde0210f",
+      "window_index": 13
+    },
+    "3ffc50237c1723312cf695474162a30b3d0bacbb3eeaa4082d6adacbc0e6b9bf": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the recitals section establishing the methodology for classifying general-purpose AI models as presenting systemic risks. Recital 111 outlines the criteria for determining systemic risk classification, including the use of floating point operations as a threshold measure, the role of the AI Office and Commission in designation, and the assessment criteria based on model capabilities and market impact.",
+      "text_sha256": "36d612c1cb51d80808b5482d1bbf4edf78cf23bda43f17702d63a00e83de5d8f",
+      "window_index": 5
+    },
+    "4345626c7727b8ba09528c8d14d6d71d678e3802aefcdfd57492e57f1f56c337": {
+      "context": "This chunk contains definitions 54-64 from Article 3 of the EU AI Act (Regulation 2024/1689), covering key terms related to AI regulatory sandboxes, testing procedures, consent, deepfakes, infringements, and general-purpose AI models that are essential for understanding the regulation's requirements and scope.",
+      "text_sha256": "4318e3938f3cb90329fcadaa72689cb9dcc47ebb82ec48be6ce8f81d7fcc79f4",
+      "window_index": 8
+    },
+    "43d27344f4aa234cf0225ca577db360b50846ff49ba8e91bc89e8da7f8d2a832": {
+      "context": "This chunk is from ANNEX XI of the EU AI Act (Regulation 2024/1689), specifically Section 1 on technical documentation requirements for general-purpose AI model providers. It details the mandatory elements that must be documented regarding model development, including design specifications, training data characteristics, computational resources, and energy consumption. The chunk also includes the beginning of Section 2 on additional requirements for general-purpose AI models with systemic risk, and ANNEX XII on transparency information for downstream providers.",
+      "text_sha256": "cdb4479ee74c4b3725fb8cea56bfcb1127b76cafb38076b515f23a472491bc4d",
+      "window_index": 19
+    },
+    "44f1c3f90c992cf9610d27e7faead3aaf4986901ff34bae5c3219bcd6cac761f": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and contains sections C and IX of the annexes. Section C specifies information that deployers of high-risk AI systems must submit for registration under Article 49(3), including fundamental rights and data protection impact assessments. Annex IX details information required for registering high-risk AI systems undergoing testing in real world conditions per Article 60. Annex X lists Union legislative acts on large-scale IT systems in the Freedom, Security and Justice area, including regulations on the Schengen Information System and Visa Information System.",
+      "text_sha256": "413334dfd95911642fc78101997049a6ad2599ee5ac1027f37e378442d21cf3f",
+      "window_index": 19
+    },
+    "45ffbf1e4173af8a47085c7f506d9ea1925231823427c3a201ab9619ede7f6e1": {
+      "context": "This chunk contains definitions (25) through (40) from Article 3 of EU Regulation 2024/1689 on Artificial Intelligence. These definitions establish key terms related to AI system monitoring, data types, and biometric systems that are referenced throughout the regulation's requirements for providers and deployers of AI systems.",
+      "text_sha256": "597d85ed39df091791d1466b18e7d1fb737ac7d9d2af3c8a836037e845105e56",
+      "window_index": 8
+    },
+    "47e08d80a3b003e5c26c7fa697a125a69d3cd6825f1700da289ac161204b67de": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) recitals section, specifically recitals 93-95, which address the responsibilities and obligations of deployers of high-risk AI systems. The recitals explain deployers' critical role in protecting fundamental rights, their duty to inform natural persons about high-risk AI system use, and specific requirements for biometric data processing and post-remote biometric identification systems in law enforcement contexts, with references to Directives 2016/680 and 2016/679.",
+      "text_sha256": "6e14657a52b0656ed17a7203e87c88a6c20acb5ff7d9342ca4b4452148a72a90",
+      "window_index": 4
+    },
+    "48f067acddbf61834ff7d3060ba3f81ee0a51c3adc83fd0a6efab56070b3f634": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers Article 27 on fundamental rights impact assessments for high-risk AI systems, followed by Section 4 on notifying authorities and notified bodies (Articles 28-29). It details the requirements for deployers to conduct and document fundamental rights impact assessments, notify market surveillance authorities, and the procedures for conformity assessment bodies to apply for notification status.",
+      "text_sha256": "5ba6799eec0fa3e5bfaa5bb22e5eac9bd21952629c93359fee069137c2907d3a",
+      "window_index": 11
+    },
+    "49f1373fce6aa040e847bb56f77628ee571ebe196d6331343b1a48f0c6183421": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers Section 4 on notifying authorities and notified bodies, and Section 5 on standards and conformity assessment. It includes Article 37 on challenging notified body competence, Article 38 on coordination of notified bodies, Article 39 on third-country conformity assessment bodies, and Article 40 on harmonised standards for high-risk AI systems and general-purpose AI models.",
+      "text_sha256": "4b6b8c87be18e2d66b0fc5708852a291f4c6fcca1324ff7a9f4f491ffb6f3f52",
+      "window_index": 11
+    },
+    "4a400f51db1e25f918c27e48fe12bceca0de2e4f223db2cae12fdae91e55e6cb": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance, Section 3 on Enforcement. It includes Article 78 on Confidentiality, which establishes rules for how authorities must handle sensitive information obtained during AI system supervision, with special provisions for law enforcement and security-sensitive contexts, and Article 79 on the national-level procedure for addressing AI systems that present risks to health, safety, or fundamental rights.",
+      "text_sha256": "7bdbdc676997f6a8ee499fa587d92b06b9ea053ee12317f6f7444a055e72731e",
+      "window_index": 15
+    },
+    "4aa71aaa48c2ed992b917ff2403f2a54a9ea834268779b914f98aa49eec7d767": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 165-167, which are part of the preamble's discussion of governance, enforcement, and compliance mechanisms. Recital 165 addresses voluntary codes of conduct for non-high-risk AI systems and encourages ethical AI development, recital 166 discusses safety requirements for non-high-risk AI systems, and recital 167 establishes confidentiality obligations for competent authorities implementing the Regulation.",
+      "text_sha256": "298eae4cd182415d9976dd5999ae34236343fbf53a71f9c19146ab402ec41273",
+      "window_index": 7
+    },
+    "4be10ae565490db242eb7adfb53794e5ceebc2733f902a9f5ea9aec8a4560fc7": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 4 on Codes of Practice, which contains Article 56. Article 56 establishes the framework for developing, monitoring, and approving codes of practice at Union level to help providers of general-purpose AI models comply with their obligations under Articles 53 and 55, including requirements for technical documentation, systemic risk assessment, and model evaluation.",
+      "text_sha256": "1e54a6cbb43d6ff28d4cd3a9df61fa8eaf975d4914385f90f6ae27360a2e1c0a",
+      "window_index": 13
+    },
+    "4ddb6c6651889cedf38933ef542b2ef6f9b7aa7a5225eea282331bb0c5eb1f11": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses exceptional circumstances for placing high-risk AI systems on the market without prior conformity assessment (recital 130) and establishes mandatory registration requirements for high-risk AI systems in an EU database managed by the Commission (recital 131), including provisions for public accessibility, secure sections for sensitive applications, and compliance with accessibility standards.",
+      "text_sha256": "b792270d6bf097b93db430d047b9777363d17dbabafc8ada5ff80f4a6d00f7bc",
+      "window_index": 5
+    },
+    "4df76d80a3952248e5c40fe22d29b5060e04665c8ae07c77598e78c7c83e864f": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance. It contains Article 72 on post-market monitoring requirements for providers of high-risk AI systems, and Article 73 on the reporting of serious incidents to market surveillance authorities, including specific timelines for different types of incidents.",
+      "text_sha256": "d5c2e33df04f68700c0f8fdf6643079694b63c05d97ae8f03f16c229e6bc6c03",
+      "window_index": 15
+    },
+    "4ec8c9df167c6692ca425b2a5b3bd9482d4d74cc2c3619d9b0a82c8128e3c55b": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance, Section 3 on Enforcement. It contains Article 76 on supervision of testing in real world conditions by market surveillance authorities, Article 77 on powers of authorities protecting fundamental rights, and Article 78 on confidentiality obligations. These articles establish the procedures and safeguards for market surveillance authorities and fundamental rights authorities to oversee AI system compliance and access documentation while protecting confidential business information and security interests.",
+      "text_sha256": "6b6be20a783f3bfa80d5e5abd82af67d1fd54e78bf414e5071e6bc12aac61692",
+      "window_index": 15
+    },
+    "4fb9e70b8a4825ba5a2b349bf6bab6d706274dec184a2aa5dd67cd64f9b5bd2a": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the preamble section discussing mandatory requirements for high-risk AI systems. It explains how providers must comply with this Regulation's requirements while also meeting applicable Union harmonisation legislation, and describes the flexibility providers have in integrating compliance documentation and procedures across multiple applicable legal frameworks.",
+      "text_sha256": "899991ed8e8b038f77d0f66c37f8dcfa82d231c98e0c81bce7661c6e54312352",
+      "window_index": 3
+    },
+    "513cdb00efa8d9efd39cf2ad34b97536c3a7893c899f6eb039a08003ae7388f8": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains definitions from Article 3 (definitions 65-68) and the beginning of Chapter II on Prohibited AI Practices, including Article 4 on AI literacy requirements and Article 5 listing eight categories of prohibited AI practices that are banned under the regulation.",
+      "text_sha256": "a3615a514fb872e08fe60a9a1e4c19bf74f793094a1ffcc69f6762b4ba25ecf0",
+      "window_index": 8
+    },
+    "5143d0fc1770846da3ae6fd48b69db3805a06f9755b996fb7ab60441f8d788b7": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 4 on \"Notifying authorities and notified bodies.\" It covers Articles 34-36, which detail the operational obligations of notified bodies, including their responsibilities to avoid unnecessary burdens on providers, maintain documentation for notifying authorities, receive identification numbers from the Commission, and procedures for handling changes to their notifications, including cessation of activities and grounds for suspension or withdrawal of designation.",
+      "text_sha256": "1cb611f8c774561117a906ed832684142591099e2717fbd783557e54ae7bc546",
+      "window_index": 11
+    },
+    "5392586f73ebccb40f0f781c0995c459a949939c41533b0d8203c6df2d6feb8b": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of Section 3 on \"Obligations of providers and deployers of high-risk AI systems and other parties.\" It contains Article 17 on quality management systems that providers must establish, Article 18 on documentation keeping requirements, and Article 19 on automatically generated logs, specifying the mandatory components, retention periods, and compliance obligations for high-risk AI system providers.",
+      "text_sha256": "83b84547c170440bebb4029480fecf4cc3051bd8e7d9275c99b53ebc0940a599",
+      "window_index": 10
+    },
+    "55fedc7cd2a9b4fa1d537563e4d4b5583f7d7285fbcdc4a9f5d41f172735eaa6": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) appears in the preamble section addressing support measures for innovation and compliance. Recitals 146-148 discuss proportionality measures for microenterprises regarding quality management systems, access to testing facilities for conformity assessment, and the establishment of a governance framework including the AI Office, Board, scientific panel, and advisory forum to coordinate implementation of the Regulation at Union and national levels.",
+      "text_sha256": "f8a0cdc254b0cb8a8718913ad2bc430221f30b351c982efa2b1991a853e471da",
+      "window_index": 6
+    },
+    "562bd8c2b5a2bf0f1c78032dc948fe0d5f54f20d9f69b3d50b02393860d00d42": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter XI on Delegation of Power and Committee Procedure (Article 97) and Chapter XII on Penalties (Article 99). It outlines the procedures for adopting and revoking delegated acts by the Commission, consultation requirements with Member States, notification procedures to the European Parliament and Council, and the entry into force conditions for delegated acts. The chunk also introduces the penalties framework, specifying that Member States must establish rules on penalties for infringements of the Regulation, with administrative fines for non-compliance with prohibited AI practices under Article 5.",
+      "text_sha256": "45568f5da644384ec59ee6fb854989a8d2a414edc96386b5049c396096826531",
+      "window_index": 16
+    },
+    "594ac1bc37eb7903e867aebed4a0edc0aa09fb6ad45aa2e970596b099714a133": {
+      "context": "This chunk is from Article 99 (Penalties) in Chapter XII (Penalties) of the EU AI Act (Regulation 2024/1689). It specifies the administrative fines and enforcement measures applicable to operators and notified bodies for non-compliance with various AI Act provisions, including detailed criteria for determining fine amounts and considerations for SMEs and public authorities.",
+      "text_sha256": "ee0b08977ab4e9efb1e0dd8822804dde33b15dbc4b8c7d92e295b1db97f229c5",
+      "window_index": 16
+    },
+    "59858280a0c5d6843817a81e007bd7b58311953dc09e4c85dc0ba77395115f3f": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains conditions for AI regulatory sandboxes and provisions for testing high-risk AI systems in real-world conditions. It includes subsections (e) through (j) of an unnamed article establishing data protection and documentation requirements for sandbox participants, followed by Article 60 which governs real-world testing of high-risk AI systems listed in Annex III outside regulatory sandboxes, including requirements for testing plans and market surveillance authority approval.",
+      "text_sha256": "1c3e52103d34ad5e755a60d776a4040bbc183d232c531dd809b90d3d1d462c42",
+      "window_index": 14
+    },
+    "5a28e7a8685c3e6948a9c96011d5554e806863c1baa15e10b21ede7ca454ba7e": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 176-180, which address the legal basis for the regulation under subsidiarity and proportionality principles, transitional provisions for compliance with high-risk AI system requirements, application dates for different provisions starting from February 2025 and August 2025-2026, and consultation of data protection authorities.",
+      "text_sha256": "49b7bd55f03511d2b765ba9e170f1c31905a6e368a0bc318645d2d3170f48a83",
+      "window_index": 7
+    },
+    "5bf020de82e8050b4730867c2563478b9c8d9aea810ec0a4154c047bbd02ce56": {
+      "context": "This chunk appears in Annex I, Section B of the EU AI Act (Regulation 2024/1689), which lists other Union harmonisation legislation relevant to AI regulation. Items 18 and 19 specifically reference EU motor vehicle regulations concerning type-approval and market surveillance requirements.",
+      "text_sha256": "cf748c75dd36960c846e2df1c0384991d70fca8a893782a2b1b79355e40a3e37",
+      "window_index": 18
+    },
+    "5bf8e9c1dfbfbf8848e99f3168295ec88934e513a42ecf7b044b13633d180121": {
+      "context": "This chunk is from ANNEX VII of EU Regulation 2024/1689 (the AI Act), specifically Section 3 on \"Quality management system\" and Section 4 on \"Control of the technical documentation.\" It details the conformity assessment procedure based on an assessment of the quality management system and technical documentation, outlining the requirements for provider applications, notified body assessments, and the examination process for AI system compliance with Article 17 and Chapter III, Section 2 requirements.",
+      "text_sha256": "b80a9649445c4a4e945014617ecd874f3f4169188d719166b5e6f0e35834dd8a",
+      "window_index": 19
+    },
+    "5f43a7300e779b3ec99340cb860e831e3943d0483ea3f427b77efe7fbb705d18": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance. It covers Section 2 on Sharing of Information on Serious Incidents (Article 73) and Section 3 on Enforcement (Article 74), detailing provider obligations to cooperate during incident investigations, market surveillance authority procedures for responding to serious incidents, and the application of Regulation (EU) 2019/1020 to AI systems market surveillance and control.",
+      "text_sha256": "177b19789c0b87f51659eed8b07c634a18af46eaec150621acacad59be1ad6ea",
+      "window_index": 15
+    },
+    "5fdaf4299effc785b97145bcf6825c2acb6b9470463a0124ebc92a5fbd765233": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of the preamble recitals (162-164) that establish the governance and enforcement framework for general-purpose AI models. It specifies the supervisory powers and responsibilities of the Commission and AI Office in monitoring compliance with obligations imposed on providers of general-purpose AI models, including investigation authority, the role of the scientific panel in identifying risks, and the procedural rights available to providers.",
+      "text_sha256": "691ac7ebc08094a17962328244f32e51e7552d92c6edfe95413a27241db7d278",
+      "window_index": 7
+    },
+    "5fe98298de95efebf53e78efe69cbcda7f2d3a44b3eac97f33d0b3f797b09005": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 3 on \"Obligations of providers and deployers of high-risk AI systems and other parties.\" It contains Article 16, which lists the mandatory obligations for providers of high-risk AI systems, and the beginning of Article 17, which details the requirements for a quality management system that providers must establish to ensure compliance with the regulation.",
+      "text_sha256": "63f8264e7abcfff81304d153b3032df3f98971819a264a98df823052fade4442",
+      "window_index": 10
+    },
+    "61f48579a627894113e79b214366b26eaca6d5cea7a8ee4bcd46fd4cc0338145": {
+      "context": "This chunk from the preamble of EU Regulation 2024/1689 (Artificial Intelligence Act) contains recitals (19) and (20), which define key concepts and principles for the regulation. Recital (19) defines \"publicly accessible space\" as a foundational concept for understanding where certain AI system restrictions apply, while recital (20) establishes the importance of AI literacy for providers, deployers, and affected persons in complying with the regulation's requirements.",
+      "text_sha256": "6a30347090e9c829c66596f9e1ec39274560fa87461acd785242bec3059c9eec",
+      "window_index": 0
+    },
+    "652b2ad8a4aa27ba92da67de6694c4e4d3d8399f0819e928f1b72c0e5318cfcd": {
+      "context": "Recital (110) of the EU AI Act 2024 defines systemic risks posed by general-purpose AI models, including potential negative effects on public safety, democratic processes, security, and the dissemination of harmful content, as well as specific risks from misuse, bias, disinformation, and critical infrastructure interference.",
+      "text_sha256": "7f3862e4998c085dc5e5a9ccd6bb780eb804158b53bc66657bcb6a5dae9e4d9d",
+      "window_index": 4
+    },
+    "672bc1f29f37f84334e7f813d2f4f5f9e7d846fc866dc6d9b4664ae70aeffa81": {
+      "context": "Recital 157 of the EU AI Act (Regulation 2024/1689) addresses the enforcement framework and safeguard procedures, establishing that the regulation does not limit the competences of national authorities supervising fundamental rights protection and requiring a specific safeguard procedure for AI systems presenting risks to health, safety, and fundamental rights.",
+      "text_sha256": "c340a936588c7dc5022a34a2e7cde067f674f53c6feb8c2f044ab12dd7496177",
+      "window_index": 6
+    },
+    "674b09ed0b91b1ffc00e21a45b53567b0588f26e6bf5d12d808bb493d9a59a27": {
+      "context": "This section from the EU AI Act 2024 (Regulation 2024/1689) discusses high-risk AI systems in the context of essential services and financial decisions. Recital 58 explains why AI systems used to determine eligibility for public assistance benefits, evaluate creditworthiness, assess insurance risk, and dispatch emergency services should be classified as high-risk due to their significant impact on fundamental rights and persons' livelihoods.",
+      "text_sha256": "3af7c2f155c3dc7503c74e3a70199cb31195ff1eaa35e99f3eae3b484906ec7e",
+      "window_index": 2
+    },
+    "69c7216e13d16cb9e48a942c890d93bec0469d012ca7e3d1b246919b2ec84c0f": {
+      "context": "This chunk from EU Regulation 2024/1689 (AI Act) contains Annexes V, VI, and VII, which specify the requirements for EU declarations of conformity and conformity assessment procedures for AI systems. Annex V details the mandatory information that must be included in an EU declaration of conformity referenced in Article 47. Annex VI outlines the conformity assessment procedure based on internal control, while Annex VII describes the conformity assessment procedure based on quality management system and technical documentation assessment, including requirements for provider applications, notified body evaluations, and surveillance activities.",
+      "text_sha256": "e5a7a3787c74b8616adbff4ceee01039e4a5c6d9ab52feba36319d3b6c1f5a0f",
+      "window_index": 19
+    },
+    "69e980e02370b2497af5a1919fa38768522d7ae04420b7b5a18007db06280ff7": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) appears in the recitals section and addresses the relationship between this Regulation and Regulation (EU) 2022/2065 on digital services. Recitals (118)-(120) explain how AI systems embedded in very large online platforms and search engines are subject to both regulatory frameworks, clarify that AI systems can function as intermediary services, and describe obligations regarding detection and disclosure of artificially generated or manipulated content to support implementation of the Digital Services Act.",
+      "text_sha256": "67561ff235e6c833cb09e3d23517ac6defbd5b31d4d11144642e08e44033129a",
+      "window_index": 5
+    },
+    "6c9c0c825f7093a74af39cb892c1ba2239f14d54bc8d15c3499c56aba5016134": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses obligations for providers of general-purpose AI models with systemic risks, specifically covering recitals 115-117. Recital 115 details requirements for assessing and mitigating systemic risks, incident reporting, and cybersecurity protections for models and infrastructure. Recitals 116-117 establish the role of codes of practice as compliance tools, developed by the AI Office in consultation with stakeholders, and describe how providers can demonstrate conformity through codes of practice, harmonised standards, or alternative means.",
+      "text_sha256": "9e5bc9af5864fd01a2ae4384f6c7cd28834dd4525de319b05f7f95c930d82965",
+      "window_index": 5
+    },
+    "6da8fc8abae1c284432516d136b4b7afa2671307b1c9357c81306217b8ea5703": {
+      "context": "This chunk contains footnotes 53-57 from the EU AI Act (Regulation 2024/1689), listing referenced Union legislation on product safety, whistleblower protection, implementing powers, and trade secrets protection that are cited throughout the regulation.",
+      "text_sha256": "70d98bbaecb2885851ba88d38fb2d1cbeeb877c06f1b5cc2fac42e8819cb7186",
+      "window_index": 18
+    },
+    "6e63fee43b24ca4b2cf36b51abf953b0c6e20453bea4a3eb25d1ddce10107de8": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and contains the beginning of Annex I, which lists Union harmonisation legislation referenced in the regulation. Section A of Annex I specifically lists harmonisation legislation based on the New Legislative Framework, including directives on machinery, toy safety, recreational craft, lifts, and equipment for explosive atmospheres.",
+      "text_sha256": "612523cffc0d0b9cc00c55dd7d4b142df9c3617cf8b8fbe1a96261c10f77289a",
+      "window_index": 18
+    },
+    "70659a2f5de90a9e0a6b561971b462f405732927c07a6cee0d029dbe9a4c88c4": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers recitals 134-137, which address transparency obligations for deployers of AI systems that generate or manipulate content, particularly deep fakes and AI-generated text. The recitals explain disclosure requirements for artificially created content, exceptions for creative and artistic works, the role of codes of practice, coordination with the Digital Services Act (Regulation 2022/2065), and clarifications that transparency compliance does not indicate lawfulness under other regulations.",
+      "text_sha256": "7d7cb415a82c34f29169a29eaa7204cfc80e1a5a075ef98f79ee125b8a646476",
+      "window_index": 6
+    },
+    "7717a977f0fc30b910ebd1c2b17fad2299a848f2b580c658e74135fcdad0bc37": {
+      "context": "This chunk contains footnote references 13-16 from the EU Artificial Intelligence Act (Regulation 2024/1689), listing related EU directives and regulations on data protection, privacy, digital services, and accessibility that are referenced throughout the regulation.",
+      "text_sha256": "a6956ba08d24579183b56c69be2f6b7a13aa5fc22780898c8e91ab777848db40",
+      "window_index": 17
+    },
+    "780c66cf758d3e3fcb4be5a0b4f31de3c768fd40b633703dcce4b3bb8ae480af": {
+      "context": "This chunk from Regulation (EU) 2024/1689 (the Artificial Intelligence Act) contains recitals 12-14, which provide foundational definitions and interpretations for key concepts used throughout the regulation. Recital 12 defines the notion of \"AI system\" by explaining its core characteristics including the capability to infer, machine-based operation, and varying levels of autonomy. Recitals 13 and 14 define the terms \"deployer\" and \"biometric data\" respectively, which are essential concepts referenced in the regulation's substantive provisions on high-risk AI systems and biometric identification restrictions.",
+      "text_sha256": "6ede8c42449adf96a67a2d10a92c105fa14da65c4ef7fbbc3f0f8c71816118ce",
+      "window_index": 0
+    },
+    "784c67d09fd79bc8bfffb21079adb7ae7a159e74b1f3e3940afc9fe8f3836c0f": {
+      "context": "This chunk is from Article 5 of the EU AI Act (Regulation 2024/1689), specifically paragraphs 2-4 within the section on Prohibited AI Practices. It details the safeguards, authorization requirements, and notification procedures for the use of real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, which is prohibited under Article 5(1)(h) except under strictly defined circumstances.",
+      "text_sha256": "b8c911d3a8f7dbb4c62f17cb165a8bf61d44ff05b7043aaacc8a8cf19d83ab9d",
+      "window_index": 8
+    },
+    "78aeec49bddd311cbaeb98c573b0cc060466dcaabd9cc76a9457d11c4787bcea": {
+      "context": "This chunk contains footnote references 1-8 from the EU Artificial Intelligence Act (Regulation 2024/1689), listing sources cited throughout the regulation including Official Journal references, European Parliament and Council positions, and related EU regulations on accreditation and product marketing frameworks.",
+      "text_sha256": "dac457a3319b6a3f4c053cf3204f5a9876fcf7361eadcc3bee3e9d82586fbe5a",
+      "window_index": 17
+    },
+    "79350a19facae59c94ec0b08f0129bfcb78a4de611dd75e54f9d3fb0918a2e9a": {
+      "context": "This is recital (53) from the EU AI Act (Regulation 2024/1689), part of the preamble section establishing the regulatory framework for artificial intelligence. The recital clarifies exceptions to high-risk AI system classification by defining when AI systems do not materially influence decision-making outcomes, including narrow procedural tasks, supplementary improvements to human activities, pattern detection, and preparatory assessments, while noting that profiling-based systems remain high-risk regardless of these conditions.",
+      "text_sha256": "cc781696a49bcf7d76a6b90d7407d4027a3e89887abcbdde4f38fac591a5e777",
+      "window_index": 2
+    },
+    "7a8844e03185228fd39f734552e09f8a8b4ef841303495c1df0ca32d4cb2370d": {
+      "context": "This chunk is from Article 31 of the EU AI Act (Regulation 2024/1689), which sets out the requirements relating to notified bodies. Notified bodies are conformity assessment bodies designated to evaluate high-risk AI systems for compliance with the Regulation. The chunk details organizational, operational, and competency requirements that notified bodies must meet, including provisions on independence, confidentiality, liability insurance, personnel qualifications, and participation in standardization activities, as well as related articles on presumption of conformity, subcontracting, and operational obligations.",
+      "text_sha256": "5e06ca676e50daec3a3ab9bfd6886acb3c57fbeec80338f54820a66bb011d70a",
+      "window_index": 11
+    },
+    "7ab7580d58186d0d09d0cef15fb6b192e94b24ec0935ba953c4149477e62d2e1": {
+      "context": "This chunk from the preamble of EU Regulation 2024/1689 (Artificial Intelligence Act) explains the relationship between the AI Act and existing EU data protection laws, including GDPR and the ePrivacy Directive, clarifying that the AI Act does not override personal data protection rights and obligations while establishing harmonised rules for AI systems.",
+      "text_sha256": "16d32f9d6a5faeaf3cebfe22a61d7bf154b62c676a8ecac1c530283f90803c76",
+      "window_index": 0
+    },
+    "7b838e78dac405d03f3d3320d93a3a09c157cfba40aa2ce8aff51bd1b7732844": {
+      "context": "This chunk is from the preamble (recital 8) of Regulation (EU) 2024/1689, the Artificial Intelligence Act, which establishes the legal justification and objectives for creating harmonised EU rules on artificial intelligence. The recital explains why a Union legal framework is needed to regulate AI systems while protecting public interests and fundamental rights, and describes the regulation's support for innovation and the European human-centric approach to AI development.",
+      "text_sha256": "ed60e969f350c71797ac9d51652f603b0515db5a8774ffda36cf82799a1ce01a",
+      "window_index": 0
+    },
+    "7ce6e22ee97e9be8c912c59f138c7cd2cb38ee0f7bf37a33e6a0127727784bfa": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of the recitals section addressing real-world testing of high-risk AI systems and socially beneficial AI development. Recital 141 establishes the specific regime and safeguards for testing high-risk AI systems in real-world conditions outside regulatory sandboxes, including requirements for informed consent, testing plans, and data protection measures. Recital 142 discusses Member State support for AI research and development that produces socially and environmentally beneficial outcomes.",
+      "text_sha256": "a7e38bffece361627539920b9e64765f75b9d4d0344d6568d35746214f955c31",
+      "window_index": 6
+    },
+    "7dcb91e371073158d37a5edf4bde97880ffd274c554cd4e9bdbd542c7c12e8e7": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses the obligations and responsibilities of providers of general-purpose AI models, specifically recitals 101-103. It covers transparency requirements for general-purpose AI model providers along the AI value chain, the definition and treatment of free and open-source AI models and components, and documentation requirements that providers must maintain for downstream users and competent authorities.",
+      "text_sha256": "bb34d9339eebd73d8d519f9ea4d831d440547fe6ec991c2f5914428f4b24c207",
+      "window_index": 4
+    },
+    "815d22afd8ea0a52e61f63679e010afc412120676881e4665630d26c0fc6d0fe": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses the regulatory framework for real-time remote biometric identification systems used by law enforcement. Recitals 37-39 establish that Member States retain discretion to authorize such use under national law, clarify how this Regulation applies as lex specialis over the biometric data processing rules in Directive 2016/680, and specify that biometric identification for non-law-enforcement purposes remains subject to GDPR and other data protection requirements.",
+      "text_sha256": "8f94bab987ba8c60978e95052384890383c30deaf9a4a0c774d0f897f3ce12a8",
+      "window_index": 1
+    },
+    "816f1ae653e41e299d5aa2c9a51446c41578fcaffe889e32f5a02b97dc932c5f": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 30-32, which explain the justification for prohibiting certain unacceptable AI practices. Recital 30 addresses the prohibition of biometric categorisation systems used to infer sensitive personal attributes, recital 31 covers the prohibition of social scoring AI systems, and recital 32 discusses concerns about real-time remote biometric identification for law enforcement purposes, setting the foundation for detailed rules on this use case covered later in the regulation.",
+      "text_sha256": "fc3f87966392db7c502204f2dabee32553de3d4bb223a81e996353680d9d494f",
+      "window_index": 1
+    },
+    "828be072a78fc3a4f67cd94e24e4d32a9c121b01bf376ba5dd4d37e565157f66": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the section on real-time remote biometric identification systems for law enforcement (paragraphs 5-8) and the beginning of Chapter III on High-Risk AI Systems, Section 1 on Classification of AI systems as high-risk (Articles 6-7). It covers Member State authorization procedures for biometric systems, reporting requirements to the Commission, and the foundational rules for determining which AI systems qualify as high-risk under the regulation.",
+      "text_sha256": "7f67e13d605d962b0af3d5acd330ac8bc252a32c05e07dd7ae3ad537db07ded4",
+      "window_index": 9
+    },
+    "82b7668848fc18d4c06f49a91d00fc929fdcfea7c1af0e7d59af979afab14c3c": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and appears in Annex XI, which specifies the technical documentation requirements for providers of general-purpose AI models under Article 53(1), point (a). Section 1 of Annex XI outlines mandatory information that all providers of general-purpose AI models must include in their technical documentation, with the chunk detailing the required general description of the model including its intended tasks, acceptable use policies, release date, architecture, input/output modalities, and license.",
+      "text_sha256": "84f0c66ff1f9f5fcf1c3c489d94ce6ee1cdf755a6d56a15728165509c4b88f72",
+      "window_index": 19
+    },
+    "8625529bb46c4470b3c6fe146447afc19192244135c5413b2179a3e9a7293798": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses standardisation and conformity assessment procedures for AI systems. Recitals 121-123 explain how harmonised standards and common specifications facilitate provider compliance with the Regulation, the presumption of conformity for high-risk AI systems meeting certain criteria, and the requirement for conformity assessment before high-risk AI systems are placed on the market or put into service.",
+      "text_sha256": "56f7fbe54694a5982063e041583e258c638b146987ae7dac0f52d78413e4c50d",
+      "window_index": 5
+    },
+    "86a4291311b49bdd34979c6ca25fd1833abe634b2158bef8cc41eecb29163eb6": {
+      "context": "This chunk is from the EU Artificial Intelligence Act (Regulation 2024/1689), specifically Article 112 on Evaluation and Review and Article 113 on Entry into Force and Application. Article 112 outlines the Commission's obligations to periodically assess and report on the AI Regulation's implementation, including evaluations of high-risk AI systems lists, prohibited practices, transparency requirements, and enforcement structures. Article 113 specifies the regulatory timeline, establishing that the Regulation enters into force upon publication but applies from 2 August 2026, with certain chapters applying earlier from February 2025 and August 2025.",
+      "text_sha256": "17c74a54b65d2f345cbe2ef2159de0cb0d47a6981c9c0f40d9fc2fb4bdf46401",
+      "window_index": 17
+    },
+    "86c6aceec9cb027b7dc8e47abc474af272f9b134336c0873dfdec34fac550a15": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Chapter V on General-Purpose AI Models, Section 1 on Classification Rules. It contains Articles 51 and 52, which establish the criteria and procedures for classifying general-purpose AI models as having systemic risk, including the computational threshold of 10^25 floating point operations and the notification requirements for providers.",
+      "text_sha256": "e9b04f144bad726980d1e4a66bef2fbe2930a4557b61c7c0ee508840216a23ba",
+      "window_index": 12
+    },
+    "87172596c764fd0905a60f8aa2a32030d17eba3093ce01a331014a431595b8ab": {
+      "context": "This chunk is from Annex X of EU Regulation 2024/1689 (the AI Act), which lists Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice. The chunk specifically covers sections 2 through 4, detailing regulations related to the Visa Information System, Eurodac biometric data system, and the Entry/Exit System.",
+      "text_sha256": "af31c094ea7d44d788392cc19d8dc351d2a5b1d8c94a76f8a9b1d0979308de9d",
+      "window_index": 19
+    },
+    "87a1ba0dc58d0bc892feca444092a2abdfc8db1bbec24a18cb5848e4267fd46e": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 88-92, which address responsibilities along the AI value chain. Recital 88 discusses obligations of third parties supplying components and services to high-risk AI system providers, recital 89 exempts free and open-source developers from certain requirements, recital 90 addresses voluntary model contractual terms, recital 91 establishes specific responsibilities for deployers of high-risk AI systems, and recital 92 addresses worker information and consultation rights regarding AI system deployment.",
+      "text_sha256": "5cc900f517f974ffcb8862205a6adcb883d2d808d76bf868137d3841860f29d3",
+      "window_index": 4
+    },
+    "8c53a7a354a698b8479960ef18eea6cb2f6f547e79f2d05752f9a9e351c06233": {
+      "context": "This chunk appears in Annex X of the EU AI Act (Regulation 2024/1689), which lists Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice. The chunk contains sections 4 through 7, covering the Entry/Exit System (EES), European Travel Information and Authorisation System (ETIAS), European Criminal Records Information System (ECRIS-TCN), and Interoperability frameworks.",
+      "text_sha256": "b5b0e9f901b385cdeffef50207283ebe4fe6b78aef2a6e0c59ecda892e9202aa",
+      "window_index": 19
+    },
+    "8e8e85e8c9a278848614b4af433eb09868a47d8a44f9510da8b4226f6b0fa388": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Chapter VI on Measures in Support of Innovation. It contains Article 57 on AI regulatory sandboxes, which establishes requirements for Member States to create controlled environments for testing and validating innovative AI systems before market deployment. The chunk also references the fallback provision in Article 56 regarding codes of practice for general-purpose AI models, which precedes this chapter.",
+      "text_sha256": "8ca99796fcd1b0d81382dd1364ee553e56bcdbf37f95c4ff165d77cdb1525736",
+      "window_index": 13
+    },
+    "939ba4c2fba37423c071d5a21d6a8bd260d41af9cb44b08729e6b124ad264975": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter III on conformity assessment procedures for high-risk AI systems. It covers Articles 41-43, which establish the framework for common specifications, presumptions of conformity, and conformity assessment procedures that providers must follow to demonstrate compliance with the requirements in Section 2 of Chapter III and Sections 2-3 of Chapter V.",
+      "text_sha256": "09b1431661b0a454baff91f60fa1da4ca316ed0c30a89d55e6c0f898ff2b5708",
+      "window_index": 12
+    },
+    "94b46b4016199b7775088801bc00998ea5717b0327c6a7e64addb74e9a5a5ac7": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Article 7 on \"Amendments to Annex III\" and Article 8-9 on \"Compliance with the requirements\" and \"Risk management system\" for high-risk AI systems. The chunk contains criteria the Commission must consider when assessing whether to add or remove high-risk AI systems from Annex III, including factors related to harm extent, user dependency, power imbalances, reversibility of outcomes, and existing legal protections.",
+      "text_sha256": "c00617dc08d7c2329152ef35e7636a4b0c67cd07647e98993e75fc9c54effc70",
+      "window_index": 9
+    },
+    "98996225828abbcae0261ef3427c72477614862789ef99402f0ae49ca160f5ea": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers Article 101 on fines for providers of general-purpose AI models, detailing the Commission's authority to impose fines up to 3% of annual worldwide turnover or EUR 15 million for violations, along with procedural safeguards and grounds for appeal. It also begins Chapter XIII on Final Provisions, which contains Articles 102-110 amending various EU regulations to incorporate AI system requirements from Chapter III, Section 2 of the AI Act.",
+      "text_sha256": "86ec528bc53369ca2b6817ae3f31ee26830b542e09b773609f7480bb766e9a72",
+      "window_index": 17
+    },
+    "999d23a0259ee529f0ef516eb9c3a03c6fc3c6843dd7ea4847aa43d3afad9b3e": {
+      "context": "This chunk is from the preamble (recitals 158-161) of EU Regulation 2024/1689 on Artificial Intelligence (AI Act). It addresses the governance and supervision framework for AI systems in the financial sector and the division of responsibilities between the AI Office and national market surveillance authorities for supervising high-risk AI systems, particularly those based on general-purpose AI models.",
+      "text_sha256": "62e65eee23edd15f1947af7d4d585c308240586f5295dfe2c19a38431b40f3e4",
+      "window_index": 7
+    },
+    "9b372c50948d4a95248d9524b2a936e883cc5a4ef96fe39b174a7d5ad94688c0": {
+      "context": "This chunk contains footnotes 39-42 from the EU AI Act (Regulation 2024/1689), listing referenced Union legislation including directives on employee consultation, copyright in the digital market, European standardisation, and data governance that are cited throughout the regulation.",
+      "text_sha256": "13a16bf0dbc65c26a2e9560a529416ccaa4eadd0a6a1e6d8055c3da2afac5989",
+      "window_index": 18
+    },
+    "9b96c3def4382c7b13fda02a58616811ecbd8db2e7aa84c7cc4fa1e4f9637f1a": {
+      "context": "This chunk contains Article 1 and Article 2 of Chapter I (General Provisions) of EU Regulation 2024/1689 on Artificial Intelligence. Article 1 establishes the regulation's purpose and outlines seven key areas it addresses, including harmonised rules for AI systems, prohibitions on certain AI practices, requirements for high-risk AI systems, transparency rules, rules for general-purpose AI models, and governance and enforcement mechanisms. Article 2 defines the scope of application, specifying which entities and AI systems fall under the regulation's requirements, including exemptions for military, defence, and national security purposes.",
+      "text_sha256": "1213baeba9e5f932b5c019f83b0fc828ca78100fe12b79bb46d6114979959222",
+      "window_index": 7
+    },
+    "9c4cc40dc308d3890a6d29248926a521d95ddbe671c32f32719feeb8ec0ab050": {
+      "context": "This chunk contains footnotes 48-52 from the EU AI Act (Regulation 2024/1689), listing referenced Union legislation on insurance, credit institutions, and financial supervision that are cited throughout the regulation.",
+      "text_sha256": "0f48a3073843a621a7b9386acf291a46eb7a070b6b5756275c5f196551133460",
+      "window_index": 18
+    },
+    "9c57ba51f66667989651bb3c705034de72b286b34ccf96cea653328569e89078": {
+      "context": "This chunk is part of Annex I, Section A of the EU AI Act (Regulation 2024/1689), which lists Union harmonisation legislation based on the New Legislative Framework. The chunk contains entries 6-11, covering directives and regulations on radio equipment, pressure equipment, cableway installations, personal protective equipment, gaseous fuel appliances, and medical devices.",
+      "text_sha256": "1a0d6d6deeca342c8bd6a8d413529c654ad744be3bbd2268db5f30152829f469",
+      "window_index": 18
+    },
+    "9cab71d4303e9065ea6fc15965e9f4e9d5f7f88522f467779a27848c693abe14": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers Articles 48-50, which address CE marking requirements for high-risk AI systems, registration obligations in the EU database for providers and deployers, and transparency obligations for providers and deployers of certain AI systems including those that interact with natural persons or generate synthetic content.",
+      "text_sha256": "91be1ad86e808243894dbfe73a9bfba0b764e988afe4ffacb9715047e8047ebe",
+      "window_index": 12
+    },
+    "9cbf5e89b12c341deaeec5cf1a19018ed5eeb89a58c292933073736bea04f831": {
+      "context": "This chunk is from Article 79 of EU Regulation 2024/1689 (the AI Act), specifically Section 3 on Enforcement within Chapter IX on Post-Market Monitoring, Information Sharing and Market Surveillance. It details the national-level procedure for handling AI systems presenting risks, including the market surveillance authority's powers to require corrective actions, withdraw or recall non-compliant systems, and the notification and objection procedures that follow when non-compliance is identified.",
+      "text_sha256": "0cfd6134e65214db3af1af0410159b9c79239d7e6df860709d6fa81426f45b08",
+      "window_index": 15
+    },
+    "9d5b0d27c882295c4b01fb8fe512b9d77865607e4634559f60cb24f181fd3c27": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers Article 50 on transparency obligations for providers and deployers of certain AI systems within Chapter IV, followed by the beginning of Chapter V on general-purpose AI models. Article 50 establishes requirements for disclosing AI system interactions, marking artificially generated content, and informing users about emotion recognition and biometric categorisation systems, with specific exceptions for law enforcement uses. Article 51 introduces the classification criteria for general-purpose AI models with systemic risk based on high impact capabilities and computational thresholds.",
+      "text_sha256": "03bd2f541bb7eff559760fc8e721ac3cede2929631e2930375aef7fe77c983be",
+      "window_index": 12
+    },
+    "9ef9a699d86c60e695e8beb14090d9a40b62169dfc9a78595b2e023af67ed9ef": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of the recitals section explaining the rationale for AI regulatory sandboxes. Recitals 138 and 139 establish the legal basis and objectives for Member States to create national AI regulatory sandboxes as controlled testing environments for innovative AI systems before market deployment, with particular emphasis on supporting SMEs and start-ups while ensuring compliance with the Regulation and other Union law.",
+      "text_sha256": "9abfe1fbccba3df61e82a390260c20407891a56f2f864caeb231cdd21a2897ee",
+      "window_index": 6
+    },
+    "a2b9b2c25435e1a1980ff01e28db0fa4a4a1ccff99a2bd175de37a24b6661fd7": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers recitals 124-129, which address conformity assessment procedures for high-risk AI systems. The section explains how compliance should be assessed for high-risk AI systems related to products under existing Union harmonisation legislation, the role of notified bodies in third-party conformity assessment, requirements for notified bodies, mutual recognition of conformity assessment results, substantial modification procedures, and CE marking requirements for high-risk AI systems.",
+      "text_sha256": "3d500aa61474aa21aac7a5cb7c13d4c51298ef78b90f459ba06d44bf26bbffdb",
+      "window_index": 5
+    },
+    "a4b7c93ed2db8fa9ff4eb056697dcca8a9c38334eb6d688b159bf277119d5d0b": {
+      "context": "This chunk is from Article 5 of the EU AI Act (Regulation 2024/1689), which lists prohibited AI practices under Chapter II. It contains subsections (d) through (h) of Article 5(1), detailing specific AI applications that are banned, including criminal risk assessment systems, facial recognition database creation, emotion recognition in workplaces and education, biometric categorization systems, and real-time remote biometric identification in public spaces for law enforcement. The chunk also includes Article 5(2), which establishes safeguards and conditions for the limited use of real-time biometric identification systems by law enforcement.",
+      "text_sha256": "e8f91d6def11f1b3d247c289b79054adc955217f5a3e8b975c713ff4bf2418e5",
+      "window_index": 8
+    },
+    "a7cc4b784b6c95517302c0e547b9ac4b5844e5210e73c62a597ad6d12f1f48af": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains the scope and applicability provisions (paragraphs 5-12) that establish exceptions and limitations to the regulation's application, followed by Article 3 which provides the foundational definitions of key terms used throughout the regulation, including AI system, provider, deployer, and other essential concepts for implementing the act.",
+      "text_sha256": "77be4b7b5eed27db65d3c7684d5f78f8b593d53822126b241db3aff7f26abd3e",
+      "window_index": 8
+    },
+    "a7ff211f7cb34c47edb68142027a5934639b8df7bb02366e9327508b15e22617": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Articles 60-62 covering testing of high-risk AI systems in real-world conditions outside regulatory sandboxes. It details the rights of testing subjects to withdraw consent and request data deletion (Article 60), requirements for obtaining informed consent from participants (Article 61), and support measures for SME providers and deployers (Article 62).",
+      "text_sha256": "08a2bac3b7f69a53050be6094b8377d843f3fe1f53662e0f4662d54928bd52fd",
+      "window_index": 14
+    },
+    "aa3979cc53c44f33bbdf2e2a75fd5211737a920c676c92147306a445420adc28": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of the preamble recitals (49-50) addressing the classification and regulatory treatment of high-risk AI systems that function as safety components in products or fall within existing Union harmonisation legislation. It specifies how the Commission should integrate AI safety requirements into sector-specific regulations covering machinery, medical devices, automotive, aviation, and other critical products, and identifies which product categories must undergo third-party conformity assessment to be classified as high-risk AI systems.",
+      "text_sha256": "70063ec0fcadba1aec0209b1b56869c832dbc7120526077c9766936a22928f94",
+      "window_index": 2
+    },
+    "ab949b11d2aebc6c4011e6b4fe76ebd82cfd4a2caddc98c9b4a4342951b7732b": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Article 66 on the Tasks of the Board and Article 67 on the Advisory Forum, which are part of Chapter VII on Governance, Section 1 on Governance at Union level. The chunk details the specific responsibilities and advisory functions of the European Artificial Intelligence Board and describes the composition and role of the advisory forum established to provide technical expertise to the Board and Commission.",
+      "text_sha256": "911a6e95fffc806ba8166a742a4a8f35e4847ca4f0b2072e9e006ac7eaa9e810",
+      "window_index": 14
+    },
+    "b05aeadf32b4d144140f0fc84b9ac23eb6ba4f44e7646c765fc2b379bf76e5fd": {
+      "context": "This is recital (9) from the preamble of Regulation (EU) 2024/1689, the Artificial Intelligence Act. It establishes that harmonised rules for high-risk AI systems must align with the New Legislative Framework and clarifies the regulation's relationship to existing Union law on data protection, consumer protection, fundamental rights, employment, and product safety, while preserving workers' rights and protections for minors.",
+      "text_sha256": "691df52a4ef1e5de18621a8a4ee0269c33a8f0adcb8bce4a968f64d53994d68f",
+      "window_index": 0
+    },
+    "b096fd739cedfb0e13e2f8ee3fda71e34609e0d64c07d551a778a17f6d7c0bc6": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses the safeguards and authorization requirements for real-time remote biometric identification systems used by law enforcement in publicly accessible spaces. Recitals 34-36 establish the procedural requirements, including fundamental rights impact assessments, judicial or administrative authorization, data handling protocols, and notification obligations to market surveillance and data protection authorities.",
+      "text_sha256": "c8025e6adfa67bd5a3ad03d3b28ff8eacdf6b8c0eee2f29686ef45371af90b5a",
+      "window_index": 1
+    },
+    "b0a00818ba0b92ebf58ad32d97d584924a85a262099f3a3f624b3f7d7ab02372": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Section 5 on \"Supervision, investigation, enforcement and monitoring in respect of providers of general-purpose AI models\" and Chapter X on \"Codes of conduct and guidelines.\" It contains Articles 92-95, covering the Commission's power to conduct evaluations of general-purpose AI models, request compliance measures, procedural rights of operators, and provisions for voluntary codes of conduct for AI systems.",
+      "text_sha256": "02c71bb06b0e51a9b774c152f440a9fd1dc8ee2e6d7942e4f77a5afd88c112f0",
+      "window_index": 16
+    },
+    "b3019adf3f830a45ba3191d2ca2d2edbbdd0e65ca89a15250156f7ab7400c151": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter VI on Measures in Support of Innovation. It covers Articles 57 and 58, which establish requirements for AI regulatory sandboxes, including reporting obligations for national competent authorities and detailed arrangements for sandbox establishment, operation, and participation criteria.",
+      "text_sha256": "345cd3c1312afbb260437105314466070d824f5a26ed17b96520a60937114e45",
+      "window_index": 13
+    },
+    "b43ff6da38dea1d160a93fe24413b7f099690f6bdb3eb537dbe7091aae627674": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers Article 62 on measures for providers and deployers including SMEs and start-ups, Article 63 on derogations for specific operators, and the beginning of Chapter VII on Governance, including Articles 64-65 establishing the AI Office and the European Artificial Intelligence Board. These sections detail support mechanisms for smaller enterprises, simplified compliance options for microenterprises, and the governance structures at Union level for implementing the Regulation.",
+      "text_sha256": "2f1606f8532a8cc71f1c95fcbd4f1df89a8858296d9c7c9a1c4a12080ae1bf5f",
+      "window_index": 14
+    },
+    "b4e55b683726f27494a4d9fc69bf6de7c41c5a590c30d694dc553b151a116e5a": {
+      "context": "This chunk is from Section 4 of the EU AI Act (Regulation 2024/1689), which covers notifying authorities and notified bodies. It includes Article 29 on conformity assessment body applications for notification, Article 30 on the notification procedure, and Article 31 on requirements relating to notified bodies. These articles establish the procedures for designating conformity assessment bodies to assess high-risk AI systems and the independence and competence standards they must meet.",
+      "text_sha256": "c59dae6d9af17bbf3ab82a89db1ef4383e32395fc103625e1a4f2c866aee8b3e",
+      "window_index": 11
+    },
+    "b6eb5cc4e3e786398bdcb93635d5a3b53cd27a8fc0440ae6ccb4406ceb4fb7a2": {
+      "context": "This chunk contains the title, preamble, and initial recitals (1-2) of Regulation (EU) 2024/1689, the Artificial Intelligence Act adopted on 13 June 2024. It establishes the regulation's purpose to create a uniform legal framework for AI systems in the Union while protecting fundamental rights, health, safety, and supporting innovation, and outlines the Union values that should guide its application.",
+      "text_sha256": "fdb58c8c7d1352c484f31bad18ad57f9716ebc3775236ea2fe582dd2073f6979",
+      "window_index": 0
+    },
+    "b740f12ea40c28208f10c963a3787d8c6e06df5f7a75507d94d0df0d92673f62": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the recitals section discussing AI regulatory sandboxes. Recital (140) addresses the legal framework for personal data use by providers and prospective providers developing AI systems within regulatory sandboxes, referencing applicable data protection regulations and the safeguards required during development, testing, and experimentation phases.",
+      "text_sha256": "5e6bde3d22a840b2f128af13bc787d2afcdd90f5637a17694ba6cbfca8855ef0",
+      "window_index": 6
+    },
+    "c28f2a1dc9b5743b99ca778d173ca86220e460bdf812bea7bacfb191d1031793": {
+      "context": "This chunk is from ANNEX IV of the EU AI Act (Regulation 2024/1689), which specifies the technical documentation requirements that AI system providers must include. The chunk details the first category of required documentation: a general description of the AI system, including its intended purpose, provider information, system interactions, software versions, market forms, hardware requirements, product features, and user interface instructions as mandated by Article 11(1).",
+      "text_sha256": "28c24b34a51e167b2cd295eef345a1e9ee451aa29cf65f77cb61db18d5f12a49",
+      "window_index": 18
+    },
+    "cdbb920a4989377d1231b047b25eaa2f8701c4c0d0df182860a81b24dcdc12c4": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses transparency and compliance obligations for providers of general-purpose AI models, specifically regarding training data disclosure, copyright law compliance, and proportionate implementation requirements for different provider types. Recitals 107-109 establish requirements for documenting training data sources, monitoring compliance through the AI Office, and tailoring obligations based on provider size and purpose.",
+      "text_sha256": "3afffe1e566f6aefee1bd0182d75b24af9c1a7eed0b09fcb2304849cb0b1b4c6",
+      "window_index": 4
+    },
+    "cdd46a6d62808b837ea8e65c9210b0f8bcc5bb04141bde2e5597d536d13c5c9e": {
+      "context": "This chunk is from the preamble (recital 158) of EU Regulation 2024/1689 on artificial intelligence, specifically addressing the governance and supervision framework for AI systems used by regulated financial institutions. It establishes which competent authorities under Union financial services law should supervise AI system compliance and outlines their enforcement powers and coordination obligations.",
+      "text_sha256": "c3b5baaf16c91fa759c6d901ea387430fe9dc43e8121c056f7ff291624cb47c2",
+      "window_index": 7
+    },
+    "d012e3fc37e9039951af25c6636ed5e2c1bcf70f7108252ee6fb77fb0ab815c4": {
+      "context": "This chunk is from the EU Artificial Intelligence Act (Regulation 2024/1689), specifically from Chapter XII on enforcement and penalties. It contains Articles 99-101 covering procedural safeguards for administrative fines, administrative fines imposed by the European Data Protection Supervisor on Union institutions and bodies, and fines for providers of general-purpose AI models. The chunk details the criteria for determining fine amounts, maximum penalty levels for violations of Article 5 (prohibited AI practices) and other regulatory requirements, and procedural rights for defendants.",
+      "text_sha256": "a0db77b09ba6f79af0d7f56ad217dfb862baed97c86bccb47ec58a8e3d9b20ba",
+      "window_index": 17
+    },
+    "d0636fbadfea51d0f0d652f68221f6d9b45bd4f55758ce93f4ace6c657c02252": {
+      "context": "This chunk is from Article 43 (Conformity assessment) and Article 44 (Certificates) of the EU AI Act (Regulation 2024/1689), which are part of Chapter III covering conformity assessment procedures for high-risk AI systems. Article 43 specifies the conformity assessment procedures providers must follow for high-risk AI systems listed in Annex III, including requirements for systems covered by Union harmonisation legislation in Annex I and procedures for substantial modifications. Article 44 establishes the validity periods and requirements for certificates issued by notified bodies during conformity assessment.",
+      "text_sha256": "935d6c25b3391e1064661603decd2f961db36dc8d469f1a85285776958c239d4",
+      "window_index": 12
+    },
+    "d0b2c1f77b9e114a8f34e416f2a2751c19a60fe9ecb30570010a9c3850c60f77": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals 24 and 25, which establish scope exclusions for AI systems. Recital 24 explains the exclusion of AI systems used for military, defence, or national security purposes, while recital 25 addresses the exclusion of AI systems developed solely for scientific research and development, emphasizing support for innovation and freedom of science.",
+      "text_sha256": "1de9babd4abb9a8981c7ce4900029ed9cd9e14c3a5fbcfe2415653c0d77291da",
+      "window_index": 1
+    },
+    "d1fe733a4c7af0cbe6f700b20891b3f8cb461c52c0fffb4c5b7a5d20387a08bb": {
+      "context": "This chunk is from Article 26 of the EU AI Act (Regulation 2024/1689), which outlines the obligations of deployers of high-risk AI systems. Specifically, paragraphs 5-10 detail deployers' responsibilities regarding monitoring system operation, reporting risks and incidents, maintaining logs, informing workers, registration requirements, data protection compliance, and authorization procedures for biometric identification systems used in law enforcement investigations.",
+      "text_sha256": "260b9e120c108e566074c7e314e772359ccbcb81062c1e06137a6d801d43a490",
+      "window_index": 10
+    },
+    "d34c400b46bb4b766c3e29d897ebec6f1b4d7cc42b0131dbb7448c80c6ca7acc": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from the recitals section (recitals 65-66). It outlines the mandatory requirements for high-risk AI systems, focusing on the risk-management system that providers must establish and maintain throughout the entire lifecycle of such systems, as well as the broader requirements covering data quality, technical documentation, transparency, human oversight, and cybersecurity.",
+      "text_sha256": "c54f83c49113271e697c5064fe6f226d1039623d84be321c1f1ee2cd0c1ed1c1",
+      "window_index": 3
+    },
+    "d657b169b4b9f7db8ae1cf16d6e6bee5017a900319332c4362207ed3bb31a320": {
+      "context": "This chunk is from Annex III of the EU AI Act (Regulation 2024/1689), which lists high-risk AI systems referred to in Article 6(2). It specifies categories 3-5 of high-risk AI applications: education and vocational training systems, employment and workers' management systems, and systems for access to essential services and benefits.",
+      "text_sha256": "256c35062923b112ed857d78d7059d9b0456b51abc32c0cb1bcedfffce5a4e6c",
+      "window_index": 18
+    },
+    "da36a0f6b29a5233c9eaebd8663ab6d0547593f0a456772212ab4cf3376e37b9": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter IX on Supervision, Investigation, Enforcement and Monitoring. It contains Articles 80 and 81, which establish procedures for market surveillance authorities to evaluate AI systems misclassified as non-high-risk and the Union safeguard procedure for resolving disputes over national enforcement measures related to AI system compliance.",
+      "text_sha256": "2c3a6ce0595efa0bc24cee4b02df701539d38fd899eedfe8a26420f4287917d7",
+      "window_index": 16
+    },
+    "dad8dda1134ae41eb94f5c8cda18b8ef9caac07f4e5c4cbcc570d3f7d6c746d1": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Section 3 on \"Obligations of providers and deployers of high-risk AI systems and other parties.\" It contains Article 24 on the obligations of distributors of high-risk AI systems and the beginning of Article 25 on responsibilities along the AI value chain, detailing when distributors, importers, and other third parties must comply with provider obligations.",
+      "text_sha256": "5c1d84ebc6a8368b2c18a41157b8d54bf3748d293c1ddf41054186fa320a5b2c",
+      "window_index": 10
+    },
+    "dc303d58238b7991533fdd3fd4eeedbd194ca1d3c724df2fa017d5ab51584360": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically recitals 67 and 68, which address data quality and governance requirements for high-risk AI systems. Recital 67 establishes mandatory requirements for high-quality datasets used in training, validation, and testing of high-risk AI systems, emphasizing bias mitigation, data governance practices, and compliance with data protection law. Recital 68 discusses how various actors including providers and researchers should access high-quality data through European common data spaces for developing and assessing high-risk AI systems.",
+      "text_sha256": "a3c96ef7ec583a8db1404753f03f8a163cb6df0b5072258b20109bea98f8349d",
+      "window_index": 3
+    },
+    "dd27047313d74de7731219af698bc4684b92d3dee2893414916af5f6516320b5": {
+      "context": "This chunk from Regulation (EU) 2024/1689 (the Artificial Intelligence Act) provides key definitions in the preamble section. Recitals (15) and (16) define the notions of \"biometric identification\" and \"biometric categorisation\" as they apply throughout the regulation, distinguishing biometric identification from biometric verification and clarifying that certain ancillary biometric categorisation features fall outside the regulation's scope.",
+      "text_sha256": "280b46ad89a131b7ef445ca668c8f438a6154aebe43feb7c145c23a2f303ddb1",
+      "window_index": 0
+    },
+    "defe4ed9419c26f00c13a3b7e0b37dbfe5d820a184dea80be93e55caccabc1ad": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) and covers Articles 44-46 within Chapter III on conformity assessment procedures for high-risk AI systems. Article 44 addresses certificate validity periods and suspension procedures, Article 45 specifies information obligations that notified bodies must fulfill regarding conformity assessments and certificates, and Article 46 establishes derogation procedures allowing market surveillance authorities to authorize high-risk AI systems in exceptional circumstances of public security or health protection while conformity assessment procedures are underway.",
+      "text_sha256": "f61267a9ae97f4c807594a557d6698e80543ca5f06ee833c7af99c15cbc92f3b",
+      "window_index": 12
+    },
+    "e181b8c798902ee164a4a795f68f2751b7d1b5134254c4bfd8a61d8f95f8e61e": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Annex III which lists high-risk AI systems referred to in Article 6(2). It details categories 6 through 8 of high-risk AI systems: law enforcement applications, migration and border control management, and administration of justice and democratic processes. The chunk also includes the beginning of Annex IV on technical documentation requirements.",
+      "text_sha256": "ca0b041832c69a4cdb5515f390372b78953cee3bd2317dd4b8d39b9507ce1cc7",
+      "window_index": 18
+    },
+    "e1b7d56943784b47ea8b8dd7d3d9bfa4dc9a8078c05a5e6fc26544655d6a7465": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically Article 53 on obligations of providers of general-purpose AI models, and the beginning of Article 54 on authorised representatives. Article 53 establishes mandatory requirements for general-purpose AI model providers regarding technical documentation, information disclosure to downstream providers, copyright compliance, and training content summaries, with exemptions for open-source models and provisions for codes of practice and harmonised standards.",
+      "text_sha256": "ace77dc58c22ea0a7bdd4e33ffa2f576d9661eb4edbdde46f5fc8f871a410266",
+      "window_index": 13
+    },
+    "e3464960f23cdb14056c7e50f4351611aea86ce333b3e8f4eb164f43c7dcbcf6": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter X on Codes of Conduct and Guidelines and Chapter XI on Delegation of Power and Committee Procedure. It covers Article 95 paragraphs 3-4 on how codes of conduct for AI systems may be developed and the consideration of SME needs, Article 96 on Commission guidelines for implementing the Regulation with particular attention to SMEs and harmonised standards, and Article 97 on the exercise of delegated powers by the Commission for a five-year period starting August 1, 2024.",
+      "text_sha256": "1399c1ae08c76f14769e16c7e61137767c799bf88d60665f26b63889486344a9",
+      "window_index": 16
+    },
+    "e379bfa6302f75cd722b9ebc81e505742ffc83167619cc8abdc4582ac334bee4": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) defines general-purpose AI models and general-purpose AI systems in recitals 97-100. It establishes the distinction between AI models and AI systems, clarifies when obligations apply to model providers, and provides examples such as large generative AI models, establishing the foundational definitions for regulatory requirements throughout the regulation.",
+      "text_sha256": "16279b75a34f6b84d869ecba13845e9bf6532a54c4a12c66671b418d96ff7be5",
+      "window_index": 4
+    },
+    "e41036853949698efed7c24d7ae1eb832e74f0fbc7c704fe07b172d60237a7d0": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter III on High-Risk AI Systems, Section 2 on Requirements for High-Risk AI Systems. It contains Articles 11-13 covering technical documentation requirements, record-keeping and logging obligations, and transparency and information provision requirements that high-risk AI system providers must comply with before placing systems on the market or into service.",
+      "text_sha256": "d72f412d59b6d33f5c78e05d17bb5449d0183f8b07d04ef8d7481e5d596b5f55",
+      "window_index": 9
+    },
+    "e427f8fcc815923a025da0fdf51b14ac8d83301859d5ee68ddfedfc14a61bc11": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689) preamble, specifically recital (33), which outlines the exhaustively listed and narrowly defined situations where real-time remote biometric identification systems may be used for law enforcement purposes, including searching for crime victims, addressing threats to life or safety, and identifying criminal suspects, while also preserving authorities' ability to conduct identity checks.",
+      "text_sha256": "4c23af62ec29f64e1ebdf93b8524ac8512683e0314a698d051c713ff8cb94df7",
+      "window_index": 1
+    },
+    "e471b16f26df1d3b07c3df05364dda576b252df1547bd643258365c7f0d9fea1": {
+      "context": "This chunk is part of the EU AI Act (Regulation 2024/1689) and contains footnote references (43-47) to related EU legislation cited throughout the document. These references include the Data Act (2023/2854), the Commission Recommendation on SME definitions, the establishment of the European Artificial Intelligence Office, and financial services regulations on prudential requirements and consumer credit agreements that are relevant to the AI Act's implementation and scope.",
+      "text_sha256": "e1675770a043d010b4b2c213111924ef5bf9465b9b46d52dc8d97bcdd4cccf01",
+      "window_index": 18
+    },
+    "e7b7e58c66bcef271d562a949abc91193a679034976477cd4cc49cb6c8fb6e7f": {
+      "context": "This chunk contains footnote references 9-12 from the EU AI Act (Regulation 2024/1689), listing related EU regulations and directives on market surveillance, product liability, and data protection that are referenced throughout the document.",
+      "text_sha256": "1de74d56d04b722999083c74fa8ada0bf8f53d787bee189fdd574210b9fee4f4",
+      "window_index": 17
+    },
+    "e9e11b46db7a2216bd307bec922a61c5560b16a70cfcdf593a47c102e6aa408c": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Section 3 on \"Obligations of providers and deployers of high-risk AI systems and other parties.\" It contains Article 20 on corrective actions and duty of information that providers must follow when high-risk AI systems are non-compliant, Article 21 on cooperation with competent authorities, and Article 22 on authorised representatives of providers established in third countries.",
+      "text_sha256": "5454a4b12c140d67352cb1c5cc85a920940dd7265a2929abaf4529b6cbe270cf",
+      "window_index": 10
+    },
+    "e9f044395041194d68f2829383e54c514c45353469a85ed3e3861ef4d6e8596c": {
+      "context": "This chunk is part of Annex I of the EU AI Act (Regulation 2024/1689), specifically Section B listing other Union harmonisation legislation. It continues the enumerated list of EU regulations and directives that are relevant to AI systems, including regulations on medical devices, civil aviation security, vehicle approval and surveillance, marine equipment, and rail system interoperability.",
+      "text_sha256": "961bd5bfcfd4fe59fa9491e083477483c945223529be4a1b02aa417be7633ca1",
+      "window_index": 18
+    },
+    "ed42fb809c6edd75f01bc014a796ae4732dd345a3f6553042c8269feb17358f5": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) addresses mandatory requirements for high-risk AI systems regarding performance, robustness, and cybersecurity. Recitals 74-76 explain that high-risk AI systems must maintain appropriate levels of accuracy, robustness, and cybersecurity throughout their lifecycle, with providers required to declare expected performance metrics and implement technical measures to ensure resilience against harmful behavior and cyberattacks.",
+      "text_sha256": "64d2a59ad4e8d31d5b8ad68ce555e843813745e7be1975e31f7a6ccf69762542",
+      "window_index": 3
+    },
+    "ed990bbccb3cafe4413db298b7cec8a56e3f6550c71b975e345a5af6b91157b6": {
+      "context": "This chunk contains definitions (41) through (53) from Article 3 of EU Regulation 2024/1689 on Artificial Intelligence. These definitions establish key terms used throughout the regulation, including biometric identification systems, law enforcement authorities, and testing procedures. The definitions are foundational to understanding the regulation's requirements for AI systems, particularly those related to prohibited practices outlined in Chapter II and compliance procedures in subsequent chapters.",
+      "text_sha256": "497890679fba6a22fc18be578a393573838b201a90019f5ac496648cbb1d1492",
+      "window_index": 8
+    },
+    "eee5007e824d51769a6dffca6be2815cfb7a88b917547b5cea9c19bcb04f906d": {
+      "context": "This chunk is from Chapter XIII (Final Provisions) of the EU Artificial Intelligence Act (Regulation 2024/1689), specifically Articles 104-108, which amend existing EU sectoral regulations and directives to incorporate AI safety component requirements from Chapter III, Section 2 of the AI Act.",
+      "text_sha256": "2e8075b6df8a302af385a673d8e18a45740637aee53ded5e9982cf3cffe0ac78",
+      "window_index": 17
+    },
+    "ef9bfa6d588bf983e084dcb3ded27f5e34591246bd19fb976949d127f1335bfb": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers requirements for post-remote biometric identification systems as high-risk AI systems, including authorization rejection procedures, restrictions on law enforcement use, documentation and reporting obligations for deployers, and the fundamental rights impact assessment requirements that deployers must conduct prior to deployment under Article 27.",
+      "text_sha256": "42afad40251f77c2ba5da96d90cc9cf4c02976f66dae6ed1c07c489b6f06687c",
+      "window_index": 11
+    },
+    "f20de558b3c5894b8c39613c4d5b033493a3bc1ba96f218c283ea1d02da39b77": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains recitals (47) and (48) that establish the foundational criteria for classifying AI systems as high-risk. Recital (47) addresses how AI systems operating as safety components of products can adversely impact health and safety, using examples of autonomous robots and healthcare diagnostics systems. Recital (48) specifies the fundamental rights protected by the EU Charter that must be considered when assessing whether an AI system poses high risk, including rights to dignity, privacy, non-discrimination, education, and fair trial, with particular attention to children's rights and environmental protection.",
+      "text_sha256": "2edcc060e51bea1ce0daf7df4060ef9028d2a420a0cbc71985fec5f64e0d75eb",
+      "window_index": 2
+    },
+    "f252c346d464b0be29acc7956642d93bdf68ab52dbc6ab0dc75fed45bde9269e": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) appears in the preamble section and addresses the classification criteria for high-risk AI systems. Recital (51) clarifies the relationship between AI system classification under this Regulation and classification under other Union harmonisation legislation, while Recital (52) defines the criteria for classifying stand-alone AI systems as high-risk based on their intended purpose, potential harm, and use in pre-defined areas.",
+      "text_sha256": "244e1dc064f5c7accd857fd0d93aa72ac552ec4be54506f6232347c23530c7ed",
+      "window_index": 2
+    },
+    "f3365e875b90d4e18fe0705be04ae4aa4111c4945fcde4310e49331d66ffdcc0": {
+      "context": "This chunk is from Article 57 of the EU AI Act (Regulation 2024/1689), which establishes the framework for AI regulatory sandboxes. It covers provisions 8-15 of Article 57, detailing how exit reports from sandboxes are handled, the objectives of establishing AI regulatory sandboxes, requirements for involving data protection authorities, supervisory powers of competent authorities, liability of participants, cross-border cooperation, and reporting obligations to the AI Office and Board.",
+      "text_sha256": "f936a2a5891e4a6441e383be1f38bb69c812a33934c5c8f6b831a23dca6d38d0",
+      "window_index": 13
+    },
+    "f40e6240129370245817f34d9d5a17dec22909158de7b08d54fa28858543cf83": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) contains human oversight requirements for deployers of high-risk AI systems, followed by requirements for accuracy, robustness, and cybersecurity of high-risk AI systems. The first section lists five key competencies deployers must maintain, including understanding system limitations, avoiding automation bias, interpreting outputs correctly, and ability to override or stop the system. The second section introduces Article 15 on technical design requirements and Article 16 beginning the obligations of providers in Section 3 of the regulation.",
+      "text_sha256": "035adc10bb570f995327dc7ccfdb76fecd691c8ca1a8989b7063d777616a9035",
+      "window_index": 10
+    },
+    "f5757d6d19fc97e489f68071a5c022dff37268a3b3dcc7cb2d6c9d7a837d187e": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) is part of the preamble section addressing support measures for innovation and compliance. Recitals 143-145 specifically outline Member States' and the Commission's obligations to support SMEs, start-ups, and other AI providers through priority access to regulatory sandboxes, dedicated communication channels, standardized templates, funding programs, and technical support via the AI-on-demand platform and European Digital Innovation Hubs.",
+      "text_sha256": "f7a6e48f52e7a34010c37cf72d6d5e2ffa76a7cc8e1dc735ac965014e10ec749",
+      "window_index": 6
+    },
+    "f6e835ccba4b0bb5d46133c609cadf664e6e736ae4c0c0de513ff064f053a708": {
+      "context": "This chunk is from the EU Artificial Intelligence Act (Regulation 2024/1689), specifically from Article 111 on transitional provisions for AI systems already on the market, and Article 112 on evaluation and review procedures. It establishes timelines for compliance with the Regulation for existing AI systems and general-purpose AI models, and outlines the Commission's obligations to periodically assess and report on the Regulation's implementation, including amendments to high-risk AI system classifications and enforcement mechanisms.",
+      "text_sha256": "71d2b92679f348f896e3152530adf1cd935c53688042e24f8162b8022d56c6ca",
+      "window_index": 17
+    },
+    "f93078dc095b17c582f4496f9e7dc7c925596a0d9ded6ae575674784acd42430": {
+      "context": "This chunk is part of Article 108 (Amendments to Regulation (EU) 2018/1139) in Chapter XIII (Final Provisions) of the EU Artificial Intelligence Act (Regulation 2024/1689). It specifies amendments to civil aviation regulations requiring that when adopting implementing and delegated acts concerning AI systems that are safety components, the requirements set out in Chapter III, Section 2 of the AI Act shall be taken into account.",
+      "text_sha256": "a81e0ed9eaaf0d0e0c099fb4ab4b7fad848843a4b1998d58b1b8163b022f914d",
+      "window_index": 17
+    },
+    "f983d6e75f5812a6e7c78fbabaf76e03faf26f832ca19012377960a2eef09fd4": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), Section 3 on \"Obligations of providers and deployers of high-risk AI systems and other parties.\" It contains the final provisions of Article 22 on authorised representatives of providers, followed by Article 23 on obligations of importers and the beginning of Article 24 on obligations of distributors. These articles establish the compliance and cooperation requirements for different actors in the high-risk AI system supply chain.",
+      "text_sha256": "202f387de83efef445da69f5c9232d713005f7ec457b78f47677cf35dad30a54",
+      "window_index": 10
+    },
+    "fa234cffd86bd1b788039e54f2d37c9f723904b0832dc6ad26965ed3c1d2f65e": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers the governance framework for implementing the regulation, specifically recitals 149-152. It describes the establishment and composition of the Board for coordinating implementation at national and Union levels, the advisory forum for stakeholder involvement, the scientific panel of independent experts to support enforcement, and Union AI testing support structures to reinforce Member State capacities.",
+      "text_sha256": "407dda64406e2b237b1487c6a6a4553ca60f74e3537f27fb050fdecf1b289d1c",
+      "window_index": 6
+    },
+    "fa993cebcc9418be09a556beea3d45f06b24cb39c1ed454cf1eaf38bb6d5f835": {
+      "context": "This chunk from the EU AI Act (Regulation 2024/1689) covers Articles 84-90, spanning Section 3 on Union AI testing support structures and Sections 4-5 on remedies and enforcement. Section 4 establishes rights for individuals to lodge complaints with market surveillance authorities, obtain explanations for AI-based decisions affecting them, and report infringements. Section 5 details the Commission's exclusive enforcement powers over general-purpose AI model providers through the AI Office, including monitoring actions and complaint procedures for downstream providers.",
+      "text_sha256": "3603c3b5601be0c0d4f95739c9aabfe47621210247ad241c02a023639de10952",
+      "window_index": 16
+    },
+    "fcd71951a456a602a5ca2a1fc0d9780d9fbf6a77f52885ae39ef2dbb9c7d9f64": {
+      "context": "This is recital (96) from the EU AI Act (Regulation 2024/1689), part of the preamble section addressing deployer obligations. It establishes requirements for fundamental rights impact assessments that deployers of high-risk AI systems must conduct before deployment, specifying which deployers are subject to this requirement and detailing the scope and content of such assessments.",
+      "text_sha256": "ea61b6331c8fcebf156914411ba30df4a8e8e4d0e7e8d985dd193775821dd9a6",
+      "window_index": 4
+    },
+    "fdb1433c8d2e23091291730c5dd4e6e06ec096c3bfde7ad1ca4236cb58dccbb7": {
+      "context": "This chunk is from the EU AI Act (Regulation 2024/1689), specifically from Chapter VII on Governance, Section 1 on Governance at Union Level. It covers Articles 65-66, which establish the European Artificial Intelligence Board (the Board), its organizational structure, rules of procedure, standing sub-groups, and primary tasks in advising the Commission and Member States on consistent implementation of the AI Act.",
+      "text_sha256": "f021f756669bd509fdb3d1c5069ee76ea573b582538f523978c5c8b10eb9e1b4",
+      "window_index": 14
+    }
+  },
+  "doc_id": "eurlex-ai-act-2024-1689",
+  "generated_at": "2026-08-29T22:10:01Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,53 @@
+{
+  "contexts": {
+    "100e0b2a89095cd2c5acbd132044a597287f4bd71b3be1fbd64b1d3b723c3f9c": {
+      "context": "This section from the majority opinion in Jacob & Youngs, Inc. v. Kent (1921) addresses the measure of damages for breach of contract when a contractor has substantially performed but with minor defects. The Court discusses whether damages should be calculated as the cost of replacement or the difference in value, using the plumbing pipe specification dispute as the basis for establishing that when defects are trivial and correction costs are disproportionate, the difference in value is the appropriate measure of allowance.",
+      "text_sha256": "8e02af54cd1732c60b03167653f590ea53c125beba467c3db35712224f0d245e",
+      "window_index": 0
+    },
+    "11cd14e689665d923634d089668c21fc3b77faa38f78d710fe5d31d04b66d5c9": {
+      "context": "This is the dissenting opinion by Justice McLaughlin in Jacob & Youngs, Inc. v. Kent, a 1921 New York Court of Appeals case concerning a construction contract dispute. The dissent argues that the contractor failed to perform its contractual obligation to use Reading Manufacturing Company pipe for the plumbing work and contends that the doctrine of substantial performance does not apply to this case.",
+      "text_sha256": "87cfbf4eb067c03a4e1ed7dde7fcfaa14f3145575927b65a4b53dce145000fc4",
+      "window_index": 0
+    },
+    "4c9514be5d4ecd450a601fde352493b4f7aa7cb9cd38cc5521c992f515313a5a": {
+      "context": "This chunk is from the dissenting opinion by Justice McLaughlin in Jacob & Youngs, Inc. v. Kent (230 N.Y. 239, 1921), a New York Court of Appeals case decided January 25, 1921. The dissent details the factual circumstances of the contract dispute, specifically describing how the contractor failed to use Reading Manufacturing Company pipe as specified in the plumbing contract for a country residence, instead installing pipe from other manufacturers without proper inspection or notification.",
+      "text_sha256": "92bd39aee8127fcf54f0ee625378bf3eb33688bb1978ec442c2e5227102fd814",
+      "window_index": 0
+    },
+    "7615e33a66d96fbde4fc21bc367bd4f9ccb5eb1174339ae2b252f12d30d6f57d": {
+      "context": "This chunk appears at the end of the Jacob & Youngs, Inc. v. Kent case document and contains navigation links and resource directories for legal research, including links to find lawyers, access legal resources, and subscribe to case summaries, rather than substantive case content.",
+      "text_sha256": "738505b521879a95a4136b10b340dc0887901bfea6b2f6b52a1e1eb54470777d",
+      "window_index": 0
+    },
+    "82697209cc39cdda6d8cfb0701c4694d60fed1ff80aeb6b8a9fc1506649558ed": {
+      "context": "This passage is from the dissenting opinion by Justice McLaughlin in Jacob & Youngs, Inc. v. Kent (230 N.Y. 239, 1921), a New York Court of Appeals case concerning substantial performance in construction contracts. The dissent quotes precedent from Smith v. Brady to argue that contract specifications are binding and contractors cannot substitute materials or methods, even if the substitution is of equal quality, without the owner's consent.",
+      "text_sha256": "03e06883a6077f90db2cbbd96d106b22567517b62e7bcead433a6eb9ea8baf99",
+      "window_index": 0
+    },
+    "b9530d28f20ed0c7147bca3ecd6f09e9343202481d6aa5db7f286f285f951e38": {
+      "context": "In Jacob & Youngs, Inc. v. Kent (230 N.Y. 239, 1921), this section from Justice Cardozo's majority opinion discusses the legal doctrine of substantial performance in construction contracts. The chunk explains how courts distinguish between dependent and independent promises, and when trivial omissions in contract performance may be remedied by damages rather than forfeiture, using the case's central dispute over non-Reading brand plumbing pipe as the underlying factual context.",
+      "text_sha256": "78af5f0e3d03768c0472aba24ddc9f14e72be02e26adb7aa2c70c776630e109a",
+      "window_index": 0
+    },
+    "cd93e85b102a67e63d70bdc0adb46cbab61bef231f54a352bf900485bd762781": {
+      "context": "This chunk is from the majority opinion by Judge Cardozo in Jacob & Youngs, Inc. v. Kent (230 N.Y. 239, 1921), a New York Court of Appeals case concerning substantial performance in construction contracts. The opinion discusses the doctrine of substantial performance and the distinction between trivial and material breaches of contract, establishing that courts balance equity and fairness against strict adherence to contract terms when determining whether a contractor's deviation from specifications constitutes a condition precedent to payment.",
+      "text_sha256": "042947267d6b4c72db3d7179bcf47e14178ca1160fd77f745380717f413c3861",
+      "window_index": 0
+    },
+    "ea35630f21821d3635bf999e1f7d8f9baa7203376e1c60220a931d66eeda0b79": {
+      "context": "This chunk contains the case caption, citation information, and the opening of Justice Cardozo's majority opinion in Jacob & Youngs, Inc. v. Kent, a 1921 New York Court of Appeals decision. It presents the factual background of the dispute: a construction contract for a $77,000 country residence where the contractor used non-Reading brand plumbing pipe instead of the specified Reading manufacture, leading to a lawsuit over the final payment of $3,483.46.",
+      "text_sha256": "b67ae2cba5654281dbe05ab46455b78928a38311cdbcb946240114d616367a0b",
+      "window_index": 0
+    },
+    "fcb2c7a5162ab482522568c3462e18ae8a060c52711e3051df7dd8de3c641d8a": {
+      "context": "This chunk appears at the end of the Jacob & Youngs, Inc. v. Kent case document and contains navigation links and footer information from the Justia legal website, including links to law school resources, U.S. federal and state law databases, and marketing solutions, rather than substantive case content.",
+      "text_sha256": "e83d06a1e4286629a96257edcd3687b3e44e2fd521e317c3ffa68b7a4f14da8e",
+      "window_index": 0
+    }
+  },
+  "doc_id": "case-jacob-youngs-v-kent",
+  "generated_at": "2026-08-29T22:26:47Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

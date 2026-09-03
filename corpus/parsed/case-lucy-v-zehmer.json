@@ -1,0 +1,4164 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "case-lucy-v-zehmer",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 2066389732199087974,
+    "filename": "case-lucy-v-zehmer.html"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/91"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/15",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/16",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/17",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/87"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/18",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/19",
+      "parent": {
+        "$ref": "#/texts/87"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/88"
+        },
+        {
+          "$ref": "#/texts/89"
+        },
+        {
+          "$ref": "#/texts/90"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/20",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/3"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_1_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/21",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/22",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_1_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/23",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/24",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/25",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/26",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/27",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/116"
+        },
+        {
+          "$ref": "#/texts/117"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/28",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/118"
+        },
+        {
+          "$ref": "#/texts/119"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/29",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        },
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/texts/162"
+        },
+        {
+          "$ref": "#/texts/163"
+        },
+        {
+          "$ref": "#/texts/164"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/30",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/165"
+        },
+        {
+          "$ref": "#/texts/166"
+        },
+        {
+          "$ref": "#/texts/167"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/31",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/168"
+        },
+        {
+          "$ref": "#/texts/169"
+        },
+        {
+          "$ref": "#/texts/170"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/32",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/172"
+        },
+        {
+          "$ref": "#/texts/173"
+        },
+        {
+          "$ref": "#/texts/174"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/33",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/175"
+        },
+        {
+          "$ref": "#/texts/176"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/34",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/177"
+        },
+        {
+          "$ref": "#/texts/178"
+        },
+        {
+          "$ref": "#/texts/179"
+        },
+        {
+          "$ref": "#/texts/180"
+        },
+        {
+          "$ref": "#/texts/181"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/35",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/183"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/36",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/37"
+        },
+        {
+          "$ref": "#/groups/39"
+        },
+        {
+          "$ref": "#/groups/40"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "footer",
+      "label": "section"
+    },
+    {
+      "self_ref": "#/groups/37",
+      "parent": {
+        "$ref": "#/groups/36"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/184"
+        },
+        {
+          "$ref": "#/texts/185"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/38",
+      "parent": {
+        "$ref": "#/texts/185"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/186"
+        },
+        {
+          "$ref": "#/texts/187"
+        },
+        {
+          "$ref": "#/texts/188"
+        },
+        {
+          "$ref": "#/texts/189"
+        },
+        {
+          "$ref": "#/texts/190"
+        },
+        {
+          "$ref": "#/texts/191"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/39",
+      "parent": {
+        "$ref": "#/groups/36"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/192"
+        },
+        {
+          "$ref": "#/texts/193"
+        },
+        {
+          "$ref": "#/texts/194"
+        },
+        {
+          "$ref": "#/texts/195"
+        },
+        {
+          "$ref": "#/texts/196"
+        },
+        {
+          "$ref": "#/texts/197"
+        },
+        {
+          "$ref": "#/texts/198"
+        },
+        {
+          "$ref": "#/texts/199"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/40",
+      "parent": {
+        "$ref": "#/groups/36"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/41",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "title",
+      "prov": [],
+      "orig": "Lucy v. Zehmer - Wikisource, the free online library",
+      "text": "Lucy v. Zehmer - Wikisource, the free online library"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Jump to content",
+      "text": "Jump to content",
+      "hyperlink": "#bodyContent"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Main menu",
+      "text": "Main menu"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Main menu",
+      "text": "Main menu"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "move to sidebar",
+      "text": "move to sidebar"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "hide",
+      "text": "hide"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Navigation",
+      "text": "Navigation"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Main Page",
+      "text": "Main Page",
+      "hyperlink": "\\wiki\\Main_Page",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Community portal",
+      "text": "Community portal",
+      "hyperlink": "\\wiki\\Wikisource:Community_portal",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Central discussion",
+      "text": "Central discussion",
+      "hyperlink": "\\wiki\\Wikisource:Scriptorium",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Recent changes",
+      "text": "Recent changes",
+      "hyperlink": "\\wiki\\Special:RecentChanges",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Subject index",
+      "text": "Subject index",
+      "hyperlink": "\\wiki\\Portal:Portals",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Authors",
+      "text": "Authors",
+      "hyperlink": "\\wiki\\Category:Authors_by_alphabetical_order",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Random work",
+      "text": "Random work",
+      "hyperlink": "\\wiki\\Special:RandomRootpage\\Main",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Random author",
+      "text": "Random author",
+      "hyperlink": "\\wiki\\Special:RandomRootpage\\Author",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Random transcription",
+      "text": "Random transcription",
+      "hyperlink": "\\wiki\\Special:RandomRootpage\\Index",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Help",
+      "text": "Help",
+      "hyperlink": "\\wiki\\Help:Contents",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Special pages",
+      "text": "Special pages",
+      "hyperlink": "\\wiki\\Special:SpecialPages",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Display Options",
+      "text": "Display Options"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "Wikisource",
+      "text": "Wikisource",
+      "hyperlink": "\\wiki\\Main_Page"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Search",
+      "text": "Search",
+      "hyperlink": "\\wiki\\Special:Search"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Search Wikisource",
+      "text": "Search Wikisource"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Search",
+      "text": "Search"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Appearance",
+      "text": "Appearance"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Donate",
+      "text": "Donate",
+      "hyperlink": "https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikisource.org&uselang=en",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Create account",
+      "text": "Create account",
+      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Lucy+v.+Zehmer&returntoquery=oldid%3D15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Log in",
+      "text": "Log in",
+      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Lucy+v.+Zehmer&returntoquery=oldid%3D15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Personal tools",
+      "text": "Personal tools"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Donate",
+      "text": "Donate",
+      "hyperlink": "https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikisource.org&uselang=en",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Create account",
+      "text": "Create account",
+      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Lucy+v.+Zehmer&returntoquery=oldid%3D15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Log in",
+      "text": "Log in",
+      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Lucy+v.+Zehmer&returntoquery=oldid%3D15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/groups/7"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/groups/8"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/groups/9"
+        },
+        {
+          "$ref": "#/groups/10"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/groups/11"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/groups/12"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/groups/13"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/groups/14"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/groups/15"
+        },
+        {
+          "$ref": "#/groups/16"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/groups/17"
+        },
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/groups/23"
+        },
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/groups/24"
+        },
+        {
+          "$ref": "#/groups/25"
+        },
+        {
+          "$ref": "#/groups/26"
+        },
+        {
+          "$ref": "#/texts/115"
+        },
+        {
+          "$ref": "#/groups/27"
+        },
+        {
+          "$ref": "#/groups/28"
+        },
+        {
+          "$ref": "#/texts/120"
+        },
+        {
+          "$ref": "#/texts/121"
+        },
+        {
+          "$ref": "#/texts/122"
+        },
+        {
+          "$ref": "#/texts/123"
+        },
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        },
+        {
+          "$ref": "#/texts/128"
+        },
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        },
+        {
+          "$ref": "#/texts/135"
+        },
+        {
+          "$ref": "#/texts/136"
+        },
+        {
+          "$ref": "#/texts/137"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/texts/140"
+        },
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        },
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        },
+        {
+          "$ref": "#/texts/148"
+        },
+        {
+          "$ref": "#/texts/149"
+        },
+        {
+          "$ref": "#/texts/150"
+        },
+        {
+          "$ref": "#/texts/151"
+        },
+        {
+          "$ref": "#/texts/152"
+        },
+        {
+          "$ref": "#/texts/153"
+        },
+        {
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/155"
+        },
+        {
+          "$ref": "#/texts/156"
+        },
+        {
+          "$ref": "#/pictures/4"
+        },
+        {
+          "$ref": "#/groups/29"
+        },
+        {
+          "$ref": "#/groups/30"
+        },
+        {
+          "$ref": "#/pictures/5"
+        },
+        {
+          "$ref": "#/groups/31"
+        },
+        {
+          "$ref": "#/pictures/6"
+        },
+        {
+          "$ref": "#/texts/171"
+        },
+        {
+          "$ref": "#/groups/32"
+        },
+        {
+          "$ref": "#/groups/33"
+        },
+        {
+          "$ref": "#/groups/34"
+        },
+        {
+          "$ref": "#/texts/182"
+        },
+        {
+          "$ref": "#/groups/35"
+        },
+        {
+          "$ref": "#/groups/36"
+        },
+        {
+          "$ref": "#/texts/200"
+        },
+        {
+          "$ref": "#/texts/201"
+        },
+        {
+          "$ref": "#/groups/41"
+        }
+      ],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "Lucy v. Zehmer",
+      "text": "Lucy v. Zehmer"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Add languages",
+      "text": "Add languages"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Add links",
+      "text": "Add links",
+      "hyperlink": "https://www.wikidata.org/wiki/Special:NewItem?site=enwikisource&page=Lucy+v.+Zehmer"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Page",
+      "text": "Page",
+      "hyperlink": "\\wiki\\Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Discussion",
+      "text": "Discussion",
+      "hyperlink": "\\w\\index.php?title=Talk:Lucy_v._Zehmer&action=edit&redlink=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "English",
+      "text": "English"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Read",
+      "text": "Read",
+      "hyperlink": "\\wiki\\Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Edit",
+      "text": "Edit",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&action=edit",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "View history",
+      "text": "View history",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&action=history",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Tools",
+      "text": "Tools"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Tools",
+      "text": "Tools"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "move to sidebar",
+      "text": "move to sidebar"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "hide",
+      "text": "hide"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Actions",
+      "text": "Actions"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Read",
+      "text": "Read",
+      "hyperlink": "\\wiki\\Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Edit",
+      "text": "Edit",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&action=edit",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "View history",
+      "text": "View history",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&action=history",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "General",
+      "text": "General"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "What links here",
+      "text": "What links here",
+      "hyperlink": "\\wiki\\Special:WhatLinksHere\\Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Related changes",
+      "text": "Related changes",
+      "hyperlink": "\\wiki\\Special:RecentChangesLinked\\Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Permanent link",
+      "text": "Permanent link",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&oldid=15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Page information",
+      "text": "Page information",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&action=info",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Cite this page",
+      "text": "Cite this page",
+      "hyperlink": "\\w\\index.php?title=Special:CiteThisPage&page=Lucy_v._Zehmer&id=15747165&wpFormIdentifier=titleform",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Get shortened URL",
+      "text": "Get shortened URL",
+      "hyperlink": "\\w\\index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikisource.org%2Fw%2Findex.php%3Ftitle%3DLucy_v._Zehmer%26oldid%3D15747165",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Print/export",
+      "text": "Print/export"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Printable version",
+      "text": "Printable version",
+      "hyperlink": "javascript:print();",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Download EPUB",
+      "text": "Download EPUB",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Download MOBI",
+      "text": "Download MOBI",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=mobi&lang=en&page=Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Download PDF",
+      "text": "Download PDF",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=pdf&lang=en&page=Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Other formats",
+      "text": "Other formats",
+      "hyperlink": "https://ws-export.wmcloud.org/?lang=en&title=Lucy_v._Zehmer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In other projects",
+      "text": "In other projects"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Appearance",
+      "text": "Appearance"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "move to sidebar",
+      "text": "move to sidebar"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "hide",
+      "text": "hide"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Download",
+      "text": "Download",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Lucy_v._Zehmer"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "From Wikisource",
+      "text": "From Wikisource"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Revision as of 23:54, 26 February 2026 by",
+      "text": "Revision as of 23:54, 26 February 2026 by"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "SnowyCinema",
+      "text": "SnowyCinema",
+      "hyperlink": "\\wiki\\User:SnowyCinema"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(",
+      "text": "("
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "talk",
+      "text": "talk",
+      "hyperlink": "\\wiki\\User_talk:SnowyCinema"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "|",
+      "text": "|"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "contribs",
+      "text": "contribs",
+      "hyperlink": "\\wiki\\Special:Contributions\\SnowyCinema"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ") (Adding {{PD-EdictGov}} to work where license was missing (semi-automated))",
+      "text": ") (Adding {{PD-EdictGov}} to work where license was missing (semi-automated))"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(",
+      "text": "("
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "diff",
+      "text": "diff",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&diff=prev&oldid=15747165"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ")",
+      "text": ")"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2190 Older revision",
+      "text": "\u2190 Older revision",
+      "hyperlink": "\\w\\index.php?title=Lucy_v._Zehmer&direction=prev&oldid=15747165"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "| Latest revision (diff) | Newer revision \u2192 (diff)",
+      "text": "| Latest revision (diff) | Newer revision \u2192 (diff)"
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2190",
+      "text": "\u2190"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lucy v. Zehmer ( 1954 )\nSupreme Court of Virginia",
+      "text": "Lucy v. Zehmer ( 1954 )\nSupreme Court of Virginia"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2192",
+      "text": "\u2192"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/18"
+        },
+        {
+          "$ref": "#/pictures/1"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "related portals",
+      "text": "related portals",
+      "hyperlink": "\\wiki\\Portal:Portals"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "American case law",
+      "text": "American case law",
+      "hyperlink": "\\wiki\\Portal:American_case_law"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Related Portals",
+      "text": "Related Portals",
+      "hyperlink": "\\wiki\\Portal:Portals"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/19"
+        },
+        {
+          "$ref": "#/pictures/2"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "sister projects",
+      "text": "sister projects",
+      "hyperlink": "\\wiki\\Special:SiteMatrix"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wikipedia article",
+      "text": "Wikipedia article",
+      "hyperlink": "https://en.wikipedia.org/wiki/Lucy_v._Zehmer"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Sister Projects",
+      "text": "Sister Projects",
+      "hyperlink": "\\wiki\\Special:SiteMatrix"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This work may need to be standardized using",
+      "text": "This work may need to be standardized using",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wikisource's style guidelines",
+      "text": "Wikisource's style guidelines",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "\\wiki\\Wikisource:Style_guide"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": ".",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "If you'd like to help, please review the",
+      "text": "If you'd like to help, please review the"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "help pages",
+      "text": "help pages",
+      "hyperlink": "\\wiki\\Help:Contents"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "135227 Lucy v. Zehmer 1954 Supreme Court of Virginia",
+      "text": "135227 Lucy v. Zehmer 1954 Supreme Court of Virginia"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "SUPREME COURT OF VIRGINIA",
+      "text": "SUPREME COURT OF VIRGINIA",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "S. Ct. Virginia 1954",
+      "text": "S. Ct. Virginia 1954",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lucy v. Zehmer",
+      "text": "Lucy v. Zehmer",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "W. O. LUCY AND J. C. LUCY v. A. H. ZEHMER AND IDA S. ZEHMER",
+      "text": "W. O. LUCY AND J. C. LUCY v. A. H. ZEHMER AND IDA S. ZEHMER"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Record No. 4272",
+      "text": "Record No. 4272"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "196 Va. 493; 84 S.E.2d 516; 1954 Va. LEXIS 244",
+      "text": "196 Va. 493; 84 S.E.2d 516; 1954 Va. LEXIS 244"
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "November 22, 1954",
+      "text": "November 22, 1954"
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "PRIOR HISTORY",
+      "text": "PRIOR HISTORY",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": [***1]",
+      "text": ": [***1]"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Appeal from a decree of the Circuit Court of Dinwiddie county. Hon J. G. Jefferson, Jr., judge presiding.",
+      "text": "Appeal from a decree of the Circuit Court of Dinwiddie county. Hon J. G. Jefferson, Jr., judge presiding."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "DISPOSITION",
+      "text": "DISPOSITION",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Reversed and remanded.",
+      "text": ": Reversed and remanded."
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "SYLLABUS",
+      "text": "SYLLABUS",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": The opinion states the case.",
+      "text": ": The opinion states the case."
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "COUNSEL",
+      "text": "COUNSEL",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": A. S. Harrison, Jr. and Emerson D. Baugh, for the appellants.",
+      "text": ": A. S. Harrison, Jr. and Emerson D. Baugh, for the appellants."
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Morton G. Goode and William Earle White, for the appellees.",
+      "text": "Morton G. Goode and William Earle White, for the appellees.",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "JUDGES",
+      "text": "JUDGES",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Present, Eggleston, Buchanan, Miller, Smith and Whittle, JJ.",
+      "text": ": Present, Eggleston, Buchanan, Miller, Smith and Whittle, JJ."
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "OPINIONBY",
+      "text": "OPINIONBY",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": BUCHANAN",
+      "text": ": BUCHANAN"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "OPINION: [*494] [**517] BUCHANAN, J., delivered the opinion of the court.",
+      "text": "OPINION: [*494] [**517] BUCHANAN, J., delivered the opinion of the court."
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This suit was instituted by W. O. Lucy and J. C. Lucy, complainants, against A. H. Zehmer and Ida S. Zehmer, his wife, defendants, to have specific performance of a contract by which it [***3] was alleged the Zehmers had sold to W. O. Lucy a tract of land owned by A. H. Zehmer in Dinwiddie county containing 471.6 acres, more or less, known as the Ferguson farm, for $50,000. J. C. Lucy, the other complainant, is a brother of W. O. Lucy, to whom W. O. Lucy transferred a half interest in his alleged purchase.",
+      "text": "This suit was instituted by W. O. Lucy and J. C. Lucy, complainants, against A. H. Zehmer and Ida S. Zehmer, his wife, defendants, to have specific performance of a contract by which it [***3] was alleged the Zehmers had sold to W. O. Lucy a tract of land owned by A. H. Zehmer in Dinwiddie county containing 471.6 acres, more or less, known as the Ferguson farm, for $50,000. J. C. Lucy, the other complainant, is a brother of W. O. Lucy, to whom W. O. Lucy transferred a half interest in his alleged purchase."
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The instrument sought to be enforced was written by A. H. Zehmer on December 20, 1952, in these words: \"We hereby agree to sell to W. O. Lucy the Ferguson Farm complete for $50,000.00, title satisfactory to buyer,\" and signed by the defendants, A. H. Zehmer and Ida S. Zehmer.",
+      "text": "The instrument sought to be enforced was written by A. H. Zehmer on December 20, 1952, in these words: \"We hereby agree to sell to W. O. Lucy the Ferguson Farm complete for $50,000.00, title satisfactory to buyer,\" and signed by the defendants, A. H. Zehmer and Ida S. Zehmer."
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The answer of A. H. Zehmer admitted that at the time mentioned W. O. Lucy offered him $50,000 cash for the farm, but that he, Zehmer, considered that the offer [**518] was made in jest; that so thinking, and both he and Lucy having had several drinks, he wrote out \"the memorandum\" quoted above and induced his wife to sign it; that he did not deliver [*495] the memorandum to Lucy, but that Lucy picked it up, read it, put it in his pocket, attempted to offer Zehmer $5 to bind the bargain, which Zehmer refused to accept, and realizing for the first time that Lucy was serious, Zehmer assured [***4] him that he had no intention of selling the farm and that the whole matter was a joke. Lucy left the premises insisting that he had purchased the farm.",
+      "text": "The answer of A. H. Zehmer admitted that at the time mentioned W. O. Lucy offered him $50,000 cash for the farm, but that he, Zehmer, considered that the offer [**518] was made in jest; that so thinking, and both he and Lucy having had several drinks, he wrote out \"the memorandum\" quoted above and induced his wife to sign it; that he did not deliver [*495] the memorandum to Lucy, but that Lucy picked it up, read it, put it in his pocket, attempted to offer Zehmer $5 to bind the bargain, which Zehmer refused to accept, and realizing for the first time that Lucy was serious, Zehmer assured [***4] him that he had no intention of selling the farm and that the whole matter was a joke. Lucy left the premises insisting that he had purchased the farm."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Depositions were taken and the decree appealed from was entered holding that the complainants had failed to establish their right to specific performance, and dismissing their bill. The assignment of error is to this action of the court.",
+      "text": "Depositions were taken and the decree appealed from was entered holding that the complainants had failed to establish their right to specific performance, and dismissing their bill. The assignment of error is to this action of the court."
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "W. O. Lucy, a lumberman and farmer, thus testified in substance: He had known Zehmer for fifteen or twenty years and had been familiar with the Ferguson farm for ten years. Seven or eight years ago he had offered Zehmer $20,000 for the farm which Zehmer had accepted, but the agreement was verbal and Zehmer backed out. On the night of December 20, 1952, around eight o'clock, he took an employee to McKenney, where Zehmer lived and operated a restaurant, filling station and motor court. While there he decided to see Zehmer and again try to buy the Ferguson farm. He entered the restaurant and talked to Mrs. Zehmer until Zehmer came in. He asked Zehmer if he had sold the Ferguson farm. Zehmer replied that he had not. Lucy said, \"I bet you wouldn't take $50,000.00 for that place.\" Zehmer replied, [***5] \"Yes, I would too; you wouldn't give fifty.\" Lucy said he would and told Zehmer to write up an agreement to that effect. Zehmer took a restaurant check and wrote on the back of it, \"I do hereby agree to sell to W. O. Lucy the Ferguson Farm for $50,000 complete.\" Lucy told him he had better change it to \"We\" because Mrs. Zehmer would have to sign it too. Zehmer then tore up what he had written, wrote the agreement quoted above and asked Mrs. Zehmer, who was at the other end of the counter ten or twelve feet away, to sign it. Mrs. Zehmer said she would for $50,000 and signed it. Zehmer brought it back and gave it to Lucy, who offered him $5 which Zehmer refused, [*496] saying, \"You don't need to give me any money, you got the agreement there signed by both of us.\"",
+      "text": "W. O. Lucy, a lumberman and farmer, thus testified in substance: He had known Zehmer for fifteen or twenty years and had been familiar with the Ferguson farm for ten years. Seven or eight years ago he had offered Zehmer $20,000 for the farm which Zehmer had accepted, but the agreement was verbal and Zehmer backed out. On the night of December 20, 1952, around eight o'clock, he took an employee to McKenney, where Zehmer lived and operated a restaurant, filling station and motor court. While there he decided to see Zehmer and again try to buy the Ferguson farm. He entered the restaurant and talked to Mrs. Zehmer until Zehmer came in. He asked Zehmer if he had sold the Ferguson farm. Zehmer replied that he had not. Lucy said, \"I bet you wouldn't take $50,000.00 for that place.\" Zehmer replied, [***5] \"Yes, I would too; you wouldn't give fifty.\" Lucy said he would and told Zehmer to write up an agreement to that effect. Zehmer took a restaurant check and wrote on the back of it, \"I do hereby agree to sell to W. O. Lucy the Ferguson Farm for $50,000 complete.\" Lucy told him he had better change it to \"We\" because Mrs. Zehmer would have to sign it too. Zehmer then tore up what he had written, wrote the agreement quoted above and asked Mrs. Zehmer, who was at the other end of the counter ten or twelve feet away, to sign it. Mrs. Zehmer said she would for $50,000 and signed it. Zehmer brought it back and gave it to Lucy, who offered him $5 which Zehmer refused, [*496] saying, \"You don't need to give me any money, you got the agreement there signed by both of us.\""
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The discussion leading to the signing of the agreement, said Lucy, lasted thirty or forty minutes, during which Zehmer seemed to doubt that Lucy could raise $50,000. Lucy suggested the provision for having the title examined and Zehmer made the suggestion that he would sell it \"complete, everything there,\" and stated that all he had on the farm was three heifers.",
+      "text": "The discussion leading to the signing of the agreement, said Lucy, lasted thirty or forty minutes, during which Zehmer seemed to doubt that Lucy could raise $50,000. Lucy suggested the provision for having the title examined and Zehmer made the suggestion that he would sell it \"complete, everything there,\" and stated that all he had on the farm was three heifers."
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lucy took a partly filled bottle of whiskey into [***6] the restaurant with him for the purpose of giving Zehmer a drink if he wanted it. Zehmer did, and he and Lucy had one or two drinks together. Lucy said that while he felt the drinks he took he was not intoxicated, and from the way Zehmer handled the transaction he did not think he was either.",
+      "text": "Lucy took a partly filled bottle of whiskey into [***6] the restaurant with him for the purpose of giving Zehmer a drink if he wanted it. Zehmer did, and he and Lucy had one or two drinks together. Lucy said that while he felt the drinks he took he was not intoxicated, and from the way Zehmer handled the transaction he did not think he was either."
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "December 20 was on Saturday. Next day Lucy telephoned to J. C. Lucy and arranged with the latter to take a half interest in the purchase and pay half of the consideration. On Monday he engaged an attorney to examine the title. The attorney reported favorably on December 31 and on January 2 Lucy wrote Zehmer stating that the title was satisfactory, that he was ready to pay the purchase price in cash and asking when Zehmer would be ready to close the deal. Zehmer replied by letter, mailed on January 13, asserting that he had never agreed or intended to sell.",
+      "text": "December 20 was on Saturday. Next day Lucy telephoned to J. C. Lucy and arranged with the latter to take a half interest in the purchase and pay half of the consideration. On Monday he engaged an attorney to examine the title. The attorney reported favorably on December 31 and on January 2 Lucy wrote Zehmer stating that the title was satisfactory, that he was ready to pay the purchase price in cash and asking when Zehmer would be ready to close the deal. Zehmer replied by letter, mailed on January 13, asserting that he had never agreed or intended to sell."
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Mr. and Mrs. Zehmer were called by the complainants as adverse witnesses. Zehmer testified in substance as follows:",
+      "text": "Mr. and Mrs. Zehmer were called by the complainants as adverse witnesses. Zehmer testified in substance as follows:"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "He bought this farm more than ten years ago for $11,000. He had had twenty-five offers, more or less, to buy it, including several from Lucy, who had never offered any specific sum of money. He had given them all [***7] the same answer, that he was not interested in selling it. On this Saturday night before Christmas it looked like everybody [**519] and his brother came by there to have a drink. He took a good many drinks during the afternoon and had a pint of his own. When he entered the restaurant around eight-thirty [*497] Lucy was there and he could see that he was \"pretty high.\" He said to Lucy, \"Boy, you got some good liquor, drinking, ain't you?\" Lucy then offered him a drink. \"I was already high as a Georgia pine, and didn't have any more better sense than to pour another great big slug out and gulp it down, and he took one too.\"",
+      "text": "He bought this farm more than ten years ago for $11,000. He had had twenty-five offers, more or less, to buy it, including several from Lucy, who had never offered any specific sum of money. He had given them all [***7] the same answer, that he was not interested in selling it. On this Saturday night before Christmas it looked like everybody [**519] and his brother came by there to have a drink. He took a good many drinks during the afternoon and had a pint of his own. When he entered the restaurant around eight-thirty [*497] Lucy was there and he could see that he was \"pretty high.\" He said to Lucy, \"Boy, you got some good liquor, drinking, ain't you?\" Lucy then offered him a drink. \"I was already high as a Georgia pine, and didn't have any more better sense than to pour another great big slug out and gulp it down, and he took one too.\""
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "After they had talked a while Lucy asked whether he still had the Ferguson farm. He replied that he had not sold it and Lucy said, \"I bet you wouldn't take $50,000.00 for it.\" Zehmer asked him if he would give $50,000 and Lucy said yes. Zehmer replied, \"You haven't got $50,000 in cash.\" Lucy said he did and Zehmer replied that he did not believe it. They argued \"pro and con for a long time,\" mainly about \"whether he had $50,000 in cash that he could put up right then and buy that farm.\"",
+      "text": "After they had talked a while Lucy asked whether he still had the Ferguson farm. He replied that he had not sold it and Lucy said, \"I bet you wouldn't take $50,000.00 for it.\" Zehmer asked him if he would give $50,000 and Lucy said yes. Zehmer replied, \"You haven't got $50,000 in cash.\" Lucy said he did and Zehmer replied that he did not believe it. They argued \"pro and con for a long time,\" mainly about \"whether he had $50,000 in cash that he could put up right then and buy that farm.\""
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Finally, said Zehmer, Lucy told him if he didn't believe he [***8] had $50,000, \"you sign that piece of paper here and say you will take $50,000.00 for the farm.\" He, Zehmer, \"just grabbed the back off of a guest check there\" and wrote on the back of it. At that point in his testimony Zehmer asked to see what he had written to \"see if I recognize my own handwriting.\" He examined the paper and exclaimed, \"Great balls of fire, I got 'Firgerson' for Ferguson. I have got satisfactory spelled wrong. I don't recognize that writing if I would see it, wouldn't know it was mine.\"",
+      "text": "Finally, said Zehmer, Lucy told him if he didn't believe he [***8] had $50,000, \"you sign that piece of paper here and say you will take $50,000.00 for the farm.\" He, Zehmer, \"just grabbed the back off of a guest check there\" and wrote on the back of it. At that point in his testimony Zehmer asked to see what he had written to \"see if I recognize my own handwriting.\" He examined the paper and exclaimed, \"Great balls of fire, I got 'Firgerson' for Ferguson. I have got satisfactory spelled wrong. I don't recognize that writing if I would see it, wouldn't know it was mine.\""
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "After Zehmer had, as he described it, \"scribbled this thing off,\" Lucy said, \"Get your wife to sign it.\" Zehmer walked over to where she was and she at first refused to sign but did so after he told her that he \"was just needling him [Lucy], and didn't mean a thing in the world, that I was not selling the farm.\" Zehmer then \"took it back over there * * * and I was still looking at the dern thing. I had the drink right there by my hand, and I reached over to get a drink, and he said, 'Let me see it.' He reached and picked it up, and when I looked back again he had it in his pocket and he dropped a five dollar bill over there, and he said, 'Here is five dollars payment on it.' [***9] * * * I said, 'Hell no, [*498] that is beer and liquor talking. I am not going to sell you the farm. I have told you that too many times before.'\"",
+      "text": "After Zehmer had, as he described it, \"scribbled this thing off,\" Lucy said, \"Get your wife to sign it.\" Zehmer walked over to where she was and she at first refused to sign but did so after he told her that he \"was just needling him [Lucy], and didn't mean a thing in the world, that I was not selling the farm.\" Zehmer then \"took it back over there * * * and I was still looking at the dern thing. I had the drink right there by my hand, and I reached over to get a drink, and he said, 'Let me see it.' He reached and picked it up, and when I looked back again he had it in his pocket and he dropped a five dollar bill over there, and he said, 'Here is five dollars payment on it.' [***9] * * * I said, 'Hell no, [*498] that is beer and liquor talking. I am not going to sell you the farm. I have told you that too many times before.'\""
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Mrs. Zehmer testified that when Lucy came into the restaurant he looked as if he had had a drink. When Zehmer came in he took a drink out of a bottle that Lucy handed him. She went back to help the waitress who was getting things ready for next day. Lucy and Zehmer were talking but she did not pay too much attention to what they were saying. She heard Lucy ask Zehmer if he had sold the Ferguson farm, and Zehmer replied that he had not and did not want to sell it. Lucy said, \"I bet you wouldn't take $50,000 cash for that farm,\" and Zehmer replied, \"You haven't got $50,000 cash.\" Lucy said, \"I can get it.\" Zehmer said he might form a company and get it, \"but you haven't got $50,000.00 cash to pay me tonight.\" Lucy asked him if he would put it in writing that he would sell him this farm. Zehmer then wrote on the back of a pad, \"I agree to sell the Ferguson Place to W. O. Lucy for $50,000.00 cash.\" Lucy said, \"All right, get your wife to sign it.\" Zehmer came back to where she was standing and said, \"You want to put your name [***10] to this?\" She said \"No,\" but he said in an undertone, \"It is nothing but a joke,\" and she signed it.",
+      "text": "Mrs. Zehmer testified that when Lucy came into the restaurant he looked as if he had had a drink. When Zehmer came in he took a drink out of a bottle that Lucy handed him. She went back to help the waitress who was getting things ready for next day. Lucy and Zehmer were talking but she did not pay too much attention to what they were saying. She heard Lucy ask Zehmer if he had sold the Ferguson farm, and Zehmer replied that he had not and did not want to sell it. Lucy said, \"I bet you wouldn't take $50,000 cash for that farm,\" and Zehmer replied, \"You haven't got $50,000 cash.\" Lucy said, \"I can get it.\" Zehmer said he might form a company and get it, \"but you haven't got $50,000.00 cash to pay me tonight.\" Lucy asked him if he would put it in writing that he would sell him this farm. Zehmer then wrote on the back of a pad, \"I agree to sell the Ferguson Place to W. O. Lucy for $50,000.00 cash.\" Lucy said, \"All right, get your wife to sign it.\" Zehmer came back to where she was standing and said, \"You want to put your name [***10] to this?\" She said \"No,\" but he said in an undertone, \"It is nothing but a joke,\" and she signed it."
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "She said that only one paper was written and it said: \"I hereby agree to sell,\" but the \"I\" had been changed to \"We\". However, she said she read what she signed and was then asked, \"When you read 'We hereby agree to sell to W. O. Lucy,' what did you interpret that to mean, that particular phrase?\" She said she thought that was a cash sale that night; but she also said that when she read that part about \"title satisfactory to buyer\" she understood that if the title was good Lucy would pay $50,000 but if the title was bad he would have [**520] a right to reject it, and that that was her understanding at the time she signed her name.",
+      "text": "She said that only one paper was written and it said: \"I hereby agree to sell,\" but the \"I\" had been changed to \"We\". However, she said she read what she signed and was then asked, \"When you read 'We hereby agree to sell to W. O. Lucy,' what did you interpret that to mean, that particular phrase?\" She said she thought that was a cash sale that night; but she also said that when she read that part about \"title satisfactory to buyer\" she understood that if the title was good Lucy would pay $50,000 but if the title was bad he would have [**520] a right to reject it, and that that was her understanding at the time she signed her name."
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "On examination by her own counsel she said that her husband laid this piece of paper down after it was signed; that Lucy said to let him see it, took it, folded it and put it [*499] in his wallet, then said to Zehmer, \"Let me give you $5.00,\" but Zehmer said, \"No, this is liquor talking. I don't want to sell the farm, I have told you that I want my son to have it. This is all a joke.\" Lucy then said at least twice, \"Zehmer, you have sold [***11] your farm,\" wheeled around and started for the door. He paused at the door and said, \"I will bring you $50,000.00 tomorrow. * * * No, tomorrow is Sunday. I will bring it to you Monday.\" She said you could tell definitely that he was drinking and she said to her husband, \"You should have taken him home,\" but he said, \"Well, I am just about as bad off as he is.\"",
+      "text": "On examination by her own counsel she said that her husband laid this piece of paper down after it was signed; that Lucy said to let him see it, took it, folded it and put it [*499] in his wallet, then said to Zehmer, \"Let me give you $5.00,\" but Zehmer said, \"No, this is liquor talking. I don't want to sell the farm, I have told you that I want my son to have it. This is all a joke.\" Lucy then said at least twice, \"Zehmer, you have sold [***11] your farm,\" wheeled around and started for the door. He paused at the door and said, \"I will bring you $50,000.00 tomorrow. * * * No, tomorrow is Sunday. I will bring it to you Monday.\" She said you could tell definitely that he was drinking and she said to her husband, \"You should have taken him home,\" but he said, \"Well, I am just about as bad off as he is.\""
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The waitress referred to by Mrs. Zehmer testified that when Lucy first came in \"he was mouthy.\" When Zehmer came in they were laughing and joking and she thought they took a drink or two. She was sweeping and cleaning up for next day. She said she heard Lucy tell Zehmer, \"I will give you so much for the farm,\" and Zehmer said, \"You haven't got that much.\" Lucy answered, \"Oh, yes, I will give you that much.\" Then \"they jotted down something on paper * * * and Mr. Lucy reached over and took it, said let me see it.\" He looked at it, put it in his pocket and in about a minute he left. She was asked whether she saw Lucy offer Zehmer any money and replied, \"He had five dollars laying up there, they didn't take it.\" She said Zehmer told Lucy he didn't want his money \"because he didn't have enough money to pay for his property, [***12] and wasn't going to sell his farm.\" Both of them appeared to be drinking right much, she said.",
+      "text": "The waitress referred to by Mrs. Zehmer testified that when Lucy first came in \"he was mouthy.\" When Zehmer came in they were laughing and joking and she thought they took a drink or two. She was sweeping and cleaning up for next day. She said she heard Lucy tell Zehmer, \"I will give you so much for the farm,\" and Zehmer said, \"You haven't got that much.\" Lucy answered, \"Oh, yes, I will give you that much.\" Then \"they jotted down something on paper * * * and Mr. Lucy reached over and took it, said let me see it.\" He looked at it, put it in his pocket and in about a minute he left. She was asked whether she saw Lucy offer Zehmer any money and replied, \"He had five dollars laying up there, they didn't take it.\" She said Zehmer told Lucy he didn't want his money \"because he didn't have enough money to pay for his property, [***12] and wasn't going to sell his farm.\" Both of them appeared to be drinking right much, she said."
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "She repeated on cross-examination that she was busy and paying no attention to what was going on. She was some distance away and did not see either of them sign the paper. She was asked whether she saw Zehmer put the agreement down on the table in front of Lucy, and her answer was this: \"Time he got through writing whatever it was on the paper, Mr. Lucy reached over and said, 'Let's see it.' He took it and put it in his pocket,\" before showing it to Mrs. [*500] Zehmer. Her version was that Lucy kept raising his offer until it got to $50,000.",
+      "text": "She repeated on cross-examination that she was busy and paying no attention to what was going on. She was some distance away and did not see either of them sign the paper. She was asked whether she saw Zehmer put the agreement down on the table in front of Lucy, and her answer was this: \"Time he got through writing whatever it was on the paper, Mr. Lucy reached over and said, 'Let's see it.' He took it and put it in his pocket,\" before showing it to Mrs. [*500] Zehmer. Her version was that Lucy kept raising his offer until it got to $50,000."
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The defendants insist that the evidence was ample to support their contention that the writing sought to be enforced was prepared as a bluff or dare to force Lucy to admit that he did not have $50,000; that the whole matter was a joke; that the writing was not delivered to Lucy and no binding contract was ever made between the parties.",
+      "text": "The defendants insist that the evidence was ample to support their contention that the writing sought to be enforced was prepared as a bluff or dare to force Lucy to admit that he did not have $50,000; that the whole matter was a joke; that the writing was not delivered to Lucy and no binding contract was ever made between the parties."
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It is an unusual, if not bizarre, defense. When made to the writing admittedly prepared by one of the defendants and signed by both, clear evidence is required to sustain it.",
+      "text": "It is an unusual, if not bizarre, defense. When made to the writing admittedly prepared by one of the defendants and signed by both, clear evidence is required to sustain it."
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[1] In his testimony [***13] Zehmer claimed that he \"was high as a Georgia pine,\" and that the transaction \"was just a bunch of two doggoned drunks bluffing to see who could talk the biggest and say the most.\" That claim is inconsistent with his attempt to testify in great detail as to what was said and what was done. It is contradicted by other evidence as to the condition of both parties, and rendered of no weight by the testimony of his wife that when Lucy left the restaurant she suggested that Zehmer drive him home. The record is convincing that Zehmer was not intoxicated to the extent of being unable to comprehend the nature and consequences of the instrument he executed, and hence that instrument is not to be invalidated on that ground. 17 C.J.S., Contracts, \u00a7 133 b., p. 483; Taliaferro v. Emery, 124 Va. 674, 98 S.E. 627. It was in fact conceded by defendants' counsel in oral argument that under the evidence Zehmer was not too drunk to make a valid contract.",
+      "text": "[1] In his testimony [***13] Zehmer claimed that he \"was high as a Georgia pine,\" and that the transaction \"was just a bunch of two doggoned drunks bluffing to see who could talk the biggest and say the most.\" That claim is inconsistent with his attempt to testify in great detail as to what was said and what was done. It is contradicted by other evidence as to the condition of both parties, and rendered of no weight by the testimony of his wife that when Lucy left the restaurant she suggested that Zehmer drive him home. The record is convincing that Zehmer was not intoxicated to the extent of being unable to comprehend the nature and consequences of the instrument he executed, and hence that instrument is not to be invalidated on that ground. 17 C.J.S., Contracts, \u00a7 133 b., p. 483; Taliaferro v. Emery, 124 Va. 674, 98 S.E. 627. It was in fact conceded by defendants' counsel in oral argument that under the evidence Zehmer was not too drunk to make a valid contract."
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[2] The evidence is convincing also that Zehmer wrote two agreements, the first one beginning \"I hereby agree to sell.\" Zehmer first said he could not remember about that, [**521] then that \"I don't think I wrote but one out.\" Mrs. [***14] Zehmer said that what he wrote was \"I hereby agree,\" but that the \"I\" was changed to \"We\" after that night. The agreement that was written and signed is in the record and indicates no such change. Neither are the mistakes in spelling that Zehmer sought to point out readily apparent.",
+      "text": "[2] The evidence is convincing also that Zehmer wrote two agreements, the first one beginning \"I hereby agree to sell.\" Zehmer first said he could not remember about that, [**521] then that \"I don't think I wrote but one out.\" Mrs. [***14] Zehmer said that what he wrote was \"I hereby agree,\" but that the \"I\" was changed to \"We\" after that night. The agreement that was written and signed is in the record and indicates no such change. Neither are the mistakes in spelling that Zehmer sought to point out readily apparent."
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*501] The appearance of the contract, the fact that it was under discussion for forty minutes or more before it was signed; Lucy's objection to the first draft because it was written in the singular, and he wanted Mrs. Zehmer to sign it also; the rewriting to meet that objection and the signing by Mrs. Zehmer; the discussion of what was to be included in the sale, the provision for the examination of the title, the completeness of the instrument that was executed, the taking possession of it by Lucy with no request or suggestion by either of the defendants that he give it back, are facts which furnish persuasive evidence that the execution of the contract was a serious business transaction rather than a casual, jesting matter as defendants now contend.",
+      "text": "[*501] The appearance of the contract, the fact that it was under discussion for forty minutes or more before it was signed; Lucy's objection to the first draft because it was written in the singular, and he wanted Mrs. Zehmer to sign it also; the rewriting to meet that objection and the signing by Mrs. Zehmer; the discussion of what was to be included in the sale, the provision for the examination of the title, the completeness of the instrument that was executed, the taking possession of it by Lucy with no request or suggestion by either of the defendants that he give it back, are facts which furnish persuasive evidence that the execution of the contract was a serious business transaction rather than a casual, jesting matter as defendants now contend."
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "On Sunday, the day after the instrument was signed on Saturday night, there was a social gathering in a home in the town of McKenney at which [***15] there were general comments that the sale had been made. Mrs. Zehmer testified that on that occasion as she passed by a group of people, including Lucy, who were talking about the transaction, $50,000 was mentioned, whereupon she stepped up and said, \"Well, with the high-price whiskey you were drinking last night you should have paid more. That was cheap.\" Lucy testified that at that time Zehmer told him that he did not want to \"stick\" him or hold him to the agreement because he, Lucy, was too tight and didn't know what he was doing, to which Lucy replied that he was not too tight; that he had been stuck before and was going through with it. Zehmer's version was that he said to Lucy: \"I am not trying to claim it wasn't a deal on account of the fact the price was too low. If I had wanted to sell $50,000.00 would be a good price, in fact I think you would get stuck at $50,000.00.\" A disinterested witness testified that what Zehmer said to Lucy was that \"he was going to let him up off the deal, because he thought he was too tight, didn't know what he was doing. Lucy said something to the effect that 'I have been stuck before and I will go through with it.'\"",
+      "text": "On Sunday, the day after the instrument was signed on Saturday night, there was a social gathering in a home in the town of McKenney at which [***15] there were general comments that the sale had been made. Mrs. Zehmer testified that on that occasion as she passed by a group of people, including Lucy, who were talking about the transaction, $50,000 was mentioned, whereupon she stepped up and said, \"Well, with the high-price whiskey you were drinking last night you should have paid more. That was cheap.\" Lucy testified that at that time Zehmer told him that he did not want to \"stick\" him or hold him to the agreement because he, Lucy, was too tight and didn't know what he was doing, to which Lucy replied that he was not too tight; that he had been stuck before and was going through with it. Zehmer's version was that he said to Lucy: \"I am not trying to claim it wasn't a deal on account of the fact the price was too low. If I had wanted to sell $50,000.00 would be a good price, in fact I think you would get stuck at $50,000.00.\" A disinterested witness testified that what Zehmer said to Lucy was that \"he was going to let him up off the deal, because he thought he was too tight, didn't know what he was doing. Lucy said something to the effect that 'I have been stuck before and I will go through with it.'\""
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[3] If it be assumed, [***16] contrary to what we think the evidence [*502] shows, that Zehmer was jesting about selling his farm to Lucy and that the transaction was intended by him to be a joke, nevertheless the evidence shows that Lucy did not so understand it but considered it to be a serious business transaction and the contract to be binding on the Zehmers as well as on himself. The very next day he arranged with his brother to put up half the money and take a half interest in the land. The day after that he employed an attorney to examine the title. The next night, Tuesday, he was back at Zehmer's place and there Zehmer told him for the first time, Lucy said, that he wasn't going to sell and he told Zehmer, \"You know you sold that place fair and square.\" After receiving the report from his attorney that the title was good he wrote to Zehmer that he was ready to close the deal.",
+      "text": "[3] If it be assumed, [***16] contrary to what we think the evidence [*502] shows, that Zehmer was jesting about selling his farm to Lucy and that the transaction was intended by him to be a joke, nevertheless the evidence shows that Lucy did not so understand it but considered it to be a serious business transaction and the contract to be binding on the Zehmers as well as on himself. The very next day he arranged with his brother to put up half the money and take a half interest in the land. The day after that he employed an attorney to examine the title. The next night, Tuesday, he was back at Zehmer's place and there Zehmer told him for the first time, Lucy said, that he wasn't going to sell and he told Zehmer, \"You know you sold that place fair and square.\" After receiving the report from his attorney that the title was good he wrote to Zehmer that he was ready to close the deal."
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Not only did Lucy actually believe, but the evidence shows he was warranted in believing, that the contract represented a serious business transaction and a good faith sale and purchase of the farm.",
+      "text": "Not only did Lucy actually believe, but the evidence shows he was warranted in believing, that the contract represented a serious business transaction and a good faith sale and purchase of the farm."
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In the field of contracts, as generally elsewhere, \"We must look to the outward expression of a person as manifesting his [***17] intention rather than to his secret and unexpressed intention. 'The law imputes to a person an intention corresponding to the reasonable meaning of his words and acts.'\" First Nat. Bank v. Roanoke Oil Co., 169 Va. 99, 114, 192 S.E. 764, 770.",
+      "text": "In the field of contracts, as generally elsewhere, \"We must look to the outward expression of a person as manifesting his [***17] intention rather than to his secret and unexpressed intention. 'The law imputes to a person an intention corresponding to the reasonable meaning of his words and acts.'\" First Nat. Bank v. Roanoke Oil Co., 169 Va. 99, 114, 192 S.E. 764, 770."
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "At no time prior to the execution of the contract had Zehmer indicated to Lucy by word or act that he was not in earnest about selling the farm. They had argued about it and discussed its terms, as Zehmer admitted, for a long time. Lucy testified that if there was any jesting it was about [**522] paying $50,000 that night. The contract and the evidence show that he was not expected to pay the money that night. Zehmer said that after the writing was signed he laid it down on the counter in front of Lucy. Lucy said Zehmer handed it to him. In any event there had been what appeared to be a good faith offer and a good faith acceptance, [*503] followed by the execution and apparent delivery of a written contract. Both said that Lucy put the writing in his pocket and then offered Zehmer $5 to seal the bargain. Not until then, even under the defendants' evidence, was anything said or done to indicate that the matter was a joke. [***18] Both of the Zehmers testified that when Zehmer asked his wife to sign he whispered that it was a joke so Lucy wouldn't hear and that it was not intended that he should hear.",
+      "text": "At no time prior to the execution of the contract had Zehmer indicated to Lucy by word or act that he was not in earnest about selling the farm. They had argued about it and discussed its terms, as Zehmer admitted, for a long time. Lucy testified that if there was any jesting it was about [**522] paying $50,000 that night. The contract and the evidence show that he was not expected to pay the money that night. Zehmer said that after the writing was signed he laid it down on the counter in front of Lucy. Lucy said Zehmer handed it to him. In any event there had been what appeared to be a good faith offer and a good faith acceptance, [*503] followed by the execution and apparent delivery of a written contract. Both said that Lucy put the writing in his pocket and then offered Zehmer $5 to seal the bargain. Not until then, even under the defendants' evidence, was anything said or done to indicate that the matter was a joke. [***18] Both of the Zehmers testified that when Zehmer asked his wife to sign he whispered that it was a joke so Lucy wouldn't hear and that it was not intended that he should hear."
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The mental assent of the parties is not requisite for the formation of a contract. If the words or other acts of one of the parties have but one reasonable meaning, his undisclosed intention is immaterial except when an unreasonable meaning which he attaches to his manifestations is known to the other party. Restatement of the Law of Contracts, Vol. I, \u00a7 71, p. 74.",
+      "text": "The mental assent of the parties is not requisite for the formation of a contract. If the words or other acts of one of the parties have but one reasonable meaning, his undisclosed intention is immaterial except when an unreasonable meaning which he attaches to his manifestations is known to the other party. Restatement of the Law of Contracts, Vol. I, \u00a7 71, p. 74."
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"* * * The law, therefore, judges of an agreement between two persons exclusively from those expressions of their intentions which are communicated between them. * * *.\" Clark on Contracts, 4 ed., \u00a7 3, p. 4. An agreement or mutual assent is of course essential to a valid contract but the law imputes to a person an intention corresponding to the reasonable meaning of his words and acts. If his words and acts, judged by a reasonable standard, manifest an intention to agree, it is immaterial what may be the real but unexpressed state of his mind. 17 C.J.S., Contracts, \u00a7 32, p. 361; 12 Am. Jur., Contracts, \u00a7 19, p. 515.",
+      "text": "\"* * * The law, therefore, judges of an agreement between two persons exclusively from those expressions of their intentions which are communicated between them. * * *.\" Clark on Contracts, 4 ed., \u00a7 3, p. 4. An agreement or mutual assent is of course essential to a valid contract but the law imputes to a person an intention corresponding to the reasonable meaning of his words and acts. If his words and acts, judged by a reasonable standard, manifest an intention to agree, it is immaterial what may be the real but unexpressed state of his mind. 17 C.J.S., Contracts, \u00a7 32, p. 361; 12 Am. Jur., Contracts, \u00a7 19, p. 515."
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "So a person [***19] cannot set up that he was merely jesting when his conduct and words would warrant a reasonable person in believing that he intended a real agreement, 17 C.J.S., Contracts, \u00a7 47, p. 390; Clark on Contracts, 4 ed., \u00a7 27, at p. 54.",
+      "text": "So a person [***19] cannot set up that he was merely jesting when his conduct and words would warrant a reasonable person in believing that he intended a real agreement, 17 C.J.S., Contracts, \u00a7 47, p. 390; Clark on Contracts, 4 ed., \u00a7 27, at p. 54."
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Whether the writing signed by the defendants and now sought to be enforced by the complainants was the result of a serious offer by Lucy and a serious acceptance by the defendants, or was a serious offer by Lucy and an acceptance in secret jest by the defendants, in either event it constituted a binding contract of sale between the parties.",
+      "text": "Whether the writing signed by the defendants and now sought to be enforced by the complainants was the result of a serious offer by Lucy and a serious acceptance by the defendants, or was a serious offer by Lucy and an acceptance in secret jest by the defendants, in either event it constituted a binding contract of sale between the parties."
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[4] [*504] Defendants contend further, however, that even though a contract was made, equity should decline to enforce it under the circumstances. These circumstances have been set forth in detail above. They disclose some drinking by the two parties but not to an extent that they were unable to understand fully what they were doing. There was no fraud, no misrepresentation, no sharp practice and no dealing between unequal parties. The farm had been bought for $11,000 and was assessed for taxation at $6,300. The purchase price was $50,000. Zehmer admitted that it was a good price. There is in fact present [***20] in this case none of the grounds usually urged against specific performance.",
+      "text": "[4] [*504] Defendants contend further, however, that even though a contract was made, equity should decline to enforce it under the circumstances. These circumstances have been set forth in detail above. They disclose some drinking by the two parties but not to an extent that they were unable to understand fully what they were doing. There was no fraud, no misrepresentation, no sharp practice and no dealing between unequal parties. The farm had been bought for $11,000 and was assessed for taxation at $6,300. The purchase price was $50,000. Zehmer admitted that it was a good price. There is in fact present [***20] in this case none of the grounds usually urged against specific performance."
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Specific performance, it is true, is not a matter of absolute or arbitrary right, but is addressed to the reasonable and sound discretion of the court. First Nat. Bank v. Roanoke Oil Co., supra, 169 Va. at p. 116, 192 S.E. at p. 771. But it is likewise true that the discretion which may be exercised is not an arbitrary or capricious one, but one which is controlled by the established doctrines and settled principles of equity; and, generally, where a contract is in its nature and circumstances unobjectionable, it is as much a matter of course for courts of equity to decree a specific performance of it as it is for a court of law to give damages for a breach of it. Bond v. Crawford, 193 Va. 437, 444, 69 S.E.(2d) 470, 475.",
+      "text": "Specific performance, it is true, is not a matter of absolute or arbitrary right, but is addressed to the reasonable and sound discretion of the court. First Nat. Bank v. Roanoke Oil Co., supra, 169 Va. at p. 116, 192 S.E. at p. 771. But it is likewise true that the discretion which may be exercised is not an arbitrary or capricious one, but one which is controlled by the established doctrines and settled principles of equity; and, generally, where a contract is in its nature and circumstances unobjectionable, it is as much a matter of course for courts of equity to decree a specific performance of it as it is for a court of law to give damages for a breach of it. Bond v. Crawford, 193 Va. 437, 444, 69 S.E.(2d) 470, 475."
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The complainants are entitled to have specific performance of the contracts sued on. The decree appealed from is therefore reversed and the cause is remanded for the [**523] entry of a proper decree requiring the defendants to perform the contract [***21] in accordance with the prayer of the bill.",
+      "text": "The complainants are entitled to have specific performance of the contracts sued on. The decree appealed from is therefore reversed and the cause is remanded for the [**523] entry of a proper decree requiring the defendants to perform the contract [***21] in accordance with the prayer of the bill."
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Reversed and remanded.",
+      "text": "Reversed and remanded."
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This work is in the",
+      "text": "This work is in the"
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "public domain",
+      "text": "public domain",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://en.wikipedia.org/wiki/public_domain"
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "in the U.S.",
+      "text": "in the U.S.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "because it is an",
+      "text": "because it is an"
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "edict of a government",
+      "text": "edict of a government",
+      "hyperlink": "https://en.wikipedia.org/wiki/Edict_of_government"
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", local or foreign. See",
+      "text": ", local or foreign. See"
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u00a7 313.6(C)(2) of the Compendium II: Copyright Office Practices",
+      "text": "\u00a7 313.6(C)(2) of the Compendium II: Copyright Office Practices",
+      "hyperlink": "https://www.copyright.gov/comp3/"
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ". Such documents include \"legislative enactments, judicial decisions, administrative rulings, public ordinances, or similar types of official legal materials\" as well as \"any translation prepared by a government employee acting within the course of his or her official duties.\"",
+      "text": ". Such documents include \"legislative enactments, judicial decisions, administrative rulings, public ordinances, or similar types of official legal materials\" as well as \"any translation prepared by a government employee acting within the course of his or her official duties.\""
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/groups/30"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "These do",
+      "text": "These do"
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/groups/30"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "not",
+      "text": "not",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/groups/30"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "include works of the Organization of American States, United Nations, or any of the UN specialized agencies. See Compendium III \u00a7 313.6(C)(2) and 17 U.S.C. 104(b)(5).",
+      "text": "include works of the Organization of American States, United Nations, or any of the UN specialized agencies. See Compendium III \u00a7 313.6(C)(2) and 17 U.S.C. 104(b)(5)."
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A non-American governmental edict may still be copyrighted outside the U.S. Similar to {{",
+      "text": "A non-American governmental edict may still be copyrighted outside the U.S. Similar to {{"
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "PD-in-USGov",
+      "text": "PD-in-USGov",
+      "hyperlink": "\\wiki\\Template:PD-in-USGov"
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "}}, the above U.S. Copyright Office Practice does not prevent U.S. states or localities from holding copyright abroad, depending on foreign copyright laws and regulations.",
+      "text": "}}, the above U.S. Copyright Office Practice does not prevent U.S. states or localities from holding copyright abroad, depending on foreign copyright laws and regulations."
+    },
+    {
+      "self_ref": "#/texts/171",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Public domain Public domain false false",
+      "text": "Public domain Public domain false false"
+    },
+    {
+      "self_ref": "#/texts/172",
+      "parent": {
+        "$ref": "#/groups/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Retrieved from \"",
+      "text": "Retrieved from \""
+    },
+    {
+      "self_ref": "#/texts/173",
+      "parent": {
+        "$ref": "#/groups/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165",
+      "text": "https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165",
+      "hyperlink": "https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165"
+    },
+    {
+      "self_ref": "#/texts/174",
+      "parent": {
+        "$ref": "#/groups/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"",
+      "text": "\""
+    },
+    {
+      "self_ref": "#/texts/175",
+      "parent": {
+        "$ref": "#/groups/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Categories",
+      "text": "Categories",
+      "hyperlink": "\\wiki\\Special:Categories"
+    },
+    {
+      "self_ref": "#/texts/176",
+      "parent": {
+        "$ref": "#/groups/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/177",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "1954 works",
+      "text": "1954 works",
+      "hyperlink": "\\wiki\\Category:1954_works",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/178",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Nonstandard texts",
+      "text": "Nonstandard texts",
+      "hyperlink": "\\wiki\\Category:Nonstandard_texts",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/179",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "PD-EdictGov",
+      "text": "PD-EdictGov",
+      "hyperlink": "\\wiki\\Category:PD-EdictGov",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/180",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "1954 court decisions",
+      "text": "1954 court decisions",
+      "hyperlink": "\\wiki\\Category:1954_court_decisions",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/181",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Virginia Supreme Court decisions",
+      "text": "Virginia Supreme Court decisions",
+      "hyperlink": "\\wiki\\Category:Virginia_Supreme_Court_decisions",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/182",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Hidden category:",
+      "text": "Hidden category:"
+    },
+    {
+      "self_ref": "#/texts/183",
+      "parent": {
+        "$ref": "#/groups/35"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Pages with override author",
+      "text": "Pages with override author",
+      "hyperlink": "\\wiki\\Category:Pages_with_override_author",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/184",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "This page was last edited on 26 February 2026, at 23:54.",
+      "text": "This page was last edited on 26 February 2026, at 23:54.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/185",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/38"
+        }
+      ],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/186",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Text is available under the",
+      "text": "Text is available under the"
+    },
+    {
+      "self_ref": "#/texts/187",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Creative Commons Attribution-ShareAlike License",
+      "text": "Creative Commons Attribution-ShareAlike License",
+      "hyperlink": "\\\\creativecommons.org\\licenses\\by-sa\\4.0"
+    },
+    {
+      "self_ref": "#/texts/188",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "; additional terms may apply. By using this site, you agree to the",
+      "text": "; additional terms may apply. By using this site, you agree to the"
+    },
+    {
+      "self_ref": "#/texts/189",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Terms of Use",
+      "text": "Terms of Use",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use"
+    },
+    {
+      "self_ref": "#/texts/190",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "and",
+      "text": "and"
+    },
+    {
+      "self_ref": "#/texts/191",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Privacy Policy.",
+      "text": "Privacy Policy.",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
+    },
+    {
+      "self_ref": "#/texts/192",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Privacy policy",
+      "text": "Privacy policy",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/193",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "About Wikisource",
+      "text": "About Wikisource",
+      "hyperlink": "\\wiki\\Wikisource:About",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/194",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Disclaimers",
+      "text": "Disclaimers",
+      "hyperlink": "\\wiki\\Wikisource:General_disclaimer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/195",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Code of Conduct",
+      "text": "Code of Conduct",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/196",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Developers",
+      "text": "Developers",
+      "hyperlink": "https://developer.wikimedia.org/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/197",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Statistics",
+      "text": "Statistics",
+      "hyperlink": "https://stats.wikimedia.org/#/en.wikisource.org",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/198",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Cookie statement",
+      "text": "Cookie statement",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/199",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Mobile view",
+      "text": "Mobile view",
+      "hyperlink": "\\\\en.wikisource.org\\w\\index.php?title=Lucy_v._Zehmer&oldid=15747165&mobileaction=toggle_view_mobile",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/200",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Search Wikisource",
+      "text": "Search Wikisource"
+    },
+    {
+      "self_ref": "#/texts/201",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Search",
+      "text": "Search"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/86"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/texts/87"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/91"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/20"
+        },
+        {
+          "$ref": "#/groups/22"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/20"
+            }
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "This work may need to be standardized using Wikisource's style guidelines.\nIf you'd like to help, please review the help pages.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/22"
+            }
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "This work may need to be standardized using Wikisource's style guidelines.\nIf you'd like to help, please review the help pages.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

@@ -1,0 +1,178 @@
+{
+  "contexts": {
+    "220f0af69c8aaa59efa6af1b61e1c77a11710f3e47f10ccbfacf807dd0b9c2cb": {
+      "context": "This chunk appears in the \"Classifications of breaches of contract\" section (section 2) of the Wikipedia article on Breach of contract. It explains the three general law categories used to measure breach severity: breach of warranty, breach of condition, and breach of an innominate term, along with how these classifications are prioritized.",
+      "text_sha256": "314268a837f83a66c5e1510ae1464238e46cbfbe6c9b55a9d042136998db56ec",
+      "window_index": 0
+    },
+    "2500a497a8b07ff3a6b21b5bc21fc759052237ff365c78867acd23e820b1c3d8": {
+      "context": "This chunk appears in the Wikipedia article on Breach of contract, under the section \"Breach of a condition.\" It defines repudiatory breach as a breach of a contract condition and explains the legal remedies available to the innocent party, distinguishing repudiatory breach from other less serious types of breach discussed elsewhere in the article.",
+      "text_sha256": "15731041cffdf0be7c930ccb8e69940d8fce40cbf350e333f2397a5bf7b9ed07",
+      "window_index": 1
+    },
+    "3469ee120dbb814073fa2fd32b00093e21798e51deabfb8692a8748bc363cacd": {
+      "context": "This is the \"See also\" section at the end of the Wikipedia article on Breach of contract, which provides cross-references to related legal concepts and topics including anticipatory repudiation, fundamental breach, contracts, lawsuits, terms of use, and lost volume seller.",
+      "text_sha256": "9f528208df7f14cb59ca1aede5a3054ba1abd18533cb2c82928df56026395c6a",
+      "window_index": 1
+    },
+    "384a80040408f9ffd3430de6a98e86e516a863e9cca03183ff3af9a065fbd671": {
+      "context": "This chunk appears in the \"Material breach\" section of the Wikipedia article on Breach of contract. It provides case law examples that illustrate how courts have defined and applied the concept of material breach, distinguishing it from repudiatory breach and trivial breach. The cases cited demonstrate factors courts consider when determining materiality, such as remedial capacity, commercial consequences, and the severity of non-performance.",
+      "text_sha256": "c3ea1989830c8f4b3810e68d639dd9b8421d44d9c8a6106de7e0ca02816891d4",
+      "window_index": 1
+    },
+    "3c4a34c8a9ed9f627f99b8043a2edd00d6ce6f13ccd93733404bc63175d008ec": {
+      "context": "This chunk appears at the beginning of the References section of the Wikipedia article on Breach of contract, providing links to library resources related to the topic before the numbered reference citations begin.",
+      "text_sha256": "9b239b5e1c9e1364eda1db04bd400ca8171778224ae13ec81cd3fc9611234bc4",
+      "window_index": 2
+    },
+    "3d2b7411a26f32c7a7a623053b025ef6c1188e274ba6827aed6028362206aeba": {
+      "context": "This chunk is from the \"Material breach\" section of the Wikipedia article on Breach of contract. It defines material breach as a breach that is more than trivial but need not be repudiatory, and explains that a breach is likely material if it involves a condition of the contract. The section also references how material breach is defined in EPC Agreements and introduces UK case law examples that illustrate the concept.",
+      "text_sha256": "cb88b3d5c3b30f0e913233259b0c3b2d78940aab32411c9dd2ca728c45309b59",
+      "window_index": 1
+    },
+    "4faf7fc046bcf4d625ef02ee9faab7f0a42c8b52ea13ddd9e335e91cbb7253a3": {
+      "context": "This chunk is a section header for \"Breach of contract > Case law > English\" in the Wikipedia article on Breach of contract, part of the Case law section that provides jurisdiction-specific legal precedents related to breach of contract.",
+      "text_sha256": "55590e9339fe1bbd78bc3311b0d6dc50beadf41f15f33a4f0e1b9f32294c5e01",
+      "window_index": 0
+    },
+    "53464cccb96d91d534455e2597bcac7009a6121c4d9363e0c6051d7c7a74e3d6": {
+      "context": "This chunk is from the Bibliography section of the Wikipedia article on Breach of contract. It lists academic literature sources cited in the article, beginning with Seddon's \"Law of Contract\" textbook, followed by international authority identifiers for cataloging purposes and article categories.",
+      "text_sha256": "132471e89a30e76bfae0f19b05bf715651f09003440718eb9d55a4ead63225bc",
+      "window_index": 2
+    },
+    "536b659c248880f00873b8f39032d1c802e3e11af4d12e1149b29dc1c764bc7d": {
+      "context": "This chunk is from the Wikipedia article on Breach of contract, specifically the section on Anticipatory breach. It defines anticipatory breach (also called renunciatory breach or breach by anticipatory repudiation) as an unequivocal indication that a party will not perform future contractual obligations, and explains the innocent party's rights to terminate immediately or wait for the performance date.",
+      "text_sha256": "c69de50486048ff636bd97c9a4b05ab55968da22dc8585449ab74e55fed1ed9c",
+      "window_index": 1
+    },
+    "5ed163565cd8bb8099bcb74585cd83e039f9b0d72869a0b5526e68306619dcce": {
+      "context": "This chunk is part of the Contract Law template in the Wikipedia article on Breach of contract, specifically within the \"Performance & breach\" section and subsequent sections covering Remedies, Quasi-contractual obligations, Rights of third parties, Duties of parties, and Dispute resolution. It provides an overview of legal concepts and remedies related to contract law across multiple jurisdictions.",
+      "text_sha256": "0758be3bbc5132a9ea4213fc9cfc5ee95a89238942cdfdc5065f0c183f015635",
+      "window_index": 0
+    },
+    "7bcd3e5c8e68a05d8f4e178ae8e19344d9d419e7590ba9e43b134e7345db647a": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Breach of contract, containing citations 31 and 32 that support legal principles discussed in the main article. Reference 31 cites the Australian High Court case Foran v Wight, and reference 32 cites the academic textbook Principles of Contract Law by Paterson, Robertson, and Duke.",
+      "text_sha256": "c0ff067cff4f248eb42748a076c44a8f19a7dbac95127a2e72ea36dd40715552",
+      "window_index": 2
+    },
+    "7d232dbafa8e9d9e189e02eb2c990740357a5ad7525db5a072c79e2e7696add9": {
+      "context": "This chunk is from the \"Right to terminate for breach\" section (section 8) of the Wikipedia article on Breach of contract. It explains the three circumstances under which a party has the right to terminate a contract: breach of a condition, repudiatory breach, and renunciatory (anticipatory) breach. The section also details the procedural requirements for terminating a contract for repudiatory breach and clarifies that an innocent party is not obligated to exercise this right.",
+      "text_sha256": "f61640a958599285e988b54b3e275bd574ff072a86bad01b902dbbccf91006f0",
+      "window_index": 0
+    },
+    "8365a9e5b4a449392e59c5722014a995134f440034186e583a95efcd3f2b94bf": {
+      "context": "This section from the Wikipedia article on Breach of Contract defines repudiatory breaches, a subcategory under \"Right to terminate for breach\" (section 6.1). It explains that repudiatory conduct deprives the innocent party of substantially the whole benefit of the contract and describes circumstances where the innocent party may lose their right to damages for such breaches.",
+      "text_sha256": "e9c274400e348478825e6f7e8052d1002d3b09cf546ea548317d2417a9b4a2ab",
+      "window_index": 0
+    },
+    "83fcca95d4cfa09d3e2c9fb08bb6f9a88fda5d0fee1845730d502a28f6e5a558": {
+      "context": "This section from the Wikipedia article on Breach of contract discusses fundamental breach, explaining that it is no longer the primary legal test for justifying contract termination (which is now repudiatory breach). The section includes the test of essentiality under Australian law, practical examples involving contractor performance with different pipe materials, and exceptions to damages recovery based on economic waste and pricing-in principles, concluding with criteria from the Restatement (Second) of Contracts for determining material breach.",
+      "text_sha256": "30ea03fc701fee2d2d4527966bc86d1144327bccf17709c9982e542685dbb68f",
+      "window_index": 1
+    },
+    "89e3ac070eb7497907cf486ed6f85aa932352fad28fd69c78d3fd93affe8bd6a": {
+      "context": "This chunk appears in the Wikipedia article on Breach of contract, specifically in the section \"Right to terminate for breach\" under the subsection \"Renunciatory breaches.\" It defines renunciatory conduct as behavior showing intention to commit a repudiatory breach and explains the innocent party's options when such conduct occurs, including the right to terminate immediately or wait for the performance date.",
+      "text_sha256": "b47b53c9b0915f8dc516dbd8d2fb2ab375160b70eff7249301bec2b76e59c545",
+      "window_index": 1
+    },
+    "8a0520d1ef2bc80203db4030acfece041950de0c5cf9409709afb1a97d7430d7": {
+      "context": "This chunk is a section header for \"Case law\" in the Wikipedia article on Breach of contract, which provides an overview of legal precedents and court decisions related to breach of contract claims. The section is followed by subsections covering English and New Zealand case law examples.",
+      "text_sha256": "393f6a3dd806df2a1f6380e805de50448aaf26301c20fd55de86e6021044abb9",
+      "window_index": 0
+    },
+    "9c499263ae174696de610b00611e2249d1bd140ff5f1d8c576510fb093d8172c": {
+      "context": "This chunk appears in the \"Types of breach\" section of the Wikipedia article on Breach of contract. It explains how contracts use alternative terminology such as material breach, fundamental breach, substantial breach, and serious breach instead of the legal term \"repudiatory breach,\" and notes that these terms lack fixed legal definitions and are interpreted contextually within individual contracts.",
+      "text_sha256": "c1be51f3e6f4ead029d4050a38b5b3d7b82b703d17246a0c42ac7618360ae38b",
+      "window_index": 1
+    },
+    "9e4a8bbb85d0c5a0815cf0fa65f5889e7ee1db31b689912b56e7b58d87f88267": {
+      "context": "This section lists New Zealand case law examples relevant to breach of contract, appearing under the \"Case law\" section of the Wikipedia article on Breach of contract.",
+      "text_sha256": "3a57f1e7e84c5a12bb871f40d2d329a06c7c605a6dcdffcb90c27add23e44a1e",
+      "window_index": 0
+    },
+    "a35ae9aab1cd3584eae8af5ad907d31ffd1267abd1e3effbe7ce3bff731a3003": {
+      "context": "This chunk contains Wikipedia navigation and metadata elements from the Breach of contract article, including tools for accessing page history, downloading formats, and viewing revision information.",
+      "text_sha256": "4a2be2d978a4f32afa5b541004ee816b8a3a27f3953561b7398161ce8ed83bb2",
+      "window_index": 0
+    },
+    "a5e6a0e421fbaf00bcaf913f6dee064205e40a566d1615fc22a87ca175a65585": {
+      "context": "This section from the Wikipedia article on Breach of contract explains breach of warranty, a type of minor breach that entitles the innocent party only to damages rather than contract termination. It distinguishes warranties from conditions and illustrates the concepts with a plumbing contractor example, also discussing how time stipulations in contracts are typically treated as warranties unless the contract specifies \"time is of the essence.\"",
+      "text_sha256": "3b0be21bf42ec303ec5099353268ed8b6d74a444e7c2b60f2a9810362162c4f5",
+      "window_index": 1
+    },
+    "a918b4399c758f1384c15ceb5909cec17ac86b106785c20e6808f9b59b61f25f": {
+      "context": "This chunk appears in the Wikipedia article on Breach of contract, specifically in the section on Fundamental breach. It presents the criteria from the Restatement (Second) of Contracts used in the United States to determine whether a specific failure constitutes a material breach, listing five significant circumstances to consider when assessing materiality.",
+      "text_sha256": "206dd4593c99e492a54abb2ad64a17135cd2420b62d6e72f7a1f2656d9cfef0e",
+      "window_index": 1
+    },
+    "adb0867fcb0a5aeab22b88255524dd6e7c02234f14fa3aa236c9479208f12792": {
+      "context": "This chunk is from the \"Right to remedy a breach\" section of the Wikipedia article on Breach of contract. It explains the circumstances under which a party in breach may have the right to remedy their breach, including the concept of a \"cure period\" that allows time for remedying a remediable breach before contract termination becomes possible.",
+      "text_sha256": "d493afd046644287dcf1cdd5dae2dc512e46b79f06f57fcc5c210b66c508e738",
+      "window_index": 1
+    },
+    "aeb8c6cc25dfac6333706ca3ef4126cc81a505734b0dbd91de91dc31a4f33696": {
+      "context": "This chunk is from the References section of the Wikipedia article on Breach of contract, containing the first eleven numbered citations that support claims made throughout the article. These references include academic sources, judicial education materials, and case law citations related to breach of contract law and remedies.",
+      "text_sha256": "762c37ff63b58cdcceb317c3c809d60c75397abcef2dbe758c06cde5f18e67a5",
+      "window_index": 2
+    },
+    "b288728c63da320c49617619158dc432d41908a16677fbfc4e18f7d017d0054d": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Breach of contract, containing citations 23-30 that support various legal principles and case law discussed in the main article regarding breach of contract, repudiatory breach, and contractual remedies.",
+      "text_sha256": "9e4164b341f66b595fc4df80412f8a132f5308aef1779cd85a89e5a4b8076a87",
+      "window_index": 2
+    },
+    "bca82f11c275549b2686ae7ed024bdb0d113994bbf467d91544414324672a5c9": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Breach of contract, containing numbered citations 12-22 that support claims made throughout the article. These references include case law citations from English and Australian courts, legal publications, and court decisions relevant to breach of contract doctrine.",
+      "text_sha256": "df9111ce7f2981ade147163f1e56ad763e6cc5e171554cf83a6fbbf1225212e4",
+      "window_index": 2
+    },
+    "bd701aca84f052e360771c8d28f5ac511c4dcc16fd568a094708add61b43573e": {
+      "context": "This chunk appears in the \"What constitutes a breach of contract\" section (section 1) of the Wikipedia article on Breach of contract. It explains the two elementary forms of breach: actual failure to perform and conduct indicating unwillingness or inability to perform, and introduces the distinction between actual breach and renunciatory (anticipatory) breach.",
+      "text_sha256": "b1f191cdbe10471c815aeaceaff6d241407fdb1ac33f8deb3e992dd7467f3e3f",
+      "window_index": 0
+    },
+    "c08af08ffbfc6697a7814c22de26b89eb445cd23ecbe6f5e3af7ce0293a90749": {
+      "context": "This is the table of contents for the Wikipedia article on Breach of contract, listing all major sections and subsections covered in the document, including definitions, classifications, case law, remedies, and types of breaches.",
+      "text_sha256": "2511d5fbadbf38646fdb765a6df7886366eeb73ceff14bc9501353db725f4b9c",
+      "window_index": 0
+    },
+    "c51a977fbb5554215c3e80e0dd3823142db968b5d8ba9d88b84f4e5bb3ba29ba": {
+      "context": "This chunk from the Wikipedia article on Breach of contract contains navigation and language links that appear at the top of the article, allowing readers to access the article in 16 different languages and providing standard Wikipedia editing and viewing tools.",
+      "text_sha256": "0f08b3d57dcf894a112c8056b806f02fe39111ead72ee346302c78c2e6a3fb7e",
+      "window_index": 0
+    },
+    "d35ece6f2dd14f609c3e84db07d18124b50e2bcf2dfb6cbc0bf44a8998abd393": {
+      "context": "This chunk is part of the Contract law template in the Wikipedia article on Breach of contract. It provides a comprehensive overview of contract law topics organized by category, including Formation, Vitiating factors & defences, Terms & interpretation, and Performance & breach, with links to related legal concepts and jurisdictional variations.",
+      "text_sha256": "618d72d9f3e46e6c871b83f0fa586c809c789f56ee74b160a3a365356aaa55b6",
+      "window_index": 0
+    },
+    "d6f006b5dbda249bf3ec7bc5dbd2b18222369e4ba7cc4ebe3ba9ffcbb74b1d77": {
+      "context": "This chunk appears in the \"Damages for disappointment\" section (section 7) of the Wikipedia article on Breach of contract, which discusses the types of remedies available when a contract is breached. The section explains the limited circumstances under which courts award damages for emotional distress or disappointment resulting from breach of contract.",
+      "text_sha256": "b72159fddecda32ec5588d0bc2e0b9033a1b817558df9155e474ad7ef5577883",
+      "window_index": 0
+    },
+    "d96fab566b8c188d8714166b9319df82fdfd43773964da122d7155593c458961": {
+      "context": "This chunk appears in the Wikipedia article on Breach of contract, under the section \"Types of breach > Trivial breach.\" It defines a trivial breach as one that does not meet the standard for material, serious, or substantial breach, and provides two key court cases illustrating that trivial breaches generally do not justify contract termination.",
+      "text_sha256": "1a41cce363cc07741bf00be2888096333e3e556aa9744c9ca84ae510942887dd",
+      "window_index": 1
+    },
+    "e314e139814c0268aa4501be987f9c79cba407ee7af1ac2a5edcb9f299dcead0": {
+      "context": "This chunk appears at the beginning of the Wikipedia article on Breach of contract and is a maintenance notice indicating that the article requires additional citations to reliable sources to meet Wikipedia's verifiability standards.",
+      "text_sha256": "6df6c25d50607001380756f4af04c05c55cca262ccf9bf3cc27efdc782ff2336",
+      "window_index": 0
+    },
+    "fc75e697f08bad38016096beea7827ee65594559571ad7a31cb562da4bcd1610": {
+      "context": "This section from the Wikipedia article on Breach of contract explains the rights to damages available to an innocent party when a breach occurs. It describes how any breach of contract\u2014whether of warranty, condition, or innominate term\u2014entitles the innocent party to recover damages, and details the different forms damages can take, including compensatory and punitive damages.",
+      "text_sha256": "75d4479597da34816fab7ec3bf4d7d18bf900eb3fafa3595486a7d641c5e4791",
+      "window_index": 0
+    },
+    "fda6311bd90bd14dcd88e57ef8f5229c794b36127b30ba5874858093854e06ce": {
+      "context": "This chunk from the Wikipedia article on Breach of contract provides the foundational definition and overview of the topic. It appears after the table of contents and contract law template, establishing that breach of contract is a legal cause of action and civil wrong involving failure to honor a binding agreement, and explaining the basic consequences including damages liability and potential contract rescission.",
+      "text_sha256": "42f8029dc700776eecc166958f5cd97fd3d6cd3249417602f0d015424bfc8125",
+      "window_index": 0
+    }
+  },
+  "doc_id": "wiki-breach-of-contract",
+  "generated_at": "2026-08-31T19:15:54Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

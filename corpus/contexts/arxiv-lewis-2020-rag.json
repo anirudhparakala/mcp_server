@@ -1,0 +1,323 @@
+{
+  "contexts": {
+    "023545bad153d9e2dc83f5f5913f10d2c168a3ebe243004257d23d38605db9b2": {
+      "context": "This chunk contains the arXiv document header and navigation elements for the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (arXiv:2005.11401v4), providing links to access the abstract, PDF, and report issues with the HTML version of the paper.",
+      "text_sha256": "52e3c55a7d9774e5228cc88d803dedd39d3c12446f2a42e8ea8ec756efd6835b",
+      "window_index": 0
+    },
+    "046b58d4843e8c70103036d39918467afcffe24a05d17d820ed8e3fb9fddbb60": {
+      "context": "This chunk appears in Section 3.2 \"Abstractive Question Answering\" of the Methods section in the Lewis et al. 2020 paper on Retrieval-Augmented Generation (RAG). It describes how RAG models are evaluated on the MSMARCO NLG task v2.1 to test their ability to generate free-form abstractive answers to questions in a knowledge-intensive setting, contrasting this capability with simple extractive question answering approaches.",
+      "text_sha256": "48b82f8faf5855e37d93d5f5410ee9b919099fe9e70f946418567e32ce1b20b0",
+      "window_index": 0
+    },
+    "07684f3b803a2a5c63ef129f98a4868ebfa141181574bdb78f7964191fa1ac69": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It contains bibliographic entries for works by Gu et al., Guu et al., and Hashimoto et al. that are cited throughout the paper, including foundational work on search engine guided neural machine translation and retrieval-augmented language model pre-training.",
+      "text_sha256": "5a5971fe10f71216ae38c8240e60b5e33c451c77e861ad5a8576b3698f2c7c66",
+      "window_index": 2
+    },
+    "09f61c59619c8c4dc1ca6b9ce9a432632b387a469d27329212906399b195774e": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It contains bibliographic entries for five papers related to question answering, reading comprehension, and knowledge-grounded NLP tasks, including works on coarse-to-fine QA, BERT, conversational agents, and search-augmented datasets.",
+      "text_sha256": "c2583ed0b53c41062ae2e61b73ca7cb9cf3c55ced2a176f7ec474dda13e1ca03",
+      "window_index": 2
+    },
+    "0b7df027e4f4303a854cfe927b94fd08f492005e362f9e87db9811a028121a84": {
+      "context": "This chunk appears in Appendix D of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper, specifically in the subsection \"TriviaQA Evaluation setups,\" which explains the evaluation methodology and dataset choices for the TriviaQA open-domain QA benchmark used in the RAG model experiments.",
+      "text_sha256": "c3996551ce6cfc18347acffda724c61e482d29b781f28082b784533b8f9e72a1",
+      "window_index": 3
+    },
+    "0e334401b8d3e9797a03b6b5997d3a267db721a02e5e5f4f252f14b16712040f": {
+      "context": "This chunk appears in the Related Work section of \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" specifically in the subsection titled \"Retrieve-and-Edit approaches.\" It compares the RAG model's approach to existing retrieve-and-edit methods used in Machine Translation and Semantic Parsing, highlighting key differences in how RAG aggregates multiple retrieved documents rather than lightly editing a single retrieved item.",
+      "text_sha256": "e7c4e17cfa90c2b3b9b3f4a608f90ca86b85c63f985243e19097711aacb96952",
+      "window_index": 1
+    },
+    "15510a479ed7b30472dee48880239e5ab38a375e01c6096b9d173322de060657": {
+      "context": "This chunk appears in Appendix H of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and discusses the phenomenon of retrieval collapse, where the retrieval component of RAG models fails to differentiate between inputs and retrieves identical documents regardless of the query, causing the generator to ignore retrieved documents and reducing RAG performance to baseline BART levels.",
+      "text_sha256": "d2df9506665127aec5ebad6a00b5fe82185af6a02b0d72107e928bfee3ec43e3",
+      "window_index": 3
+    },
+    "169849bd192961a1fc2dcb725ad640285e49556c1cf39238adc4940386447763": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" containing bibliographic entries for works by Fan et al., F\u00e9vry et al., Ghazvininejad et al., and Grace et al. that are cited throughout the paper.",
+      "text_sha256": "2bd58be10f13c4d3fb1ada850d8d28b4bce6da8b4ad7d65c13825d79284f991e",
+      "window_index": 2
+    },
+    "1a742d2057d40aab8a17d9476bc58f9d368267344939d673f3ef49a9c9caafe9": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing bibliographic entries for works by Lewis, Li, and Liu that are cited throughout the paper.",
+      "text_sha256": "f2a7910c1c25d71e3da9ce8c4313036bbdbd363999d0096ccf7c10ae19f52c1d",
+      "window_index": 2
+    },
+    "1ef179db2b9466a3444a76dce5f679e35567b30d085a04ecbfa309fbaef1fc72": {
+      "context": "This chunk appears in Section 2.5 \"Decoding\" under the subsection \"RAG-Token\" of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It describes the decoding procedure for the RAG-Token model variant, which was introduced in Section 2.1 as one of two RAG formulations that can predict each target token based on a different retrieved document.",
+      "text_sha256": "d6e0c32178bd0e59175b7c18478bc38a5ef578d8511353e7827b5aafd7d3b6f3",
+      "window_index": 0
+    },
+    "1f8864657156d5261e94c0938ac75bedc1a304d2b68a98ef2601833dab49402b": {
+      "context": "This chunk appears in Appendix E of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and describes the implementation details and methodology for the FEVER fact verification task, including the classification approach and explanation of why the evidence extraction sub-task was not addressed.",
+      "text_sha256": "ec8c654fb3be2809b676f6acf48ce28c11eed3b413edf2ad6fcb8f5363ef0f28",
+      "window_index": 3
+    },
+    "210de3f0c0e73a8c45d7106c132f8b6a867faee297f8ec3ad792a3d96feb5c2c": {
+      "context": "This chunk appears in the \"Broader Impact\" section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It discusses both the positive societal benefits and potential risks of the RAG model, including concerns about factuality, bias, misuse for generating misleading content, and job automation.",
+      "text_sha256": "22654d2bfb033c2afd04dead2a492d78dcdc56f1687e7c6682760212e6aeb940",
+      "window_index": 1
+    },
+    "2b9e423687433758710f28207901e61b196fd73e3ce8c128a8b42d6ba8cd81c1": {
+      "context": "This chunk is from Section 4.1 (Open-domain Question Answering) in the Results section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It presents RAG's performance on open-domain QA tasks, comparing it to state-of-the-art models and explaining the advantages of RAG's generative approach over extractive methods.",
+      "text_sha256": "123a2b6a6d5f1845a7489a0255c34bc5a7e2c3b765782f276925b75b9aa074f2",
+      "window_index": 1
+    },
+    "2ebf5158d52aeaf717836cb8a5d0c535cd7ab7958bee43845008d05b4c2f4bb8": {
+      "context": "This chunk describes the RAG-Token model variant in Section 2.1 Models of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. The RAG-Token model is one of two proposed formulations for retrieval-augmented generation, contrasting with the RAG-Sequence model by allowing different retrieved documents to be used for generating each individual output token rather than using the same document for the entire sequence.",
+      "text_sha256": "de86b669b41affa2bcae978d2a33683f90e95bb1a3fbc12853601392e23e65be",
+      "window_index": 0
+    },
+    "35cdf9a06d0963df7d51cabab471326bef98ed7df62bf4a1b63ea54cc0d50018": {
+      "context": "This chunk appears in Section 3 (Experiments) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It describes the experimental setup and data preprocessing used across all RAG experiments, including the Wikipedia knowledge source, document indexing methodology, and retrieval parameters for the various knowledge-intensive NLP tasks evaluated in the paper.",
+      "text_sha256": "045f0c2f3185d52f553fda9737014d75ea0c2eddc1eb404b9023e3b61225bdf5",
+      "window_index": 0
+    },
+    "3f3dba76503e7377d5f9ed957fd9071fa5a8f7c94898ac1b84f7a37a8d5465bb": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It contains bibliographic entries for works cited in the paper, including studies on question answering, language models as knowledge bases, and generative pre-training methods.",
+      "text_sha256": "d0197c8a3f747bbe6c8c2a8538f60287e3e0c8539fbaa87ef22b5d6d4d80bed0",
+      "window_index": 2
+    },
+    "433589664a95a3fbb9bc4811078654dba3e75efc3a3b35b05379138cdd4424cc": {
+      "context": "This chunk is from the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing the first five bibliographic entries cited in the paper, including datasets and methods relevant to question answering and reading comprehension tasks.",
+      "text_sha256": "8e9767c161ed6eba7e34e31be58746f42eb542636ada20fc1b52a9aee8a34aee",
+      "window_index": 2
+    },
+    "4700b1620072ec924e0cd0da35ed57b3764ce3742a94565f0402e36b087ef557": {
+      "context": "This chunk describes the FEVER fact verification task in Section 3.4 of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It explains how the RAG model is applied to the FEVER benchmark, which requires classifying claims as supported, refuted, or unverifiable using Wikipedia evidence, and details the experimental setup including the two classification variants tested.",
+      "text_sha256": "77f5071ae229e780d6d30fc58f8a066ff2804e561db37ed650166fbc0eff2ba9",
+      "window_index": 1
+    },
+    "4938a9a510f646a28d3c02fb18a1e8c0649bff51bc7ae35954568ae640d7c947": {
+      "context": "This chunk appears in Section 4.5 (Additional Results) of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper, specifically under the subsection \"Effect of Retrieving more documents.\" It presents experimental findings on how varying the number of retrieved documents at test time affects performance metrics for RAG-Sequence and RAG-Token models across open-domain QA tasks (NQ and MS-MARCO).",
+      "text_sha256": "8028dbbd7c47535762cd2ba03a4a4da0d7fafb2df5ed39ce849a53e640d3e614",
+      "window_index": 1
+    },
+    "4fef63e7cfb9ace0e74b33881342d14290b35fe786ce646b51833aabef85d788": {
+      "context": "This chunk appears in Section 2.3 (Generator: BART) of the Methods section in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It describes the generator component of the RAG model architecture, explaining how BART-large is used as the parametric memory component and how it combines retrieved documents with input queries during generation.",
+      "text_sha256": "37ec97f53f863dbae247b4952448a468ab326d3a361a8aa5369a54784d97be3d",
+      "window_index": 0
+    },
+    "65e5e8ab4acb927a31637840917a95604be21041437f6979d1265badeccaec0c": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" containing bibliographic entries for works cited in the paper, specifically entries from Hossain et al. through Karpukhin et al. that cover topics including text generation, similarity search, reading comprehension datasets, and dense passage retrieval for question answering.",
+      "text_sha256": "0b2ac41f374d5e2cdcac63925d4e550d1d039cd379ff45d9b6d5087f9874e5fa",
+      "window_index": 2
+    },
+    "6f06474fabe8bd7f2b8ef8e7d9fe91f6586bd871492a6c233dd3e212a1335469": {
+      "context": "This chunk appears in Section 2.4 Training of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It describes the joint training procedure for RAG models, explaining how the retriever and generator components are optimized end-to-end using negative marginal log-likelihood, and justifying why the document encoder is kept fixed rather than updated during fine-tuning.",
+      "text_sha256": "62e2154a452de66053551b2f50a1b2db0b83396ac8d6120ebded93198e6112b5",
+      "window_index": 0
+    },
+    "6f0a4e39f9a094861bc0a2cc1a719203fd71225540d8aa99ecef55e4a664ce06": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing bibliographic entries for works cited in the paper, specifically entries from Khandelwal through Lee covering topics including nearest neighbor language models, optimization methods, question answering benchmarks, and memory-augmented neural architectures.",
+      "text_sha256": "a93eeb1a5d4a54d89f7c18ae4288eb14dbc45788e58fafbf788ce3eab9431143",
+      "window_index": 2
+    },
+    "74237a52ef7463e0745ec15203650678a575b1f9cea7e0c832627e5fb328ebab": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" containing bibliographic entries for works cited in the paper, specifically entries for Nema and Khapra [2018], Nguyen et al. [2016], Nogueira and Cho [2019], and Ott et al. [2019].",
+      "text_sha256": "3b7ff9acfa7b4030632da5f5bd0886f89ad6416695d5b20e67df3985607487c4",
+      "window_index": 2
+    },
+    "76da8197dc1b4ed809fe9ee5a9f3f02c474a25313ca6d88f66ba892164cb57fb": {
+      "context": "This is the table of contents for \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (arXiv:2005.11401), a paper introducing RAG models that combine pre-trained retrieval and generation components for knowledge-intensive NLP tasks. The table of contents lists all major sections including Methods (covering RAG-Sequence and RAG-Token models, the DPR retriever, BART generator, training, and decoding), Experiments (open-domain QA, abstractive QA, Jeopardy question generation, and fact verification), Results, Related Work, Discussion, and appendices.",
+      "text_sha256": "7efd0ce7d8095552906301d6fffdcac16b2ed7e526719d2cf4e882e9698639f7",
+      "window_index": 0
+    },
+    "7a3dd784a15aa0932fa0dba5ffc0d891ab6eab2ec7618db386a2590dcf7b4c2f": {
+      "context": "This is the author and affiliation information for the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al., published on arXiv (2005.11401). The chunk lists the seven authors and their institutional affiliations at Facebook AI Research, University College London, and New York University.",
+      "text_sha256": "67db5c57775a86f6fc049f4d06713edeb8b70e12c9d596fdbfe6fca564e9c481",
+      "window_index": 0
+    },
+    "7c87acdc09d1056404fe5391a19dca1a52fda74074c4f4de7fef67861eb1be4f": {
+      "context": "This chunk appears in the \"Learned Retrieval\" subsection of Section 5 (Related Work) in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It discusses prior work on learning to retrieve documents using neural language models and contrasts previous single-task approaches with RAG's unified multi-task retrieval architecture.",
+      "text_sha256": "3ea3725bf236663e27cad3dbc8692050fa43a2761e3b9bcaa9d2d7e23099d806",
+      "window_index": 1
+    },
+    "80138f8ada54539b6aa46b2f6bed2b13844d8fe6e362f9db6da7b3427963a63e": {
+      "context": "This chunk appears in Section 4.5 \"Additional Results\" under \"Generation Diversity\" in the Results section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It compares the diversity of generated text across RAG model variants (RAG-Sequence and RAG-Token) and the BART baseline by measuring the ratio of distinct n-grams, building on earlier findings about RAG's factuality advantages shown in Section 4.3 on Jeopardy question generation.",
+      "text_sha256": "35dbcdd1f7801c45b7c0496ba2c27d99016d3414c33724c0618b0af3c79439a3",
+      "window_index": 1
+    },
+    "825d65b844911d440d0e1c37ca0040e30ba3221583a4b685f4413dd7ec2993e2": {
+      "context": "This chunk appears in Appendix C of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and describes the training infrastructure and implementation details for RAG models, including the frameworks used (Fairseq and HuggingFace Transformers), hardware specifications (8 V100 GPUs), and memory requirements for storing document index vectors on CPU.",
+      "text_sha256": "899581fd9020281283945e969a7444881fc831a07f82b99f3ca8480320cf5799",
+      "window_index": 3
+    },
+    "82ae22c4943566680ba1f82de211d84132f6e504bc810cbf94f6fa6ebe2541b6": {
+      "context": "This is the Acknowledgments section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), where the authors express gratitude to reviewers, HuggingFace, colleagues, and funding organizations that supported the research.",
+      "text_sha256": "689f85863e376eedc7f06df2cf3537c7f7e46049360a89d9ff56a17d7b8d8747",
+      "window_index": 1
+    },
+    "8af74ecdf8318d356f66234d3d72b20636ce92c00596e470fde72c458c300c4c": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing bibliographic entries for works cited in the paper, specifically the final entries from Weston through Zhong and the appendices header.",
+      "text_sha256": "9a426e6193ae634e9ef474f86cd5b5c90b3fb5e8a5169f4dec03c194170a5de7",
+      "window_index": 2
+    },
+    "9521343816f382c2d08278f6093272fa0f5ec852d7510584b0671b4acd638b0a": {
+      "context": "This chunk appears in Section 5 (Related Work), subsection \"Single-Task Retrieval\" of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It reviews prior work showing retrieval improves performance on individual NLP tasks and introduces the paper's contribution of a unified retrieval-based architecture applicable across multiple tasks.",
+      "text_sha256": "2f8dfe0d0edf8652c2dcd7593277e6d8e3d2b3192796c6baf6647a41deba91d7",
+      "window_index": 1
+    },
+    "99c0ac753e626c1f5cd0ff925e95cf1fad65cd8634c55c477e749adfe2a5dd68": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" containing bibliographic entries for works cited in the paper, specifically entries from Malkov and Yashunin through Moghe et al.",
+      "text_sha256": "c910a12f8fb358b10875296c6a406d89c4acd11833e1f24f89c6fc7d9241e52f",
+      "window_index": 2
+    },
+    "9d14b50b5aae204a714948043caccd6f95d8bfaa1472841f2424fcc4928ab8dd": {
+      "context": "This chunk appears in Section 4.5 (Additional Results) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" specifically under the subsection \"Index hot-swapping.\" It demonstrates an experimental advantage of RAG's non-parametric memory architecture by showing how the model's knowledge can be updated at test time by replacing the document index, unlike parametric-only models like T5 or BART.",
+      "text_sha256": "6cf30ba613ed64c880911853c2580cce283998a32f1ffe6f89fece6c481d18d8",
+      "window_index": 1
+    },
+    "9f7747fc6b8c428c95b3474ebf32b7bc1755242cb762adba4025d8ccb2c8f005": {
+      "context": "This chunk appears in the Related Work section under \"Memory-based Architectures\" of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It discusses how RAG's document index functions as external memory for neural networks and compares RAG's approach of using raw text retrieval to related work that uses entity embeddings or fact embeddings, highlighting the interpretability and updatability advantages of RAG's text-based memory.",
+      "text_sha256": "35d82a0bb7636c8235bb29f6952a908105bee06845460d6bc4b7bff44a868021",
+      "window_index": 1
+    },
+    "9ff5795479821304beb238922b65a4f1ef1c29f2c63751f0771215e51563841d": {
+      "context": "This chunk appears in Appendix I of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and provides a brief reference to Table 7, which contains dataset statistics for the experiments described throughout the paper.",
+      "text_sha256": "c8a1dbee3028a3dfbdbbfaaf48f00ae44bf0fdab1c1b2b33f39e2005d1dda945",
+      "window_index": 3
+    },
+    "a2734c1753206a0bfd82c950cf8af2635a35411ecb1bcef536c717220319c446": {
+      "context": "This chunk appears in Appendix D of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and describes implementation details specific to open-domain QA tasks, explaining how the RAG model handles multiple answer annotations across different datasets like Natural Questions, WebQuestions, and TriviaQA during training and evaluation.",
+      "text_sha256": "a70e959ddf110893586ce53b7ba1c12637911a60238aae74182ce95786d6e82c",
+      "window_index": 3
+    },
+    "a39b69a160be29f009e6ca2b41e37ea5a04507788ec9dd29168989d24565ae46": {
+      "context": "This chunk appears in section 4.5 \"Additional Results\" under \"Retrieval Ablations\" in the Results section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It discusses ablation studies that evaluate the effectiveness of RAG's learned retrieval mechanism by comparing it to frozen retrieval and BM25-based retrieval across multiple tasks including FEVER and Open-Domain QA.",
+      "text_sha256": "41f52093c8cbeab15dfde4f9d5c67f3869d905ce30eb598897060aed72d1568e",
+      "window_index": 1
+    },
+    "a5ee72c8662d1a090698037dd4b9cc3c060d9714567ae70c46b26cfdc73314ec": {
+      "context": "This chunk is from the Introduction section (Section 1) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It introduces the motivation for RAG models by discussing limitations of pre-trained language models that rely solely on parametric memory, and presents the core contribution of combining parametric and non-parametric memory through retrieval-augmented generation using DPR and BART components.",
+      "text_sha256": "5fc97ed22840d607b5a6014df9316eaa62ee02e541b0a757c0cd0641c50da2bc",
+      "window_index": 0
+    },
+    "a9b13b68a643d4eaed024caeb9668300fc03c1fbe15cc7a4c342aa2863e8c2bd": {
+      "context": "This chunk from the Introduction section of the Lewis et al. 2020 paper on \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" summarizes the key contributions and performance results of RAG models, which combine parametric memory (BART seq2seq model) with non-parametric memory (Wikipedia document index accessed via DPR retriever) for knowledge-intensive NLP tasks including open-domain question answering, abstractive QA, question generation, and fact verification.",
+      "text_sha256": "dc7bb0a619994302ee76ae5beb43c41e71908c17aeada5da91c58bb7e11fc96f",
+      "window_index": 0
+    },
+    "ae94dd9b0f3278da10bd79c48babdbd950ef35524cb78e0f0e829c03dfd83a3f": {
+      "context": "This chunk appears in Appendix D of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper, specifically in the \"CuratedTrec preprocessing\" subsection. It describes the preprocessing methodology used to handle CuratedTrec dataset answers, which are provided as regular expressions, to make them suitable for training answer-generation models in the RAG framework.",
+      "text_sha256": "2b13aa7b71efcd6c736b40e5fd5f157805cc4a0494ea5e1e303556bfd560eb6d",
+      "window_index": 3
+    },
+    "b1542fe56087769d1f8d71369a5bdfa60400ce10e1a38a0e4c1d6f6b6446d479": {
+      "context": "This chunk describes the RAG-Sequence model, one of two main model variants introduced in Section 2.1 (Models) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. The RAG-Sequence model is contrasted with the RAG-Token model and represents an approach where the same retrieved document is used to generate an entire output sequence, with the retrieved document treated as a latent variable that is marginalized over using a top-K approximation.",
+      "text_sha256": "861b4f63aa49d2aa6ab2b6858b6ccc7886f06735dfa31338cfb05d659b3fe351",
+      "window_index": 0
+    },
+    "b4c8b4f8f66c12ab99c7e80f7043c1c79ec86c84328e7d4ef046d12f905afc8b": {
+      "context": "This chunk describes the decoding procedure for the RAG-Sequence model in Section 2.5 (Decoding) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It explains two decoding strategies\u2014Thorough Decoding and Fast Decoding\u2014that are used to approximate the maximum likelihood output when the model uses the same retrieved document for generating the entire sequence.",
+      "text_sha256": "62f5fd1c7618543aee213ed980c62e278eac630af262db78410e321ca98484f4",
+      "window_index": 0
+    },
+    "b845310b0ead7caafb06ade7b14d22e11ec327e923548eb853c4ddc2055fd029": {
+      "context": "This chunk is from the Discussion section of \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" a paper presenting RAG models that combine parametric and non-parametric memory for knowledge-intensive NLP tasks. The section summarizes the paper's main contributions, findings across multiple tasks including open-domain QA and fact verification, and proposes future research directions on combining parametric and non-parametric memories.",
+      "text_sha256": "a4c5f27de49d1a8ce1336569367e75124aeb05432b1056c2c498699c18bcfb26",
+      "window_index": 1
+    },
+    "b98d2a8025aab4d02cd5e3ed3e5170554c0c32d539e31692fb6d326eae043dc1": {
+      "context": "This chunk appears in Section 2 (Methods) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (arXiv:2005.11401). It introduces the overall RAG framework and its two main model variants (RAG-Sequence and RAG-Token) that combine a retriever component and a generator component for knowledge-intensive NLP tasks.",
+      "text_sha256": "01b2b1bf7b28cf05c5da9ce8cb1f2184ffdcb5ef584ed65ba2040f182d8063b9",
+      "window_index": 0
+    },
+    "be8040104f69296423689b0b4de99cf689047cad3b1a903ecf653624d598bc84": {
+      "context": "This chunk appears in Section 2.5 (Decoding) of the Methods section in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. It introduces the decoding procedures for the two RAG model variants, RAG-Sequence and RAG-Token, which are defined earlier in Section 2.1 (Models).",
+      "text_sha256": "59ae31bba5f975396d1f0feff7d3fc8aec55bf1d409510beeb1e67a9847719c7",
+      "window_index": 0
+    },
+    "c4d80aae1fbb520db3de4c539fe5d920b7e73b61d791c59e555898a25d5d443e": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,\" containing bibliographic entries for works cited in the paper, including SuperGLUE benchmark, reinforced ranker-reader for open-domain question answering, evidence aggregation for answer re-ranking, and memory networks.",
+      "text_sha256": "20cde3e8022b19548e77adf8cade32cd09b72f4b096ed0e672ed4626113ca741",
+      "window_index": 2
+    },
+    "c881682877b1c22505ae6262a9503a9fa73e90a5b307228eeb9cb6c970554f8c": {
+      "context": "This chunk is from Section 3.3 \"Jeopardy Question Generation\" in the Experiments section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It describes the experimental setup and evaluation methodology for testing RAG models on the task of generating Jeopardy questions, including the dataset used (SearchQA), evaluation metrics (Q-BLEU-1), and human evaluation criteria (factuality and specificity).",
+      "text_sha256": "e12068b13edab1b6b81bcfd52437ea882fb6c9d2ed6fcd660e49c70582e3ea03",
+      "window_index": 0
+    },
+    "c948ebc9eebf101fcf71bfa6931ab34694fd18a9b8e9d2cb16562ff1e9b74b43": {
+      "context": "This is the abstract from \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (arXiv:2005.11401), which introduces RAG models that combine pre-trained seq2seq generators with dense vector retrieval over Wikipedia to improve performance on knowledge-intensive NLP tasks including open-domain question answering and language generation.",
+      "text_sha256": "fc2cc7a0dfa038a7c3aa78e32c01175acd072f18387806bb886c02fd17a14990",
+      "window_index": 0
+    },
+    "cb574f338a5d628aaa9744617153be68daea92a7a22ce24f217ab78a45c96136": {
+      "context": "This section appears at the end of the arxiv paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" and provides instructions for readers to report HTML rendering errors and accessibility issues with the paper's HTML version on arXiv, rather than being part of the paper's technical content.",
+      "text_sha256": "2c4490804b2e5e7057d2405d7eaa489df1f4ffb958026dbee0e71f53f0d59f73",
+      "window_index": 3
+    },
+    "cb62b37f8d11640ca229ebe831598e29bd6a3bef63480f84cf5c66f23d8b0878": {
+      "context": "This chunk appears in Section 2.2 \"Retriever: DPR\" of the Methods section in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It describes the Dense Passage Retriever (DPR) component used in RAG models, explaining its bi-encoder architecture with BERT-based document and query encoders, and how it retrieves the top-k documents using Maximum Inner Product Search to serve as the non-parametric memory component of the RAG system.",
+      "text_sha256": "177d476fe078fad347e0bc9c4319337502c21426eaa8a504f6fd467bd7bb4ed4",
+      "window_index": 0
+    },
+    "d4ca27941a707b4b3e0875f3c8083f38f92756ef6a9536e5697556734a6dcb46": {
+      "context": "This chunk appears in Appendix G (Parameters) of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" and provides a detailed breakdown of the trainable parameters in RAG models, comparing them to baseline models like T5 for open-domain QA tasks.",
+      "text_sha256": "c08b6b9910be6fa20eee253becc7be12680923f58e2657a9812c9d4adfe0f024",
+      "window_index": 3
+    },
+    "dcde46b5c70c2965e73d249d9f103a20d5ccc87db5aa9d443c459e5931455108": {
+      "context": "This chunk appears in the Related Work section (section 5) under \"General-Purpose Architectures for NLP\" of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It discusses prior work on pre-trained language models like GLUE, GPT-2, BART, and T5 that achieve strong performance without retrieval, providing context for how the RAG model's retrieval-augmented approach differs from and builds upon these existing architectures.",
+      "text_sha256": "dcc5cb331c46c2493a28458e514535d1f105346c5514ebfc2d3818a79685147c",
+      "window_index": 1
+    },
+    "df7bfd5e311f3445a57326a59cdb480bd0302eee6b74d1ee34f42b2dc42a649a": {
+      "context": "This chunk is from Section 4.3 (Jeopardy Question Generation) in the Results section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It presents human evaluation results comparing RAG-Token and RAG-Sequence models to BART on the Jeopardy question generation task, and analyzes how RAG-Token combines parametric and non-parametric memory when generating multi-part answers.",
+      "text_sha256": "4080a676b082056c585a6fded5e09bcd2bbda3d0cb4fc2fba8cc097010b45bc0",
+      "window_index": 1
+    },
+    "dfc2ad19a8bc959f06bb1b752b60236d39d44278aec3dcb4d63e8e3bf87587d5": {
+      "context": "This chunk presents the experimental results for RAG on the FEVER fact verification task, which is part of Section 4.4 (Fact Verification) in the Results section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" The chunk reports RAG's performance on both 3-way and 2-way classification variants of FEVER and analyzes the quality of retrieved evidence documents compared to gold annotations.",
+      "text_sha256": "5e6de48a8b794e922e8785d04a4fb4dff1783f8047803a7d27a75ee79d9822d7",
+      "window_index": 1
+    },
+    "e2913516822d58d9f6cb1fc9ba1f9a6eddd397a0c99c6f73e0da7a6036f6da3b": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing bibliographic entries for works cited in the paper, including foundational machine learning papers like Vaswani et al.'s \"Attention is all you need\" and benchmark datasets like the GLUE benchmark.",
+      "text_sha256": "ee950b72f67c7215cfd0bafcecf5a3b4a49799336968c01b9877fb81e9c0117b",
+      "window_index": 2
+    },
+    "e390c7e71b6c271bbd0b16953231f83f98624bd66bb92a93f15b0436ae65099f": {
+      "context": "This chunk appears in section 4.2 \"Abstractive Question Answering\" of the Results section in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" It presents experimental results comparing RAG-Sequence model performance to BART baseline on the Open MS-MARCO NLG task, highlighting RAG's advantages in factuality and diversity despite not having access to gold passages.",
+      "text_sha256": "2945864e63146b2fffa6fca4f22c48e820975e2df04338ae28d62db35513394c",
+      "window_index": 1
+    },
+    "ebc9a91af7b91054030a14768227c3e5e9e6b82e9158392acdee27e029ef4e87": {
+      "context": "This chunk appears at the beginning of the arXiv paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Patrick Lewis et al., providing the document's arXiv identifier, version number, submission date, and licensing information.",
+      "text_sha256": "b25c37ace740bc70ea65db4d8407c883fbcc80adfb00c473625c89b025cdfecd",
+      "window_index": 0
+    },
+    "ef8f8cd8b238a9a74417bb254155f09c08b118cccb6eab4f2b744bab2692c792": {
+      "context": "This chunk is part of the References section of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020), containing bibliographic entries for works cited in the paper, including references to transformer models, language model knowledge, information retrieval frameworks, memory networks, and fact verification datasets.",
+      "text_sha256": "c09b4c8bf152c1f1923a0891fd48a7b6a68b20a0558b5351057e22a16a77481d",
+      "window_index": 2
+    },
+    "f7cc60191226c099d07e94a82be6e295ed9bd9bdc2de1f3f1579582a9f9288da": {
+      "context": "This chunk appears in Appendix B of the \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" paper and describes the methodology and interface used for human evaluation of factuality in the RAG model experiments, including annotation procedures and quality control measures.",
+      "text_sha256": "a37532880a0bb8a62c737cd7b72e3226383055a7e5688f12a40d0b4216bf6513",
+      "window_index": 3
+    },
+    "f7ce0233fb16d9c38c47c09bf596692fc6b81a89ed3b836d599fb3e98cca9bdc": {
+      "context": "This chunk appears in Appendix A Implementation Details of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" and specifies the experimental configurations used for evaluating RAG models on different tasks, including the number of retrieved documents, decoding strategies, and baseline comparisons for Open-domain QA, Open-MSMarco, and Jeopardy question generation.",
+      "text_sha256": "0920bc4ae089ea4a6ab9fb8a5b8bdd7e9426ec9774215f1640cc9661045e9360",
+      "window_index": 3
+    },
+    "f854db0f29dca0d1bd4d7e0f03ddc3960c7ead3225865a794399b34adfcc4875": {
+      "context": "This chunk appears in Section 3.1 \"Open-domain Question Answering\" of the Experiments section in the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" by Lewis et al. (2020). It describes the experimental setup for evaluating RAG models on open-domain QA tasks, including the datasets used (Natural Questions, TriviaQA, WebQuestions, CuratedTrec) and how RAG's performance is compared against extractive QA and closed-book QA approaches.",
+      "text_sha256": "2cb4600014ad99eafc49751b2600fc53a6d30b68894fb9eb5d7190dcd4998a7e",
+      "window_index": 0
+    },
+    "fcf676e7373794eb787587b131642472b923be311ea75343c7d7ac81de9e8a2f": {
+      "context": "This chunk appears in Appendix F of the paper \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" and discusses experimental work on adding a null document mechanism to the RAG model to handle cases where retrieval does not provide useful information.",
+      "text_sha256": "03c5d51510116a4f7d9838a4f7a1b63dbc50252226e384b4c656eec66c548b29",
+      "window_index": 3
+    }
+  },
+  "doc_id": "arxiv-lewis-2020-rag",
+  "generated_at": "2026-08-29T21:42:19Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

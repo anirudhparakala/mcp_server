@@ -1,0 +1,14 @@
+{
+  "content_hash": "48fb5fa4e2eeb4e03c16033efb15c0dc5d180237afe08d98617b5e7f54fd8b63",
+  "content_type": "application/pdf",
+  "doc_id": "pmc-frequency-volume-equated",
+  "fetched_at": "2026-07-29T14:54:13Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC9560172",
+  "format": "pdf",
+  "license": "CC BY 4.0 (PLoS One; via Europe PMC PMC9560172)",
+  "license_ok": true,
+  "raw_filename": "pmc-frequency-volume-equated.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC9560172?pdf=render"
+}

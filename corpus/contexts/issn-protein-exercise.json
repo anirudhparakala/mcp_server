@@ -1,0 +1,403 @@
+{
+  "contexts": {
+    "04be69baf274bf6e1176e1a85743460cfc74cc96ec9903a74ea588ceced7a5df": {
+      "context": "This statement appears in the Funding section of an International Society of Sports Nutrition position stand on protein and exercise, indicating that no external financial support was received for the preparation of this scientific review and position statement.",
+      "text_sha256": "78138abf5c3ffb2fc6c52d377a64d34e304fa3275940bc55b39b627691ef0101",
+      "window_index": 4
+    },
+    "068232302b550174f875b72f805f6838d1d559c5af93d7c6826120c00c4d440a": {
+      "context": "This chunk appears in the \"Beef and other flesh proteins\" section of a document reviewing protein sources for exercise and athletic performance. It concludes the discussion of meat proteins by highlighting their health benefits beyond muscle adaptation, specifically their association with IGF-1 levels and bone health.",
+      "text_sha256": "98d8a59496291f35a0b4f72d977fe39f866ac45f1a1860dae55fed0170e7c5b9",
+      "window_index": 3
+    },
+    "07d6cbfe7a6a9dc7b0ff008ecc7b79be4c0a58ad0bbc4bc756e5f015721acee0": {
+      "context": "This chunk is from the \"Body composition\" section of the International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It discusses how protein supplementation combined with resistance training promotes increases in fat-free mass and lean body weight, citing multiple studies and meta-analyses that demonstrate these effects.",
+      "text_sha256": "98be93e15f0b8c90bec21a48988673f94515688de54ee17d53244c2aa0337ff1",
+      "window_index": 0
+    },
+    "093d3dcfe144c701cd9a65488caae0efc540369f33b8e6325856aa85a4811476": {
+      "context": "This chunk appears in the \"Protein timing\" section of a document on protein and exercise, establishing foundational research showing that exercise and macronutrient consumption work synergistically to produce anabolic effects. It reviews seminal studies demonstrating the importance of essential amino acids (EAAs) and the concept of peri-workout nutrition timing for maximizing muscle protein synthesis (MPS), muscle repair, and hypertrophy adaptations in resistance exercise.",
+      "text_sha256": "882d50f52c8da9161dc1fdce8fff6cbf246dbf532bcb1958c0e8990bf0a11b74",
+      "window_index": 1
+    },
+    "0fe8ed82b607350af9ad6f1b5263ae12d78b582db017814251c16bc7e0eeda57": {
+      "context": "This chunk appears in the \"Health benefits of milk-based proteins\" section of a document on protein sources for exercise and athletic performance. It describes the specific health benefits of whey protein beyond its role in skeletal muscle repair, including its bioactive peptides, immune system enhancement, and micronutrient properties.",
+      "text_sha256": "3e4e02b3084a7a23c1404f486d8b631cdcbe6d2ab7c8831e02c89b22d9c0754a",
+      "window_index": 3
+    },
+    "12ed2a0aea04e6871644ddf65e185f679b40a362d3b73bee94d4f49f7bee8ef8": {
+      "context": "This section from the References of a document on protein and exercise contains citations 30-42, which cover studies examining protein supplementation effects on muscle strength, hypertrophy, and body composition in response to resistance training and exercise, as well as protein requirements for active individuals.",
+      "text_sha256": "d5e45752bbbcc7b388bcd2372106f2e7b7f2234b00fda8006d4984540fba7950",
+      "window_index": 5
+    },
+    "15cd6e8cc49acd356a9587c0f664e3a47cc619cf269ccede7256bc91906de368": {
+      "context": "This chunk appears in the \"Filtration processes\" section of an International Society of Sports Nutrition position stand on protein and exercise. It describes and compares two primary filtration methods used in commercial protein preparation: ion exchange filtration and micro/ultrafiltration methods, explaining their respective advantages and disadvantages for producing protein supplements.",
+      "text_sha256": "b8039eed17d1324c43ba5ff7026d53c3e42d94d9e14615acb2e3c10c1c2da785",
+      "window_index": 4
+    },
+    "18446046e9263e20d0b452bee2fb0cc79d969ee4489a6b6e2a21c5a0db4cd281": {
+      "context": "This chunk is from the \"Protein timing\" section of a document on protein and exercise, specifically discussing optimal protein dosing and types of protein sources for stimulating muscle protein synthesis (MPS) in response to resistance exercise. The chunk compares different protein sources including whey, casein, soy, and plant-based proteins, and explains why whey protein is particularly effective for pre- and post-exercise supplementation.",
+      "text_sha256": "0c313b75b480043233867fb175074430ac15f504789397ae95a92839285bc344",
+      "window_index": 1
+    },
+    "1bf69f0053e8bca3099eeda4b0affd6572431f126792fbafa3214e6debc168be": {
+      "context": "This chunk is from the \"Digestive enzymes in proteins\" section of an International Society of Sports Nutrition position stand on protein and exercise. It defines digestion and explains how digestive enzymes like proteases and lipases function in sports nutrition products to break down proteins into peptides and amino acids, while noting that enzyme production decreases with age and that further research is needed on their efficacy.",
+      "text_sha256": "c4ea41771a13893bb75aa5b10508f03014d98d1a1ec542a123a5ff16a422757d",
+      "window_index": 4
+    },
+    "1d396493f1f8c27045e5479fd6eaa02cdd395da08610bfe6b74e84e50f171020": {
+      "context": "This chunk appears in the \"Protein ingestion and meal timing\" section of a scientific review on protein and exercise. It discusses future research directions and practical recommendations for protein consumption patterns throughout the day, building on findings from the Areta et al. study about optimal protein feeding strategies during recovery from resistance exercise.",
+      "text_sha256": "8ce94ada4076a66422afe829042e53dae5f153d89e5598400675049611f868ee",
+      "window_index": 2
+    },
+    "200e6e73e7ad4631a5ad22794b597b6e5cf86fc27456bda3faa4d0e5cbb6dea3": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 186-196 that discuss the effects of various protein sources, creatine supplementation, and amino acid ingestion on muscle performance, body composition, and protein synthesis in response to exercise and resistance training.",
+      "text_sha256": "d9b26e17340bd185039e03a4e73e7630dfae316739f5829978181f0d5d39c183",
+      "window_index": 6
+    },
+    "216f8ad5771e206b3deb24785f5d7c59efb67749bc0347fa069aebea797d43c3": {
+      "context": "This is the Abstract section of an International Society of Sports Nutrition (ISSN) position statement on protein intake for healthy, exercising individuals. The abstract presents 14 key recommendations covering protein intake guidelines for muscle protein synthesis, daily protein requirements, protein timing, sources, and quality for athletes and physically active individuals.",
+      "text_sha256": "99bcdd1fb19ff11c0239aa63343f32d1e6e15d0dfcb1ad79fd2bd83f735f2b91",
+      "window_index": 0
+    },
+    "22cadc524cd542a6079edd6593935bb980040288c9289fcba976c0b41d861731": {
+      "context": "This chunk is from the \"Body composition\" section of the International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It discusses research findings on how elevated daily protein intake combined with energy restriction and exercise promotes fat loss while maintaining fat-free mass, citing studies by Layman and Pasiakos that compared different protein intake levels relative to the recommended daily allowance (RDA).",
+      "text_sha256": "b146ff89ca179daa3f5e3a85cbdea79b9477515bfceeca93c151069e0dca9e4b",
+      "window_index": 0
+    },
+    "23d24f3ebd8a32e2d83efd83f1c3d23b3eb40aeeb2fd50f694572b7dc35cb330": {
+      "context": "This chunk is from the \"Criteria for comparing protein sources\" section of a research article on protein and exercise. It discusses objective methods for assessing protein quality, including Biological Value, Protein Efficiency Ratio, PDCAAS, and IAAO, and identifies leucine content and digestion rate as two critical variables determining a protein's impact on muscle protein synthesis (MPS) and body composition. The chunk includes comparative analysis of different protein sources (dairy, egg, meat, and plant-based) and references research by Norton, Wilson, and colleagues examining how leucine content affects MPS rates.",
+      "text_sha256": "f51b61cfb8ac128eaa1cf0572d6546238e87d321126af853c8f3348814a12aa3",
+      "window_index": 3
+    },
+    "286e4b6a63822ce64ba7a19b571d79f649c8b4107a9bd1751834f1115d985f82": {
+      "context": "This chunk appears in the \"Protein timing\" section of a research article on protein and exercise, summarizing key findings about how meal timing and macronutrient composition affect muscle protein synthesis (MPS), muscle protein balance, and exercise adaptations. The chunk synthesizes established research on the relationship between protein intake, essential amino acids (EAAs), insulin signaling, and muscle recovery across different exercise modalities.",
+      "text_sha256": "2c08bfdfe3025accfe917c3512dcd56d390e5356241a4b83b809de396c7b6983",
+      "window_index": 1
+    },
+    "2d0d1af5331a56f725efbfb66dbd70c242fd380502df52e3562bf0ca26c81f32": {
+      "context": "This chunk is from the \"Beef and other flesh proteins\" section of a document on protein sources for exercise and athletic performance. It discusses the nutritional composition of beef and meat proteins, their amino acid and micronutrient content, and research comparing meat-based diets to vegetarian diets for muscle mass and body composition gains in resistance-trained individuals.",
+      "text_sha256": "e48836785298be17b0c8cfc27b9905d188dad37180af9fe34983365152170024",
+      "window_index": 3
+    },
+    "3178e9da268009ff86703c32854bf20d6574e2413f6efd914d1aba330d342d98": {
+      "context": "This chunk comprises the key points section at the end of the \"Protein quality\" section of a document on protein and exercise. The section discusses essential amino acids (EAAs), branched-chain amino acids (BCAAs), leucine, and their roles in stimulating muscle protein synthesis (MPS) in athletes. These key points summarize the main findings about protein quality, amino acid composition, and optimal dosing strategies for maximizing MPS responses.",
+      "text_sha256": "7bb312f726b42c29cccf7c4ef408ef1d7cccf740daa0d6a2b002d9497111c788",
+      "window_index": 2
+    },
+    "34f597e133d2f079780a1686811ec1b8a8bdd9171c07da3e024f73dd1d312a2d": {
+      "context": "This chunk comprises references 138-147 from the References section of a document on protein and exercise, covering studies on muscle protein synthesis signaling, protein intake timing and distribution, protein-pacing interventions, and protein requirements for active individuals.",
+      "text_sha256": "c3d8cac67d83c7f3cc2869302dfbd145437577fb5430ddeba0e5d5a37136c46c",
+      "window_index": 5
+    },
+    "372d06b8128ea32970e5f8facb30330ede3b213a2c210514897a4318dc9fd73b": {
+      "context": "This chunk appears in the \"Criteria for comparing protein sources\" section of a document on protein and exercise. It presents a comparative study by Tang et al. examining how different protein sources (whey, soy, and casein) affect muscle protein synthesis (MPS) at rest and following resistance exercise, demonstrating that faster-digesting, high-leucine proteins like whey are most effective for stimulating MPS.",
+      "text_sha256": "d7b2eeef66472afc773da6b68f010b2db388fa7e333817703697fbf320a5fedd",
+      "window_index": 3
+    },
+    "3de6ae3e2349b4e022e1b08a63ce069f8ec53e626354a0473e18b961d9b720c1": {
+      "context": "This chunk appears in the Authors' contributions section of an International Society of Sports Nutrition position stand on protein and exercise, documenting the roles of the primary and contributing authors in preparing and reviewing the manuscript.",
+      "text_sha256": "92b6ff050dabbebaa2d06899d46592c06df6f7c2bf3608ce5f07d97bca719523",
+      "window_index": 4
+    },
+    "45eda4d1e5587fd06245f8149654cc180ace8cc45f069c2197ca3cd57b38525b": {
+      "context": "This chunk concludes the \"Endurance exercise performance\" section of the ISSN position statement on protein intake for exercising individuals. It summarizes findings on how protein supplementation affects endurance athletes' performance, muscle damage markers, and muscle protein synthesis during prolonged exercise.",
+      "text_sha256": "367188da5c7508fb521ee652a5cf1b4d0cf9eaae6550f296d634143db056dcea",
+      "window_index": 0
+    },
+    "4a4d6103ac1fedadb29c876abff4927c1ac4b39a2266baf46364d097bdb392e9": {
+      "context": "This chunk is from the \"Protein quality\" section of a document on protein and exercise, discussing how protein quality is defined and measured. It explains the composition of amino acids, methods for assessing protein quality, and compares the effectiveness of essential amino acids (EAAs) versus whole protein sources in stimulating muscle protein synthesis (MPS), with particular attention to differences between younger and elderly populations.",
+      "text_sha256": "f90293d31893542a869b2ceb7742457878afb36d96f709f7bc39bdf1c3197424",
+      "window_index": 2
+    },
+    "4be0cbdf6e41882d2019188da9475dd679d74a263560a7f179532d239b7a0e07": {
+      "context": "This chunk appears in the \"Key points\" section following the \"Resistance exercise performance\" section of the ISSN position statement on protein intake for exercising individuals. It summarizes findings about how protein supplementation affects strength gains during resistance training programs.",
+      "text_sha256": "fdadb3973e36d7bf205272b40a2c7f4917a4945fb4f47d4218c15dd8e7c91f2a",
+      "window_index": 0
+    },
+    "4dc2227daf33a921b3213c905819523b0a706aff86c6dde14cae7f697e161311": {
+      "context": "This chunk is from the \"Hydrolyzed proteins\" section of an International Society of Sports Nutrition position stand on protein and exercise. It presents research findings on the effects of hydrolyzed whey protein isolate supplementation on muscle recovery, strength, body composition, and exercise performance compared to non-hydrolyzed protein and placebo controls.",
+      "text_sha256": "b05c1bd0d3acaa523807495ef40af2522613c6cfa487c1764b463c28b3a676ec",
+      "window_index": 4
+    },
+    "55e57087c8eb06769eff8c1464473def51644d206745066914a55f925f3964c7": {
+      "context": "This chunk from the References section of a document on protein and exercise contains citations 51-62, which document research on amino acid types, timing of protein ingestion, and mechanisms of muscle protein synthesis in response to resistance exercise and protein supplementation.",
+      "text_sha256": "8506d0dbab464f4667f97cb8cad131c22ab289287df25bb7ae78fab9bcd75017",
+      "window_index": 5
+    },
+    "5cfdd8cc3f08db9d0dc34c957a837c1a1e86e0f3f55a01becbfa4976f04a8121": {
+      "context": "This chunk appears in the \"Benefits on exercise performance\" section of the International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It introduces the two main categories of exercise performance that the document examines regarding protein supplementation effects.",
+      "text_sha256": "504a80059a8ba1535e949d4c2f57c15d1af0ab2ba495daa7ef4ecfe0a29aa508",
+      "window_index": 0
+    },
+    "5ee9c28feba45258acdc25519f27ea5eef2fc15fb616d4dca757530442143b9d": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 173-185 that cover topics including protein composition effects on sleep and recovery, whey protein components like lactoferrin and alpha-lactalbumin, functional foods, and the relationship between dairy products, meat, and sports performance.",
+      "text_sha256": "96d57e85f6cd378a587d4e6966e139f1c61537f9140cd9d66849f51aa7b0dd94",
+      "window_index": 6
+    },
+    "5fa4de0818101b02536254b3d52d10c572dbb67d601d68858b0f7276dc5b2260": {
+      "context": "This chunk is from the \"Milk proteins\" section of a document on protein sources for exercise and athletic performance. It presents research comparing whey and casein proteins, two classes of milk proteins discussed earlier in the section, specifically examining their effects on muscle protein synthesis (MPS) and body composition adaptations to resistance training.",
+      "text_sha256": "2416f6a81a65c809db0a8ab673e4c75aa2472965ec97ecbe166dd1cea992aae2",
+      "window_index": 3
+    },
+    "62610239380768ffc53245e3db3e12f8f14689e6629e7e1a8b102ce1ac955489": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 161-172 that address topics including leucine's role in protein metabolism, milk-based supplement timing and effects on muscle damage and recovery, protein digestion rates in aging, whey protein's effects on glycogen and cognitive performance, and branched-chain amino acids in exercise contexts.",
+      "text_sha256": "fee3b2339b17eb7468bc2715b8356ebb88a78e6d771c1bd94ca983eb4c45b017",
+      "window_index": 6
+    },
+    "6330939871b56dbcaae867c7db1af887f1bca5921669f4ac68cecfdc47fa5649": {
+      "context": "This section of the References list from a document on protein and exercise contains citations 104-116, covering research on branched-chain amino acids, whey protein, carbohydrate supplementation, and notably the effects of nighttime protein ingestion on muscle protein synthesis, recovery, and metabolic outcomes during exercise training.",
+      "text_sha256": "c9a40aa3103cfebe87e204d85278374136badb409539989971585fc2cc5018df",
+      "window_index": 5
+    },
+    "6398b6019e93e9bf9b7753da99aa83729e8b5077daa45070850262d6c71e0c24": {
+      "context": "This chunk appears in the \"Resistance exercise performance\" section of the ISSN position statement on protein intake for exercising individuals. It summarizes research findings on how protein supplementation affects maximal strength gains when combined with resistance training programs, discussing studies by Hoffman, Cermak, and Pasiakos that examine the relationship between daily protein intake levels and strength improvements in athletes.",
+      "text_sha256": "553ddea3e07e7d16be6e47b605f330ab2b7befc5789041c57ac6e10e620b7308",
+      "window_index": 0
+    },
+    "64f28ba274aadf9afd842f0791d0a9fdc662931ddd0ec5227afb824365a0d435": {
+      "context": "This chunk is from the \"Protein blends\" section of a document on protein sources for exercise and athletic performance. It reviews research studies comparing the effects of combining different protein sources (such as whey and casein, or whey and soy) on muscle protein synthesis, body composition, and strength gains during resistance training, in contrast to single protein sources discussed in earlier sections.",
+      "text_sha256": "ff19a8ad4941ee0e0dae1fce6b0c6a592241a39d64abf4b9a9ba14f115563d90",
+      "window_index": 3
+    },
+    "65e6b9c5f6a6da520a3c8afa8b3c9942684e93ac7d98ffa3541fdedff836c972": {
+      "context": "This chunk appears at the end of a research article published through BioMed Central and lists the publisher's manuscript submission services and benefits, including pre-submission support, journal selection assistance, peer review, and indexing in major databases.",
+      "text_sha256": "79fd1a648334fd7022df675ba2b825dddfb03204cd5db188099199c1a749201b",
+      "window_index": 7
+    },
+    "75d14acf8948b1b42a4c3ddc7202c6006f41c7efc820648936a19e2724412ad3": {
+      "context": "This chunk is from the \"Protein ingestion and meal timing\" section of a document on protein and exercise. It presents research findings on how the timing and frequency of protein consumption affects muscle protein synthesis (MPS) and muscle mass gains, including studies by Paddon-Jones and Areta examining optimal protein feeding patterns in relation to resistance exercise and recovery.",
+      "text_sha256": "647ec7b01b7d3c898c7a45067001198cfa4bcb122d87530818d2fea53949f138",
+      "window_index": 2
+    },
+    "80359a019b1e839fa8d747a6917f8993093bf0a1972e8d0f49b9d71038a82606": {
+      "context": "This chunk comprises the first six references from the References section of a document on protein and exercise. These citations establish foundational research on protein supplementation, dietary protein intake, and exercise performance, including studies on whey protein supplementation, carbohydrate-protein combinations, and cycling endurance outcomes.",
+      "text_sha256": "4346ae904349d816af2fee4693141d80ae7ac34f1b4a18700d99ce8eb74fb178",
+      "window_index": 5
+    },
+    "8065f1fa00cc4b125bd8eb6d7eea94f9ed4a7bb8ec666aaa2851ce2b58af24f7": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, specifically citations 75-86 that address nutrient timing, protein type, and dosage effects on muscle protein synthesis and resistance training outcomes.",
+      "text_sha256": "083099275dc79b404d1cef5f7d99b5ce8eac4b4a083b45a2c7f28f3df6550f7e",
+      "window_index": 5
+    },
+    "81bea0e7521ef5f5dbe8c54dc15798f3d0274911865ed68a7cb4d553f60ef4ab": {
+      "context": "This chunk appears in the section \"Effects of milk proteins on glycogen replenishment and skeletal muscle damage\" of a document about protein sources for exercise and athletic performance. It discusses how milk and whey protein isolate enhance muscle glycogen replenishment when added to carbohydrate beverages post-exercise, and compares the glycogen-synthesizing effects of whey versus casein proteins.",
+      "text_sha256": "a1db5e3d16189ffa0e2ca2098c78ae1831378e759632c770a1959a6e57f61909",
+      "window_index": 3
+    },
+    "83e787f03eee82a5caf82b589ee45f78dc54d80c968fdb1b58e2544beb67da16": {
+      "context": "This chunk comprises the key points section following the \"Protein ingestion and meal timing\" section of a document on protein and exercise. These bullet points summarize the main findings about how protein intake timing, dosage, and composition affect muscle protein synthesis (MPS) and muscle adaptation to resistance exercise.",
+      "text_sha256": "7d71bf01e8b08362b9eec945d14d2877891b3b4183b8f44fea0af2b65bc6334d",
+      "window_index": 2
+    },
+    "8ab5aa0cbdfc30ff6ecceb68338ce0af11d43e4a3f57863d566d7e45ebc9c4ea": {
+      "context": "This section of the References list from a document on protein and exercise contains citations 63-74, which document research on protein supplementation timing, types, and effects on muscle protein synthesis and resistance training adaptations. The references cover studies examining whey protein with carbohydrate, pre-exercise protein intake, post-exercise supplementation, and the importance of timing protein ingestion relative to resistance exercise for muscle hypertrophy and strength gains.",
+      "text_sha256": "5cb37dbd48afecf1aedbb988f232393cdeb3b68acfbc70fc8bc9060e325382fb",
+      "window_index": 5
+    },
+    "8b4901120648bc8eb362825d0d64b5b6a75bbd310e02ce294e5e211577f43310": {
+      "context": "This chunk appears in the \"Protein timing\" section of a scientific review on protein and exercise, specifically in a subsection that critically evaluates the evidence for timing protein intake around resistance exercise. The chunk discusses conflicting research findings on whether consuming protein immediately before or after exercise provides unique advantages for strength and hypertrophy compared to other times of day, and emphasizes that total daily protein intake may be more important than timing.",
+      "text_sha256": "55b3aa1380f91553bafb6a27b5c4f891f3e386059a0c5a48e852b095467535f0",
+      "window_index": 1
+    },
+    "931e82379b1f82c9f578e3310d122d48e1eaf1a7da7a8030351b7995d98c3269": {
+      "context": "This chunk is from the \"Endurance exercise performance\" section of the ISSN position statement on protein intake for exercising individuals. It presents research findings on how dietary protein manipulation affects endurance performance in trained cyclists, comparing high-protein diets to standard endurance athlete diets and examining whether increased protein intake enhances endurance exercise performance.",
+      "text_sha256": "1537f64d795199c116bfb14bbed347db4a4516e673b1a9179c5abda066c058be",
+      "window_index": 0
+    },
+    "93be6a711d5db931ef19dce2cf3c297f46cd9045a750fea3be6a6f61ecfebd18": {
+      "context": "This chunk appears in the \"Recommended intake\" section of a document on protein and exercise, specifically in the \"Key points\" subsection that summarizes evidence-based protein intake recommendations for athletes. The key points synthesize findings discussed earlier in the section regarding daily protein requirements, optimal per-meal protein doses, and the importance of protein distribution timing for maximizing muscle protein synthesis (MPS).",
+      "text_sha256": "c4d6a727041e248e2e77942b276666992b79991bd980f28bd516fdc5a5312cc6",
+      "window_index": 2
+    },
+    "93fc8f5ecdd25d9a61d1fced97d8741409b3312dad5e094fc966de4e48b828fa": {
+      "context": "This chunk appears in the \"Protein timing\" section of a document on protein and exercise, specifically within a discussion of whether protein timing confers unique advantages for strength and hypertrophy. It presents practical recommendations for athletes regarding pre- and post-workout protein consumption based on research by Bosse and Dixon on protein supplementation during resistance exercise.",
+      "text_sha256": "e9fec8a2b34f99f16ec3e8149f1049db685209b5921392f5596c2d24ced00f5f",
+      "window_index": 1
+    },
+    "998c61def6dfc7c90e9dea5df51ca4583b0ee99b980439a46a59dca47714d270": {
+      "context": "This chunk is from the \"Resistance exercise performance\" section of the International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It discusses the multiple factors affecting protein supplementation's impact on maximal strength gains and reviews research findings on protein's effects on strength development in both male and female participants.",
+      "text_sha256": "465f3bfd7631d2e2215b61f975cf97cb2cc6428af2d008908dee79fe40c1d0b8",
+      "window_index": 0
+    },
+    "9ccc38150dbb093da291a24fd896680df7e03c035cec51e3ec8eddb878ff3bc5": {
+      "context": "This chunk is from the \"Recommended intake\" section of a position stand on protein and exercise, discussing historical protein requirements for athletes and optimal per-meal protein dosing strategies. It covers early research establishing that athletes need 50-175% more protein than sedentary individuals, Phillips' 2004 recommendation of 1.2-1.33 g/kg/day for resistance-trained athletes, and subsequent studies identifying optimal single-meal protein doses of 20-40 g to maximize muscle protein synthesis (MPS) rates.",
+      "text_sha256": "2b18040d952d33e3f09aeed8bb4d8329bc82628071a31918219c1db27ed95f67",
+      "window_index": 2
+    },
+    "a1baa3512f17b6ff5150e15f14a8a6b7a0e91d37f909232205e55bf7c98e7dd1": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 222-224 that address high protein diet effects on body composition and optimal protein intake recommendations for adults engaged in resistance training.",
+      "text_sha256": "061ae0e566c340fb0c69ba1c8a2e13f2d29b761bd80c20ddc0112646aaea72e8",
+      "window_index": 6
+    },
+    "a1f383832dfb1dd873527ab1ad9cfa987f29515c04d6bfbfb203c3fd786b4406": {
+      "context": "This chunk is from the \"Protein safety\" section of an International Society of Sports Nutrition position stand on protein and exercise. It addresses concerns about high protein intake's effects on renal and hepatic health in healthy, exercise-trained individuals, presenting evidence from multiple studies and regulatory bodies that contradict traditional warnings about protein consumption.",
+      "text_sha256": "8936ba4da43a74d3bbe63142bb2a3e630c78a93065cc6f4f8764542c6ae716d2",
+      "window_index": 4
+    },
+    "a671f3956dfa9d43873601f156175cef2fcd022a08e752182948a8e082838c98": {
+      "context": "This section lists the institutional affiliations and contact information for the 19 authors of the International Society of Sports Nutrition position stand on protein and exercise, along with the manuscript submission and acceptance dates.",
+      "text_sha256": "66c6ddeaf539e91bb37b3b6c4afe2bb68f6c907196a360d405177893b237378c",
+      "window_index": 4
+    },
+    "acc9143077dfbc8b8f7a39d4cfdf2be84df1e327f73ed71a3d75b669e4206a87": {
+      "context": "This chunk comprises references 148-160 from the References section of an ISSN (International Society of Sports Nutrition) document on protein and exercise. These citations cover research on whey protein ingestion in elderly populations, amino acid metabolism, leucine's role in muscle protein synthesis, branched-chain amino acids and central fatigue, and protein supplementation effects on muscle protein synthesis during and after exercise.",
+      "text_sha256": "64bc23f73a18d27b1d183e7f02a723f857524601518fdc08b0bbaa2762cd25a3",
+      "window_index": 6
+    },
+    "afad15828e0a1f1cc54d8350c3670c927a0b75edd289e1d3fba3375e66512fde": {
+      "context": "This chunk appears in the \"Key points\" section of an International Society of Sports Nutrition position stand on protein and exercise. It summarizes the main findings from the \"Protein safety\" section, which discusses evidence that high protein intake does not harm kidney or liver function in healthy, exercising individuals, contrary to common concerns.",
+      "text_sha256": "50c58edaf5412caf3f54c2936e895ea31bd21f533062c6fb87216fea2798f50c",
+      "window_index": 4
+    },
+    "b0db3d016272cdee4ebd228a755ef326b7f23b7340cb92abc233ea18ceb686b6": {
+      "context": "This chunk is from the \"Hydrolyzed proteins\" section of an International Society of Sports Nutrition position stand on protein and exercise. It describes the normal protein digestion process and explains how hydrolyzed proteins are pre-broken down by digestive enzymes, then presents research comparing the absorption rates and hormonal responses of hydrolyzed versus non-hydrolyzed protein sources in exercising individuals.",
+      "text_sha256": "caf5b578b537dff8c2342ebbf58ef067a77fc719c99237de26d47f49f7718284",
+      "window_index": 4
+    },
+    "b20fbe9122d3798adfa74a68b43ed837cba026a6cdb16bb7089da97d93bbdc49": {
+      "context": "This chunk appears in the Background section of an International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It provides historical context for the current updated position stand, referencing the original 2007 ISSN position stand on dietary protein and explaining the scope of topics covered in this revised version.",
+      "text_sha256": "45bfd9c4042a77779520a0aa964e93d3b8a3956edbdf276d7849db537a77b98c",
+      "window_index": 0
+    },
+    "b73a4eecfd2e99b3ba5a2d1beff6b2b18ea557ffeb9793687c3e745e12260444": {
+      "context": "This chunk comprises the Key Points section at the end of a comprehensive review article on protein sources for exercise and athletic performance. It summarizes the main findings discussed throughout the document regarding milk proteins, egg proteins, beef and flesh proteins, plant-based proteins, and protein blends, emphasizing the importance of leucine content and digestion rate in protein quality assessment for athletes.",
+      "text_sha256": "2e9d888ea81d1e94a06518f0c514b5ea97ef32c18e703be1712e0a12176f2fdb",
+      "window_index": 3
+    },
+    "b88309b8d542467c3bb56194b03c4ff24d72f4c67705b6df6c729a91d28d01aa": {
+      "context": "This chunk appears in the \"Pre-sleep protein intake\" section of a document on protein and exercise, discussing long-term studies examining the effects of casein protein supplementation timing (morning versus evening before sleep) on muscle mass, strength, body composition, and performance in resistance-trained individuals.",
+      "text_sha256": "7711946f8b137c69dc9c21635b5442625569a795493980d1cbe7ca6961b51442",
+      "window_index": 1
+    },
+    "c463e11e181fe738761e771f3f092f92821e86e1ed533ef257589638360238be": {
+      "context": "This chunk is from the \"Protein timing\" section of a document on protein and exercise, discussing the timing of protein consumption relative to resistance exercise. It covers post-exercise protein ingestion's effects on muscle protein synthesis (MPS) and muscle hypertrophy, as well as comparisons between pre-exercise and post-exercise protein timing strategies, including conflicting research findings on whether timing provides unique advantages over other feeding times.",
+      "text_sha256": "cb62af365f026a9b24194d6ac60309cb70c4791e5fa0cbc9d3b276c46a4d2c2b",
+      "window_index": 1
+    },
+    "c48d51db0fb12cb6813e26eca4cbf2926204b89787bbb02c1f244542edef026a": {
+      "context": "This chunk appears in the \"Recommended intake\" section of a position stand on protein and exercise, discussing the timing and distribution of protein consumption throughout the day. It explains the temporal dynamics of muscle protein synthesis (MPS) following protein ingestion, introduces the \"muscle-full\" phenomenon, and provides practical dietary recommendations for protein pacing strategies based on individual caloric goals and exercise status.",
+      "text_sha256": "aae7aff36cf1b9f946da12b22acf1a4650f0b471baa69993d362ecfdcdd751c1",
+      "window_index": 2
+    },
+    "c9f0b8377f62b9d26f44906a59bd1c28a59b0d0db4bdd773b1ee3e176c6eea59": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 93-103 that discuss studies on protein sources, muscle protein synthesis, amino acid supplementation, and the role of insulin in regulating muscle protein metabolism in response to resistance exercise and nutritional interventions.",
+      "text_sha256": "1bd987cb070e865e016d39174f16af11ae9699fcde49980515dd36583893be0e",
+      "window_index": 5
+    },
+    "d080be54232480774111522c39fb4e047a7b2ab4da7bf866046a856bbe895fda": {
+      "context": "This section appears in the \"Competing interests\" portion of an International Society of Sports Nutrition position stand on protein and exercise, disclosing financial relationships and affiliations of the authors with supplement companies, sports nutrition organizations, and research funding sources related to dietary protein and supplements.",
+      "text_sha256": "a269e6d0a165318d490450c4aab17fb71d5ec6560057244b1a025acf83a39215",
+      "window_index": 4
+    },
+    "d8b13c346ef312ac77386e62f5f3055b4a4b75025ddba4ae86d99983f1cb88fb": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, specifically listing citations 19-29 that examine the effects of protein and amino acid supplementation combined with resistance training on muscle performance, size, strength, and body composition in various populations.",
+      "text_sha256": "a936ad219a7d726a43aeeadb3ee8e31baacaa73e0904cd14aa5b551e18cfcbda",
+      "window_index": 5
+    },
+    "dae6b1341ebc63692aaf470f03a1ddebf4b9a8d93cb6bfc4584943f2f4f2e38a": {
+      "context": "This chunk comprises references 128-137 from the References section of a document on protein and exercise. The references cover studies on protein intake timing, protein requirements for athletes, and muscle protein synthesis responses to protein ingestion and resistance exercise.",
+      "text_sha256": "b717dd51cb68fecaa1959a7c26e3a6b2eb8aabe0ef7f69e6b0391d2544367ff9",
+      "window_index": 5
+    },
+    "dcaeab29234e165981a1eeedcf8dcb44e84220f86d805b34b8048723a0359665": {
+      "context": "This chunk appears in the \"Key points\" section following the \"Endurance exercise performance\" subsection of the ISSN position statement on protein intake for exercising individuals. It summarizes the main findings regarding how protein supplementation affects endurance athletes' performance and recovery.",
+      "text_sha256": "c12a2dd025ac929928df189012af99bb94f56953ac99dd6ea0452eedbb758674",
+      "window_index": 0
+    },
+    "de469f32f1ac89138f0250b102e63214ea03c6b023e69923fa0af324897c1060": {
+      "context": "This statement appears in the Publisher's Note section of an International Society of Sports Nutrition position stand on protein and exercise, serving as a standard disclaimer regarding the publisher's neutrality on geographical and jurisdictional matters related to the document's publication.",
+      "text_sha256": "e23de2474afa8657899fd15dffc7f7d06b7a72343c3a6c58c795a9da5cb9e548",
+      "window_index": 4
+    },
+    "df1a567e2442df1529af5425153d4920696ab59460aab9797fa9c858f862e154": {
+      "context": "This is the author list for an International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals, published in a peer-reviewed journal and available through Europe PMC.",
+      "text_sha256": "ac76332ef6078d0b6a5e4dc9a752cb2ace8c501fdcea92dc236d0cbd9dae527d",
+      "window_index": 0
+    },
+    "df35deee1f71015b08a5dc7be3327a4628b64cc2fd3b1b80c734f865683e0f7a": {
+      "context": "This chunk is from the Conclusion section of an International Society of Sports Nutrition position stand on protein and exercise. It presents the organization's official recommendations for daily protein intake in exercising individuals, addressing optimal dosages, timing of consumption, protein quality, and safety concerns related to protein supplementation and training adaptations.",
+      "text_sha256": "cbb2b9b4806eb2a41099b85c1d23f600073fe2fca83c738979c31038dfe34acb",
+      "window_index": 4
+    },
+    "e1d9b61ecf159604897f18beafcbc34a05115e6abdc8ad38bbe69ee6b27be8ba": {
+      "context": "This acknowledgements section appears in an International Society of Sports Nutrition position stand on protein and exercise, thanking key reviewers and contributors to the research studies and reviews cited throughout the document on protein preparation methods, safety, and recommendations for exercising individuals.",
+      "text_sha256": "045a14c94b7cf9ed911011843b20a77503ee6514206ba9f483a1cc4acd6bdd96",
+      "window_index": 4
+    },
+    "e343c21ff6cdf0c42c906ff24e6da385c6ad1a2ec9833c333d3504b1b8fe07f9": {
+      "context": "This chunk is from the section \"Meat vs. plant based proteins: Is one better than the other?\" in a document about protein sources for exercise and athletic performance. It compares the efficacy of animal-based proteins (meat, milk, eggs, cheese) versus plant-based proteins (soy, wheat, rice) for stimulating muscle protein synthesis and body composition changes in athletes undergoing resistance training.",
+      "text_sha256": "58eccb0a89de0edb8b0e7995aa2fc49ad11bebae5c1b04fc2145e0053c637d1a",
+      "window_index": 3
+    },
+    "e36d13c50f35197015a3cb9ce667955dc73dc9d4fee3f2006a4a9c0030079101": {
+      "context": "This chunk appears in the \"Key points\" section at the end of the \"Body composition\" section of the International Society of Sports Nutrition (ISSN) position statement on protein intake for exercising individuals. It summarizes the main findings regarding how protein supplementation combined with different diet and exercise approaches affects body composition changes.",
+      "text_sha256": "efd4eba83b0377e95a7d4c864fc170a3cdb6724d4ae2a96df4984b357327c121",
+      "window_index": 0
+    },
+    "ea4526029e42dcdf7d9ebe22870273e5ee823facbb57ec05217a1a986cb30a78": {
+      "context": "This chunk contains references 7-18 from the References section of a document on protein and exercise. These citations document studies examining the effects of carbohydrate-protein supplementation on endurance exercise performance, cycling endurance, muscle damage, and the effects of protein supplementation combined with resistance training on muscle strength and lean tissue mass.",
+      "text_sha256": "5635956c76b0ae44b57785e1f21a309cfed5e6fec9d1eceecb19985a6ef82c97",
+      "window_index": 5
+    },
+    "eaba402e3786c02a3055f85d5cedf4082458691e187c2b8383d9b965637db4c8": {
+      "context": "This chunk is from the \"Milk proteins\" section of a document on protein sources for exercise and athletic performance. It introduces milk proteins and their research-backed benefits for exercise recovery and adaptation, then compares the two main milk protein classes\u2014whey and casein\u2014in terms of their leucine content, digestibility rates, and effects on protein metabolism and muscle protein synthesis (MPS).",
+      "text_sha256": "8da9515e7da23fb8f9c6e9187ad9112a3cad4a9554df660606441fcf08a843f0",
+      "window_index": 3
+    },
+    "ec683e66e40ad2cba9355aaecc6671e2c73010a2bb95beb156303f0a4b180b75": {
+      "context": "This chunk appears in the \"Preparation methods of various proteins\" section of an International Society of Sports Nutrition position stand on protein and exercise. It defines nutrient density and explains how commercial preparation methods affect protein content in foods, using milk as an example to illustrate the differences between protein concentrates and isolated proteins.",
+      "text_sha256": "15485f79d8bc47c8de8c0a0c7ed9cf7370423a1fe8306ca03a76e5da2df165e0",
+      "window_index": 4
+    },
+    "ed31d6d1c34c7ee90a8288bcab080067c4a32a739bde8b2ed648ec3e1fc5aec8": {
+      "context": "This chunk is from the \"Protein quality\" section of a document on protein and exercise, specifically discussing the role of branched-chain amino acids (BCAAs) and leucine in modulating protein balance and muscle protein synthesis (MPS). The section examines which essential amino acids (EAAs) are primarily responsible for stimulating MPS and how leucine dosing affects protein synthesis at rest and after exercise.",
+      "text_sha256": "b7890ecd3f941179f9f2202ff9d8b5269c2cf6dc16c5449a9a18b7d6ca85396d",
+      "window_index": 2
+    },
+    "edf7b4054e8e36b7f471178cf91ba8d9ae57b7a3b556fa126ba9a08aeef1d9bd": {
+      "context": "This chunk contains references 197-208 from the References section of a document on protein and exercise. The references cover studies on protein supplementation effects on muscle adaptations during resistance training, leucine content and muscle protein synthesis, protein digestion and amino acid absorption, and whey protein hydrolysates in sports nutrition and recovery.",
+      "text_sha256": "d7c9d51e3966fbe34fe1582d7ca53660072ba2eaa4ea3ee96ba9ff17f6553afd",
+      "window_index": 6
+    },
+    "eea035fbe5c381239a01dfc584097a4638e67506cdd8248a704556aaf338e03c": {
+      "context": "This chunk is from the \"Egg proteins\" section of a document reviewing protein sources for exercise and athletic performance. It discusses the nutritional composition, digestibility, amino acid profile, and health benefits of eggs as a protein source for athletes, including their leucine content, micronutrient density, and functional food properties.",
+      "text_sha256": "a5ab501e47956b3d9c3f96ccd29e5ed2a0eb4cfa426ef6bc2da7233babd7fb76",
+      "window_index": 3
+    },
+    "efd9f48286c41b7045a59a18265c9b951fe6fd2825177410a1204b34e67236ba": {
+      "context": "This statement appears in the Ethics approval and consent to participate section of an International Society of Sports Nutrition position stand on protein and exercise, confirming that the entire document represents the official stance of the organization after review by their Research Committee.",
+      "text_sha256": "215918f16e0274046441c527714278b1c733ccb89718479728a696b23b8fe619",
+      "window_index": 4
+    },
+    "f2c783a8c59ee50b17ada6eeb625acb487fff0dd516e684b78f076b6d13acefe": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, specifically citations 87-93 that discuss research on protein supplementation, amino acid kinetics, and muscle protein synthesis in response to different protein sources and resistance exercise.",
+      "text_sha256": "a8c6736b09855fa3d44d8a767add2fb02d35251e9161a2b59be27d090e2749cc",
+      "window_index": 5
+    },
+    "f2ff9bebd705ac4998f68de3f400592f12a306309fc72c6992cf2910a761a472": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, specifically citations 43-50 that address the effects of diet and exercise programs on body composition, the role of amino acids and carbohydrates in muscle protein synthesis, and the timing of nutrient intake relative to resistance exercise.",
+      "text_sha256": "5d09f7529b2ac5ffccb1fc00a8848938cc9a5350baf48e6a87dfdf8459489cf9",
+      "window_index": 5
+    },
+    "f94adf622d96e2813bb684fed76ec6715acffcd5adf04e8eee7933e452fa01ad": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, containing citations 209-221 that address whey protein supplementation, protein hydrolysates in sports nutrition, carbohydrate-protein coingestion during exercise, protein digestion and absorption, renal function effects of high protein diets, and body composition outcomes from high protein intake combined with resistance training.",
+      "text_sha256": "ffe33b5073504f541f6474621d52c1ab7cf60cd271c0d8b489d3ad6bf852cc6b",
+      "window_index": 6
+    },
+    "fa7b93a42d021aebd006177b7ef9b7a3a848952d319df12c09e2446f008f4567": {
+      "context": "This chunk is part of the References section of a document on protein and exercise, specifically citations 117-127 that focus on studies examining the timing of protein ingestion relative to sleep and exercise, including nighttime feeding, presleep protein consumption, and the effects of protein timing on muscle protein synthesis and body composition in various populations.",
+      "text_sha256": "8609fdda9fec2fca298edb2913206d66b9572ace02b4c0cf2d7f45dfae664235",
+      "window_index": 5
+    },
+    "fe33795a1246a192762994d8bf6883356b195f33f3ab45b4d13c74ebf0dc7e94": {
+      "context": "This chunk is from the \"Pre-sleep protein intake\" section of a document on protein and exercise, discussing research on consuming protein-rich beverages 30 minutes before sleep and their effects on muscle protein synthesis (MPS), metabolic rate, fat oxidation, and overall recovery in various populations including young men, obese individuals, and athletes.",
+      "text_sha256": "790e82ed7cdb3c3a650844d8d629442ef5d7ca2345b9af1362fd5f7ad3a74899",
+      "window_index": 1
+    }
+  },
+  "doc_id": "issn-protein-exercise",
+  "generated_at": "2026-08-31T19:18:08Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

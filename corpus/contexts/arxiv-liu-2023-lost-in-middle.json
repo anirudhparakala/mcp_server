@@ -1,0 +1,218 @@
+{
+  "contexts": {
+    "025f78c984d761f2dae6e8d077e0fa3c76ddec7cb5075431b5bf529f42474e0b": {
+      "context": "This chunk appears in Appendix B of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which investigates how language models perform on multi-document question answering tasks. The appendix section describes an ablation experiment using random Wikipedia documents as distractors instead of retrieved ones, to test whether performance degradation stems from difficulty identifying relevant documents or from other factors related to context position.",
+      "text_sha256": "3d470aab1966a2ce783aa1ad14a7a91a8d79f1635bfaf237ff694c8ce13852ca",
+      "window_index": 2
+    },
+    "0616d55fe5e0449f3b1132a4bf5f66a923ef83182d3cfd60171c24900f31109e": {
+      "context": "This chunk appears in Section 2.1 (Experimental Setup) of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. It describes the methodology for the multi-document question answering task, specifically explaining how the researchers modulate the position of relevant information within input contexts and how their approach compares to prior needle-in-a-haystack experiments.",
+      "text_sha256": "166e620cb99b62dc7df7493df15fde0285385585403062e05e05e7641a45977c",
+      "window_index": 0
+    },
+    "0afd8d54f4f0d1265e4cd54aa31979495562662861f28a47fe1b33699c7a62d1": {
+      "context": "This chunk is from section 4.1 \"Effect of Model Architecture\" in the paper \"Lost in the Middle: How Language Models Use Long Contexts\" (arxiv-liu-2023-lost-in-middle). It investigates why language models struggle with information positioned in the middle of long contexts by comparing decoder-only models with encoder-decoder models like Flan-T5-XXL and Flan-UL2, examining how model architecture affects context utilization.",
+      "text_sha256": "db2723d8bc8983bcc54fc59b8fc0fec954a4035721bb4bb105ee2ffac26b3235",
+      "window_index": 1
+    },
+    "19247c4f0342916ea6f9e585d2cc6331c076ba63622ac6bdb7b14d6c5a5968c2": {
+      "context": "This chunk is from Section 4 of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023), which introduces the investigation into why language models fail to robustly use information at different positions in long input contexts. The chunk sets up the section's exploration of three potential explanations: model architecture differences, query-aware contextualization effects, and instruction fine-tuning impacts.",
+      "text_sha256": "3ab177dae2d0c34a123145bd20399898c1f2760e1a8038dd2184bbf46c3625ee",
+      "window_index": 1
+    },
+    "1b3bc47a4d0ff8bd2c2ba3d9c937a876e9832961046576da364eb9dcdffc7c5f": {
+      "context": "This is the conclusion section (Section 7) of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023), which summarizes the paper's main findings about language models' inability to robustly access information in long input contexts, particularly when relevant information is positioned in the middle, and describes the three main investigative areas (model architecture, query-aware contextualization, and instruction fine-tuning) explored throughout the paper.",
+      "text_sha256": "baaeee2f0853bf0d7d463ece31b45cf4fbf1e61b27cf3db812b00d90c82ce511",
+      "window_index": 1
+    },
+    "20c9eefd04ece074a48f3510769c38d346d0e1d93df337805fabf19726a93e95": {
+      "context": "This chunk appears in the conclusion section of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. It summarizes the key findings from the paper's experiments on multi-document question answering and key-value retrieval tasks, discusses a case study on open-domain question answering using retriever-reader models, and presents the paper's proposed evaluation protocols for assessing how robustly language models use long input contexts.",
+      "text_sha256": "240987db6a181644fbe38ef0b9c6bf092167cdecfb7c26da4cf66fc792548b6b",
+      "window_index": 0
+    },
+    "23ebd3496dfe76e4dd37eacb04449f541bfa006add27f7812e8b2b904abd0c52": {
+      "context": "This chunk appears in Appendix D of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which evaluates how language models perform on multi-document question answering tasks when relevant information is positioned at different locations in the input context. The appendix section specifically reports GPT-4's performance results, demonstrating that despite higher absolute accuracy than other models, GPT-4 still exhibits the U-shaped performance curve (primacy and recency bias) that is the paper's central finding.",
+      "text_sha256": "19e4a05dbac69d502f44ef7e5fabdd6ca49a0587c1e4a7ce0955bc16a388e4df",
+      "window_index": 2
+    },
+    "27b63c904fc5948c032602b205d5762109fa6d004b52ebbd0c609067fb781f4f": {
+      "context": "This chunk is from Appendix E of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which evaluates language model performance on multi-document question answering tasks. The appendix presents experimental results for Llama-2 models of varying sizes (7B, 13B, 70B parameters) on multi-document QA with 20 documents, analyzing how model size and fine-tuning affect positional biases (primacy and recency effects) when relevant information appears at different positions in the input context.",
+      "text_sha256": "a7e5d2f88493635e31592e1279e3d0cf5bb730eed565daf7e92f3fb771b70ece",
+      "window_index": 2
+    },
+    "2b321dc2a49394b2bfb135b6e0c47c8084e63a7af689429b793d5edfaeefca34": {
+      "context": "Section 5 of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" presents a case study examining whether providing longer input contexts to language models is always beneficial. This chunk discusses the trade-offs of context length and presents empirical results from open-domain question answering experiments on NaturalQuestions-Open, showing that reader model performance saturates well before retriever performance, suggesting that models struggle to effectively use additional retrieved documents beyond approximately 20 documents.",
+      "text_sha256": "2f5847af97fb137e9a67f9e425be4a622a46b7c5526a2305992a89021be103ff",
+      "window_index": 1
+    },
+    "4090f2173985202433242f74b49ff1823a1459ec3876a1559ec013709634b26e": {
+      "context": "This chunk appears in section 6.2 \"How Do Language Models Use Context?\" of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023). It provides a literature review of prior work examining how language models process and utilize long input contexts, including studies on LSTM models, Transformer language models, and their limitations in effectively using long-range information.",
+      "text_sha256": "a2db9ac1631eeb44362da961b9669e4ab565e266adb1dd266cb7a14c65c7a935",
+      "window_index": 1
+    },
+    "51bddbaaed8c5c63bbacb9034fc94d7e2eb247d0e4494cee6f4eedc853933ed2": {
+      "context": "This chunk appears in section 6.1 \"Long-Context Language Models\" of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" (Liu et al., 2023). It reviews prior work on designing efficient long-context language models through various Transformer architectural modifications and attention mechanisms, and notes that while existing work focuses on perplexity as a proxy for long-context ability, the paper demonstrates that precise knowledge access in long contexts presents an additional challenge.",
+      "text_sha256": "dc8285a2092731c8269adf4d716047115aa15932e273b48b6ae9868f6f899a92",
+      "window_index": 1
+    },
+    "576699264131dfa2e55d9a24cb45d395afde3d6e86bdd91c1f28cf4df20febb2": {
+      "context": "This chunk is from section 4.3 \"Effect of Instruction Fine-Tuning\" in the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023). It presents experimental results comparing the multi-document question answering performance of instruction fine-tuned and base language models (MPT-30B-Instruct vs. MPT-30B), examining whether instruction fine-tuning is responsible for the U-shaped performance curve observed when relevant information is positioned at different locations in long input contexts.",
+      "text_sha256": "5a5442e3f6eb18ec56a6e8b912a14ee79d83aeb2581f3048c2852be40da87c8f",
+      "window_index": 1
+    },
+    "58e6736d60c23d496f438c6b0df8591dcb3d1c4b8e9a1eac79c70756eaabec2f": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), containing bibliographic entries for language models and related research including LaMDA, LLaMA, and Llama 2.",
+      "text_sha256": "ed5e3266aac18cb6e2352c967b1381feb2e7a22b08fa2bfcc564ea1d4b4c6095",
+      "window_index": 2
+    },
+    "5ec1b74b55dd6e0a89fc8db2e0279c775e57340aeca4a38b5fd9dc4454190d47": {
+      "context": "This chunk from the Introduction section of \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023) establishes the motivation and research questions for the paper. It describes how language models are used with long input contexts in practical applications, explains the limitations of Transformer-based models with quadratic scaling, and outlines the paper's empirical investigation into whether language models can robustly use information at different positions within their input contexts.",
+      "text_sha256": "82435ea70192dca02f36c9f746338f7dae1e0265be23442172b5ecfd778e87db",
+      "window_index": 0
+    },
+    "627ef6f12f2fb70183c547235b7a30fd47c8e4d209eed192d2acf424d6a7881b": {
+      "context": "This chunk describes the experimental setup for the multi-document question answering task in section 2.1 of \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023). It explains how the task is instantiated using NaturalQuestions-Open data, how documents are collected and ordered, and how the position and length of input context are controlled to test whether language models can access relevant information at different positions within their input.",
+      "text_sha256": "4b0112ab154426e95b02eff26dbe4cf1363b7dbfae6a0cb719751e4866c921aa",
+      "window_index": 0
+    },
+    "697337ce3e0bb3dc81b6b2549791fc3384c29689e266501fdb420b17848ee730": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" (Liu et al., 2023). It contains bibliographic citations for foundational transformer architecture papers and long-sequence modeling approaches, including Llama 2, the original Transformer \"Attention is All You Need\" paper, Linformer, and Big Bird.",
+      "text_sha256": "8d7c4a46e9f5e763378ee296268c0959e9eee4ef7e164fd7f2e3fa1469e8bc76",
+      "window_index": 2
+    },
+    "6a9bd4b9e20457002d23d2b4ff2285460ce3fc09f2303530547906b006234623": {
+      "context": "This section describes the models evaluated in the multi-document question answering task from \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. It details the specific open-source models (MPT-30B-Instruct and LongChat-13B) and closed commercial models (GPT-3.5-Turbo variants and Claude-1.3 variants) used in the experiments, including their context window sizes and architectural details.",
+      "text_sha256": "fe2060d311abaefe73315a3d0a504188372cefd2d194adea1a7eef3432360ed7",
+      "window_index": 0
+    },
+    "700b557ccaca1246f3780a6b564503ea8998368988312d5ea873ef2bba87d691": {
+      "context": "This chunk presents the results and discussion of the multi-document question answering task described in Section 2 of \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. It reports findings on how language model performance varies based on the position of relevant information within input contexts, demonstrating a U-shaped performance curve where models perform best when relevant documents appear at the beginning or end of the context and degrade significantly when accessing information in the middle.",
+      "text_sha256": "01bc84bd7e1a76c8237444b9230f53f76487b0f2324e919a4f007d68167e4640",
+      "window_index": 0
+    },
+    "76d1639e4810e8f075a80a3d995a150eab6f34d21514e381bfa5417ecbf9cdbc": {
+      "context": "This chunk appears in Appendix G of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which introduces the multi-document question answering experimental setup and notation used throughout the appendix. The chunk defines how document position indices are used to report model performance results across different numbers of retrieved documents in Tables 5, 6, and subsequent tables in the appendix.",
+      "text_sha256": "ea31d0aa8a5cd74343b7c1805083b87c43addf5a7a78d018293c6fb96c3bab1a",
+      "window_index": 2
+    },
+    "8429089c17895c5edcf5ae4e08e366abc4c94328d315d2f9e485984946a7db31": {
+      "context": "This chunk is from Appendix C of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which investigates how language models perform on multi-document question answering tasks. Appendix C specifically describes an experiment that randomizes the order of distractor documents to test whether the U-shaped performance curve (where models struggle with information in the middle of context) is an artifact of models' bias toward treating search results as sorted by relevance, or a fundamental limitation in processing long contexts.",
+      "text_sha256": "353145fbf82b081964869f2d7b45fe60002aef6e9d2d4ff9aafbaa2cd446ff61",
+      "window_index": 2
+    },
+    "9b2856a4fdeefc11d0032c05a775fa2e42a6cdf73c127a0faa6db0ae3b973040": {
+      "context": "This chunk appears in Appendix F of the \"Lost in the Middle\" paper, which provides token count statistics for language model experiments. Table 3 specifically reports average and maximum token counts for multi-document question answering tasks with 10, 20, and 30 documents across different models including LongChat-13B, MPT-30B, GPT-3.5-Turbo, and Claude-1.3.",
+      "text_sha256": "78c65b987a9c59c68d0addd99dc9ca0ea801867aaf3d0a62872c61160b926331",
+      "window_index": 2
+    },
+    "9fee8931b1a5ec49a6d973d3283ae9e8e97368d394152bf434da52b6c8d73955": {
+      "context": "This table appears in Appendix G.1 of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023) and presents detailed model performance results for the multi-document question answering task when 10 total retrieved documents are provided, showing accuracy percentages across different document positions (Index 0 through Index 9) for various language models including Claude, GPT-3.5-Turbo, MPT-30B, and LongChat.",
+      "text_sha256": "5a32920dd9cec10969b1ded75fac0e98163123bc8852c5887c4c05588428bf36",
+      "window_index": 2
+    },
+    "a442090e92a3f09efe90815b53c0c068b31980cfac6df8aa1ab3d7b0a4e4fb93": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), containing bibliographic citations for works related to language models, question answering, and context utilization that are cited throughout the paper's investigation of how language models use information at different positions in their input contexts.",
+      "text_sha256": "ca7f8a1250458bed8073639247475006126ac62ec52c46f24cf20e3bddbce133",
+      "window_index": 2
+    },
+    "a886088fb3cca52d0872d7cfaf9117c0d102e52592348a81995dd159552eb981": {
+      "context": "This is the Acknowledgments section of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" (Liu et al., 2023), which empirically studies how language models access and use information in long input contexts through controlled experiments on multi-document question answering and key-value retrieval tasks.",
+      "text_sha256": "6d47c1fb23af05357dc5b6b2e8e41379d014d8136cd0e7cce9fcf80b786af840",
+      "window_index": 1
+    },
+    "b85e0d3747d4e9ff2312bc33792a593724b4f2fe7acbfc52f0d9ac48b2ab29ee": {
+      "context": "This table appears in Appendix G.2 of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023) and presents detailed model performance results for the multi-document question answering task when 20 total retrieved documents are provided. The table shows accuracy percentages for different language models (Claude-1.3, GPT-3.5-Turbo, MPT-30B-Instruct, and LongChat-13B) at varying document positions (Index 0 through 19), where lower indices represent documents closer to the start of the input context, demonstrating the U-shaped performance curve that is central to the paper's findings about language models' difficulty",
+      "text_sha256": "3934791a5204fc67d6f75f09b160b55686c855071bbe76abf49779c1e3606bd0",
+      "window_index": 2
+    },
+    "bf6df4927e0052730f86a6c26f06d732c112fb3957346beca71bb6f40e1e16dd": {
+      "context": "This chunk is from section 4.3 \"Effect of Instruction Fine-Tuning\" in the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023). The section investigates whether instruction fine-tuning affects how language models use long input contexts by comparing the multi-document question answering performance of instruction-tuned and base models, specifically MPT-30B-Instruct versus MPT-30B, using the experimental setup described in section 2.",
+      "text_sha256": "234d88d6f74fd6cfdb433ad08e2b503f0da2c6d42f7a0eab00546db916149c7b",
+      "window_index": 1
+    },
+    "c0382926db2916923f2fbaffd1ef3994e845416c7d51dab88654f7db8c0a15b4": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), containing bibliographic citations for works related to language models, attention mechanisms, retrieval-augmented generation, and long-context understanding that are cited throughout the paper's investigation of how language models use information at different positions in their input contexts.",
+      "text_sha256": "4588903b1aba4aa06b3482d011aa679a7ab7407fe6a3fc774b34ef8701e4134c",
+      "window_index": 2
+    },
+    "c2d958892e2cbce7272d675523252104b3d275b93b3fcc90c41420274e851eca": {
+      "context": "Section 4.2 of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" investigates the effect of query-aware contextualization on language model performance. This section examines whether placing queries before and after documents improves decoder-only models' ability to robustly access information at different positions in long input contexts, comparing results on multi-document question answering and key-value retrieval tasks.",
+      "text_sha256": "0bc39f063331f82fc99cf01e72949b7857387fde654b53779f3ba49215964bd3",
+      "window_index": 1
+    },
+    "c6595b5e49c863916237b43bac8d651c47916fc126a6d6bd338c798213e3813e": {
+      "context": "This chunk appears in Appendix A of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which investigates how language models perform on multi-document question answering tasks. Appendix A specifically addresses ambiguity issues that arise in multi-document QA when using distractor documents, explaining how temporal mismatches between the Wikipedia retrieval corpus and NaturalQuestions annotations can create ambiguous or contradictory answers, and describing how the authors filtered for unambiguous questions in their experiments.",
+      "text_sha256": "d7df9bf2b8d6a38b9f2c2ef54970955bbc6ad24381747a8c610b23e5625a9f2f",
+      "window_index": 2
+    },
+    "c74217e1a7e19e03d0c3907a8665bfc279a8715806f9ac95480e7f8a708e244a": {
+      "context": "This table appears in Appendix G.3 of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023) and presents performance metrics for multiple language models on a multi-document question-answering task. The index values (0, 4, 9, 14, 19, 24, 29) represent the position of the relevant document within a set of 30 retrieved documents, demonstrating how model performance varies based on document placement in the input context.",
+      "text_sha256": "a03c02f30ad24f94cab6224232bf9fea5bb8a9387315a11c7a4c75c1a7416102",
+      "window_index": 3
+    },
+    "c79b91e1f7658dcff0cded8546ea85d5d188712a0c12f982373dcea3c7183ce3": {
+      "context": "This chunk from the Introduction section of \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023) summarizes the paper's main findings across two key tasks: multi-document question answering and synthetic key-value retrieval. It describes the U-shaped performance curve observed when varying the position of relevant information in language model inputs, and previews the architectural factors (encoder-decoder models, query-aware contextualization, and instruction fine-tuning) analyzed in Section 4 to explain why models struggle with middle-positioned information in long contexts.",
+      "text_sha256": "c9cdee058ac12614e0f54803ffd76e3d81843362dece49e2705738ba7fa91a2a",
+      "window_index": 0
+    },
+    "cab076d38221cfb73024779228d55fc50c2f7562257a9005337c9dead9832949": {
+      "context": "This chunk describes the experimental setup for the synthetic key-value retrieval task presented in Section 3.1 of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. The task is designed as a minimal testbed to evaluate language models' ability to retrieve matching tokens from input contexts, complementing the multi-document question answering experiments described in Section 2.",
+      "text_sha256": "0fc58410f7ccba8bc2a35c07736ba0c31f09bd0b8bb997fddc8c82617c72bae2",
+      "window_index": 0
+    },
+    "cb74676ddfde7261494adadbe0b28310c7eace9c365bf03610b5f1434f9b35fb": {
+      "context": "This chunk appears in Appendix F of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" (Liu et al., 2023). Appendix F provides token count statistics across different experimental settings, with Table 2 specifically showing average and maximum token counts for models evaluated on closed-book and oracle multi-document question answering tasks.",
+      "text_sha256": "1ccc75094cdd78a89f2873e831a9cbfed20566be6492c4b4c3e560890ecab5d6",
+      "window_index": 2
+    },
+    "d54db0719ab82ba3963055c8adca8c17b80302e66c8d2db68ce91940a9b67867": {
+      "context": "This chunk introduces Section 3 of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al., which transitions from analyzing multi-document question answering performance to investigating a simpler synthetic key-value retrieval task designed to test language models' basic ability to retrieve information from their input contexts.",
+      "text_sha256": "45de56f43bfb31919bb98e5b30e90ff19e7d5cd2dcae307fab4b7379337028ac",
+      "window_index": 0
+    },
+    "de83145bffc227cb4e511de4af1f3c89a345ea627d3c0bca20fa4ee246e4f105": {
+      "context": "This chunk introduces Section 2 of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al., which describes the multi-document question answering task used to investigate how language models utilize long input contexts. The section explains the experimental approach of varying context length and information position to measure performance changes.",
+      "text_sha256": "6d35ff947e18e49c10705d5df157fc6ed15574b7314af96d514709eff1fec415",
+      "window_index": 0
+    },
+    "e48af6e81215db1db99e7379acc66b486360665f57103e7281973dddd6b8ada7": {
+      "context": "This chunk is part of the References section of the arxiv paper \"Lost in the Middle\" (Liu et al., 2023), which investigates how language models use information at different positions within long input contexts. The references cited here support the paper's research on language model performance, attention mechanisms, long-context processing, and question answering tasks.",
+      "text_sha256": "74c7a4ff63de327bde4fa7842625fa35e76c20827a46a95f48c6825c464e5de0",
+      "window_index": 2
+    },
+    "e8816e3b92e6e8ce44678046f971eb768d1a27ef58035dba0017314efb690a0c": {
+      "context": "This chunk appears in Section 2.3 (Results and Discussion) of the multi-document question answering experiments in the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. It discusses findings from the multi-document QA task showing that extended-context language models do not necessarily outperform their standard counterparts when both can accommodate the input context, and introduces the key-value retrieval task described in Section 3.",
+      "text_sha256": "0088b33dc0d477127c9df33d41a6bbac7fe4254ce17e7ef72326f83ed5d3caf7",
+      "window_index": 0
+    },
+    "ea735b9197f2f1dc689153741ccc3540bf72e032f6400c8300f38ba4bc0f2845": {
+      "context": "This is the abstract from \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al., which summarizes the paper's main findings about how language models handle long input contexts. The abstract introduces the two primary evaluation tasks used in the study\u2014multi-document question answering and key-value retrieval\u2014and presents the key discovery of a U-shaped performance curve where models perform best with information at the beginning or end of context but degrade significantly when accessing middle content.",
+      "text_sha256": "9597f645fa2ed241ae31cd867771e71ea15ede9d498117e1d1b409403c10aa88",
+      "window_index": 0
+    },
+    "eaa41ab92ee1c6bc912d802644c6b2a01a16eef7197d8c83a22bcd3f117aa7e2": {
+      "context": "This chunk appears in section 6.3 \"The Serial-Position Effect\" of the paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023). The section discusses the psychological phenomenon of the serial-position effect and draws a parallel between human memory recall patterns and the U-shaped performance curve observed in the paper's experiments with language models on long input contexts.",
+      "text_sha256": "ffd90aafcc158b09c61cfab27969044913662a20c0b47494f57a4d89252c37fc",
+      "window_index": 1
+    },
+    "f42eba3f32e52f93a9bb8800ca05921d78e8c2d78065ea8d19fd3ab59a665d19": {
+      "context": "This table appears in Appendix F of the \"Lost in the Middle\" paper (arxiv-liu-2023-lost-in-middle), which documents token count statistics across different language models evaluated on key-value retrieval tasks with varying numbers of KV pairs (75, 140, and 300). The appendix provides supplementary token count data for all experimental settings used throughout the paper's evaluation of language model performance on retrieval and question-answering tasks.",
+      "text_sha256": "feb0529ebaef4c92f4e9e8d2f6ce090841974746deb21f94aab933ac7f2f1eb5",
+      "window_index": 2
+    },
+    "fa34be1b1691ff7dc85c1ef53d3f0e8690c891e95052d97f671083ad00da62f6": {
+      "context": "This chunk presents the results and discussion of the key-value retrieval task described in Section 3 of \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. The key-value retrieval task is a synthetic minimal testbed designed to test language models' basic ability to retrieve matching tokens from input contexts by returning values associated with specified keys. The results demonstrate that most models exhibit degraded performance when relevant information is positioned in the middle of their input context, consistent with the U-shaped performance curve observed in the multi-document question answering experiments.",
+      "text_sha256": "f40529adfe4c401590f956a262e2deeedb98ad9a6f9a27bba2c8a373d7e154da",
+      "window_index": 0
+    },
+    "fa58fa3341b9c8b2a31309c11230d98d731d4afcc981704472f0f03f8283a166": {
+      "context": "This is the author and affiliation information from the title page of the arxiv paper \"Lost in the Middle: How Language Models Use Long Contexts\" by Liu et al. (2023), which investigates how language models use information positioned at different locations within long input contexts.",
+      "text_sha256": "0ebfe473875979c427f4b76dbbf111d6ac198f45dd360f694cc6e38280dbf8e9",
+      "window_index": 0
+    }
+  },
+  "doc_id": "arxiv-liu-2023-lost-in-middle",
+  "generated_at": "2026-08-29T21:48:39Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,423 @@
+{
+  "contexts": {
+    "00a096cf3b3f501b4d9a0f9f8e389a21c8faf469b45d50cbbdde94350f662f99": {
+      "context": "Section 1798.199.70 of the California Consumer Privacy Act of 2018 establishes the statute of limitations for administrative actions brought by the agency against businesses, service providers, contractors, or persons for violations of the title, setting a five-year deadline from the date of violation with provisions for tolling in cases of fraudulent concealment or failure to produce court-ordered documents.",
+      "text_sha256": "ba716d0258a1f236440b5df3fe8120dbf94f0732824bac1df531df6621616a5a",
+      "window_index": 8
+    },
+    "0a2ec28e0bc5522a92a784f45b7ae89df63c413fe2099094335a58d6420e97a1": {
+      "context": "This chunk is from Section 1798.145 (Exemptions) of the California Consumer Privacy Act of 2018, specifically subsections (h), (i), and (j). Subsection (h) addresses business response timelines and procedures for handling consumer requests, including extensions and refusals. Subsections (i) and (j) establish liability protections for businesses and service providers when disclosing personal information, and clarify what businesses are not required to do under the CCPA.",
+      "text_sha256": "610449b4bba290934dc36cd636ba91ca966a948a284d5c9e6a6fb4bd0ef1f91b",
+      "window_index": 5
+    },
+    "0b8d358e8e5bea3553a610796b148d9caaa90d016ad9061382ee9fcdbb166608": {
+      "context": "This chunk is from California Civil Code Section 1798.199.20, part of Title 1.81.5 (California Consumer Privacy Act of 2018), and specifies the term limits for members of the agency board that administers and enforces the CCPA.",
+      "text_sha256": "c195f29ebf29f683c971fa860c1f6af7b772cc14e462a0dac750580ba878fe5d",
+      "window_index": 8
+    },
+    "0e6fc24d58b5d7eba80c2a144f46cbba75d5d996af2362664cece4d7d97561e4": {
+      "context": "Section 1798.160 of the California Consumer Privacy Act of 2018 establishes the Consumer Privacy Fund and its subfunds within the State Treasury, including the Consumer Privacy Subfund, Attorney General Consumer Privacy Enforcement Subfund, and Consumer Privacy Grant Subfund, which receive portions of administrative fines and civil penalties recovered for violations of the title and are used for enforcement and grant distribution purposes.",
+      "text_sha256": "5445f4b9d9c3f76105a9386b8de3f2e79aeefbf68e8a154132094b56f60a7e2c",
+      "window_index": 6
+    },
+    "0f82afa3ae8394e6b23bfd01cb457bd43a0e561e604d9189fb21bf8be4d58391": {
+      "context": "Section 1798.148 of the California Consumer Privacy Act of 2018 establishes restrictions on reidentifying deidentified information, specifying permitted purposes for reidentification and contractual requirements for the sale or license of deidentified patient information. This section references Section 1798.146, which defines the exemptions from CCPA applicability for medical information and deidentified data.",
+      "text_sha256": "7ec5471ab78306bbdbec7a2c6701e1fec5fd237c484ff1a5a0ae65dc76125785",
+      "window_index": 6
+    },
+    "10e65aa9006d561f86f300d18e8944caea89b929751861e7e9c8d78eb4142f39": {
+      "context": "Section 1798.199.55 of the California Consumer Privacy Act of 2018 establishes the agency's procedures for holding hearings after determining probable cause of a violation, including the authority to issue orders requiring violators to cease and desist and to pay administrative fines, with specified amounts for violations and intentional violations involving minor consumers' personal information.",
+      "text_sha256": "d55f014a9e31185ac3e200946041828fea4c8632915fc02ff993ec4018d46a0f",
+      "window_index": 8
+    },
+    "174569b08bfa92d8774de3f5a01304e691facbf23516648626da59718d17c3b6": {
+      "context": "Section 1798.199.10 of the California Consumer Privacy Act of 2018 establishes the California Privacy Protection Agency, which is the state agency responsible for implementing and enforcing the CCPA. This section defines the agency's structure, governance by a five-member board, and the appointment process for board members.",
+      "text_sha256": "610dfa29e20940a030829c53037cb81c44774f0a8ed5bddbb407038a4bc78f08",
+      "window_index": 7
+    },
+    "1fa650e6da18af7bfb768a2f0f3dac3944665f594b8744c6758931cafb5d4cea": {
+      "context": "Section 1798.199.85 of the California Consumer Privacy Act of 2018 establishes the standard for judicial review of agency decisions regarding complaints and administrative fines imposed under the CCPA enforcement provisions.",
+      "text_sha256": "714c5805ff68f68b34587b4b27ac24d3be1b8ceb61ce711b9adc4ce6a819b945",
+      "window_index": 8
+    },
+    "21ae787bdda718ae926c3899ab1305cf928567f61dfcb87fb324d9656cf332b6": {
+      "context": "This chunk is from Section 1798.140 of the California Consumer Privacy Act of 2018 (CCPA), which provides key definitions used throughout the statute. The chunk contains the opening definitions (a) through (d), defining terms such as \"Advertising and marketing,\" \"Aggregate consumer information,\" \"Biometric information,\" and \"Business,\" which are foundational concepts referenced throughout the CCPA.",
+      "text_sha256": "0b6fd710b7bfb7e615f21ea13f329639cb748ff93aa52ce77d025851d00f0813",
+      "window_index": 3
+    },
+    "285405a1e28626515c65f42c6a52e1bca2aa5067337890c8b4c0f401df29340d": {
+      "context": "Section 1798.105 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to delete personal information, including the procedures businesses must follow when receiving verifiable deletion requests and the limited exceptions when deletion is not required.",
+      "text_sha256": "d1baaff69274db8c57a6c28efa0c19226ca7525c216ed29ac41ba344af69453c",
+      "window_index": 0
+    },
+    "292db076caba6bf01a192dd596345b826f1050d721c9b750cfb822a2a30ea646": {
+      "context": "Section 1798.160 of the California Consumer Privacy Act establishes the Consumer Privacy Fund and its subfunds. This chunk describes the conditions for administering the Consumer Privacy Grant Subfund and the one-time transfer of remaining funds from the Consumer Privacy Fund to its three subfunds in the 2025-26 fiscal year.",
+      "text_sha256": "703b8aeb21ea9b5d16178586464b9e2d73594e7a3fd6fafcb3dd56225e201f7e",
+      "window_index": 6
+    },
+    "29c3562b24b17957b250e4996f0daf1b53291700340ed6fa2d4aa298ce1bdb73": {
+      "context": "Section 1798.199 of the California Consumer Privacy Act of 2018 establishes the operative date for Section 1798.180, notwithstanding the general operative date specified in Section 1798.198.",
+      "text_sha256": "b79a84e4c9175efa11b909bd035123a1aaaa3478c78a59f2e9bd77fdc3e76f7f",
+      "window_index": 7
+    },
+    "2a9b0c657dba0484910042b3e77bcc17bd4e57b315cb5ff2f05f2980b85c86ff": {
+      "context": "Section 1798.199.60 of the California Consumer Privacy Act of 2018 establishes a requirement that when the agency rejects an administrative law judge's decision made under the Administrative Procedure Act, it must provide written reasons for that rejection.",
+      "text_sha256": "b1e8e22c644135318413870fe84d98956236ffff59925da90748f34087beef1c",
+      "window_index": 8
+    },
+    "3b2a257d32a607d058b11f9917b406c3c978e73cbd304226d639e2f9a93ee8a9": {
+      "context": "This chunk is from California Civil Code Section 1798.135, titled \"Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information,\" part of the California Consumer Privacy Act of 2018. It details business requirements for handling consumer opt-out requests, including restrictions on account creation, mandatory privacy policy disclosures, staff training obligations, waiting periods before re-requesting consent, and special protections for consumers under 16 years of age.",
+      "text_sha256": "50ac6558de56ab4198e9e609a550d262ece33cc33a79cccbc43253318fb26679",
+      "window_index": 2
+    },
+    "49aa3126faa32132380a2f985d35a1b449692d089d3abebd6ba69a2936b8cb71": {
+      "context": "This amendment note appears at the end of California Civil Code Section 1798.140, which is part of the California Consumer Privacy Act of 2018 (CCPA). It indicates that the definitions and provisions in this section, including those for \"third party,\" \"unique identifier,\" and \"verifiable consumer request,\" were amended by Assembly Bill 1170 and became effective on January 1, 2026.",
+      "text_sha256": "af04b4024a8bc11e78c807e881d6954d13cbf557aa30a961b0095a8f5355f7c6",
+      "window_index": 4
+    },
+    "4cb0055c3c72d40d69810b109394a7e73968f411e5d739fe7853f2e30f213a16": {
+      "context": "Section 1798.121 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to limit use and disclosure of sensitive personal information by businesses, including requirements for notice, business obligations upon receiving consumer direction, and service provider restrictions.",
+      "text_sha256": "a8654bbf4359c9989196eefeb7105fff81f949d8df542d78c4e250dc3fb4c98c",
+      "window_index": 0
+    },
+    "4e03ada820415768bccb0cdd010f2932ea36608ee72df700718ea998cad4aff0": {
+      "context": "Section 1798.125 of the California Consumer Privacy Act of 2018 establishes protections against business discrimination and retaliation when consumers exercise their privacy rights, including prohibitions on denying services, charging different prices, or providing different quality of goods or services. The section also permits businesses to offer financial incentives for data collection or retention if consumers provide prior opt-in consent as specified in Section 1798.130.",
+      "text_sha256": "f3eb2573bb0216d3459ef5a0d48b1af73b0a93c41ab49e0f27c7420104a09c1a",
+      "window_index": 1
+    },
+    "511765023354c3640d55265093a6475f6a9d9a151ee592a66a0a2a9d78cf2ccc": {
+      "context": "Section 1798.194 of the California Consumer Privacy Act of 2018 establishes a rule of construction stating that the title shall be liberally construed to effectuate its purposes, providing guidance on how courts and agencies should interpret the CCPA's provisions.",
+      "text_sha256": "f2ebc6613de0f21a349ca6cbabb1a7944c33179a8283320b30f72fc7610f0a4f",
+      "window_index": 7
+    },
+    "514842e5041018c4044110b6d028c29e7fedb13cda44ff0cbef682361001de24": {
+      "context": "Section 1798.199.80 of the California Consumer Privacy Act of 2018 establishes the procedure for the agency to collect administrative fines by applying to the court clerk for a judgment after judicial review has been exhausted or the time for review has lapsed.",
+      "text_sha256": "b4a3203d86054eba15393cc5ca724c70e5e55f10151caa508826ceaa2873fe43",
+      "window_index": 8
+    },
+    "547e1d0fb3c30091938837758390f6e6275c8b8175600bfbad63b6ba1dc5bd30": {
+      "context": "This chunk is from Section 1798.140 of the California Consumer Privacy Act of 2018 (CCPA), which provides definitions of key terms used throughout the act. Specifically, this chunk defines \"Personal information\" (subsection v), explaining what constitutes personal information under the CCPA, what categories it includes, and what is excluded from the definition.",
+      "text_sha256": "40a5ba9af32a06fa68886e7cd1d6475d781c377f327d68fe9bb6d5719c91ff0d",
+      "window_index": 3
+    },
+    "56145c397b30736bc24f223fac8859ec649a000ba6acbeb7fdc1228dae42a73d": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to business obligations under the title. Subsection (g) provides exemptions for vehicle and vessel information shared between dealers and manufacturers for warranty repairs or recalls, with definitions of key terms including ownership information, vehicle information, vessel dealer, and vessel information. Subsection (h) addresses procedural requirements for businesses responding to consumer requests, including provisions for extending response time periods.",
+      "text_sha256": "918fa069d24c6f49494f8807b07b6fbbe41e8768cfa0c2b3289a18a709fd135c",
+      "window_index": 5
+    },
+    "56ab5540c4baf272b50365b8089c515699b3d6056e607e678c0ff29360e25c2a": {
+      "context": "Section 1798.199.45 of the California Consumer Privacy Act of 2018 establishes the agency's authority to investigate violations of the title upon complaint or its own initiative, including discretion to decline investigation or allow time to cure, and requires written notification to complainants about agency actions taken.",
+      "text_sha256": "8149a794564dd85e346655121abe37ac3ae0ebead58b8627352c58623a18ce8d",
+      "window_index": 8
+    },
+    "58b53cc60addaf685fcd46682024b7569756286b27e7bc21408a27a56d4adea7": {
+      "context": "This chunk is from Section 1798.100 (General Duties of Businesses that Collect Personal Information) of Title 1.81.5 (California Consumer Privacy Act of 2018) in California Civil Code. It specifies the final requirements for businesses collecting personal information, including obligations to remediate unauthorized use of personal information, implement reasonable security procedures, and limitations on disclosing trade secrets.",
+      "text_sha256": "09ab30743e06cc37655183bad4f5e0fe72160622ede203e29d322740007c773c",
+      "window_index": 0
+    },
+    "5b331a2d417d27aa1eef2b65a7a39211e8a611d8059dd65c1598508283ddd776": {
+      "context": "This chunk is Section 1798.100 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code), which establishes the foundational disclosure and data handling requirements that businesses must follow when collecting personal information from consumers.",
+      "text_sha256": "a33a08e4fafc15ef2357c1bff289cf0453e4b9c6de4d231395cbdb2439c84019",
+      "window_index": 0
+    },
+    "5cc210f4033ae8243866f9e1816204380a53dbaa259c20eda3a74ebe5d431d9d": {
+      "context": "This chunk is Section 1798.136 of the California Consumer Privacy Act of 2018 (CCPA), found in California Civil Code Part 4, Title 1.81.5. It establishes requirements for businesses that develop or maintain browsers to include configurable opt-out preference signal functionality, defines key terms like \"browser\" and \"opt-out preference signal,\" and specifies that the section becomes operative January 1, 2027.",
+      "text_sha256": "bd4194675e52351d7efcba84e54d0de02cdaab532638127d436b215ab20c490c",
+      "window_index": 2
+    },
+    "5f84e9893cc1bf6a43a195e84142fc87c793061c6c019a185afb5d28a0db1131": {
+      "context": "This chunk is from California Civil Code Section 1798.130, which establishes notice, disclosure, correction, and deletion requirements under the California Consumer Privacy Act of 2018. Specifically, it covers subdivision (a)(5)(C) regarding privacy policy disclosures about personal information sold, shared, or disclosed for business purposes, along with related provisions about staff training, data verification practices, and the frequency limitations for consumer requests.",
+      "text_sha256": "e64a529026df6c9b099b564d846f9dba774951c38faaeb89a1afff000455b945",
+      "window_index": 1
+    },
+    "64733f50eb21eea8e6a1eca98fa5d81a8ead23bad92f5e397dee0b2c879e45c7": {
+      "context": "This chunk is Section 1798.199.30 of the California Consumer Privacy Act of 2018, part of Title 1.81.5 of the California Civil Code. It specifies the agency board's authority to appoint an executive director and other personnel, and to contract for services necessary to carry out the agency's functions.",
+      "text_sha256": "d19514183446d15fe7f6b7034d838e5c4f3205cbe8f8cf61ac57a7a0ff85f10d",
+      "window_index": 8
+    },
+    "64e200a5c1249d7ace9ef207d31ec1b8e424c41e1d99d9c95d83e9219c57e25c": {
+      "context": "This chunk is a legislative note indicating when Title 1.81.5, the California Consumer Privacy Act of 2018, was added to the California Civil Code. It appears at the beginning of Title 1.81.5 (sections 1798.100-1798.199.100), which is part of Division 3 (Obligations) and Part 4 (Obligations Arising from Particular Transactions) of the Civil Code.",
+      "text_sha256": "4b45399c5a54bb89f09c5c668b67e6b9fc612f3d708459708eb23f0f3bf470b6",
+      "window_index": 0
+    },
+    "6d7ffc1f3cfc5a2c7f783654b07b1e7c6e8b7d38dbe4c16105090d438925ec40": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to business obligations under the title. This chunk presents subsection (a)(1), which specifies activities that are not restricted by CCPA obligations, including compliance with legal processes, law enforcement cooperation, deidentified information handling, and out-of-state commercial conduct.",
+      "text_sha256": "7cf3dd62707c933a7695d3dbd1091d30a6a9b551819f2655dc6fa8cf98076355",
+      "window_index": 5
+    },
+    "6fbe80169d4fffb4efedeb6c1676cf84cca35fabb6c399206c5e2b582eb209e0": {
+      "context": "Section 1798.196 of the California Consumer Privacy Act of 2018 establishes the relationship between this title and other laws, stating that the CCPA is intended to supplement federal and state law but does not apply if preempted by or in conflict with federal law or constitutional provisions.",
+      "text_sha256": "e9b7dce83b3f0e88d2ae98dc390c0ae296172a9a23bbf22d912ba177a0dc9d2b",
+      "window_index": 7
+    },
+    "6fe409d3b61738d8e33f71791a356bd1efaa524abb41f0b866ba2139c693c588": {
+      "context": "Section 1798.199.40 of the California Consumer Privacy Act of 2018 outlines the mandatory functions and responsibilities of the agency board, including administering and enforcing the title, adopting regulations, protecting consumer privacy rights, providing guidance to consumers and businesses, and cooperating with other privacy authorities.",
+      "text_sha256": "5c19a34eb986e214ea0fff617bd9d9e681cb4d1307ca02392dad996240a770b9",
+      "window_index": 8
+    },
+    "72fadd516d1a16a7e708b21113fbf8f966d4b70e2769d25eb8b313b3acc93a00": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to CCPA obligations. Subsections (k) through (m) address limitations on consumer rights when they affect other persons' rights, noncommercial activities, and employment-related personal information, including definitions of independent contractors, directors, medical staff members, and related roles.",
+      "text_sha256": "c9de668d96d6677344ab438958eb44285020dcabe8f70987c2011508135ce5a7",
+      "window_index": 5
+    },
+    "732ccbe2e3f13202aee41b033e8bab88ebc703531b8216bfa9491d6a8f8c6d8f": {
+      "context": "Section 1798.150 of the California Consumer Privacy Act of 2018 establishes private rights of action for consumers whose nonencrypted personal information or email addresses with passwords are subject to unauthorized access, theft, or disclosure due to a business's failure to maintain reasonable security procedures. The section allows consumers to recover statutory damages between $100 and $750 per incident, injunctive relief, or actual damages, subject to a 30-day notice requirement before filing suit.",
+      "text_sha256": "412f9677aeb7b16c8be878f32a75df9b6b5147b6d7eef427b9dbbf3737bcce7d",
+      "window_index": 6
+    },
+    "76f6c747a44bbad475d38c63ba9feea09689fe4c8f0a0887d5b17b09355bc0de": {
+      "context": "Section 1798.155 of the California Consumer Privacy Act of 2018 establishes administrative enforcement provisions, specifying the fines the California Privacy Protection Agency can impose for violations of the CCPA and how those fines are distributed between the Consumer Privacy Subfund and Consumer Privacy Grant Subfund created under Section 1798.160.",
+      "text_sha256": "84e4342e87ba751845020111eddb029f66fc75731fd48f6d853c4e58de8939a9",
+      "window_index": 6
+    },
+    "7877d019e055003e33cfa3268d11bfa51dc74a24fc421a13329754708aced46c": {
+      "context": "This chunk is from California Civil Code Section 1798.185, which outlines regulations that the Attorney General (and later the California Privacy Protection Agency) must adopt to implement the California Consumer Privacy Act of 2018. Specifically, these are subsections (6) through (11) of subdivision (a), detailing regulatory requirements for consumer data deletion, correction, information access, business purposes, and key term definitions.",
+      "text_sha256": "9e65e28614ac8f57538f230a1895691aa29616612b00ac142ba700f76527672a",
+      "window_index": 7
+    },
+    "78a4ded9ff62f8c85333a5c6cbe176dc1728dd735178eca610293a3d50212790": {
+      "context": "Section 1798.115 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to know what personal information is sold or shared and to whom, requiring businesses to disclose categories of personal information sold or shared and the categories of third parties receiving such information upon receipt of a verifiable consumer request.",
+      "text_sha256": "01ce6a2dfacceba5b8407982d9b9c05cffce235f5487935409598512817ebcfe",
+      "window_index": 0
+    },
+    "7d3ec9c2d221f700b7142d590d66a277c48fea0b3ecfa746bcd41b7e38af0803": {
+      "context": "This chunk is from Section 1798.105 of the California Consumer Privacy Act of 2018 (CCPA), specifically subdivision (d), which lists exceptions to a consumer's right to delete personal information. These provisions outline circumstances where a business is not required to comply with a deletion request, including research purposes, internal uses, and legal compliance obligations.",
+      "text_sha256": "afeb778c104eb3266574313b79e6309a197cedb072422a95b46f7269ed98975f",
+      "window_index": 0
+    },
+    "85ffbff18358c9f0c7cda90efd492340e77f9c6cfe16d4f026a29d4486d6c9df": {
+      "context": "Section 1798.148 of the California Consumer Privacy Act defines \"reidentify\" for purposes of regulating the reidentification of deidentified patient information, establishing that it means the reversal of deidentification techniques through addition of identifying information or statistical methods that associate deidentified data with a specific individual.",
+      "text_sha256": "ebf3defe40e3fba14d3dc6b5e164f4c896177a19a7c7eacc4e787780513c3c72",
+      "window_index": 6
+    },
+    "875bad5290abc7874dd2a6421c817d398d5c95efe717f18c6ec60dd55f4602d0": {
+      "context": "This chunk is from Section 1798.140 (Definitions) of the California Consumer Privacy Act of 2018, specifically defining \"Sell\" (subsection ad) and \"Sensitive personal information\" (subsection ae). These definitions establish key terms used throughout the CCPA regarding when a business sells consumer data and what categories of personal information receive heightened protection.",
+      "text_sha256": "07684f18eed140f7417363e8e314e2274ec0d70d1132de59ff4f920c4a222395",
+      "window_index": 3
+    },
+    "8981e975ab8e2a6efe174cf71cfd44d877c5248f1fef8801df0905d351be5bb0": {
+      "context": "Section 1798.198 of the California Consumer Privacy Act of 2018 establishes the operative date for the entire title, specifying that the act becomes operative January 1, 2020, subject to the condition that a competing ballot initiative is withdrawn from the ballot.",
+      "text_sha256": "49165cec82bb69d0f70de24b7670ee72e37eaedc33f97d983ca81f69a0be7f1b",
+      "window_index": 7
+    },
+    "89dd10a6c19fa354e84b6155de7079e1b9f778012149aa90e7e1239bc9c897b8": {
+      "context": "Section 1798.199.90 of the California Consumer Privacy Act of 2018 establishes civil penalties and enforcement procedures for violations of the act. This section specifies the civil penalties that the Attorney General may recover through civil actions, the distribution of recovered penalties to various consumer privacy funds, and the coordination between the Attorney General and the agency in enforcement actions.",
+      "text_sha256": "94043d114b0a4f7d79e388ecdf02ca20d47350af81de2bdec2c3a49c1d4c1c4d",
+      "window_index": 8
+    },
+    "8bfdf142b6b6dd65402f41c799939864163a3b25968c3fdfb75d909d8e1d6259": {
+      "context": "Section 1798.190 of the California Consumer Privacy Act of 2018 establishes anti-avoidance provisions that require courts and the California Privacy Protection Agency to disregard intermediate steps or transactions designed to circumvent the Act's requirements, particularly those intended to avoid the definitions of \"sell\" or \"share\" of personal information.",
+      "text_sha256": "b5bdf21d0795df71191000ec906b292259f715f4a556702f2167a7c27eafeffd",
+      "window_index": 7
+    },
+    "8d122e5e05f660f18003d24bed4a524fd3fda8d45a4c3a5e78065e80d4762351": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 establishes exemptions to the Act's obligations. This chunk covers exemptions related to medical information governed by federal and state law (subdivision c), consumer reporting activities regulated under the Fair Credit Reporting Act (subdivision d), and personal information subject to the Gramm-Leach-Bliley Act, California Financial Information Privacy Act, Farm Credit Act, and Driver's Privacy Protection Act (subdivisions e and f).",
+      "text_sha256": "859996a69839aaf4f4b410f92a0d6e4b96cd6871e2e5cd89daa45b05eca7a9d6",
+      "window_index": 5
+    },
+    "9053a9ed20093003527868504d04fa6069cd40bbe79fa71ad43f1954e95e22aa": {
+      "context": "This chunk is Section 1798.130 of the California Consumer Privacy Act of 2018, which establishes the notice, disclosure, correction, and deletion requirements that businesses must follow to comply with consumer rights provisions including the right to know, delete, correct personal information, and the right against discrimination under Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125.",
+      "text_sha256": "7058777549c080ccfbb067c882e460c27996fd4aa24defb6001c4cc41544bd2a",
+      "window_index": 1
+    },
+    "928563471a6bfb5e268f97158a13e6160b91fc387d19b25291d3f7af49d508c2": {
+      "context": "Section 1798.110 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to know what personal information is being collected and their right to access personal information held by businesses.",
+      "text_sha256": "4f952f37c3d1b90c070099f6a6f222bd0ae80a858e252a042966977d4a0bcf03",
+      "window_index": 0
+    },
+    "95513d37ea26753e5c765588613f4c95b909cb1bf79871b336b05e21a68772b0": {
+      "context": "This chunk is from California Civil Code Section 1798.130, which establishes notice, disclosure, correction, and deletion requirements under the California Consumer Privacy Act of 2018. Specifically, it details the timeframe and scope for businesses to disclose personal information to consumers in response to verifiable consumer requests under Sections 1798.110 and 1798.115, and describes the obligations of service providers and contractors in assisting businesses with these disclosure requirements.",
+      "text_sha256": "15a7e250a273a071b7a132e28de00e31267d8ade189f79c0bbb7f9667f69cdec",
+      "window_index": 1
+    },
+    "9a0eaac9020b0253414e4e226c1d1275791decade81ed81746fc76d4de3d7827": {
+      "context": "This chunk is from Section 1798.140 of the California Consumer Privacy Act of 2018, which provides definitions of key terms used throughout the act. The chunk contains definitions (w) through (ac), including precise geolocation, probabilistic identifier, processing, profiling, pseudonymization, research, and security and integrity, all essential terms for understanding consumer privacy rights and business obligations under the CCPA.",
+      "text_sha256": "e48f048d490be04c2ecfa39e6547d78df8eb57290c91eea7df74af42ff23deb9",
+      "window_index": 3
+    },
+    "9a4489ba734f217990950d5dc8f96661d885a3d3e95958d40a3e32a37d58f886": {
+      "context": "This chunk contains definitions (k) through (u) from Section 1798.140 of the California Consumer Privacy Act of 2018, part of California Civil Code Title 1.81.5. These definitions establish key terms used throughout the CCPA, including cross-context behavioral advertising, dark patterns, deidentified information, designated methods for submitting requests, device, homepage, household, infer/inference, intentionally interacts, nonpersonalized advertising, and person.",
+      "text_sha256": "c1c32c0dfc704dc3ad74a556f3c761bad50828452fb4d1cb5e31a26b79450962",
+      "window_index": 3
+    },
+    "a124634cd80aec4a070001d720e586c5cdf1f6152297f6d65dff1e808d5f17b9": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to business obligations under the title. This chunk covers additional exemptions and limitations, including special protections for reproductive health information, rules for aggregated and deidentified data, evidentiary privileges, and carve-outs for medical information governed by federal and state privacy laws.",
+      "text_sha256": "fc42c4fe022ecc7503629e0106fe47b67a3d62690ed16614fe31d8b3ff1c4660",
+      "window_index": 5
+    },
+    "a22537f8c18959d86f75ccd0ece8760901c8e7f5b4fec51b8f9f5b51ddbb468e": {
+      "context": "Section 1798.199.75 of the California Consumer Privacy Act of 2018 establishes the agency's authority to bring civil actions in superior court to collect unpaid administrative fines that were previously imposed under the CCPA enforcement procedures, specifying the requirements and timeline for such collection actions.",
+      "text_sha256": "e56aee26c336eaf9f6a5d91fd59b08049d5bcc2610609c891f8cd85e14a5f5bb",
+      "window_index": 8
+    },
+    "a7c77c0f720f93d0f77330a656ea9dddf0ce632614879e52776136e5de46f0f4": {
+      "context": "Section 1798.185 of the California Consumer Privacy Act of 2018 outlines the regulatory authority and requirements for the Attorney General (later transferred to the California Privacy Protection Agency) to adopt regulations implementing the CCPA. This chunk presents the initial subsection (a) detailing mandatory regulatory areas covering personal information categories, definitions, opt-out procedures, consumer notices, and accessibility requirements that must be addressed by July 1, 2020.",
+      "text_sha256": "292f1a765b8bd2f88ed9e44a2e2ec0fb36c7ed1ed8e3fd36f63d711e5ed735e2",
+      "window_index": 7
+    },
+    "aa0be82d14d578d812ab3ad3941dcbec558e4a3dd996b0d125505073059d46a1": {
+      "context": "Section 1798.120 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to opt out of the sale or sharing of their personal information by businesses, including protections for minor consumers and requirements for businesses to provide notice and comply with opt-out directions.",
+      "text_sha256": "8cc587abae83347b0d3db837b9501706086d13b7d1843f4914a0e7c53d32fba0",
+      "window_index": 0
+    },
+    "aa41ba55e1506679e72134b2f71cacecca9305020227e6fa890dce736c6c53bb": {
+      "context": "Section 1798.199.95 of the California Consumer Privacy Act of 2018 establishes funding and operational requirements for the California Privacy Protection Agency, including appropriations from the General Fund, budget reporting requirements by the Department of Finance, staff support provisions, and procedures for adjusting monetary thresholds based on the Consumer Price Index.",
+      "text_sha256": "5c004958f88882992c3ccd9624ab554745743c10d2781bd4ec7d3a69ff267d7a",
+      "window_index": 9
+    },
+    "aad760ced038136f1f8ac9aa9652c865b78ae7b5ba50fc63e326f6f98451cc8c": {
+      "context": "Section 1798.180 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of the California Civil Code) establishes that the CCPA preempts all local and municipal laws regarding the collection and sale of consumers' personal information by businesses.",
+      "text_sha256": "c15262dc297e44f847b530d8e8b047d31abdeb74a0c34d589021c3d8c4337fcd",
+      "window_index": 6
+    },
+    "b25dc33186340153ac4ecc4cb1d2bf89331c1eb9433eeca6e4a00d247a300668": {
+      "context": "This amendment note appears at the end of California Civil Code Section 1798.199.95, which is part of Title 1.81.5 (California Consumer Privacy Act of 2018). Section 1798.199.95 addresses funding appropriations for the California Privacy Protection Agency and procedures for adjusting monetary thresholds based on the Consumer Price Index.",
+      "text_sha256": "fd190f5c903c4ff812da823f7c2ab0df89dc8c6d240fd3ef4149cc2023579649",
+      "window_index": 9
+    },
+    "b828ee65d6f28ac7f03846bbaeb61b002b391318b6ce62737d6780d50636cbd2": {
+      "context": "This is Section 1798.199.25 of the California Consumer Privacy Act of 2018, part of Title 1.81.5 of the California Civil Code. It specifies the compensation and expense reimbursement requirements for members of the agency board that administers and enforces the California Consumer Privacy Act.",
+      "text_sha256": "0f2b1afc869b5db6263192f10af7ae4ba4b294f28881dc5d903fb67d9b9fbe25",
+      "window_index": 8
+    },
+    "ba45fe66376b9cf240e50f4c0eb2bb2c4ac848666cd0701216c1e797a6f9c8e9": {
+      "context": "This chunk from California Civil Code Section 1798.140 is part of the California Consumer Privacy Act of 2018 (CCPA) and contains provisions governing how businesses may transfer consumer personal information during mergers and acquisitions, along with key definitions including \"third party,\" \"unique identifier,\" and \"verifiable consumer request\" that are central to CCPA compliance requirements.",
+      "text_sha256": "71d1a1e5f5f50c0754d1403d8882b07f194e752a7ac8c611fff76d4113ed2435",
+      "window_index": 4
+    },
+    "bc74f69224c2afe109e7e31303d6b7eda4061215678b4d92d9b696d569030fa5": {
+      "context": "This amendment note appears at the end of Section 1798.150 of the California Consumer Privacy Act of 2018, which establishes the private right of action for consumers whose personal information is subject to unauthorized access and exfiltration as a result of a business's failure to maintain reasonable security procedures.",
+      "text_sha256": "d66decb2fea3ceb635382e7aeefee0886b6a55903634467e6a649aa80028368e",
+      "window_index": 6
+    },
+    "bcf4eee4f790413fa0bb295390c2437d20e7c5cc131f93de026b75bbf0af9599": {
+      "context": "This chunk is from Section 1798.140 of the California Consumer Privacy Act of 2018, which provides definitions of key terms used throughout the statute. The chunk contains definitions for \"Commercial purposes,\" \"Consent,\" \"Consumer,\" and \"Contractor,\" which are foundational concepts for understanding consumer privacy rights and business obligations under the CCPA.",
+      "text_sha256": "67ceaf4ee475cc126b6f8cd53c1ba086d0e34647c77559b0e6470a9ef992b5a6",
+      "window_index": 3
+    },
+    "c29614aef65f4c4a8b7b347225b104fd6e0f9aa05d9a3f2d5f0d558d0cd44bd4": {
+      "context": "This chunk is from California Civil Code Section 1798.145, which outlines exemptions to the California Consumer Privacy Act of 2018. Specifically, it contains definitions and scope limitations from subdivisions (m) and (n) of Section 1798.145, which define key terms like \"Officer\" and \"Owner\" and establish exemptions for personal information of employees, owners, directors, and officers of businesses, with provisions that become inoperative on January 1, 2023.",
+      "text_sha256": "a68c8b869c5f48d9ffee7040f65f2a2861e12ae26836f0bbd64bc58435c870c5",
+      "window_index": 5
+    },
+    "c3b262174b3f66cfece755c45617996cfd041df6a47cbf63a03cff75396514bf": {
+      "context": "This chunk is from California Civil Code Section 1798.185, which outlines regulations that the Attorney General (and later the California Privacy Protection Agency) must adopt to implement the California Consumer Privacy Act of 2018. Specifically, this portion addresses subsection (a)(19), which requires regulations governing how businesses respond to opt-out preference signals, including prohibitions on charging fees, degrading functionality, coercive practices, and dark patterns, as well as regulations for insurance companies and harmonization of opt-out mechanisms.",
+      "text_sha256": "57da58e4194121119573d9adcf03d66ec2599ba94b374b887e83004cd2ce95e4",
+      "window_index": 7
+    },
+    "c3f4e5e077be386bc9b395e45b6d0c3fbe4069165ed73dfb466fa672c01deb61": {
+      "context": "This chunk is from Section 1798.140 (Definitions) of the California Consumer Privacy Act of 2018, part of California Civil Code Title 1.81.5. It defines key terms including \"service,\" \"service provider,\" and \"share\"/\"sharing\" that are essential to understanding how businesses must handle consumer personal information under the CCPA, including restrictions on selling, sharing, and combining personal information, and requirements for written contracts with service providers.",
+      "text_sha256": "2a796d3c2d927827e5fbca1791f09088a32b6ea12a98827bbfc438ca45cd3fd8",
+      "window_index": 3
+    },
+    "c6cc1de76c540b728706fc56047fb2e6e5ecfc674a8e4b168e5f94305025c6ac": {
+      "context": "Section 1798.199.50 of the California Consumer Privacy Act of 2018 establishes procedural requirements for the agency's probable cause determination process, specifying notice and hearing rights that must be provided to alleged violators before the agency can make a finding of probable cause for violations of the title.",
+      "text_sha256": "f261361da7e805f3cb359b1f5a06eebe2c6b5ffe2b4c9ca62a17375f8724bfc9",
+      "window_index": 8
+    },
+    "c76d83bbd7f0ebf4474d05a50886acee9f4c23ffba10cdba897ed2cd17972ac7": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to business obligations under the title. This chunk covers subsection (q), which exempts businesses from complying with consumer requests to access or delete educational assessment information and test results, and subsection (r), which exempts certain uses of personal information for producing physical items like yearbooks when consumers have consented and compliance would not be commercially reasonable.",
+      "text_sha256": "59dbd99e958db1c33f746edb1dea5661eaf60d99a5c5a909c2c466b8eb04504f",
+      "window_index": 5
+    },
+    "c7ad8d8132268b81ca8b048c91959160a82c1fd41dc11d414862a4a702760723": {
+      "context": "This amendment note appears at the beginning of Division 3 (Obligations) of the California Civil Code, indicating that the division's heading was modified by a 1988 statute. It precedes Title 1.81.5, the California Consumer Privacy Act of 2018, which is codified within this division.",
+      "text_sha256": "933931494c2fdff828e0f8f89b9b389d06b9aafb1c6c8465d00aa2304c5bb28a",
+      "window_index": 0
+    },
+    "d0f2cebfd01e383da07b682c27fd1d8de80435aaaeb9ddb95e915c8acafd3483": {
+      "context": "Section 1798.175 of the California Consumer Privacy Act of 2018 establishes how this title relates to and harmonizes with other existing privacy laws, specifying that when conflicts arise between the CCPA and other laws, the provision affording the greatest privacy protection for consumers shall control.",
+      "text_sha256": "92795648f0b2a6037ac8d99c9e91fcdaf378d1ba25a28bba17bdeb8c8a7b227e",
+      "window_index": 6
+    },
+    "d160db8a997bbcbb4762315d3e5c79842569174400d9c3a149e86c2a4dc8a414": {
+      "context": "This is Section 1798.199.35 of the California Consumer Privacy Act of 2018 (CCPA), part of Title 1.81.5 of the California Civil Code. It specifies the delegation authority of the agency board, limiting what powers the chairperson or executive director can exercise on behalf of the agency between board meetings.",
+      "text_sha256": "8b67048c385f47692ddd23b11ad91d5194111950ec98476581d6ad87950fabd5",
+      "window_index": 8
+    },
+    "d29fbeedba10b82e42a85818105ace93edde6ff85428d9d9a5610a320a14dc1e": {
+      "context": "Section 1798.192 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes that any contract provision attempting to waive or limit consumer rights under the CCPA is void and unenforceable as contrary to public policy.",
+      "text_sha256": "7f459f5375f56c6ad886d02b10f2f8ad9992e365e8b0180e69531d55637361b3",
+      "window_index": 7
+    },
+    "d308c065ebb82f800563120dbded54282653361988ca4fbc348d9551ded188b5": {
+      "context": "This is Section 1798.199.100 of the California Consumer Privacy Act of 2018 (CCPA), found in California Civil Code Title 1.81.5. The section addresses enforcement and penalties under the CCPA, specifying how agencies and courts should consider good faith cooperation when determining administrative fines or civil penalties for violations, and prohibiting double penalties for the same violation.",
+      "text_sha256": "9f6cb0324a13cec2a393d173ebaf9338a307285b6b12e0bf5efbfe5227f08e5d",
+      "window_index": 9
+    },
+    "d877f221efa74f0728b73573337694c76ca3ee174e212ca2727ba7e5f6e3e163": {
+      "context": "This chunk is from California Civil Code Section 1798.135, which addresses methods of limiting sale, sharing, and use of personal information under the California Consumer Privacy Act of 2018. Specifically, subdivisions (e), (f), and (g) establish rules for authorized representatives submitting opt-out requests on behalf of consumers and restrictions on how businesses may use personal information after receiving such requests.",
+      "text_sha256": "1fbdc7d8591323430eb2bf6460aca4d26fac01aead1848e6232426e827b08a69",
+      "window_index": 2
+    },
+    "d90d77ffdbfda24722a3696ff59049af72d1cd27ecdc90f5736092144059173b": {
+      "context": "Section 1798.199.65 of the California Consumer Privacy Act of 2018 outlines the investigative powers granted to the agency, specifically its authority to subpoena witnesses and compel production of evidence during investigations and compliance audits.",
+      "text_sha256": "dc866e5c0db1ec1f209f8a38c9b79b070ed909a96afbf08d9bac65157d2382c2",
+      "window_index": 8
+    },
+    "dbbda7d2153aa6a9af9eaf4503c991148c55849329170a3b8834fd88008c17ca": {
+      "context": "Section 1798.146 of the California Consumer Privacy Act of 2018 establishes exemptions from the Act's applicability, including an exemption for research information and definitions of key health-related terms used throughout the exemptions.",
+      "text_sha256": "98414d8fe2e8d6b957fa0f74c0c42076f1a09c6149d0dfb6d4797384869c0eeb",
+      "window_index": 6
+    },
+    "dccbef0577d0c2a4138f9e49fbcb9775a79cd1234a9c8871f31cd6aa10b99691": {
+      "context": "This chunk is from California Civil Code Section 1798.130, which establishes notice, disclosure, correction, and deletion requirements under the California Consumer Privacy Act of 2018. The chunk specifies how businesses must format and present personal information disclosures to consumers in response to verifiable consumer requests, including requirements for machine-readable formats, separate lists for sold/shared versus business purpose disclosures, and privacy policy disclosures about consumer rights and data handling practices.",
+      "text_sha256": "c3a9e775cf83573e46f9ea0d2a6dd3c15825858c9a9ccfde7a1892ae8f9ee0f9",
+      "window_index": 1
+    },
+    "ddec08cbd8a78da1f9c5cf8e9301c7dbcc10686a44073beea1648da2a29aa6d5": {
+      "context": "Section 1798.199.15 of the California Consumer Privacy Act of 2018 establishes the qualifications, duties, and restrictions for members of the agency board, including requirements regarding privacy and technology expertise, confidentiality obligations, independence from external influence, and post-employment restrictions.",
+      "text_sha256": "107fb241ffec4523b7f9c9da6e07b5b9ae9350e8d1381c2398ab2aeb05dd931f",
+      "window_index": 8
+    },
+    "df277cb226e62928cb8d4f476001ee1497c4dc82a06621f544047af6ffba98de": {
+      "context": "This chunk is a historical note in the California Consumer Privacy Act of 2018 (Title 1.81.5) of the California Civil Code, indicating when Part 4 (Obligations Arising from Particular Transactions) was originally enacted into law.",
+      "text_sha256": "e0ca5eb9896afe75324bab8d308e5d6ab2a08a170f353c33388ee317bdad417a",
+      "window_index": 0
+    },
+    "e7c8ca40f98ac38a6d8e965690bda5280c74968b3b27781b278720996a908053": {
+      "context": "Section 1798.106 of the California Consumer Privacy Act of 2018 (Title 1.81.5 of California Civil Code) establishes consumers' right to correct inaccurate personal information held by businesses, requiring businesses to disclose this right and use commercially reasonable efforts to make corrections upon receiving verifiable consumer requests.",
+      "text_sha256": "a3d1b9c5e0e78e77053fcfadb4f30e79f4e3a75e26dfa9d4ba7c6e00b063781b",
+      "window_index": 0
+    },
+    "eda88b64f48f0d7bb5820e50c57c19b768cbf5935796537a72942c8b1ebc40b7": {
+      "context": "Section 1798.185(d) of the California Consumer Privacy Act of 2018 establishes the timeline and authority for regulatory adoption, specifying that the California Privacy Protection Agency assumes rulemaking authority from the Attorney General and setting enforcement dates for amended provisions of the act.",
+      "text_sha256": "b7ded93ecd6ff0afd4adc64190be24cf0ddcf1f47bc218de6a8ce6a8879bf8cf",
+      "window_index": 7
+    },
+    "edecd7f56877684b0998ce14bf28085258ec208b59fab8ddf815c736efef23df": {
+      "context": "This chunk is from California Civil Code Section 1798.135, titled \"Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information,\" which is part of the California Consumer Privacy Act of 2018 (CCPA). The section establishes requirements for businesses to provide consumers with mechanisms to opt out of the sale or sharing of personal information and to limit use of sensitive personal information, either through direct website links or through opt-out preference signals.",
+      "text_sha256": "7af13ad5a43fb9bcd0c41c5d0d0d01602b01b02aad40afd1b82f3f1bf19f235b",
+      "window_index": 2
+    },
+    "ee69060af630902c04fc5442c1f1a6d0ded5776ca4d2e4c26d46d007644bd8bd": {
+      "context": "This chunk is from Section 1798.140 (Definitions) of the California Consumer Privacy Act of 2018, part of California Civil Code Title 1.81.5. It defines key terms used throughout the CCPA, including what constitutes a \"business\" under the law (paragraphs 3-4), \"business purpose\" and its permitted uses (paragraph e with eight enumerated purposes), and \"collects\" or \"collection\" (paragraph f).",
+      "text_sha256": "2d3118fb3df2dab0ccf0f5e4624b778c11317974a0fe15f1985e1ea404dd0dcb",
+      "window_index": 3
+    },
+    "f37da6a0c5d6b53068fa41b423659aa31f6a269adc5f9250c2defc511f07b9a3": {
+      "context": "This chunk is from California Civil Code Section 1798.185, which outlines regulations the Attorney General and California Privacy Protection Agency must adopt to implement the California Consumer Privacy Act of 2018. Specifically, it details subsection (18) regarding technical requirements and specifications for opt-out preference signals that allow consumers to opt out of the sale or sharing of personal information, and subsection (19) governing how businesses must respond to such signals without engaging in coercive or deceptive practices.",
+      "text_sha256": "b52ab5cdddc7d8c80d0d266c276b73836999d637dc65133ecda221063d606e96",
+      "window_index": 7
+    },
+    "f381e2a1366a4b0cdb68b582d0f62c916c0e961ee494e1de3ddc0e93ca33ddba": {
+      "context": "This chunk is from California Civil Code Section 1798.185, which outlines regulations that the Attorney General (and later the California Privacy Protection Agency) must adopt to implement the California Consumer Privacy Act of 2018. Specifically, these are items (12) through (18)(A) from subdivision (a), detailing required regulatory areas covering precise geolocation definitions, access to personal information, cybersecurity audits, automated decisionmaking technology, and opt-out preference signals.",
+      "text_sha256": "65d693cc48a69fb8d0291c2e890f018c1d7995a9e51673d1753f1ffb946b9594",
+      "window_index": 7
+    },
+    "f7826716f2a5d9042c7e43aa304da577c5ba06d1b74e60464646359f7accad0b": {
+      "context": "Section 1798.145 of the California Consumer Privacy Act of 2018 outlines exemptions to business obligations under the title. Subdivision (o) provides an exemption for commercial credit reporting agencies' use of business controller information, defining key terms including \"business controller information,\" \"commercial credit reporting agency,\" \"owner,\" \"director,\" \"officer,\" and \"management employee.\"",
+      "text_sha256": "0f9b50632021cc29ac9d8a811723399e24d23f054ccadd09c4e5100a775caee2",
+      "window_index": 5
+    },
+    "ffab4adea89c6e4de4858206931f811d991b0975f29e67a107be52fb6f04654f": {
+      "context": "Section 1798.146 of the California Consumer Privacy Act of 2018 establishes exemptions from the Act's applicability, listing categories of information and entities not covered by the law, including medical information governed by federal and state health privacy laws, healthcare providers and business associates, and deidentified information derived from regulated health entities.",
+      "text_sha256": "18b1d384861bbd63a1ab14e7460e6c47c9cb66c7d2714efdee35e6d6dc7599aa",
+      "window_index": 6
+    }
+  },
+  "doc_id": "law-ccpa-1798",
+  "generated_at": "2026-08-29T22:12:09Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

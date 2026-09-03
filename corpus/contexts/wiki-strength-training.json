@@ -1,0 +1,488 @@
+{
+  "contexts": {
+    "0343440e2d6e026f92eb183aaf170dbfdde585d039bcb53a75839e5eabcd22f0": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, in a navigation/reference section at the end of the article that provides an overview of sport-related topics. It lists subcategories under \"Communication\" and \"Culture\" within the broader \"Sport\" category structure, including topics like sports journalism, betting, entertainment, and regional sports information.",
+      "text_sha256": "6976d00b041cc9108caa53e3abfad0dc59e8aff23d64dde9e16c313f5f898e85",
+      "window_index": 5
+    },
+    "0701e61643929495db56575fa4ffb60e2280943998e94fcc7c53824fb7600133": {
+      "context": "This chunk is from the \"Neuromuscular adaptations\" section of the Wikipedia article on Strength training, which discusses how strength training improves the nervous system's ability to recruit and activate muscle fibers through neural adaptations in the motor cortex, spinal cord, and neuromuscular junctions, separate from muscle hypertrophy.",
+      "text_sha256": "f072e3d3c9acb0eab8fd3d0d646963c520acdb2452381f36f0ddb590b3b9ab42",
+      "window_index": 2
+    },
+    "083fd86e439d60874c2ec9e9d8722c9ad1af555452f30b5446a336a2bdbf0b6d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 97 and 98 support claims about the cognitive and neurological benefits of strength training and exercise, including neuroplasticity and effects on depression and brain plasticity.",
+      "text_sha256": "f111eabee61a2a7fe8d1345cd4cdf5b22dfe8fa3e9454a3d7fb29ed58bfe5f15",
+      "window_index": 4
+    },
+    "091248d5fc7fa6adfeaf9392b9a797f8b2a7e7e7c2c7ccafcf70d66ef207aa42": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 28-30, which are academic sources cited throughout the article that address resistance training frequency, rest interval duration, and their effects on muscle hypertrophy and strength gains.",
+      "text_sha256": "9e3ba230153a4f342aebdeb09812dd03b7d4f882d1036cd8af10203616448ef0",
+      "window_index": 3
+    },
+    "09ed9fde9223d9c047d500e4abf2f57d47bc94230f2e6ddbbe2ad587d03ff7f9": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 35 and 36, which are academic sources supporting information about advanced resistance training techniques and agonist-antagonist training protocols used in strength training programs.",
+      "text_sha256": "fcdb901edd85029176967051191a09e29bf5a349d479c221ce7789e7d3695627",
+      "window_index": 3
+    },
+    "0dde86b9867b46c1bcc2afae30ee0f6a26fffa02a3aea889f718c35a2f476a70": {
+      "context": "This is reference 122 in the References section of the Wikipedia article on Strength training. It is a citation to a 2015 meta-analysis by Csapo and Alegre examining the effects of resistance training with different load intensities on muscle mass and strength in elderly populations.",
+      "text_sha256": "ccf61f6da89433967d0525d4975a7531a8d3220f6c71046488788a5645f50b36",
+      "window_index": 5
+    },
+    "1315c0a1c3d58bd9c3a61ed5e3f03c14c7e092f0236083afbfae169fa6e92cf3": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 91 and 92 are citations supporting claims about the health benefits of resistance training, specifically regarding its effects on arterial stiffness, blood pressure, body fat percentage, and fat mass in adults.",
+      "text_sha256": "5d6d0926c75d8ed39dc2db2d5a45e0032eec28a561ce0de9c509caa0ece1a2db",
+      "window_index": 4
+    },
+    "15c161cc5ba2d7cb0b92e8a42dea3df5947d3d6841dd186c8e4e8d088b680605": {
+      "context": "This section from the Wikipedia article on Strength training addresses safety concerns and training guidelines for children and adolescents, covering growth plate injury risks, the National Strength and Conditioning Association's position on child safety, comparative effectiveness of resistance and plyometric training methods for youth, and supervision requirements for minors.",
+      "text_sha256": "2f41a1a97417476593835b603211610f74a8f269d10b8e5ad5cdfe003adcc2ac",
+      "window_index": 2
+    },
+    "166ebcdb094cf15090fb7db69600d486915b3dc47313a1cb8b5ec83929380459": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 66 and 67 are citations supporting information about nutrition and supplementation in strength training, specifically regarding protein supplementation's effects on muscle mass and strength gains, and the role of carbohydrate restriction in resistance exercise performance.",
+      "text_sha256": "645ad58ccd5093650074e6cf6d506848433070a9fb759b6ed398cff39e2869fd",
+      "window_index": 4
+    },
+    "20f0d03a8ad9da5555ec2843cccc176fed7c43278474b8b496e15cbded02165d": {
+      "context": "This chunk appears in the Strength training Wikipedia article's navigation and categorization section at the end of the document. It is part of a broader \"Category\" navigation box that organizes related topics under \"Sport\" and includes subsections on Types, Science, Organizations, and Business related to sports. The chunk specifically lists types of sports (Individual, Team, Military sports, etc.) and science-related topics including strength training as a component of exercise physiology.",
+      "text_sha256": "2fd4ed4ede63871973e61818e9a4415683f9d7693ddf4fbd718900735b2f6dba",
+      "window_index": 5
+    },
+    "22f81934d76ba609d2b7e20c1dca2134c2aec9195e6fe014d44359d0ba3fca92": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 42-44, which are academic sources related to exercise selection in strength training programs, including references on strength and conditioning exercise selection for speed development, resistance exercise selection for older individuals, and essentials of strength training and conditioning.",
+      "text_sha256": "deaf627cb5e3ace49fa85c3551f23a8fb9cfdfefd68cfa8b0a2125d9d42220e3",
+      "window_index": 3
+    },
+    "232af79bcf542ebe13e1b2bfa8a0b2ee6b10176a7cde4e653f927ac3374ee15c": {
+      "context": "This chunk is from the History section of the Wikipedia article on Strength training. It traces the origins and evolution of lifting and strength training from prehistoric times through the modern era, covering ancient Greek practices, the development of equipment like dumbbells and barbells, the introduction of weightlifting to the Olympics, and the popularization of weight training in the 20th century.",
+      "text_sha256": "d1edd67376c0bcb948cfae181443e05bc1d94520b2ab2614cb271913b2735e65",
+      "window_index": 2
+    },
+    "24497a277ca8972b7225a93ff86dd9eb4ef4c72fd8fc74b619548d02d47e7180": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, under section 1 \"Principles and training methods.\" It introduces the fundamental principles underlying strength training, including the concept of progressive overload and the neurological adaptations that occur when beginning a strength training program.",
+      "text_sha256": "a51f898daa71cf269d7a48c19d2d2aa5028bee2a98a26668eec2cd450d21f886",
+      "window_index": 0
+    },
+    "2512612e248019bb5e84f0bac22b504f1422067ae826ac55000979773b7d4992": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training. It contains citations 5-8, which are academic sources cited throughout the article to support claims about resistance training adaptations, exercise physiology, fatigue assessment, and training protocols.",
+      "text_sha256": "62ff742b655438261de56aa26dc5e5cb285dcbfab66b67ceaa29de3eca11815c",
+      "window_index": 3
+    },
+    "2b19f28ab7a045697e54e07860b65599a64c4733838bbb017bb191bd41e581c1": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, under the \"Effects\" section, specifically in the subsection titled \"Lipid and inflammatory outcomes.\" It describes how strength training promotes favorable changes in blood lipid profiles and inflammatory markers.",
+      "text_sha256": "84ef4166073a7064860acd133ced671996940bd7743de778f2a2ca8201b21eca",
+      "window_index": 2
+    },
+    "2c223fbd96d29e8629104e00f4e3dd1fa0896d134a96853acdd48d8c18a61afb": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 89 and 90 are citations supporting content about the physiological effects of strength training, specifically regarding endocrine alterations from different types of muscle contractions and the impact of exercise training on blood pressure regulation.",
+      "text_sha256": "6aa54ee5b5ba4a10c8c4d21570ca3f2bdaf1944767f1c30f5b764f059be0342e",
+      "window_index": 4
+    },
+    "318f34f37ed052fe4cc582c851270040829636b1a1f8c1ce546a04ddae2b70e3": {
+      "context": "This chunk is from the Macronutrients subsection of the Nutrition section in the Wikipedia article on Strength training. It discusses the role of protein, carbohydrates, nutrient timing, and hydration in supporting muscle growth and performance during resistance exercise training.",
+      "text_sha256": "d6958d8f09957527e71dccdb798be9ffbe6f2e35a79fa75c45dfd646db94ef6e",
+      "window_index": 1
+    },
+    "32a71912099c3fead500c0a723510cc011c72fe882f2e41f073f03459fad6a8b": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 95 and 96 are citations supporting claims about the cognitive and neurological effects of resistance training, including its impact on cognitive function and episodic memory.",
+      "text_sha256": "f3479f605fa630118d54a6a9ac615f336ccc8c8023363da500fc6b2c248c62c4",
+      "window_index": 4
+    },
+    "3370f636584db137084ac1b5eef1a2829fc245f1201db3bcc76bfd89a8aa5009": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training. It contains citations 47-50, which are academic sources and books cited throughout the article to support claims about strength training topics including squat exercise variations, anatomy for strength training, shoulder proprioception, and kinetic chain function.",
+      "text_sha256": "a4170fffebfd975bfcb36c36277f17dbe4b1b4edadfc4b0bc7d8a2af03787e7a",
+      "window_index": 3
+    },
+    "387e1ce7214678042bf44fcaab0b798fbf841521a5ec41fec4418bea6956af3b": {
+      "context": "This chunk is from the Wikipedia article on Strength training, specifically from the \"Effects\" section under the subsection \"Bones, joints, frailty, posture and in people at risk.\" It discusses the functional and health benefits of strength training, including improvements to posture and joint support, injury prevention, bone health, and recovery benefits for people in rehabilitation or with disabilities.",
+      "text_sha256": "9a9246e208a39417f036f28cdd5ec01188cc6d6288954ac572940e669c943136",
+      "window_index": 2
+    },
+    "3d7d06d9a47f54c62a52c66a6b36201d6c6cf3991d9677201737e121eef0f7ed": {
+      "context": "This chunk is from the \"Order\" subsection under \"Principles and training methods\" in the Wikipedia article on Strength training. It discusses how exercise sequencing within a training session affects strength gains and training efficiency, including the concepts of supersets and tri-sets.",
+      "text_sha256": "5c4d599aad054053e881f18fa0ce565925160fa28dc90a8603f6ec64584ea5e7",
+      "window_index": 1
+    },
+    "3ffb6dcb660aa458cbbbc7a0ce0ee196322256fbf3621b667f4492b2e5f56751": {
+      "context": "This chunk appears in the Wikipedia article on Strength training and lists exercises organized by muscle groups, specifically covering hamstrings, adductors, and calves, followed by a \"See also\" section referencing related topics like bodybuilding and weight training. The legend indicates that (c) denotes compound exercises and (i) denotes isolated exercises.",
+      "text_sha256": "e5450109347cf630ffc1e3af332773a24447a97aec581826f754e022a20cd70e",
+      "window_index": 5
+    },
+    "45a2dd861ff6bd45c41b12f446061eec7ec56be72f19bbcaee78b2c8e07a970d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 109 and 110, which are academic sources cited throughout the article. Reference 110 is a 2020 systematic review and meta-analysis by Roberts, Nuckols, and Krieger examining sex differences in resistance training, published in The Journal of Strength & Conditioning Research.",
+      "text_sha256": "d09e3077f3822af2c4e216168adaef151e3ee11b30955e0c3e7ecf66a6362d62",
+      "window_index": 5
+    },
+    "48c269e1887df8df947c5db711151bcedb7287868318e2f8397f46356c553c42": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 120 and 121 are citations supporting claims about progressive resistance strength training and its effects on physical function and muscle strength in older adults.",
+      "text_sha256": "8b2f0d7d00d97af02158a544027b43219beec99d697964338a5380ff0f228e57",
+      "window_index": 5
+    },
+    "4e8ada771aa38e0255a370e871a9733afb994433098b752f4c79c65d5f165ec8": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 70-72, which support claims about nutrition and hydration related to strength training, specifically addressing protein intake timing for muscular adaptations, post-exercise recovery nutrition, and water intake for athletes.",
+      "text_sha256": "17b5b63914420205d2cc82cf4d4a443d4944807e5d299034fc4e0db25d863094",
+      "window_index": 4
+    },
+    "4ed267fa22be6da5e8599a2b1140ce836acc0452b065dc79f02cdf21aa84a6d0": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, under the \"Subpopulations\" section, specifically in the \"Sex differences\" subsection. It discusses how men and women respond differently to resistance training in terms of muscle hypertrophy, strength gains, and age-related variations.",
+      "text_sha256": "2d494702fd84f6bdd8a40c1264727722a182faf7958491bb4efc4597da460fc5",
+      "window_index": 2
+    },
+    "51443b85ace166b8790de611c6910c968dfc8438abb49e5a07c12977a89c7a70": {
+      "context": "This is the table of contents for the Wikipedia article on Strength training, listing all major sections and subsections including Principles and training methods (sections 1.1-1.15), Aerobic exercise versus anaerobic exercise, Nutrition, Effects, History, and Subpopulations.",
+      "text_sha256": "d5657f251dc66614dead18b5cb71255b2e243e3bc405d4834809bb5ebc7fa25c",
+      "window_index": 0
+    },
+    "52dbe77461bf05f834fa7ac262dff25643dad2a5c9962600d5a81f9ad7ebb69f": {
+      "context": "This chunk contains references 99 and 100 from the References section of the Wikipedia article on Strength training. Reference 99 is a 2019 systematic review and meta-analysis examining the effects of strength training on lipid and inflammatory outcomes. Reference 100 is a 1997 article on essentials of strength training and conditioning published in the Physiotherapy journal.",
+      "text_sha256": "327f48c69fcc8d52c5b57a2831e2ccfd7715ab52fb33c228ea22bdfbf0ccb443",
+      "window_index": 4
+    },
+    "54074a97290923e5db7c5307a01aeb7f99c55891670a57ebf8abd5d0407ccdb0": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, in a section that categorizes and organizes different types of physical exercise. It lists aerobic exercise types, anaerobic exercise types (which include strength training and its subtypes), and other related exercise categories, serving as a navigational reference guide at the end of the article.",
+      "text_sha256": "c0fab96e8f23137755fab1be6cab45769b60ad3fae5566d825d4dfa39e433c5c",
+      "window_index": 5
+    },
+    "55fe97a6819f9b970006ca4a145ca70750a2bd9b642f7ae3f8bee8d828c8d20d": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training. It contains citations 39-41, which are academic sources supporting information about resistance training regimens, periodization methods, and strength training practices discussed in the main article.",
+      "text_sha256": "02e5e40dd7ead1894a66b0f98c276a68e1f8474c860277d26e52fdd3bb2ed630",
+      "window_index": 3
+    },
+    "57192154f7f2c075fea689355f0ad48cecddc088904abf1f43fc1ee33934f371": {
+      "context": "This chunk is from the \"Neurobiological effects\" section of the Wikipedia article on Strength training, which discusses the beneficial effects of strength training on the brain and nervous system, including neuroplasticity, white matter changes, and mental health outcomes like depression.",
+      "text_sha256": "28f9ffd4b3310c84a003ebde5f6a9815cdce0dfc26cdb597d35350d7d6cd1bd9",
+      "window_index": 2
+    },
+    "59bba9137c780c0847c1c3f6702d891c9edee70b5a77e59a5e89fd6ea33b75e7": {
+      "context": "This chunk is from the \"Periodization\" section under \"Strength training > Principles and training methods\" in the Wikipedia article on Strength training. It defines periodization as the organization of training into sequential phases and describes three main approaches: simple linear periodization, block periodization, and undulating periodization, along with their respective benefits for strength and muscle growth outcomes.",
+      "text_sha256": "64fcb09fe128e13149a71be6e823847bb7b6c39bb914df1da24e6f17111d999d",
+      "window_index": 1
+    },
+    "5bb211df227f58201caa94bdebd74721187188ad872bb2a67b391645b41d98c0": {
+      "context": "This chunk is from the \"Training splits\" section under \"Strength training > Principles and training methods\" in the Wikipedia article on Strength training. It defines training splits as a method for organizing training volume by scheduling which muscle groups are trained on specific days, and lists common split types used in strength training programs.",
+      "text_sha256": "7fcf6773c07d83b194b49ead91c56c9cf135fb73b0bc06277a6863f39490f70d",
+      "window_index": 1
+    },
+    "677be35d44611d1d7ada6880b39c207c23351427454ab6a9007bbd2a2fede22f": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training, containing citations 118 and 119 that support claims about resistance training for older adults, including a 2019 position statement from the National Strength and Conditioning Association and a 2011 study on progressive resistance strength training for improving physical function in older adults.",
+      "text_sha256": "23a1714ba8fb15c72501955467a21c2b8a515f6be5582eae057866e760b5f029",
+      "window_index": 5
+    },
+    "67a9e841463841a62fa7b3abaca417a9677eee8003f1536c9e2fa96aafab36c9": {
+      "context": "This section from the Wikipedia article on Strength training lists the three main types of strength training exercises under the \"Types of strength training exercises\" subsection within the \"Principles and training methods\" section.",
+      "text_sha256": "7388979a674cc067f62a2ec7ecac24825dc202d361c443a6ad06d64cd7075991",
+      "window_index": 1
+    },
+    "683d3f2a1492f84115131b4ee3840d8ef0a8a7be1bff9393c7b85f587bcfad02": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 105-108, which include academic sources on resistance exercise and neuromuscular aging, as well as historical sources on the origins and history of weightlifting and lifting equipment.",
+      "text_sha256": "f9ecc81b69c4ef15c8a5363eeba2d9c6d704ed14e69e49f293cfedd6524ffad5",
+      "window_index": 5
+    },
+    "68fe8668b70c25d22b91ad1511b062e9f83028c2b42db9a2c1907e5bb4c31664": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training, containing citations 51-56 that support claims made throughout the article on topics including sports physiology, exercise physiology, core anatomy, loading strategies, squat mechanics, and physique development.",
+      "text_sha256": "a2f2dfa1906244d3373ac8deddbd0a6cb93b25d616d973193580f93ce8466ce5",
+      "window_index": 3
+    },
+    "6b7aa02bcb1293ef91ac8cf4543e075c66297be7a0cb765d399bbc72b38ccdcb": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 79 and 80, which are academic sources related to supplementation in strength training and sports performance, specifically addressing anabolic steroids, creatine supplementation, and their effects on resistance training practitioners and sprint ability.",
+      "text_sha256": "74618f3609cb7b1a961a0a7e5d19e78aa8f5720a41083cfb8ee0f1f4e90f69b7",
+      "window_index": 4
+    },
+    "6d17879c564d84f1d0df3fe11a0240848d81d2cfb19a0c91e03000db4c48e1db": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 24 and 25, which are academic sources discussing intensity of effort and movement tempo during resistance training exercises.",
+      "text_sha256": "6ffe8c4c82a67dc9efb424ea882d4d1da105063fb9c961f45e2ebbcfdaacf36c",
+      "window_index": 3
+    },
+    "6d2b8c4c7b154bd3347e2751e6679618c0fb0675d49397ff24f5eb8dcc3ab170": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 87 and 88 are citations supporting claims about the health benefits of strength training and resistance training, particularly regarding disease risk reduction and aging prevention.",
+      "text_sha256": "c43d7699859ffd5fab68b5c501eeb8beb7a0e47b402be89ee676b463f964b4e6",
+      "window_index": 4
+    },
+    "6dee5e6c6623ce0e225fca7a989cccbbc8a3850cd7ebccc685fff6312073acec": {
+      "context": "This chunk contains language links and navigation tools from the Wikipedia article on Strength training, appearing in the header section before the main article content begins.",
+      "text_sha256": "f2725faf9c930cee4c76495648233eeaa0e46d92bfcfa59ac738ac6a11b460b2",
+      "window_index": 0
+    },
+    "7aa50ffcb0bb4f2cf70b1fc2bf58db962d396e1e2c1bde5408be185519a76863": {
+      "context": "This section from the Wikipedia article on Strength training covers breathing techniques during weight training, part of the \"Principles and training methods\" section (section 1.4). It discusses two main breathing approaches: standard breathing patterns for general weight training and the Valsalva maneuver technique used by powerlifters lifting extremely heavy loads.",
+      "text_sha256": "120b6c7bab20e9d75379e4528e5a1d73a4d36e5efe5fbb25d9db3b0f9c16ee60",
+      "window_index": 0
+    },
+    "7dd90dbaca052e73e82e9f9c3059aee70bcce42b5bc7e709740e137dcd1bf0d6": {
+      "context": "This is reference 117 from the References section of the Wikipedia article on Strength training. It is a citation to a peer-reviewed study published in PLOS ONE examining the effects of age and sex on the relationship between toe muscular strength and vertical jump performance in adolescent populations.",
+      "text_sha256": "7a6e872863571620732441e1fe9d7c20d617be33254082a7624ddc6e40572797",
+      "window_index": 5
+    },
+    "80d20c493bd393e4e037ddd1cfe04a0c20c8973d22403399cab5cc189bd3346a": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training, containing citations 57-59 that support claims made elsewhere in the article about musculoskeletal rehabilitation, resistance training equipment, and flywheel training methods.",
+      "text_sha256": "10d8650d94ab938a884135bb56474b732698de01c367d86f392ae87d18d19808",
+      "window_index": 4
+    },
+    "8423dd366c30dd3ba3bfd64090c49e99a5e29c92409640ff3d03149695f1eb03": {
+      "context": "This chunk is from the Wikipedia article on Strength training, specifically section 1.3 \"Stretching and warm-up\" under the broader \"Principles and training methods\" section. It discusses the practice of warming up before strength training workouts, including various warm-up methods recommended by the National Strength and Conditioning Association (NSCA), and reviews scientific evidence on the effectiveness of warm-ups and stretching for injury prevention and exercise performance.",
+      "text_sha256": "1759fbeed41fa1767ea6a49bfff020a9e2f06262ced29240072a5d4cf8d66366",
+      "window_index": 0
+    },
+    "84d6cb4ddf38ed1a4035be534e2bec4257ac6faaeabd17f526c0db9ffa137295": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 101 and 102 support content about injury prevention and the distinction between different types of strength, appearing near the end of the citation list.",
+      "text_sha256": "f463ea389941863e3aa840551fb4644cf193b3e200d6d21931445fba616ee359",
+      "window_index": 4
+    },
+    "88c11e2b76295ee98fe4ddccab0406805e13b5f1b4af028d1a117a29ddecead0": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 31 and 32, which are academic sources about rest intervals between sets in resistance training, specifically addressing how rest duration affects muscular strength and hypertrophy outcomes.",
+      "text_sha256": "fe2933a6b979c6a9e8ea7abd9b01c622d242daf6803ea217e268a343fa1655c3",
+      "window_index": 3
+    },
+    "8a9f5fc3d364b127ff72ab0eca1b0faa0836fb2fef357affd0cbf1129ea4a8ec": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training. It contains citations 111-114, which are academic sources and position statements addressing strength and resistance training in specific populations, including older adults, children, and youth, as well as general strength training guidance.",
+      "text_sha256": "cf1a0cf09c139e060cbe49bbfd0c88c1e82d5c397f3eaaa6e9ecb0a2b064ca3a",
+      "window_index": 5
+    },
+    "8aaa25459c60cc505b410d8b5f4e3131b9d3ee35176249be7ed4b333f1abb0c7": {
+      "context": "This section from the Wikipedia article on Strength training explains training volume, a key principle under section 1.5 \"Training volume\" in the \"Principles and training methods\" category. It defines training volume as the product of sets, repetitions, and load, and describes how different load percentages and repetition ranges apply to specific training goals including strength development, muscle growth (hypertrophy), and endurance.",
+      "text_sha256": "9f37a1c0df3a40a396c5489f03c75998fc608c986e1eb8d4835a9393ddf6654a",
+      "window_index": 0
+    },
+    "8b200f1f54a24e93672262a52eb6e77f19682c765ca6e91c1250708c491d871d": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 73-75, which are academic sources related to exercise and fluid replacement, including an American College of Sports Medicine position stand on hydration during exercise and research examining the scientific basis for daily water intake recommendations.",
+      "text_sha256": "10e4f12fceb546580673e07038f6a895bc6e724dfb49aca7226c09c96f3a140e",
+      "window_index": 4
+    },
+    "8bb8e610d7d7e63be92bfd48bc2f180723341199bf1f012ef7ca34737f01a6c2": {
+      "context": "This is the introductory definition section of the Wikipedia article on Strength training, providing the foundational explanation of what strength training is, its alternative names (weight training and resistance training), the types of exercises it encompasses, and its primary benefits and physiological effects.",
+      "text_sha256": "72febdcab21050f4c76130d1c60401db61249847e30a4326dc3d5472f598fafb",
+      "window_index": 0
+    },
+    "94c4ec00971f458b8b0812ce1717216b901c71fe9af9e571eb9a7ac37ce05ac8": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, in the References section at the end of the document. It is part of a \"Related\" category listing that provides links to related topics in exercise physiology and physical exercise, including exercise prescription, fitness culture, and various types of exercises.",
+      "text_sha256": "ab329d352b2099b4f0d93bdc7a635db6b7b08c2fffc81fbfb980fb46009d2f4e",
+      "window_index": 5
+    },
+    "98f2525386345b2e9a62ec96dab3e8221805ecce42d4f8bd96a770e23c89a0c6": {
+      "context": "This chunk is from the \"Rest period\" section under \"Strength training > Principles and training methods\" in the Wikipedia article on Strength training. It defines rest periods as recovery time between sets and exercises, and discusses how different rest interval durations affect muscular strength development and repetition performance across different populations including untrained individuals, trained individuals, and older individuals.",
+      "text_sha256": "f40a3c642b356192a5b7b0025368f4a3e52d30183f9f7f3833be767dbed95051",
+      "window_index": 1
+    },
+    "9a31a03c084a3363d7d863017f9885425f302b82cfad51ea6347788fbe5688ae": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 68 and 69 are citations supporting information about nutrition's influence on resistance training responses, specifically regarding how nutrition and supplement timing affect muscle hypertrophy and adaptation to resistance exercise.",
+      "text_sha256": "ed7b5858e1523d3f125965f34a2feff4007a5c8c58ca2e8b61ca6f00e07b10c6",
+      "window_index": 4
+    },
+    "a461dff815b2712e4d1cfd30f07d0a036604f307b403ae96548c02dc8eed5ea2": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 37 and 38, which are academic sources cited throughout the article to support claims about resistance training structures (supersets and tri-sets) and periodized versus non-periodized training approaches for strength gains.",
+      "text_sha256": "3b3a06e345f65b2a98370f64bb26543326c6d0a37ebb4f58530fbcec6a7abd90",
+      "window_index": 3
+    },
+    "a5aaf608ffe55a498e7c89f2b9cf685a901745c32614eef92bdb40df7d71da2b": {
+      "context": "This chunk is a section header edit link for the \"Subpopulations\" section in the Wikipedia article on Strength training, which begins a discussion of how strength training effects and safety vary across different demographic groups including sex differences, children, and older adults.",
+      "text_sha256": "50b43eb47bdd76347b3f2e591304181bb7ed6a138ea2ed0e58606d8b697a83b9",
+      "window_index": 2
+    },
+    "a7057844e69040aec224506577dfe2ebfc6a1a7bb93950cfcac8853cf8c51e2f": {
+      "context": "This chunk appears in the \"Effects\" section of the Wikipedia article on Strength training, summarizing the primary physical and mental health benefits that result from regular strength training and resistance exercise.",
+      "text_sha256": "f4623f8e63e91b097a81e199cb9f787adfc8e2c274ff83f510992fac7fa7d428",
+      "window_index": 1
+    },
+    "a7653cc42665928eccd8285a26e379a0c6b6262659806b4feba6c831798b9c5a": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 103 and 104 are citations supporting content about eccentric exercise adaptations and range of motion effects in resistance training exercises.",
+      "text_sha256": "428c83ac7ec94f8a8f60903aa0faf3c29df897125c21b42ec7cf230b813021e2",
+      "window_index": 4
+    },
+    "a81b2d7394320cd74ba94926fb7b56179186d0464fcbf075298b6e5116ac25dd": {
+      "context": "This chunk appears in the Strength training Wikipedia article under the Nutrition section, serving as a header that directs readers to the main Sports nutrition article for comprehensive nutritional information related to strength training.",
+      "text_sha256": "e52541656c7c34e27a477ba83c6132cf09af27e179abe435d219a10b1f305c37",
+      "window_index": 1
+    },
+    "a8cbd632e808a8ed1edef1b6cf6fd59648a342e0e1c0800363cbf4d1ad13fa37": {
+      "context": "This chunk contains the first four numbered references from the References section of the Wikipedia article on Strength training, including citations to foundational sources on strength training principles, resistance training adaptations, and exercise physiology guidelines.",
+      "text_sha256": "c9ecf6c6c89665e886f1dc4ebf03d11d78d6e25abd2c6c204117fdceae487943",
+      "window_index": 3
+    },
+    "aaeda13c9cc8b62529091c32a14ff37d79298b71ae974481b92ae4196e8d788b": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 81-83, which are sources supporting claims about the health benefits of strength training, including its effects on frailty, skeletal muscle performance, and aging.",
+      "text_sha256": "b1097d5c838d43e3e21ad09c66f22c4e4bee3ffcd720f59f432c875ae233a0c4",
+      "window_index": 4
+    },
+    "aec4daf2c73a40e2f098f863d319d254e2b082760c32e33cd0fd4eec36a64513": {
+      "context": "This chunk appears in the Wikipedia article on Strength training and lists the available language versions of the article, showing that the content is available in approximately 30 different languages including Afrikaans, Arabic, Spanish, French, German, Japanese, Chinese, and many others.",
+      "text_sha256": "e0d08af104d6ea96c8e1ca7d38d1153cc4f7afdeb0377446710a7c3582ae2cab",
+      "window_index": 0
+    },
+    "af067cdc6a71eb26d159cca41fcd52e9f48014c50617164aef9c72e37d9cb965": {
+      "context": "This chunk is from the Equipment section of the Strength training Wikipedia article, which falls under the broader Principles and training methods topic. It describes the various types of equipment commonly used in resistance training and strength training exercises.",
+      "text_sha256": "a576fce527c550514e8f0cd5bcd048f2c93349bbe646c4a24794c7b8b3e10ce5",
+      "window_index": 1
+    },
+    "af69888f06efebf5b7763b96410e9760935771cdd933abe769d797b0ee470ef1": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 33 and 34, which are academic sources cited throughout the article to support claims about resistance exercise order's effects on strength and hypertrophy, and advanced resistance training techniques for maximizing muscle hypertrophy.",
+      "text_sha256": "55b7939e131a85c9e9ddb625d01d33d87308f0083492e2b1ca98d1cb70caf811",
+      "window_index": 3
+    },
+    "b4a52c10843f07e37c209067979ab86adeaa5ad97c4f441f62a97a025fc0d7ee": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, specifically in the section \"Joint conditioning and injury prevention\" under \"Principles and training methods.\" It discusses methods for improving joint conditioning through self-awareness and posture correction, following earlier discussion of how strength training affects joint alignment and the role of exercises like balance work and full range of motion movements in maintaining optimal joint positioning.",
+      "text_sha256": "45188b71707190e82418bf036b68a991f9a19ed9f321df1bf312a81a72528295",
+      "window_index": 1
+    },
+    "b4efb3ac314167625fed86f81357e8780c199da114e3a60cbd0044c0dd855331": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 60-62, which are bibliographic entries supporting claims made elsewhere in the article about flywheel training in musculoskeletal rehabilitation, bodyweight exercises, and strength training program design principles.",
+      "text_sha256": "8217fd23da4c67d9fe6608345761d75d76500580facd9d4a4f3fa879291c8524",
+      "window_index": 4
+    },
+    "b596e8050069cdfb744056fb0adafa6203830c03d4a25d26a08e32a93f580276": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 45 and 46, which are academic sources cited throughout the article to support claims about strength training effects, specifically regarding single-joint versus multijoint exercises and overtraining in resistance exercise.",
+      "text_sha256": "404d62c3cb88767744166fa15e5b6ed5f00609b100a6b6264a9074cb9fffdb4c",
+      "window_index": 3
+    },
+    "b86cad2628c2afe594ed1fc2c5448c7666946013157c6130b5407ed19f61737f": {
+      "context": "This chunk is from the \"Proper form\" subsection (1.3) under \"Principles and training methods\" in the Wikipedia article on Strength training. It explains the importance of using correct technique and form during strength training exercises to avoid injury and achieve training goals.",
+      "text_sha256": "39630b99671053c5b65a7aa3e8cba1c66c8145f167fb795a45f51023a78b1445",
+      "window_index": 0
+    },
+    "b997bfdb431f669ea67118c4d74f11dc2e814df2112db1dfb10985663c25e5bf": {
+      "context": "This chunk is from the Wikipedia article on Strength training and lists specific exercises organized by muscle groups targeted, including triceps, forearms, abdomen, lower back, hips, quadriceps, and hamstrings. Each exercise is labeled as either compound (c) or isolated (i) according to the legend provided in the document.",
+      "text_sha256": "28daaf94d1c2e99551c2106509df31f3a29cee81c6ae3e13d8c1365ceb95d7f2",
+      "window_index": 5
+    },
+    "b9d37150d89debd5766f44ecd2d4c53a63e7a5bd66fc9ce35ba59380967dce7d": {
+      "context": "This section from the Wikipedia article on Strength training discusses joint conditioning and injury prevention under the Principles and training methods topic. It explains how strength training affects joint alignment through the length-tension relationship between muscles and tendons, and describes methods to maintain optimal joint positioning to prevent decentration and reduce injury risk.",
+      "text_sha256": "3049b353ab2f59807cf3dd60a09d8cc8120f5f4a22e74da74e2cb0480a31c1a2",
+      "window_index": 1
+    },
+    "bd64475d372eec6c90fcd4d6ac6a53da8c0618a47c3c67fa77456cc55447ce97": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 20 and 21, which are peer-reviewed studies by Schoenfeld and colleagues examining the relationship between resistance training volume and muscle adaptations, specifically addressing how training volume affects muscle mass and hypertrophy outcomes.",
+      "text_sha256": "08c6b27839f9cb93e6d7b2be041aea16c34305836bfe35328e589e808035e445",
+      "window_index": 3
+    },
+    "bdcdc0da02f1a91c97007a29ef3da06e1ed0831ab67973032321cab673ed7f21": {
+      "context": "This chunk is from the \"Sports performance\" section of the Wikipedia article on Strength training, which discusses how strength training benefits athletic performance through improved muscle function, injury prevention, and sport-specific adaptations.",
+      "text_sha256": "4b2f24cd27333d32eea47d041b4de9e7510ace29b74957e443495b4e84c6f773",
+      "window_index": 2
+    },
+    "c2d276d7676dd31dd5a592ea4360b8a28ba920e6981689e6fbe4f3f616c6f2dc": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 63-65, which are academic sources supporting content about exercise definition, muscle metabolism, and the physiological mechanisms of aerobic versus anaerobic energy systems in skeletal muscle during strength training.",
+      "text_sha256": "7a3fc769c61c8d3ffcca572bcaf245d5bcca4937e8f5cd41a58c9be9b37cad58",
+      "window_index": 4
+    },
+    "c327fec365ee4b7d531f47d6c40d9194753fb4dcace7f93878dbe5e881832b54": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 13 and 14, which are academic sources cited throughout the article to support claims about time-efficient training program design and the effects of upper body warm-up on performance and injury prevention.",
+      "text_sha256": "3dd6fda0a977c0bbec62480dd551d9e0abb4b0f4e24ea213b5e53923bcd41958",
+      "window_index": 3
+    },
+    "c592730dbad661b97edfba5dd4086a42b8b7118a872b29f4180252bc19fad32c": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 115 and 116, which are academic sources documenting research on the effects of resistance and plyometric training on adolescents and young athletes, supporting claims made elsewhere in the article about strength training benefits for youth populations.",
+      "text_sha256": "8b575d2f3771713bf062b45e4cab1fe661a4f32b193076958d0ea90c7575eb23",
+      "window_index": 5
+    },
+    "c6b6c8407b0989b0cc5a5c16da238df81cc1b50f443e5299d9d3435e5d991a5f": {
+      "context": "This chunk is from the Wikipedia article on Strength training, specifically from the section \"Mortality, longevity, muscle and body composition\" under the broader \"Effects\" category. It discusses the health benefits of strength training, including reduced mortality risk from various diseases, improved longevity, hormonal changes, blood pressure reduction, and positive effects on body composition.",
+      "text_sha256": "3694ace70655f737a2fc8cc2c09c918c5384e1e6aebb36e73992e5a9c849e8c7",
+      "window_index": 2
+    },
+    "cb6a02c1881aa388d3bb85f9d385a8f121f7cbe9fd66024ff67736ed706d7591": {
+      "context": "This chunk appears in the \"See also\" section at the end of the Wikipedia article on Strength training, which provides cross-references to related topics such as endurance training.",
+      "text_sha256": "f938de480d7a2215c562f4624eea774a6562908eaa4e1be3c498b303f6ec1d35",
+      "window_index": 2
+    },
+    "cb9b0b9bc1f2a4d08aeea29cad22f8877b0428cdb71145f1a7b1537dfcab055b": {
+      "context": "This chunk is from the Wikipedia article on Strength training, specifically the section \"Aerobic exercise versus anaerobic exercise\" under Principles and training methods. It explains that strength training is primarily anaerobic exercise, describes the energy system continuum and how muscles recruit different fiber types depending on load intensity, and discusses the role of lactate production and how endurance exercise can mitigate lactate accumulation during strength training.",
+      "text_sha256": "983d6400a4e08d85878fd9048812b0f4e57812d5156378acfa270f31ed28c39e",
+      "window_index": 1
+    },
+    "cba4fdfe0858ecae6fc38acc33038a37d02db57a1c7ec1f7fa2e0ec21db9fa77": {
+      "context": "This chunk is from the \"Repetitions and sets\" subsection (1.1) under \"Principles and training methods\" in the Wikipedia article on Strength training. It explains the fundamental terminology and mechanics of strength training exercises, defining repetitions and sets, and describing the phases of movement (eccentric, concentric, preparatory, and recovery) that occur during exercises like press-ups.",
+      "text_sha256": "23ec2322a2bed5d697a5580fdc4395980befdf43d6efcc0364c67e391bc7fef8",
+      "window_index": 0
+    },
+    "cc2b5a4a0cdf40f059e8189545b1602aa23b06c286c54323d6411d546f1f121e": {
+      "context": "This chunk appears in the Wikipedia article on Strength training, under the section \"Principles and training methods\" subsection titled \"Weekly frequency.\" It discusses how training frequency affects physical strength gains and muscle growth, comparing the effects of different numbers of training sessions per week.",
+      "text_sha256": "d8d1552df1eb041aef41aa568e84e0cd4282c5e1838ac04aacfaf339f6e10386",
+      "window_index": 1
+    },
+    "cf893087d149ed36b3542f63d00308eaaa786770597ed47400c56a244b8035c7": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 76-78, which support information about weight training guides, sports hydration for athletes, and creatine supplementation in sports.",
+      "text_sha256": "570543100b4f758f55ebe350519324bcc85397dc8397e82bd4c4f3c0cfb975ed",
+      "window_index": 4
+    },
+    "d48a4c6a59e3f60e7aad231b608458f41fd3f9443fb3f17c58edc1b9f07e57d8": {
+      "context": "This chunk contains Wikipedia navigation and metadata elements from the Strength training article, including tools for accessing page history, editing, downloading, and viewing the article in other projects, along with information about the current revision edited by user Popcornfud on July 22, 2026.",
+      "text_sha256": "df45785c6c5f40876538fbf2906eff92fee600c0fe05efb83a15b7cb23d61416",
+      "window_index": 0
+    },
+    "d48d199583771c641be356e9df1125665bc5aa4dde8aad00af5a489694145863": {
+      "context": "This chunk is part of the References section of the Wikipedia article on Strength training. It contains citations 9-12, which are academic sources and references cited throughout the article to support claims about strength training techniques, adaptations, and proper form.",
+      "text_sha256": "5637c45174e6ea6b49d14b048fe14774c6f5d660a71c7fff83a4b4e8d8ba804b",
+      "window_index": 3
+    },
+    "db6af099dc8e0700e71b6f024ece5b13fae3e6eee26cbf76a3ad9c9a6e8f7888": {
+      "context": "This chunk appears at the end of the Wikipedia article on Strength training and contains the article's categories, authority control information, and metadata. It lists the main categories (Strength training, Physical exercise, Bodybuilding, Anaerobic exercise) and hidden categories related to article maintenance and sourcing, along with links to related portals and the article's retrieval URL.",
+      "text_sha256": "aad80bfa65a9357bdac4a7c93ed667d0d84af75d796c5384f0fa737a321ada1b",
+      "window_index": 5
+    },
+    "dbca4ed99ebab4a254a8c915858d18f25c3adb2006c6cc4a429cfda51c431d42": {
+      "context": "This chunk is from the \"Older adults\" subsection under \"Subpopulations\" in the Wikipedia article on Strength training. It discusses how resistance training can combat sarcopenia (age-related muscle loss) and improve health outcomes, physical function, and quality of life in older adults, including those over 85 years old.",
+      "text_sha256": "70e41be6566d44d7c7ca2719516a064c41cf9aabb0b5728cfdce34848955b67f",
+      "window_index": 2
+    },
+    "dd1b268279eba0b81eadb677b35b39bc2ff8e4c0704c5819fe1b4f905e236608": {
+      "context": "This chunk appears in the Strength training Wikipedia article under the Nutrition > Supplementation section, discussing ergogenic aids that weight trainers use to enhance muscle growth, with specific focus on creatine supplementation and its effects on body mass, power output, and phosphocreatine levels.",
+      "text_sha256": "72b7a1cc31ff322198ee018192f8d4d05155abe824e9e2013c64e49c9ef576c4",
+      "window_index": 1
+    },
+    "e0a0514c3140a6c0b52cc64d051bb3d4a419bcc41feb039555b747170a5d8cfd": {
+      "context": "This chunk is from the Hydration section under Strength training > Nutrition in the Wikipedia article on Strength training. It discusses fluid intake recommendations for weight trainers, the role of perspiration in fluid loss, when sports drinks may be beneficial, and signs of dehydration during exercise.",
+      "text_sha256": "001325860b0dd6e59212e622185d195effa562a552554049b4e6f3d270aa8f4d",
+      "window_index": 1
+    },
+    "e6c5802db6452e759dea4c403fcac938eabbc39f0a5daa54826c121f5a454193": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 15 and 16, which are academic sources related to warm-up strategies and muscle stretching techniques used in strength training and sports participation.",
+      "text_sha256": "7c183045e1f8ac952f6a55bf62a0828869b283d2b2ed476563b3470786fb4d49",
+      "window_index": 3
+    },
+    "e92c511fa2185e1c646e31e9ac50d09a4f29c8db61ddb6c3ecb64ade344fd400": {
+      "context": "This chunk is from the Wikipedia article on Strength training and lists specific exercises organized by muscle groups targeted, including pectorals, lats, trapezius, deltoids, biceps, and triceps. Each exercise is marked with (c) for compound or (i) for isolated exercise, following a legend defined elsewhere in the document.",
+      "text_sha256": "9c54bb29a2f92655cffefacc4f225da87af668decc518c4b3fe267ba56e545c0",
+      "window_index": 5
+    },
+    "ec84e6ff82ac29a83dcc520b9b33a38d4d1d34f493a78ad6a5a9886827288a63": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 84-86, which are academic sources supporting claims about the health benefits of resistance and strength training, specifically regarding fracture prevention, osteoporosis management, and post-stroke recovery.",
+      "text_sha256": "4bfc354ba83224cdb7f3069387c539ed0bc79b2b7c8cdd837eeed939cc6e1854",
+      "window_index": 4
+    },
+    "ecba47a96d6b0ab688587ea05acdc6cb8780f4a31138a72fa4fc39e5cabe543c": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 17-19, which are academic sources cited throughout the article that address warm-up techniques (dynamic vs. static stretching), resistance training program design, and the Valsalva maneuver during resistance exercise.",
+      "text_sha256": "30a0ede2b3c9f9276e8e29d126bbde006cd5a2de773adc42dd2210eb8852a6a1",
+      "window_index": 3
+    },
+    "f10c4c8266d671b0ebd5cdeb44fb68d5ba574c2ec4fc28e0add70836022753ae": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. References 93 and 94 support claims about the health benefits of resistance training, specifically regarding metabolic effects on body fat distribution and cognitive improvements from resistance exercises.",
+      "text_sha256": "a58870717723787a277130af6849998e8357923767375ccc20e5a8f65ab15145",
+      "window_index": 4
+    },
+    "f7f435979d89a627a6ae86253cbf9f7a3cf68e90ef34656cb4bdaa881f85bc9e": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 22 and 23, which are academic sources on loading recommendations and resistance training techniques for muscle development, specifically addressing the repetition continuum and the effects of training to failure versus non-failure on muscular strength and hypertrophy.",
+      "text_sha256": "a9924ff2eabedc8540b30d3986ed51c792714c24ad3f08be444319e9099b6e76",
+      "window_index": 3
+    },
+    "f8bd5f46301615b0a1671ce984c7ff2f072a6a5bcb3538d5f19c13356c48d3d2": {
+      "context": "This section on Exercise selection appears in the Strength training Wikipedia article under the Principles and training methods subsection. It discusses how to choose appropriate exercises based on training goals, population type, and movement patterns, including the distinction between compound multi-joint exercises and single-joint isolation exercises recommended by the NSCA.",
+      "text_sha256": "b78d0f9be37693d3f19f116b2011caa6c9ca4048fbf56920f8b1d70355809b89",
+      "window_index": 1
+    },
+    "fd59e5dd50080e4be1a49bf51efbc8049562d2610fcbc8ed5c114684d35d3e4a": {
+      "context": "This chunk is from the \"Movement tempo\" subsection (1.6) under \"Principles and training methods\" in the Wikipedia article on Strength training. It explains how the speed and pace of repetitions affect strength and muscle gain, including tempo coding systems, recommendations from the American College of Sports Medicine (ACSM), and the relationship between movement speed and hypertrophy outcomes.",
+      "text_sha256": "17d6a57e0572d79897d8f4608e9082de68af2673f665a2f14745d85d17b1a928",
+      "window_index": 0
+    },
+    "ff9ea5ea5e8b1a87b4a1b7cf9721635e2f3aa83f5976aedcc33c0634dc5f5d78": {
+      "context": "This chunk is from the References section of the Wikipedia article on Strength training. It contains citations 26 and 27, which are academic sources on resistance training variables: reference 26 addresses the effect of repetition duration on muscle hypertrophy, and reference 27 examines how training frequency affects muscular strength gains.",
+      "text_sha256": "cde41f8c53b822cc7e96d876ebceb206549cf0481f11ec0326eb97c49fa331ff",
+      "window_index": 3
+    }
+  },
+  "doc_id": "wiki-strength-training",
+  "generated_at": "2026-08-31T19:40:57Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

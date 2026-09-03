@@ -1,0 +1,113 @@
+{
+  "contexts": {
+    "0965bb435b205292ca4bfeafe235118f67418177b38d7e32d00225bb8d6e7253": {
+      "context": "This chunk is from the \"Reranker > Fine-tune > Train\" section of the BAAI/bge-reranker-v2-m3 model card, providing command-line instructions and configuration parameters for fine-tuning both LLM-based rerankers and LLM-based layerwise rerankers using the FlagEmbedding library, along with information about the base models and training datasets used.",
+      "text_sha256": "8c9a92db85061eefda13c1992f43f4380e6b42ceb095acfb48371a4ff865d57d",
+      "window_index": 0
+    },
+    "16e84bf0fe7e481a988cc355d262cae2e29cec7ac965496013bc6b3f91c1f7f2": {
+      "context": "This code example is from the \"Reranker > Usage > Using Huggingface transformers > For normal reranker\" section of the BAAI/bge-reranker-v2-m3 model card, demonstrating how to use the bge-reranker-v2-m3 model with the Hugging Face transformers library to compute relevance scores for query-passage pairs.",
+      "text_sha256": "9645e48cf7a261df62875e98d7355cc1d1e4a7cc7772327d93c13ed1e134aa03",
+      "window_index": 0
+    },
+    "33e153ab94023f87e89b0212b2c7e30f59c287599d864e9d07df8dfe9b7e5deb": {
+      "context": "This chunk appears in the Citation section of the BAAI/bge-reranker-v2-m3 model card on Hugging Face, providing BibTeX citations for the two research papers underlying the reranker model: one on using large language models for dense retrieval and another on BGE M3-Embedding's multilingual capabilities.",
+      "text_sha256": "593b619dc6be3b97f57c9bd82eddc9d10e62c0cc7b73f216b2c82b3add12e81a",
+      "window_index": 0
+    },
+    "4550e52b0441d6b36b7361267e3b4a0f33fd3a2ede625ebdb78b33832e787c92": {
+      "context": "This chunk is from the model card for BAAI/bge-reranker-v2-m3, a multilingual reranker model by Beijing Academy of Artificial Intelligence. It appears in the \"Instructions to use BAAI/bge-reranker-v2-m3\" section and provides code examples for loading and using the model with two popular libraries: sentence-transformers and Hugging Face Transformers. The chunk also includes a table of contents linking to major sections of the documentation including Reranker, Model List, Usage, Fine-tuning, and Evaluation.",
+      "text_sha256": "f9fb82f3132f332308ecc458d9a3a1853f4332802500822fc960c0a17a9adaf7",
+      "window_index": 0
+    },
+    "46541570f8af913d9746d4813150f74ff788b701a76002543c6a8f8c99147068": {
+      "context": "This code example appears in the \"Reranker > Usage > Using FlagEmbedding > For LLM-based layerwise reranker\" section of the BAAI/bge-reranker-v2-m3 model card. It demonstrates how to use the LayerWiseFlagLLMReranker class from the FlagEmbedding library to compute relevance scores between queries and passages, with the ability to select specific layers via the cutoff_layers parameter for accelerated inference.",
+      "text_sha256": "2b0cace42d8bb2d289b3559ad9616be55099842ebf5ea7c0c4ffab9984060669",
+      "window_index": 0
+    },
+    "49162cdecb3cbd939bfb13e845ad7d1a9c473e30d5a44471187597dece97582f": {
+      "context": "This section appears in the BAAI/bge-reranker-v2-m3 model card under \"Reranker > Model tree for BAAI/bge-reranker-v2-m3\" and lists the available derivative models including adapters, fine-tuned versions, and quantized variants of the base reranker model.",
+      "text_sha256": "fca54b588d086ee41423223e38ce345f9ffe5b194bdc57cd1678a9fd8c79f3cd",
+      "window_index": 0
+    },
+    "64bcf036a046f9506433185e4a51a464fd5b04093edc3a3c94e1569a8d3176f5": {
+      "context": "This code example is from the \"Reranker > Usage > Using Huggingface transformers > For LLM-based reranker\" section of the BAAI/bge-reranker-v2-m3 model card. It demonstrates how to use the BAAI/bge-reranker-v2-gemma LLM-based reranker with Hugging Face transformers to compute relevance scores for query-passage pairs by loading the model and tokenizer, preparing inputs with a custom get_inputs function, and extracting logits corresponding to the \"Yes\" token.",
+      "text_sha256": "fe5a4eabaaf72f13735f92e71b25759cb1fff99b365dccae32c0040288355a81",
+      "window_index": 0
+    },
+    "6a8905cd95e3635aa3cbb7f9da9cb8391d47d52edca7149af55da535745319bd": {
+      "context": "This chunk is from the Evaluation section of the BAAI/bge-reranker-v2-m3 model card, which describes the performance benchmarks and evaluation results of the reranker model across multiple datasets including llama-index, BEIR, CMTEB-retrieval, and miracl.",
+      "text_sha256": "7a75d72e4ecab5573244c23f74ac2989c517645cc6e310e4860ed4351941727d",
+      "window_index": 0
+    },
+    "71b8888f1eddb4541e6fe8b8903e58964dfa8522d62880166e3a12b993c504c9": {
+      "context": "This code example is from the BAAI/bge-reranker-v2-m3 model card's \"Reranker > Usage > Using Huggingface transformers > For LLM-based layerwise reranker\" section, demonstrating how to use the BAAI/bge-reranker-v2-minicpm-layerwise model with PyTorch and Hugging Face transformers to compute relevance scores for query-passage pairs by selecting specific layers via the cutoff_layers parameter.",
+      "text_sha256": "a7e95df01c4de11cc387a6a2b129e47bc78f1bbf0b1c1f6523aee4baeefd43de",
+      "window_index": 0
+    },
+    "7bd3a6c6481d2874c1210863b9da291ed6d0e92b6e251674ce8d8096cbc7cfca": {
+      "context": "This chunk appears in the \"Reranker\" section of the BAAI/bge-reranker-v2-m3 model card on Hugging Face. It provides an overview of what a reranker is and how it differs from embedding models, explaining that rerankers take query-passage pairs as input and output relevance scores that can be normalized to [0,1] using sigmoid function.",
+      "text_sha256": "b1ea1acad3030348f26e74b9803a646699fe80f8e0ab03fb47a8a2852407a4b7",
+      "window_index": 0
+    },
+    "7f8e25afa6578a9e04a772cb7a6ab9e278c46f4b3899a6fc3ce8fa8a421c3cb1": {
+      "context": "This chunk appears in the \"Reranker > Usage > Using FlagEmbedding\" section of the BAAI/bge-reranker-v2-m3 model card, providing the installation command for the FlagEmbedding library required to use the reranker models.",
+      "text_sha256": "b12233d72bbd71e1a02012c2bd548a602b86bcb249162c648e1e1bb3aafe42a5",
+      "window_index": 0
+    },
+    "9eae5ee771ed887d5b8cdeae675a7829587685cf88af2e726bf42a21fe3e24a4": {
+      "context": "This chunk is from the Model List section under the Reranker section of the BAAI/bge-reranker-v2-m3 model card. It provides a comparison table of available BGE reranker models, listing their base models, supported languages, layerwise capabilities, and key features for different use cases.",
+      "text_sha256": "b490ffb14bfa7622eb05c3360f0d5571cabbd2e2108b84368df2c0df26677b60",
+      "window_index": 0
+    },
+    "9f172916576ed6caefcb01ca273e5b36cf73a36a8289f2b93eef013530be5e3c": {
+      "context": "This chunk describes the required data format for fine-tuning the BAAI/bge-reranker-v2-m3 model, appearing in the \"Reranker > Fine-tune > Data Format\" section of the model card. It specifies the JSON structure needed for training data, including query, positive texts, negative texts, and prompt fields.",
+      "text_sha256": "088045a06027c77734f87bbbf94bfbcddbf5ef75ebd38633e8ec24dbde314a63",
+      "window_index": 0
+    },
+    "a8025a9b7dc296d7baec526272150e9089ac8465e9963c7c646f2179146c9a74": {
+      "context": "This chunk appears in the \"Reranker > Model List\" section of the BAAI/bge-reranker-v2-m3 model card, providing guidance on selecting appropriate reranker models based on specific use cases such as multilingual support, language focus, efficiency requirements, and performance needs.",
+      "text_sha256": "aec8dbfb930ab273f07248e0de6f0b1cac6a8eaf4435f34c8ad0fad38f732161",
+      "window_index": 0
+    },
+    "a9b7352f3bae7a84f55524641211de927c1e1799dbf0fad2e80b68eaae512621": {
+      "context": "This chunk appears in the BAAI/bge-reranker-v2-m3 model card documentation under the \"Collection including BAAI/bge-reranker-v2-m3\" section, which lists related model collections. The BGE collection contains 31 items related to the BGE (Beijing Academy of Artificial Intelligence General Embedding) models and was last updated on February 4.",
+      "text_sha256": "5ca26b827b994aca443c41406634b6498bc4ba081583bca0bafd86e887a7c1a9",
+      "window_index": 0
+    },
+    "b6444f910af4688fcc4300d958d976acc9a7c34d60fd53a0e78380fed4520fc1": {
+      "context": "This chunk appears at the beginning of the BAAI/bge-reranker-v2-m3 model card on Hugging Face, providing metadata and key information about the model including its task classification, libraries, language support, base model architecture, license, and links to related resources like the model card, files, and community discussions.",
+      "text_sha256": "b291009651928059fc4806f86abf50ee00f62d08dec3a847008c7c594000750c",
+      "window_index": 0
+    },
+    "c0251f0413190383dc7a7e086c8372efdcaef5a9b1f96db39d98bdf6f1c62899": {
+      "context": "This chunk is a citation reference in the BAAI/bge-reranker-v2-m3 model card document, specifically listed under the \"Papers for BAAI/bge-reranker-v2-m3\" section. It references the paper \"Making Large Language Models A Better Foundation For Dense Retrieval\" (arXiv 2312.15503), which is one of two foundational papers cited for the reranker model.",
+      "text_sha256": "781ae07a450f7657f8d42a4c60fddb688eb9c41422e1c29537d45e9c4bdbf3e3",
+      "window_index": 0
+    },
+    "e1a7e7bae31c73555f6adbf804d9ee92abe9a825cdb5fa352ddc91138ab08e59": {
+      "context": "This chunk lists Hugging Face Spaces that use the BAAI/bge-reranker-v2-m3 model, appearing in the \"Spaces using BAAI/bge-reranker-v2-m3\" section of the model card for the BGE reranker v2-m3, a multilingual reranking model from the Beijing Academy of Artificial Intelligence.",
+      "text_sha256": "95d20e23f109a6326c57416e2f650600e903fb347a8fbb1cf60e8aafd8f1cb1f",
+      "window_index": 0
+    },
+    "efce4fb2650a462c700d9e57e134c39e4ed5c5bc11da9227ecac5ed235c50ae6": {
+      "context": "This chunk appears in the BAAI/bge-reranker-v2-m3 model card documentation under the \"Papers for BAAI/bge-reranker-v2-m3\" section, specifically referencing the BGE M3-Embedding paper that describes the multi-lingual, multi-functionality text embeddings approach used as the base model for this reranker.",
+      "text_sha256": "6ba1737b92cace9c689586f8570b391144a091f0a2475d05fb1a4c5894fc8d95",
+      "window_index": 0
+    },
+    "f018071a9d945a02bb4125f5ae9a45a2720321662842aca3f8c17ffde5f827b7": {
+      "context": "This code example appears in the BAAI/bge-reranker-v2-m3 model card under the \"Reranker > Usage > Using FlagEmbedding > For LLM-based reranker\" section, demonstrating how to use the FlagLLMReranker class from the FlagEmbedding library to compute relevance scores between queries and passages for LLM-based reranker models like BAAI/bge-reranker-v2-gemma.",
+      "text_sha256": "070eddd27287cfb305bde576dba41aaa1b313719f1c7afa09f554f8fada3a681",
+      "window_index": 0
+    },
+    "f3c11bc0cb7db3b435feb2d93a75c17d1b5cadda0e75e50728c5ffc524618df9": {
+      "context": "This code example is from the BAAI/bge-reranker-v2-m3 model card's \"Reranker > Usage > Using FlagEmbedding > For normal reranker\" section, demonstrating how to use the FlagReranker class to compute relevance scores between queries and passages, with optional score normalization using the sigmoid function.",
+      "text_sha256": "4d0600fd2115d8958049bafe40d890d12fa4ac21ac42eaf7c7e4f20f0f5ee65e",
+      "window_index": 0
+    }
+  },
+  "doc_id": "modelcard-bge-reranker-v2-m3",
+  "generated_at": "2026-08-29T22:02:39Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

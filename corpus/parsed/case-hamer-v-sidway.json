@@ -1,0 +1,1249 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "case-hamer-v-sidway",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 8072985273161020576,
+    "filename": "case-hamer-v-sidway.html"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "title",
+      "prov": [],
+      "orig": "Hamer v Sidway",
+      "text": "Hamer v Sidway"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*538]",
+      "text": "[*538]"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Louisa W. Hamer, Appellant,\nv\nFranklin Sidway, as Executor, etc., Respondent.",
+      "text": "Louisa W. Hamer, Appellant,\nv\nFranklin Sidway, as Executor, etc., Respondent.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Court of Appeals of New York\nArgued February 24, 1981\nDecided April 14, 1891",
+      "text": "Court of Appeals of New York\nArgued February 24, 1981\nDecided April 14, 1891"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "124 NY 538\nCITE TITLE AS: Hamer v Sidway",
+      "text": "124 NY 538\nCITE TITLE AS: Hamer v Sidway"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*544]",
+      "text": "[*544]"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "OPINION OF THE COURT",
+      "text": "OPINION OF THE COURT"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "PARKER, J.",
+      "text": "PARKER, J."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The question which provoked the most discussion by counsel on this appeal, and which lies at the foundation of plaintiff's asserted right of recovery, is whether by virtue of a contract defendant's testator William E. Story became indebted to his nephew William E. Story, 2d, on his twenty-first birthday in the sum of five thousand dollars. The trial court found as a fact that 'on the 20th day of March, 1869, * * * William E. Story agreed to and with William E. [*545] Story, 2d, that if he would refrain from drinking liquor, using tobacco, swearing, and playing cards or billiards for money until he should become 21 years of age then he, the said William E. Story, would at that time pay him, the said William E. Story, 2d, the sum of $5,000 for such refraining, to which the said William E. Story, 2d, agreed,' and that he 'in all things fully performed his part of said agreement.'",
+      "text": "The question which provoked the most discussion by counsel on this appeal, and which lies at the foundation of plaintiff's asserted right of recovery, is whether by virtue of a contract defendant's testator William E. Story became indebted to his nephew William E. Story, 2d, on his twenty-first birthday in the sum of five thousand dollars. The trial court found as a fact that 'on the 20th day of March, 1869, * * * William E. Story agreed to and with William E. [*545] Story, 2d, that if he would refrain from drinking liquor, using tobacco, swearing, and playing cards or billiards for money until he should become 21 years of age then he, the said William E. Story, would at that time pay him, the said William E. Story, 2d, the sum of $5,000 for such refraining, to which the said William E. Story, 2d, agreed,' and that he 'in all things fully performed his part of said agreement.'"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The defendant contends that the contract was without consideration to support it, and, therefore, invalid. He asserts that the promisee by refraining from the use of liquor and tobacco was not harmed but benefited; that that which he did was best for him to do independently of his uncle's promise, and insists that it follows that unless the promisor was benefited, the contract was without consideration. A contention, which if well founded, would seem to leave open for controversy in many cases whether that which the promisee did or omitted to do was, in fact, of such benefit to him as to leave no consideration to support the enforcement of the promisor's agreement. Such a rule could not be tolerated, and is without foundation in the law. The Exchequer Chamber, in 1875, defined consideration as follows: 'A valuable consideration in the sense of the law may consist either in some right, interest, profit or benefit accruing to the one party, or some forbearance, detriment, loss or responsibility given, suffered or undertaken by the other.' Courts 'will not ask whether the thing which forms the consideration does in fact benefit the promisee or a third party, or is of any substantial value to anyone. It is enough that something is promised, done, forborne or suffered by the party to whom the promise is made as consideration for the promise made to him.' (Anson's Prin. of Con. 63.)",
+      "text": "The defendant contends that the contract was without consideration to support it, and, therefore, invalid. He asserts that the promisee by refraining from the use of liquor and tobacco was not harmed but benefited; that that which he did was best for him to do independently of his uncle's promise, and insists that it follows that unless the promisor was benefited, the contract was without consideration. A contention, which if well founded, would seem to leave open for controversy in many cases whether that which the promisee did or omitted to do was, in fact, of such benefit to him as to leave no consideration to support the enforcement of the promisor's agreement. Such a rule could not be tolerated, and is without foundation in the law. The Exchequer Chamber, in 1875, defined consideration as follows: 'A valuable consideration in the sense of the law may consist either in some right, interest, profit or benefit accruing to the one party, or some forbearance, detriment, loss or responsibility given, suffered or undertaken by the other.' Courts 'will not ask whether the thing which forms the consideration does in fact benefit the promisee or a third party, or is of any substantial value to anyone. It is enough that something is promised, done, forborne or suffered by the party to whom the promise is made as consideration for the promise made to him.' (Anson's Prin. of Con. 63.)"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'In general a waiver of any legal right at the request of another party is a sufficient consideration for a promise.' (Parsons on Contracts, 444.)",
+      "text": "'In general a waiver of any legal right at the request of another party is a sufficient consideration for a promise.' (Parsons on Contracts, 444.)"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'Any damage, or suspension, or forbearance of a right will be sufficient to sustain a promise.' (Kent, vol. 2, 465, 12th ed.)",
+      "text": "'Any damage, or suspension, or forbearance of a right will be sufficient to sustain a promise.' (Kent, vol. 2, 465, 12th ed.)"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Pollock, in his work on contracts, page 166, after citing the definition given by the Exchequer Chamber already quoted, [*546] says: 'The second branch of this judicial description is really the most important one. Consideration means not so much that one party is profiting as that the other abandons some legal right in the present or limits his legal freedom of action in the future as an inducement for the promise of the first.'",
+      "text": "Pollock, in his work on contracts, page 166, after citing the definition given by the Exchequer Chamber already quoted, [*546] says: 'The second branch of this judicial description is really the most important one. Consideration means not so much that one party is profiting as that the other abandons some legal right in the present or limits his legal freedom of action in the future as an inducement for the promise of the first.'"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Now, applying this rule to the facts before us, the promisee used tobacco, occasionally drank liquor, and he had a legal right to do so. That right he abandoned for a period of years upon the strength of the promise of the testator that for such forbearance he would give him $5,000. We need not speculate on the effort which may have been required to give up the use of those stimulants. It is sufficient that he restricted his lawful freedom of action within certain prescribed limits upon the faith of his uncle's agreement, and now having fully performed the conditions imposed, it is of no moment whether such performance actually proved a benefit to the promisor, and the court will not inquire into it, but were it a proper subject of inquiry, we see nothing in this record that would permit a determination that the uncle was not benefited in a legal sense. Few cases have been found which may be said to be precisely in point, but such as have been support the position we have taken.",
+      "text": "Now, applying this rule to the facts before us, the promisee used tobacco, occasionally drank liquor, and he had a legal right to do so. That right he abandoned for a period of years upon the strength of the promise of the testator that for such forbearance he would give him $5,000. We need not speculate on the effort which may have been required to give up the use of those stimulants. It is sufficient that he restricted his lawful freedom of action within certain prescribed limits upon the faith of his uncle's agreement, and now having fully performed the conditions imposed, it is of no moment whether such performance actually proved a benefit to the promisor, and the court will not inquire into it, but were it a proper subject of inquiry, we see nothing in this record that would permit a determination that the uncle was not benefited in a legal sense. Few cases have been found which may be said to be precisely in point, but such as have been support the position we have taken."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In",
+      "text": "In"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Shadwell v. Shadwell",
+      "text": "Shadwell v. Shadwell",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(9 C. B. [N. S.] 159), an uncle wrote to his nephew as follows:",
+      "text": "(9 C. B. [N. S.] 159), an uncle wrote to his nephew as follows:"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'MY DEAR LANCEY-I am so glad to hear of your intended marriage with Ellen Nicholl, and as I promised to assist you at starting, I am happy to tell you that I will pay to you 150 pounds yearly during my life and until your annual income derived from your profession of a chancery barrister shall amount to 600 guineas, of which your own admission will be the only evidence that I shall require.",
+      "text": "'MY DEAR LANCEY-I am so glad to hear of your intended marriage with Ellen Nicholl, and as I promised to assist you at starting, I am happy to tell you that I will pay to you 150 pounds yearly during my life and until your annual income derived from your profession of a chancery barrister shall amount to 600 guineas, of which your own admission will be the only evidence that I shall require."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'Your affectionate uncle,",
+      "text": "'Your affectionate uncle,"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'CHARLES SHADWELL.'",
+      "text": "'CHARLES SHADWELL.'"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It was held that the promise was binding and made upon good consideration.",
+      "text": "It was held that the promise was binding and made upon good consideration."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*547] In",
+      "text": "[*547] In"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lakota v. Newton,",
+      "text": "Lakota v. Newton,",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "an unreported case in the Superior Court of Worcester, Mass., the complaint averred defendant's promise that 'if you (meaning plaintiff) will leave off drinking for a year I will give you $100,' plaintiff's assent thereto, performance of the condition by him, and demanded judgment therefor. Defendant demurred on the ground, among others, that the plaintiff's declaration did not allege a valid and sufficient consideration for the agreement of the defendant. The demurrer was overruled.",
+      "text": "an unreported case in the Superior Court of Worcester, Mass., the complaint averred defendant's promise that 'if you (meaning plaintiff) will leave off drinking for a year I will give you $100,' plaintiff's assent thereto, performance of the condition by him, and demanded judgment therefor. Defendant demurred on the ground, among others, that the plaintiff's declaration did not allege a valid and sufficient consideration for the agreement of the defendant. The demurrer was overruled."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In",
+      "text": "In"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Talbott v. Stemmons",
+      "text": "Talbott v. Stemmons",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(a Kentucky case not yet reported), the step- grandmother of the plaintiff made with him the following agreement: 'I do promise and bind myself to give my grandson, Albert R. Talbott, $500 at my death, if he will never take another chew of tobacco or smoke another cigar during my life from this date up to my death, and if he breaks this pledge he is to refund double the amount to his mother.' The executor of Mrs. Stemmons demurred to the complaint on the ground that the agreement was not based on a sufficient consideration. The demurrer was sustained and an appeal taken therefrom to the Court of Appeals, where the decision of the court below was reversed. In the opinion of the court it is said that 'the right to use and enjoy the use of tobacco was a right that belonged to the plaintiff and not forbidden by law. The abandonment of its use may have saved him money or contributed to his health, nevertheless, the surrender of that right caused the promise, and having the right to contract with reference to the subject-matter, the abandonment of the use was a sufficient consideration to uphold the promise.' Abstinence from the use of intoxicating liquors was held to furnish a good consideration for a promissory note in",
+      "text": "(a Kentucky case not yet reported), the step- grandmother of the plaintiff made with him the following agreement: 'I do promise and bind myself to give my grandson, Albert R. Talbott, $500 at my death, if he will never take another chew of tobacco or smoke another cigar during my life from this date up to my death, and if he breaks this pledge he is to refund double the amount to his mother.' The executor of Mrs. Stemmons demurred to the complaint on the ground that the agreement was not based on a sufficient consideration. The demurrer was sustained and an appeal taken therefrom to the Court of Appeals, where the decision of the court below was reversed. In the opinion of the court it is said that 'the right to use and enjoy the use of tobacco was a right that belonged to the plaintiff and not forbidden by law. The abandonment of its use may have saved him money or contributed to his health, nevertheless, the surrender of that right caused the promise, and having the right to contract with reference to the subject-matter, the abandonment of the use was a sufficient consideration to uphold the promise.' Abstinence from the use of intoxicating liquors was held to furnish a good consideration for a promissory note in"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lindell v. Rokes",
+      "text": "Lindell v. Rokes",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(60 Mo. 249).",
+      "text": "(60 Mo. 249)."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The cases cited by the defendant on this question are not in point. In",
+      "text": "The cases cited by the defendant on this question are not in point. In"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Mallory v. Gillett",
+      "text": "Mallory v. Gillett",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(21 N. Y. 412);",
+      "text": "(21 N. Y. 412);"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Belknap v. Bender",
+      "text": "Belknap v. Bender",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(75 id. 446), and",
+      "text": "(75 id. 446), and"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Berry v. Brown",
+      "text": "Berry v. Brown",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(107 id. 659), the promise was in contravention of that provision of the Statute of Frauds, which declares void all promises to answer for the debts of third persons unless reduced to writing. In",
+      "text": "(107 id. 659), the promise was in contravention of that provision of the Statute of Frauds, which declares void all promises to answer for the debts of third persons unless reduced to writing. In"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Beau",
+      "text": "Beau",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*548]",
+      "text": "[*548]"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "mont v. Reeve",
+      "text": "mont v. Reeve",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Shirley's L. C. 6), and",
+      "text": "(Shirley's L. C. 6), and"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Porterfield v. Butler",
+      "text": "Porterfield v. Butler",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(47 Miss. 165), the question was whether a moral obligation furnishes sufficient consideration to uphold a subsequent express promise. In",
+      "text": "(47 Miss. 165), the question was whether a moral obligation furnishes sufficient consideration to uphold a subsequent express promise. In"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Duvoll v. Wilson",
+      "text": "Duvoll v. Wilson",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(9 Barb. 487), and In re",
+      "text": "(9 Barb. 487), and In re"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wilber v. Warren",
+      "text": "Wilber v. Warren",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(104 N. Y. 192), the proposition involved was whether an executory covenant against incumbrances in a deed given in consideration of natural love and affection could be enforced. In",
+      "text": "(104 N. Y. 192), the proposition involved was whether an executory covenant against incumbrances in a deed given in consideration of natural love and affection could be enforced. In"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Vanderbilt v. Schreyer",
+      "text": "Vanderbilt v. Schreyer",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(91 N. Y. 392), the plaintiff contracted with defendant to build a house, agreeing to accept in part payment therefor a specific bond and mortgage. Afterwards he refused to finish his contract unless the defendant would guarantee its payment, which was done. It was held that the guarantee could not be enforced for want of consideration. For in building the house the plaintiff only did that which he had contracted to do. And in",
+      "text": "(91 N. Y. 392), the plaintiff contracted with defendant to build a house, agreeing to accept in part payment therefor a specific bond and mortgage. Afterwards he refused to finish his contract unless the defendant would guarantee its payment, which was done. It was held that the guarantee could not be enforced for want of consideration. For in building the house the plaintiff only did that which he had contracted to do. And in"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Robinson v. Jewett",
+      "text": "Robinson v. Jewett",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(116 N. Y. 40), the court simply held that 'The performance of an act which the party is under a legal obligation to perform cannot constitute a consideration for a new contract.' It will be observed that the agreement which we have been considering was within the condemnation of the Statute of Frauds, because not to be performed within a year, and not in writing. But this defense the promisor could waive, and his letter and oral statements subsequent to the date of final performance on the part of the promisee must be held to amount to a waiver. Were it otherwise, the statute could not now be invoked in aid of the defendant. It does not appear on the face of the complaint that the agreement is one prohibited by the Statute of Frauds, and, therefore, such defense could not be made available unless set up in the answer.",
+      "text": "(116 N. Y. 40), the court simply held that 'The performance of an act which the party is under a legal obligation to perform cannot constitute a consideration for a new contract.' It will be observed that the agreement which we have been considering was within the condemnation of the Statute of Frauds, because not to be performed within a year, and not in writing. But this defense the promisor could waive, and his letter and oral statements subsequent to the date of final performance on the part of the promisee must be held to amount to a waiver. Were it otherwise, the statute could not now be invoked in aid of the defendant. It does not appear on the face of the complaint that the agreement is one prohibited by the Statute of Frauds, and, therefore, such defense could not be made available unless set up in the answer."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Porter v. Wormser,",
+      "text": "(Porter v. Wormser,",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "94 N. Y. 431, 450.) This was not done.",
+      "text": "94 N. Y. 431, 450.) This was not done."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In further consideration of the questions presented, then, it must be deemed established for the purposes of this appeal, that on the 31st day of January, 1875, defendant's testator was indebted to William E. Story, 2d, in the sum of $5,000, and if this action were founded on that contract it would be barred by the Statute of Limitations which has been pleaded, but on that date the nephew wrote to his uncle as follows:",
+      "text": "In further consideration of the questions presented, then, it must be deemed established for the purposes of this appeal, that on the 31st day of January, 1875, defendant's testator was indebted to William E. Story, 2d, in the sum of $5,000, and if this action were founded on that contract it would be barred by the Statute of Limitations which has been pleaded, but on that date the nephew wrote to his uncle as follows:"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[*549] 'DEAR UNCLE-I am now 21 years old to-day, and I am now my own boss, and I believe, according to agreement, that there is due me $5,000. I have lived up to the contract to the letter in every sense of the word.'",
+      "text": "[*549] 'DEAR UNCLE-I am now 21 years old to-day, and I am now my own boss, and I believe, according to agreement, that there is due me $5,000. I have lived up to the contract to the letter in every sense of the word.'"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A few days later, and on February sixth, the uncle replied, and, so far as it is material to this controversy, the reply is as follows:",
+      "text": "A few days later, and on February sixth, the uncle replied, and, so far as it is material to this controversy, the reply is as follows:"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "'DEAR NEPHEW-Your letter of the 31st ult. came to hand all right saying that you had lived up to the promise made to me several years ago. I have no doubt but you have, for which you shall have $5,000 as I promised you. I had the money in the bank the day you was 21 years old that I intended for you, and you shall have the money certain. Now, Willie, I don't intend to interfere with this money in any way until I think you are capable of taking care of it, and the sooner that time comes the better it will please me. I would hate very much to have you start out in some adventure that you thought all right and lose this money in one year. * * * This money you have earned much easier than I did, besides acquiring good habits at the same time, and you are quite welcome to the money. Hope you will make good use of it. * * *",
+      "text": "'DEAR NEPHEW-Your letter of the 31st ult. came to hand all right saying that you had lived up to the promise made to me several years ago. I have no doubt but you have, for which you shall have $5,000 as I promised you. I had the money in the bank the day you was 21 years old that I intended for you, and you shall have the money certain. Now, Willie, I don't intend to interfere with this money in any way until I think you are capable of taking care of it, and the sooner that time comes the better it will please me. I would hate very much to have you start out in some adventure that you thought all right and lose this money in one year. * * * This money you have earned much easier than I did, besides acquiring good habits at the same time, and you are quite welcome to the money. Hope you will make good use of it. * * *"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "W. E. STORY. 'P. S.-You can consider this money on interest.'The trial court found as a fact that 'said letter was received by said William E. Story, 2d, who thereafter consented that said money should remain with the said William E. Story in accordance with the terms and conditions of said letter.' And further, 'That afterwards, on the first day of March, 1877, with the knowledge and consent of his said uncle, he duly sold, transferred and assigned all his right, title and interest in and to said sum of $5,000 to his wife Libbie H. Story, who thereafter duly sold, transferred and assigned the same to the plaintiff in this action.'",
+      "text": "W. E. STORY. 'P. S.-You can consider this money on interest.'The trial court found as a fact that 'said letter was received by said William E. Story, 2d, who thereafter consented that said money should remain with the said William E. Story in accordance with the terms and conditions of said letter.' And further, 'That afterwards, on the first day of March, 1877, with the knowledge and consent of his said uncle, he duly sold, transferred and assigned all his right, title and interest in and to said sum of $5,000 to his wife Libbie H. Story, who thereafter duly sold, transferred and assigned the same to the plaintiff in this action.'"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We must now consider the effect of the letter, and the nephew's assent thereto. Were the relations of the parties thereafter that of debtor and creditor simply, or that of trustee [*550] and cestui que trust? If the former, then this action is not maintainable, because barred by lapse of time. If the latter, the result must be otherwise. No particular expressions are necessary to create a trust. Any language clearly showing the settler's intention is sufficient if the property and disposition of it are definitely stated. (Lewin on Trusts, 55.)",
+      "text": "We must now consider the effect of the letter, and the nephew's assent thereto. Were the relations of the parties thereafter that of debtor and creditor simply, or that of trustee [*550] and cestui que trust? If the former, then this action is not maintainable, because barred by lapse of time. If the latter, the result must be otherwise. No particular expressions are necessary to create a trust. Any language clearly showing the settler's intention is sufficient if the property and disposition of it are definitely stated. (Lewin on Trusts, 55.)"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A person in the legal possession of money or property acknowledging a trust with the assent of the cestui que trust, becomes from that time a trustee if the acknowledgment be founded on a valuable consideration. His antecedent relation to the subject, whatever it may have been, no longer controls. (2 Story's Eq. \u00a7 972.) If before a declaration of trust a party be a mere debtor, a subsequent agreement recognizing the fund as already in his hands and stipulating for its investment on the creditor's account will have the effect to create a trust.",
+      "text": "A person in the legal possession of money or property acknowledging a trust with the assent of the cestui que trust, becomes from that time a trustee if the acknowledgment be founded on a valuable consideration. His antecedent relation to the subject, whatever it may have been, no longer controls. (2 Story's Eq. \u00a7 972.) If before a declaration of trust a party be a mere debtor, a subsequent agreement recognizing the fund as already in his hands and stipulating for its investment on the creditor's account will have the effect to create a trust."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Day v. Roth,",
+      "text": "(Day v. Roth,",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "18 N. Y. 448.)",
+      "text": "18 N. Y. 448.)"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It is essential that the letter interpreted in the light of surrounding circumstances must show an intention on the part of the uncle to become a trustee before he will be held to have become such; but in an effort to ascertain the construction which should be given to it, we are also to observe the rule that the language of the promisor is to be interpreted in the sense in which he had reason to suppose it was understood by the promisee.",
+      "text": "It is essential that the letter interpreted in the light of surrounding circumstances must show an intention on the part of the uncle to become a trustee before he will be held to have become such; but in an effort to ascertain the construction which should be given to it, we are also to observe the rule that the language of the promisor is to be interpreted in the sense in which he had reason to suppose it was understood by the promisee."
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(White v. Hoyt,",
+      "text": "(White v. Hoyt,",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "73 N. Y. 505, 511.) At the time the uncle wrote the letter he was indebted to his nephew in the sum of $5,000, and payment had been requested. The uncle recognizing the indebtedness, wrote the nephew that he would keep the money until he deemed him capable of taking care of it. He did not say 'I will pay you at some other time,' or use language that would indicate that the relation of debtor and creditor would continue. On the contrary, his language indicated that he had set apart the money the nephew had 'earned' for him so that when he should be capable of taking care of it he should receive it with interest. He said: 'I had the money in the bank the day you were 21 years old that I intended for you and you shall have the money certain.' That he had set apart the money is further [*551] evidenced by the next sentence: 'Now, Willie, I don't intend to interfere with this money in any way until I think you are capable of taking care of it.' Certainly, the uncle must have intended that his nephew should understand that the promise not 'to interfere with this money' referred to the money in the bank which he declared was not only there when the nephew became 21 years old, but was intended for him. True, he did not use the word 'trust,' or state that the money was deposited in the name of William E. Story, 2d, or in his own name in trust for him, but the language used must have been intended to assure the nephew that his money had been set apart for him, to be kept without interference until he should be capable of taking care of it, for the uncle said in substance and in effect: 'This money you have earned much easier than I did * * * you are quite welcome to. I had it in the bank the day you were 21 years old and don't intend to interfere with it in any way until I think you are capable of taking care of it and the sooner that time comes the better it will please me.' In this declaration there is not lacking a single element necessary for the creation of a valid trust, and to that declaration the nephew assented.The learned judge who wrote the opinion of the General Term, seems to have taken the view that the trust was executed during the life-time of defendant's testator by payment to the nephew, but as it does not appear from the order that the judgment was reversed on the facts, we must assume the facts to be as found by the trial court, and those facts support its judgment.",
+      "text": "73 N. Y. 505, 511.) At the time the uncle wrote the letter he was indebted to his nephew in the sum of $5,000, and payment had been requested. The uncle recognizing the indebtedness, wrote the nephew that he would keep the money until he deemed him capable of taking care of it. He did not say 'I will pay you at some other time,' or use language that would indicate that the relation of debtor and creditor would continue. On the contrary, his language indicated that he had set apart the money the nephew had 'earned' for him so that when he should be capable of taking care of it he should receive it with interest. He said: 'I had the money in the bank the day you were 21 years old that I intended for you and you shall have the money certain.' That he had set apart the money is further [*551] evidenced by the next sentence: 'Now, Willie, I don't intend to interfere with this money in any way until I think you are capable of taking care of it.' Certainly, the uncle must have intended that his nephew should understand that the promise not 'to interfere with this money' referred to the money in the bank which he declared was not only there when the nephew became 21 years old, but was intended for him. True, he did not use the word 'trust,' or state that the money was deposited in the name of William E. Story, 2d, or in his own name in trust for him, but the language used must have been intended to assure the nephew that his money had been set apart for him, to be kept without interference until he should be capable of taking care of it, for the uncle said in substance and in effect: 'This money you have earned much easier than I did * * * you are quite welcome to. I had it in the bank the day you were 21 years old and don't intend to interfere with it in any way until I think you are capable of taking care of it and the sooner that time comes the better it will please me.' In this declaration there is not lacking a single element necessary for the creation of a valid trust, and to that declaration the nephew assented.The learned judge who wrote the opinion of the General Term, seems to have taken the view that the trust was executed during the life-time of defendant's testator by payment to the nephew, but as it does not appear from the order that the judgment was reversed on the facts, we must assume the facts to be as found by the trial court, and those facts support its judgment."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The order appealed from should be reversed and the judgment of the Special Term affirmed, with costs payable out of the estate.",
+      "text": "The order appealed from should be reversed and the judgment of the Special Term affirmed, with costs payable out of the estate."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "All concur.",
+      "text": "All concur."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Order reversed and judgment of Special Term affirmed.",
+      "text": "Order reversed and judgment of Special Term affirmed."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

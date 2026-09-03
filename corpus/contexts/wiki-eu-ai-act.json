@@ -1,0 +1,258 @@
+{
+  "contexts": {
+    "07b8c1f1228d7661e0729b16bf34a3b19604b033f1c0ca768aebe39512e8d389": {
+      "context": "This chunk appears in the References section of the Artificial Intelligence Act Wikipedia article, specifically within the \"Neural network architectures\" subsection followed by \"Political\" and \"Social and economic\" topic categories that list related AI concepts and issues.",
+      "text_sha256": "71753fb2e24d9ecd32806f0f03f988eaefddd668eafa6318be62da4b045a062e",
+      "window_index": 3
+    },
+    "088e445e47169acc6a0cdee100c51ba207b803642e58fcfdbfbdcc303fcbff9e": {
+      "context": "This chunk appears in the References section of the Artificial Intelligence Act Wikipedia article, specifically within the \"Social and economic\" subsection that lists various applications and impacts of artificial intelligence across different domains and industries.",
+      "text_sha256": "1c912f5669c99f1c22acd572954a2f33ddffe09fa85d80acca0e8ba6f5508617",
+      "window_index": 3
+    },
+    "098d5c21c3dec7fee566d93dd991c683bb6a8e7bb297b7b93063691de7451ee8": {
+      "context": "This chunk is part of the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 25-27 that document sources related to EU legislation progress, trustworthiness and risk assessment in the AI Act, and the European Commission's impact assessment of the regulation.",
+      "text_sha256": "49c1189c91844e0d12115a3eeff16e27c296c7de0aa32dc889946582137204a7",
+      "window_index": 2
+    },
+    "0e93ce8da7da12cbcf57b19475907b620e54b490559fbe774a7736c2d25d9446": {
+      "context": "This chunk appears in the References section of the Artificial Intelligence Act Wikipedia article, specifically within the \"People\" subsection that lists prominent figures in artificial intelligence history and research, followed by a \"Neural network architectures\" subsection listing key deep learning models and techniques.",
+      "text_sha256": "d6fc4393283df84d681ba131ead6fd18005a6326d5db809bda7896f128c965b2",
+      "window_index": 3
+    },
+    "125e03c62faafb3c4fc02db1b77d75b918834b9c9ed39019ec9ae758d344cf04": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 38-42 that document sources related to AI standardization, regulatory frameworks, and impact assessments supporting the EU AI Act.",
+      "text_sha256": "232134701029ebe790569b214e3db4f0f59171aff2e7dc98f3d55a5f495aeb11",
+      "window_index": 2
+    },
+    "16a7ed5968a88019c11787a218288ec06d7d86e232fe0ce6471e90e73f6b0d55": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act. It contains the first four numbered references, including the primary source citation for Regulation (EU) 2024/1689, the official EU AI Act passed on 13 June 2024, along with citations to the initial proposal from April 2021 and the European Commission press release announcing the Act's entry into force on 1 August 2024.",
+      "text_sha256": "7be701dad66f0b17c85789f43bee350736b1f25f1776dddf2152947d7ae121b0",
+      "window_index": 2
+    },
+    "1d21dd4deb2287d7a5f9fd0178af9bac6d024c23deed415d6afcb29ab228047b": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 22-24 that document key sources about the EU AI Act's parliamentary adoption and regulatory approach, including a European Parliament press release from March 2024 announcing MEP approval of the landmark law and academic analyses of the proposed AI regulation.",
+      "text_sha256": "b942938fa1ef204cb6c1461123729464cce1f570252fdd3187c9660b137e0a61",
+      "window_index": 2
+    },
+    "23a1d389c429bc715b4f221ff7c39684fc5b8866afadf563b591ae96add1fcd5": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 13-15 that document news coverage and reporting on the EU AI Act's passage and regulatory timeline, including articles from CNBC and Reuters about the landmark legislation.",
+      "text_sha256": "a526ee8d4f42f6e4e481c59fa2b3733e714ad9f67e24b34fb40ffcffd1107767",
+      "window_index": 2
+    },
+    "2bb3336638dc25e48aa30c56f2e9375d0d957873013f082b87a8bec5fb1248c4": {
+      "context": "This chunk is an edit link appearing in the Wikipedia article on the Artificial Intelligence Act, specifically at the beginning of the \"Provisions\" section (section 1), which covers the main regulatory framework including risk categories, exemptions, governance, and enforcement mechanisms of the EU's AI Act.",
+      "text_sha256": "e856d8a831becbf2508ebc5647041997b90337d33f9e4d2f065c49a1a0f60342",
+      "window_index": 0
+    },
+    "30809ab5a4c82c1b280d9cd8f0f39a8f0f6bfae5c04789484f37c39a54e3009b": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 55-59 that document media coverage and expert reactions to the EU AI Act's passage and implementation in 2024.",
+      "text_sha256": "39090e664a7c56cdb5b61f612be1e80cd20916c3b61e07584506705bd9bb022a",
+      "window_index": 2
+    },
+    "35bc633fcb949fd790898be967ee39f69151075d5ef75d116d63290b6f34ce3c": {
+      "context": "This chunk is from the Governance section (section 1.3) of the Wikipedia article on the Artificial Intelligence Act, a European Union regulation on artificial intelligence. It describes the institutional bodies established under Article 64 of the AI Act to implement and enforce the regulation, including the AI Office, European Artificial Intelligence Board, Advisory Forum, and Scientific Panel of Independent Experts, as well as the role of national competent authorities in Member States.",
+      "text_sha256": "4e28ec25188689443309b3f77e639359d483284c6f92a7702b90d1bb59dcba9a",
+      "window_index": 0
+    },
+    "3c50f5d0366e0f6496ca4486ca20d78b0ad5219d5bd0af820f82a2968ec1b503": {
+      "context": "This chunk is from the \"Regulatory sandboxes\" section of the Wikipedia article on the Artificial Intelligence Act, which describes the EU's comprehensive framework for regulating AI systems. The section explains the mechanism of regulatory sandboxes as a provision within the Act that allows controlled testing of AI systems before market deployment.",
+      "text_sha256": "39925e04dd78d8f4138a62d6196da517d71fdec2ed79b598f0f2e209f337cb94",
+      "window_index": 1
+    },
+    "4305cf785f0b22bf4fbecdfb297bcef1db3e0f0e85cedf60b120272a1f4f020f": {
+      "context": "This chunk appears at the end of the References section of the Artificial Intelligence Act Wikipedia article and contains navigation links to related artificial intelligence topics and concepts, including AI history, glossary, companies, and machine learning techniques.",
+      "text_sha256": "08336529ea2115bf3f4fc953f70404032858a6c2861c06a08579bb2f67ceebb2",
+      "window_index": 2
+    },
+    "43a31de91ad8d1d570509075e926797c3956ee0e168a4120705397b5c22852d0": {
+      "context": "This chunk from the Wikipedia article on the Artificial Intelligence Act describes the legislative timeline and approval process for the EU's AI Act, including its proposal by the European Commission in April 2021, passage through the European Parliament in March 2024, and unanimous approval by the EU Council in May 2024. It also notes that the draft was revised to accommodate generative AI systems like ChatGPT.",
+      "text_sha256": "4b3194a4ba02e0a5e962bb9a3220adb1e28e97e5f08948fd4a35ae2aaf1d959a",
+      "window_index": 0
+    },
+    "45c80b4b032872d214f28f47fc9dbe9b8086920f591737124b6c80a21affdf16": {
+      "context": "This chunk appears in the Reactions section of the Wikipedia article on the Artificial Intelligence Act, presenting critical perspectives from various stakeholders including tech watchdogs, startups, civil society organizations, and scholars regarding perceived loopholes, compliance complexity, environmental concerns, and enforcement challenges in the EU's AI regulation framework.",
+      "text_sha256": "2e1e657fd5cc38762d61c494552aec72de8b979b5ac2797056ce86132153d5a4",
+      "window_index": 1
+    },
+    "4dda59c8e19bb074ad69fd62f078e54770398be1c6e2f97ab0b1d83d59075e90": {
+      "context": "This chunk appears in the Reactions section of the Wikipedia article on the Artificial Intelligence Act, presenting critical analyses from civil society organizations, creators' groups, and legal scholars regarding gaps and shortcomings in the final AI Act legislation, particularly concerning intellectual property rights, general-purpose AI rules, model data regulation, and enforcement mechanisms.",
+      "text_sha256": "ec443d6968501cc596815f7910b08a0866e785528b67ccb5c31130db1b7872da",
+      "window_index": 1
+    },
+    "50d43efb63f164e9c8067b76bd60cb7f0e123c969c017bd8949638aa224449dd": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, specifically within the subsection listing AI applications and related concepts. It includes links to decisional AI systems like AlphaGo and self-driving cars, followed by reasoning systems, cognitive architectures, knowledge bases, and prominent figures in AI history and development.",
+      "text_sha256": "cd27a0de3a905275239edd0217195aa0469d883006cf2ba07af0d05e87b0c729",
+      "window_index": 3
+    },
+    "525f169255795d347da7435a5c99d322b33cbd1fdba2aece43bf504aaccf2756": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, specifically within the Implementations subsection that catalogs AI applications and systems. It lists audio-visual, text, and decisional AI implementations including handwriting recognition, speech synthesis, text-to-image models like DALL-E and Stable Diffusion, text-to-video models like Sora, music generation tools, and decision-making systems like AlphaGo.",
+      "text_sha256": "5f64448ae55f214f057c4a9c678a912ea25ed75067402fd4cae4e042fd03510f",
+      "window_index": 3
+    },
+    "5323a55979e676d9ff4504bfe4af27a2dc5d6e001731246ec9bd0853680843ab": {
+      "context": "This section appears at the end of the Wikipedia article on the Artificial Intelligence Act and contains portal links, sister project references, and article metadata including categories and retrieval information for the document.",
+      "text_sha256": "ece02552cb6841165e2e571bbef8195bf7d9f0dc0b31c2b10c81cb7691b1846e",
+      "window_index": 3
+    },
+    "64cf4d3a1b82748847b498e50bc11cd319eef06e9fcfed960cfbe28b58388281": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 28-33 that document key regulatory developments and specific provisions of the EU AI Act, including references to general-purpose AI regulation, national security implications, and prohibited AI practices under Article 5.",
+      "text_sha256": "cad068801c3a6e0f26329b7faa74a1cee6190515e2ad54d1bcac4c2f45624fcf",
+      "window_index": 2
+    },
+    "65ed2ebf0e6416733f463b4ce1cbc1e19216af25b416aa15716a14a930536778": {
+      "context": "This chunk introduces the Risk categories subsection (section 1.1) of the Artificial Intelligence Act Wikipedia article, which outlines the four main risk levels used to classify AI applications under the EU regulation: unacceptable, high, limited, and minimal risk, plus a separate category for general-purpose AI.",
+      "text_sha256": "d2f5f1bd3faf75e45a1a70bfc9b51f27d37cfe1a00e1830a1c5d3a86941373b2",
+      "window_index": 0
+    },
+    "668c6559a73f82a740d2d7ba9a30373fca9662d8565516f93a517da3eb555387": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 9-12 that document key sources about the EU's landmark AI regulation, including news coverage of the agreement on AI rules, the European Parliament's official announcement, and the original regulatory proposal.",
+      "text_sha256": "02f2c6a14f0f54a9ac2fc0360a4fb35d90ef0ab8e98f93b41d22d45ca1fc14c7",
+      "window_index": 2
+    },
+    "7335c5badd3e95b4f999fbe345473c5c428a7a41fc7b2582c75fefb130503334": {
+      "context": "This chunk is from the \"Legislative procedure\" section of the Wikipedia article on the Artificial Intelligence Act, which documents the timeline of the AI Act's development from its initial proposal in April 2021 through its entry into force on August 1, 2024, including key legislative milestones and the phased implementation schedule for different types of AI system regulations.",
+      "text_sha256": "beab24a69c9b6e51f4239a5648ed67e591740671bd9a4c483684f87362fdb600",
+      "window_index": 1
+    },
+    "7830c5c6abe8e4366968155fba9f972cfbfc7e6b3bbd89773682fbdcdf4e4098": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 60-63 that document critical perspectives and scholarly analyses of the EU AI Act, including assessments of its environmental protection levels, human rights protections, and concerns raised by creators' organizations.",
+      "text_sha256": "33ef213c10c506ff13276e0714296766533389764bdda190e58f025c67088b5e",
+      "window_index": 2
+    },
+    "79316256f0fe9efc37cd85351e2ded9521646e83de7933cf29f62425f40644b0": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 50-54 that document sources about regulatory sandboxes, the European Commission's White Paper on AI, the legislative procedure for the AI Act, and timeline information about the regulation's passage and implementation.",
+      "text_sha256": "3eec10cc6ccfeeafc16a4754d4b7daa2a8623d6ffc48b70f16b087173b6113cd",
+      "window_index": 2
+    },
+    "7bb2b366b0eb07cfe461c5ed5c2c9f6092c582936674d53da9f439ecd25a8e8c": {
+      "context": "This is the introductory section of the Wikipedia article on the Artificial Intelligence Act, providing an overview of the EU regulation concerning artificial intelligence. It defines the AI Act as a European Union regulation that entered into force on 1 August 2024, explains its scope and risk-based classification system (unacceptable, high, limited, and minimal risk levels), and describes its key governance structures and extraterritorial application.",
+      "text_sha256": "74b58f75899f1b68410479e4740a7b3f9a6b203310f589c9548039b0c9bc378b",
+      "window_index": 0
+    },
+    "83a7a8b28cf28b8bf1e93fda2ab994e138a415d908d7583a29ab8b222c97949d": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 34-37 that document sources discussing AI governance structures, surveillance practices, and analyses of the EU AI Act's implementation and regulatory framework.",
+      "text_sha256": "fab330fd7b56a15011161a463113f9ba848889fad65892b4fb06f6bb9b3eef14",
+      "window_index": 2
+    },
+    "86e34ed0323bd852893bbc39766f78bc555e3821e09ce4c9b0b5de96829443eb": {
+      "context": "This section appears in the References section of the Artificial Intelligence Act Wikipedia article, under a subsection listing notable people, books, and other resources related to existential risk from artificial intelligence and AI safety concerns.",
+      "text_sha256": "f751a44b9b5cb898e68d51989a5426940812a105b26d15ecf78527cb209e243d",
+      "window_index": 3
+    },
+    "8ebb9ee953667295092640be78646d6abcbc543069f59074dcbaf3ecbc0fc730": {
+      "context": "This chunk is from the Exemptions section (section 1.2) of the Wikipedia article on the Artificial Intelligence Act, a European Union regulation on AI that entered into force on 1 August 2024. The section details which AI systems are exempt from the Act's requirements, including those used for military, national security, and scientific research purposes, as well as exceptions to the ban on real-time biometric identification and social scoring systems.",
+      "text_sha256": "3e8afd2ae9bdb5b542ea5d796a1eb3cda931f5913e34ea3365b28008c12bf6cb",
+      "window_index": 0
+    },
+    "9069bd21c7001619ee8e180d7892fd22bc2f4d23a187587d84c7f93c0b620093": {
+      "context": "This chunk is a footnote from the Notes section of the Artificial Intelligence Act Wikipedia article, providing the regulatory definition of \"national competent authority\" as specified in Article 3, Section 48 of the regulation, which is referenced throughout the Enforcement section of the Act.",
+      "text_sha256": "ad4ff8aa0c105fe2d83a14b4d9683db4cb5560929cf95e3de744e443bfd01cee",
+      "window_index": 1
+    },
+    "94e2bb6d8807f53463cc8129c145d57a647228cd18b5ea12e0bf1079d29ca757": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 64 and 65 that provide academic sources discussing purpose limitation and AI governance in relation to the EU AI Act.",
+      "text_sha256": "9b25edfe9339b94335c8017e5028621d3fc536dcd8f3ce96a04396be707f6ecc",
+      "window_index": 2
+    },
+    "961afcf951294537dd400c68ab6bd4ed31de14fd79622299510defcdb4e5d69b": {
+      "context": "This is the table of contents for the Wikipedia article on the Artificial Intelligence Act, a European Union regulation concerning artificial intelligence that entered into force on 1 August 2024. The table of contents outlines the main sections of the article including Provisions (with subsections on Risk categories, Exemptions, Governance, Enforcement, Penalties, and Regulatory sandboxes), Legislative procedure, Reactions, and reference materials.",
+      "text_sha256": "b1c6fd371161034153925f489d48c2ac8082f6dd800341817a186239ee41e94a",
+      "window_index": 0
+    },
+    "989c4c290b1a7617165c930c8b3842ffecf17935f40b37ea9f110ff35e90439f": {
+      "context": "This chunk is from the Penalties subsection under Provisions in the Artificial Intelligence Act Wikipedia article. It details the administrative fines and financial penalties imposed for non-compliance with the AI Act, including violations of Article 5 prohibitions and other operator obligations, with differentiated penalty structures for undertakings, SMEs, and general-purpose AI model providers.",
+      "text_sha256": "2dbe6b5e98b4f6401779a23d1f25e682c905df38ee0bcb7c10eaec74c9f450ff",
+      "window_index": 1
+    },
+    "999a401b29ffb1256fa41ea9454d528dface255b94f6f48b529f9d46fec25f38": {
+      "context": "This chunk from the Wikipedia article on the Artificial Intelligence Act contains metadata and infobox information about the regulation, including its official title, legislative history (European Parliament vote on 13 March 2024, Council vote on 21 May 2024, entry into force on 1 August 2024), the Official Journal reference (OJ L, 2024/1689), and the European Commission proposal number (2021/206).",
+      "text_sha256": "30cbfb48fd34c1fc74e6b5b6ff53f325cecc913b938b7533d3552604148f8111",
+      "window_index": 0
+    },
+    "9d40e23c4d56c0994bd773f2d0ae496bfdc9a596113cb870678ecde69bb42191": {
+      "context": "This chunk appears in the \"Risk categories\" subsection (section 1.1) of the Provisions section of the Wikipedia article on the Artificial Intelligence Act. It describes the four main risk-based classifications that the EU AI Act uses to categorize AI applications: unacceptable risk, high-risk, limited risk, and minimal risk, along with their respective regulatory requirements and obligations.",
+      "text_sha256": "df99f1b2832543d0a2a44f9581a77a53b94d8f815c2410a7a3ef12cc7b924f50",
+      "window_index": 0
+    },
+    "9d454cc17dbb4c8cf22fcb4f1e91f2baeb7a433cd091921b047a9822a6cf9793": {
+      "context": "This chunk is from the References section of the Artificial Intelligence Act Wikipedia article, containing citations 16 and 17 that provide sources discussing the adoption and implications of the EU AI Act, including commentary on techno-solutionism and AI system behavior.",
+      "text_sha256": "49ef6d34c31484a7ce48b48b7ecc01c18785b31735adb2714ed80ceafc4957aa",
+      "window_index": 2
+    },
+    "9f227399b2fcb86a0d5467a4a5f347eb028e98c1c552b6e97760882bc696cd38": {
+      "context": "This chunk is part of the language links section at the beginning of the Wikipedia article on the Artificial Intelligence Act, listing translations of the article available in various languages including Greek, Spanish, Persian, Finnish, French, and others.",
+      "text_sha256": "be95382d2360089366dbd61780dbb32c92709e81988d89e0d5d38fd094571779",
+      "window_index": 0
+    },
+    "a28a7399f92211e3947a856524426d4ba443321e34c7ba13b1ecce16e4e5e3be": {
+      "context": "This chunk appears in the Wikipedia article on the Artificial Intelligence Act and lists the first portion of language versions available for the article, showing that the article is translated into 36 different languages including Arabic, Azerbaijani, Belarusian, Bengali, Catalan, Kurdish, Czech, Danish, and German.",
+      "text_sha256": "7367459f19fc4ea6e112f37922674b28960de262b096da6c0dcb1bb28855452f",
+      "window_index": 0
+    },
+    "a750512370bee4c930a03b96cc4309466fe937af6fed3f9b32dd70a0037f7bcb": {
+      "context": "This is the \"See also\" section of the Wikipedia article on the Artificial Intelligence Act, which lists related topics and articles that provide additional context for understanding AI regulation, ethics, and governance in the European Union and beyond.",
+      "text_sha256": "06bf301a77709a75b77341e7bb40735a75ab74f6bdbbfab54323c3ec9438514e",
+      "window_index": 1
+    },
+    "b10bfbd1518a55f43c974d3489062b16245c7b2d81c991f576cc1b88c2f1949f": {
+      "context": "This chunk is part of the Wikipedia article on the Artificial Intelligence Act and appears in the language links section at the top of the page, listing translations of the article in various languages including Romanian, Russian, Slovenian, Swedish, Tamil, Thai, Turkish, and Ukrainian.",
+      "text_sha256": "035282767b74d2e4571d7549336795ae37995c6f2eddeb5f9f9238da2009625a",
+      "window_index": 0
+    },
+    "bd94d0404783f02abafd7bd168cc304fa4ff3c193da3ed2eee2c82558e54b31d": {
+      "context": "This chunk appears in the References section of the Artificial Intelligence Act Wikipedia article, specifically within subsections listing key concepts, organizations, and people related to AI safety, existential risk, and AI governance that are relevant to understanding the regulatory framework of the EU AI Act.",
+      "text_sha256": "13903ebb1a2d39bdad8c10dd1f7eb660b893cfd465769856831a0237b57e7ce0",
+      "window_index": 3
+    },
+    "c568898c475d6d0e35c8dd4a4d85d622f30e46553fb2c4f0dbf6fd9ceba099c5": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 46-49 that document scholarly sources examining the EU AI Act's approach to fundamental rights, product safety, generative AI, deepfakes, and human rights protection.",
+      "text_sha256": "c96d19d3892b05a06dfd55bab683b55af0b1b5f1d6e641ccc3313a168fa5ad0a",
+      "window_index": 2
+    },
+    "ce22dc49007c43fa756f30f707baa6fa993c9671b7312a9ff16e8a439dfacd43": {
+      "context": "This chunk is from the Enforcement section of the Wikipedia article on the Artificial Intelligence Act, which describes the regulatory mechanisms and multi-level supervision system for ensuring AI systems comply with the Act's requirements through conformity assessments, notifying bodies, and national supervisory authorities, as well as criticisms regarding insufficient third-party assessments for high-risk AI systems.",
+      "text_sha256": "cccf3c99c42fa611d888e8357443aaae2a27da7ba897aac45b9e07ac5fe45b5b",
+      "window_index": 1
+    },
+    "cfc2ab62a97265d1d9d3d03d61e70b58a41f63b75a2fe4f1324965cae45535c2": {
+      "context": "This chunk contains the Wikipedia article navigation and interface elements for the Artificial Intelligence Act article, including language options, editing tools, and page metadata links that appear at the top of the Wikipedia page.",
+      "text_sha256": "5fc53536e65a65446a55a4f8708572babef5fd1a5e35a79017557d3d4715c9d1",
+      "window_index": 0
+    },
+    "d519b32c7576600dd55046a7e419aeaa150488a6437127095e0fba031d03c70e": {
+      "context": "This chunk is from the References section of the Artificial Intelligence Act Wikipedia article, specifically listing AI techniques and applications including diffusion models, machine learning approaches, neural networks, and AI implementations like AlexNet and WaveNet.",
+      "text_sha256": "f2f72eabc2beccc5a474179e008ccaa0e1ae464d087c7322eb1a3bb9123047a8",
+      "window_index": 3
+    },
+    "d9bfe7abd74a9f32b200774d64e61d50908ea24504d8ae7fc36b4c53e3c2a133": {
+      "context": "This chunk appears in the Reactions section of the Wikipedia article on the Artificial Intelligence Act, presenting expert and organizational perspectives on the law's implications and limitations, including commentary from Anu Bradford and Amnesty International regarding human rights concerns.",
+      "text_sha256": "69aff5ba06a4b7655bbfd64ae5a90a4067484c7c1589fa36c031e75a50306c88",
+      "window_index": 1
+    },
+    "e22e08a261ee17b9254b07648c72052ec93f6c424b817fad4b3b83e7cbab8911": {
+      "context": "This chunk is part of the References section of the Artificial Intelligence Act Wikipedia article, containing citations 43-45 that document scholarly analyses and critical assessments of the EU's Artificial Intelligence Act proposal and its coordination with cybersecurity regulations.",
+      "text_sha256": "f57f65588c6be429f512cb17dca2979f8819e7a198932ad5579d19694123a053",
+      "window_index": 2
+    },
+    "f5b983e2c3618de96d87922930bb94d02aebaeeac3f652ad6236a20a3596e9d8": {
+      "context": "This chunk is from the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 18-21 that document scholarly sources on Fundamental Rights Impact Assessments (FRIA) and algorithmic impact assessments related to the EU AI Act's legal obligations and implementation requirements.",
+      "text_sha256": "853da5d7d3d2d1f1f54c1ee696f700fbc94981e0f006b66ed12c2d6f5e7d331a",
+      "window_index": 2
+    },
+    "f8c79966526e47f5d4dde12fa38b12ed3494315a082f6287f0514698af79e2b4": {
+      "context": "This chunk appears in the \"Risk categories\" subsection under \"Provisions\" in the Wikipedia article on the Artificial Intelligence Act. It explains the risk-based regulatory framework that classifies AI applications into different risk levels (unacceptable, high, limited, and minimal), and details the specific requirements for general-purpose AI models, including foundation models like ChatGPT, which were added to the Act in 2023.",
+      "text_sha256": "11ff64e11b0a9a3d81040ba5f612b75b2fb4ac36642f5ae59fe1639bf1746e4f",
+      "window_index": 0
+    },
+    "fd735ade08d643525147e31d45f0feb8e92e06774af52bedb14adc79b37e3580": {
+      "context": "This chunk is part of the References section of the Wikipedia article on the Artificial Intelligence Act, containing citations 5-8 that document key sources about the EU AI Act's development and regulation, including a Council of the EU press release announcing the deal between Council and Parliament on AI rules in December 2023.",
+      "text_sha256": "4a4574e65a867ec4053bd27254062d21513ecf64cd8432c8f1212dfbe3f2735d",
+      "window_index": 2
+    }
+  },
+  "doc_id": "wiki-eu-ai-act",
+  "generated_at": "2026-08-29T22:25:17Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "7ad6ee261f4a7710ea92c7182d4bfbd4424f86be8d05ce9e4b9c732768ee317e",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "arxiv-devlin-2018-bert",
+  "fetched_at": "2026-07-23T17:06:28Z",
+  "final_url": "https://arxiv.org/html/1810.04805v2",
+  "format": "html",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-devlin-2018-bert.html",
+  "recipe": "arxiv",
+  "resolved_version": "v2",
+  "source_url": "https://arxiv.org/abs/1810.04805"
+}

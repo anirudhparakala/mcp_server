@@ -1,0 +1,308 @@
+{
+  "contexts": {
+    "00e0ef85be2bbd922649f75e25d2581f9ede46155bd68061e88d64fee80b7129": {
+      "context": "This chunk is from section 7.2 \"What is the Optimal Rank r for LoRA?\" in the paper \"LoRA: Low-Rank Adaptation of Large Language Models.\" It discusses empirical findings on how the rank parameter r affects LoRA performance and introduces the analysis of subspace similarity between adaptation matrices learned with different ranks to understand whether low-rank updates are sufficient for model adaptation.",
+      "text_sha256": "22cb318ad2630a7b4d7d09701b14abbb77561386c20a4d918c7ce21306cce49b",
+      "window_index": 2
+    },
+    "0775ca9925eede56f32b81fd6dd0d98cb2d087d3d056bd129674874107a815a8": {
+      "context": "This chunk appears in Appendix D.1 of the LoRA paper, which details the hyperparameters and training procedures used for RoBERTa experiments. It describes the specific training configuration, initialization strategy, and experimental setup for adapting LoRA to GLUE benchmark tasks including MNLI, MRPC, RTE, and STS-B.",
+      "text_sha256": "ad5d313ccd7584b0a11b9e0731ee2cdb35f9566b80c71a31331c5a972021426f",
+      "window_index": 3
+    },
+    "093a7c573f0ad85bb7c0c66f1a3183b8d9e046dd834762983b165b9da4296687": {
+      "context": "This chunk is from Section 2 (Problem Statement) of the LoRA paper, which formally defines the language modeling problem and the limitations of full fine-tuning that motivate the LoRA approach. It establishes the mathematical framework for adapting pre-trained models to downstream tasks and explains why full fine-tuning becomes impractical for large models like GPT-3 175B.",
+      "text_sha256": "2ca0f64911887eda44063fcaa1a68929989a377253c0c1c2f5e3d8e4ea03181c",
+      "window_index": 0
+    },
+    "105aefe378edba4166bda9ed82adb08cf08302c03e22bbf58238aa11d028416e": {
+      "context": "This chunk appears in Section 5 \"Empirical Experiments\" of the LoRA paper and describes the experimental setup and datasets used to evaluate LoRA's performance across multiple language models and downstream tasks, including GLUE, WikiSQL, and SAMSum benchmarks.",
+      "text_sha256": "2744c10927c840e84cf7e5020476c9fb74b98bd1b055993a268409fad6cd42f0",
+      "window_index": 0
+    },
+    "15339443fe34335de6bdd49ee9c6fee5ed5e9b483da388d4f70d63c7db261a81": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the paper, including references to parameter-efficient tuning methods, optimization techniques, and low-rank approximation approaches relevant to the LoRA methodology.",
+      "text_sha256": "8e4caefd6687b0b81e9c0c3ec861b54e15154fee587e6d0bfd622b7d4df91f14",
+      "window_index": 3
+    },
+    "182eba24dbed2c3f605f04a03028d2f2f7cae6a4520aa21197b7b79af963922e": {
+      "context": "This chunk appears in Appendix G of the LoRA paper, which explains the mathematical properties of the subspace similarity measure \u03c6(A,B,i,j) used throughout the paper to analyze low-rank adaptation matrices. The chunk describes the range and interpretation of this similarity metric, showing that it equals 1 when subspaces are identical, 0 when orthogonal, and falls between 0 and 1 otherwise.",
+      "text_sha256": "39dbb19ddb5b02487acd65246dc97f6574f6e96eb9a0bb9ef3fd3da24f93a5e4",
+      "window_index": 4
+    },
+    "18944f9882a3c6116875b71931a79bf683c29357f9564cbaf45429c46065a628": {
+      "context": "This chunk appears in Appendix H.1 \"Correlation between LoRA Modules\" of the LoRA paper, presenting additional experimental results that extend the subspace similarity analysis of LoRA weight matrices across different layers of a Transformer model, complementing the main findings discussed in Section 7.",
+      "text_sha256": "734da35627d1244ecd3b203d4b1fb2a3cec17e1dd715b83aae6660279d3cad49",
+      "window_index": 4
+    },
+    "1b1d234f1fc0ef22c105eba9efe0c31fe7604c4c89078d67416674247a629f28": {
+      "context": "This chunk is from section 7.3 \"How Does the Adaptation Matrix \u0394W Compare to W?\" in the LoRA paper, which investigates the relationship between the low-rank adaptation matrix \u0394W and the original weight matrix W in large language models. The section analyzes whether \u0394W correlates with W and how the adaptation matrix amplifies features during fine-tuning, drawing conclusions from Table 7.",
+      "text_sha256": "9bf081b7ed1738423f21d5a21d0d28229d06b39e2a2d99c2bacbfd08b40836b8",
+      "window_index": 2
+    },
+    "1b701651c98e5fad0bda6d1532e1ec53c09d170e75581fceda4db1b1ab55fe84": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document, including papers on semantic textual similarity, natural language processing, deep learning, BERT, paraphrase detection, and text generation.",
+      "text_sha256": "1908373036242ce9784f44b11273db1f960c342a32ba3366e22d00071d906026",
+      "window_index": 3
+    },
+    "258fdb516cebde439c31f5b495fdb7cf744886550326f8171a4361ae384d69bc": {
+      "context": "This chunk is from Section 5.4 (GPT-2 medium/large) of the Empirical Experiments section in the LoRA paper. It describes experiments evaluating LoRA on natural language generation (NLG) models, specifically GPT-2, comparing against prior work by Li & Liang (2021) and presenting results on the E2E NLG Challenge task.",
+      "text_sha256": "147288d5960b28707628dbe1098813b10c473c7d402533039ca70fb87904a690",
+      "window_index": 1
+    },
+    "2b046ac2e6cac8d46032a82e38e75e3fca0dab98c51a588c49944d368da4f87e": {
+      "context": "This chunk appears in Appendix G of the LoRA paper, which defines the mathematical measure used to quantify subspace similarity between low-rank matrices. The measure \u03c6(A,B,i,j) is employed throughout the paper's analysis of LoRA modules to compare how different rank choices and random seeds produce similar or different subspace directions in the weight update matrices.",
+      "text_sha256": "a5a6a8e0bfe2b4588c90dd5b8fe90d2cae28116a4407024540493b3ceaaf6644",
+      "window_index": 4
+    },
+    "2bb5111e20931998c5df6e5aa07bf1ae9032002810ca17d890251bde6125a0e3": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document, including references to parameter-efficient transfer learning methods, language models, and datasets used in the LoRA experiments.",
+      "text_sha256": "aa0b8a24c9ba61d1e379e72cec710406be7bd951711bc5165fe717e2b02e3e0b",
+      "window_index": 3
+    },
+    "3153fe9837aa9dc9884d4dee29c1dd678352deb6e98fe3fc5b7cde52cb95d6e3": {
+      "context": "This chunk appears in Appendix C of the LoRA paper, which provides detailed descriptions of the datasets used in the experiments. It describes three datasets: GLUE Benchmark (a collection of natural language understanding tasks including MNLI, SST-2, MRPC, CoLA, QNLI, QQP, RTE, and STS-B), WikiSQL (for SQL query generation), and SAMSum (for abstractive summarization of dialogues).",
+      "text_sha256": "cf2965e3405669ede429a497c2fa7d7ace24c4855e5b415b6cb0051ed2d82b27",
+      "window_index": 3
+    },
+    "324098fcef0dadfc7c094af2015b2d0926161247b470ada4b6ac8a3c6e72714e": {
+      "context": "This chunk is from Appendix E of the LoRA paper, which explores combining LoRA with prefix-based tuning methods. It describes two hybrid approaches\u2014LoRA+PrefixEmbed and LoRA+PrefixLayer\u2014and presents empirical results comparing their performance to standalone LoRA on WikiSQL and MNLI datasets.",
+      "text_sha256": "dcb4f715268c4fb000de4369515fd233c3dab4ef254374c44dc330e44350d6e9",
+      "window_index": 4
+    },
+    "37907a2f5b55dafe087948e545029c1351434b8e7e1f01a9bedc6c17f3752d84": {
+      "context": "This chunk is from Appendix D.2 of the LoRA paper, which describes the hyperparameters and training procedures used for DeBERTa experiments. It details the specific optimization settings, initialization strategy for LoRA modules on GLUE tasks (MRPC, RTE, STS-B), and evaluation methodology for the DeBERTa model adaptation experiments.",
+      "text_sha256": "1e75d820361088886cca5786ec66ab08b2987a2a0fc55b4cd055b112835ba00e",
+      "window_index": 4
+    },
+    "3906c433934063e81c24df12a4d87feb94cea7c70381010c28e4e1799b0c4d83": {
+      "context": "This is the author and affiliation information for the paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" a research paper from Microsoft Corporation that proposes a method for efficiently adapting large pre-trained language models to downstream tasks by training low-rank decomposition matrices instead of all model parameters.",
+      "text_sha256": "a01c82c798be098f4c19e9fcb52408e8adcf23cb821b2ff7b6be47c12504af1b",
+      "window_index": 0
+    },
+    "3bf0ac89fabc28763a75c8ce2acb93ea96fca3699a329dba8e12636e86437b46": {
+      "context": "This chunk appears in Section 2 (Problem Statement) of the LoRA paper and presents the core parameter-efficient adaptation approach. It follows the discussion of full fine-tuning's limitations and introduces the key innovation: encoding task-specific parameter updates \u0394\u03a6 through a much smaller set of parameters \u0398, which is then implemented using low-rank decomposition as detailed in subsequent sections.",
+      "text_sha256": "eaae1c5ebfdec1bee23f5f031c27de36659b202473359736bb7bfdad678dc13c",
+      "window_index": 0
+    },
+    "3d7340c0da811bf1d2473a5b1251b75ab0b03df6d924050c15ad484d3fd0e99b": {
+      "context": "This chunk appears in Section 6 (Related Works) of the LoRA paper, specifically within the subsection on \"Low-Rank Structures in Deep Learning,\" where the authors discuss theoretical foundations and prior work supporting their low-rank adaptation approach for fine-tuning large language models.",
+      "text_sha256": "407f50a7cbb8b52ec413d3222dbf7a243c2a0e78772da947ac87b1efa0983e59",
+      "window_index": 1
+    },
+    "3f6c753a9a4fed21386dc6f7bf71b3610d03b5b02a02c0d6e6fc4eee9d1c8622": {
+      "context": "This chunk appears in Section 3 \"Aren't Existing Solutions Good Enough?\" of the LoRA paper, specifically in the subsection \"Directly Optimizing the Prompt is Hard.\" It discusses limitations of prefix tuning as an alternative approach to parameter-efficient model adaptation, contrasting it with LoRA's method of using low-rank decomposition matrices.",
+      "text_sha256": "be97c0c6a1b0173c093099094607a219ddd63932d9102f38544a93c3bd81ade8",
+      "window_index": 0
+    },
+    "3fd5f7764a03a067523b3949a9e204867a23db9707060ec66e1f55b5666771b0": {
+      "context": "This chunk is from Section 4.1 \"Low-Rank-Parametrized Update Matrices\" of the LoRA paper, which describes the core technical method of LoRA. It explains how LoRA constrains weight matrix updates using low-rank decomposition, where the weight change \u0394W is represented as the product of two smaller matrices B and A with rank r, while keeping the original pre-trained weights W\u2080 frozen during training.",
+      "text_sha256": "8eb7c9338abc39ac6df485a875acb3c6414b757aa7bac58f3a9f839038e05401",
+      "window_index": 0
+    },
+    "446fac216e03da2d55bf70edb5886c517703d27dc62faa53bf9eb927e1291eb3": {
+      "context": "This chunk appears in Appendix H.4 of the LoRA paper, which discusses additional experiments on low-rank matrices. The section introduces and analyzes the feature amplification factor, a metric that measures how much task-specific directions in the weight update matrix \u0394W are amplified during model adaptation, with specific analysis for different rank values (r=4 and r=64).",
+      "text_sha256": "e3e95af5934aeabc18578b0554f915254d435770a9ef3e0e4f1dbfd4676dbf87",
+      "window_index": 4
+    },
+    "4874c870c6f7f13bcc1cb689036c45960bb8b8a31805d5cd4e4766578c787d7e": {
+      "context": "This chunk appears in Section 6 (Related Works) of the LoRA paper, specifically in the \"Low-Rank Structures in Deep Learning\" subsection. It discusses the theoretical motivation and prior work on low-rank structures in machine learning and neural networks, establishing the foundation for why LoRA's approach of using low-rank weight updates is well-motivated for adapting pre-trained language models to downstream tasks.",
+      "text_sha256": "e6c0b89e9c0e95b718bbc4df6d25a5b86d1a05f2e5e392a9458ed45c6fddca7b",
+      "window_index": 1
+    },
+    "4abdea2dd6c413914d71ae966cae2750cff8486e6cc305deff876c5ee5a1ea41": {
+      "context": "Section 4.2 of the LoRA paper describes how to apply LoRA to Transformer architectures, specifically detailing which weight matrices to adapt and the practical benefits of the approach. This chunk explains LoRA's application to the four self-attention weight matrices (Wq, Wk, Wv, Wo) while freezing MLP modules, and quantifies the memory and storage reductions achieved, such as reducing VRAM consumption on GPT-3 175B from 1.2TB to 350GB and checkpoint size by 10,000 times.",
+      "text_sha256": "96b1ce0f13222caa324faaf2af6a7f3997b6491a3fe2a72db7dbddd09fe968a8",
+      "window_index": 0
+    },
+    "4bd26ca209526ad899fefac7c871c27bdb15711f39ea4907511feb93053a44f2": {
+      "context": "This chunk is from Appendix F.1 (Additional Experiments on GPT-2) of the LoRA paper, which reports supplementary experimental results on the DART and WebNLG datasets to demonstrate that LoRA outperforms prefix-based adaptation methods when compared with equivalent numbers of trainable parameters.",
+      "text_sha256": "3ed83ea6bcf6712e0af6003aeb9a5ec86d7a0f5efa37296dc582eda2bb7ff074",
+      "window_index": 4
+    },
+    "4c3ca4ed76c8b789446467ddec6e62c4eb2984e8ef67d3dd2933f8015fb38673": {
+      "context": "This chunk appears in Section 3 \"Aren't Existing Solutions Good Enough?\" of the LoRA paper, which discusses limitations of prior parameter-efficient adaptation methods for large language models. The section introduces two main existing strategies for efficient model adaptation\u2014adapter layers and prompt optimization\u2014before detailing their respective drawbacks in subsequent subsections.",
+      "text_sha256": "6821ddb82077d4df563ddb38dddd550dfd36cb9c0d2ac3db83e17a68b1a511fe",
+      "window_index": 0
+    },
+    "4e0cf066651c8b07698c4e36e8bf97f1730e3901eaeb46465056b966aeaf5cf7": {
+      "context": "This chunk appears in Appendix C of the LoRA paper, which provides detailed descriptions of datasets used in the experiments. It describes three data-to-text generation datasets\u2014E2E NLG Challenge, DART, and WebNLG\u2014that were used to evaluate the LoRA method's performance on natural language generation tasks.",
+      "text_sha256": "3d7276b6326d53094bc95a362824c5d2d679d6b87639a0f6a3804bc5920e067e",
+      "window_index": 3
+    },
+    "5bd928ad6262e662b628a0ecba3a7f21b27b4e3ae9c1a6a32899837c19b24afb": {
+      "context": "This chunk appears in Section 6 (Related Works) of the LoRA paper, specifically in the subsection on Transformer Language Models and Prompt Engineering and Fine-Tuning. It provides background on the evolution of Transformer-based language models including BERT, GPT-2, and GPT-3, and discusses the challenges of fine-tuning large models like GPT-3 175B, which motivates the need for parameter-efficient adaptation methods like LoRA.",
+      "text_sha256": "1809c18e1acb9fdc63d85df8a0536ded809d5255c2a3bee6d7c7e5c420c0cae6",
+      "window_index": 1
+    },
+    "5d220cbc81e2bf40f037b9c5c42f1e8779e0851080f16738ca91607ef4e5402b": {
+      "context": "This chunk appears in Section 3 \"Aren't Existing Solutions Good Enough?\" of the LoRA paper, specifically in the subsection \"Adapter Layers Introduce Inference Latency.\" It discusses why adapter layers, an existing parameter-efficient fine-tuning approach, introduce additional inference latency despite having few parameters, contrasting this limitation with the LoRA method proposed in the paper.",
+      "text_sha256": "0b38115d404eea241bbde829c75294b063b638adfcc62aa44909e41f418d6617",
+      "window_index": 0
+    },
+    "6d8c13c3c2f3460f3f1061e05a35f5a31051cc791dd647fbc4371bc3a8e270b7": {
+      "context": "This chunk appears in Section 6 (Related Works) of the LoRA paper, specifically in the \"Parameter-Efficient Adaptation\" subsection. It discusses how LoRA relates to other parameter-efficient methods for adapting large language models, including adapter layers, compacter, and prompt-based approaches, positioning LoRA's low-rank weight update approach as an alternative to these existing techniques.",
+      "text_sha256": "4ae4b53eea2ef5984043a4082ebcfec95a61ab61d43959e64da4638727c2e641",
+      "window_index": 1
+    },
+    "6fd871ac22fe40fae30b7deae0a41e08580f6c8c79f8002240e0f4abdaf2bdd5": {
+      "context": "This chunk is from Section 5.3 (DeBERTa XXL) of the Empirical Experiments section in the LoRA paper. It describes one of the experimental evaluations where LoRA is tested on the DeBERTa XXL model to determine if it can match full fine-tuning performance on the GLUE benchmark.",
+      "text_sha256": "3a7eacb5094cde5be4d9aab8c204aab67e408d9b9c856746e47d98d17ef94bc0",
+      "window_index": 1
+    },
+    "70505fd758f66f5c9a88469b94150e804135891a29dbc5fdb149b343d77ff9cd": {
+      "context": "This chunk is from Appendix D.4 of the LoRA paper, which details the hyperparameters and experimental setup used for GPT-3 experiments. It specifies the training configuration including optimizer settings, sequence lengths for different datasets (WikiSQL, MNLI, SAMSum), and parameter budgets for comparing LoRA with prefix-tuning baselines.",
+      "text_sha256": "5ff019dee8af5e599ed865bdd192fdba175756526387dff1269fe0ea030e7d20",
+      "window_index": 4
+    },
+    "70b428272ae0161fd9b67b28f4a6293122091293c2755c02f469189ea35ae264": {
+      "context": "This chunk is from Appendix B of the LoRA paper, which compares the inference latency of adapter layers versus LoRA. It describes an empirical latency study measuring forward pass performance on GPT-2 medium, comparing two adapter designs (Adapter H and Adapter L) against a no-adapter baseline across varying batch sizes and sequence lengths.",
+      "text_sha256": "988f69ca3e6d018b6b8b09ea7f2fbe01877b434f52ea92f3e49a52ba9c18fb0e",
+      "window_index": 3
+    },
+    "7446e92a04c75df3a25be25958756458d61b66d30745170eeb62bf80849d4051": {
+      "context": "This chunk is from Appendix F.3 (Low-Data Regime) of the LoRA paper, which evaluates how different model adaptation approaches perform when trained on limited data. The section compares LoRA, fine-tuning, and prefix-based methods (PrefixEmbed and PrefixLayer) on low-data versions of the MNLI task with 100, 1k, and 10k training examples.",
+      "text_sha256": "925fa3155554a3bc1328583a5dc4ae320c89a4eb4a2e5fcd8d0e728d773b4ded",
+      "window_index": 4
+    },
+    "78498a08725140d7f9603ecbd767693e5b470cc63a1c31fef7457f05a4e8c453": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document, including references to parameter-efficient fine-tuning methods, low-rank matrix factorization techniques, and NLP tools relevant to the LoRA research.",
+      "text_sha256": "d79101843c221311e6e34909d04f2e71db43c135c6ea083ee4db941a10225bea",
+      "window_index": 3
+    },
+    "8bb3308fdddd9fa3dd1aed4e8123abc499296600745563181489cc6158b3766f": {
+      "context": "This chunk is from Section 1 (Introduction) of the LoRA paper, which discusses the motivation for developing Low-Rank Adaptation. It explains the problem with full fine-tuning of large language models like GPT-3, where storing independent fine-tuned instances becomes prohibitively expensive, and describes limitations of existing parameter-efficient adaptation techniques that introduce inference latency or reduce model quality.",
+      "text_sha256": "36a4b9ff5d6452f809e7907b2c73fa728b642c549ffbcefbb8a95465eb2cbc0f",
+      "window_index": 0
+    },
+    "986db8c30075b6ea8390e96a50c6186c991cc60654a058d9b76bd78c400364e5": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document that relate to parameter-efficient transfer learning, adapter methods, low-rank matrix factorization, and neural network optimization techniques.",
+      "text_sha256": "bac2a45f748c580e7738f1bf4b5dff70be11d13d133b59faac1e23af3787c168",
+      "window_index": 3
+    },
+    "9a7e0798ec4150b0b08643606f5b9b9307f35a8ff64432db8195acc45d9d3580": {
+      "context": "This chunk is from Section 5.5 \"Scaling up to GPT-3 175B\" in the Empirical Experiments section of the LoRA paper. It presents results comparing LoRA with other adaptation baselines (fine-tuning, prefix-embedding tuning, and prefix-layer tuning) when scaled to GPT-3 with 175 billion parameters, showing LoRA's superior scalability and performance across multiple datasets.",
+      "text_sha256": "c3dc620ea6a396b5b11ab8bf33dcd9bab1a3f3a744732360a4cfbe5d3692818f",
+      "window_index": 1
+    },
+    "9cc959f71479eb3eeaf1ffbd2f457336ff4478a8a55ef7c7609f08dea1d8320a": {
+      "context": "This chunk is the opening of Section 4 \"Our Method\" in the LoRA paper, which introduces the technical approach to low-rank adaptation of large language models. It provides an overview before the detailed explanation of the method begins in subsequent subsections.",
+      "text_sha256": "9fb2b587e0c71b873aff4238728878217a34638f8a24665d57a5105c6f913a4d",
+      "window_index": 0
+    },
+    "9cd3f51abbb43c55e5ab5318c056b68b873a021720362c54abac751248b193c9": {
+      "context": "This section from the LoRA paper establishes the terminologies and conventions used throughout the document, defining key notation for Transformer architecture dimensions and weight matrices that are referenced in subsequent sections describing the LoRA method.",
+      "text_sha256": "6ac37a2be3e6bd3ede9f97b788010fc7d6d094d3508c1ee92a6a0606d5f7105b",
+      "window_index": 0
+    },
+    "a1036acd6b079dd553d2c4aa8b106feaafc1af93018ee61064787aa607edd2fb": {
+      "context": "This chunk appears in Appendix D, Section D.3 of the LoRA paper, which documents the hyperparameters used in experiments. It specifically describes the training setup and hyperparameter choices for GPT-2 experiments with the LoRA (Low-Rank Adaptation) method, including optimizer, learning rate schedule, and reporting methodology.",
+      "text_sha256": "bf93c0329358ad721826cb88866b61f5b4fec359cc8f1fd899e54b9ad73c0fd5",
+      "window_index": 4
+    },
+    "a3b6a9d9fccf3b9da11b3a667dbc37e43a10a8833330555a7d998e189fb27627": {
+      "context": "This chunk is from section 7.2 \"What is the Optimal Rank r for LoRA?\" in the paper \"LoRA: Low-Rank Adaptation of Large Language Models.\" It presents analysis of subspace similarity between adaptation matrices learned with different ranks and random seeds, demonstrating that top singular-vector directions are most useful while other directions contain noise, supporting the finding that adaptation matrices can have very low rank.",
+      "text_sha256": "b0d90e3ae5134e3b8ebc9e3109c4249e5482b8ec7c045595de96e11ceb5f5323",
+      "window_index": 2
+    },
+    "b00f043f0e498830ffbba52a8a55827003df99788f2f198b35368e7baee8e3f1": {
+      "context": "This chunk is from Section 5.2 (RoBERTa base/large) of the Empirical Experiments section in the LoRA paper. It describes the experimental setup for evaluating LoRA and other efficient adaptation baselines on RoBERTa models using GLUE benchmark tasks, including details on model sizes, evaluation methodology, and comparison procedures with adapter-based approaches.",
+      "text_sha256": "13efc8d40c1f69e976c7bdd8e481dbf7a0df7e5e00feacd97ffa42e3dd86aba0",
+      "window_index": 1
+    },
+    "b098a0464a2b28cc3a380308f7ca3d0e7f451c90c71dbf734f7b20c0180e087f": {
+      "context": "This chunk appears in section 7.2 \"What is the Optimal Rank r for LoRA?\" of the LoRA paper, which investigates how the rank parameter affects model performance. The chunk presents the mathematical formula for normalized subspace similarity based on Grassmann distance and discusses findings about how top singular vector directions overlap between adaptation matrices learned with different ranks (r=8 and r=64), demonstrating that low-rank adaptation is sufficient for downstream tasks.",
+      "text_sha256": "909753b802604f8a464c700d4e0b278930c5fd711107dc5ab4736cd89eb58388",
+      "window_index": 2
+    },
+    "b6ff1b1e4db088ac8d18df481289d603863a70bbd5192e88eacdf3c28fb9d0d1": {
+      "context": "This chunk appears in Appendix A of the LoRA paper titled \"Large Language Models Still Need Parameter Updates,\" which argues for the importance of fine-tuning over few-shot learning when sufficient training data is available. The chunk compares few-shot learning performance to fine-tuning performance using GPT-3 results on benchmark tasks like RTE and MNLI-matched.",
+      "text_sha256": "338f6b3a832d23cf20f154a8231a829fa70bcfec5e4cec44457454a77681aacb",
+      "window_index": 3
+    },
+    "b7a78d7f48f10d1167b1d987a702a633c435d1341e9b3d6e928c27bcf8fc4513": {
+      "context": "This chunk appears in Section 4.1 \"Low-Rank-Parametrized Update Matrices\" of the LoRA paper, explaining the theoretical properties and practical advantages of the LoRA method. It discusses how LoRA generalizes full fine-tuning by using low-rank decomposition matrices (represented as B and A with rank r) to update pre-trained weights (W\u2080), and emphasizes that LoRA introduces no additional inference latency during deployment compared to standard fine-tuned models.",
+      "text_sha256": "ae323064c97c70bc0a6f3617742ae04a9f69e9b8219ba1586309b5ecde4e7eb8",
+      "window_index": 0
+    },
+    "b9df8bede3ee0e85a621997fd1cab970d55162b2f12920ba8b11356e8a34e73d": {
+      "context": "This chunk from the Introduction section of the LoRA paper presents the core hypothesis and key advantages of the Low-Rank Adaptation method. It explains how LoRA addresses the problem of parameter-efficient fine-tuning for large language models by using low-rank decomposition matrices instead of updating all model parameters, and outlines the main benefits including reduced storage, improved training efficiency, and no additional inference latency.",
+      "text_sha256": "39a7205502d2e46f348d1777a37a94be24f5047fde2aaea57bb653a41f5c5ce2",
+      "window_index": 0
+    },
+    "be1a193d2f08172c53eebfaf14b5158e7614afb5da3ad3e8519895d57de3d6f6": {
+      "context": "This is the beginning of the References section in the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" listing bibliographic citations for works cited throughout the document, starting with foundational papers on language model fine-tuning, deep learning theory, and few-shot learning.",
+      "text_sha256": "3e6466c5205e08132825cb39af644ff2605db7ec33193370b87864724d383b55",
+      "window_index": 3
+    },
+    "c074758e402d6e8dc68d4126e4d5df420ac80183327ca8b828e3d9d09066e9e6": {
+      "context": "This is the abstract section of the paper \"LoRA: Low-Rank Adaptation of Large Language Models\" by Hu et al. from Microsoft Corporation. The abstract summarizes the main contribution of LoRA, a parameter-efficient fine-tuning method that reduces trainable parameters by injecting low-rank decomposition matrices into Transformer layers while keeping pre-trained weights frozen, and reports its performance improvements and efficiency gains compared to full fine-tuning on models like GPT-3 175B, RoBERTa, DeBERTa, and GPT-2.",
+      "text_sha256": "d1814447c75cf25e0a7f3db85fb432a211a1af76fb0eb1381a9780895738154c",
+      "window_index": 0
+    },
+    "c738c8340533c1545d09f40f7a5eafb3a9f6390aec616f25c58592edab054e8e": {
+      "context": "This chunk is from Section 5.1 (Baselines) of the LoRA paper, which describes the baseline adaptation methods used for comparison in the empirical experiments. It covers Fine-Tuning, BitFit, Prefix-embedding tuning, and Prefix-layer tuning approaches, including their parameter counts and implementation details.",
+      "text_sha256": "43b7e79e6ac30d76a328ced06c536445694918448c6005a7038a4784f5061585",
+      "window_index": 1
+    },
+    "d1036cf82ae266c2af9296ff562cddd3e697dae8dee7213c574fe7909c9760b7": {
+      "context": "This chunk is from the Conclusion and Future Work section (Section 8) of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models.\" It summarizes the motivation for LoRA as an efficient fine-tuning method for large language models and outlines four key directions for future research, including combining LoRA with other adaptation methods, understanding the mechanisms of fine-tuning, developing principled approaches for selecting weight matrices, and investigating rank-deficiency in weight matrices.",
+      "text_sha256": "bf86282f47b26bb0e67f7446170e9607e36607bbadcce6a3329ea93f484b54e6",
+      "window_index": 2
+    },
+    "d4d57683c3fb74e7fbd2a9fd8aea63ed29e68891561c15ca317e50fc33a1891a": {
+      "context": "This chunk appears in Appendix F, Section F.2 of the LoRA paper, which presents additional empirical experiments on GPT-3 beyond the main results. It introduces Table 15, which compares different parameter-efficient adaptation methods for GPT-3 to analyze the performance-efficiency trade-off.",
+      "text_sha256": "a37edf4b7dd4b895807f9f69e0a176b332b81e4202ec06b80d4ddea1778a1de9",
+      "window_index": 4
+    },
+    "df06496f29250e7301626b1172472d9873d59e60994f265c1a965e5936529bde": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document, including foundational papers on transformer architectures, language model benchmarks, and NLP datasets used in the LoRA experiments.",
+      "text_sha256": "f70c7078f8bbc4c0d5b0a358c059c45fc643e7243753ac1c86fd1e62d1928a23",
+      "window_index": 3
+    },
+    "e7d2db2781eb4d6b867e003b96cf1b09e41b41cb80db2a0bd65108c7acecbff7": {
+      "context": "This chunk appears in Section 4.2 \"Applying LoRA to Transformer\" under the subsection \"Practical Benefits and Limitations\" in the LoRA paper. It discusses the limitations of the LoRA method, specifically addressing challenges with batching inputs across different tasks when merging LoRA weight matrices (A and B) into the frozen pre-trained weights (W) to avoid inference latency.",
+      "text_sha256": "b38b14e440f81b257d8415b043273fd9227873dae0eac39ef2370bbd01e63ba8",
+      "window_index": 0
+    },
+    "eb0db0a111404c3740d0b30e98660bee961fd1a433eea95788d67c393ec5839a": {
+      "context": "This chunk is from Section 7.1 \"Which Weight Matrices in Transformer Should We Apply LoRA to?\" in the \"Understanding the Low-Rank Updates\" section of the LoRA paper. It presents empirical analysis on GPT-3 175B examining which attention weight matrices (Wq, Wk, Wv) should be adapted with LoRA given a fixed parameter budget to maximize downstream task performance.",
+      "text_sha256": "4bbd6cca7aabe5bc715eec04f40f9bc31da937cacbc58ccb907510b6c73a529f",
+      "window_index": 1
+    },
+    "eb1ac1eef2e5a7738c05318b20cb94700aeebbfc1ed3090fe3946ba0e164ea69": {
+      "context": "This chunk appears in Section 5.1 (Baselines) of the LoRA paper and describes adapter tuning variants and LoRA as baseline methods for comparison in empirical experiments. It defines four adapter designs (Adapter H, L, P, and D) with their parameter counts, then contrasts them with LoRA's approach of adding rank decomposition matrices to weight matrices, explaining the trainable parameter formulas for each method.",
+      "text_sha256": "b33623742f938a2dc21f0dce577126c1327f9f9656366136692ed219e537f30e",
+      "window_index": 1
+    },
+    "ecf9012385cf8ece748f2746c4e5b13783c9ac9bfb2ca376a014120da286c27e": {
+      "context": "This chunk is from Section 7 \"Understanding the Low-Rank Updates\" of the LoRA paper, which investigates the properties and principles of low-rank adaptation in large language models. The section outlines three key research questions about which weight matrices to adapt, whether adaptation matrices are rank-deficient, and how adaptation matrices relate to pre-trained weights, using GPT-3 175B as the focus model.",
+      "text_sha256": "af8e41886028883bef3328bd6e058920b409880e59aaade586d155e330b6e2f3",
+      "window_index": 1
+    },
+    "ef225f8948c17b0e1f2fe9d93d718e57b7c2e1589035f7f9eaf66325d196a800": {
+      "context": "This chunk is part of the References section of the LoRA paper \"LoRA: Low-Rank Adaptation of Large Language Models,\" containing bibliographic entries for works cited throughout the document, including references to parameter-efficient transfer learning methods, low-rank approximation techniques, and datasets used in the LoRA experiments.",
+      "text_sha256": "e24922084f5ca7200de0a194e2ba851f3e28cad989c1af09b79fed5057f3c406",
+      "window_index": 3
+    },
+    "f09ec0cee61a49b426520d13440ca2ddbfe1d4f7c86d08f0ef7c64769160adef": {
+      "context": "This chunk appears in Appendix H of the LoRA paper, which presents additional experiments investigating properties of the low-rank update matrices used in the LoRA method for adapting large language models.",
+      "text_sha256": "ac9e30aab3ccb3960a1c57dedd0f5377aa12e9178e6009364bc08453f0d185d4",
+      "window_index": 4
+    },
+    "f69d2f2926dea51fa62ba2103ed6ee7debbf8602e79906a77c78afc555fc31cb": {
+      "context": "This chunk appears in Appendix H.2 of the LoRA paper, which presents additional experiments on low-rank matrices. Specifically, it reports results on the effect of the rank parameter r on GPT-2 model performance, extending the analysis from Section 7.2 that examined how different rank choices affect LoRA adaptation across different model sizes.",
+      "text_sha256": "7d87580fbeaf3e0a266611253d953be05b8c7186ecd345cc764fec38bc500460",
+      "window_index": 4
+    },
+    "fe7d2ef4d9b316d79319f3295c49db422d836bc1aa332d2c8e7aa912513d3570": {
+      "context": "This chunk appears in Appendix H.3 of the LoRA paper, which investigates the correlation between the original weight matrix W and the low-rank update matrix \u0394W in the LoRA method. The section analyzes how LoRA's task-specific weight updates relate to the pre-trained model's weight structure across different rank values r.",
+      "text_sha256": "68742af5dddb2389edc17bdd85fa031d3f1a76ee7fc54f45130d7948b34f36d3",
+      "window_index": 4
+    }
+  },
+  "doc_id": "arxiv-hu-2021-lora",
+  "generated_at": "2026-08-29T21:54:36Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

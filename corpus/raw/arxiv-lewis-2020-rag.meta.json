@@ -1,0 +1,14 @@
+{
+  "content_hash": "6cca967e36710f8487c1d85272fe7f9646d4fbfa59f3093579fa7f44f915d376",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "arxiv-lewis-2020-rag",
+  "fetched_at": "2026-07-23T17:06:29Z",
+  "final_url": "https://arxiv.org/html/2005.11401v4",
+  "format": "html",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-lewis-2020-rag.html",
+  "recipe": "arxiv",
+  "resolved_version": "v4",
+  "source_url": "https://arxiv.org/abs/2005.11401"
+}

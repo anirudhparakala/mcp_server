@@ -1,0 +1,128 @@
+{
+  "contexts": {
+    "191b34d2188e84482394eef995b343f6f21c55636b2c95fa7923ed6b1fd51d9a": {
+      "context": "This chunk is from the Qwen3-Embedding-0.6B model card's Evaluation section under MTEB (Eng v2), which compares the performance metrics of various embedding models including multilingual-e5-large-instruct, NV-Embed-v2, GritLM-7B, gte-Qwen2-1.5B-instruct, and stella_en_1.5B_v5 across different task types such as classification, clustering, pair classification, reranking, retrieval, semantic textual similarity, and summarization.",
+      "text_sha256": "5808d45ee6bf7d37187564c20176352081b9c7d408a6c65d29248d30dd55f2c7",
+      "window_index": 1
+    },
+    "23a95146e8ca003ed601bf9c2ae8e9c7dc6f87ee392d223a1d8f1dadd746c5a9": {
+      "context": "This chunk is part of the Qwen3-Embedding-0.6B model card's Evaluation section under MTEB (Eng v2), showing benchmark performance metrics comparing Qwen3-Embedding-0.6B against other embedding models across various task types including classification, clustering, pair classification, reranking, retrieval, semantic textual similarity, and summarization.",
+      "text_sha256": "1bab2766572fedcc87782ca02a1054007bee00b40ec6f3b5dfb7b86d8b103629",
+      "window_index": 1
+    },
+    "33c989517ef240523bed988372a4eeb6a0a9e76fb25f4d15154311c1d6d2a62f": {
+      "context": "This chunk from the Qwen3-Embedding-0.6B model card provides a comprehensive specification table of the Qwen3 Embedding Series, listing technical details for three embedding models (0.6B, 4B, and 8B) and three reranking models across parameters like size, layers, sequence length, and embedding dimensions, along with explanatory notes about MRL Support and Instruction Aware capabilities.",
+      "text_sha256": "2df8ad014b6fe235fdab3dc54aa42372170f714f6869e9f5b6964ed70310a6b7",
+      "window_index": 0
+    },
+    "3870259c3f054d4c735c1a8be87d3077727feeba143a0052b44f4541b58de256": {
+      "context": "This chunk is from the Evaluation section of the Qwen3-Embedding-0.6B model card, specifically the MTEB (Multilingual) subsection. It presents benchmark comparison scores for various embedding models including NV-Embed-v2, GritLM-7B, BGE-M3, and multilingual-e5-large-instruct across multiple evaluation metrics such as Mean Task score, Bitxt Mining, Classification, Clustering, and Retrieval performance.",
+      "text_sha256": "cb65bbc0b3ab43202272088f20016c0bb43b81844cab0502940b39aaedd1a471",
+      "window_index": 0
+    },
+    "406818a98abf3414535b4edf8f7ebf391138f2c4af3e40bdab29653aa7ecb23b": {
+      "context": "This chunk appears in the Qwen3-Embedding-0.6B model card under a section listing collections that include this model, showing that there is a Qwen3-Embedding collection containing 6 items related to the model.",
+      "text_sha256": "a53f32eaa9da9720ac5208974ac80dc2d2fe929cede21a748172e233609f6fb7",
+      "window_index": 1
+    },
+    "54cab75515f6016ee24a570b74bcc94672747a553de616aa9191023e178f3d76": {
+      "context": "This code example is from the \"Transformers Usage\" section of the Qwen3-Embedding-0.6B model card, demonstrating how to use the Qwen/Qwen3-Embedding-0.6B model with the Transformers library to generate embeddings and compute similarity scores between queries and documents.",
+      "text_sha256": "603274af73f714b81b7ea2a31df99e91a458001d87c637ace7fb6373c81eca60",
+      "window_index": 0
+    },
+    "601d7752266e50fcc80b451dbb58961528b903c8c6d7e340c6f6d0b99c2fd5bf": {
+      "context": "This chunk contains performance metrics for the Qwen3-Embedding model family (0.6B, 4B, and 8B parameter versions) from the Evaluation section of the Qwen3-Embedding-0.6B model card, specifically from the MTEB (Eng v2) benchmark results comparing multiple embedding models across task types including classification, clustering, pair classification, reranking, retrieval, semantic textual similarity, and summarization.",
+      "text_sha256": "f29138aa86c83211f8c6a656fd8a7385fdc514f9b3ebef5aacc587e2a6ae41d3",
+      "window_index": 1
+    },
+    "6511fcca7eb365e6435868cf3ecdfd43b280d2fda77505cbf0155e490bc0b713": {
+      "context": "This chunk from the Qwen3-Embedding-0.6B model card provides quick-start instructions for using the embedding model with different libraries and platforms. It appears in the introductory section of the model card and includes code examples for sentence-transformers and Transformers libraries, along with links to inference providers and notebooks, followed by a table of contents for the full documentation.",
+      "text_sha256": "c91f669045bd9526b71a7079f6892dff5c49439a3d50af182b11857ccfb95c2a",
+      "window_index": 0
+    },
+    "7e6d7f1631db1abec37e8cf58457d0a1702908458d99525ba67f6f74fcd09537": {
+      "context": "This chunk is from the Evaluation section of the Qwen3-Embedding-0.6B model card, specifically the MTEB (Multilingual) subsection. It presents benchmark comparison scores for various embedding models including Cohere-embed-multilingual-v3.0, Gemini Embedding, and the Qwen3 Embedding series (0.6B, 4B variants) across multiple tasks such as bitext mining, classification, clustering, retrieval, and semantic textual similarity.",
+      "text_sha256": "ef1aba7d4acddbb39ca0ee4480e65ede5fc008c48f0576b44b2f73fb74b3fd5c",
+      "window_index": 0
+    },
+    "826021008aa8c0ccf27efe859cf28dfd2784bed021dcbde7293cfecdd3b2632a": {
+      "context": "This chunk contains evaluation results for Qwen3-Embedding models (0.6B, 4B, and 8B variants) on the C-MTEB (MTEB Chinese) benchmark, comparing their performance across multiple task types including classification, clustering, pair classification, reranking, retrieval, and semantic textual similarity against other baseline models.",
+      "text_sha256": "f580962b37bbfca048d47c22fb024b7b4156fcaa56b3fed1fd90d8772504bfd1",
+      "window_index": 1
+    },
+    "84f06b26c68e92fa43eb1670a09ed95d1fbd4d15bd23d36875a7bd71ecca324c": {
+      "context": "This section from the Qwen3-Embedding-0.6B model card on Hugging Face lists Spaces (interactive applications) that use the Qwen3-Embedding-0.6B model, including leaderboards for MTEB and other benchmarks, as well as demonstration and evaluation tools.",
+      "text_sha256": "b07435761f8186e595c74958d7dc813c66f5a2d906058046716370a551688494",
+      "window_index": 1
+    },
+    "91476021123f9d2ec88d5fc27082e18d98e2d1808d9295bf75be1d2397bf9b99": {
+      "context": "This chunk from the Qwen3-Embedding-0.6B model card shows the model tree section, which displays the base model, number of finetuned variants, adapters, finetunes, and quantizations available for Qwen3-Embedding-0.6B, indicating its relationships to other model versions and derivatives.",
+      "text_sha256": "3f1b78953e3e32af9e121e87d8fc856ce870c5726a4ccdc703d8babf19f7f86f",
+      "window_index": 1
+    },
+    "a268e28c41633b223404d1653a7684f0d25029a53d04e1e6ef4c56122b41a541": {
+      "context": "This chunk is part of the MTEB (Multilingual) evaluation section in the Qwen3-Embedding-0.6B model card, presenting benchmark comparison scores for various embedding models including multilingual-e5-large-instruct, gte-Qwen2 variants, and text-embedding-3-large across multiple tasks like retrieval, semantic textual similarity, and classification.",
+      "text_sha256": "a5390ca047dd20bc441ee2103a51d56e4ab0b0f0a2831fea05593983b2e3de82",
+      "window_index": 0
+    },
+    "c1b679b787c4ce64a468ab73c9f82a15580746d290bf4eec5ed5cbdcee81e554": {
+      "context": "This chunk is from the \"Text Embeddings Inference (TEI) Usage\" section of the Qwen3-Embedding-0.6B model card, providing Docker commands and HTTP request examples for deploying and using the Qwen3-Embedding-0.6B model with Text Embeddings Inference on both GPU and CPU devices.",
+      "text_sha256": "10d5878c428c9db11dd984863a8312acbba5cd9755bceb419d6c98d4f4046aae",
+      "window_index": 0
+    },
+    "c3af0fec42ae3bb665258e6fce231b485c51f4d1ae6748e474a84df52474f649": {
+      "context": "This chunk from the Qwen3-Embedding-0.6B model card contains the citation information and technical specifications for the model. It appears in the Citation section of the document and includes the BibTeX entry for the associated research paper, along with model metadata such as parameter count (0.6B), tensor type (BF16), and download statistics.",
+      "text_sha256": "43603a60dfff9b244e4679ce8e8b9de1a7de4e5ea50b0b344bbd632e668397f1",
+      "window_index": 1
+    },
+    "d0bf5a4a57343deb3943f4d42cbd8e211a8428ea2ba8b7b0006c439683c50899": {
+      "context": "This chunk is from the Evaluation section of the Qwen3-Embedding-0.6B model card, specifically the MTEB (Multilingual) subsection. It presents benchmark scores comparing the Qwen3 Embedding series models (0.6B, 4B, and 8B) against other state-of-the-art embedding models across various multilingual tasks including text mining, classification, clustering, retrieval, and semantic textual similarity, with scores retrieved from the MTEB leaderboard as of May 24th, 2025.",
+      "text_sha256": "e031a76489b9d6d127f643fcd7fc083124a5a7deb2752f428cc0ab15976600d3",
+      "window_index": 0
+    },
+    "d9596581236ce5c9c24ad2b4cea2b2744b30eb6f480f3577815a370d86ab0506": {
+      "context": "This chunk is from the \"Usage > vLLM Usage\" section of the Qwen3-Embedding-0.6B model card, demonstrating how to use the Qwen3-Embedding-0.6B model with vLLM (version 0.8.5 or higher) to generate text embeddings and compute similarity scores between queries and documents.",
+      "text_sha256": "3c8d1449fb12620a8f96bcfe3d9cca2990ed10fc8b7fdb870279b17945e391c6",
+      "window_index": 0
+    },
+    "da202cee17582f1af50b8a6f92d4acc4ec4aacf1a79bf97af5a3e03257d41f15": {
+      "context": "This chunk appears in the Model Overview section of the Qwen3-Embedding-0.6B model card on Hugging Face, providing key technical specifications and features of the 0.6B parameter text embedding model from the Qwen3 Embedding series.",
+      "text_sha256": "ee86b881cf2c19da1d28a553b29f50e80a37f9225da0f2bc4bd82bd61ee78059",
+      "window_index": 0
+    },
+    "e27ee593943f59ae80e2690ab547c876cb0137fb38004b67e9906ae3791ffa89": {
+      "context": "This chunk appears in the \"Highlights\" section of the Qwen3-Embedding-0.6B model card on Hugging Face, providing an overview of the Qwen3 Embedding model series' key features, capabilities, and performance achievements across text embedding and ranking tasks.",
+      "text_sha256": "aa0449c64bebc5090c0d6bf0d6d3dd80ee46c26f07c5f4a6c6f57dd98dd52d14",
+      "window_index": 0
+    },
+    "e5ffba05619317564bd1e9306cd8506279da231d875b7aa0611ca765922456d0": {
+      "context": "This chunk contains benchmark evaluation results from the C-MTEB (MTEB Chinese) section of the Qwen3-Embedding-0.6B model card, comparing performance metrics of various embedding models on Chinese language tasks including classification, clustering, pair classification, reranking, retrieval, and semantic textual similarity.",
+      "text_sha256": "d3dbe33a868e718d9d75f5ae81f892676b9a37b7c0207030af555890cf4a9efd",
+      "window_index": 1
+    },
+    "eca7c5e911bbb6b66050df42c7e43b1f22ce6318d829b4aad5d7fe3f455af31a": {
+      "context": "This chunk appears in the Qwen3-Embedding-0.6B model card under the \"Paper\" section, providing a reference to the academic paper that describes the Qwen3 Embedding model. The paper, titled \"Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models,\" was published on June 5, 2025 with arXiv identifier 2506.05176.",
+      "text_sha256": "36e9075eb53635a632af775e317b117200535b0bbb1d5b93d3580031ae6e235e",
+      "window_index": 1
+    },
+    "efc63fbcc222b2d43218967df108d515c096327859441b34ade52418cad6a433": {
+      "context": "This chunk appears in the Usage section of the Qwen3-Embedding-0.6B model card, warning users about a compatibility issue with older versions of the Transformers library when attempting to use the model.",
+      "text_sha256": "46c7af77a671dfc8554cb614cec8e719d0e115454011e361873a2bfc9ca39886",
+      "window_index": 0
+    },
+    "f1bd83eaabaf55e014b7638207795328f01cdc1e337d583904e970b1b8c43a9d": {
+      "context": "This chunk appears at the beginning of the Qwen3-Embedding-0.6B model card on Hugging Face, providing metadata and navigation links for the model. It includes tags for the model's capabilities (feature extraction, sentence transformers, text embeddings inference), the associated arXiv paper reference, licensing information, and links to access the model card, files, and community discussions.",
+      "text_sha256": "8eaaeae85aa6f123a111845bfcc91604e0c2d2c319f1e31f9ae0b5ae2c8c2ba9",
+      "window_index": 0
+    },
+    "f514171340ec0a729a6b93512dcd8807929a658b597c29920f86e5a19c86d9eb": {
+      "context": "This chunk is from the \"Sentence Transformers Usage\" section of the Qwen3-Embedding-0.6B model card, demonstrating how to load the Qwen3-Embedding-0.6B model using the sentence-transformers library and encode queries and documents to compute similarity scores.",
+      "text_sha256": "36348320c766e58747d5b99a43aa4c54e10e22e1c6bc3671037a051761540caf",
+      "window_index": 0
+    }
+  },
+  "doc_id": "modelcard-qwen3-embedding",
+  "generated_at": "2026-08-29T22:02:01Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

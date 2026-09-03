@@ -1,0 +1,14 @@
+{
+  "content_hash": "b5e602a73985c6f3715948885da967f863b49d4b6273b415381e80ce651ee0f6",
+  "content_type": "application/pdf",
+  "doc_id": "usda-dietary-guidelines",
+  "fetched_at": "2026-07-29T14:54:11Z",
+  "final_url": "https://odphp.health.gov/sites/default/files/2026-02/dietary_guidelines_for_americans-2020-2025.pdf",
+  "format": "pdf",
+  "license": "Public domain (USDA/HHS, U.S. federal government work, 17 U.S.C. 105)",
+  "license_ok": true,
+  "raw_filename": "usda-dietary-guidelines.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://odphp.health.gov/sites/default/files/2026-02/dietary_guidelines_for_americans-2020-2025.pdf"
+}

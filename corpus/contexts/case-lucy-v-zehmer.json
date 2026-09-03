@@ -1,0 +1,63 @@
+{
+  "contexts": {
+    "025a4d7f2075643b0482bba46e57dd81ff98c80390881f6908cdee1b66c3e0d7": {
+      "context": "This chunk from Lucy v. Zehmer (1954), a Supreme Court of Virginia case, presents testimony from the parties regarding events on December 20, 1952, when W. O. Lucy allegedly purchased the Ferguson farm from A. H. Zehmer for $50,000. The chunk includes Lucy's account of his actions following the signing of the written agreement and Zehmer's testimony about the circumstances surrounding the creation of the contract, including the drinking that occurred and Zehmer's claim that he wrote the agreement as a joke or bluff.",
+      "text_sha256": "5167139f12b94396ef8c97e38be82e9583628b98eaf0c6dcac5289d60d2b8e58",
+      "window_index": 0
+    },
+    "08239e5ca1f993fe2c555e55b3dc82ad113078a2e0192f4a7fdfada86ba64865": {
+      "context": "This chunk from Lucy v. Zehmer (1954), a Supreme Court of Virginia case, contains testimony from A. H. Zehmer and Mrs. Zehmer regarding the execution and signing of the written agreement to sell the Ferguson Farm for $50,000. The testimony describes the moment Lucy took possession of the signed contract and Zehmer's immediate denial of intent to sell, as well as Mrs. Zehmer's account of what she understood the written terms to mean when she signed.",
+      "text_sha256": "f1bfd258aa01e344e9b07c31f4a69157901b3cc20cb553b2531c62e88827e871",
+      "window_index": 0
+    },
+    "2cf5f8c131d7bc95121994a1f97ea05b5850ab2c301a3f4a99c37c0d14b2f09f": {
+      "context": "This chunk from Lucy v. Zehmer (1954), a Supreme Court of Virginia case, presents the defendant's answer and the plaintiff's testimony regarding the disputed farm sale contract. It describes the circumstances surrounding the December 20, 1952 transaction where W. O. Lucy sought to purchase the Ferguson farm from A. H. Zehmer for $50,000, including Zehmer's claim that the offer was made in jest and Lucy's account of the negotiation and contract execution.",
+      "text_sha256": "e0b630ecd38d2b55ded68c0269679be8d49875665b5d6ce2f6b676e9e15f0b06",
+      "window_index": 0
+    },
+    "3773ea1489a588372aa1cf7ba9a28cb669e4516ec2ef5d96462a06874716473c": {
+      "context": "This chunk from Lucy v. Zehmer (1954), a Supreme Court of Virginia case, presents the court's legal analysis and reasoning in the OPINION section delivered by Justice Buchanan. It addresses the defendants' claim that the farm sale contract was made in jest, establishing the principle that a person's undisclosed intent to joke is immaterial when their words and conduct would reasonably indicate a serious agreement to contract.",
+      "text_sha256": "73414c3c0aec4b347a3e4b85b3aca31cb05c88b237dd0ba6b0cd1dd9dce0cd04",
+      "window_index": 0
+    },
+    "3c1d74ee1d0b775fdb524530f0f837dcdd4485c9642652764c45e09b484b79f9": {
+      "context": "This section from Lucy v. Zehmer, a 1954 Virginia Supreme Court case, presents the court's analysis of events following the disputed contract signing and discusses the legal principle that a person's outward expression of intent, rather than secret intention, governs contract formation. The chunk includes testimony about a social gathering the day after the December 20, 1952 agreement and the court's reasoning regarding whether Lucy reasonably believed the farm sale was a serious business transaction.",
+      "text_sha256": "ff3105b60853ba9d0e2b92c7d487d2f1816b84c50b5fe093ed4497ec50d10a66",
+      "window_index": 0
+    },
+    "422dc388b303e9803bf82ee9dc4e01a21be5cd44b24ee393c2f244bb89dd5a2d": {
+      "context": "This chunk is the conclusion of Lucy v. Zehmer, a 1954 Supreme Court of Virginia case concerning a contract dispute over the sale of the Ferguson farm. The chunk contains the court's final ruling addressing the defendants' argument that equity should refuse to enforce the contract, the court's analysis of specific performance as a remedy, and the ultimate decision reversing the lower court's decree and remanding for enforcement of the contract.",
+      "text_sha256": "2414e119fe94f28aea35d8380890fd1a830a40086638d114d3bf2960e8f2380d",
+      "window_index": 0
+    },
+    "a4d4546b61c1826344ba2dade608598262d74d23b3e6eae39aa03184ee374d19": {
+      "context": "This chunk appears at the end of the Lucy v. Zehmer document and lists the categories assigned to classify this 1954 Virginia Supreme Court case decision, including its date, legal jurisdiction, and document status on Wikisource.",
+      "text_sha256": "792441339908204f4cdee795e3d939d07bb5bb013a7cd5654209bddcdaa7f269",
+      "window_index": 0
+    },
+    "b249c626be2d3c5744f9b3585488a738a5b65acb7cc6a6674b136dbc26c7c174": {
+      "context": "This chunk contains the navigation and metadata interface for the Lucy v. Zehmer case document on Wikisource, including links to read, edit, and view the history of the 1954 Supreme Court of Virginia decision, along with options to download the full text in various formats.",
+      "text_sha256": "c31a2507e4d735ed1bd8a903c34f5c6b39bfcef77aac5b58e6d0f016f8145da9",
+      "window_index": 0
+    },
+    "d2a0a9af47d407ef39f0b0ccd4004035ecc396b78bf94c164733a120c7c2241e": {
+      "context": "This section from Lucy v. Zehmer, a 1954 Virginia Supreme Court case, presents the court's analysis of the defendants' arguments regarding intoxication and the nature of the contract. The court addresses Zehmer's claim that he was too drunk to form a valid contract and his assertion that the transaction was merely a joke, then examines the evidence regarding the contract's formation and execution to determine whether it constituted a serious business transaction.",
+      "text_sha256": "30be7b0486ce7f6aeb3c48fa0ce8af3b7ccd1240ddc46ce328e482031797bb2e",
+      "window_index": 0
+    },
+    "ee9a5f20c849980f81cd17d92d5b6e830230069c763c188aa1e26cf3fbfa2fb3": {
+      "context": "This chunk from Lucy v. Zehmer, a 1954 Virginia Supreme Court case, contains testimony from Mrs. Zehmer and a waitress regarding the disputed farm sale transaction, followed by the defendants' legal argument that the written agreement was merely a joke or bluff rather than a binding contract.",
+      "text_sha256": "f479d71894cab1c76c17cbed6beee7572b5ac17c5bb68a7d3f288dcaf0585e79",
+      "window_index": 0
+    },
+    "f60a29465fa0adf90076655d0a23b9e385a780b1ae19c5743407b76ef563fe3e": {
+      "context": "This is the opening section of Lucy v. Zehmer, a 1954 Supreme Court of Virginia case establishing the legal standard for contract formation based on objective manifestation of intent. The chunk presents the case caption, parties, procedural history, and the beginning of Justice Buchanan's opinion, which introduces the factual dispute over whether the Zehmers' written agreement to sell the Ferguson farm for $50,000 constituted a binding contract or was merely a jest.",
+      "text_sha256": "eaedf95782566122b1c3475b72193f3e7a672bf6aa7ca59d94492308365b421e",
+      "window_index": 0
+    }
+  },
+  "doc_id": "case-lucy-v-zehmer",
+  "generated_at": "2026-08-29T22:26:30Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

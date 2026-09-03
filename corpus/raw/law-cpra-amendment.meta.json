@@ -1,0 +1,14 @@
+{
+  "content_hash": "8893ff1e5a67fb8037b0f7f880f54d0876c1880c1fc937cfab6c368bd136d4f3",
+  "content_type": "application/pdf",
+  "doc_id": "law-cpra-amendment",
+  "fetched_at": "2026-07-23T18:14:50Z",
+  "final_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop24.pdf",
+  "format": "pdf",
+  "license": "Public domain (California ballot measure / government work)",
+  "license_ok": true,
+  "raw_filename": "law-cpra-amendment.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop24.pdf"
+}

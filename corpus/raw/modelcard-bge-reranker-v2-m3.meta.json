@@ -1,0 +1,14 @@
+{
+  "content_hash": "e152bc764f9ccdd4bf60524a5825ca63a1e12cbd783ec3c62ede237931731bf4",
+  "content_type": "text/html; charset=utf-8",
+  "doc_id": "modelcard-bge-reranker-v2-m3",
+  "fetched_at": "2026-07-23T17:06:40Z",
+  "final_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+  "format": "html",
+  "license": "Apache-2.0 (model card)",
+  "license_ok": true,
+  "raw_filename": "modelcard-bge-reranker-v2-m3.html",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "d81df27bb536ece9450453f9d3fdaaa0e49b1a06beab810b69819e67189ef211",
+  "content_type": "text/html; charset=UTF-8",
+  "doc_id": "ucc-article-1",
+  "fetched_at": "2026-08-31T18:56:24Z",
+  "final_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=1.&title=&part=&chapter=3.&article=",
+  "format": "html",
+  "license": "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 1 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23).",
+  "license_ok": true,
+  "raw_filename": "ucc-article-1.html",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-08-11",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=1.&title=&part=&chapter=3.&article="
+}

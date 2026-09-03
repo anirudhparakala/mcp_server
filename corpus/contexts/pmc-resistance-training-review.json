@@ -1,0 +1,288 @@
+{
+  "contexts": {
+    "02a6214e60f5fdef9f3a61ed54a93ca5e1d3c76e4db6cf56368429c9ca771b6b": {
+      "context": "This is the editor of the systematic review article \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions,\" published in Frontiers in Public Health in 2022.",
+      "text_sha256": "a5aff66599a17750ac364e4aed148bc192163dbfc004af70d2723c56ca45f8a9",
+      "window_index": 0
+    },
+    "0501507118133ff42c87c14c0bdcc33edd599f30a8eebbe8a96c4b536ffc7573": {
+      "context": "This is the full citation for a systematic review published in Frontiers in Public Health examining how resistance training progression principles and exercise prescription variables are reported in workplace-related intervention studies. The review analyzed 21 articles (18 primary studies and 3 protocols) from 2000-2020 to assess the consistency of resistance training intervention reporting in occupational health settings.",
+      "text_sha256": "8fa28e5232384b2a3325fdbe5a7534f96245b778793f98b005a4be25be601d4b",
+      "window_index": 0
+    },
+    "076119277f509aefa5397c05fcdcc478c7f88ffdd640f83611218245a472026c": {
+      "context": "This chunk is part of Table 3 in the \"Study Quality and Results\" section of a systematic review on workplace-related resistance training interventions. Table 3 presents detailed information on 18 included primary studies, including study design, sample characteristics, intervention descriptions, significant effects, and quality ratings assessed using the EPHPP tool. The chunk shows entries 6-8 of the table, covering studies by Gram et al. (63), Haufe et al. (64), and Helmhout et al. (65), which examined resistance training effects on neck/shoulder pain, back pain, and low back pain in office workers, employees, and army personnel.",
+      "text_sha256": "1df10101f3687cd49068e6088795989e519504840b12c9a45ae34c635533de8b",
+      "window_index": 1
+    },
+    "07ce374c2e6e03ade4c271969e43d92b8d4a55d2548e7331e8b7b3c47aea7a3d": {
+      "context": "This chunk describes the inclusion and exclusion criteria for the systematic review on workplace-related resistance training interventions, part of the Methods section. It specifies the PICOS framework used for study selection, defines eligible participants as apparently healthy employees, outlines requirements for resistance training focus, and details the study design types accepted (RCTs, cluster RCTs, controlled trials) along with language and time frame restrictions (English or German, 2000-2020).",
+      "text_sha256": "96dc5ab2d723967a6f3e76b525ab7f2a9580b91818408344f8739f071de1166e",
+      "window_index": 0
+    },
+    "08b720436f26e34b50c9a5d68db41103cc48cfef3b0746d5ba3c7c74370ce80e": {
+      "context": "This chunk appears in the Discussion section of a systematic review on resistance training (RT) progression principles and variables in workplace-related interventions. It summarizes the practical feasibility and applicability of workplace RT interventions for diverse employee populations, emphasizing the use of minimal equipment and time requirements as advantages for workplace implementation.",
+      "text_sha256": "55c18e828a9c65f91f9b88f741a030ab0f1ebaa75de46c1540d67b3ab89dd3b7",
+      "window_index": 2
+    },
+    "1309ef9d7da9968b7763832690930e081bf6adb26df6ea2e737fec1b9e83838c": {
+      "context": "This chunk describes the study quality assessment methodology used in a systematic review of workplace-related resistance training interventions. It explains how the Effective Public Health Practice Project's (EPHPP) quality assessment tool was applied to evaluate the 21 included studies, and defines the key variables of resistance training exercise prescription (muscle action, loading, volume, exercise selection, exercise order, rest periods, repetition velocity, and frequency) that were extracted and analyzed across the reviewed interventions.",
+      "text_sha256": "845f87ad97f24d7807bd6a9682e7ef679e65ed52e4f1b6b9ed0dc4e4ef9c91d3",
+      "window_index": 0
+    },
+    "1b00ae34c1dba05aaa15d0885a06b445316fb8c5cd73805dcd27f7adf1916697": {
+      "context": "This is the References section of a systematic review on resistance training progression principles and exercise prescription variables in workplace-related interventions. These initial references (1-9) provide foundational evidence on the health benefits of physical activity and exercise in occupational settings, supporting the review's focus on workplace-based resistance training for adult health promotion.",
+      "text_sha256": "9a6d178f1144ff8cd767ff24677f18dcae3775b1c599eb9c78aff7f802b001df",
+      "window_index": 2
+    },
+    "225871f483a4029e1da4c8aefb5b35251e987bebef161d8511223a13f899364e": {
+      "context": "This section from a systematic review of workplace resistance training interventions reports the completeness of reporting for variables of resistance training exercise prescription across 18 included studies, analyzing how frequently key prescription variables such as muscle action, loading, training volume, exercise selection, exercise order, rest periods, and repetition velocity were documented in the primary studies.",
+      "text_sha256": "3ecb2e2a6ed21664c343b9b05955f310c6a077d9d119417c1fa50f816c1a2139",
+      "window_index": 1
+    },
+    "290bf518c5d9d9c8ab6daa656587c0456a8e3ae59a9640c53558f189a0880aaa": {
+      "context": "This chunk contains references 69-76 from the reference list of a systematic review on resistance training in workplace settings. These citations document empirical studies examining workplace-based resistance and strength training interventions for various worker populations, including desk-based workers, manufacturing workers, musicians, and industrial workers, with outcomes related to musculoskeletal pain, physical function, and work-related measures.",
+      "text_sha256": "d1c45b276335a22a40e74e829c7d1b92b274b837a22077a3e3ccc32db4d89f1e",
+      "window_index": 3
+    },
+    "2c3ab76d1422c3b2aa7e7c26a7dd1535b345e7829ee4c91db1fca85f0fd53e8e": {
+      "context": "This is the title page and abstract of a systematic review published in Frontiers in Public Health in 2022, examining how resistance training progression principles and exercise prescription variables are reported in workplace-related RT interventions. The chunk presents the study's background, methods, results showing reporting percentages for various RT principles and variables across 21 included articles, and conclusions about inconsistent reporting standards.",
+      "text_sha256": "aad348455bece52a3210d3f178c0eee86f3ae57564b08eeb86d9dee24ed4f0ee",
+      "window_index": 0
+    },
+    "2e0d78abae3c1e0b95cd6b66580b432299f9e6d15d6751c8d4bb8391bbe647b1": {
+      "context": "This chunk is part of Table 3 in the \"Study Quality and Results\" section of a systematic review on workplace-related resistance training interventions. It presents detailed information for studies 10-12 (Li et al., Mayer et al., and Mulla et al.), including study design, participant characteristics, intervention descriptions, significant pre-post effects, and quality ratings according to the EPHPP assessment tool.",
+      "text_sha256": "58fdc1fdd0670d54b56d41e95b517973acc69b88579e3fed010ac67d341376a0",
+      "window_index": 1
+    },
+    "33bd176cfc8e9af012cda3d7dfab35ae7d840dfd9918208ccc9e488ff0aff414": {
+      "context": "This chunk describes the search strategy and databases used in the \"Information Sources and Search\" section of a systematic review examining resistance training interventions in workplace settings. The review, titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions,\" was conducted by Stassen et al. and published in Frontiers in Public Health in 2022.",
+      "text_sha256": "feec7e2310e6aa4378b6f3f91000569b323421e5027e2d4e4f1d578d39b65aac",
+      "window_index": 0
+    },
+    "3c9ec9d5761c5c3462c0591a73962f70fd292567488b5fdd97df035f21660fa8": {
+      "context": "This chunk is part of the References section of a systematic review on resistance training in workplace settings. It contains citations 24-32, which document key studies on the health benefits of resistance training, the association between muscular strength and mortality, and the effectiveness of workplace interventions for preventing and managing musculoskeletal disorders among employees.",
+      "text_sha256": "eb451cb4df38992758c38ac857054d4d95c97a5ce2a8384aac7ef09f260853a7",
+      "window_index": 3
+    },
+    "3e0074eef5ffd8aef349536d2652fa474fd2f8da4378c5c2c7b59fc397f36663": {
+      "context": "This chunk is part of Table 4 in the Discussion section of a systematic review on resistance training (RT) progression principles and exercise prescription variables in workplace-related interventions. The table presents a detailed assessment of 18 included studies, evaluating how well they reported three RT principles (progressive overload, specificity, and periodization) and nine exercise prescription variables (muscle action, load, volume, exercise selection, exercise order, rest periods, repetition velocity, and frequency), with summary proportions showing the percentage of studies that adequately reported each principle and variable.",
+      "text_sha256": "de7dd8582812ed391d7f350018984322a2369d4aed26c9ec62bb013a5c3f30f7",
+      "window_index": 2
+    },
+    "450e3952069d8ae351d62f2398f06f5172ada89653098dc521618024ca3b7f00": {
+      "context": "This chunk describes the study selection results from a systematic review examining resistance training interventions in workplace settings. The review, titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions,\" searched four databases (LIVIVO, PubMed, SPORTDiscus, and Web of Science) from 2000-2020 and ultimately included 21 articles (18 primary studies and 3 protocols) for qualitative synthesis after screening and eligibility assessment.",
+      "text_sha256": "ac0a64b27101e7ae91b38b95168f5fbd72005a29e4aaee55668119803ebb2eff",
+      "window_index": 0
+    },
+    "4981b9c5c6a0c3e229057d6a55b05811a7e7d07290977e179086c4c79293a85d": {
+      "context": "This chunk is part of the References section of a systematic review on resistance training in workplace settings. It contains citations 76-84, which include studies on workplace physical exercise interventions for musculoskeletal pain, barriers to workplace exercise participation, and research on resistance training principles including periodization and strength training protocols.",
+      "text_sha256": "ff10d7249cdb56b42a6977ce6d68c9c76f31a31b61a062df68bafa47c100dfb3",
+      "window_index": 3
+    },
+    "4b049e59edb091cc3c166035d6f299f1b4f4562bfd031298be21c2f72dc11c74": {
+      "context": "This chunk lists the reviewers and corresponding author information for a systematic review published in Frontiers in Public Health examining resistance training interventions in workplace settings. The review, titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions,\" was edited by Danijela Gasevic and reviewed by Karen S\u00f8gaard and Jos\u00e9 Antonio De Paz, with Gerrit Stassen serving as the corresponding author.",
+      "text_sha256": "c4dc9ea0cdad0497b844ccb7e44f08937e2ba5a9fff19df21efa4487907f5b4d",
+      "window_index": 0
+    },
+    "58eef9d2b8d136b74bdb599567403013f4f23fb538082509702b0795f62fa299": {
+      "context": "This chunk is from Table 3 of a systematic review on workplace resistance training interventions, presenting detailed results for two studies (Helmhout et al., studies 65 and 66) that examined lumbar extensor strength training in army employees with low back pain. The table summarizes study design, sample characteristics, intervention details, significant effects, and quality ratings for all 18 included primary studies evaluating resistance training effects on musculoskeletal pain and performance outcomes.",
+      "text_sha256": "4de309c7a2db7cbdfa2a3b65270e410509fd57abafd3cf5e92e5841590279129",
+      "window_index": 1
+    },
+    "5c68277ea21cbf484ddadb0f7cbe44e2e53243d3f0aa6a7700a711e070b6846d": {
+      "context": "This chunk is from Table 3 of a systematic review on workplace-related resistance training interventions, presenting detailed characteristics and results of three included studies (Sj\u00f6gren et al., Sundstrup et al., and Zavanela et al.). The table documents study design, participant demographics, intervention descriptions, significant pre-post effects, and quality ratings assessed using the EPHPP tool for evaluating the effectiveness of resistance training on musculoskeletal pain and work-related outcomes in occupational settings.",
+      "text_sha256": "daa747ccf34556feadc3409013f256f173d609585feaf3a014b43fc133cdb5e0",
+      "window_index": 1
+    },
+    "5da162ae637d400fed62fd41208052fc5054fb6d1f8178e85c3546f5dbe9aec7": {
+      "context": "This chunk from the references section of a systematic review on resistance training in workplace settings contains citations 50-59, which document methodological sources for systematic review conduct and quality assessment, as well as early empirical studies examining resistance training interventions for musculoskeletal pain in occupational populations.",
+      "text_sha256": "002839ccad8a248d03f8623c0d8a559803fd3089e16bd0415c433369c77039b8",
+      "window_index": 3
+    },
+    "5ef5a5d8ad25af3bd079feacfc0f999838e266899da0b735269336ff1dc226fb": {
+      "context": "This chunk contains the final references (citations 94-98) and copyright information from a systematic review on resistance training in workplace settings published in Frontiers in Public Health in 2022 by Stassen, Baulig, M\u00fcller and Schaller. The references cover topics including health benefits of resistance training, exercise prescription guidelines, and standardized reporting of exercise interventions.",
+      "text_sha256": "15dc77d8af6042ecad95da9907b05f8cbde40ba20050a4ccd16c7979d7e2c88b",
+      "window_index": 3
+    },
+    "692caf704a76935eb06e21418a954e4d5b705d8ae8f2a2d27056970d3e941119": {
+      "context": "This chunk appears in the Author Contributions section at the end of a systematic review on resistance training (RT) progression principles and variables in workplace-related interventions. It lists the specific roles and responsibilities of each author (GS, LB, OM, and AS) in conducting and preparing the review for publication.",
+      "text_sha256": "7d5de393058faf33b2dbbccac76551bb9ee461d77bcaf755443098cb970d1545",
+      "window_index": 2
+    },
+    "6dcfd1d68d41527250a230a1df0586a6d841697f7d9d796bb2b700d3f4d3d9db": {
+      "context": "This chunk appears at the beginning of the References section in a systematic review on resistance training published in Frontiers in Public Health (2022). It directs readers to supplementary materials accompanying the article.",
+      "text_sha256": "ec8ed48960a2115a66e1aeecbe5d6a2b007cc1c997f2757bcd1ec577f9475692",
+      "window_index": 3
+    },
+    "7a7bf490202e0724b0d46ff80857b99eddcfc7e3991d8e9dbabdcf3bd5fee415": {
+      "context": "This is the Introduction section of a systematic review published in Frontiers in Public Health (2022) titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions.\" The chunk establishes the rationale for the review by discussing the importance of workplace settings for health promotion, the health benefits of physical activity and resistance training, and the need for consistent reporting of resistance training principles and variables in workplace interventions.",
+      "text_sha256": "4740fd6dad1e3433bf2857d3a9c8205d22e00dd33c1b97e94281e36912228df9",
+      "window_index": 0
+    },
+    "7afd64a38a54d0216617e50665814ce6f2cca50dee69aebe5d9ce0e04f8ff69f": {
+      "context": "This chunk is from the Discussion section of a systematic review examining progression principles and variables of exercise prescription in workplace-related resistance training (RT) interventions. It presents the main findings regarding how consistently RT principles (progressive overload, specificity, and periodization) and exercise prescription variables were reported across the included studies.",
+      "text_sha256": "bec2a237645054c0c9ddcf6b28b867fbcdf6892642530f74968c2805513dcdf6",
+      "window_index": 2
+    },
+    "89efaf5b5e61d9aa8be45c92b03875a63bd8fcf798176586e9b03270cbfc22df": {
+      "context": "This chunk introduces the \"Resistance Training Intervention Reporting\" section of a systematic review on workplace-related resistance training interventions. It explains that Table 4 and Supplementary Table 3 contain ratings of how well the 18 included studies reported resistance training progression principles and exercise prescription variables, noting that four studies could be assessed using additional protocols.",
+      "text_sha256": "90e4e20c743e851fbc4fbc7e434ada5a40ce797420f3e95b9d05b0b749f8b566",
+      "window_index": 1
+    },
+    "8a2e8d641cf0958223a8202c3d72cd57c66e12616bceda82ed23e0a0d0b6247c": {
+      "context": "This chunk describes the data collection and extraction methods used in a systematic review of workplace-related resistance training interventions published in Frontiers in Public Health (2022). It details how study characteristics and resistance training principles and variables were extracted and rated from included studies using two constructed forms and working understandings defined in Tables 1 and 2.",
+      "text_sha256": "26b3a936b4a5477284e408a0495346b0b9da80e533f673ad19840b366388cc3f",
+      "window_index": 0
+    },
+    "8b5c0ba41673975b70668b88ba5cc8ce13bcc082c2fa6a00437e3f5bb2b090f0": {
+      "context": "This statement appears in the Data Availability section of a systematic review examining progression principles and variables of exercise prescription in workplace-related resistance training interventions. The section specifies where study data can be accessed and provides contact information for additional inquiries.",
+      "text_sha256": "801adae1597916948e79ad98d3040fab949a3f97dd73d58bd63d492f8c61c538",
+      "window_index": 2
+    },
+    "8c0a0a9cdfaa6c27d38a92ad12683817f789a26aa97f56806e094f803e5a6191": {
+      "context": "This statement appears in the Methods section of a systematic review titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions: A Systematic Review of Controlled Trials,\" published in Frontiers in Public Health in 2022. It establishes the methodological framework for the review's investigation of how resistance training principles and exercise prescription variables are reported in workplace-related intervention studies.",
+      "text_sha256": "09b56962b4ad74d986f3620644d01831c9a9bfebf268a820a27d60a2d93a2a72",
+      "window_index": 0
+    },
+    "903662dea7bf6676aa5fe59b1ecfbbea32122e835b6c43d509a727ab91f369a4": {
+      "context": "This chunk is part of Table 4 in the Discussion section of a systematic review on resistance training (RT) in workplace-related interventions. The table evaluates 18 included studies (rows 1-18) on their application of RT progression principles (progressive overload, specificity, periodization) and exercise prescription variables (muscle action, load, volume, exercise selection, exercise order, rest periods, velocity, frequency), with scoring systems indicating whether each principle or variable was clearly reported (+), unclear (?), not reported (-), or not applicable (na).",
+      "text_sha256": "f4b85b3bb9a663fbab9c6bfe384a36a8e311bf219b7c189b6a420a5c9e0b2637",
+      "window_index": 2
+    },
+    "932cbb2cf640140b01c5bcd12f1f80888a776530266d2232ac194574acd71b0a": {
+      "context": "This page number appears in Table 3 of a systematic review on workplace-related resistance training interventions. Table 3 presents detailed information on included primary studies, including study design, sample characteristics, intervention descriptions, significant effects, and study quality ratings using the EPHPP tool. Page 7 continues the table entries for studies 2-5, covering research by Andersen et al., Escriche-Escuder et al., and related workplace RT intervention studies.",
+      "text_sha256": "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58",
+      "window_index": 1
+    },
+    "9b0f63492108c82ebfcbd2e8145f555101906bb0ea36e23628ebca5adb7f68ed": {
+      "context": "This chunk contains references 12-20 from the reference list of a systematic review on resistance training in workplace settings. These citations cover foundational literature on workplace physical activity interventions, resistance training prescription, and health outcomes including mortality, muscular fitness, and age-related muscle loss.",
+      "text_sha256": "fcf694154bae8875f28ad7cd4686f1749a44fa723629bde4675bd3825d5de2c0",
+      "window_index": 3
+    },
+    "9b4dc1f7f8fcfea8b846161e3fafe0b718f13ea92721bff50b4f8fbb669ff024": {
+      "context": "This chunk is from the \"Principles of Resistance Training Progression\" subsection within the \"Resistance Training Intervention Reporting\" section of a systematic review on workplace resistance training interventions. It analyzes how well the 18 included studies reported three key principles of RT progression: progressive overload, specificity, and variation/periodization, as defined in Table 1 of the document.",
+      "text_sha256": "3394245b767ce7a73a951885c8c1176fb337b2484b22cca30bcfc1540acf4d46",
+      "window_index": 1
+    },
+    "a99360802b7eae09e88fdc04d1081e51934847d9f8d75925ac01535a648ff417": {
+      "context": "This chunk contains references 85-93 from the reference list of a systematic review on resistance training in workplace settings. These citations cover key topics including periodization in athletic rehabilitation, exercise variation effects, workplace intervention evaluation, exercise order and rest intervals in resistance training, and standardized reporting templates for exercise interventions (CERT and TIDieR).",
+      "text_sha256": "ab35e42ca1617d2f3b5a449f40f0ff0026bb225f45507560fb1b935bb1c96de4",
+      "window_index": 3
+    },
+    "b3c638f98e083b0535fc642041fafc904311f0261049a8be4e2cc3e3c36f3518": {
+      "context": "This chunk presents study 5 (Escriche-Escuder et al., reference 62) from Table 3 of a systematic review on workplace-related resistance training interventions. It details the study sample characteristics, intervention design involving whole-body circuit resistance training for hospital porters, and the significant pre-post intervention effects on strength, pain, well-being, and work outcomes, with an overall moderate quality rating according to the EPHPP assessment tool.",
+      "text_sha256": "0952fec2b5b23fd650c430864e44216e45fc9012460597e1272c591d7ccc428d",
+      "window_index": 1
+    },
+    "bb710af6774da26b7ce3fa228185cad4c391c4b447273272647b1afeffd6aa37": {
+      "context": "This chunk is from Table 3 of a systematic review on workplace resistance training interventions, presenting detailed results for study 18 (Zebis et al., reference 75). The table summarizes study design, participant characteristics, intervention details, and significant pre-post intervention effects for all 18 included studies examining resistance training effects on musculoskeletal pain and work-related outcomes in occupational settings.",
+      "text_sha256": "cf1365a8a29dfa1528a712cfcb82f8f4f44be3b81bfb54c5eaff552124e73d33",
+      "window_index": 1
+    },
+    "be5102fc978ef2db37966d52420de052a8d9c6e5101b8a8f16f5f329f12da041": {
+      "context": "Table 3 presents detailed information on 18 included primary studies examining workplace-related resistance training interventions, organized by study reference, design, sample characteristics, intervention details, significant effects, and quality ratings using the EPHPP scale. This chunk shows the first two studies (Andersen et al. 58 and 59) from the comprehensive table that summarizes all included studies' methodologies and outcomes.",
+      "text_sha256": "7abf6aa894072bfc7cd9a848accbafb5aefceaf65006b52f006d0990c8c6462f",
+      "window_index": 1
+    },
+    "be611ff95e9828b7517d79411cf9269c98796ac2c03fcb5ed26c5789036e59c6": {
+      "context": "This chunk appears in the \"Strengths and Limitations\" section of a systematic review examining progression principles and variables of exercise prescription in workplace-related resistance training (RT) interventions. The section discusses the review's methodological strengths, including its comprehensive assessment approach based on Westra et al.'s protocol for analyzing RT description quality, and identifies key limitations such as the narrative analysis approach and the exclusion of multicomponent interventions that included RT as one component among others.",
+      "text_sha256": "8c8df30ea80147f8d78d67a338cdb47f8493b60450175c2438931a1da8a89e2d",
+      "window_index": 2
+    },
+    "bf6f61b33a7222cad76acb2a872185ba6f518a38ee7fc89fb84ea5e633005137": {
+      "context": "This chunk is part of Table 4 in the Discussion section of a systematic review on resistance training (RT) in workplace health promotion interventions. The table evaluates 18 included studies (rows 1-18) on their application of RT progression principles (progressive overload, specificity, periodization) and exercise prescription variables (muscle action, load, volume, exercise selection, exercise order, rest periods, velocity, frequency), with scoring indicators (+, -, ?, na) and summary scores for each study.",
+      "text_sha256": "3cfca3938c5253e5d8cabec1a504ab5afb69e65f2fa8a09e883a1f39de6f1c1d",
+      "window_index": 2
+    },
+    "c8ee782947a4998acadeeb191f667f1f1af336be49e7afb8cdcd8cb9cf9cbaf2": {
+      "context": "This chunk appears in the Conclusions section of a systematic review examining progression principles and variables of exercise prescription in workplace-related resistance training (RT) interventions. The conclusions synthesize the review's main findings about inconsistent reporting of RT design elements and recommend improved documentation practices and incorporation of exercise science principles to enhance intervention effectiveness and reproducibility in workplace health promotion settings.",
+      "text_sha256": "546371cc212f704f89ddb03015d09bc1b4b77f602ccd86cc87170fe737cd6408",
+      "window_index": 2
+    },
+    "ce914fee83beb401a31b5095ca4770f4cf06a33840ff4f644d291970cc6bfb86": {
+      "context": "This section comprises references 42-49 from the reference list of a systematic review on resistance training in workplace and health settings. These citations document studies examining the application of exercise training principles across various populations including cancer survivors, osteoarthritis patients, and stroke patients, as well as methodological guidelines for systematic reviews such as the PRISMA statement.",
+      "text_sha256": "946e5e9ea4dccdf9c8659967ade92db9d8f6633322ceb11a8ae174242c9630f7",
+      "window_index": 3
+    },
+    "d4f333ffa7b0ffc420a92aeaf26cb00aa981d9889771b79ff7ebe47741dc56ae": {
+      "context": "This chunk from the Results section of a systematic review on workplace resistance training interventions describes the characteristics of the 18 primary studies included in the analysis, including their study designs, participant demographics, occupational backgrounds, intervention equipment and formats, supervision levels, locations, and duration/frequency parameters.",
+      "text_sha256": "88bdb799d817979175a4734b2db29e19d4fe869381ad7c6f5ef1e683b3deda47",
+      "window_index": 0
+    },
+    "d6d0e6d79d5dd871db1078112d5da64b418191d5eddfd73bc291642ea367dd90": {
+      "context": "This chunk is from Table 3 of a systematic review on workplace-related resistance training interventions, presenting detailed study characteristics and results for studies 12-14. It includes information on study design, participant demographics, intervention descriptions, significant pre-post intervention effects, and quality ratings using the EPHPP assessment tool for three included primary studies examining resistance training effects on musculoskeletal pain and functional outcomes in occupational settings.",
+      "text_sha256": "8c68d4e8ae55b43fee66505942ba0f82aefb32087ad90fe7d251899c0e787b16",
+      "window_index": 1
+    },
+    "dd5b145796afb4444ecacf139272cebf076489e1770586c450624b182b914ba3": {
+      "context": "This table from a systematic review of workplace resistance training interventions presents a detailed assessment of 18 included studies, evaluating their reporting of three key progression principles (progressive overload, specificity, and periodization) and nine exercise prescription variables (muscle action, load, volume, exercise selection, exercise order, rest periods between sets and exercises, repetition velocity, and frequency). The table uses symbols to indicate whether each principle and variable was clearly reported (+), not reported (-), unclear (?), or not applicable (na), with summary scores provided for each study.",
+      "text_sha256": "3181beadfa98e170e4c35d7ee9325b6f63ed368b2c435a0035e7752baf388468",
+      "window_index": 2
+    },
+    "dfb81b3a2e6c2376c6e9f45c6926659e3e8d20b7609f516cc0ffb987a40375c9": {
+      "context": "This chunk is part of the References section of a systematic review on resistance training published in Frontiers in Public Health (2022). References 21-24 are cited sources examining the effects of resistance training and muscular strength on health outcomes including quality of life in older adults, mortality risk, and muscle mass relationships in clinical populations.",
+      "text_sha256": "96b32f59654bee42f6d32c5d031d31b4c3175aeae89698cc86cf257ecb06c683",
+      "window_index": 3
+    },
+    "e21c9c6878f600526108e825158876fb94986bf189ac5b76809bf954f4ca4340": {
+      "context": "This section from the Discussion of a systematic review on resistance training (RT) in workplace interventions examines reporting gaps in exercise prescription variables, specifically addressing how load determination procedures, exercise selection and order, rest periods, and repetition velocity are inconsistently described across studies. The chunk emphasizes the need for standardized exercise-reporting tools like CERT and TIDieR to improve intervention transparency and replicability in workplace-related RT programs.",
+      "text_sha256": "085207a769655d472d90765b1ca78d13b85b0dfbd82ad3a75f44bbcfd095e470",
+      "window_index": 2
+    },
+    "e3c8b94aa3494fdc6c962cf67fafc86d6ed4461cdbd68743a770a5491b78009f": {
+      "context": "This chunk is part of Table 4 in the Discussion section of a systematic review on resistance training (RT) in workplace health promotion interventions. The table evaluates 18 included studies (rows 1-18) on their application of RT progression principles (progressive overload, specificity, periodization) and exercise prescription variables (muscle action, load, volume, exercise selection, exercise order, rest periods, velocity, frequency), with scoring systems indicating whether each element was clearly reported (+), unclear (?), not reported (-), or not applicable (na).",
+      "text_sha256": "34360031e45bbe2a2008e767b3214e6931049d2d128db998849df9db222020a7",
+      "window_index": 2
+    },
+    "e83eda4b6fab732e320dd7b3b5f71c94770462bbc006aeaad7aee164eae9431e": {
+      "context": "This chunk describes the study selection process used in a systematic review examining resistance training interventions in workplace settings, published in Frontiers in Public Health (2022). It is part of the Methods section under \"Study Selection\" and explains how the authors screened and selected articles from their initial search results using the Rayyan literature management program and specific inclusion/exclusion criteria.",
+      "text_sha256": "e1ea3ec129baefa2d32aac6cccd009ce4a4ffff33a5bf74e8360116fc43e0b0a",
+      "window_index": 0
+    },
+    "e85ca9bfa4bba25b166bdc033f9eed35feb4ebc60d4e676033585c411fc12013": {
+      "context": "This chunk appears in the \"Study Quality and Results\" section of a systematic review on resistance training (RT) interventions in workplace settings. It summarizes the quality ratings of 18 included studies using the EPHPP assessment tool and describes the main categories of significant outcomes reported across these studies, including strength/performance improvements, pain-related improvements, and work-related outcomes.",
+      "text_sha256": "1ae01f7022cedac547d1f295566aae6545672c7e19f361549458f7fe64015cb1",
+      "window_index": 1
+    },
+    "ec7de1436921f493c2fd00be8792055a25fecbb507651efd65ee8728e308a7c3": {
+      "context": "This chunk provides the publication metadata for a systematic review titled \"Attention to Progression Principles and Variables of Exercise Prescription in Workplace-Related Resistance Training Interventions\" published in Frontiers in Public Health's Occupational Health and Safety section in 2022.",
+      "text_sha256": "3682bdaa0c160ae821b056c3ab86abbaf8aab19e64401067592f88ac9888cbf4",
+      "window_index": 0
+    },
+    "eea0c7572ad0288484010c94a246e8cced0d4b750d28c87d9d325feb61f838db": {
+      "context": "This chunk appears in the \"Data Analysis and Synthesis of Results\" section of a systematic review examining resistance training interventions in workplace settings. It describes the scoring methodology used to evaluate how well studies reported resistance training progression principles and exercise prescription variables, which is central to the review's objective of assessing the quality and reproducibility of workplace-related resistance training interventions.",
+      "text_sha256": "62e9650ad3d815e00724b6db9746b3aa222fd457076387b9c7ddd430fccd5a73",
+      "window_index": 0
+    },
+    "f4ea9f2c926ad9bd3bd86063a3a94debb7af9b983c0d76a5945c00557fa72cfa": {
+      "context": "This chunk is part of Table 3 from the \"Study Quality and Results\" section of a systematic review on workplace-related resistance training interventions. It presents detailed information on individual studies (Andersen et al. 60, Blangsted et al. 61, and Escriche-Escuder et al. 62) including their study design, participant characteristics, intervention descriptions, significant effects, and quality ratings according to the EPHPP assessment tool.",
+      "text_sha256": "ab26390a78fa108d906459cd6551192ee1f130229b1054f8f4634cb215a99d1f",
+      "window_index": 1
+    },
+    "f962cd77f662cdbe33e0a8339452a1db10a28d27c26be97f163d7efad16ecbd3": {
+      "context": "This chunk is part of the References section of a systematic review on resistance training published in Frontiers in Public Health (2022). References 60 and 61 are cited studies examining workplace-based physical exercise interventions for managing musculoskeletal pain and symptoms in office workers and other occupational populations.",
+      "text_sha256": "ca8542a5e0c5352e3fce5e0b5055c17840d2f9709a783dcf53f3cbd79ef81aa1",
+      "window_index": 3
+    },
+    "f9cbd6f769aa3a46a00ccc8e62bd9189515e0b90f41d1a21530c03a3efed7baf": {
+      "context": "This chunk is part of the References section of a systematic review on resistance training in workplace settings. It contains citations 33-41, which are foundational references on resistance training principles, exercise prescription, and the application of exercise training principles across various populations including healthy adults, stroke survivors, and patients with inflammatory myopathies.",
+      "text_sha256": "ac72e739ece0667fc4fd3c554cd4203bf1e0a345ce0bf8ffe1d42493f1cfd70b",
+      "window_index": 3
+    },
+    "fb646710b329f9285dc68984c41c361f31170a85a79b106a85ea72b42d2ba538": {
+      "context": "This chunk appears in the References section of a systematic review examining progression principles and variables of exercise prescription in workplace-related resistance training interventions. References 10 and 11 are cited in the introduction to support the effectiveness of workplace physical activity and exercise training programs on physical fitness and cardio-metabolic health outcomes in working adults.",
+      "text_sha256": "6403bab9e67dbdd0c1d4380e5d07cf69371fe428d9d357d49b167744e315fbff",
+      "window_index": 2
+    },
+    "febd16d1a35bcff99acdd070ff43fe76f33484daa9daa6ab3a87d4f580c58a2a": {
+      "context": "This chunk contains references 61-68 from the reference list of a systematic review on resistance training in workplace settings. These citations document empirical studies examining the effectiveness of resistance and strength training interventions for reducing musculoskeletal pain and improving work-related outcomes across various occupational groups including office workers, hospital porters, firefighters, and army personnel.",
+      "text_sha256": "a5aab905d7dc312cc7d949b59c25011c16f9211f682310b51026bec532e385a4",
+      "window_index": 3
+    }
+  },
+  "doc_id": "pmc-resistance-training-review",
+  "generated_at": "2026-08-31T19:46:14Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

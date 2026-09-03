@@ -1,0 +1,14 @@
+{
+  "content_hash": "5c1f9f1fe0d80f67d82041bbe151ea17437bc7a7d9a920564cf122d1b09eafb5",
+  "content_type": "application/pdf",
+  "doc_id": "paper-cormack-2009-rrf",
+  "fetched_at": "2026-07-23T17:06:34Z",
+  "final_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+  "format": "pdf",
+  "license": "(c) ACM (SIGIR 2009, DOI 10.1145/1571941.1572114); author self-archived postprint (University of Waterloo). Shipped fair-use + attribution; first candidate for one-line removal if challenged.",
+  "license_ok": true,
+  "raw_filename": "paper-cormack-2009-rrf.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf"
+}

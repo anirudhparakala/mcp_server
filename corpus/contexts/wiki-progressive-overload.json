@@ -1,0 +1,73 @@
+{
+  "contexts": {
+    "064759e32e1159336fceff1250c6b42becd0d919352d4371ed40e6974e861095": {
+      "context": "This chunk is from the References section of the Wikipedia article on Progressive overload. It contains citations 3-6 that support claims made in the History and Scientific principles sections, including references about the legend of Milo of Croton, the development of progressive overload methodology, and neuromuscular adaptation during strength training.",
+      "text_sha256": "f81cd956efcb74c03b6da17f853c0b5b8eea4811e66288b0fd0520686a38c896",
+      "window_index": 0
+    },
+    "06c6c79039d2b7212a0278c0cf7e60ace3c555c503021b2c3f5805043a619ad1": {
+      "context": "This chunk is from the References section of the Wikipedia article on Progressive overload. References 7 and 8 are cited in the Scientific principles and Methodology sections to support claims about how progressive overload works through resistance training and the importance of progression models in resistance training programs.",
+      "text_sha256": "e8f92c07151ec62f3f1f38eadcc16a17ac0f406b53a0e558e245a85f8afa6ce1",
+      "window_index": 0
+    },
+    "0b136581e12c00e52ff8e7be5974966533dbaa8964e1a568906fb8afe83a7d1f": {
+      "context": "This chunk is from the References section of the Wikipedia article on Progressive Overload. References 9-12 support claims made in the Methodology section, particularly regarding the definitions of volume, intensity, and frequency in progressive overload training, as well as information about overtraining and practical case study examples.",
+      "text_sha256": "332c6b838557871210a3c5aa5f9f35085b5e5fbc4b4f59d60b5d5e356b1ce196",
+      "window_index": 0
+    },
+    "2ee3d8317c86bb321a916949400b420fdfa52b78389e0f9a0084fc7c4d81b1d0": {
+      "context": "This chunk is from the References section of the Wikipedia article on Progressive overload. It contains the first two numbered citations that support claims made throughout the article, particularly references cited in the History and Scientific principles sections regarding neural contributions to muscle fatigue and Thomas DeLorme's development of progressive resistance exercise methodology.",
+      "text_sha256": "c780df303d51ac615f606c23c517a1327d4e6fb6866e7385f90b11094968fd5d",
+      "window_index": 0
+    },
+    "37bad34a3fba0c67f0d1fec18ed620858a0c6d8bcff9326be12343007002e1b6": {
+      "context": "This chunk is from the \"Scientific principles\" section of the Wikipedia article on Progressive overload. It explains the physiological mechanisms by which progressive overload works, including neuromuscular adaptation, muscle hypertrophy, and the body's natural adaptation process to increased stress during strength training.",
+      "text_sha256": "6ffc5d41fac50636995b5ed11d455d39eb1e532a2cd7a1b63d1eaaee72f9e104",
+      "window_index": 0
+    },
+    "3fbc734d181681b701acb1f6059fe3f1d1f5144573b39e0ce1c58c4dbb37eecf": {
+      "context": "This chunk is from the History section of the Wikipedia article on Progressive overload, tracing the concept's origins from the ancient Greek athlete Milo of Croton through its modern development by Dr. Thomas Delorme during World War II rehabilitation, establishing progressive overload as a fundamental principle in contemporary strength training and physical therapy programs.",
+      "text_sha256": "0639e7a65ae2fb31657de989aff775316fd94367b5bb601929d3e34910aadd34",
+      "window_index": 0
+    },
+    "8d32b51b7d22a61da50d85ba92516f834d25fdee31536c11c59a9515c660d16d": {
+      "context": "This chunk is from the Methodology section (section 3) of the Wikipedia article on Progressive overload. It explains the practical application of progressive overload by defining key training variables (volume, intensity, frequency, and interval duration) and discusses how to implement gradual increases while avoiding overtraining through periodization techniques.",
+      "text_sha256": "bbc80102ae1614add0bdb36b41e81017ea4161efe3e2bc8419584f7d729e68bd",
+      "window_index": 0
+    },
+    "97671dc4a264cb50c72ba5933dca3cae59754216b0316d25828a2c93829cbabc": {
+      "context": "This chunk appears in the \"Further reading\" section of the Wikipedia article on Progressive overload, providing a list of academic references and citations related to resistance training, progressive resistance training, and muscle performance that complement the main article content.",
+      "text_sha256": "ada5f1891afc0f8fc45c0ea668f814fcf17f62b00c3366f42392bb1000ec78d2",
+      "window_index": 0
+    },
+    "97b3830a3169e4282d55d37c50db30abc6da247c80a7ef2c2494ba6578cba13c": {
+      "context": "This chunk is from the \"Case study\" subsection (3.1) of the Methodology section in the Wikipedia article on Progressive overload. It provides a practical example demonstrating how an athlete can apply progressive overload principles by gradually increasing weight while maintaining repetitions, building on the volume, intensity, frequency, and interval duration concepts defined earlier in the Methodology section.",
+      "text_sha256": "41cabba047920a96213e03b9181602ac29226998bdb4bde1abfe5de7bc093b3a",
+      "window_index": 0
+    },
+    "9975707b41698ebc955543c2b1ae411c217e31616cc25a37a6d8aec906b60243": {
+      "context": "This chunk is the opening section of the Wikipedia article on Progressive overload, providing the main definition and core concept. It explains that progressive overload is a principle used in strength training and hypertrophy training to enable continuous training gains by gradually increasing stress on the musculoskeletal and nervous systems to stimulate muscle growth and strength.",
+      "text_sha256": "84095cb7bb2b87b65ab63de0bd715a24c9caf3a32ab4076c5d5878a452b1b80c",
+      "window_index": 0
+    },
+    "ce96493f3e8ba39e12669f90450fda1bd0e5fb500745d34e99db11a49ce13c71": {
+      "context": "This citation appears in the Further reading section of the Wikipedia article on Progressive overload, providing a reference to a 2002 academic article by Kraemer, Ratamess, and French on resistance training for health and performance published in Current Sports Medicine Reports.",
+      "text_sha256": "d71073a3ffb06e19d5e20b6c87b5878997972d5d0aa79246fb59465cab3c5592",
+      "window_index": 0
+    },
+    "d3dd0bf29095a5e16be1501672d68f47923fc8a579134d79e649918d5156bef7": {
+      "context": "This chunk contains the Wikipedia article navigation and language options for the Progressive overload article, appearing at the top of the page before the main content begins.",
+      "text_sha256": "dfaacbfe98145ada0da6a5e4595ad035bd62331cbd6e6d406ae97b1b8678ed11",
+      "window_index": 0
+    },
+    "d5230f73b0a0957200a40bb8a3f857b91aeb3c634ce58f04f088c81491973545": {
+      "context": "This is the table of contents for the Wikipedia article on Progressive overload, listing the main sections including History, Scientific principles, Methodology with a Case study subsection, References, and Further reading.",
+      "text_sha256": "68d13370c041421407b23c7af36d137790116f341366ad069468479f036c9538",
+      "window_index": 0
+    }
+  },
+  "doc_id": "wiki-progressive-overload",
+  "generated_at": "2026-08-31T19:42:46Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

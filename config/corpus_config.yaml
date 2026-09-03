@@ -1,0 +1,86 @@
+# Corpus build configuration (dev-only [corpus] extra). See
+# docs/superpowers/specs/2026-07-16-phase1-ingest-design.md §8.
+fetch:
+  timeout_s: 30
+  retries: 2
+  user_agent: "kbmcp-corpus-builder/0.1 (+https://github.com/anirudhparakala/mcp_server)"
+  raw_dir: corpus/raw
+  render:
+    enabled: false        # Playwright JS rendering; flipped on only if a source needs it (Task C1)
+    hosts: []             # hostnames requiring rendering (populated on demand, e.g. ["eur-lex.europa.eu"])
+  impersonate:
+    enabled: true        # curl_cffi TLS-fingerprint impersonation for WAF-gated hosts
+    browser: chrome
+    hosts: [law.justia.com, nycourts.gov, sec.gov]
+
+parse:
+  table_mode: accurate
+  ocr: false
+  cache_dir: corpus/parsed
+
+chunk:
+  target_tokens: 512
+  max_tokens: 800
+  overlap_policy: minimal
+  tokenizer: Qwen/Qwen3-Embedding-0.6B   # HybridChunker token counting; matches the Phase-2 embedder
+  # Drop publisher site chrome (leginfo code-selector menu, Justia link footer) that
+  # Docling faithfully extracts but that carries no corpus content. Narrow signatures
+  # only -- see ingest/chunk.py:is_boilerplate for why a structural heuristic was
+  # measured and rejected. Verified corpus-wide: drops exactly 5 of 2795 chunks.
+  drop_boilerplate: true
+
+contextualize:
+  enabled: true
+  model: claude-haiku-4-5
+  temperature: 0
+  max_tokens: 150
+  cache_ttl: 1h
+  # section_scoped: windows are packed out of WHOLE heading_path sections and never
+  # split one, except when a single section exceeds window_max_tokens. See the
+  # 2026-08-11 amendment to ingest spec §5: a bare heading_path section has a median
+  # size of 1 chunk (1421 sections / 2795 chunks) and sits below Haiku 4.5's
+  # 4096-token minimum cacheable prefix, so windows are token-budgeted runs of them.
+  section_scoped: true
+  contexts_dir: corpus/contexts
+  window_target_tokens: 6000     # pack sections up to this; > min_cacheable_tokens on purpose
+  window_max_tokens: 8000        # hard cap; a single section larger than this is split
+  min_cacheable_tokens: 4096     # Haiku 4.5 minimum cacheable prefix (shorter = silently uncached)
+  chars_per_token: 4             # offline token estimate for windowing + cost estimates
+  max_retries: 5                 # passed to the Anthropic client (429/5xx backoff)
+  price_in_per_mtok: 1.0         # claude-haiku-4-5 list price, USD per 1M input tokens
+  price_out_per_mtok: 5.0        # ... per 1M output tokens
+  cache_write_multiplier: 2.0    # 1h TTL cache write premium
+  cache_read_multiplier: 0.1     # cache read discount
+
+graph:
+  extractors: [legal, academic]   # which pattern families to run (see ingest/citations.py)
+  resolve: true                   # resolve references to in-corpus target chunks
+  edge_types: [adjacent, references]
+  # parent edges are NOT built: heading_path is empty (EUR-Lex) or a constant site
+  # breadcrumb (leginfo) in this corpus, so there is no hierarchy to derive them from.
+  # Revisit in Phase 2 if the graph expander shows it needs them.
+  record_unresolved: true         # store out-of-corpus citations with to_chunk = NULL
+  # The chunker routinely ends a chunk right after the NEXT article's header line
+  # (e.g. "...\nArticle 30\nRecords of processing activities\n1." -- 36 chars of
+  # body). Measured live: 58 of 196 cross-document edges landed on such a
+  # near-empty chunk instead of the article's real body. A text-derived header
+  # match followed by fewer than this many characters in its own chunk defers the
+  # anchor to the next chunk of the same document (review round 2, finding B).
+  min_anchor_body_chars: 200
+
+bm25:
+  tokenize: "porter unicode61"   # FTS5 tokenizer: porter stemming over unicode61
+  weights:
+    context: 1.0                 # per-column bm25() weights; text outranks context
+    text: 2.0
+  top_k: 50                      # lexical candidates handed to Phase 2's RRF fusion
+  # k1/b are NOT tunable: FTS5 fixes them at k1=1.2, b=0.75. RRF consumes ranks
+  # rather than raw scores, so this costs less than it appears -- but it is a real
+  # constraint. If Phase 3 calibration shows BM25 ranking is the T1/T2 bottleneck,
+  # swap the engine behind the BM25Store interface rather than hunting for a knob here.
+
+verify:
+  fixtures: corpus/benchmark/structure_fixtures.yaml
+
+ids:
+  scheme: "sha256(canonical_url + U+001F + version + U+001F + chunk_index) — ASCII unit-separator joined, see src/kbmcp/models/ids.py"

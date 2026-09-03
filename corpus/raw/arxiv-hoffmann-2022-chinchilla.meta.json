@@ -1,0 +1,14 @@
+{
+  "content_hash": "3fd3632a8ef48171bd25282990221d49535d75356192f068b3b2ebe08f2aedd4",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-hoffmann-2022-chinchilla",
+  "fetched_at": "2026-07-23T17:06:38Z",
+  "final_url": "https://arxiv.org/pdf/2203.15556v1",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-hoffmann-2022-chinchilla.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v1",
+  "source_url": "https://arxiv.org/abs/2203.15556"
+}

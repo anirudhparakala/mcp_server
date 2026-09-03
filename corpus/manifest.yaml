@@ -1,0 +1,634 @@
+# kbmcp corpus manifest — the curated, web-verified source list for the hard
+# mixed-domain eval/demo corpus. Versions are AUTHOR-PINNED (arXiv vN, Wikipedia
+# oldid, retrieval date); fetch.py records them verbatim into corpus/raw/*.meta.json.
+# Shipped-index posture: fair-use + per-source attribution NOTICE; the `license`
+# field records each source's actual license so any one can be swapped/removed in
+# one line if challenged. See docs/superpowers/specs/2026-07-16-phase1-corpus-design.md.
+#
+# Verified 2026-07-23 (Milestone 2, Task 8: AI/RAG/LLM domain).
+
+# ── AI / RAG / LLM (18) ────────────────────────────────────────────────────────
+
+- doc_id: arxiv-vaswani-2017-attention
+  url: https://arxiv.org/abs/1706.03762
+  domain: ai
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v7
+  tier_roles: [T1, T3, T6]
+  collision_terms: [training, performance]
+  rationale: "Transformer baseline (T1); T3 paraphrase pair with wiki-transformer-dl; 'training'/'performance' cross-domain collisions (T6)."
+
+- doc_id: arxiv-devlin-2018-bert
+  url: https://arxiv.org/abs/1810.04805
+  domain: ai
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [training]
+  rationale: "Encoder / masked-LM reference."
+
+- doc_id: arxiv-lewis-2020-rag
+  url: https://arxiv.org/abs/2005.11401
+  domain: ai
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v4
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "The RAG paper (meta self-reference to this server's own approach)."
+
+- doc_id: arxiv-karpukhin-2020-dpr
+  url: https://arxiv.org/abs/2004.04906
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v3
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "Dense passage retrieval (the dense half of this server's hybrid retrieval)."
+
+- doc_id: paper-robertson-2009-bm25
+  url: https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf
+  domain: ai
+  format: pdf
+  license: "(c) Now Publishers (Foundations and Trends in IR 3(4), 2009); author self-archived open copy (City, University of London). Shipped fair-use + attribution; first candidate for one-line removal if challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "BM25 / probabilistic relevance framework (the lexical half of hybrid retrieval); distractor for the RRF T1 query. Publisher (c); author self-archived copy per user decision 2026-07-23."
+
+- doc_id: paper-cormack-2009-rrf
+  url: https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf
+  domain: ai
+  format: pdf
+  license: "(c) ACM (SIGIR 2009, DOI 10.1145/1571941.1572114); author self-archived postprint (University of Waterloo). Shipped fair-use + attribution; first candidate for one-line removal if challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Reciprocal Rank Fusion — the exact fusion this server implements (meta); T1 anchor 'what is the RRF constant k for'. Publisher (c); author self-archived copy per user decision 2026-07-23."
+
+- doc_id: arxiv-reimers-2019-sbert
+  url: https://arxiv.org/abs/1908.10084
+  domain: ai
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
+  license: "CC BY-SA 4.0 (author-selected on arXiv)"
+  license_ok: true
+  version: v1
+  tier_roles: [T3]
+  collision_terms: [performance]
+  rationale: "Sentence-BERT bi-encoders; T3 paraphrase pair with wiki-transformer-dl."
+
+- doc_id: arxiv-khattab-2020-colbert
+  url: https://arxiv.org/abs/2004.12832
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "ColBERT late interaction retrieval."
+
+- doc_id: arxiv-liu-2023-lost-in-middle
+  url: https://arxiv.org/abs/2307.03172
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v3
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Context-position effect (lost-in-the-middle); relevant to reranking."
+
+- doc_id: arxiv-kaplan-2020-scaling-laws
+  url: https://arxiv.org/abs/2001.08361
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v1
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [arxiv-hoffmann-2022-chinchilla]
+  rationale: "Scaling laws: larger models more sample-efficient. T5 conflict pair with Chinchilla on compute-optimal size."
+
+- doc_id: arxiv-hoffmann-2022-chinchilla
+  url: https://arxiv.org/abs/2203.15556
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v1
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [arxiv-kaplan-2020-scaling-laws]
+  rationale: "Chinchilla: scale model size and tokens equally. T5 conflict pair with Kaplan (opposite compute-optimal prescription)."
+
+- doc_id: arxiv-hu-2021-lora
+  url: https://arxiv.org/abs/2106.09685
+  domain: ai
+  format: html   # arXiv HTML-first landed HTML (recipe uses the actual format)
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v2
+  tier_roles: [T1]
+  collision_terms: [training]
+  rationale: "LoRA parameter-efficient fine-tuning."
+
+- doc_id: arxiv-malkov-2016-hnsw
+  url: https://arxiv.org/abs/1603.09320
+  domain: ai
+  format: pdf
+  license: "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)"
+  license_ok: true
+  version: v4
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "HNSW approximate-nearest-neighbour vector index."
+
+- doc_id: paper-jumper-2021-alphafold
+  url: https://europepmc.org/articles/PMC8371605?pdf=render
+  domain: ai
+  format: pdf
+  license: "CC BY 4.0 (Nature Open Access; via Europe PMC, PMC8371605)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T6]
+  collision_terms: [protein]
+  rationale: "AlphaFold protein-structure prediction; the 'protein' T6 collision vs dietary protein. Nature OA CC BY 4.0. Fetched via Europe PMC PDF route (europepmc.org/articles/PMC<id>?pdf=render) because pmc.ncbi.nlm.nih.gov reCAPTCHA-blocks bots; same pattern used for fitness-domain PMC sources."
+
+- doc_id: wiki-transformer-dl
+  url: https://en.wikipedia.org/w/index.php?title=Transformer_(deep_learning_architecture)&oldid=1362319941
+  domain: ai
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1362319941
+  tier_roles: [T3, T6]
+  collision_terms: [training]
+  rationale: "Wikipedia restatement of the transformer; T3 paraphrase pair with arxiv-vaswani-2017-attention and arxiv-reimers-2019-sbert."
+
+- doc_id: wiki-vector-database
+  url: https://en.wikipedia.org/w/index.php?title=Vector_database&oldid=1363379488
+  domain: ai
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363379488
+  tier_roles: [T1]
+  collision_terms: [retrieval]
+  rationale: "Wikipedia vector-database overview; HTML wiki format."
+
+- doc_id: modelcard-qwen3-embedding
+  url: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+  domain: ai
+  format: html
+  license: "Apache-2.0 (model card)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T1]
+  collision_terms: [performance]
+  rationale: "Model card for this project's actual embedder (meta, Qwen3-Embedding-0.6B, modernized 2026-07-23); results table (structure bar)."
+
+- doc_id: modelcard-bge-reranker-v2-m3
+  url: https://huggingface.co/BAAI/bge-reranker-v2-m3
+  domain: ai
+  format: html
+  license: "Apache-2.0 (model card)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T2, T6]
+  collision_terms: [performance]
+  rationale: "Model card for this project's actual cross-encoder reranker (meta, bge-reranker-v2-m3, modernized 2026-07-23); benchmark table (structure bar); 'performance' T6 collision."
+
+# ── Legal / AI regulation (11) ─────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 9). OECD AI Principles dropped per user decision
+# (bespoke 'not altered / may not be sold' license conflicts with a chunked KB).
+
+- doc_id: eurlex-gdpr-2016-679
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504"
+  domain: law_aireg
+  format: html
+  license: "(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)"
+  license_ok: true
+  version: consolidated-2016-05-04
+  tier_roles: [T2, T3, T4]
+  collision_terms: [breach]
+  rationale: "GDPR consolidated text; structure-critical (article<->recital cross-references must survive chunking); T4 target of EDPB Art 22 refs; T3 pair with wiki-gdpr; 'breach' (data breach) T2 collision vs contract breach."
+
+- doc_id: eurlex-ai-act-2024-1689
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689"
+  domain: law_aireg
+  format: html
+  license: "(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)"
+  license_ok: true
+  version: oj-original
+  tier_roles: [T5, T6]
+  collision_terms: [training]
+  conflict_with: [nist-ai-rmf]
+  rationale: "EU AI Act risk tiers; mandatory regime. T5 conflict_with NIST AI RMF (mandatory vs voluntary); no consolidated version yet (applies in stages through 2027). T3 pair with wiki-eu-ai-act."
+
+- doc_id: law-ccpa-1798
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5"
+  domain: law_aireg
+  format: html
+  license: "Public domain (California statute; government edict, not copyrightable)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [consent]
+  conflict_with: [law-cpra-amendment]
+  rationale: "CCPA (Cal. Civ. Code Title 1.81.5, current codified text). US vs EU privacy conflict; T5 versioning conflict_with the CPRA amendment."
+
+- doc_id: law-cpra-amendment
+  url: "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop24.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "Public domain (California ballot measure / government work)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [consent]
+  conflict_with: [law-ccpa-1798]
+  rationale: "CPRA (Prop 24, 2020) — the isolated amendment instrument (SOS official text), deliberately distinct from the merged CCPA codified law so the CCPA-vs-CPRA T5 versioning conflict has two separable documents."
+
+- doc_id: edpb-guidelines-automated-decisions
+  url: "https://ec.europa.eu/newsroom/article29/redirection/document/49826"
+  domain: law_aireg
+  format: pdf
+  license: "(c) European Union / EDPB (WP29); reuse under Commission Decision 2011/833/EU with source acknowledgement"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4]
+  references: [eurlex-gdpr-2016-679]
+  collision_terms: [profiling]
+  rationale: "EDPB/WP29 WP251rev.01 on automated decision-making & profiling; references GDPR Art 22 -> T4 multi-hop into eurlex-gdpr-2016-679."
+
+- doc_id: edpb-guidelines-consent
+  url: "https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "(c) European Union / EDPB; reuse under Commission Decision 2011/833/EU with source acknowledgement"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T4]
+  references: [eurlex-gdpr-2016-679]
+  collision_terms: [consent]
+  rationale: "EDPB Guidelines 05/2020 on consent; multi-hop into GDPR; 'consent' collision vs gym-waiver/informed-consent (T2/T6)."
+
+- doc_id: ico-ai-automated-decision
+  url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-individual-rights-in-our-ai-systems/"
+  domain: law_aireg
+  format: html
+  license: "UK Open Government Licence v3.0 (Crown copyright)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [profiling]
+  rationale: "ICO (UK) guidance on AI & automated decisions; UK<->EU divergence (T5). Cloudflare-fronted (fetch-reliability watch)."
+
+- doc_id: nist-ai-rmf
+  url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+  domain: law_aireg
+  format: pdf
+  license: "Public domain (U.S. federal government work, 17 U.S.C. 105)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [training]
+  conflict_with: [eurlex-ai-act-2024-1689]
+  rationale: "NIST AI Risk Management Framework (AI RMF 1.0); voluntary regime. T5 conflict_with EU AI Act (voluntary vs mandatory)."
+
+- doc_id: wiki-gdpr
+  url: "https://en.wikipedia.org/w/index.php?title=General_Data_Protection_Regulation&oldid=1363040264"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363040264
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of GDPR; T3 paraphrase pair with eurlex-gdpr-2016-679 ('right to be forgotten' vs Art 17 text)."
+
+- doc_id: wiki-ccpa
+  url: "https://en.wikipedia.org/w/index.php?title=California_Consumer_Privacy_Act&oldid=1363027288"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363027288
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of CCPA; T3 paraphrase pair with law-ccpa-1798."
+
+- doc_id: wiki-eu-ai-act
+  url: "https://en.wikipedia.org/w/index.php?title=Artificial_Intelligence_Act&oldid=1365588755"
+  domain: law_aireg
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1365588755
+  tier_roles: [T3]
+  rationale: "Wikipedia restatement of the EU AI Act; T3 paraphrase pair with eurlex-ai-act-2024-1689."
+
+# ── Legal / contract law (12) ──────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 10). UCC swapped Cornell LII (ALI/NCCUSL (c)) -> CA
+# Commercial Code (public domain, per user decision); Wex swapped (CC BY-NC-SA 2.5)
+# -> Wikipedia (CC BY-SA 4.0, per user decision). Justia/nycourts/SEC fetched via
+# curl_cffi TLS impersonation; Wikisource/Wikipedia via httpx.
+
+- doc_id: ucc-article-1
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=1.&title=&part=&chapter=3.&article="
+  domain: law_contract
+  format: html
+  license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 1 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
+  license_ok: true
+  version: retrieved-2026-08-11
+  tier_roles: [T4]
+  collision_terms: [performance]
+  rationale: "UCC Article 1 general provisions, as enacted in CA Commercial Code Division 1 Chapter 3 (sec.1301-1310: territorial applicability and general rules, including sec.1303 course of dealing / usage of trade). Repointed 2026-08-11 from Chapter 2: Division 2 never cites sec.1201 by number anywhere, but ucc-article-2 sec.2202 cites '(Section 1303)' explicitly, and sec.1303 lives in Chapter 3. Chapter 2 therefore had no in-corpus target for the Article-2 cross-reference and the T4 pair could not resolve."
+
+- doc_id: ucc-article-2
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=2.&title=&part=&chapter=2.&article="
+  domain: law_contract
+  format: html
+  license: "Public domain (California Commercial Code; government edict). CA-enacted UCC Article 2 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23)."
+  license_ok: true
+  version: retrieved-2026-08-11
+  tier_roles: [T4, T5]
+  collision_terms: [performance]
+  references: [ucc-article-1]
+  conflict_with: [case-jacob-youngs-v-kent]
+  rationale: "UCC Article 2 sales, CA Commercial Code Division 2 Chapter 2 (sec.2201-2210: form, formation and readjustment — includes sec.2201 Statute of Frauds and sec.2202 parol evidence). Widened 2026-08-11 from the single-section sec.2601 URL, which was a 1.1k-char stub containing NO Article-1 reference at all, so the declared references edge had no textual basis and the T4 exit criterion could not be met by any correct resolver. This chapter carries the explicit numbered cross-reference sec.2202 -> '(Section 1303)', which resolves into ucc-article-1. T5 conflict_with Jacob & Youngs (substantial performance) still holds via the perfect-tender/substantial-performance tension."
+
+- doc_id: law-ca-civil-contracts
+  url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550."
+  domain: law_contract
+  format: html
+  license: "Public domain (California Civil Code; government edict)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "California Civil Code sec.1550 — essential elements of a contract (parties, consent, lawful object, consideration). Statutory contract material."
+
+- doc_id: case-hadley-v-baxendale
+  url: "https://law.justia.com/cases/foreign/united-kingdom/9-ex-ch-341-1854.html"
+  domain: law_contract
+  format: html
+  license: "Public domain (1854 English judicial opinion; no copyright in judicial opinions)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T2]
+  collision_terms: [recovery, damages]
+  rationale: "Hadley v. Baxendale (1854) — consequential/foreseeable damages. T2 'recovery of damages' collides with muscle recovery. Fetched via curl_cffi (Justia TLS-gated)."
+
+- doc_id: case-hamer-v-sidway
+  url: "https://www.nycourts.gov/reporter/archives/hamer_sidway.htm"
+  domain: law_contract
+  format: html
+  license: "Public domain (1891 NY Court of Appeals opinion; official NY Law Reporting Bureau)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "Hamer v. Sidway (1891) — consideration (forbearance as consideration). Fetched via curl_cffi (nycourts.gov TLS-gated)."
+
+- doc_id: case-lucy-v-zehmer
+  url: "https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165"
+  domain: law_contract
+  format: html
+  license: "Public domain (1954 Virginia Supreme Court opinion); Wikisource transcription (CC BY-SA wrapper on formatting only)"
+  license_ok: true
+  version: oldid-15747165
+  tier_roles: [T1]
+  collision_terms: [assent]
+  rationale: "Lucy v. Zehmer (1954) — objective theory of assent ('secret jest' still binds). Wikisource transcription (clean PD text, avoids Justia's reporter-syllabus provenance question)."
+
+- doc_id: case-jacob-youngs-v-kent
+  url: "https://law.justia.com/cases/new-york/court-of-appeals/1921/230-n-y-239-1921.html"
+  domain: law_contract
+  format: html
+  license: "Public domain (1921 NY Court of Appeals opinion, Cardozo)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [performance]
+  conflict_with: [ucc-article-2]
+  rationale: "Jacob & Youngs v. Kent (1921, Cardozo) — substantial performance doctrine. T5 conflict_with UCC Article 2 perfect-tender rule. Fetched via curl_cffi (Justia TLS-gated)."
+
+- doc_id: case-carlill-carbolic
+  url: "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727"
+  domain: law_contract
+  format: html
+  license: "Public domain (1893 English Court of Appeal judgment); Wikisource transcription (CC BY-SA wrapper on formatting only)"
+  license_ok: true
+  version: oldid-6792727
+  tier_roles: [T1]
+  collision_terms: [offer]
+  rationale: "Carlill v. Carbolic Smoke Ball Co. (1893) — unilateral offer / offer to the world. Wikisource (cleanest host, plain GET)."
+
+- doc_id: edgar-commercial-contract
+  url: "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm"
+  domain: law_contract
+  format: html
+  license: "Public record (SEC EDGAR filing; Hexion Specialty Chemicals Credit Agreement, Ex. 10.4). Shipped fair-use as a public SEC filing."
+  license_ok: true
+  version: accession-0001193125-09-174289
+  tier_roles: [T4]
+  collision_terms: [consideration]
+  rationale: "SEC EDGAR commercial contract (Hexion Credit Agreement, 2009) — structure-critical: Article I/sec.1.01 defined terms + 82 numbered section cross-refs + Schedule 2.01 lender-commitments table with real dollar data. Fetched via curl_cffi (SEC TLS-gated). NOTE: schedule is padded-text HTML, not a literal <table>; Sonic Automotive accession 0001043509-20-000021 is the documented <table>-markup fallback if M6 structure bar needs it."
+
+- doc_id: wiki-consideration
+  url: "https://en.wikipedia.org/w/index.php?title=Consideration&oldid=1362535624"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1362535624
+  tier_roles: [T3]
+  collision_terms: [consideration]
+  rationale: "Wikipedia: Consideration (contract law). T3 paraphrase; replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+- doc_id: wiki-liquidated-damages
+  url: "https://en.wikipedia.org/w/index.php?title=Liquidated_damages&oldid=1360872692"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1360872692
+  tier_roles: [T3]
+  collision_terms: [damages]
+  rationale: "Wikipedia: Liquidated damages. T3 paraphrase; replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+- doc_id: wiki-breach-of-contract
+  url: "https://en.wikipedia.org/w/index.php?title=Breach_of_contract&oldid=1358210839"
+  domain: law_contract
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1358210839
+  tier_roles: [T2]
+  collision_terms: [breach]
+  rationale: "Wikipedia: Breach of contract. T2 'breach' collides with GDPR data breach (eurlex-gdpr-2016-679); replaces the CC BY-NC-SA Wex entry (user decision 2026-07-23)."
+
+# ── Fitness / nutrition (14) ───────────────────────────────────────────────────
+# Verified 2026-07-23 (Task 11). PMC sources fetched via Europe PMC PDF route
+# (europepmc.org/articles/PMC<id>?pdf=render; pmc.ncbi.nlm.nih.gov reCAPTCHA-blocks).
+# WHO/FAO TR935 dropped (all-rights-reserved + JS-gated). Schoenfeld frequency meta
+# dropped (not open); #51 -> Swinton 2024 dose-response (CC BY). Gym waiver authored
+# (no clean open example exists). All per user decisions 2026-07-23.
+
+- doc_id: issn-protein-exercise
+  url: "https://europepmc.org/articles/PMC5477153?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5477153)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T6]
+  collision_terms: [protein]
+  rationale: "ISSN Position Stand: Protein and Exercise. Protein-target source; 'protein' T6 collision (dietary vs AlphaFold vs Wikipedia)."
+
+- doc_id: issn-nutrient-timing
+  url: "https://europepmc.org/articles/PMC5596471?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5596471)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [timing]
+  rationale: "ISSN Position Stand: Nutrient Timing ('anabolic window')."
+
+- doc_id: issn-creatine
+  url: "https://europepmc.org/articles/PMC5469049?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5469049)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  rationale: "ISSN Position Stand: Creatine (2017). Supplement reference."
+
+- doc_id: issn-diets-body-comp
+  url: "https://europepmc.org/articles/PMC5470183?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5470183)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  rationale: "ISSN Position Stand: Diets and Body Composition."
+
+- doc_id: pmc-morton-2018-protein-meta
+  url: "https://europepmc.org/articles/PMC5867436?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY-NC (Br J Sports Med / BMJ; via Europe PMC PMC5867436). NonCommercial; kept per user decision 2026-07-23 (load-bearing T5, no clean CC-BY equivalent); first candidate for removal if the shipped index's NC status is challenged."
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5, T6]
+  collision_terms: [protein]
+  conflict_with: [usda-dietary-guidelines]
+  rationale: "Morton 2018 protein-supplementation meta-analysis: muscle/strength gains plateau ~1.6 g/kg/day. T5 conflict_with USDA RDA 0.8 g/kg."
+
+- doc_id: usda-dietary-guidelines
+  url: "https://odphp.health.gov/sites/default/files/2026-02/dietary_guidelines_for_americans-2020-2025.pdf"
+  domain: fitness
+  format: pdf
+  license: "Public domain (USDA/HHS, U.S. federal government work, 17 U.S.C. 105)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5, T6]
+  collision_terms: [protein]
+  conflict_with: [pmc-morton-2018-protein-meta]
+  rationale: "Dietary Guidelines for Americans 2020-2025 (9th ed). Protein RDA 0.8 g/kg -> T5 conflict_with Morton ~1.6 g/kg; nutrient TABLES (structure bar). NOTE: pin THIS 2020-2025 edition (a later edition reportedly raised the RDA, which would erase the conflict); build must spot-check the 0.8 g/kg table. Migrated from retired dietaryguidelines.gov to odphp.health.gov."
+
+- doc_id: pmc-frequency-volume-equated
+  url: "https://europepmc.org/articles/PMC9560172?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY 4.0 (PLoS One; via Europe PMC PMC9560172)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  tier_roles: [T5]
+  collision_terms: [training, frequency]
+  rationale: "Neves 2022 volume-equated training-frequency study: no 1RM/CSA difference between 1x vs 3x/week once volume is matched. T5 frequency angle vs the dose-response modeling."
+
+- doc_id: pmc-swinton-2024-dose-response
+  url: "https://europepmc.org/articles/PMC11239729?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY (Sports Medicine; via Europe PMC PMC11239729)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  collision_terms: [training, volume]
+  rationale: "Swinton/Schoenfeld/Murphy 2024 dose-response meta-analysis of resistance exercise (volume, frequency, intensity). Open-access substitute for the paywalled Schoenfeld volume/frequency meta-analyses (user-approved 2026-07-23)."
+
+- doc_id: wiki-strength-training
+  url: "https://en.wikipedia.org/w/index.php?title=Strength_training&oldid=1365407520"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1365407520
+  tier_roles: [T3, T6]
+  collision_terms: [training]
+  rationale: "Wikipedia: Strength training. T3 paraphrase; 'training' T6 collision (model training / training data / resistance training)."
+
+- doc_id: wiki-muscle-hypertrophy
+  url: "https://en.wikipedia.org/w/index.php?title=Muscle_hypertrophy&oldid=1363648459"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1363648459
+  tier_roles: [T3]
+  rationale: "Wikipedia: Muscle hypertrophy. T3 paraphrase pair with the hypertrophy literature."
+
+- doc_id: wiki-progressive-overload
+  url: "https://en.wikipedia.org/w/index.php?title=Progressive_overload&oldid=1364829368"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1364829368
+  tier_roles: [T3]
+  rationale: "Wikipedia: Progressive overload. T3 paraphrase pair with the progression literature (resistance-training review)."
+
+- doc_id: wiki-protein-nutrient
+  url: "https://en.wikipedia.org/w/index.php?title=Protein_(nutrient)&oldid=1366342569"
+  domain: fitness
+  format: html
+  license: "CC BY-SA 4.0 (Wikipedia)"
+  license_ok: true
+  version: oldid-1366342569
+  tier_roles: [T3, T6]
+  collision_terms: [protein]
+  rationale: "Wikipedia: Protein (nutrient). 'protein' T6 collision (dietary protein vs AlphaFold protein structure)."
+
+- doc_id: sample-gym-liability-waiver
+  url: corpus/authored/sample-gym-liability-waiver.html
+  domain: fitness
+  format: html
+  license: "CC0 1.0 (original work authored for this corpus; placeholder facility, no real entity)"
+  license_ok: true
+  version: authored-sha256
+  tier_roles: [T2, T6]
+  collision_terms: [waiver, consent, release, consideration]
+  rationale: "Original gym liability-waiver + informed-consent document (authored; no clean open example exists). 'waiver/release/consent' T2/T6 collision with contract law (release, consideration, indemnify) and GDPR/CCPA consent. Repo-relative local source (committed at corpus/authored/); version resolves to a content hash at build."
+
+- doc_id: pmc-resistance-training-review
+  url: "https://europepmc.org/articles/PMC8990091?pdf=render"
+  domain: fitness
+  format: pdf
+  license: "CC BY (Frontiers in Public Health; via Europe PMC PMC8990091)"
+  license_ok: true
+  version: retrieved-2026-07-23
+  collision_terms: [training]
+  rationale: "Stassen 2022 systematic review of progression principles in resistance training. Open-access substitute for the paywalled ACSM progression position stand."

@@ -1,0 +1,68 @@
+{
+  "contexts": {
+    "06b317226de2c9cdfc7fe124177ca9ca640885642e259d65edb4baf11a3414da": {
+      "context": "Section 1304 of the California Commercial Code, located in Chapter 3 (Territorial Applicability and General Rules) of Division 1 (General Provisions), establishes the fundamental requirement that every contract or duty under the code must include an obligation of good faith in both its performance and enforcement.",
+      "text_sha256": "e91f03bb4317f9a23c5bd93a5e79f58329e9b00e4d6b5b2f5f4ebbe439c93636",
+      "window_index": 0
+    },
+    "1cf191c64d23f16642bb2f82f1490629dc0e7263285bfbf7aadefaf80cdd3cce": {
+      "context": "This is Section 1309 from Chapter 3 (Territorial Applicability and General Rules) of the California Commercial Code Division 1. It defines the conditions under which a party may exercise acceleration or collateral-demanding powers that are stated as exercisable \"at will\" or when the party \"deems itself insecure,\" requiring that such exercise be done in good faith with an impaired prospect of payment or performance.",
+      "text_sha256": "70c01379d7f721a05098f87e0ac51a092e598851b5253ff8c57ef69d4b73fdb3",
+      "window_index": 0
+    },
+    "4e03c2e96cdf0dc8da9c8d97c6681d9dc3e83ba3b5a67bff70ee0283f134b4e7": {
+      "context": "This is Section 1306 from Chapter 3 (Territorial Applicability and General Rules) of Division 1 (General Provisions) of the California Commercial Code. It addresses the discharge of breach claims and rights through agreement.",
+      "text_sha256": "a5468925f0559496892dc3fec969cca9cb963a18cc5e0ce0d51018739fcdd979",
+      "window_index": 0
+    },
+    "4f310b6fab291507c329ef31f7b2e62bac9c759a33458e0f2231e3cc3fa0bc94": {
+      "context": "Section 1301 of the California Commercial Code, located in Chapter 3 (Territorial Applicability and General Rules) under Division 1 (General Provisions), establishes rules for determining which jurisdiction's law governs commercial transactions and identifies specific code sections that override party agreements regarding applicable law.",
+      "text_sha256": "ce07590b2b1baa8a5e906d5f1fe9db6b18c4c585331fc214c1e4a33f3543e959",
+      "window_index": 0
+    },
+    "8a2cfa4a322480c7b2c9c7612463bbe6f54b212f2108346d274e1c62890bbf79": {
+      "context": "Section 1302 of the California Commercial Code, Chapter 3 (Territorial Applicability and General Rules), establishes rules for varying the effect of code provisions by agreement, with specific limitations on disclaiming obligations of good faith, diligence, reasonableness, and care.",
+      "text_sha256": "f3ecfa55995957a9e808d1eed4e6e8b1634060f860af037acbe19844b1147df3",
+      "window_index": 0
+    },
+    "8ac3c345f9db9820a67cd64bdd5053b21affb744d2c099ee83258d9647f3ee38": {
+      "context": "Section 1310 of the California Commercial Code, part of Chapter 3 (Territorial Applicability and General Rules) in Division 1 (General Provisions), addresses the legal treatment of subordinated obligations and creditor rights, clarifying that subordination does not establish a security interest.",
+      "text_sha256": "e263a080683abf44d2f3df1fc57b103ca880041b09c993a12ab62146ae8b0b6d",
+      "window_index": 0
+    },
+    "99740c6755deabd76b903be7c932de736496269ca0a50622e81773298ce8279a": {
+      "context": "This is the legislative history note for Chapter 3 (Territorial Applicability and General Rules, sections 1301-1310) of Division 1 of the California Commercial Code, indicating when the chapter was added to the code.",
+      "text_sha256": "393e5271d005fed716574bfe941e29752669fdff38bd520b43f3b2a2864b5d4d",
+      "window_index": 0
+    },
+    "9f55c81c3573dcb60fe1b9764eab9c2c457f4f570cbea910fbd69e806acb5460": {
+      "context": "This is Section 1308 from Chapter 3 (Territorial Applicability and General Rules) of the California Commercial Code Division 1. It addresses how a party can perform or assent to performance under protest or with explicit reservation of rights without losing those reserved rights, and clarifies that this protection does not apply to accords and satisfactions.",
+      "text_sha256": "61843d752ebb55f76aced8c394cc132bdf79fc6708e92faef52378758e49896c",
+      "window_index": 0
+    },
+    "ce79233ca8bd3b6da0f1eaa3e6d541a87977d0ebc95be5a6d9667ab30370bed9": {
+      "context": "This is the enactment date notation for Division 1 (General Provisions, sections 1101-1310) of the California Commercial Code, indicating when this foundational division of the code was originally established.",
+      "text_sha256": "ce72bb1c3425fa386a9c721c8dd0bc156aef22f46ea580b30bba62ba840d15c8",
+      "window_index": 0
+    },
+    "dcb1aebfa71500dc6e93e25aa19166ff4ea0aa6c0421764a4c016acf111d83c0": {
+      "context": "Section 1303 of the California Commercial Code, Chapter 3 (Territorial Applicability and General Rules), defines and explains how course of performance, course of dealing, and usage of trade are interpreted and applied in commercial transactions, including their hierarchy when construing agreement terms.",
+      "text_sha256": "095190c30635c2bb6dc6a12dc14b6c35516bbe287296e42d6f0e35aa57365ea8",
+      "window_index": 0
+    },
+    "e88c27c5718990d5fd2bb464b6ea6af6e322d97134f4843ea8f7a3a3d4958617": {
+      "context": "This is Section 1307 of the California Commercial Code, part of Chapter 3 (Territorial Applicability and General Rules) in Division 1 (General Provisions). It establishes rules for the admissibility and presumptions regarding third-party documents such as bills of lading, insurance certificates, and consular invoices that are authorized or required by contracts.",
+      "text_sha256": "a03d83eef3b99190fe6c8c1ff2426bb510edd4a1c364c42e4492f9853c4ab591",
+      "window_index": 0
+    },
+    "fe758db0d3e66b6c383e445b332d7b03ae20e508e483eedd58e0cba95db59716": {
+      "context": "Section 1305 of the California Commercial Code, located in Chapter 3 (Territorial Applicability and General Rules) under Division 1 (General Provisions), establishes rules for remedies and enforcement of rights and obligations under the Commercial Code.",
+      "text_sha256": "17b0642e14731bb17052153a07e4dc8ba51714e762499f3113b6f3064b3f8c50",
+      "window_index": 0
+    }
+  },
+  "doc_id": "ucc-article-1",
+  "generated_at": "2026-08-31T19:15:46Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

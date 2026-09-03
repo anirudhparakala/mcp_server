@@ -1,0 +1,48 @@
+{
+  "contexts": {
+    "1b9ec91427478b5ca4087697580bc6af841798d560cca8742a9224bce0e96c7e": {
+      "context": "This chunk is from Section 1 \"Reciprocal Rank Fusion\" of a 2009 SIGIR paper by Cormack, Clarke, and B\u00fcttcher that introduces RRF as an unsupervised method for combining document rankings from multiple IR systems. The chunk explains the RRF scoring formula with parameter k=60, compares it to competing fusion methods Condorcet Fuse and CombMNZ, and presents pilot experiments and TREC evaluation results demonstrating RRF's superior performance.",
+      "text_sha256": "60f44072e91f8e3ebf29b48a65621fb2536008f23d1fc5369ea334e3379394eb",
+      "window_index": 0
+    },
+    "2f5f1f69ced411a6035f400ce58949e16147412bd110eb2dbe00caa555655935": {
+      "context": "This table presents the final experimental results from Cormack's 2009 paper on Reciprocal Rank Fusion, comparing RRF performance against Condorcet Fuse, CombMNZ, and several learning-to-rank methods (ListNet, LGD, AdaRank-MAP, RankSVM, RankBoost) on the LETOR 3 dataset of 583,850 document-query pairs, showing MAP scores and statistical significance of differences.",
+      "text_sha256": "7f8f6c97fe283a1a5d3566d41a21d8696480d5a2f0530288f5a71d55b2751634",
+      "window_index": 0
+    },
+    "40b218b3d0eb0e2e3a3e2d95adbc51026a9634a4f0c8da0b43769ef1325e0473": {
+      "context": "This is the References section of \"Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods\" by Cormack et al., a 2009 SIGIR paper comparing RRF with other ranking fusion and learning-to-rank methods including Condorcet Fuse, CombMNZ, ListNet, RankSVM, RankBoost, and AdaRank-MAP on TREC and LETOR 3 datasets.",
+      "text_sha256": "acdb3157c770adc743860c430981bd622b5578908b753a4d8e7733c11dfcbd7e",
+      "window_index": 0
+    },
+    "5ee880382cfdc2a453896b2204a051fb63976456cbd5295fe57bf274fdff9bb9": {
+      "context": "This chunk from \"Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods\" by Cormack et al. presents experimental results and statistical significance testing comparing RRF to competing fusion methods (Condorcet Fuse and CombMNZ) across TREC experiments and the LETOR 3 dataset, demonstrating RRF's superior performance in Section 1.",
+      "text_sha256": "2d0b01e914616e5946e9eb87de3e1cd5d391881bd8fcb940995156428707ebbd",
+      "window_index": 0
+    },
+    "752f4738a1f65762c85ade68485964bb02a9d6d4c172c7d54849be2959209185": {
+      "context": "This chunk presents experimental results from Cormack's 2009 paper on Reciprocal Rank Fusion (RRF), showing pilot and TREC evaluation results that demonstrate RRF's performance compared to competing fusion methods (Condorcet Fuse and CombMNZ) and individual ranking systems. Table 1 shows the effect of the parameter k on MAP scores, while Table 2 compares MAP scores across multiple TREC tasks, establishing that RRF consistently outperforms alternative approaches.",
+      "text_sha256": "227b7cf62303254e7787b336d3868928e8f1a60057cad868beaa2cdd5865a404",
+      "window_index": 0
+    },
+    "ae0741a1b7daa6f046ee58c9381da22b8d522997854e4f9148d61664122f10a0": {
+      "context": "This is the abstract from \"Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods\" by G. V. Cormack, C. L. A. Clarke, and Stefan B\u00fcttcher, a 2009 SIGIR paper that introduces Reciprocal Rank Fusion (RRF) as an unsupervised method for combining multiple IR system rankings and demonstrates its superiority over competing fusion methods through experiments on TREC collections and the LETOR 3 dataset.",
+      "text_sha256": "28977cf8d3cd1e7cec5548c842cba16b93ebd5e7c7233f6603bc18f9dee1c5b2",
+      "window_index": 0
+    },
+    "c4bc81defdc3233dcd9fa708bf640598e70cd8198a561129b6ac3969d237a472": {
+      "context": "This chunk is from Section 2 (Discussion) of Cormack et al.'s 2009 SIGIR paper on Reciprocal Rank Fusion (RRF). It provides analysis and interpretation of the experimental results presented earlier, comparing RRF's advantages over competing fusion methods Condorcet Fuse and CombMNZ, and discussing the meta-learner performance on the LETOR 3 dataset.",
+      "text_sha256": "da1bb04faf8b0d12aed3c0ef1c127a466a7c003ffe007c1c050c7564de729091",
+      "window_index": 0
+    },
+    "c640537accd90e40b28af767b3b5be640f186bfa2c581487e1e87cab255366f9": {
+      "context": "This is the author affiliation for G. V. Cormack in the paper \"Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods,\" which presents a method for combining document rankings from multiple IR systems.",
+      "text_sha256": "8f5e66a46d5b828b706f9468425680b2ea4afd702f0a961b0a56eb530b0a7422",
+      "window_index": 0
+    }
+  },
+  "doc_id": "paper-cormack-2009-rrf",
+  "generated_at": "2026-08-29T21:45:40Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

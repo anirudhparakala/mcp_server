@@ -15,6 +15,19 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=7.4.0",
+    "pyyaml>=6.0,<7",
+]
+corpus = [
+    # Dev-only ingest deps ([corpus] extra). Version floors are provisional and
+    # finalized (verify-then-pin) in the milestone that first installs each dep.
+    "docling>=2.118,<2.119",  # pinned to the minor that produced the committed parses (reproducibility)
+    "transformers>=4.46,<6",  # HybridChunker tokenizer — imported directly in chunk.py
+    "playwright>=1.40.0",
+    "httpx>=0.27.0",
+    "curl-cffi>=0.7.0",
+    "anthropic>=0.121,<1",
+    "datasketch>=1.6.0",
+    "pyyaml>=6.0,<7",
 ]
 
 [tool.setuptools]

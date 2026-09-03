@@ -1,0 +1,14 @@
+{
+  "content_hash": "d45afa0c7f062e9b0d9f5d2abbcfeb8a59d44e6c29c7e65693da9f2a5ea8fcb7",
+  "content_type": "application/pdf",
+  "doc_id": "edpb-guidelines-consent",
+  "fetched_at": "2026-07-23T18:14:55Z",
+  "final_url": "https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf",
+  "format": "pdf",
+  "license": "(c) European Union / EDPB; reuse under Commission Decision 2011/833/EU with source acknowledgement",
+  "license_ok": true,
+  "raw_filename": "edpb-guidelines-consent.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "6eae057a9faf4f671c3101e0745ed704460c6d3dec77243dfd3a9f2d2ab68970",
+  "content_type": "application/pdf",
+  "doc_id": "paper-jumper-2021-alphafold",
+  "fetched_at": "2026-07-23T17:10:00Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC8371605",
+  "format": "pdf",
+  "license": "CC BY 4.0 (Nature Open Access; via Europe PMC, PMC8371605)",
+  "license_ok": true,
+  "raw_filename": "paper-jumper-2021-alphafold.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC8371605?pdf=render"
+}

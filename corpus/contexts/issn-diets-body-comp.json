@@ -1,0 +1,303 @@
+{
+  "contexts": {
+    "03bab2e7d966c37609be83c8aa1e98ac8727d50b9f22583dcdf0616e2ae67b93": {
+      "context": "This statement appears in the Funding section of an International Society of Sports Nutrition (ISSN) position paper on diets and body composition, indicating that the research and writing of this comprehensive review was conducted without external financial support.",
+      "text_sha256": "8addd6bb9ee61b857656bc286d4b04a0c2a398ac58d4dd9f0815d8ebb7753424",
+      "window_index": 3
+    },
+    "06518604ec8acfd4e5e6ba59b55082f37319b5b323a3f1b58306b290c912361e": {
+      "context": "This chunk is from the \"Intermittent fasting\" section of a document on diets and body composition. It presents three research studies examining time-restricted feeding (TRF), a subclass of intermittent fasting involving 16-20 hour fasting periods alternated with 4-8 hour feeding periods. The chunk includes findings from Tinsley et al. on untrained subjects, Moro et al. on resistance-trained subjects, and Seimon et al.'s systematic review comparing intermittent energy restriction to continuous energy restriction.",
+      "text_sha256": "621f5a1a46563b29b51443a768eadb70ef17492f5f8568543aaa741d9053aea1",
+      "window_index": 2
+    },
+    "07f7673cb95b079e75b3841b0fbf7f8f6e6561a9df94d04a9e251d1a0df61498": {
+      "context": "This table appears in the \"Adaptations to underfeeding\" section of an International Society of Sports Nutrition position stand on diets and body composition. Table 4 presents metabolic rates and body composition data for different tissues and organs, including their contribution to resting energy expenditure (REE), and is referenced in discussions of how energy expenditure changes during hypocaloric conditions and adaptive thermogenesis.",
+      "text_sha256": "4265ad1a1e9001068818ea9da2b4edb7fee602c30c562bc5e0fb012b05babc4d",
+      "window_index": 3
+    },
+    "0b9c330e893e5b044b9012dea2fa2d298ea4cbb16f435820cd4ea70959acf0ae": {
+      "context": "This statement appears in the \"Availability of data and materials\" section of the document, which is part of the standard metadata and disclosure information at the end of the ISSN position stand on diets and body composition.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 3
+    },
+    "0caf40c6074a74fd15e999e57f75a05cb711629a9845f5ef587d35dcde4d8998": {
+      "context": "This chunk is from the \"High-protein diets\" section of a document on diets and body composition. It defines high-protein diets (HPD), reviews research on protein intake levels (ranging from 1.2-1.6 g/kg or 25% of total energy), and discusses the metabolic effects of protein including its thermic effect and satiating properties for body composition outcomes.",
+      "text_sha256": "c2b83d11892b83528645702d4bf4efb583367ecb4ff4cc652e52690a896eb805",
+      "window_index": 1
+    },
+    "0eeec3d18c30fdbd2b611d50a5a18f30126ffc4a01752a752d802a99fa52b5f4": {
+      "context": "This table appears in the \"Calories in/Calories Out (CICO)\" section of a document on intermittent fasting and body composition. Table 3 breaks down the four main components of total daily energy expenditure (TDEE)\u2014thermic effect of food (TEF), exercise activity thermogenesis (EAT), non-exercise activity thermogenesis (NEAT), and basal metabolic rate (BMR)\u2014showing their percentage contribution to TDEE and providing numerical examples across three different daily caloric expenditure levels (1600, 2600, and 3600 kcal).",
+      "text_sha256": "c6c137c81797c48dfef5ad303a7bbcb1b4da0071996f502bc10e6de545cb1835",
+      "window_index": 2
+    },
+    "10827a4aa4d8d1ec50557d152a0204a4ce024ef441311b9e23a92f6908494c48": {
+      "context": "This chunk is from the \"Ketogenic diets\" section of a document on diets and body composition. It discusses the effects of ketogenic diets (KD) on athletic performance and exercise capacity, examining research on how carbohydrate restriction and fat adaptation influence endurance and strength training outcomes in trained athletes.",
+      "text_sha256": "b32477e7184a77de7bd9c16443d29582cf7a49cf84db7a44800bf1bef27dabf9",
+      "window_index": 1
+    },
+    "1091f8a5b44588b471e55cae110a8d601021f91286dc564f022ed4b5155b3dbf": {
+      "context": "This chunk appears in the \"Adaptations to underfeeding\" section of an ISSN position stand on diets and body composition. It discusses adaptive thermogenesis (AT) during weight loss, presenting research findings on how energy expenditure changes persist after significant weight loss from very-low-energy diets (VLED), and how resistance training and adequate protein can mitigate these metabolic adaptations. The chunk also addresses the confounding factor of misreported energy intake and output in metabolic adaptation studies.",
+      "text_sha256": "6fc90e118e80be04e5b4b2480402e6a9719b8b0402ec2b0e9ea5b5ff73b6d7ee",
+      "window_index": 3
+    },
+    "140c6bf9bd41630d117b54a547f8ba0321cc4166a2f8e58a5fe0772c4514b168": {
+      "context": "This is Table 2 from a document on intermittent fasting and body composition, which summarizes the major diet archetypes discussed throughout the paper. The table presents composition, strengths, and limitations for six diet categories: low-energy diets, low-fat diets, low-carbohydrate diets, ketogenic diets, high-protein diets, and intermittent fasting, providing a comparative overview of dietary approaches for weight loss and body composition changes.",
+      "text_sha256": "216f6efb7d6a414beb3e25c0de5a18fa3db76fd702d2fd8d36bd78d6139aecf6",
+      "window_index": 2
+    },
+    "1549cf505d123926bfcb52e8103d3d6668802ee29c702724f4304a859c559985": {
+      "context": "This chunk appears in the Summary section of an International Society of Sports Nutrition (ISSN) position stand on diets and body composition. It synthesizes key themes from the document regarding how different diet types affect body composition, the importance of body composition assessment methods, and the mechanisms by which various diet archetypes achieve weight loss or gain through caloric balance and macronutrient distribution.",
+      "text_sha256": "6a5976983b1538819e9fb11551df698dbbf6fb88484d9c5205cf230a0d8689af",
+      "window_index": 3
+    },
+    "1710529f1453c0dfbb5baf6608eef840f46efb1563567e4d5d71957da448b2d0": {
+      "context": "This chunk appears in the High-protein diets section and discusses potential explanations for why Antonio et al.'s studies on super-high-protein diets (3.3-4.4 g/kg) did not result in expected weight gain despite significantly increased caloric intake in resistance-trained subjects.",
+      "text_sha256": "222679817cf7d833a0626f94f58501f2720fe3b7cfbb68a90d8416b034a297e3",
+      "window_index": 1
+    },
+    "191a84ab8dbdba05ebe60655c8d24149f79af92f3de43481b72861087dacf5d1": {
+      "context": "This chunk is from the \"Body composition assessment methods\" section of the International Society of Sports Nutrition position stand on diets and body composition. It explains the hierarchical five-level model for organizing body composition research (atomic, molecular, cellular, tissue-organ, and whole body levels) and describes the different compartment models (2C, 3C, and 4C) used to measure fat mass (FM) and lean mass (LM), as well as the classification of assessment methods as direct, indirect, or criterion.",
+      "text_sha256": "b748fc9459f3b10ad46cecd746c72917c45c0f2479fb037ff7a1a609fa663b4d",
+      "window_index": 0
+    },
+    "1ac1ba3d653da448ed7d369de005b38b7ebf7be143aeec0eeae2fa9263e674bc": {
+      "context": "This chunk is from the \"Intermittent fasting\" section of a document on diets and body composition. It introduces and defines the three main types of intermittent fasting (ADF, WDF, and TRF), discusses research findings on their effects on lean mass and weight loss, and begins describing specific studies examining each variant's impact on body composition.",
+      "text_sha256": "daf48e5bcfe9fb0c158357f324216d5dd53803c9a2a5142ee4f627c92e90a768",
+      "window_index": 2
+    },
+    "1e5bef9e9163ec84a0997bde91b5b13c648d3a618ce51c3d9928c95c6798fbef": {
+      "context": "This chunk is from the \"Adaptations to overfeeding\" section of an ISSN position stand on diets and body composition. It discusses how adaptive thermogenesis functions differently in hypercaloric versus hypocaloric conditions, examines interindividual variability in weight gain responses, explains the role of NEAT (non-exercise activity thermogenesis) in preventing weight gain, and compares how different types of dietary fat affect the partitioning of energy surplus into lean mass versus fat mass.",
+      "text_sha256": "6444ce0daeae130c81f9896b9ad8c90cc742f743b93d3d3c939293fa5617a0a0",
+      "window_index": 3
+    },
+    "22987058a363123e8e9b9c4e13d0cd02190b995cb4c08a1ba9f0d8aa2490d340": {
+      "context": "This section appears in the \"Competing interests\" portion of an ISSN position stand on diets and body composition, disclosing financial relationships and affiliations held by the paper's authors with dietary supplement companies, sports nutrition organizations, and related commercial entities.",
+      "text_sha256": "3849f7217c7c75451bef92f48c5abd9d82fca1d0f7f72faaf186a1534c115270",
+      "window_index": 3
+    },
+    "23a2042e66c35eaf80b398fefd83f343f6be1e114f1264bc3bec1baa677ea7e8": {
+      "context": "This statement appears in the Publisher's Note section at the end of a research article on diets and body composition, serving as a standard disclaimer from Springer Nature regarding the publisher's neutrality on jurisdictional and institutional matters.",
+      "text_sha256": "e23de2474afa8657899fd15dffc7f7d06b7a72343c3a6c58c795a9da5cb9e548",
+      "window_index": 4
+    },
+    "2b1581cfa9aa864f8fb85255ae3d8bc3954ebc6424e221929692236edcfded5c": {
+      "context": "This statement appears in the \"Availability of data and materials\" section of the document, which is part of the standard manuscript metadata and declarations following the main content of the ISSN position stand on diets and body composition.",
+      "text_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "window_index": 3
+    },
+    "2e28c0950c0c73062bd12c5133bbacf194e6156b834be3b421ce1bdfeacf8b58": {
+      "context": "This chunk is from the \"Low-carbohydrate diets\" section of a document examining the effects of various diet types on body composition. It defines low-carbohydrate diets (LCD) according to different standards, including AMDR guidelines and alternative definitions, and reviews meta-analyses comparing LCD with low-fat diets (LFD) for effects on fat mass and body weight in overweight and obese populations.",
+      "text_sha256": "65076f07817fa9bd3b08409cd42063ea1ea18cfd1145563889b7d885cda2dfcb",
+      "window_index": 1
+    },
+    "31610be3ebe0323f9596436ed62f1c9bc248db75dc0c92b014065c8aa2443522": {
+      "context": "This is the author list for the International Society of Sports Nutrition (ISSN) position stand on diets and body composition, a comprehensive review examining the effects of various diet types and macronutrient compositions on body composition outcomes.",
+      "text_sha256": "5ae9008f98a84232250f94f2e3c1a992dc8e487288b1a59dbcaeea6d89ca5478",
+      "window_index": 0
+    },
+    "397d3e257486638e611fc7ac94b348bc7affd7de5b82839bab3d0f293b678ccb": {
+      "context": "This section of the References list contains citations 94-104, which document studies on intermittent fasting and alternate-day fasting dietary interventions and their effects on body weight, body composition, and metabolic parameters in various populations including obese, overweight, and nonobese subjects.",
+      "text_sha256": "8b2f36e585ffeb40707777459e782ac106d1371200ee085f85ff0419650c7f80",
+      "window_index": 5
+    },
+    "3baa936eb746c73ee06dc75ac29e4ab1e9473b872e654fc5f3c4bd21d6865362": {
+      "context": "This chunk is from the \"Low-Fat diets\" section of the International Society of Sports Nutrition position stand on diets and body composition. It defines low-fat diets (LFD) as providing 20-35% fat based on the Acceptable Macronutrient Distribution Ranges (AMDR), discusses the historical promotion of fat reduction since the 1950s, and reviews research evidence on the effectiveness of dietary fat reduction for weight loss and body composition changes.",
+      "text_sha256": "8f71f9a085c89da251d5be7be558c72b917b16d64c47eabf07fa3de6173e85fa",
+      "window_index": 0
+    },
+    "3d57e194de286603a4b7972595589c9d6eaf5e6f96fc4fb486408c47b463a0af": {
+      "context": "This chunk comprises the \"Conclusions and recommendations\" section of an International Society of Sports Nutrition (ISSN) position stand on diets and body composition. It synthesizes key evidence-based recommendations regarding diet selection, body composition assessment methods, caloric deficits for fat loss, caloric surpluses for lean mass gain, macronutrient distribution approaches, and the relationship between carbohydrate intake and athletic performance.",
+      "text_sha256": "c104e369451ec0ec36492ff5c7dc362993d70d007a4aeac7e9706a8d85c8d464",
+      "window_index": 3
+    },
+    "43d1e693f20a8e848225d98388145185ab481808f8d3da98a5fdf11e4b63d8da": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. References 81-90 focus on the effects of high-protein diets on body composition, weight loss, and physical performance, covering studies on protein intake, meal frequency, energy restriction, and resistance training outcomes in various populations including obese individuals, athletes, and people with type 2 diabetes.",
+      "text_sha256": "79424f5e8911f149ff2b765fb79b63f5f6accc4fc1d97efac09f629d5766bd00",
+      "window_index": 5
+    },
+    "4dcbb6be54e7cac192f6783203c55a45115df958fe7a3da5d473958c4325c9fd": {
+      "context": "This chunk appears in the \"Authors' contributions\" section of an ISSN position stand on diets and body composition, documenting the roles of the manuscript's authors in preparing the final publication.",
+      "text_sha256": "999f973969cf0af2fac7cdaa65106efa307863ccc80f89763683193e95e86b1e",
+      "window_index": 3
+    },
+    "5039d8df30bb8a34784b1338e3c779b9acaaae734b137e8f3031d87d5a7ab35c": {
+      "context": "This chunk comprises the first thirteen references from the References section of a document on diets and body composition. These citations cover foundational topics including the relationship between skeletal muscle mass and metabolic syndrome, body composition assessment methods (such as dual-energy X-ray absorptiometry and bioelectrical impedance), and the role of muscle in health and disease.",
+      "text_sha256": "5d45c5d48e57998326aa877e8d8327da168e7c89082da5d29f42ed23a72e8ea2",
+      "window_index": 5
+    },
+    "5465b8509a7cd4e6e86222846964bb9b3e4394af52efdef214909b2841142f09": {
+      "context": "This chunk is part of Table 1 in the \"Body composition assessment methods\" section of the ISSN position stand on diets and body composition. It provides detailed characteristics including strengths and limitations for multiple body composition assessment techniques: dual energy X-ray absorptiometry (DXA), ultrasound, magnetic resonance imaging (MRI), computed tomography, and near-infrared interactance (NIR).",
+      "text_sha256": "7f9eb02bf5fd1eb8412ed80ff8d4fde1e7a858e014160f71858bdce2be778e3b",
+      "window_index": 0
+    },
+    "565c0495f2ec704393a9c3439b9107ccc80b7ab92aa2645253ecd2e6219bd350": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. References 14-20 focus on body composition assessment methods, including ultrasound, dual-energy X-ray absorptiometry (DXA), and bioelectrical impedance analysis (BIA). References 21-25 transition to dietary interventions for weight loss, covering formula food diets, very-low-calorie diets, and the protein-sparing modified fast, as well as studies examining the effects of resistance training combined with caloric restriction on lean body mass and metabolic rate.",
+      "text_sha256": "a1320cbd0704fbca753e4324e4add7e3c28819e7247133c8c1d979a84cb0f62c",
+      "window_index": 5
+    },
+    "58ad73780b9eec8b3b4aa09fb6b0f60a121fc4b322e2a95d489eb15df280e128": {
+      "context": "This chunk from the Background section of the ISSN position stand on diets and body composition introduces the document's scope and methodology. It explains why the position stand was created, defines key dietary archetypes to be assessed (VLED, LED, LFD, LCD, KD, HPD, and IF), and outlines the inclusion criteria for studies reviewed, including the minimum 4-week duration and focus on body composition measurements.",
+      "text_sha256": "959dcbf71b89c540aae35ac81faa64c244635b2ec082ab468576f24079440a29",
+      "window_index": 0
+    },
+    "59e82d5552fb68307c0d88426dbc7a42db7dd3622324d64448439992ee78db48": {
+      "context": "This chunk is Table 1 from the \"Body composition assessment methods\" section of the International Society of Sports Nutrition position stand on diets and body composition. The table compares multiple body composition measurement techniques including skinfold thickness, bioelectrical impedance analysis (BIA/BIS), hydrodensitometry, air displacement plethysmography (ADP), and dual energy X-ray absorptiometry (DXA), detailing what each method measures, its strengths, and its limitations.",
+      "text_sha256": "e8e21c9bd55e81a23be22a2e967d25b68f1c83b064a3469eb7468853ad83e97d",
+      "window_index": 0
+    },
+    "6c94e0977292de3f0d849696a11d6ca3c9f9c5356622c92bf595917b118928d4": {
+      "context": "This statement appears in the \"Ethics approval and consent to participate\" section at the end of the document, indicating that the entire position paper on diets and body composition has been officially reviewed and endorsed by the International Society of Sports Nutrition (ISSN).",
+      "text_sha256": "215918f16e0274046441c527714278b1c733ccb89718479728a696b23b8fe619",
+      "window_index": 3
+    },
+    "6cc8d33fc9f9971287e97630519436e9d73a46a0238d1502a5636ccbac6f6e84": {
+      "context": "This chunk is from the \"Adaptations to underfeeding\" section of an International Society of Sports Nutrition (ISSN) position stand on diets and body composition. It introduces the concept of adaptive thermogenesis (AT) and explains how the body maintains homeostasis during hypocaloric (calorie-restricted) conditions, including the physiological mechanisms that defend against weight loss and the definition of AT as an unexplained reduction in energy expenditure beyond what body composition changes alone would predict.",
+      "text_sha256": "683a2e3cc2483724b2fe191ea5be4d3c42b8806ca80f9b32bbe551456917718b",
+      "window_index": 3
+    },
+    "6f96af802f253715f947019826cba0c4daae883867324f846d6bc6f3efdbd755": {
+      "context": "This chunk is from the \"Body composition assessment methods\" section of the International Society of Sports Nutrition position stand on diets and body composition. It discusses the classification of body composition assessment techniques into laboratory and field methods, explains the evolution of bioelectrical impedance analysis (BIA) and bioelectrical impedance spectroscopy (BIS) technology, and emphasizes that no single method is universally superior for assessing athletes' body composition.",
+      "text_sha256": "ede28321fe3573f1fab68a3613da6c105b9395c9ee28aa2f04c5ba5579f14dd6",
+      "window_index": 0
+    },
+    "70aaf6827589398d3f9fb7bfe9fbb5f65123e810c4339401be9be47b55fd1305": {
+      "context": "This chunk is part of the References section of a document on intermittent fasting, diets, and body composition. References 26-38 cover foundational research on diet, body composition changes, weight loss mechanisms, and dietary approaches to obesity treatment, including studies on resistance training, very low calorie diets, low-fat diets, and energy density.",
+      "text_sha256": "7250541d42f5bed11fa4932f8a68b04b9fff854e8ff4bf4661b17b1ce9eeb696",
+      "window_index": 5
+    },
+    "781037a9afb18000ee8fc6901750d17787e7239c3e65376593799773293c61b7": {
+      "context": "This chunk is from the \"Low-Fat diets\" section of the International Society of Sports Nutrition position stand on diets and body composition. It specifically addresses very-low-fat diets (VLFD), defined as providing 10-20% fat, and reviews research evidence on their effects on body composition including fat mass (FM) and lean mass (LM).",
+      "text_sha256": "394c2e009a581f699ba4c068d78fc1318221c5508b6fe241a08a229058c4f485",
+      "window_index": 0
+    },
+    "7c2e10b30c8cf5f217ab3fea26b85a015b9205348ffeee21e64a1e9ceb65db4c": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. References 39-48 focus on dietary approaches to weight loss and body composition changes, including studies on energy density, vegetarian diets, low-carbohydrate diets, and comparisons of different weight-loss diet types such as Atkins, Zone, Ornish, and LEARN diets, as well as the POUNDS LOST trial examining effects of macronutrient composition on fat mass and lean mass.",
+      "text_sha256": "22c4e113f73e2995d91cbde609e3618b2b081ecb6b4174e7c984f68a6fc46f4d",
+      "window_index": 5
+    },
+    "7e0ea360647ca357a6c3e9b2ffe582d95c1ab7b1147253ada8b9d7a6f5f80edf": {
+      "context": "This chunk appears in the \"Adaptations to overfeeding\" section of an ISSN position stand on diets and body composition. It compares research studies examining how chronic caloric surpluses affect lean mass and fat mass gains in different populations, specifically contrasting results from elite athletes versus untrained subjects and discussing the role of macronutrient composition and training status in determining body composition outcomes during overfeeding.",
+      "text_sha256": "7ff708c6539d90057aca2011aaac455b921636752293221d4453559062ab19e1",
+      "window_index": 3
+    },
+    "8449ee6a56c87641d58087f7dbe96cf4a1966d1785e4bb3d5a8a7e2e2ccdeb9b": {
+      "context": "This is the abstract section of the International Society of Sports Nutrition (ISSN) position stand on diets and body composition, which summarizes nine key conclusions regarding how different diet types and macronutrient compositions affect body composition outcomes including fat loss, lean mass preservation, and muscle gain.",
+      "text_sha256": "f65683c6c13d29899198dc1ded828afc67bfc5304becc50d937f4cb21520f72a",
+      "window_index": 0
+    },
+    "84851489e636b0676f37abc3fc5b03b5af74f78da6cc42e5f74f0efd0b351ee5": {
+      "context": "This chunk appears in a document on intermittent fasting and diet composition effects on body composition. It concludes the Intermittent Fasting section by summarizing the strengths and limitations of IF variants (ADF, WDF, TRF), then transitions to the Calories In/Calories Out (CICO) section to explain the components of total daily energy expenditure (TDEE) and adaptive thermogenesis during caloric restriction.",
+      "text_sha256": "6baa8e5c89b2259ba19ee7c6eea8c5a79c97f327259a4d4871881b0e6ab64f7e",
+      "window_index": 2
+    },
+    "8968fb2c1c7e163d0cbcc3447355eac1600414d96a2c00227f887817a45dad12": {
+      "context": "This abbreviations section appears at the end of an International Society of Sports Nutrition (ISSN) position stand on diets and body composition, providing definitions for all technical acronyms and terms used throughout the document's discussion of energy expenditure, body composition assessment methods, and dietary approaches for weight management.",
+      "text_sha256": "be06cfd71ec25114c0a8782de8f6c609ed50ea0b59993fd61800331310a3bf6f",
+      "window_index": 3
+    },
+    "8d4e06973e7c7c28e6e12d7c25f69de4006e9106225e4ea4744dd197b9c7acc5": {
+      "context": "This chunk is from the \"Calories in/Calories Out (CICO)\" section of a document on intermittent fasting and body composition. It explains the CICO concept, the thermic effect of different macronutrients (protein, carbohydrate, fat, and alcohol), and defines key energy expenditure terms including thermic effect of food (TEF), total daily energy expenditure (TDEE), resting energy expenditure (REE), resting metabolic rate (RMR), and basal metabolic rate (BMR).",
+      "text_sha256": "f1384d5d41a56af03052d1904644b504ca27a783d56201080ffdb7cea06fddda",
+      "window_index": 2
+    },
+    "95aeffb8f1f242dd2bf07a8a382b15933c62f266da87e07b08ae4bfa153497a2": {
+      "context": "This section comprises references 130-141 from the References section of a document on diets and body composition. These citations cover studies on weight loss maintenance, adaptive thermogenesis, energy expenditure, body composition changes with nutritional interventions, and protein requirements for athletes and resistance training, supporting the document's discussion of how dietary approaches affect body composition outcomes.",
+      "text_sha256": "f410d6ce8a0f43ad06e586e86d9f7d75c11dab9c64164e87308eb7651f074009",
+      "window_index": 5
+    },
+    "99571a2755ddbf423671989aaf2fbe73a4dff5d40a943ecec3cb3c75f84a7791": {
+      "context": "This chunk is from the \"Conclusions and recommendations\" section of an ISSN position stand on diets and body composition. It presents key recommendations regarding dietary protein intake for athletic populations, time-restricted feeding, and strategies to prevent adaptive thermogenesis during hypocaloric conditions for fat loss.",
+      "text_sha256": "6aa74a9a9de34c6fe9dfb66f053b86e5bb236a1250fcd94738b67fabe67b437f",
+      "window_index": 3
+    },
+    "a243ccdaf7cbd1c530c395fd0b0f0cac6251485c8dd6921ab5e78bfda3742e24": {
+      "context": "This chunk appears in the submission guidelines section at the end of a research article published in a BioMed Central journal, listing the benefits and services offered to authors who submit their manuscripts to BioMed Central for publication.",
+      "text_sha256": "79fd1a648334fd7022df675ba2b825dddfb03204cd5db188099199c1a749201b",
+      "window_index": 6
+    },
+    "a2f61e256e3304b2333751f2ec050054a801e63608e4ad91b9dce45e08f06c31": {
+      "context": "This chunk appears in the Ketogenic diets section of a document examining the effects of various diet types on body composition. It discusses the potential appetite-suppressing advantages of ketogenic diets (KD) compared to non-ketogenic conditions, presenting evidence from studies by Johnstone et al. and Gibson et al. on how KD may reduce energy intake and body weight through mechanisms independent of caloric restriction.",
+      "text_sha256": "053ca417d6e4d89e0d7fba4e774885eecc8c93e89f195d7db12b52526fc0c611",
+      "window_index": 1
+    },
+    "a4fd29efd8408e5dd44c664a3224e8626419b7cc77981ddb1e838b380ee213d6": {
+      "context": "This chunk is from the Ketogenic diets section of a document on diets and body composition. It discusses controlled research comparing ketogenic diets (KD) to non-ketogenic low-carbohydrate diets (LCD), specifically addressing whether the fat loss benefits of these diets result from a metabolic advantage or from their higher protein content. The chunk also explains ketoadaptation, a physiological adaptation to ketogenic diets involving increased fat oxidation.",
+      "text_sha256": "172cb965ed4d1d3ba4506e6fde980df3a416d466e6f7f3a8a8ac12a44aa48ce0",
+      "window_index": 1
+    },
+    "b25dbd6a7a2cdf1ce086750653366d6ebc90fd73efe2ba3e4547bcd885f1ec90": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. References 71-80 cover studies examining the effects of various dietary approaches\u2014including ketogenic diets, fat adaptation, low-carbohydrate high-fat diets, and high-protein diets\u2014on appetite suppression, exercise performance, weight loss, and body composition changes in different populations.",
+      "text_sha256": "b00366e234023cb3f3762a937ac300c0aa60d392eb5d14132534af34fd1d6c8a",
+      "window_index": 5
+    },
+    "b5163960ad893ea19ba0e292aad750bb68bd7bb89ca949a6c0d1feefc4d24fc1": {
+      "context": "This section from the References of a document on intermittent fasting, time-restricted feeding, and diet-induced thermogenesis contains citations 105-115, covering studies on Ramadan fasting effects on body composition, time-restricted feeding protocols in resistance-trained individuals, comparisons of intermittent versus continuous diets for weight loss, and mechanisms of thermogenesis and energy balance related to dietary interventions.",
+      "text_sha256": "d96af9ad5a7c33b78ac88935133cba11374f3e4231a6dfa345031c07a46e93b4",
+      "window_index": 5
+    },
+    "c1db77866cc171f24072a40bc6663f616b33915643bd89199f0333590ca98c0e": {
+      "context": "This chunk appears in the \"Perspectives and Future Directions\" section of an International Society of Sports Nutrition (ISSN) position stand on diets and body composition. It discusses the prioritization of nutritional factors affecting body composition using a cake analogy, recommends a multidisciplinary team approach to client care, and identifies gaps and future research directions in dietary effects on body composition.",
+      "text_sha256": "fb7aa3116804ab0e820b18e767f6e2a793460af5cb6edeac116d35c41d728129",
+      "window_index": 3
+    },
+    "cf88051647d47346536fce6f0aaf10f67fd3783c17e59d6333fbb4c2be0f652b": {
+      "context": "This is the author details and publication dates section from a research article on ISSN diets and body composition, listing the 16 affiliated institutions of the study authors and indicating the manuscript was received on May 25, 2017 and accepted on May 30, 2017.",
+      "text_sha256": "eb830260f400d09c3a2a81df17c9a325adee5136f0dfe3c8037ab673865afd66",
+      "window_index": 4
+    },
+    "d24c80893d5ae1757174559932da4dedaa524e3387f0cf96ab282ade83e1faeb": {
+      "context": "This chunk is part of the References section of a document about diets and body composition. References 116-129 focus on energy expenditure, thermogenesis, and body weight regulation, covering topics such as nonexercise activity thermogenesis (NEAT), adaptive thermogenesis, metabolic rates of organs and tissues, and energy homeostasis during weight loss and maintenance.",
+      "text_sha256": "a965405c2de0d99f8ce2b3f861bae82cb171aea9eabaf9ad0c06dd5404ae841a",
+      "window_index": 5
+    },
+    "da274b3b4a9b5e978a8dbcb589e82cd522d1b23d2e256d772f61c22ed83202b1": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. It contains citations 49-58, which focus on ketogenic diets, low-carbohydrate diets, high-protein diets, and their effects on body weight, body composition, energy expenditure, and metabolic parameters in various populations including obese individuals and resistance-trained athletes.",
+      "text_sha256": "82ea55bb9cf40fb633d081fb43e4087e9f8fb8f80262c72e9b269280b7cc1236",
+      "window_index": 5
+    },
+    "db2eae49e784c79daccedffbd60b979cded37d3c052b7d6133981a10973bc836": {
+      "context": "This chunk appears in the \"High-protein diets\" section of a document examining the effects of different diet types on body composition. It presents a series of investigations by Antonio et al. on super-high-protein diets (HPD) in resistance-trained subjects, comparing their findings with a metabolic ward study by Bray et al. to explain how training status and exercise intensity influence the body composition effects of high protein intake.",
+      "text_sha256": "8f93241e940c4014c1b27aaa5c0d31b7b901063f7d5223234c4d0aebaaf9b428",
+      "window_index": 1
+    },
+    "de4bacfbe839ffa20bc1a4cdc0eddc404c6ea169d8f3b5866d1625ff130530b3": {
+      "context": "This chunk is part of the References section of a document on diets and body composition. References 91-92 cite studies on high protein diets and their effects on body composition in resistance-trained individuals, while reference 93 addresses intermittent fasting and its effects on body composition and health markers.",
+      "text_sha256": "55e1d6c5b9836b7d7ac99b40dc9de8130757b6b757f3ea6830732b8251b6e0e1",
+      "window_index": 5
+    },
+    "dfa1e7f74d55a0096dc7af71a5759aec8f05065af7fb987ffab465c69bd99f00": {
+      "context": "This acknowledgements section appears in the ISSN position stand on diets and body composition, where the lead author (AAA) and co-author (JA) express gratitude to family members and colleagues who contributed to the development and review of the manuscript.",
+      "text_sha256": "ffd457954e5f53b8fac4d63e541bc33f78d3cd29b5d5ae1a08e45614a2714295",
+      "window_index": 3
+    },
+    "e2f8054495d2212ced4810992784ec195e4d8f7737926cc55db746c6b0ad75ab": {
+      "context": "This chunk is part of the References section of a document about diets and body composition. It contains citations 59-70, which focus on research comparing different diet types\u2014particularly ketogenic and low-carbohydrate diets\u2014and their effects on body weight, body composition, metabolic parameters, and athletic performance.",
+      "text_sha256": "a689b920f805ba8ee6ab37874defb303982a04780b11df089edf2334abc32bb2",
+      "window_index": 5
+    },
+    "e34e042a7d51bb696aa1b38cd2499cc17ff4f43acee223b972ffe3bbbe5c6671": {
+      "context": "This chunk is from the \"Ketogenic diets\" section of a document on diets and body composition. It defines ketogenic diet (KD) as a subtype of low-carbohydrate diet (LCD) characterized by elevated circulating ketone bodies, describes the macronutrient composition and ketosis levels, and discusses research on whether KD provides a metabolic advantage for fat loss compared to other diets, emphasizing the role of protein content in weight loss outcomes.",
+      "text_sha256": "2a60588c2a7525e33bbc3c3e7538ce3c18dc60c9bce6b3e3305f0c763c03a4a5",
+      "window_index": 1
+    },
+    "eb479e4579c5ab948481e2ad3e8382e5220141eafe780f9b0cd839b47e563307": {
+      "context": "This chunk is from the \"Low-energy diets\" section of the International Society of Sports Nutrition position stand on diets and body composition. It defines and characterizes low-energy diets (LED) and very-low-energy diets (VLED) by their caloric content, macronutrient composition, and effects on weight loss and lean mass preservation, and discusses the role of resistance training and safety concerns associated with VLED use.",
+      "text_sha256": "c9ce6707801fdef45980082a2ad40077512d95892a1ee5fa8f82b57c0dfe7ed2",
+      "window_index": 0
+    },
+    "ebd02b1bdc4b8017d3f069ecee1f3777f22e9c91afdb789518500985330bf9de": {
+      "context": "This chunk is from the References section of a document on intermittent fasting, diets, and body composition. References 142-146 address protein requirements and supplementation for athletes and bodybuilders, the role of protein in lean mass maintenance during resistance training and energy deficit, and long-term weight loss maintenance strategies.",
+      "text_sha256": "571811d928ff30e39d83df32ad8a960b28476e7bf79bcd8a3e87624acffddc17",
+      "window_index": 5
+    },
+    "ef16af937e84676b59a8d34e517943d271ded5a83407c8700132936dac93b0ab": {
+      "context": "This chunk appears in the \"Calories in/Calories Out (CICO)\" section of a document on intermittent fasting and body composition. It discusses tissue-specific metabolism and the relative contributions of different organs and tissues to resting energy expenditure (REE), clarifying misconceptions about muscle's role in metabolic rate.",
+      "text_sha256": "92f66bfe225df04559632895e656d0c3a1d554a7384143637413b83980d28b90",
+      "window_index": 2
+    }
+  },
+  "doc_id": "issn-diets-body-comp",
+  "generated_at": "2026-08-31T19:23:10Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

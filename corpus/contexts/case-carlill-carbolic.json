@@ -1,0 +1,18 @@
+{
+  "contexts": {
+    "7f96ab72a790dd6f60d1a99080e260eed807915b0db9b859b334cb99ae78a768": {
+      "context": "This chunk contains the navigation and interface elements from the Wikisource page for Carlill v. Carbolic Smoke Ball Company, a legal case document. It includes links for reading, editing, viewing history, and downloading the case in various formats, as well as language and tool options available on the Wikisource platform.",
+      "text_sha256": "baedcf1eeedcf471b3130321efc928f8591a46e4bf25e7112903ec8bb2a8258c",
+      "window_index": 0
+    },
+    "8db25d3c49ee27839c7f322745aa16564a7f9fea1908442bdd0cd829a9cb58a5": {
+      "context": "This chunk is the revision history and redirect information from the Wikisource page for Carlill v. Carbolic Smoke Ball Company, a legal case document. It documents a page move made by user Cromium on May 4, 2017, changing the case title from \"Carlill v. Carbolic Smoke Ball Company\" to \"Carlill v Carbolic Smoke Ball Company\" to conform with English legal citation conventions.",
+      "text_sha256": "fee3134b6c63287fb8fe830c940e5ea53ba99e424175a0efde3a898f7989e4e6",
+      "window_index": 0
+    }
+  },
+  "doc_id": "case-carlill-carbolic",
+  "generated_at": "2026-08-29T22:26:50Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

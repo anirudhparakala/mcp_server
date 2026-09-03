@@ -1,0 +1,14 @@
+{
+  "content_hash": "5d69e9358f751ee60627ae6fd706efc8c4f507f639b28c8cf4e66bc4acce5eeb",
+  "content_type": "text/html; charset=UTF-8",
+  "doc_id": "law-ca-civil-contracts",
+  "fetched_at": "2026-07-23T20:22:23Z",
+  "final_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550.",
+  "format": "html",
+  "license": "Public domain (California Civil Code; government edict)",
+  "license_ok": true,
+  "raw_filename": "law-ca-civil-contracts.html",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550."
+}

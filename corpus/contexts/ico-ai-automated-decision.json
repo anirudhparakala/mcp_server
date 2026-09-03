@@ -1,0 +1,143 @@
+{
+  "contexts": {
+    "0767475c7d9c5808ebd7cc7da5aa92956e5d62bcea3272f51938fd1a7dbc95a8": {
+      "context": "This is a navigation link to the Glossary section within the ICO's \"Guidance on AI and data protection\" document, which provides definitions of technical and data protection terms used throughout the guidance on ensuring individual rights in AI systems.",
+      "text_sha256": "288279280e9580746a5ddd4aac26a4f3c52fa78ed8e227446595c0c57de912d4",
+      "window_index": 0
+    },
+    "15c6016ea59f5226e0162e009296994caf9850e40a2ae12b0fee18c104b29b85": {
+      "context": "This chunk is from the \"How do we ensure individual rights in our AI systems?\" section of the ICO's Guidance on AI and Data Protection, specifically within the subsection \"How should we ensure individual rights requests for training data?\" It addresses challenges in responding to individual rights requests under UK GDPR Articles 15-20 when personal data is used to train AI systems, including considerations for identifiability, controller-processor relationships, and specific rights such as rectification and erasure.",
+      "text_sha256": "82831326562b4f4c4411f22fdcc1935c8bc0661544a21c100170f666e8355969",
+      "window_index": 0
+    },
+    "15d923eb63bab27a339f093d206496cc0f5a7fc8bb532d86c249ebb2a3ef6bfa": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"How do we ensure individual rights relating to solely automated decisions with legal or similar effect?\" It outlines the specific data protection law provisions, transparency requirements under UK GDPR Articles 13, 14, and 15, and the mandatory safeguards individuals must have when subject to solely automated decision-making with legal or similarly significant effects, including rights to human intervention, explanation, and contestation.",
+      "text_sha256": "a27d6b8dbd698e2c0a30a6fdefdff7b59c37f12261f9358743261bfcad5bfb39",
+      "window_index": 1
+    },
+    "190e60a729f6003d6fe32ccccf3e52f3c95517b85bd610f158e49b189e943e32": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection under the section \"Why could rights relating to automated decisions be a particular issue for AI systems?\" It explains how different types of AI systems\u2014from basic rule-based systems to complex machine learning models\u2014present varying risks and challenges for ensuring individual rights in solely automated decision-making, particularly regarding transparency, interpretability, and the potential for errors with outliers or contested design assumptions.",
+      "text_sha256": "4d4061bdf77aa9c600ec919b0d9269d07c60da4f8affe737bdf8211db5dbf1be",
+      "window_index": 1
+    },
+    "1d4639e49522f921a31603e21ae270e8d15e0992c196432f5f0ffa62dca064aa": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection under the section \"What does 'lack of interpretability' mean?\" within the broader topic of \"What is the role of human oversight?\" It explains how lack of interpretability in AI systems can undermine meaningful human review and inadvertently result in solely automated decision-making, which is a key risk factor discussed in the context of Article 22 of the UK GDPR.",
+      "text_sha256": "2da0aacbcd9d80e1d6e46b20d47173991c4a8bfa3da9b2be923ad02b20f013c1",
+      "window_index": 1
+    },
+    "266c0d6b69dc5ad0a095371deaecd19618f8a6e65f86c66a26393267d7aaac6b": {
+      "context": "This chunk appears at the beginning of the \"How do we ensure individual rights in our AI systems?\" section of the ICO's guidance on AI and data protection. It contains a notice that the guidance is under review due to changes made by the Data (Use and Access) Act, and directs readers to the Plans for new and updated guidance page for information about when updates will occur.",
+      "text_sha256": "b4a344eeb117fba59509e83c51865b0efbd4c24c4003797b8525a74218bffd44",
+      "window_index": 0
+    },
+    "2c9614884737130efe17912c3d0bbe56c29d795b04a0e237b1c0c3cc58c4a3f8": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection, specifically in the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"What does 'automation bias' mean?\" It defines automation bias as a risk factor that can undermine meaningful human input in decision-support AI systems, potentially causing them to fall within the scope of Article 22 of the UK GDPR.",
+      "text_sha256": "a061826cad8592ed1f9296f44e6fc9705915a799e3043e1d59a454d1009f0e85",
+      "window_index": 1
+    },
+    "313456d11739ae24806d100bdfa34cf7c8f80bbbaf3c75b0119d2a3e4c018477": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"What is the role of human oversight?\" and addresses \"How can we address risks of interpretability?\" It explains how to define and measure interpretability in AI systems, discusses different types of AI models and their interpretability levels, and describes approaches like LIME and confidence scores to improve interpretability for human reviewers.",
+      "text_sha256": "0cdf215e34c3a945267ca2eccbb01f42625856364b1a85483a905b3ec677c2ad",
+      "window_index": 2
+    },
+    "31e9f37eb4244cb9f8ab8bed6575cd20e893903d966f3ec42b95c4b54471bcb3": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"What monitoring should we undertake?\" It addresses the requirement for organizations to monitor human reviewer behavior in AI systems to ensure genuine human oversight and maintain compliance with UK GDPR requirements regarding automated decision-making.",
+      "text_sha256": "062bfd15cbf1818025b5fe310aafd7b9bf836251506ce05c73bb9d97ab161264",
+      "window_index": 2
+    },
+    "3b232a724e01ee41a9c22784e8e706e79084767c6b2477210dca7aa985762ad9": {
+      "context": "This chunk is the website header and navigation menu from the ICO's guidance document \"How do we ensure individual rights in our AI systems?\" which is part of the broader \"Guidance on AI and data protection\" section under UK GDPR guidance and resources for organisations.",
+      "text_sha256": "87f08f96dabd7186814ba916d1df61688b765256355823ab36ad6bcd3a56656c",
+      "window_index": 0
+    },
+    "3efbc75f779e797a56dc0d025c2bda863be665dd5760c788f48671bfda6e259b": {
+      "context": "This is the table of contents for the ICO's guidance document \"Guidance on AI and data protection,\" which lists all major sections and subsections covering topics such as accountability, transparency, lawfulness, fairness, security, individual rights, and related resources for organizations implementing AI systems under UK GDPR.",
+      "text_sha256": "dc4519f7254932a0e45d957bbd3be98694f67806bc1b80b1572159050b03b5f3",
+      "window_index": 0
+    },
+    "50387707331fc585c27a4864b7f2b4115f6f67dfa6325df57c0ea117e556b0e2": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically in the section \"How can we address risks of automation bias?\" under \"What is the role of human oversight?\" It provides practical recommendations for organizations to mitigate automation bias\u2014the tendency of human reviewers to over-rely on AI system outputs\u2014by implementing controls during design and development phases and ensuring human reviewers have access to additional factors beyond what the AI system considers.",
+      "text_sha256": "c9674ff1086d48ce7945f946bf684b26e0c9ac88ea6a9ac4caa7a587db71c551",
+      "window_index": 1
+    },
+    "5b6cb041f2d63eead6f933c14baa2946745d47bb380109ff7ed4ef5fb699292c": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"What is the role of human oversight?\" and addresses \"How should we train our staff to address these risks?\" It outlines requirements for training human reviewers to maintain meaningful human oversight in partly automated AI decision-making systems under UK GDPR.",
+      "text_sha256": "cd9461b5750d0f38c603dda3541ee803bae21ce0363a3a449fc58ce3ebfb2dca",
+      "window_index": 2
+    },
+    "672c0bb660039766432861227ed43aebdfa41e3b4d00da3b709aa9f5d76dff66": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection, specifically in the section \"What is the role of human oversight?\" under \"What are the additional risk factors in AI systems?\" It identifies two key risk factors\u2014automation bias and lack of interpretability\u2014that can cause decision-support AI systems to inadvertently become solely automated and fall under Article 22 of the UK GDPR restrictions.",
+      "text_sha256": "065be964db2a2fb31451b7b777440762750a4bae6e0f3f98bc9b8421253b94a3",
+      "window_index": 1
+    },
+    "68c51f04a36ffceca828e6db0c9c214652d6e3c951ef5ec8b03a1c0c108bdc32": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection under the section \"How do we ensure individual rights in our AI systems?\" specifically under the subsection \"What is the role of human oversight?\" It explains the risks of AI systems making legal or similarly significant decisions without human oversight and introduces the requirement for meaningful human oversight as a mitigation strategy under Article 22 of the UK GDPR.",
+      "text_sha256": "1b44baee19142f16546ee2a7b1d0f7a5f15e17a2ee584dd5eba56fd60c105350",
+      "window_index": 1
+    },
+    "7145c0276e36a39fc78864b4a911c4deeb6e3e149b896bea6123773ae1a2a764": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically the section \"What steps should we take to fulfil rights related to automated decision-making?\" under \"How do we ensure individual rights in our AI systems?\" It outlines practical steps organizations should take to implement safeguards for solely automated decisions with legal or similar effect, including requirements for meaningful human review, transparency, explanation of AI logic, and documentation of individual rights exercises.",
+      "text_sha256": "c5d23f9a304b67d032c45c40f95fa460f77462a2d3a5c2da60de670f8821f414",
+      "window_index": 1
+    },
+    "7c13b5f9b507e85262883a6b5854a898e9e65b0bf16d21f4d31cd4a6bd439366": {
+      "context": "This chunk is a table of contents for the \"In detail\" section of the ICO's guidance document \"How do we ensure individual rights in our AI systems?\" which is part of the broader \"Guidance on AI and data protection.\" The four linked subsections listed here outline the main topics covered in this section of the guidance.",
+      "text_sha256": "59e5cad86e5eb65c5322fec8e482db95fb92cb0fa56dc08aa0e98da40ffb443f",
+      "window_index": 0
+    },
+    "93fd2c5e618e59e294c98ebe2d79808457aebc023e3c936206cc3c82ef08c162": {
+      "context": "This chunk appears in the \"Who is this section for?\" subsection of the ICO's guidance document \"How do we ensure individual rights in our AI systems?\" which is part of the broader \"Guidance on AI and data protection\" resource. It identifies the intended audience for this section of the guidance.",
+      "text_sha256": "9624b14a45c09f02cf28dd518dba8b2b5bbe19fdf7a8ce40a0fef33fab53545d",
+      "window_index": 0
+    },
+    "97d76e55a5dec0ca8f8ab8b7aec865c3ecee0f5ada34ae236472477c992aba6a": {
+      "context": "This chunk is from the \"How do we ensure individual rights in our AI systems?\" section of the ICO's Guidance on AI and Data Protection. It discusses how specific individual rights under UK GDPR Articles 13-21 apply to training data in AI systems, including the right to erasure, right to data portability, and right to be informed, with particular focus on the challenges of identifying individuals in training data and fulfilling their data protection rights.",
+      "text_sha256": "4d0ddc5eb020a2bb16c9ffea96ed9e18ba6cd7147cc3ff961a63b0fbe3885fdf",
+      "window_index": 0
+    },
+    "9e827e2f72adbac93708a43483f7f0958f844256f77376a734d37c6cb3e79ea4": {
+      "context": "This chunk is from the ICO's \"Guidance on AI and data protection\" document, specifically the section \"How do we ensure individual rights in our AI systems?\" It introduces how individual rights under UK GDPR Articles 13-21 apply across the AI lifecycle and then focuses on the subsection \"How should we ensure individual rights requests for training data?\" which explains the challenges of identifying individuals in training data and why pre-processing does not remove data protection obligations.",
+      "text_sha256": "406c018385583d9421cf464d2c9c5b37d9016be95505794982d0ec48509a8b09",
+      "window_index": 0
+    },
+    "a84c0436af62c2a9fdb1483350cc7f2579339063415e92f3ee655b1f33836cc4": {
+      "context": "This chunk is the \"At a glance\" summary from the section \"How do we ensure individual rights in our AI systems?\" in the ICO's Guidance on AI and data protection. It provides an overview of the section's main topics, which are detailed in the subsequent subsections covering individual rights at different stages of the AI lifecycle, rights relating to data in models, automated decision-making, and human oversight.",
+      "text_sha256": "b387ef53d5164ace720c49a977eb43b93f2de03d245a857d95ea8b6888bdb991",
+      "window_index": 0
+    },
+    "cfa1eff7e01b8618f63b3c5d937c9da008a652f2115a36b0e61a6d67cca01dfa": {
+      "context": "This chunk is from the ICO's \"Guidance on AI and data protection\" document, specifically the section \"How do we ensure individual rights in our AI systems?\" It covers two subsections: first, guidance on fulfilling the right to be informed when training data lacks identifiers, and second, detailed guidance on ensuring individual rights relating to AI system outputs, including how rights like rectification and data portability apply to model predictions and classifications.",
+      "text_sha256": "8d2fca4dc197aa17f1e93ae0fe989f59e927df656a9bb83993ee211a383e5959",
+      "window_index": 0
+    },
+    "cfcf86abdd21e6ce8ef6f1c8ea32219bc2cae67a1e53482858825c60a950e20a": {
+      "context": "This chunk appears in the ICO's guidance on AI and data protection, specifically in the section \"What steps should we take to fulfil rights related to automated decision-making?\" under \"How do we ensure individual rights in our AI systems?\" It discusses the importance of monitoring and analyzing records of AI system decisions, addressing mistakes through system improvements or suspension, and potential trade-offs of human-in-the-loop oversight regarding privacy and bias reintroduction.",
+      "text_sha256": "398e8cde4d5c55084bee3a80a91e1be50e2e54e43a1d10e66d84818a6869c6df",
+      "window_index": 1
+    },
+    "d50bf907f4a0fd3cc0894ded785e7102a90851450a577543d9b9980985a0104b": {
+      "context": "This chunk appears in the \"Further reading\" section at the end of the subsection \"How do we ensure individual rights relating to solely automated decisions with legal or similar effect?\" in the ICO's guidance on AI and data protection. It provides references to additional ICO resources on automated decision-making rights and notes that while European Data Protection Board guidelines are not binding in the UK regime, they may offer helpful supplementary guidance.",
+      "text_sha256": "d9e524e53a149f6c6a5932f62293c12ac65808475bbf5457b251476efc0365fe",
+      "window_index": 1
+    },
+    "e347f3022c010727b16f6238beb5d6d9b8acc2802d93ee5254cbca59a1816189": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically in the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"Should we distinguish solely from partly automated AI systems?\" It addresses organizational requirements for documenting and managing the intended use of AI systems, distinguishing between solely automated decision-making and decision-support systems, and the role of senior management in risk assessment and accountability.",
+      "text_sha256": "edc8ae778ea37bd8479fc3968a9a97c39f62f56d189a827b144f58e6dafdeeba",
+      "window_index": 1
+    },
+    "f4986c3f9e689f8ced2fad4f10d157d6c0dbb17e5d9504b549cee017c3282ed1": {
+      "context": "This chunk is from the ICO's guidance on AI and data protection, specifically in the section \"What is the difference between solely automated and partly automated decision-making?\" under \"What is the role of human oversight?\" It explains the distinction between automated decision-making systems and decision-support systems, and how Article 22 of the UK GDPR treats them differently, emphasizing that human input in decision-support tools must be meaningful rather than merely rubber-stamping automated recommendations.",
+      "text_sha256": "03121813bb28cd1e9d22176abf37427ef813a4190e3afe36e1b9f7d0a77f5c77",
+      "window_index": 1
+    },
+    "f84b8c7c6e3dd35b68e70d1e1eeece7836c96c5e108015f9f2f4813f8c3f8f06": {
+      "context": "This chunk is from the ICO's \"Guidance on AI and data protection\" document, specifically the section \"How do we ensure individual rights in our AI systems?\" under the subsection \"How do individual rights relate to data contained in the model itself?\" It explains how personal data can be contained within AI models either intentionally (by design, such as in Support Vector Machines) or unintentionally (by accident through data leakage), and provides guidance on fulfilling individual rights requests for access, rectification, and erasure in each scenario.",
+      "text_sha256": "8e5c49c4f151dc2d709f1ef13824e4c9d38d4e9b7e9539bf6c009cfe8ad12179",
+      "window_index": 0
+    }
+  },
+  "doc_id": "ico-ai-automated-decision",
+  "generated_at": "2026-08-29T22:19:17Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

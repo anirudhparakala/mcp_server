@@ -1,0 +1,148 @@
+{
+  "contexts": {
+    "02cb6ecd2844912a2357bf0af75f58e5b1e0833617cedf94b759b71db92a821a": {
+      "context": "This chunk is from Section 5 (Evaluation - SentEval) of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.\" It describes the SentEval toolkit methodology, the seven transfer tasks used to evaluate SBERT sentence embeddings (MR, CR, SUBJ, MPQA, SST, TREC, MRPC), and comparative performance results against other sentence embedding methods like InferSent and Universal Sentence Encoder.",
+      "text_sha256": "f3dd0a53a0c5a892e1d4ecbe3d93c842e47108a57726392b1155d9f3ca5befcc",
+      "window_index": 1
+    },
+    "1881e4c6e4d154c0cb5a9fff6dc3e691583307e6fc5240cae197b965b16a00c0": {
+      "context": "This chunk is from Section 4.2 \"Supervised STS\" in the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych. It describes the evaluation of SBERT on the STS benchmark (STSb) dataset, including the dataset composition, fine-tuning methodology using the regression objective function, and comparative results between different training strategies and model variants.",
+      "text_sha256": "06b83dd6d4b673e23fd1bee15f0efa0e5d0c35cadfb72fda7764a9506672f9b1",
+      "window_index": 0
+    },
+    "19911b574d9c9f8cf2016761dc49e2e061b0625f47f4c4e0a8fe6e6723be1d4e": {
+      "context": "This chunk is from the Introduction section (Section 1) of the arXiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych. It explains the motivation for developing SBERT by describing the computational limitations of BERT's cross-encoder architecture for semantic similarity tasks and introducing SBERT as a solution using siamese networks to create efficient sentence embeddings.",
+      "text_sha256": "2d0a04bb2d0197aa1c62656c12dce62d6e875f382d7d07cde667ba426e645acd",
+      "window_index": 0
+    },
+    "2f9ce328d5d4ed419a28b21cbe0d7f7f184314b0ca80be2c3b5ededd57821e53": {
+      "context": "This chunk is part of the References section of the Sentence-BERT paper, containing bibliographic entries for key works cited throughout the document, including foundational papers on BERT, paraphrase corpora, triplet networks, sentence representations, and customer review analysis.",
+      "text_sha256": "7b0cb19c39246cc8727f50cbe347feeae47caed3e2f27060da0e00449b38a0d5",
+      "window_index": 1
+    },
+    "313058369b7d3d3b05da8f9cc7321a848a419b9932765f91076518d6e7d9d4b6": {
+      "context": "This is the abstract of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Nils Reimers and Iryna Gurevych. The abstract introduces the main problem with BERT for semantic similarity tasks, presents the proposed SBERT solution using siamese and triplet networks, and summarizes the key performance improvements and evaluation results on STS and transfer learning tasks.",
+      "text_sha256": "4f4a81b9786a91eb0419c5f60fde6e50a2b391f051bbfe27d51406e04fe6e4a9",
+      "window_index": 0
+    },
+    "321b45ebfe7888ee75a16e895c8ba60c7cdce55ba4dac0eb5f679448c4a52c5a": {
+      "context": "This chunk is from section 4.1 \"Unsupervised STS\" in the \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" paper by Reimers and Gurevych (arXiv:1908.10084). It presents evaluation results of SBERT on semantic textual similarity tasks without task-specific training data, comparing performance against baseline methods like BERT embeddings, InferSent, and Universal Sentence Encoder using Spearman's rank correlation as the evaluation metric.",
+      "text_sha256": "e10dc0a1c13ec21d14034579e7ccf10ab97b2fae8a1db33137663e61246a89b6",
+      "window_index": 0
+    },
+    "3231dd4fc1ff86e214b65114c4cfde29a5205c91227d0a5cd0841dd67bf88ebc": {
+      "context": "This chunk appears in the Introduction section of the arxiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych (2019). It summarizes the main contributions and performance improvements of SBERT over existing sentence embedding methods like InferSent and Universal Sentence Encoder, and provides an overview of the paper's structure across sections 3-7.",
+      "text_sha256": "91c08d63fcf2201efe516e9db17a59852fbeba58673787d2b0621668ecdb01e9",
+      "window_index": 0
+    },
+    "3748e99461f157fcf6bb112f71127ae34d94f133997636090b0971ea39a35b0a": {
+      "context": "This chunk is from Section 6 (Ablation Study) of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.\" It presents an empirical analysis of different design choices in SBERT, including pooling strategies (MEAN, MAX, CLS) and concatenation methods for the classification objective function, with results measured on the STS benchmark dataset.",
+      "text_sha256": "0754b7d9aba68215668d363b4931cd353b226372aaebc576068bc8e127597f3a",
+      "window_index": 1
+    },
+    "38aa74bf93f0d041033367d4a9a984d6baeea2a77dbd56dde5af8e6fa0224aec": {
+      "context": "This section from the arXiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" provides instructions for reporting HTML rendering errors and contributing to accessibility improvements on the arXiv platform.",
+      "text_sha256": "2c4490804b2e5e7057d2405d7eaa489df1f4ffb958026dbee0e71f53f0d59f73",
+      "window_index": 2
+    },
+    "5379576700398aa2d4f2903c62af734b6e5762b19afa406f3c6109106e166f29": {
+      "context": "This chunk is part of the References section of the Sentence-BERT paper, containing bibliographic entries for works cited throughout the document, including papers on contextualized embeddings, face recognition clustering, sentiment analysis, transformer architectures, and natural language inference datasets.",
+      "text_sha256": "206b67bafb802f875d7ecc0274e09a45f1342e99d7daf6e8b9d32151101ad735",
+      "window_index": 1
+    },
+    "59a4c938768df728947433e09b41fcc8fbf53a106c53e5a07e65b7ae322673ba": {
+      "context": "This conclusion appears in Section 5 (Evaluation - SentEval) of the Sentence-BERT paper, summarizing findings about how standard BERT embeddings perform poorly with distance-based similarity measures compared to the proposed SBERT approach, which uses siamese networks trained on NLI datasets to achieve state-of-the-art results on the SentEval benchmark.",
+      "text_sha256": "31bc6733da948f3f2df30792756f93be34d95c3a97cb89880d656fb80ff1fe8c",
+      "window_index": 1
+    },
+    "63efdfdd6614a06585ddb301402edf8e55a25684ba1a0f942467ab4e84dda23a": {
+      "context": "This chunk is from Section 4.3 \"Argument Facet Similarity\" in the Evaluation - Semantic Textual Similarity section of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych. It describes the evaluation of SBERT on the Argument Facet Similarity (AFS) corpus, including the dataset characteristics, evaluation methodologies, and comparative performance results against other sentence embedding methods.",
+      "text_sha256": "4678bda05f801abe99006635c6973b7e3fffa712ae9bbc18c1dba57dfb8d1d64",
+      "window_index": 0
+    },
+    "7327708966c3a75e6987b2d20ae896d8e456c45c30b6ba6b5723a55fe4fffe07": {
+      "context": "This is the table of contents and header information for the arXiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Nils Reimers and Iryna Gurevych (arXiv:1908.10084v1, August 2019). It lists the paper's main sections including Abstract, Introduction, Related Work, Model, Evaluation sections covering Semantic Textual Similarity and SentEval, Ablation Study, Computational Efficiency, Conclusion, and References.",
+      "text_sha256": "93beb044226ac22947a86203007e7c3a8f11c51cf5771ac1a58d2e1df68c46bd",
+      "window_index": 0
+    },
+    "765f604c46f4c469e5118e21a6c27ab686ab020664d607d0c92e0ef146a91b0a": {
+      "context": "This chunk is from Section 3 (Model) of the arxiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych (2019). It describes the SBERT architecture and the three objective functions used for fine-tuning: Classification Objective Function, Regression Objective Function, and Triplet Objective Function, along with their mathematical formulations and pooling strategies.",
+      "text_sha256": "f355ace74297d5b082e307bca8f26d2bd023f5df05771ecf86c657c436e5a5ba",
+      "window_index": 0
+    },
+    "77e594e8c8c330e0f0e1754c79d7264d429df4d21f578216a6123f7ec874b61e": {
+      "context": "This is the Acknowledgments section of the Sentence-BERT paper (arxiv-reimers-2019-sbert), which lists the funding sources and grants that supported the research on Sentence-BERT sentence embeddings using Siamese BERT-Networks.",
+      "text_sha256": "5aa97cabfe2a09ea93ab35d6220855f7cc7d5ef1555479b977ac788425f3c867",
+      "window_index": 1
+    },
+    "82eddb6847cbbec5d5a3574e12ce8fda7ab7f6f7728408eab0755fe9e6019110": {
+      "context": "This chunk appears in Section 3.1 Training Details of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych. It describes the specific training procedure and hyperparameters used to fine-tune the SBERT model on NLI datasets before evaluation on downstream tasks.",
+      "text_sha256": "899cf75869a88ed1763e2c6a383ac6af7f37c6805d57e968a723ea264ada386c",
+      "window_index": 0
+    },
+    "8c85eeb386e31b7ca5d729d604603fd33b4f2a3f8853f978911a8edf43215b4a": {
+      "context": "This chunk appears in Section 4 \"Evaluation - Semantic Textual Similarity\" of the Sentence-BERT paper by Reimers and Gurevych (arXiv:1908.10084). It introduces the evaluation methodology for assessing SBERT's performance on STS tasks, explaining why cosine-similarity is used instead of pair-wise regression functions for comparing sentence embeddings.",
+      "text_sha256": "0aeac0233577348430dc242ce78299e8eb31134827d40cee41bd36db5e57dd0c",
+      "window_index": 0
+    },
+    "a7cabee863276b7cc7fdee7cefb3c68b124f71a0bfbb653dfc61bf5a7f64796f": {
+      "context": "This chunk is part of the References section of the \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" paper, containing bibliographic entries for works cited throughout the document, including references to methods for similarity search, sentence representation learning, question classification, and BERT variants.",
+      "text_sha256": "e2e49fb242e11ae079019a1dcb373b7550ea04995f9eedff5057eb8bae24bba8",
+      "window_index": 1
+    },
+    "aace9b24e0169949f97e7b8aa78b18240843a0006bbfeae717d5d7e738fd183e": {
+      "context": "This chunk is from the Conclusion section (Section 8) of the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers et al. (2019). It summarizes the key findings and contributions of the paper, including the limitations of standard BERT for sentence embeddings, the proposed SBERT solution using siamese/triplet network architecture, and its computational efficiency advantages over competing methods like InferSent and Universal Sentence Encoder.",
+      "text_sha256": "ae82f64abfdc09c8bae1066d66c1851124c91a9248303b44f2ab0bd2b6857c77",
+      "window_index": 1
+    },
+    "b94683cd3c758233befa048414404ffc64e97a26bdafb622e2d939abf42f3583": {
+      "context": "This chunk is from Section 7 \"Computational Efficiency\" of the Sentence-BERT paper, which compares the computational performance of SBERT against other sentence embedding methods including average GloVe embeddings, InferSent, and Universal Sentence Encoder on CPU and GPU hardware.",
+      "text_sha256": "31553848ca6e61a5a288601d643a6048a57942328609f9bb3de5ea069b1bc590",
+      "window_index": 1
+    },
+    "c9dba50f319961b1cc8407aa7cb1eaff209f15bd18f50cc104134c88ced3882d": {
+      "context": "This chunk appears in the References section of the Sentence-BERT paper (arxiv-reimers-2019-sbert), listing bibliographic citations for works by Yang et al. (2018 and 2019) on semantic textual similarity and language understanding, and Zhang et al. (2019) on BERT-based evaluation metrics.",
+      "text_sha256": "e205eed20c3b34d449376ccd92361685b2beaef4fc5cd01e3e80e88fbe8f3834",
+      "window_index": 1
+    },
+    "d017df6091e2bbb1f886d7921fa83701d523db6e908e43b154c861974917d590": {
+      "context": "This chunk appears in the References section of the Sentence-BERT paper and contains bibliographic entries for multiple SemEval shared tasks on Semantic Textual Similarity (STS) from 2013-2016, which are benchmark datasets used to evaluate the quality of sentence embeddings produced by SBERT.",
+      "text_sha256": "f032dfe8b340c0c8d76dca09ea1eb253495cd6f77e25175a3bf43faa93d505a8",
+      "window_index": 1
+    },
+    "d0693528af52bf1a1e383952207274bb1623babaaf3d9c910ec637c50a22e818": {
+      "context": "This chunk is from Section 2 (Related Work) of the arxiv paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Reimers and Gurevych (2019). It introduces BERT and related transformer models, explaining their architecture and limitations for sentence embedding tasks, which motivates the development of SBERT discussed throughout the paper.",
+      "text_sha256": "e3fbe8cec3c80bc72b5cd08ab7f88848d2e800afa22629815f45aaf8f7c5e929",
+      "window_index": 0
+    },
+    "d7921ab22f479cf58b9acd0088b107310d340616639eab67a25182e9be022fdf": {
+      "context": "This chunk appears in Section 4.4 \"Wikipedia Sections Distinction\" of the Sentence-BERT paper by Reimers and Gurevych (arXiv:1908.10084). It describes the evaluation of SBERT on a Wikipedia-based dataset created by Dor et al. that uses weakly labeled sentence triplets to test whether sentence embeddings can distinguish between sentences from different sections of the same article, using triplet loss as the training objective.",
+      "text_sha256": "60a2f0f1b0fb94289d9ea10656b1cf26550226edf65d2c086717aa443496e743",
+      "window_index": 0
+    },
+    "e096d4d9b9ed7c7a18206765cc16ead4033b595c8d277dd94f795ff238db549f": {
+      "context": "This is the author and affiliation information for the paper \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\" by Nils Reimers and Iryna Gurevych from Technische Universit\u00e4t Darmstadt, appearing immediately after the paper title on the arXiv document.",
+      "text_sha256": "690469fb1ad4a44ccfe36f44ce7cd73f3d6103ecb13c5bd199b5db4d1d5d853d",
+      "window_index": 0
+    },
+    "eea797ffc2f78636a3fbbfdf1181a7a14e5e1989f3b9a4982bc30043981ae6ee": {
+      "context": "This chunk is part of the References section of the Sentence-BERT paper, containing bibliographic entries for works cited throughout the document, including references to sentiment analysis datasets (Pang and Lee), word embeddings (Pennington et al. GloVe), and semantic textual similarity evaluation methods (Reimers et al.).",
+      "text_sha256": "bfcaf6be3cfb89eca144793c10f1a7d1d6b0f4eb1c55c8fe24419b2de9256583",
+      "window_index": 1
+    },
+    "f2a8c225f8eb0709b2ce6ec668096fb14fbba81cd27a70dd44f8490cd6e556e0": {
+      "context": "This chunk is part of the References section of the Sentence-BERT paper (arxiv-reimers-2019-sbert). It contains bibliographic citations for key works referenced throughout the paper, including foundational datasets and methods for semantic textual similarity evaluation (SemEval tasks), natural language inference (Bowman et al.), and sentence embedding approaches (Universal Sentence Encoder, SentEval toolkit, InferSent).",
+      "text_sha256": "f743219f80bee20bf97a42c6169b155909e4383e5d695f3628e17b172fe280d1",
+      "window_index": 1
+    },
+    "f98925bdfeb9807dc5eaca9a38bbe24bbe3ea087173c2c765ca2d729162f0d47": {
+      "context": "This chunk appears in Section 2 (Related Work) of the Sentence-BERT paper, where it surveys existing sentence embedding methods and approaches. It discusses prior work including Skip-Thought, InferSent, Universal Sentence Encoder, and poly-encoders, before explaining how SBERT differs by fine-tuning pre-trained BERT and RoBERTa rather than training from random initialization.",
+      "text_sha256": "b242e34510ff06941f026a8d46fbc858eebbd4c7294c28999ac41363e61717e0",
+      "window_index": 0
+    }
+  },
+  "doc_id": "arxiv-reimers-2019-sbert",
+  "generated_at": "2026-08-29T21:46:27Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

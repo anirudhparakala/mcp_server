@@ -1,0 +1,14 @@
+{
+  "content_hash": "8204255d2877a8e8b158b4c9188bcd1437d25178e426cbf4779d84807413c18d",
+  "content_type": null,
+  "doc_id": "sample-gym-liability-waiver",
+  "fetched_at": "2026-07-29T14:54:18Z",
+  "final_url": "corpus\\authored\\sample-gym-liability-waiver.html",
+  "format": "html",
+  "license": "CC0 1.0 (original work authored for this corpus; placeholder facility, no real entity)",
+  "license_ok": true,
+  "raw_filename": "sample-gym-liability-waiver.html",
+  "recipe": "local",
+  "resolved_version": "sha256:8204255d2877a8e8b158b4c9188bcd1437d25178e426cbf4779d84807413c18d",
+  "source_url": "corpus/authored/sample-gym-liability-waiver.html"
+}

@@ -1,0 +1,14 @@
+{
+  "content_hash": "82b58b36bdc47edc34b0405304915cbed3037639152868605f745131b5a541db",
+  "content_type": "application/pdf",
+  "doc_id": "pmc-resistance-training-review",
+  "fetched_at": "2026-07-29T14:54:20Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC8990091",
+  "format": "pdf",
+  "license": "CC BY (Frontiers in Public Health; via Europe PMC PMC8990091)",
+  "license_ok": true,
+  "raw_filename": "pmc-resistance-training-review.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC8990091?pdf=render"
+}

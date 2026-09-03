@@ -19,6 +19,12 @@ htmlcov/
 # Built knowledge-base index (shipped as release asset, never committed)
 ckb/
 
+# Pinned raw source bytes: keep the pin RECORD (*.meta.json) in git, ignore the bytes.
+# Bytes live in the local cache and are re-fetchable + hash-verified from the meta.
+corpus/raw/*
+!corpus/raw/.gitkeep
+!corpus/raw/*.meta.json
+
 # Databases / local stores
 *.sqlite
 *.sqlite3

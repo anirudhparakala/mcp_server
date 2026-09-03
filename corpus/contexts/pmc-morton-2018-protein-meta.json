@@ -1,0 +1,223 @@
+{
+  "contexts": {
+    "0aacdda0587d6cbd059f97fcf5282fa27afad1cd3bf3c37f0469519ea7a1db4b": {
+      "context": "This chunk appears in the \"Meta-regression\" section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The section describes the methodology for conducting meta-regression analyses to identify sources of heterogeneity in the study outcomes, specifying the four a priori chosen covariates (baseline protein intake, postexercise protein dose, age, and training status) and additional post hoc covariates examined to explain variance in the effects of protein supplementation during resistance exercise training.",
+      "text_sha256": "a79843c2c6d3f52b2905326d09596ede7e73c8fd2c3348019faa105228c804a5",
+      "window_index": 0
+    },
+    "147ed6873316f86591ca3dd3eeb79ea3dd48f0ff41cf65da8e432d8832def83a": {
+      "context": "This chunk appears in the \"Sensitivity analyses\" section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The section describes how nine high-risk studies were tested for their impact on the meta-analysis results, with particular attention to how including the Mitchell et al. study affected findings on muscle fiber cross-sectional area (fibre CSA).",
+      "text_sha256": "9e19e26d9044a332d6621dfb81a149bce441e304852f538152ca0916a6736a78",
+      "window_index": 0
+    },
+    "1630f62feff7d02057b587842cbb6ee3ed4d6f047dc19cd2f37982ca3a3a5bcc": {
+      "context": "This chunk lists the institutional affiliations of the eight authors of a systematic review and meta-analysis on protein supplementation and resistance training, published in the British Journal of Sports Medicine in 2018. The affiliations are presented at the beginning of the paper following the title and author names.",
+      "text_sha256": "fb10e1c1b1af41eaa8b03a4da3f1b2cf92612ed1bd79c29507d5faef33807fe2",
+      "window_index": 0
+    },
+    "1b1cb01163beb1debaa78fe60f38cb4cedf8b3d866c7f28b93e305bb4beea3f1": {
+      "context": "This chunk describes the search strategy section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. It details the literature search methodology across four databases, the screening process that reduced 3056 initial studies to 49 randomized controlled trials for final inclusion.",
+      "text_sha256": "6046e6b1063c91d8e95dd45d2d8c976f7d2a5203bb80e1c21fbdcd0d5135228b",
+      "window_index": 0
+    },
+    "2cc6e057006592c70158e031dc221a4d5cf1c224a624d71a28c80c341d7e4d1b": {
+      "context": "This chunk describes the inclusion criteria section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The criteria specify requirements for randomized controlled trials to be eligible for inclusion in the analysis.",
+      "text_sha256": "e6ced5c6bd7f65eff307a6f54231c85da91cfea9e3e4267451b94ef96632bef0",
+      "window_index": 0
+    },
+    "38e01d7a796384ab1c2f1a62442a6e13e7e68f697d2fe4fb45687398fba5a380": {
+      "context": "This is the Conclusion section of a meta-analysis examining the effects of dietary protein supplementation during resistance exercise training (RET). The chunk summarizes key findings about protein supplementation efficacy across different populations, optimal protein intake levels (~1.6 g/kg/day), and sex-based differences, while emphasizing that RET itself is the primary driver of muscle mass and strength gains.",
+      "text_sha256": "acbdbd957f4dd30b4c62cc25aae9ef6b75b6567c283b9b72faa57689a15dba12",
+      "window_index": 2
+    },
+    "3c94cec9e92163341c5f334ef11b3dd9c96d3e0ea6d0258a24b2aaabd06f5034": {
+      "context": "This chunk appears in the Discussion section of a meta-analysis on protein supplementation during resistance exercise training (RET). It discusses the limitations of the meta-analysis, including insufficient research in older individuals, the scope of included studies, and conclusions about protein dosing strategies for optimizing muscle mass and strength gains with RET.",
+      "text_sha256": "e3f57c588c2464cdf10052664563086fda487caca1b586b5152326eaaa56630b",
+      "window_index": 1
+    },
+    "4b9c7acca1ee7eae467aad2f34b2f8223813b372bc0142669a08cea774235fa3": {
+      "context": "This is the author byline for a systematic review and meta-analysis published in the British Journal of Sports Medicine in 2018, examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults.",
+      "text_sha256": "51f445afe1ddd8343de9dbcf432e7b73ee5301c056e5a57113f7898d3049024f",
+      "window_index": 0
+    },
+    "4ca29a86383c870a82b1fac1548a9b49a61c1883d8f7fab85a862328f9900188": {
+      "context": "This chunk presents the main meta-analysis results from Morton et al.'s 2018 systematic review examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The results section reports effect sizes and statistical significance for multiple outcomes including one-repetition-maximum strength (1RM), maximum voluntary contraction (MVC), total body mass (TBM), fat-free mass (FFM), fat mass (FM), muscle fiber cross-sectional area (CSA), and mid-femur CSA across 49 randomized controlled trials with 1863 participants.",
+      "text_sha256": "806094c6a680bca4db86f9dd359b903e7636b4f1c91d6bd847163d6536980c3e",
+      "window_index": 0
+    },
+    "4cb1b639a5d71c0ebb8dfc7b1f8da4fd8cf9cbc353ff5da7d39ac59973359e89": {
+      "context": "This is the correspondence and publication information section for a systematic review and meta-analysis on protein supplementation and resistance training, published in the British Journal of Sports Medicine in 2018. The chunk provides the corresponding author's contact details, acceptance and publication dates, and the full citation for the study.",
+      "text_sha256": "8863462fb3748cdc54b429fd51b35eeb2f5aec186020a16e588f532b0afcd66b",
+      "window_index": 0
+    },
+    "4d3f680f8fd54d0acdc5c236bf630f0cc603f77651aa1beaea166e2a59047bde": {
+      "context": "This chunk describes the break point analysis methodology section of a systematic review and meta-analysis by Morton et al. examining the effect of protein supplementation on resistance training-induced muscle gains. The break point analysis was a mechanism-based statistical approach used to determine the protein intake threshold beyond which protein supplementation ceases to provide measurable benefits in increasing muscle mass during resistance exercise training.",
+      "text_sha256": "565949edb24ff0fbb298f6bec9f89ff973018f89490f4110fa60d1797afeed09",
+      "window_index": 0
+    },
+    "4f205d38f18e28145023efb2fd8a45f114947123f5ac37271cb9ccf0cad25c6a": {
+      "context": "This chunk is from the Discussion section of a meta-analysis on protein supplementation and resistance exercise training (RET) outcomes. It presents the main findings regarding how dietary protein supplementation affects one-repetition maximum strength (1RM) and fat-free mass (FFM), and compares this meta-analysis to previous research on protein supplementation during RET.",
+      "text_sha256": "1c5c67e4e53c7e8c2f2140642f9a04e0fbce11396ae092d7ed3ba86cecaf2543",
+      "window_index": 1
+    },
+    "59f2584b79e7cc68548399c39fcba92f4aea35c912d4d3eb90b7107fc83a9295": {
+      "context": "This statement appears in the Background section of a meta-analysis examining the effects of dietary protein supplementation on muscle mass and strength during resistance exercise training, establishing the knowledge gap that motivated the systematic review.",
+      "text_sha256": "c39f2c31ad3d6ef631718c7be98e90c5564a6c81d76a611e4bc6f196638d535d",
+      "window_index": 2
+    },
+    "5a6da40b4545450fe68e92e08670cc690277e136f44ac5a7e251459498587638": {
+      "context": "This chunk comprises references 76-88 from a meta-analysis on protein supplementation and resistance exercise training (RET). These citations support the document's conclusions about optimal protein intake levels during RET, particularly regarding protein requirements in older adults, dose-response relationships between protein ingestion and muscle protein synthesis, and dietary protein recommendations for athletes and resistance-trained individuals.",
+      "text_sha256": "c9eb4237cfece0c5e1376597c1b67e016dde10d1a24ece062eb446c051ef82c1",
+      "window_index": 2
+    },
+    "63ca1337bf4d72351a7da6c81f1c619608642ecdcd896f5722df6bacd052d0e9": {
+      "context": "This chunk appears in the Muscle mass section of the Discussion in a meta-analysis on protein supplementation during resistance exercise training (RET). It presents the break point analysis findings showing a plateau in fat-free mass (FFM) gains at 1.62 g protein/kg/day, which is referenced in Figure 5 and represents the study's evidence-based protein intake recommendation for maximizing muscle adaptation during RET.",
+      "text_sha256": "9d3515c78593f503b7108b58328b8832514aeecbf12b97774a78a1419b4dc03f",
+      "window_index": 1
+    },
+    "64f5a993256d15f8ba58a72e3f0a95664ecb2be630b896e872aac19d61ed3edf": {
+      "context": "This is the abstract section of a systematic review and meta-analysis by Morton et al. published in the British Journal of Sports Medicine in 2018, examining the effects of protein supplementation on resistance training-induced gains in muscle mass and strength. The abstract summarizes the study's objective, methods, key results from 49 randomized controlled trials involving 1863 participants, and main conclusions regarding protein intake thresholds and age-related efficacy differences.",
+      "text_sha256": "d38f7f0ed2a1cc411f1a3cf4c2b5b3900f2351b7f8b6b63b7b2bbca49f523367",
+      "window_index": 0
+    },
+    "6e04f4b8aafc249c1b5a8d349186aaea5de699ec5e7dc80fb56570a6c5491728": {
+      "context": "This chunk from the Meta-regression section of a protein supplementation meta-analysis presents univariate meta-regression findings on how age, baseline protein intake, post-exercise protein dose, and training status affect changes in fiber cross-sectional area (CSA) following resistance exercise training (RET), and identifies whole-body and supervised RET as significant moderators of protein supplementation effectiveness on one-repetition maximum (1RM) strength gains.",
+      "text_sha256": "dcead49de7054b47236d20ab9fa1097d2803840230b42235ef0cc5674dd86e5d",
+      "window_index": 1
+    },
+    "730e4b6dcbff950a28cb96705702c537418aa6195e61af2bee01b164c94c8dd8": {
+      "context": "This section describes the resistance exercise training (RET) characteristics across the 49 studies included in Morton et al.'s systematic review and meta-analysis examining the effect of protein supplementation on muscle mass and strength gains. The chunk details the duration, frequency, volume, and types of RET protocols used in the included trials.",
+      "text_sha256": "c4a044b3cfa2e56c53373cb285efd3004cf8e631081b3cada5e13f148e963ac7",
+      "window_index": 0
+    },
+    "806689f4b6fd83365e82dd866685ecee77fcf27095b7b2eb86d99c7515e9f018": {
+      "context": "This chunk contains references 28-37 from the References section of a meta-analysis on protein supplementation during resistance exercise training (RET). These citations document individual studies examining the effects of various protein supplements (whey, soy, casein) combined with resistance training on muscle mass, strength, and body composition across different populations including young adults, older men, and untrained individuals.",
+      "text_sha256": "35d0a7328a194adc669287c62497790450b528b11c8aabea0d17a2ead0c6f573",
+      "window_index": 2
+    },
+    "8f8aa03b6f6c93de5e6a57fab9871ee6ddc70fd4a452dfad11539a5d23b26da0": {
+      "context": "This chunk describes the statistical methods used in the meta-analyses section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The chunk explains how effect sizes were calculated and presented for different outcome measures including strength (1RM), body composition (TBM, FFM, FM), muscle fiber cross-sectional area (CSA), and maximum voluntary contraction (MVC).",
+      "text_sha256": "d64e596ab1273a4d3df67881749b4cc1a88fb5510dade4e8c6e32370adf27bc3",
+      "window_index": 0
+    },
+    "95a68385ab7f28112059131233a757fbf8e00a0a4f9aed12fd767f69157a3d05": {
+      "context": "This chunk is from Table 1 in the Meta-regression section of a 2018 meta-analysis on protein supplementation and resistance exercise training (RET). It presents the full model meta-regression results examining how baseline protein intake, protein dose, age, and training status together explain variance in changes in fat-free mass (FFM) across 15 studies with 15 participants, showing no significant effect of training status on FFM changes (p=0.48).",
+      "text_sha256": "a144050df878973274c32240aa820086c8c7de21a27cab2cf599220c33b0b002",
+      "window_index": 1
+    },
+    "9a6be915330ec50234c058cddc4335b64e92e21f70e0b29320bd7b4dbd2b7a0c": {
+      "context": "This is Table 1 from the Meta-regression section of a meta-analysis on protein supplementation during resistance exercise training (RET). The table presents meta-regression output comparing effects of protein supplementation on one-repetition-maximum strength (1RM) and fat-free mass (FFM) across different covariates including baseline protein intake, protein dose, age, and training status.",
+      "text_sha256": "b523d0dac9db27823d04617d5c2c9f67a1cbd9be423dc2334a93e1e0247b73da",
+      "window_index": 1
+    },
+    "a0db9a736e35760dbf5f1e0e5e954228e495fc60ecc5beb6bfb9ee0236c81a03": {
+      "context": "This chunk contains detailed meta-regression statistical results from Table 1 in the Meta-regression section of a meta-analysis on protein supplementation during resistance exercise training (RET). The table presents univariate meta-regression output examining how covariates including protein dose, age, and training status influence the effects of protein supplementation on one-repetition maximum strength (1RM) and fat-free mass (FFM) outcomes across multiple studies.",
+      "text_sha256": "4f6cc98b915fb8691939a381ca9da92732683a095195ca39f626622cf3e4b9b5",
+      "window_index": 1
+    },
+    "a3f03f2e2f2ff6874ade5eb29e0c456d9b4f6c6b712155ef0911d4b5a9bd4281": {
+      "context": "This section describes the subgroup analyses methodology used in a systematic review and meta-analysis examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The chunk explains how subgroup analyses were conducted to examine training status (untrained vs trained) and age categories (old vs young) as factors influencing changes in fat-free mass (FFM) and one-repetition-maximum strength (1RM).",
+      "text_sha256": "3d3306049a77ca6a5a5ad6265fe87197af2b66e3bc4fa618bffbd5085f8d8cfd",
+      "window_index": 0
+    },
+    "a5beb39bcad887d74054c8c4a38996985b33214bf895814da06f8b329e07d8b2": {
+      "context": "This chunk presents the novel findings section of a meta-analysis on protein supplementation during resistance exercise training (RET), reporting quantitative results on fat-free mass and strength gains across different populations, followed by manuscript contributor and publication information.",
+      "text_sha256": "fad2994893fd24182c8b5cb026a140492cb5e1d374d2819d482f7e69a044752a",
+      "window_index": 2
+    },
+    "a838b4675ed8114ee2a0d4b8e66d79f322f60d5f31e6f1b1999f830266d6e896": {
+      "context": "This chunk is part of Table 1 in the Meta-regression section of a meta-analysis on protein supplementation during resistance exercise training (RET). It presents meta-regression output showing coefficients, confidence intervals, and p-values for the relationship between various covariates (baseline protein intake, protein dose, age, and training status) and changes in one-repetition maximum (1RM) strength and fat-free mass (FFM) across multiple studies.",
+      "text_sha256": "787c03af7e372608318d7b40a2223658983a432c6defbfc1902dcd9eca3c1b50",
+      "window_index": 1
+    },
+    "b14d243f27b8da4a79129bbeee72dc40c7b4ace6890a5fa83ba44a15a5d52f50": {
+      "context": "This section from the \"Protein supplementation\" subsection of the Results describes the specific details of protein supplementation protocols used across the 49 studies included in the meta-analysis, including daily protein doses, types of protein sources (whey, casein, soy, milk, whole food), timing of supplementation relative to resistance exercise training (RET), and changes in daily and relative protein intake between protein-supplemented and control groups.",
+      "text_sha256": "3309bfb07854546daefc742fdda4b2a5105b088ed8e8b182607c91fb12874c10",
+      "window_index": 0
+    },
+    "b5499e37b396d0b6f46501feea36df87b7940df09547289a524a12171395f1e0": {
+      "context": "This is the References section (citations 1-14) from a meta-analysis on protein supplementation and resistance exercise training (RET). The references support the document's background, novel findings, and conclusions regarding the efficacy of dietary protein supplementation for augmenting changes in fat-free mass and strength during prolonged resistance training, with particular attention to differences across age groups and training experience levels.",
+      "text_sha256": "b5006ee7044e7dc69bc99d57fbe3fc7fa21d67ff16f6b6e2fab6140854edc55d",
+      "window_index": 2
+    },
+    "b982881d5f663fe3b63781bbd4e8cdae0b6f8fd35d8973b19931122edcf7744c": {
+      "context": "This chunk from the Introduction section of Morton et al.'s 2018 systematic review and meta-analysis establishes the rationale for the study by discussing conflicting evidence on protein supplementation's effectiveness during resistance exercise training, explaining why previous meta-analyses yielded inconsistent results, and outlining the authors' approach using meta-regression and break-point analysis to determine optimal protein intake levels for muscle gains.",
+      "text_sha256": "e79e0bfb0e65d976ffa850fd1ee6847ab6953031a7321053354ad2f23ac1893e",
+      "window_index": 0
+    },
+    "ba692cf3f4bc165888600dc2c06beb0532bd29faff2b39741f3639b04fa5e8ce": {
+      "context": "This chunk appears in the \"Muscle mass\" section of the Discussion in a meta-analysis on protein supplementation during resistance exercise training (RET). It presents findings on how dietary protein supplementation affects fat-free mass (FFM), fiber cross-sectional area (CSA), and mid-femur CSA, and discusses how training status and age modify these effects.",
+      "text_sha256": "1085ea56d754ef72186a9409ceb94656d60771dd499c0340eddea0209b5623e8",
+      "window_index": 1
+    },
+    "c71bde492a72cd877b6ac1a763aa35480aa30a46e4d4138099256ebfe63335e5": {
+      "context": "This chunk contains references 50-61 from a meta-analysis on protein supplementation and resistance exercise training (RET). These citations are part of the References section of the document and represent individual studies reviewed in the systematic review examining the effects of dietary protein supplementation on muscle mass and strength gains during prolonged resistance training.",
+      "text_sha256": "7accd33ff8eb9217a862681742a13a87d6298a01589a71586836b0ca32564b40",
+      "window_index": 2
+    },
+    "cffabaa13dea80d028a5e4b426ba62a819e05245be88501121ba8efef5848608": {
+      "context": "This chunk appears in the \"Participant characteristics\" section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The chunk summarizes the basic demographic and study composition data for the 49 randomized controlled trials included in the meta-analysis.",
+      "text_sha256": "9e7ccc9e16ff1a9ad1089490e7396fc61625dc40b2401a74266db6bb3cefafe3",
+      "window_index": 0
+    },
+    "d1b73b949ef3683362e6f7f9dc6390a46e513b0a8069ebcfc1dd5201488486ae": {
+      "context": "This chunk contains references 38-49 from the References section of a meta-analysis on protein supplementation during resistance exercise training (RET). These citations represent individual studies examining the effects of various protein supplements on muscle mass, strength, and body composition in different populations including young weightlifters, college athletes, elderly individuals, and women undergoing resistance training.",
+      "text_sha256": "ccb6c00e112445da2f52b514080f934fc64c2fe614b83b0267a9e2b4724a776c",
+      "window_index": 2
+    },
+    "d5f46a887af8ae732e21047370172e48aeb92b838353d88210d47b8a0c309ade": {
+      "context": "This chunk presents break point analysis results from a meta-analysis on protein supplementation and resistance exercise training (RET). It reports biphasic regression findings showing a plateau in fat-free mass (FFM) gains at 1.62 g/kg/day total daily protein intake, and compares linear versus biphasic regression models when examining baseline protein intake effects across age groups. The chunk includes Table 1 meta-regression output data referenced throughout the document's analysis of how protein dose, age, training status, and baseline protein intake influence RET-induced changes in strength and muscle mass.",
+      "text_sha256": "0d37ba2a5d8e19745b1b3fb72e147e40fa47feb964acc0a1b7a85cd8d2070f58",
+      "window_index": 1
+    },
+    "da0b392754b3ed7ba9846364d850864a997d7ef69d564bfe43f2b9c1f67cb28a": {
+      "context": "This is a section of the References list from a meta-analysis on protein supplementation and resistance exercise training (RET). The references cited here (numbers 15-27) include methodological sources and individual studies examining the effects of protein supplementation combined with resistance training on muscle mass, strength, and body composition across various populations including young, older, trained, and untrained individuals.",
+      "text_sha256": "8e5600d246ec0e66ea64c246c809680eaf83970a7a1765a5e06cecec8c49c13c",
+      "window_index": 2
+    },
+    "dc5042370ff33da3686b51c21a293e2a361138188fa7e5f051bb3c6fc87c8cf8": {
+      "context": "This chunk is from the Meta-regression section of a meta-analysis on protein supplementation during resistance exercise training (RET). It presents results from full model and univariate meta-regressions examining how baseline protein intake, protein dose, age, and training status affect changes in one-repetition-maximum strength (1RM) and fat-free mass (FFM), with Figure 2 showing forest plot results for 1RM outcomes across untrained and trained participants.",
+      "text_sha256": "bbb6192f31483f17d74edca1fd588e5226961c51ebf2c856dee169a14a0d13c9",
+      "window_index": 1
+    },
+    "dc917a1c57c899ba874b915bffa410e252448e8ce3291cc61c92beb35d36890e": {
+      "context": "This chunk is from the \"Data syntheses\" section of a systematic review and meta-analysis on protein supplementation and resistance training by Morton et al., published in the British Journal of Sports Medicine (2018). It describes the standardized procedures used to prepare and process data from the 49 included randomized controlled trials for meta-analysis, including unit conversions, selection of comparator groups, time point selection, and calculation of effect size measures using RevMan software.",
+      "text_sha256": "7a61cdb0bb5c4793ce49df11eb9bd864d7dcbae8d3f87b19fcaa99a777daae57",
+      "window_index": 0
+    },
+    "e9d04fe6f50703f78436693cde624880b35e4837d51991ae6244018ef9d75210": {
+      "context": "This section describes the data extraction methods used in the systematic review and meta-analysis of protein supplementation and resistance training. It details how predetermined variables were collected from the 49 included randomized controlled trials by three independent investigators, the quality control procedures employed, and the specific primary outcomes selected for analysis, including performance measures (1RM and MVC) and body composition outcomes (TBM, FFM, FM, muscle fiber CSA, and mid-femur CSA).",
+      "text_sha256": "9155464be72e873d7ca7688f11a2470039571b16a642893b5c6b8b4a6e33fd42",
+      "window_index": 0
+    },
+    "ee706ecd03ed7e54a7d7078668a3e0b76c4f7fb0dbd90490e98d7f968b814175": {
+      "context": "This chunk describes the methods for assessing heterogeneity and risk of bias in the meta-analysis section of Morton et al.'s 2018 systematic review and meta-analysis examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The section explains how studies were evaluated for internal validity and which studies were included or excluded based on risk of bias criteria.",
+      "text_sha256": "da955c1d28efca0c4a14081925040fbb263daef3ae1fa20ae7a3dec0df5bde3a",
+      "window_index": 0
+    },
+    "f0e8409dab1c531065edf3d1d8e7bfda3a80ef4fd0d8f40bdd56674e18b621b1": {
+      "context": "This chunk appears in the \"Strength\" subsection of the Discussion section of a meta-analysis on protein supplementation during resistance exercise training (RET). It presents findings on how dietary protein supplementation affects one-repetition maximum (1RM) strength gains, comparing the effect size of protein supplementation (2.49 kg increase) against the baseline RET-induced strength increase (27 kg), and discusses which factors influence protein supplementation's efficacy on 1RM changes.",
+      "text_sha256": "d2edecd0281345c701860c950cb9cedfaa3b288da895ec827440366efdaef250",
+      "window_index": 1
+    },
+    "f176a42307164f2be74d4b265a9cf62defa05958a8f37c8f75471dd129d90bd0": {
+      "context": "This chunk appears in the \"Heterogeneity and risk of bias\" results section of a systematic review and meta-analysis by Morton et al. (2018) examining the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. The chunk describes the assessment of statistical heterogeneity across outcome measures and the removal of studies with high risk of bias or publication bias before conducting the meta-analyses.",
+      "text_sha256": "fbe6700c5a320f986e8985c696814250726da596bbb3b8bde6a54e295872b41c",
+      "window_index": 0
+    },
+    "f8faf228c49903c1ce0c8ea233a79fda991f83af65024ece68239b790cb06ccb": {
+      "context": "This chunk appears in the Muscle mass section of the Discussion in a meta-analysis examining the effects of dietary protein supplementation on resistance exercise training (RET)-induced changes in muscle mass and strength. The chunk discusses how baseline protein intake affects the efficacy of protein supplementation on fat-free mass (FFM) gains, presenting findings from meta-regression analyses stratified by age groups and providing evidence-based protein intake recommendations for individuals undergoing RET.",
+      "text_sha256": "77e3598c5fa1159200e6c5a46e6d3f6ead29816ef8fea504af628d73ccb6ccc1",
+      "window_index": 1
+    },
+    "fdd06147a03bc31c73987ae66f459ee13c0e19ee9db003a41989099061fd0e97": {
+      "context": "This chunk comprises references 62-75 from the References section of a meta-analysis on protein supplementation during resistance exercise training (RET). The references support the study's findings on protein supplementation's effects on muscle mass and strength, including studies on whey protein, amino acid supplementation, muscle protein synthesis, and protein intake recommendations in various populations.",
+      "text_sha256": "0785c2af26b0ad3a9ce986ff2129499506c41409d97897117266de44e683379d",
+      "window_index": 2
+    }
+  },
+  "doc_id": "pmc-morton-2018-protein-meta",
+  "generated_at": "2026-08-31T19:24:30Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

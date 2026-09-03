@@ -1,0 +1,14 @@
+{
+  "content_hash": "44d440b5ea563a5fc30d56f5f27e99b2480e9939056fe3f8b726f8518bdfc263",
+  "content_type": "text/html; charset=UTF-8",
+  "doc_id": "wiki-transformer-dl",
+  "fetched_at": "2026-07-23T17:06:39Z",
+  "final_url": "https://en.wikipedia.org/w/index.php?title=Transformer_(deep_learning_architecture)&oldid=1362319941",
+  "format": "html",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "license_ok": true,
+  "raw_filename": "wiki-transformer-dl.html",
+  "recipe": "generic",
+  "resolved_version": "oldid-1362319941",
+  "source_url": "https://en.wikipedia.org/w/index.php?title=Transformer_(deep_learning_architecture)&oldid=1362319941"
+}

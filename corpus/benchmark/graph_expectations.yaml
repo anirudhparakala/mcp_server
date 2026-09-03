@@ -1,0 +1,29 @@
+# Cross-reference ground truth (ingest design sec6; Phase-1 exit criterion).
+# Each entry asserts that at least one resolved `references` edge runs from a chunk
+# of `from_slug` to a chunk of `to_slug`. Authored 2026-08-11 from measured corpus
+# facts, not from assumption:
+#   - EDPB automated-decisions guidelines cite "Article 22" repeatedly across many
+#     chunks; GDPR defines Article 22.
+#   - EDPB consent guidelines cite GDPR articles (e.g. Article 7) repeatedly;
+#     GDPR defines those articles.
+#   - ucc-article-2 sec.2202 cites "(Section 1303)"; ucc-article-1 would define
+#     sec.1303, but does not currently -- see the pending entry below.
+- name: edpb-to-gdpr-article-22
+  from_slug: edpb-guidelines-automated-decisions
+  to_slug: eurlex-gdpr-2016-679
+  min_edges: 1
+- name: edpb-consent-to-gdpr
+  from_slug: edpb-guidelines-consent
+  to_slug: eurlex-gdpr-2016-679
+  min_edges: 1
+# ACTIVE as of 2026-08-11. This pair was `pending: true` because ucc-article-1's pinned
+# URL fetched CA Commercial Code Division 1 CHAPTER 2 (secs 1201-1206), while the citation
+# that links the pair is ucc-article-2 sec.2202's "(Section 1303)" -- and sec.1303 lives in
+# Division 1 CHAPTER 3, which had never been fetched. The manifest URL was repointed to
+# Chapter 3 and the corpus re-fetched/re-parsed, so sec.1303 now has a real anchor.
+# Resolves as ucc-article-2 chunk 3 --'Section 1303'--> ucc-article-1 chunk 4.
+# min_edges was never lowered to force a pass.
+- name: ucc-article2-to-article1
+  from_slug: ucc-article-2
+  to_slug: ucc-article-1
+  min_edges: 1

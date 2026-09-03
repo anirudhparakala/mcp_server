@@ -1,0 +1,498 @@
+{
+  "contexts": {
+    "02ce223997043e8fd539d2fdf672095a5a029eadad8a34c06c458452fa871f19": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation (GDPR), specifically from the \"Pseudonymisation\" subsection under \"Controller and processor.\" It explains pseudonymisation as a required data protection technique under the GDPR, providing examples such as encryption and tokenisation, and describes how these methods help controllers and processors meet their data protection obligations.",
+      "text_sha256": "682403c8e4122c2fa5b4547a35f95827fcfd1cf7df1ee694f371e1eb05813ed6",
+      "window_index": 1
+    },
+    "05571cc7d30ef7bdf5436aa1fdfc0825d8730eb7ef12f469cd953a4753262082": {
+      "context": "This section from the Wikipedia article on the General Data Protection Regulation provides a chronological timeline of key dates in the GDPR's development and implementation, spanning from the initial proposal in January 2012 through its application in EEA countries in July 2018, including parliamentary votes, negotiations, formal adoption, and the regulation's entry into force across EU member states.",
+      "text_sha256": "1acb48772ff5b9fafa0390c9edca50f5d333fb85a990dbabd2ad71503cd64280",
+      "window_index": 3
+    },
+    "056ce873101552df192756f6975a1bd5628cd30c63a5f4fdd601e4ea8bc3fa8b": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article and contains citations 149-154 documenting the passage of data privacy laws in U.S. states (California, Virginia, Colorado) and Turkey's data protection authority, showing how GDPR influenced privacy regulation globally.",
+      "text_sha256": "45fa8da258523116c998abc6050f4f0aebd0918279d501d0ee1c71d4be6e880c",
+      "window_index": 7
+    },
+    "07ad6170bad2b51ead3140be2f95fb3a0a43912da282c47e177473f3509ee995": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically from the \"Rights of the data subject\" section under \"Information and access.\" It explains Article 15, which establishes the right of access as a data subject right, detailing what information data controllers must provide upon request and how data portability is governed by Article 20.",
+      "text_sha256": "9c05f685de86c46ea69cb6f6e4d6046a694e6d6760c3b0757fe05bf71d7cd098",
+      "window_index": 1
+    },
+    "09a8a122f8fb1ca320b81435bf0aa24de7f2360252a143f737ff88973a8eb68d": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 119-123 that document early legal actions and enforcement related to GDPR, including complaints filed by privacy advocacy groups against major tech companies and lawsuits filed on the regulation's implementation date.",
+      "text_sha256": "b36bff1e40cd0e0bd5aad9d502cf7f5203958054744c70187e9437321ee6e4ff",
+      "window_index": 6
+    },
+    "0c87bdb58bfea36c86f193ce5e26ac8fc8da7846d9695272dc867d51139f41ee": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 137-139 that document academic research and regulatory monitoring related to GDPR enforcement and data access rights.",
+      "text_sha256": "639e7afbad3cd90621ee9443693c61f6d16939e43ba9df6b7bf54d196e760732",
+      "window_index": 7
+    },
+    "0f07150a38fe7150364ca62ccfae6447ad7e8511af03dbf4763e23b34d40db26": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation and lists language versions of the article available in other Wikipedia language editions, including Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Chinese, along with links to edit the article and access its talk page and tools.",
+      "text_sha256": "940babf07cafdac491aea5ef812cf0ccb30ad18979f360ce75be6d60ff01e78e",
+      "window_index": 0
+    },
+    "105cfecafe666b6265c4f792e563b95bf1c9aae13b0541ee43db86e7e7dc1ebd": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 124-128 that document early legal actions and enforcement against major technology companies following GDPR's implementation, including complaints against Facebook and Google over forced consent practices and subsequent fines imposed by regulatory authorities.",
+      "text_sha256": "ddc0b90b3ffc245662c3882246c5d9fb4e7c1c9bf2151405dd9a3cc60584bfb5",
+      "window_index": 6
+    },
+    "114b2a105b1ea467524f3a08c5f0f8b0216599efe695ae58fe98ba266bb1e9bc": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 105 and 106, which are academic and research sources discussing privacy impact analysis methods for Android apps and dark patterns used by tech companies to discourage users from exercising their privacy rights under GDPR.",
+      "text_sha256": "ca975b93aee13c0b39fc4031278ac7ca893d7793359e44664c5477b3da39bf64",
+      "window_index": 6
+    },
+    "125f0981885abda33d7b3c14391b1708ebfbef8153655ae783c13046f0bc2ba4": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 86-89 that document media coverage and commentary on GDPR's impact on major technology companies like Facebook and Google, as well as broader implications of Europe's privacy law.",
+      "text_sha256": "3b0a89172631a613001c529a0f1176619f76376a2e4f46f32923bb83fa5dc127",
+      "window_index": 6
+    },
+    "12ead1e8bb5363852d6523bd423889c33112abf99a748fbdcc1c3d80156da03b": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 160-163 that document sources related to the CLOUD Act agreement, GDPR economic evaluation, and data protection reform proceedings.",
+      "text_sha256": "1b3508f5dc47e964c8b6a4f26d1a3f193c2b5ba858f9ddf39afd5a01c5907e3c",
+      "window_index": 7
+    },
+    "196cd8ced1b7b9b306f9e3ee5df79d867f5154b2912cf5c434e7ad9f67205a7f": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically from the \"Rectification and erasure\" subsection under \"Rights of the data subject.\" It explains Article 17 of the GDPR, which provides the right of erasure, and references Article 6(1) regarding lawful bases for data processing.",
+      "text_sha256": "4ef75a7300893fc05abee49ec8e1f1e034ceef0d13f1d33bc646feb971c1e2c0",
+      "window_index": 1
+    },
+    "2d12b5a526350fb224afee90498d55e6c769c27cfa4f1befeeab0e2dd179aec9": {
+      "context": "This chunk appears in the \"Enforcement and inconsistency\" subsection of the \"Impact\" section of the General Data Protection Regulation Wikipedia article. It discusses specific GDPR enforcement actions and challenges, including the British Airways fine for security failures and issues with inconsistent enforcement across EU member states.",
+      "text_sha256": "8758b3de298150a040c1541f2fabce0bae7b67b436679bbc8ce2c7b0867174bb",
+      "window_index": 3
+    },
+    "2ebc96771c158888fc4b48e0d92c9ff2bcddce57ff25342a71b61cd76f0a7f2e": {
+      "context": "This chunk is the introductory section of the Wikipedia article on the General Data Protection Regulation (GDPR), providing the definition, official title, regulatory status, and primary objectives of the GDPR as a European Union regulation on information privacy that applies to the EU and EEA.",
+      "text_sha256": "624a66b40188fdd5c09aad8599cc7a9e02c2fef0ddc7f88e1b295348ad3612dc",
+      "window_index": 0
+    },
+    "2fc690e359759defb81feef78e165d3f343f4bee46be099afd3589cc8579e5f0": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 78-81 that document sources discussing GDPR's impact on scientific research, pseudonymisation of personal data, blockchain technology compliance, and artificial intelligence regulation under GDPR.",
+      "text_sha256": "4ad2cd31c07c6c6bc6f494b29472a1f3e6473102ff5c1f6f1c7fd9e257e848cc",
+      "window_index": 6
+    },
+    "303f079b888e5b2eeaa27fdfb79edec37c1e73e4ad5e84cc8b225299d0cec98c": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article and contains citations 133-136 documenting enforcement actions and regulatory concerns related to GDPR, including the British Airways data breach fines and commentary on GDPR enforcement challenges.",
+      "text_sha256": "e8cb536f57b3d308dfecba2236fffbdfa9ecf9042292b5585d53c5dd9fd40fcc",
+      "window_index": 7
+    },
+    "31c6ccf75a064f017226c041368f2749d38ad2bd994687b275f3a6d183e9b197": {
+      "context": "This is the Notes section of the General Data Protection Regulation Wikipedia article, containing six numbered reference notes that provide definitions and clarifications for key GDPR concepts including data collectors, data processors, territorial scope under Article 3(2), joint controllers under Article 26, and the definition of enterprise under Article 4(18).",
+      "text_sha256": "a1d739712d4a223077b955915c0df678654213066f8a740b67b444ce29fee13f",
+      "window_index": 4
+    },
+    "32258e068260c8b3eba78cb8cbcaabe2d39db3142bce551c1d579ca6badfb302": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 26-30 that support various topics discussed in the main article, including automated decision-making regulation, GDPR Article 82(1) on compensation for data processing damage, and general GDPR guidance materials.",
+      "text_sha256": "07061a36c18699b98ddf2ad4a9b86d84249e395a2f659f1b35f5af81e17d2b8a",
+      "window_index": 5
+    },
+    "37e60f77e6f790d2cd1f50fa277c5eec6c8bd9b516f26c6b8175cd529800f6c5": {
+      "context": "This chunk appears in the hidden categories section at the end of the General Data Protection Regulation Wikipedia article, listing metadata categories that track article formatting, sourcing standards, and maintenance notes rather than substantive content about GDPR itself.",
+      "text_sha256": "ddfe69a399e8d88a7e620e4e2971001e93ab4233ce30f127a4d454eca5ce6b60",
+      "window_index": 8
+    },
+    "38c3f921499551f75b6dd0f1f25694e92fae7622a9fcc48acefaec5e56a394cc": {
+      "context": "This chunk is from the \"Principles and lawful purposes\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It covers Articles 5 and 6, which establish the six foundational principles for lawful data processing and enumerate the six lawful bases for processing personal data, along with detailed requirements for consent as a lawful basis, including rules for children's consent and withdrawal rights.",
+      "text_sha256": "a372745a7b1315b637a74f9679497cd36109267920a34334264c03bdf38da9a1",
+      "window_index": 1
+    },
+    "39aa82d71e0b4db6cb8e9c1e83d631f9e9cee2dbd73aba29dc4432cb36df2b89": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article. It contains citations 48-50, which are academic and legal sources discussing the territorial scope of the GDPR, including its application to businesses outside the EU and the right to be forgotten.",
+      "text_sha256": "322eab3077390bd4aa8269d9b966b9fd72e9e1de54fdbb27ff956e9c38d4bf81",
+      "window_index": 5
+    },
+    "39e255f46eb812ed810eb4e50b7b674adbe3e5525daa53f3670868de7cfdc7d2": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation, within the \"Controller and processor\" section. It discusses requirements for data protection impact assessments under Article 35 and data protection by design and default under Article 25, including practical guidance on encryption and data storage security measures.",
+      "text_sha256": "4433edb481501788f768f06d61df09b80123038c961944c4483ce89179cd9edf",
+      "window_index": 1
+    },
+    "3a7759a576a5161a94575b2c76f303f6d662ca9a3c061b313a506c1c8f0b4950": {
+      "context": "This chunk is an edit link for the \"Rights of the data subject\" section in the Wikipedia article on the General Data Protection Regulation, which appears as section 4 in the document's table of contents.",
+      "text_sha256": "8ddb62baf1f33aa324693f9691899c5d95f1f7e575ebd4711b87aa418347b657",
+      "window_index": 1
+    },
+    "3d144c47b18aadb84aacd95b500ae01b127fdeecb86303a1d0301227461a0d96": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article. It contains citations 2-6, which include sources on the GDPR's legislative development, international data protection regulations like Brazil's LGPD, the UK GDPR, and comparisons between GDPR and other privacy laws such as the CCPA.",
+      "text_sha256": "26d44de6d5c94217c95e8d4ea79bfe01e0cc0bc2b48a6e70b06e5c8b863757c0",
+      "window_index": 5
+    },
+    "3f3851efd0c80526eef2347021bfb1823ff70db7b7f3836202ebff25106edb4c": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article and contains citations 55-59, which document the UK's data protection framework following Brexit, including the finalization of the UK Data Protection Act, its reception, data transfer implications, and EU-UK adequacy decisions for personal data flows.",
+      "text_sha256": "8bc1a3ff251018ea24aa13b97e11785e312c97a7f49648c866dfaae10782f9b3",
+      "window_index": 5
+    },
+    "41328e121dea0f5773dbf6a128617f78e7c402e55bfe3b81beade983f87fad47": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 111-114 that document media coverage and industry responses to GDPR implementation in May 2018, including reports of websites blocking European users and the widespread distribution of privacy policy updates.",
+      "text_sha256": "6947f3bf27252c21907af8cc2703f1ba5dc3887f478f4aa5f056dabbc7fc7020",
+      "window_index": 6
+    },
+    "45f2ca417ab47074b85f28a8c500cba1ac76b1c3529198265d681a582f7c2b92": {
+      "context": "This chunk appears in the External links section of the General Data Protection Regulation Wikipedia article, specifically within subsections listing data protection authorities by country, privacy-related topic areas, and advocacy organizations focused on privacy and data protection issues.",
+      "text_sha256": "64ad3b453110b422da13174a8e9686e9001b7ecdad678e4ce6d5720611fa22ae",
+      "window_index": 8
+    },
+    "46919d9084224c2c5582dc7ee28c67d9543c521ec43cb9da48492b323ecedcaf": {
+      "context": "This is the \"See also\" section of the General Data Protection Regulation Wikipedia article, which provides cross-references to related privacy laws in other countries, EU regulations, and related concepts relevant to GDPR compliance and data protection policy.",
+      "text_sha256": "96d7a0c321a56ff5b31c2ebbd9ed6273819dfb8c50bb033b19f7c151227660cb",
+      "window_index": 3
+    },
+    "476c793e40ccf21567220fb9ad1b4d5ddeabeda5882a070db016116c11ad65ed": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 36-41 that support various GDPR topics including data security, data protection by design and default, consent withdrawal, data subject requests, data protection officers, and the territorial scope of GDPR.",
+      "text_sha256": "bf42c17d2ccf336b8ee324bbf8534b5bbd27481017735529868f2d3900261491",
+      "window_index": 5
+    },
+    "485f4114f2148593341a2b7f097f8e2f13e9994b24cdc3e0db3d557e5b1cf737": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article. It contains citations 82-85, which are academic and journalistic sources discussing GDPR-related topics including the right to explanation in automated decision-making, artificial intelligence regulation, and business compliance benefits.",
+      "text_sha256": "74e1350a0b9703b99002d8100a97820fe0ab663f70e80382fde63041cba10089",
+      "window_index": 6
+    },
+    "486819fd38e1c4dd9f9235400f8a2639d39b60fcbc882a8e4345a4254b64b2e5": {
+      "context": "This chunk appears in the \"Contents\" section of the Wikipedia article on the General Data Protection Regulation (GDPR), providing an overview of the regulation's structure and key components. It describes the eleven chapters that comprise GDPR 2016 and explains the role of the 173 recitals in clarifying the regulation's scope and legislative intent.",
+      "text_sha256": "941da6341fe97213043bcf3b02300131a8b05b62f9f1b886215583fc0c6b053f",
+      "window_index": 0
+    },
+    "4b763f9db3e9c304319cb1ab494a4912ea9d590a73cb0a84d268e6124f04548e": {
+      "context": "This is the table of contents for the Wikipedia article on the General Data Protection Regulation (GDPR), listing all major sections and subsections covered in the document including general provisions, data subject rights, controller and processor responsibilities, exemptions, applicability outside the EU, and impact of the regulation.",
+      "text_sha256": "b8dca17133c5c66f1a949bb821f9758ae9e577766b586dba3fce4feabc2ef6d3",
+      "window_index": 0
+    },
+    "4c093c6357bd46070bb43111edf11a5672dae08fd1dc4435603d98f636c594e0": {
+      "context": "This section from the Wikipedia article on the General Data Protection Regulation discusses the EU Digital Single Market strategy and explains how the GDPR, along with related regulations like the NIS Directive and eIDAS Regulation, form part of this broader digital economy initiative that became applicable on 25 May 2018.",
+      "text_sha256": "0a782383a4cae1d2e2310942de12f729b877be676e739359bec99e479d2c5309",
+      "window_index": 3
+    },
+    "506b29aacc3a51fb11fbf414b138f8178f5b467c075e52c5a792f458a3c3784b": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article. It contains citations 22-25, which are sources supporting various topics discussed in the main article, including the right to be forgotten, the European Parliament's legislative resolution on GDPR, practical data privacy resources, and individual rights under GDPR such as the right to object.",
+      "text_sha256": "49b0ae9f699a977730deeb94e8d3ae97f50b7b93470d1ff718685137aca1300b",
+      "window_index": 5
+    },
+    "55a6a71740ac9c4ee18f51007ba699552d6307bbf2115a16d5a92bb8f1a71c92": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 90-92 that discuss the GDPR's impact on privacy rights, its origins, and its definition and implications.",
+      "text_sha256": "11f708b7bcc034a6d42871f77506e5e185527b6304e90aca11be866afd526ebf",
+      "window_index": 6
+    },
+    "5b39f0be66c29d9b12e47ed01eb0d661ebd8dc7959b7e245807c89f844010e78": {
+      "context": "This chunk appears in the \"Influence on foreign laws\" subsection of the Impact section of the General Data Protection Regulation Wikipedia article. It discusses how GDPR influenced privacy legislation in the United States, including the California Consumer Privacy Act and similar laws passed by Virginia and Colorado, as examples of the \"Brussels effect\" where European regulations serve as a baseline for other jurisdictions.",
+      "text_sha256": "3f91ed87c55d59b8bc374c5b90881fecf219e23d487a61895b26a29b1ca28e1b",
+      "window_index": 3
+    },
+    "5b6b85ed175470e7d93bee7a982f77d104996f8ca008839601f971b1b6c9c656": {
+      "context": "This chunk is from the \"Controller and processor\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It outlines the obligations of data controllers regarding data disclosure, retention, breach notification, and compliance with data protection principles, including requirements under Article 25 for data protection by design and by default, as well as the information that must be provided to data subjects about their privacy rights.",
+      "text_sha256": "7d0ea5975d907d307d5ca2090d7b29ad3f4d565f63d82c7828339ce5d11fcef0",
+      "window_index": 1
+    },
+    "5c2384a0171ca889a9a0987f3e0fe2ab7071bcf67c7eb8af86286921d025ec42": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 65-69 that support various claims made in the main article about GDPR myths, territorial scope, and compliance considerations.",
+      "text_sha256": "5dca60b1cc0427a7c4eb602524d6cf8beb169bed4a3a6221e1b3d95d8a86031f",
+      "window_index": 5
+    },
+    "5d7b3ca7dc2cebf52db5f4ebb857e8e68136059469954f515e2f2ab7084a6e89": {
+      "context": "This chunk is from the \"Exemptions\" section of the General Data Protection Regulation Wikipedia article. It lists specific cases not addressed by GDPR that are treated as exemptions, including personal or household activities, law enforcement, and national security, and explains that entities must be engaged in economic activity to be covered by the regulation.",
+      "text_sha256": "c403b3503d3ce17e5ea50c2ad3f3524dc6f00179b8875459d495dd826f513adb",
+      "window_index": 2
+    },
+    "5f08d1eae13751149e01aebcb2c3cd450098c3b83a34236c899bab220ae0f32d": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 18-21 that support various topics discussed in the main article including the official GDPR publication, data portability rights under Regulation 2016/679, data protection by design principles, and behavioral targeting under the GDPR.",
+      "text_sha256": "921fdf8688707ace84191e49e9ca5b82ab21bbf09ddff732b7c55fbe95c47b70",
+      "window_index": 5
+    },
+    "600580ac5244773554c247915af76bacf7d1e779b22bbe50cafc721cb2a5044b": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article and contains citations 164-167, documenting sources related to the legislative history and adoption process of the GDPR, including the Council's position at first reading, European Parliament approval, and the regulation's historical development.",
+      "text_sha256": "7471b189a3e44e7817dcefe528279ad3b529752e510f74a6124e254ac1058eec",
+      "window_index": 7
+    },
+    "620ac6df83fe2e39fa105b2e203d3467ef50d229693a9d2f13ea9a74bb1dde12": {
+      "context": "This chunk is from the \"Impact\" section of the General Data Protection Regulation Wikipedia article, discussing the immediate effects and public response to GDPR's implementation. It covers how companies prepared for GDPR compliance, the resulting wave of privacy notifications, associated phishing scams, and the cultural phenomenon of GDPR-related internet memes and criticism of compliance efforts.",
+      "text_sha256": "15411de5cda4ccac44220f8467ec5ebb404d9cc4fa6d3b92b0ac95efbd79bb23",
+      "window_index": 3
+    },
+    "64416dc359b99f173039867273d42828e1bd7530bea000557d86b26d88b48d2d": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation, within the \"Principles and lawful purposes\" section under Article 6, which discusses lawful bases for processing personal data. It specifically addresses the consent requirement as a lawful basis and clarifies the transition rules for consent previously obtained under the earlier Data Protection Directive.",
+      "text_sha256": "5fd7f0512f4c88b47a41b162e06569bfb739dbcf4099a46566252fa52f1776fd",
+      "window_index": 1
+    },
+    "668832f7b624adccfaf8b0e4bbc714987e54c77b0a8b5fe5dd6902837107a8d2": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically from the \"Security of personal data\" subsection under the \"Controller and processor\" section. It covers the technical and organizational security measures that controllers and processors must implement, including requirements for data protection by design, lawful bases for processing, and data breach notification obligations under Articles 33 and 34 of the GDPR.",
+      "text_sha256": "929ab6018880638d2795a8b6403c408e500562c6560d0a2bf3412d51b1fc7a48",
+      "window_index": 1
+    },
+    "66ff87d2a4ead5fb817de2e2deebe64a741e8492e006510489d9343d3ef06c4c": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 93-97 that document various impacts and cultural responses to GDPR implementation, including security threats, privacy tracking concerns, and internet memes related to the regulation.",
+      "text_sha256": "fe6587fc740e553159417d7a6fb63cc22995c5c63cacd3d39e5aad64e6bd3f6e",
+      "window_index": 6
+    },
+    "6a97e5001b59d42ba5fac5990d722f157f23722dee6121f43aefc3657e9f8c20": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation, specifically in the section \"United Kingdom implementation\" under \"Applicability outside of the European Union.\" It describes UK-specific GDPR implementations and regulatory developments following Brexit, including the Information Commissioner's Office's children's code of practice and the UK government's stated position on potential divergence from EU GDPR requirements.",
+      "text_sha256": "d31e3fd2e23155e3b3060dcde7bccae87e7df3515ce7bad870bb52e9598dad33",
+      "window_index": 2
+    },
+    "6c4be7d70a416de550e0db41c32efab31e5c92b91ab43e8df65e8b49fba545c3": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 115-118 that document the impact of GDPR implementation on privacy policies, user access, and online advertising markets around May 2018.",
+      "text_sha256": "1314a32b30dfc430d6977b2729f1fa27d51ba094867347c3c156eaf371873a29",
+      "window_index": 6
+    },
+    "6d47dd12a0312468e102791766b61e078f74eb9354640cca4325b108075f0217": {
+      "context": "This chunk is part of the language links section at the beginning of the Wikipedia article on the General Data Protection Regulation (GDPR), listing translations of the article available in various languages including Greek, Esperanto, Spanish, Estonian, Basque, Persian, Finnish, French, Irish, and Galician.",
+      "text_sha256": "8c5ff9edf3d4b255c824e66cd353061bd983a514bea6baa5c6c7e6dd5eeb0158",
+      "window_index": 0
+    },
+    "6fcb2b58989fbaed89ad7ec22109135460997d5cb9ab4ba10704fbdcfac87b31": {
+      "context": "This chunk is from the \"Remedies, liability and penalties\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It outlines the sanctions and fines that can be imposed for violations of GDPR, referencing Article 83 and specifying two tiers of penalties based on the severity and type of infringement.",
+      "text_sha256": "69eba436595e5d3534cefca0f6545b9139191cdba51c38e66f5b98abdea2b244",
+      "window_index": 2
+    },
+    "70857353f9b9618aaeeb34b0711b139fb4be23d0e10b7ca966725198fb56f676": {
+      "context": "This chunk contains the Wikipedia article tools and navigation sidebar for the General Data Protection Regulation article, including options to read, edit, view history, and access related pages and project links.",
+      "text_sha256": "48056b7560211f33bc3ed85d8bcef0784af6883d068c5afa8ade9846887c6003",
+      "window_index": 0
+    },
+    "717f1223115ed1974b9d5c6e53d5c4a8db621c1adf86d31083938b634173aa6a": {
+      "context": "This chunk is from the \"Enforcement and inconsistency\" subsection of the Impact section in the Wikipedia article on the General Data Protection Regulation. It documents early enforcement actions and legal cases against major technology companies following GDPR's implementation on 25 May 2018, including lawsuits by privacy advocate Max Schrems and fines imposed by data protection authorities.",
+      "text_sha256": "cc08f43bcd9976a994a4e33be53b8deae0f4e2a45490a1c3d886a78953067bda",
+      "window_index": 3
+    },
+    "73ad1a0dd3f2fb248394aa876ee9b24068781b545f4a3bc4d08632dcb57a874e": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 142 and 143, which are academic and journalistic sources discussing digital consent practices under GDPR, particularly regarding major technology companies (GAFAM) and European regulatory enforcement issues.",
+      "text_sha256": "6235ff582362b287193d52af5f634aa3a61ab912518f507daafac07bbe16d72a",
+      "window_index": 7
+    },
+    "7412c3d0c1f4a0086344a31a75f7602f5508436f06d03982a795e342c4eeedb0": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation, under the section \"Rights of the data subject\" and subsection \"Transparency and modalities.\" Article 12 establishes requirements for how data controllers must communicate with data subjects about their personal data and processing activities.",
+      "text_sha256": "89d938c59eb258afa6018bffabaaad4a9ae7732cd4085a946ef80fd848a1cac9",
+      "window_index": 1
+    },
+    "74f10d88d2fc4ef11301b53455f22ca0cc59f787c7cd6c082fec0dbe0aee4a5d": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 70-73 that document sources discussing GDPR compliance costs, privacy professional perspectives, and the regulation's impact on major technology companies.",
+      "text_sha256": "bfe5a71b9e36ae478cfc4208a8c2b6d16ad92c934d436bf56c82887c0d356dae",
+      "window_index": 6
+    },
+    "75c877aed4cafdfbca5d6420c534c4dc409c2f27e10d94fb3f535717c892115f": {
+      "context": "This chunk appears in the \"Enforcement and inconsistency\" subsection of the \"Impact\" section of the General Data Protection Regulation Wikipedia article. It describes recent GDPR enforcement actions and fines imposed on major technology companies in 2024 and early 2025, including penalties against TikTok and Meta, as well as regulatory developments by the European Commission.",
+      "text_sha256": "9a5a12d604177dc4b1e86200a50f13aa683bfd54ecba7a5e3d0f2a632c53a92f",
+      "window_index": 3
+    },
+    "7e45205747cb57af83620088822453983d1267ca7d188455fc7075746945839f": {
+      "context": "This chunk is from the \"United Kingdom implementation\" subsection under \"Applicability outside of the European Union\" in the Wikipedia article on the General Data Protection Regulation. It explains how GDPR applies to the UK following Brexit, the creation of UK GDPR through the Data Protection Act 2018 and European Union (Withdrawal) Act 2018, and the UK's status as a third country under EU GDPR with European Commission adequacy decisions for data transfers.",
+      "text_sha256": "ac7edb3d18eedbdbe5a5ad61081062456cfd42b15e42095234509a80e7c2d9ef",
+      "window_index": 2
+    },
+    "7fcaeb5c3cc3e5cdade0e48b6d39bc2f0d4d3c64dc199d3b16aaca691c89282a": {
+      "context": "This chunk appears in the \"See also\" section of the General Data Protection Regulation Wikipedia article, under a subsection listing \"Compliance tactics by certain companies\" related to GDPR implementation and enforcement.",
+      "text_sha256": "738f641880a0aca1a646a7b7d0ffcbbaf408093bc7c5633bfdad31c10cea9b91",
+      "window_index": 3
+    },
+    "858288c72146a9438ff0e68ccd7821e8f72975d449d4d1081d36bde9b2a52271": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation (GDPR), specifically from the \"Right to compensation\" subsection under \"Rights of the data subject.\" It explains Article 82 of the GDPR, which establishes the right of individuals to receive compensation for damages resulting from GDPR violations, and details the requirements and limitations for such compensation claims.",
+      "text_sha256": "5cbb617192e98d3f0078bd000b4a242a8ef4e61ad60010755f1fe5c820421ed2",
+      "window_index": 1
+    },
+    "88560a93a29974ed59e3abc8c0da7d84e6463e20beb13b7e21626a21b6e4f711": {
+      "context": "This chunk is part of the language links section at the beginning of the Wikipedia article on the General Data Protection Regulation (GDPR), listing translations of the article available in various languages including Hindi, Croatian, Hungarian, Armenian, Indonesian, Icelandic, Italian, Japanese, Korean, Latin, Lombard, and Latvian.",
+      "text_sha256": "7bc50ea814957da53c0c0596a3c3344b9f2aa8341bbfb1913ee698f646dcea7e",
+      "window_index": 0
+    },
+    "88d569be5955c3f7241fede781ee09025e5dfd18b6c0396a2c2ec008f4d69868": {
+      "context": "This chunk is from the \"Reception\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It discusses business perspectives on GDPR compliance, including survey findings about compliance costs, investment requirements, and concerns about the financial burden on smaller businesses versus larger technology firms.",
+      "text_sha256": "8c2e1bb18eb365dbc16ee0258cf99ba02ce5a9b0b9244b4b7c387bb2081d116c",
+      "window_index": 2
+    },
+    "8ef03b7532f5318379fe265990ca40a92645b475d16df12bcd4f9257d954f0dc": {
+      "context": "This is the first reference in the References section of the General Data Protection Regulation Wikipedia article, providing the official citation for Regulation (EU) 2016/679, the primary legal text of the GDPR adopted on 27 April 2016.",
+      "text_sha256": "af2fe50d253a556e37e9d5ab2429741980307bcd7d19825eca8f4f25f2729088",
+      "window_index": 5
+    },
+    "94f6b7a5203f399c6063b99e3982b6268f5fe9441e06f89cc2e0161fb7bca9f0": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 42-47, which document sources related to GDPR certification mechanisms, including the European Data Protection Board's procedures for certification and European Data Protection Seals, Europrivacy as a certification mechanism, and GDPR exemptions.",
+      "text_sha256": "d4e968e8e5156076086da75ab10e6cefc22efc2c0b17e60a0cdbea7be8190462",
+      "window_index": 5
+    },
+    "9fd488ba9836b97fcc9c8e7c95ce4bdd7534a78a56fb2d873c97ee2b5f44c1a3": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation and lists the first nine of 53 language versions of the GDPR article available on Wikipedia, including links to translations in Afrikaans, Arabic, Asturian, Azerbaijani, Bulgarian, Catalan, Czech, Danish, and German.",
+      "text_sha256": "750c1686e7692e76281641a8d65fad1f0571aa6b12fcd8c7a68fe815e727d7c5",
+      "window_index": 0
+    },
+    "a07f081d30fd2c0d0c18474f3757f5c4e484703892de826da784954c39058987": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 107-110 that document company responses to GDPR compliance, including services shutting down access for European users and widespread industry disruption as the regulation took effect.",
+      "text_sha256": "df3d524f173e1522d5cfa9453329b9beff0385036aea2880d20798943601bfd0",
+      "window_index": 6
+    },
+    "a1e3045a04ec7fd93c7d4c4b508ff59df059eaf5fb1f741f7875fd3505e5bcf5": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 144-148 that document GDPR enforcement actions and fines against major technology companies, including penalties against British Airways, TikTok, and Meta, as well as articles discussing GDPR implementation and its effects on U.S. companies.",
+      "text_sha256": "634f27c293c30f2b64df7140e510606bd5ea4ef64c4169e8f609ddb40557b7f3",
+      "window_index": 7
+    },
+    "a428c8e0c5f5f2c37c12c8394e068e2c584f230e07921aeb73efa4b1ba5547bb": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 155-159 that document sources related to GDPR's international context, including data protection regulations in China, Switzerland, and the Caribbean, as well as responses to the US Cloud Act.",
+      "text_sha256": "3dad328598d26be988dfacdc1ef8c908b05c72f739c766989fc2e77e62b2af75",
+      "window_index": 7
+    },
+    "a6bf6cb7741d979c7eee1a3dc42a6484bacaccb1ace31ad412da0c96d46c8ac5": {
+      "context": "This chunk is from the \"General provisions\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It explains the scope and applicability of the GDPR, including which entities and activities fall under its jurisdiction, defines key terms like personal data, and discusses Article 4 and Article 48 which govern the regulation's application to third countries and data transfers.",
+      "text_sha256": "e01cf9b2c561fbf2fa8635bd7237ad223ae5ef5a357cb508620166fa8de67306",
+      "window_index": 0
+    },
+    "a77bd0d0c6eb71cfc9918e4fac0880d9e033ff9ff0c2f92cf63959f1d0d4f1e0": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation (GDPR), specifically from the section \"EU Representative\" under \"Applicability outside of the European Union.\" It explains Article 27 of the GDPR, which requires non-EU organizations to designate an EU Representative as their point of contact for GDPR compliance, including the requirements for designation, penalties for non-compliance, and exemptions for occasional processing.",
+      "text_sha256": "7452606187bd781c83dbdd96d7114e9ae50d7739f01a18de5779cc04cac070cc",
+      "window_index": 2
+    },
+    "a892d9a82f09e69c4a6c57db85aac0722eeb1b93691a3c1310ffa90a752390f9": {
+      "context": "This chunk appears in the \"Enforcement and inconsistency\" subsection of the \"Impact\" section of the General Data Protection Regulation Wikipedia article. It discusses challenges in GDPR enforcement, including inconsistencies in implementation across member states, issues with consent mechanisms used by major technology companies, and the escalation of GDPR fines from 2020 to 2021.",
+      "text_sha256": "ffd0c558be4277870d5e5233fc77cee3737c4b9f94c2c82c26bf20de1653338f",
+      "window_index": 3
+    },
+    "b0f1f96b4c1ffb2aabe6367b9308172613d8e8b02ae1af7596f69796938e57a4": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, specifically citations 51-54 that address Brexit's impact on UK-EU data flows and data transfer regulations under GDPR.",
+      "text_sha256": "6abddf664c690ece46a3b4b1edc484e7882425d93736f2df0d0826db9e524418",
+      "window_index": 5
+    },
+    "b1307dcf8a75ae9894477b715d378804bdcfd906d98d80e474ee339ebfe94899": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 168-172 documenting the GDPR's entry into force in the EEA on July 20, 2018, and related regulatory developments including the Digital Single Market and ePrivacy Regulation.",
+      "text_sha256": "84bc61c6b80f7bbedaf22fa078cf3f8a0d37f963255481855fcb63acde5fa682",
+      "window_index": 7
+    },
+    "b23e666c88f19b730cacdb18817d9cf71c5ca4a268af48b012d2f5e7990b6ca1": {
+      "context": "This chunk appears in the \"Impact\" section of the General Data Protection Regulation Wikipedia article, discussing various consequences of GDPR implementation. It covers security vulnerabilities, app privacy behavior changes, social media platform tactics, website blocking responses, company closures, and advertising volume reductions following GDPR's May 25, 2018 effective date.",
+      "text_sha256": "600860e743f88877db3606225ef9eddc0429418fcf204c0f245e62bf3f267971",
+      "window_index": 3
+    },
+    "b417cce4cda1e7061a3cd554cf1f5a79b584cd643a9ef43c8a612459c26f8ef9": {
+      "context": "This chunk is from the \"GDPR Certification\" section of the Wikipedia article on the General Data Protection Regulation. It explains the legal basis for GDPR certifications under Articles 42 and 43, describes two categories of certification schemes (national and European Data Protection Seals), and details the role of the European Data Protection Board in overseeing these certifications, including the recognition of Europrivacy as a European Data Protection Seal in October 2022.",
+      "text_sha256": "0fb2e28c5d9c0330d6db247d839f8d5840fda7b5f70da5bb7352ba5f10a39db2",
+      "window_index": 2
+    },
+    "b70d6105c4fdb83902afdb2f6517d70c312d5088bd16fa89416458b90ac99512": {
+      "context": "This chunk appears in the External links section of the General Data Protection Regulation Wikipedia article, listing advocacy organizations focused on privacy and data protection, followed by related topics in a \"See also\" section and authority identifiers for cataloging purposes.",
+      "text_sha256": "dceb809015a18b88df1fc8fb0abe573f664c87d7dc27779285cb63d2693399f6",
+      "window_index": 8
+    },
+    "b9623cc7fd1d6bd0081ff48f3d363c018a1093b30d123d612fc58455626a4546": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 129-132 that document GDPR enforcement actions and data breach cases, including the British Airways incident and Romanian Data Protection Authority correspondence.",
+      "text_sha256": "3ab9ad2097b023fe9080cc7b60a4f0cd360525c66ae6809ac3e6772d9aa33768",
+      "window_index": 6
+    },
+    "bbee4a7aba2c8f74bb390c7dacfa4220bb0719e6cb1ddf261c7fdaa99ea372f4": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 60-64 that support various topics discussed in the main article including UK data protection adequacy decisions, child safety protections for social media users, UK regulatory divergence from GDPR, and common misconceptions about GDPR compliance.",
+      "text_sha256": "8921ff68d335d35b7e3823dce36b66d2f6111b3e89559ff4336606dcf79bd94a",
+      "window_index": 5
+    },
+    "bdaca1b537b000adaf26ef0e9033d505d3c28074613611e16894dd6c1b52eee4": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article, containing citations 98-102 that document cultural and practical responses to GDPR implementation, including internet memes, compliance challenges, and the role of Data Protection Officers.",
+      "text_sha256": "d2a756dd8237abe622ba36221e5c5ce58fa21b96fff1341f9d9c8c9eb892e17d",
+      "window_index": 6
+    },
+    "be21e72816b6002fc8b14b0015773c270f20de733a6f701aa8d47ed03e7f654f": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically from the section \"Applicability outside of the European Union.\" It explains how GDPR applies to non-EU data controllers and processors based on Article 3(2), covering scenarios where they offer goods or services to or monitor data subjects within the EEA.",
+      "text_sha256": "a2963e7f9d74e228e28f558c20dc4c5123f801fa62b20f86e5d6edf1f5f7acc6",
+      "window_index": 2
+    },
+    "c0c8b9a1ab3c24d5e3b6ad921b8dff963bbe1178ffa0dc1ad6e2ef260f99e373": {
+      "context": "This chunk appears in the External links section of the General Data Protection Regulation Wikipedia article, providing related links organized under three categories: Principles (including rights like right of access to personal data and right to be forgotten), Privacy laws by country, and Data protection authorities by jurisdiction.",
+      "text_sha256": "7f5b74409c2d487ac99b27ccfb74408e81d1675460b99aea7171819b56ef6f7a",
+      "window_index": 8
+    },
+    "c24309515cb807759f4428fa66772189f03631e086e4479a92f3fdf54a595dce": {
+      "context": "This chunk appears in the \"Impact\" section of the General Data Protection Regulation Wikipedia article, discussing the broader effects and consequences of GDPR implementation. It presents findings from a 2020 European Commission assessment about public awareness of GDPR rights and how privacy considerations have influenced consumer behavior and business competition in the EU.",
+      "text_sha256": "770b111641d9157142fb23a646c483b434e8aaaa1101b84f84d4073c00fb8e9c",
+      "window_index": 3
+    },
+    "c69aa45a6b2e2509b56fdd8ece7d13ea8732063b345f0525ba01f1dfd0e6e56e": {
+      "context": "This section from the Wikipedia article on the General Data Protection Regulation addresses common misconceptions about GDPR, clarifying four widespread misunderstandings regarding consent requirements, the right to be forgotten, pseudonymization, and the regulation's geographic scope of application.",
+      "text_sha256": "5587edd06accaef798fc487ab28a7d97a5767d6261d08ccad20e1cf5b44eb9a2",
+      "window_index": 2
+    },
+    "ce04cb1cf62d6a45b25d9e02854da49f10b882815dc424d6924340ecd91e8419": {
+      "context": "This chunk appears in the Wikipedia article on the General Data Protection Regulation under the section \"Applicability outside of the European Union > Third countries.\" It explains the GDPR's restrictions on transferring personal data to countries outside the European Economic Area and the safeguards required under Chapter V of the regulation.",
+      "text_sha256": "678fcef56506f60651c9900623459d04573dd427c6873b16abbbce70c31e21d6",
+      "window_index": 2
+    },
+    "d547ec42adbf70756a830c719ba3311d3dbea6b0065848797d0cb62f7ace7826": {
+      "context": "This chunk appears in the \"General provisions\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It explains the supervisory authority structure and enforcement mechanisms established under the GDPR, specifically detailing how member states establish independent supervisory authorities, their cooperation framework, and the role of the European Data Protection Board in coordinating these authorities.",
+      "text_sha256": "3400bfa677d9f49517bbdc3ee8e3ab666c40532f14d1d0c457d13ec495eaae42",
+      "window_index": 0
+    },
+    "d88f378a9871bb06ff918416d9ad09583d63a978bbd69f988d6d17fc40dd75c5": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 74-77 that document early concerns about GDPR implementation, including articles about privacy rule limitations, lack of organizational readiness, and compliance challenges for businesses.",
+      "text_sha256": "8ddafd9bf65ce883fe232889b7b5609d7ce0a18e0d2f85883059b685d0b918dc",
+      "window_index": 6
+    },
+    "d942022b60a54fae2b84ee99160b01605937631573308bdf8af59c213ba5976a": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article. It contains citations 7-13, which provide sources for key GDPR concepts including the regulation's table of contents, recitals, definitions of personal data, and related EU directives on data protection.",
+      "text_sha256": "765f053b6d2dd9fd3f56445677099d91f320fc74b290cbefd2720cedeb9c5583",
+      "window_index": 5
+    },
+    "e1332d43c8db7a5233527a387e874d17935c5fdedcb133b8b0193a303e831b32": {
+      "context": "This chunk is from the \"Data protection officer\" subsection under the \"Controller and processor\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It explains Article 37 requirements for appointing a data protection officer (DPO), the DPO's qualifications and responsibilities, and the distinct role of EU representatives for non-EU organizations under Article 27.",
+      "text_sha256": "99468ba3a3ec503f04226a0fadaf0dd3d5b6b9de5c02529c3191fa7b50cf1955",
+      "window_index": 2
+    },
+    "e1f6ef84e8f416dd0a36169240b7e29f35722dfdbc8e1caf9f3c3effc23eb02b": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 14-17 that support various topics discussed in the main article including age of consent requirements under GDPR, the regulation's global impact, and privacy-related communications and infringements.",
+      "text_sha256": "5a5c1abe51035f625fe94f280449ee0921fcc1cb6ebe3d2b498aa0b1ec3c08d1",
+      "window_index": 5
+    },
+    "e5536bd3c3dadb6630f50e22587f0df06bf2434490c0bfad2a612bdaf81621c0": {
+      "context": "This chunk appears in the \"Website views and revenue\" subsection under the \"Impact\" section of the Wikipedia article on the General Data Protection Regulation (GDPR). It presents research findings on the economic effects of GDPR compliance on European websites.",
+      "text_sha256": "7fd15f3019c087e8727d883c0ef90aa87d6653011eb16e642014acb9b74a4193",
+      "window_index": 3
+    },
+    "e7ff930d7a2842a3f4d3c7c9dd761e0ede949c23c4f95ed28f7e0f3d0ecad637": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 140-141, which are academic and professional sources discussing GDPR implementation challenges in business enterprises and data protection expertise.",
+      "text_sha256": "21363faa8dfce11996290a16ccdb708d0497f4cc41b95bbec8e85638bb385cdb",
+      "window_index": 7
+    },
+    "e8443681262821017542856d3ef3c08f6665312486b948d2e55524ecc86c1f30": {
+      "context": "This chunk appears in the \"Reception\" section of the General Data Protection Regulation Wikipedia article, which discusses criticisms, concerns, and support for the GDPR. It covers specific criticisms regarding administrative burden, data minimization requirements, pseudonymization guidance, blockchain implementation challenges, and the unclear \"right to explanation\" for algorithmic decisions, followed by examples of business and public support for the regulation.",
+      "text_sha256": "6fc2ea1cf8280a513e853fe83f1edb348aeacbbfb2985e99b8cb242c0c6c4e43",
+      "window_index": 2
+    },
+    "e8695a277e49fc4ab340e94165518c594fd19d212f9223c4eb87f14286f8ceae": {
+      "context": "This chunk from the Wikipedia article on the General Data Protection Regulation describes the adoption and implementation of GDPR, its legal status as an EU regulation, and its global influence as a model for data protection laws in other countries including Brazil, Japan, Singapore, South Africa, South Korea, Sri Lanka, and Thailand, as well as the UK GDPR and California Consumer Privacy Act.",
+      "text_sha256": "7d54d386e3779010a2336c9b110d322822ad5fee61a0d545b4e041f4941369c7",
+      "window_index": 0
+    },
+    "f0663e148b992ade60e66af7cda26060331867117620bba9b7c0663226ee676d": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically the section \"Rights of the data subject > Right to object and automated decisions.\" It explains Article 21 of the GDPR, which grants individuals the right to object to personal data processing for marketing or non-service purposes, with exceptions for legal authority, legitimate interests, and public interest tasks.",
+      "text_sha256": "024183323b819b204a8ff963d16dae0d277f3f413b331c36bd793deda27b2baa",
+      "window_index": 1
+    },
+    "f1e4e01d5eaf698957dd50b38402a23b632ddecd96de879ce767164f34cb8660": {
+      "context": "This chunk appears in the \"Influence on foreign laws\" section of the GDPR Wikipedia article's Impact section, discussing how the GDPR has influenced data protection legislation in countries outside the EU, including Turkey, China, Switzerland, and Caribbean regions, as well as potential conflicts with the U.S. CLOUD Act.",
+      "text_sha256": "113854e355d61ccd0c714946492901c5c074f5e5b806e0bc4a6320af94568aac",
+      "window_index": 3
+    },
+    "f378639e9893c82e0e54fe43beed76fe9f0ac92a7b2e9f45a5db026114a40afe": {
+      "context": "This chunk is from the Wikipedia article on the General Data Protection Regulation, specifically the section \"Controller and processor > Records of processing activities.\" It details Article 30 of the GDPR, which specifies the criteria for when organizations must maintain records of processing activities and what information those records must contain for both data controllers and data processors.",
+      "text_sha256": "60c3c90f1f86d88a117c018d7bebe763898fd95ea3600302690280bef59c6264",
+      "window_index": 1
+    },
+    "f48a39e68d9179354062bc3b303dd367ee6df0715fb6ba599069e592a19f3117": {
+      "context": "This section appears in the External links section of the General Data Protection Regulation Wikipedia article, providing links to official GDPR legal texts, European Commission resources, and related certification and privacy organizations.",
+      "text_sha256": "f9b4b8a77f3e26bb1e80fd36883d8a875aeef3e8b407c7f45f7e3e1387471c8e",
+      "window_index": 8
+    },
+    "f761ee75f67e34db707b2c0eb18b93950ad0f9b05700b68019f29abc43bd7a4a": {
+      "context": "This chunk is part of the References section of the General Data Protection Regulation Wikipedia article, containing citations 31-35 that support content about GDPR compliance requirements including privacy notices, data subject information, data protection by design, pseudonymization, and anonymization practices.",
+      "text_sha256": "1083698b241ecc7cbb1efe4f0eeb1a48d0bb5930220007e92d2ab44850b909f2",
+      "window_index": 5
+    },
+    "f76a85a22654acff1bb6fbe7d66e9ef6b06295afc25c26a660eefebcdaa5a669": {
+      "context": "This chunk is part of the language links section at the beginning of the Wikipedia article on the General Data Protection Regulation (GDPR), listing available translations of the article in various languages including Madhur\u00e2, Malayalam, Malay, Dutch, Norwegian, Polish, Portuguese, Romanian, Russian, Simple English, Slovak, Slovenian, Albanian, Serbian, and Swedish.",
+      "text_sha256": "9286908f554e663113e7522c651f30285152f80b986c3e8612297ab3965308df",
+      "window_index": 0
+    },
+    "fa90a6408f3fcf0c5c0e1b12e5213ecd5d8f35b94102d2a8b454a1aa00247cf3": {
+      "context": "This chunk is from the References section of the General Data Protection Regulation Wikipedia article. It contains citations 103-104, which are academic and professional sources discussing the practical implications of GDPR compliance, specifically regarding bug bounty programs and app privacy improvements following GDPR implementation.",
+      "text_sha256": "b56b6a113277aee5e5b7230c13c8a85296b98d1eaaa6b3a90afe25aad322b0b9",
+      "window_index": 6
+    }
+  },
+  "doc_id": "wiki-gdpr",
+  "generated_at": "2026-08-29T22:23:22Z",
+  "model": "claude-haiku-4-5",
+  "prompt_version": 1
+}

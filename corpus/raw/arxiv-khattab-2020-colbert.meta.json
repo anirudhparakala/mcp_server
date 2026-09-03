@@ -1,0 +1,14 @@
+{
+  "content_hash": "2e487d9b96e3c2e5e286d843e98a066adc0442faa3a6e8ddbd1771221bf9ae14",
+  "content_type": "application/pdf",
+  "doc_id": "arxiv-khattab-2020-colbert",
+  "fetched_at": "2026-07-23T17:06:36Z",
+  "final_url": "https://arxiv.org/pdf/2004.12832v2",
+  "format": "pdf",
+  "license": "arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)",
+  "license_ok": true,
+  "raw_filename": "arxiv-khattab-2020-colbert.pdf",
+  "recipe": "arxiv",
+  "resolved_version": "v2",
+  "source_url": "https://arxiv.org/abs/2004.12832"
+}

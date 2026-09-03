@@ -1,0 +1,14 @@
+{
+  "content_hash": "34c5e2c21ba9b9d138fe6a06e70b70e9d6f90558dbea9e0121ead8aa8d2fd8ba",
+  "content_type": "application/pdf",
+  "doc_id": "pmc-morton-2018-protein-meta",
+  "fetched_at": "2026-07-29T14:54:09Z",
+  "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC5867436",
+  "format": "pdf",
+  "license": "CC BY-NC (Br J Sports Med / BMJ; via Europe PMC PMC5867436). NonCommercial; kept per user decision 2026-07-23 (load-bearing T5, no clean CC-BY equivalent); first candidate for removal if the shipped index's NC status is challenged.",
+  "license_ok": true,
+  "raw_filename": "pmc-morton-2018-protein-meta.pdf",
+  "recipe": "generic",
+  "resolved_version": "retrieved-2026-07-23",
+  "source_url": "https://europepmc.org/articles/PMC5867436?pdf=render"
+}

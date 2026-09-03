@@ -1,0 +1,5222 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "case-hadley-v-baxendale",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 18423829163934970568,
+    "filename": "case-hadley-v-baxendale.html"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/140"
+      },
+      {
+        "$ref": "#/texts/150"
+      },
+      {
+        "$ref": "#/texts/160"
+      },
+      {
+        "$ref": "#/texts/170"
+      },
+      {
+        "$ref": "#/texts/180"
+      },
+      {
+        "$ref": "#/texts/190"
+      },
+      {
+        "$ref": "#/texts/200"
+      },
+      {
+        "$ref": "#/texts/210"
+      },
+      {
+        "$ref": "#/texts/219"
+      },
+      {
+        "$ref": "#/texts/220"
+      },
+      {
+        "$ref": "#/texts/221"
+      },
+      {
+        "$ref": "#/texts/222"
+      },
+      {
+        "$ref": "#/texts/223"
+      },
+      {
+        "$ref": "#/texts/224"
+      },
+      {
+        "$ref": "#/texts/225"
+      },
+      {
+        "$ref": "#/texts/226"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/texts/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/texts/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/texts/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/texts/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/texts/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/43"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_1_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/48"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/tables/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_3_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/tables/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/50"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_3_0_1",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/tables/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/51"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_3_0_2",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/15",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/16",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        },
+        {
+          "$ref": "#/texts/88"
+        },
+        {
+          "$ref": "#/texts/89"
+        },
+        {
+          "$ref": "#/texts/90"
+        },
+        {
+          "$ref": "#/texts/91"
+        },
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        },
+        {
+          "$ref": "#/texts/108"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/17",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/116"
+        },
+        {
+          "$ref": "#/texts/117"
+        },
+        {
+          "$ref": "#/texts/118"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/18",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/120"
+        },
+        {
+          "$ref": "#/texts/121"
+        },
+        {
+          "$ref": "#/texts/122"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/19",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/136"
+        },
+        {
+          "$ref": "#/texts/137"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/20",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        },
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        },
+        {
+          "$ref": "#/texts/148"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/21",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/151"
+        },
+        {
+          "$ref": "#/texts/152"
+        },
+        {
+          "$ref": "#/texts/153"
+        },
+        {
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/155"
+        },
+        {
+          "$ref": "#/texts/156"
+        },
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/22",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/texts/162"
+        },
+        {
+          "$ref": "#/texts/163"
+        },
+        {
+          "$ref": "#/texts/164"
+        },
+        {
+          "$ref": "#/texts/165"
+        },
+        {
+          "$ref": "#/texts/166"
+        },
+        {
+          "$ref": "#/texts/167"
+        },
+        {
+          "$ref": "#/texts/168"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/23",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/171"
+        },
+        {
+          "$ref": "#/texts/172"
+        },
+        {
+          "$ref": "#/texts/173"
+        },
+        {
+          "$ref": "#/texts/174"
+        },
+        {
+          "$ref": "#/texts/175"
+        },
+        {
+          "$ref": "#/texts/176"
+        },
+        {
+          "$ref": "#/texts/177"
+        },
+        {
+          "$ref": "#/texts/178"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/24",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/181"
+        },
+        {
+          "$ref": "#/texts/182"
+        },
+        {
+          "$ref": "#/texts/183"
+        },
+        {
+          "$ref": "#/texts/184"
+        },
+        {
+          "$ref": "#/texts/185"
+        },
+        {
+          "$ref": "#/texts/186"
+        },
+        {
+          "$ref": "#/texts/187"
+        },
+        {
+          "$ref": "#/texts/188"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/25",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/191"
+        },
+        {
+          "$ref": "#/texts/192"
+        },
+        {
+          "$ref": "#/texts/193"
+        },
+        {
+          "$ref": "#/texts/194"
+        },
+        {
+          "$ref": "#/texts/195"
+        },
+        {
+          "$ref": "#/texts/196"
+        },
+        {
+          "$ref": "#/texts/197"
+        },
+        {
+          "$ref": "#/texts/198"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/26",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/201"
+        },
+        {
+          "$ref": "#/texts/202"
+        },
+        {
+          "$ref": "#/texts/203"
+        },
+        {
+          "$ref": "#/texts/204"
+        },
+        {
+          "$ref": "#/texts/205"
+        },
+        {
+          "$ref": "#/texts/206"
+        },
+        {
+          "$ref": "#/texts/207"
+        },
+        {
+          "$ref": "#/texts/208"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/27",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/211"
+        },
+        {
+          "$ref": "#/texts/212"
+        },
+        {
+          "$ref": "#/texts/213"
+        },
+        {
+          "$ref": "#/texts/214"
+        },
+        {
+          "$ref": "#/texts/215"
+        },
+        {
+          "$ref": "#/texts/216"
+        },
+        {
+          "$ref": "#/texts/217"
+        },
+        {
+          "$ref": "#/texts/218"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/28",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/227"
+        },
+        {
+          "$ref": "#/texts/228"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/29",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/229"
+        },
+        {
+          "$ref": "#/texts/230"
+        },
+        {
+          "$ref": "#/texts/231"
+        },
+        {
+          "$ref": "#/texts/232"
+        },
+        {
+          "$ref": "#/texts/233"
+        },
+        {
+          "$ref": "#/texts/234"
+        },
+        {
+          "$ref": "#/texts/235"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "title",
+      "prov": [],
+      "orig": "Hadley v. Baxendale :: United Kingdom Case Law, Court Opinions & Decisions :: Justia",
+      "text": "Hadley v. Baxendale :: United Kingdom Case Law, Court Opinions & Decisions :: Justia"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "Justia",
+      "text": "Justia",
+      "hyperlink": "\\"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "Case Law",
+      "text": "Case Law",
+      "hyperlink": "\\"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "search",
+      "text": "search"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "My Account",
+      "text": "My Account"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Log In",
+      "text": "Log In",
+      "hyperlink": "https://accounts.justia.com/signin?destination=https%3A%2F%2Flaw.justia.com%2Fcases%2Fforeign%2Funited-kingdom%2F9-ex-ch-341-1854.html"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Sign Up",
+      "text": "Sign Up",
+      "hyperlink": "https://accounts.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Search",
+      "text": "Search"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "caption",
+      "prov": [],
+      "orig": "search",
+      "text": "search"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Find a Lawyer",
+      "text": "Find a Lawyer",
+      "hyperlink": "https://www.justia.com/lawyers",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Ask a Lawyer",
+      "text": "Ask a Lawyer",
+      "hyperlink": "https://answers.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Research the Law",
+      "text": "Research the Law",
+      "hyperlink": "https://www.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Law Schools",
+      "text": "Law Schools",
+      "hyperlink": "https://www.justia.com/law-schools/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Laws & Regs",
+      "text": "Laws & Regs",
+      "hyperlink": "https://law.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Newsletters",
+      "text": "Newsletters",
+      "hyperlink": "https://connect.justia.com/case-law-summary-newsletters",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/groups/5"
+        },
+        {
+          "$ref": "#/groups/6"
+        }
+      ],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Marketing Solutions",
+      "text": "Marketing Solutions",
+      "hyperlink": "https://www.justia.com/marketing/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Connect",
+      "text": "Justia Connect",
+      "hyperlink": "https://www.justia.com/marketing/connect/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Pro Membership",
+      "text": "Pro Membership",
+      "hyperlink": "https://www.justia.com/marketing/connect/#pro-membership",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Practice Membership",
+      "text": "Practice Membership",
+      "hyperlink": "https://www.justia.com/marketing/connect/#practice-membership",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Public Membership",
+      "text": "Public Membership",
+      "hyperlink": "https://www.justia.com/marketing/connect/#public-membership",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Lawyer Directory",
+      "text": "Justia Lawyer Directory",
+      "hyperlink": "https://www.justia.com/marketing/lawyer-directory/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Platinum Placements",
+      "text": "Platinum Placements",
+      "hyperlink": "https://www.justia.com/marketing/lawyer-directory/platinum/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Gold Placements",
+      "text": "Gold Placements",
+      "hyperlink": "https://www.justia.com/marketing/lawyer-directory/gold/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Elevate",
+      "text": "Justia Elevate",
+      "hyperlink": "https://www.justia.com/marketing/elevate/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "SEO",
+      "text": "SEO",
+      "hyperlink": "https://www.justia.com/marketing/elevate/search-engine-optimization/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Websites",
+      "text": "Websites",
+      "hyperlink": "https://www.justia.com/marketing/elevate/law-firm-websites/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Blogs",
+      "text": "Blogs",
+      "hyperlink": "https://www.justia.com/marketing/elevate/law-blogs/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Amplify",
+      "text": "Justia Amplify",
+      "hyperlink": "https://www.justia.com/marketing/amplify/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "PPC Management",
+      "text": "PPC Management",
+      "hyperlink": "https://www.justia.com/marketing/amplify/cpc-ppc/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Google Business Profile",
+      "text": "Google Business Profile",
+      "hyperlink": "https://www.justia.com/marketing/amplify/google-business-profile/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Social Media",
+      "text": "Social Media",
+      "hyperlink": "https://www.justia.com/marketing/amplify/social-media-networking/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Onward Blog",
+      "text": "Justia Onward Blog",
+      "hyperlink": "https://onward.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Justia",
+      "text": "Justia",
+      "hyperlink": "\\www.justia.com"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "\u203a",
+      "text": "\u203a"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "U.S. Law",
+      "text": "U.S. Law",
+      "hyperlink": "\\"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "\u203a",
+      "text": "\u203a"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Case Law",
+      "text": "Case Law",
+      "hyperlink": "\\cases"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "\u203a",
+      "text": "\u203a"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "Foreign and International Courts",
+      "text": "Foreign and International Courts",
+      "hyperlink": "\\cases\\foreign"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "\u203a",
+      "text": "\u203a"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "United Kingdom",
+      "text": "United Kingdom",
+      "hyperlink": "\\cases\\foreign\\united-kingdom"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "text",
+      "prov": [],
+      "orig": "\u203a Hadley v. Baxendale",
+      "text": "\u203a Hadley v. Baxendale"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/tables/1"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/groups/9"
+        },
+        {
+          "$ref": "#/groups/10"
+        },
+        {
+          "$ref": "#/tables/2"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/groups/14"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/groups/15"
+        },
+        {
+          "$ref": "#/groups/16"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        },
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        },
+        {
+          "$ref": "#/texts/115"
+        },
+        {
+          "$ref": "#/groups/17"
+        },
+        {
+          "$ref": "#/texts/119"
+        },
+        {
+          "$ref": "#/groups/18"
+        },
+        {
+          "$ref": "#/texts/123"
+        },
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        },
+        {
+          "$ref": "#/texts/128"
+        },
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        },
+        {
+          "$ref": "#/texts/135"
+        },
+        {
+          "$ref": "#/groups/19"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/pictures/5"
+        },
+        {
+          "$ref": "#/groups/20"
+        },
+        {
+          "$ref": "#/texts/149"
+        },
+        {
+          "$ref": "#/pictures/6"
+        },
+        {
+          "$ref": "#/groups/21"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/pictures/7"
+        },
+        {
+          "$ref": "#/groups/22"
+        },
+        {
+          "$ref": "#/texts/169"
+        },
+        {
+          "$ref": "#/pictures/8"
+        },
+        {
+          "$ref": "#/groups/23"
+        },
+        {
+          "$ref": "#/texts/179"
+        },
+        {
+          "$ref": "#/pictures/9"
+        },
+        {
+          "$ref": "#/groups/24"
+        },
+        {
+          "$ref": "#/texts/189"
+        },
+        {
+          "$ref": "#/pictures/10"
+        },
+        {
+          "$ref": "#/groups/25"
+        },
+        {
+          "$ref": "#/texts/199"
+        },
+        {
+          "$ref": "#/pictures/11"
+        },
+        {
+          "$ref": "#/groups/26"
+        },
+        {
+          "$ref": "#/texts/209"
+        },
+        {
+          "$ref": "#/pictures/12"
+        },
+        {
+          "$ref": "#/groups/27"
+        },
+        {
+          "$ref": "#/pictures/13"
+        },
+        {
+          "$ref": "#/pictures/14"
+        },
+        {
+          "$ref": "#/pictures/15"
+        },
+        {
+          "$ref": "#/pictures/16"
+        },
+        {
+          "$ref": "#/pictures/17"
+        },
+        {
+          "$ref": "#/pictures/18"
+        },
+        {
+          "$ref": "#/pictures/19"
+        },
+        {
+          "$ref": "#/pictures/20"
+        },
+        {
+          "$ref": "#/groups/28"
+        },
+        {
+          "$ref": "#/groups/29"
+        }
+      ],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "Hadley v. Baxendale",
+      "text": "Hadley v. Baxendale"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Neutral Citation Number: [1854] EWHC Exch J70\n(1854) 9 Ex Ch 341; 156 ER 145",
+      "text": "Neutral Citation Number: [1854] EWHC Exch J70\n(1854) 9 Ex Ch 341; 156 ER 145",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "IN THE COURTS OF EXCHEQUER",
+      "text": "IN THE COURTS OF EXCHEQUER",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "B e f o r e :",
+      "text": "B e f o r e :"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Alderson, B.",
+      "text": "Alderson, B.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "____________________",
+      "text": "____________________"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Between:",
+      "text": "Between:",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "HADLEY & ANOR",
+      "text": "HADLEY & ANOR",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "-v-",
+      "text": "-v-",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "BAXENDALE & ORS",
+      "text": "BAXENDALE & ORS",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "____________________",
+      "text": "____________________"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The first count of the declaration stated, that, before and at the time of the making by the defendants of the promises hereinafter mentioned, the plaintiffs carried on the business of millers and mealmen in copartnership, and were proprietors and occupiers of the City Steam-Mills, in the city of Gloucester, and were possessed of a steam-engine, by means of which they worked the said mills, and therein cleaned corn, and ground the same into meal, and dressed the same into flour, sharps, and bran, and a certain portion of the said steam-engine, to wit, the crank shaft of the said steam-engine, was broken and out of repair, whereby the said steam-engine was prevented from working, and the plaintiffs were desirous of having a new crank shaft made for the said mill, and had ordered the same of certain persons trading under the name of W. Joyce & Co., at Greenwich, in the country of Kent, who had contracted to make the said new shaft for the plaintiffs; but before they could complete the said new shaft it was necessary that the said broken shaft should be forwarded to their works at Greenwich, in order that the said new shaft might be made so as to fit the other parts of the said engine which were not injured, and so that it might be substituted for the said broken shaft; and the plaintiffs were desirous of sending the said broken shaft to the said W. Joyce & Co. for the purpose aforesaid; and the defendants, before and at the time of the making of the said promises, were common carriers of business of common carriers, under the name of \"Pickford & Co.\"; and the plaintiffs, at the request of the defendants, delivered to them as such carriers the said broken shaft, to be conveyed by the defendants as such carriers from Gloucester to the said W. Joyce & Co., at Greenwich, and there to be delivered for the plaintiffs on the second day after the day of such delivery, for reward to the defendants; and in consideration thereof the defendants then promised the plaintiffs to convey the said broken shaft from Gloucester to Greenwich, and there on the said second day to deliver the same to the said W. Joyce & Co. for the plaintiffs. And although such second day elapsed before the commencement of this suit, yet the defendants did not nor would deliver the said broken shaft at Greenwich on the said second day, but wholly neglected and refused so to do for the space of seven days after the said shaft was so delivered to them as aforesaid.",
+      "text": "The first count of the declaration stated, that, before and at the time of the making by the defendants of the promises hereinafter mentioned, the plaintiffs carried on the business of millers and mealmen in copartnership, and were proprietors and occupiers of the City Steam-Mills, in the city of Gloucester, and were possessed of a steam-engine, by means of which they worked the said mills, and therein cleaned corn, and ground the same into meal, and dressed the same into flour, sharps, and bran, and a certain portion of the said steam-engine, to wit, the crank shaft of the said steam-engine, was broken and out of repair, whereby the said steam-engine was prevented from working, and the plaintiffs were desirous of having a new crank shaft made for the said mill, and had ordered the same of certain persons trading under the name of W. Joyce & Co., at Greenwich, in the country of Kent, who had contracted to make the said new shaft for the plaintiffs; but before they could complete the said new shaft it was necessary that the said broken shaft should be forwarded to their works at Greenwich, in order that the said new shaft might be made so as to fit the other parts of the said engine which were not injured, and so that it might be substituted for the said broken shaft; and the plaintiffs were desirous of sending the said broken shaft to the said W. Joyce & Co. for the purpose aforesaid; and the defendants, before and at the time of the making of the said promises, were common carriers of business of common carriers, under the name of \"Pickford & Co.\"; and the plaintiffs, at the request of the defendants, delivered to them as such carriers the said broken shaft, to be conveyed by the defendants as such carriers from Gloucester to the said W. Joyce & Co., at Greenwich, and there to be delivered for the plaintiffs on the second day after the day of such delivery, for reward to the defendants; and in consideration thereof the defendants then promised the plaintiffs to convey the said broken shaft from Gloucester to Greenwich, and there on the said second day to deliver the same to the said W. Joyce & Co. for the plaintiffs. And although such second day elapsed before the commencement of this suit, yet the defendants did not nor would deliver the said broken shaft at Greenwich on the said second day, but wholly neglected and refused so to do for the space of seven days after the said shaft was so delivered to them as aforesaid."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The second count stated, that, the defendants being such carriers as aforesaid, the plaintiffs, at the request of the defendants, caused to be delivered to them as such carriers the said broken shaft, to be conveyed by the defendants from Gloucester aforesaid to the said W. Joyce & Co., at Greenwich, and there to be delivered by the defendants for the plaintiffs, within a reasonable time in that behalf, for reward to the defendants; and in consideration of the premises in this count mentioned, the defendants promised the plaintiffs to use due and proper care and diligence in and about the carrying and conveying the said broken shaft from Gloucester aforesaid to the said W. Joyce & Co., at Greenwich, and there delivering the same for the plaintiffs in a reasonable time then following for the carriage, conveyance, and delivery of the said broken shaft as aforesaid; and although such reasonable time elapsed long before the commencement of this suit, yet the defendants did not nor would use due or proper care or diligence in or about the carrying or conveying or delivering the said broken shaft as aforesaid, within such reasonable time as aforesaid, but wholly neglected and refused so to do; and by reason of the carelessness, negligence, and improper conduct of the defendants, the said broken shaft was not delivered for the plaintiffs to the said W. Joyce & Co., or at Greenwich, until the expiration of a long and unreasonable time after the defendants received the same as aforesaid, and after the time when the same should have been delivered for the plaintiffs; and by reason of the several premises, the completing of the said new shaft was delayed for five days, and the plaintiffs were prevented form working their said steam-mills, and from cleaning corn, and grinding the same into meal, and dressing the meal into flour, sharps, or bran, and from carrying on their said business as millers and mealmen for the space of five days beyond the time that they otherwise would have been prevented from so doing, and they thereby were unable to supply many of their customers with flour, sharps, and bran during that period, and were obliged to buy flour to supply some of their other customers, and lost the mans and opportunity of selling flour, sharps, and bran, and were deprived of gains and profits which otherwise would have accrued to them, and were unable to employ their workmen, to whom they were compelled to pay wages during that period, and were otherwise injured, and the plaintiffs claim 300l.",
+      "text": "The second count stated, that, the defendants being such carriers as aforesaid, the plaintiffs, at the request of the defendants, caused to be delivered to them as such carriers the said broken shaft, to be conveyed by the defendants from Gloucester aforesaid to the said W. Joyce & Co., at Greenwich, and there to be delivered by the defendants for the plaintiffs, within a reasonable time in that behalf, for reward to the defendants; and in consideration of the premises in this count mentioned, the defendants promised the plaintiffs to use due and proper care and diligence in and about the carrying and conveying the said broken shaft from Gloucester aforesaid to the said W. Joyce & Co., at Greenwich, and there delivering the same for the plaintiffs in a reasonable time then following for the carriage, conveyance, and delivery of the said broken shaft as aforesaid; and although such reasonable time elapsed long before the commencement of this suit, yet the defendants did not nor would use due or proper care or diligence in or about the carrying or conveying or delivering the said broken shaft as aforesaid, within such reasonable time as aforesaid, but wholly neglected and refused so to do; and by reason of the carelessness, negligence, and improper conduct of the defendants, the said broken shaft was not delivered for the plaintiffs to the said W. Joyce & Co., or at Greenwich, until the expiration of a long and unreasonable time after the defendants received the same as aforesaid, and after the time when the same should have been delivered for the plaintiffs; and by reason of the several premises, the completing of the said new shaft was delayed for five days, and the plaintiffs were prevented form working their said steam-mills, and from cleaning corn, and grinding the same into meal, and dressing the meal into flour, sharps, or bran, and from carrying on their said business as millers and mealmen for the space of five days beyond the time that they otherwise would have been prevented from so doing, and they thereby were unable to supply many of their customers with flour, sharps, and bran during that period, and were obliged to buy flour to supply some of their other customers, and lost the mans and opportunity of selling flour, sharps, and bran, and were deprived of gains and profits which otherwise would have accrued to them, and were unable to employ their workmen, to whom they were compelled to pay wages during that period, and were otherwise injured, and the plaintiffs claim 300l."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The defendants pleaded non assumpserunt to the first count; and to the second payment of 25l. into Court in satisfaction of the plaintiffs' claim under that count. The plaintiffs entered a nolle prosequi as to the first count; and as to the second plea, they replied that the sum paid into the Court was not enough to satisfy the plaintiffs' claim in respect thereof; upon which replication issue was joined.",
+      "text": "The defendants pleaded non assumpserunt to the first count; and to the second payment of 25l. into Court in satisfaction of the plaintiffs' claim under that count. The plaintiffs entered a nolle prosequi as to the first count; and as to the second plea, they replied that the sum paid into the Court was not enough to satisfy the plaintiffs' claim in respect thereof; upon which replication issue was joined."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "At the trial before Crompton, J., at the last Gloucester Assizes, it appeared that the plaintiffs carried on an extensive business as millers at Gloucester; and that, on the 11",
+      "text": "At the trial before Crompton, J., at the last Gloucester Assizes, it appeared that the plaintiffs carried on an extensive business as millers at Gloucester; and that, on the 11"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "th",
+      "text": "th",
+      "formatting": {
+        "bold": false,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "super"
+      }
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "of May, their mill was stopped by a breakage of the crank shaft by which the mill was worked. The steam-engine was manufactured by Messrs. Joyce & Co., the engineers, at Greenwich, and it became necessary to send the shaft as a pattern for a new one to Greenwich. The fracture was discovered on the 12",
+      "text": "of May, their mill was stopped by a breakage of the crank shaft by which the mill was worked. The steam-engine was manufactured by Messrs. Joyce & Co., the engineers, at Greenwich, and it became necessary to send the shaft as a pattern for a new one to Greenwich. The fracture was discovered on the 12"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "th",
+      "text": "th",
+      "formatting": {
+        "bold": false,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "super"
+      }
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", and on the 13",
+      "text": ", and on the 13"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "th",
+      "text": "th",
+      "formatting": {
+        "bold": false,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "super"
+      }
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "the plaintiffs sent one of their servants to the office of the defendants, who are the well-known carriers trading under the name of Pickford & Co., for the purpose of having the shaft carried to Greenwich. The plaintiffs' servant told the clerk that the mill was stopped, and that the shaft must be sent immediately; and in answer to the inquiry when the shaft would be taken, the answer was, that if it was sent up by twelve o'clock an day, it would be delivered at Greenwich on the following day. On the following day the shaft was taken by the defendants, before noon, for the purpose of being conveyed to Greenwich, and the sum of 2l. 4s. was paid for its carriage for the whole distance; at the same time the defendants' clerk was told that a special entry, if required, should e made to hasten its delivery. The delivery of the shaft at Greenwich was delayed by some neglect; and the consequence was, that the plaintiffs did not receive the new shaft for several days after they would otherwise have done, and the working of their mill was thereby delayed, and they thereby lost the profits they would otherwise have received.",
+      "text": "the plaintiffs sent one of their servants to the office of the defendants, who are the well-known carriers trading under the name of Pickford & Co., for the purpose of having the shaft carried to Greenwich. The plaintiffs' servant told the clerk that the mill was stopped, and that the shaft must be sent immediately; and in answer to the inquiry when the shaft would be taken, the answer was, that if it was sent up by twelve o'clock an day, it would be delivered at Greenwich on the following day. On the following day the shaft was taken by the defendants, before noon, for the purpose of being conveyed to Greenwich, and the sum of 2l. 4s. was paid for its carriage for the whole distance; at the same time the defendants' clerk was told that a special entry, if required, should e made to hasten its delivery. The delivery of the shaft at Greenwich was delayed by some neglect; and the consequence was, that the plaintiffs did not receive the new shaft for several days after they would otherwise have done, and the working of their mill was thereby delayed, and they thereby lost the profits they would otherwise have received."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "On the part of the defendants, it was objected that these damages were too remote, and that the defendants were not liable with respect to them. The learned Judge left the case generally to the jury, who found a verdict with 25l. damages beyond the amount paid into Court.",
+      "text": "On the part of the defendants, it was objected that these damages were too remote, and that the defendants were not liable with respect to them. The learned Judge left the case generally to the jury, who found a verdict with 25l. damages beyond the amount paid into Court."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Whateley, in last Michaelmas Term, obtained a rule nisi for a new trial, on the ground of misdirection.",
+      "text": "Whateley, in last Michaelmas Term, obtained a rule nisi for a new trial, on the ground of misdirection."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Keating and Dowdeswell (Feb. 1) shewed cause. The plaintiffs are entitled to the amount awarded by the jury as damages. These damages are not too remote, for they are not only the natural and necessary consequence of the defendants' default, but they are the only loss which the plaintiffs have actually sustained. The principle upon which damages are assessed is founded upon that of rendering compensation to the injured party. The important subject is ably treated in Sedgwick on the Measure of Damages. And this particular branch of it is discussed in the third chapter, where, after pointing out the distinction between the civil and the French law, he says (page 64), \"It is sometimes said, in regard to contracts, that the defendant shall be held liable for those damages only which both parties may fairly be supposed to have at the time contemplated as likely to result from the nature of the agreement, and this appears to be the rule adopted by the writers upon the civil law.\" In a subsequent passage he says, \"In cases of fraud the civil law made a broad distinction\" (page 66); and he adds, that \"in such cases the debtor was liable for all consequences.\" It is difficult, however, to see what the ground of such principle is, and how the ingredient of fraud can affect the question. For instance, if the defendants had maliciously and fraudulently kept the shaft, it is not easy to see why they should have been liable for these damages, if they are not to be held so where the delay is occasioned by their negligence only. In speaking of the rule respecting the breach of a contract to transport goods to a particular place, and in actions brought on agreements for the sale and delivery of chattels, the learned author lays it down, that, \"In the former case, the difference in value between the price at the point where the goods are and the place where they were to be delivered, is taken as the measure of damages, which, in fact, amounts to an allowance of profits; and in the latter case, a similar result is had by the application of the rule, which gives the vendee the benefit of the rise of the market price\" (page 80). The several cases, English as well as American, are there collected and reviewed. If that rule is to be adopted, there was ample evidence in the present case of the defendants' knowledge of such a state of things as would necessarily result in the damage the plaintiffs suffered through the defendants' default. The authorities are in the plaintiffs' favour upon the general ground. In",
+      "text": "Keating and Dowdeswell (Feb. 1) shewed cause. The plaintiffs are entitled to the amount awarded by the jury as damages. These damages are not too remote, for they are not only the natural and necessary consequence of the defendants' default, but they are the only loss which the plaintiffs have actually sustained. The principle upon which damages are assessed is founded upon that of rendering compensation to the injured party. The important subject is ably treated in Sedgwick on the Measure of Damages. And this particular branch of it is discussed in the third chapter, where, after pointing out the distinction between the civil and the French law, he says (page 64), \"It is sometimes said, in regard to contracts, that the defendant shall be held liable for those damages only which both parties may fairly be supposed to have at the time contemplated as likely to result from the nature of the agreement, and this appears to be the rule adopted by the writers upon the civil law.\" In a subsequent passage he says, \"In cases of fraud the civil law made a broad distinction\" (page 66); and he adds, that \"in such cases the debtor was liable for all consequences.\" It is difficult, however, to see what the ground of such principle is, and how the ingredient of fraud can affect the question. For instance, if the defendants had maliciously and fraudulently kept the shaft, it is not easy to see why they should have been liable for these damages, if they are not to be held so where the delay is occasioned by their negligence only. In speaking of the rule respecting the breach of a contract to transport goods to a particular place, and in actions brought on agreements for the sale and delivery of chattels, the learned author lays it down, that, \"In the former case, the difference in value between the price at the point where the goods are and the place where they were to be delivered, is taken as the measure of damages, which, in fact, amounts to an allowance of profits; and in the latter case, a similar result is had by the application of the rule, which gives the vendee the benefit of the rise of the market price\" (page 80). The several cases, English as well as American, are there collected and reviewed. If that rule is to be adopted, there was ample evidence in the present case of the defendants' knowledge of such a state of things as would necessarily result in the damage the plaintiffs suffered through the defendants' default. The authorities are in the plaintiffs' favour upon the general ground. In"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Nurse v. Barns",
+      "text": "Nurse v. Barns",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1 Sir T. Raym. 77) which was an action for breach of an agreement for the letting of certain iron mills, the plaintiff was held entitled to a sum of 500l., awarded by reason of loss of stock laid in, although he had only paid 10l. by way of consideration. In",
+      "text": "(1 Sir T. Raym. 77) which was an action for breach of an agreement for the letting of certain iron mills, the plaintiff was held entitled to a sum of 500l., awarded by reason of loss of stock laid in, although he had only paid 10l. by way of consideration. In"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Borradaile v. Brunton",
+      "text": "Borradaile v. Brunton",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8 Taunt. 535, 2 B. Moo. 582), which was an action for the breach of the warranty of a chain cable that it should last two years as a substitute for a rope cable of sixteen inches, the plaintiff was held entitled to recover for the loss of the anchor, which was occasioned by the breaking of the cable within the specified time. These extreme cases, and the difficulty which consequently exists in the estimation of the true amount of damages, supports the view for which the plaintiffs contend, that the question is properly for the decision of a jury, and therefore that this matter could not properly have been withdrawn from their consideration. In",
+      "text": "(8 Taunt. 535, 2 B. Moo. 582), which was an action for the breach of the warranty of a chain cable that it should last two years as a substitute for a rope cable of sixteen inches, the plaintiff was held entitled to recover for the loss of the anchor, which was occasioned by the breaking of the cable within the specified time. These extreme cases, and the difficulty which consequently exists in the estimation of the true amount of damages, supports the view for which the plaintiffs contend, that the question is properly for the decision of a jury, and therefore that this matter could not properly have been withdrawn from their consideration. In"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Ingram v. Lawson",
+      "text": "Ingram v. Lawson",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(6 Bing. N.C. 212) the true principle was acted upon. That was an action for a libel upon the plaintiff, who was the owner and master of a ship, which he advertised to take passengers to the East Indies; and the libel imputed that the vessel was not seaworthy, and that Jews had purchased her to take out convicts. The Court held, that evidence shewing that the plaintiff's profits after the publication of the libel were 1500l below the usual average, was admissible, to enable the jury to form an opinion as to the nature of the plaintiff's business, and of his general rate of profit. Here, also, the plaintiffs have not sustained any loss beyond that which was submitted to the jury.",
+      "text": "(6 Bing. N.C. 212) the true principle was acted upon. That was an action for a libel upon the plaintiff, who was the owner and master of a ship, which he advertised to take passengers to the East Indies; and the libel imputed that the vessel was not seaworthy, and that Jews had purchased her to take out convicts. The Court held, that evidence shewing that the plaintiff's profits after the publication of the libel were 1500l below the usual average, was admissible, to enable the jury to form an opinion as to the nature of the plaintiff's business, and of his general rate of profit. Here, also, the plaintiffs have not sustained any loss beyond that which was submitted to the jury."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Bodley v. Reynolds",
+      "text": "Bodley v. Reynolds",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8 Q. B. 779) and",
+      "text": "(8 Q. B. 779) and"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kettle v. Hunt",
+      "text": "Kettle v. Hunt",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(Bull. N. P. 77) are similar in principle. In the latter, it was held that the loss of the benefit of trade, which a man suffers by the detention of his tools, is recoverable as special damage. The loss they had sustained during the time they were so deprived of their shaft, or until they could have obtained a new one. In",
+      "text": "(Bull. N. P. 77) are similar in principle. In the latter, it was held that the loss of the benefit of trade, which a man suffers by the detention of his tools, is recoverable as special damage. The loss they had sustained during the time they were so deprived of their shaft, or until they could have obtained a new one. In"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Black v. Baxendale",
+      "text": "Black v. Baxendale",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1 Exch. 410), by reason of the defendant's omission to deliver the goods within a reasonable time at Bedford, the plaintiff's agent, who had been sent there to meet the goods, was put to certain additional expenses, and this Court held that such expenses might be given by the jury as damages. In Brandt v. Bowlby (2 B. & Ald. 932), which was an action of assumpsit against the defendants, as owners of a certain vessel, for not delivering a cargo of wheat shipped to the plaintiffs, the cargo reached the port of destination was held to be the true rule of damages.\" As between the parties in this cause,\" said Parke, J., \"the plaintiffs are entitled to be put in the same situation as they would have been in, if the cargo had been delivered to their order at the time when it was delivered to the wrong party; and the sum it would have fetched at the time is the amount of the loss sustained by the non-performance of the defendants' contract.\" The recent decision of this Court, in",
+      "text": "(1 Exch. 410), by reason of the defendant's omission to deliver the goods within a reasonable time at Bedford, the plaintiff's agent, who had been sent there to meet the goods, was put to certain additional expenses, and this Court held that such expenses might be given by the jury as damages. In Brandt v. Bowlby (2 B. & Ald. 932), which was an action of assumpsit against the defendants, as owners of a certain vessel, for not delivering a cargo of wheat shipped to the plaintiffs, the cargo reached the port of destination was held to be the true rule of damages.\" As between the parties in this cause,\" said Parke, J., \"the plaintiffs are entitled to be put in the same situation as they would have been in, if the cargo had been delivered to their order at the time when it was delivered to the wrong party; and the sum it would have fetched at the time is the amount of the loss sustained by the non-performance of the defendants' contract.\" The recent decision of this Court, in"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Waters v. Towers",
+      "text": "Waters v. Towers",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8 Ex. 401), seems to be strongly in the plaintiffs' favour. The defendants there had agreed to fit up the plaintiffs' mill within a reasonable time, but had not completed their contract within such time; and it was held that the plaintiffs were entitled to recover, by way of damages, the loss of profit upon a contract they had entered into with third parties, and which they were unable to fulfil by reason of the defendants' breach of contract. There was ample evidence that the defendants knew the purpose for which this shaft was sent, and that the result of its nondelivery in due time would be the stoppage of the mill; for the defendants' agent, at their place of business, was told that the mill was then stopped, that the shaft must be delivered immediately, and that if a special entry was necessary and natural result of their wrongful act. They also cited Ward v. Smith (11 Price, 19); and Parke, B., referred to Levy v. Langridge (4 M. & W. 337).",
+      "text": "(8 Ex. 401), seems to be strongly in the plaintiffs' favour. The defendants there had agreed to fit up the plaintiffs' mill within a reasonable time, but had not completed their contract within such time; and it was held that the plaintiffs were entitled to recover, by way of damages, the loss of profit upon a contract they had entered into with third parties, and which they were unable to fulfil by reason of the defendants' breach of contract. There was ample evidence that the defendants knew the purpose for which this shaft was sent, and that the result of its nondelivery in due time would be the stoppage of the mill; for the defendants' agent, at their place of business, was told that the mill was then stopped, that the shaft must be delivered immediately, and that if a special entry was necessary and natural result of their wrongful act. They also cited Ward v. Smith (11 Price, 19); and Parke, B., referred to Levy v. Langridge (4 M. & W. 337)."
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Whateley, Willes, and Phipson, in support of the rule (Feb. 2). It has been contended, on the part of the plaintiffs, that the damages found by the jury are a matter fit for their consideration; but still the question remains, in what way ought the jury to have been directed? It has been also urged, that, in awarding damages, the law gives compensation to the injured individual. But it is clear that complete compensation is not to be awarded; for instance, the non-payment of a bill of exchange might lead to the utter ruin of the holder, and yet such damage could not be considered as necessarily resulting from the breach of contract, so as to entitle the party aggrieved to recover in respect of it. Take the case of the breach of a contract to supply a rick-cloth, whereby and in consequence of bad weather the hay, being unprotected, is spoiled, that damage could not be recoverable. Many similar cases might be added. The true principle to be deduced form the authorities upon this subject is that which is embodied in the maxim: \"In jure non remota cause sed proxima spectatur.\" Sedgwick says (page 38), \"In regard to the quantum of damages, instead of adhering to the term compensation, it would be far more accurate to say, in the language of Domat, which we have cited above, 'that the object is discriminate between that portion of the loss which must be borne by the offending party and that which must be borne by the sufferer'. The law in fact aims not at the satisfaction but at a division of the loss.\" And the learned author also cites the following passage from Broom's Legal Maxims: \"Every defendant,\" says Mr. Broom, \"against whom an action is brought experiences some injury or inconvenience beyond what the costs will compensate him for.\"",
+      "text": "Whateley, Willes, and Phipson, in support of the rule (Feb. 2). It has been contended, on the part of the plaintiffs, that the damages found by the jury are a matter fit for their consideration; but still the question remains, in what way ought the jury to have been directed? It has been also urged, that, in awarding damages, the law gives compensation to the injured individual. But it is clear that complete compensation is not to be awarded; for instance, the non-payment of a bill of exchange might lead to the utter ruin of the holder, and yet such damage could not be considered as necessarily resulting from the breach of contract, so as to entitle the party aggrieved to recover in respect of it. Take the case of the breach of a contract to supply a rick-cloth, whereby and in consequence of bad weather the hay, being unprotected, is spoiled, that damage could not be recoverable. Many similar cases might be added. The true principle to be deduced form the authorities upon this subject is that which is embodied in the maxim: \"In jure non remota cause sed proxima spectatur.\" Sedgwick says (page 38), \"In regard to the quantum of damages, instead of adhering to the term compensation, it would be far more accurate to say, in the language of Domat, which we have cited above, 'that the object is discriminate between that portion of the loss which must be borne by the offending party and that which must be borne by the sufferer'. The law in fact aims not at the satisfaction but at a division of the loss.\" And the learned author also cites the following passage from Broom's Legal Maxims: \"Every defendant,\" says Mr. Broom, \"against whom an action is brought experiences some injury or inconvenience beyond what the costs will compensate him for.\""
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[1]",
+      "text": "[1]",
+      "formatting": {
+        "bold": false,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "super"
+      }
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Again, at page 78, after referring to the case of",
+      "text": "Again, at page 78, after referring to the case of"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Flureau v. Thornhill",
+      "text": "Flureau v. Thornhill",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2 W. Blac. 1078), he says, \"Both the English and American Courts have generally adhered to this denial of profits as any part of the damages to be compensated and that whether in cases of contract or of tort. So, in a case of illegal capture, Mr. Justice Story rejected the item of profits on the voyage, and held this general language: 'Independent, however, of all authority, I am satisfied upon principle, that an allowance of damages upon the basis of a calculation of profits is inadmissible. The rule would be in the highest degree unfavourable to the interests of the community. The subject would be involved in utter uncertainty. The calculation would proceed upon contingencies, and would require acknowledge of foreign markets to an exactness, in point of time and value, which would sometimes present embarrassing obstacles; much would depend upon the length of the voyage, and the season of arrival, much upon the vigilance and activity of the master, and much upon the momentary demand. After all, it would be a calculation upon conjectures, and not upon facts; such a rule therefore has been rejected by Courts of law in ordinary cases, and instead of deciding upon the gains or losses of parties in particular cases, a uniform interest has been applied as the measure of damages for the detention of property.\" There is much force in that admirably constructed passage. We ought to pay all due homage in this country to the decisions of the American Courts upon this important subject, to which they appear to have given much careful consideration. The damages here are too remote. Several of the cases which were principally relied upon by the plaintiffs are distinguishable. In",
+      "text": "(2 W. Blac. 1078), he says, \"Both the English and American Courts have generally adhered to this denial of profits as any part of the damages to be compensated and that whether in cases of contract or of tort. So, in a case of illegal capture, Mr. Justice Story rejected the item of profits on the voyage, and held this general language: 'Independent, however, of all authority, I am satisfied upon principle, that an allowance of damages upon the basis of a calculation of profits is inadmissible. The rule would be in the highest degree unfavourable to the interests of the community. The subject would be involved in utter uncertainty. The calculation would proceed upon contingencies, and would require acknowledge of foreign markets to an exactness, in point of time and value, which would sometimes present embarrassing obstacles; much would depend upon the length of the voyage, and the season of arrival, much upon the vigilance and activity of the master, and much upon the momentary demand. After all, it would be a calculation upon conjectures, and not upon facts; such a rule therefore has been rejected by Courts of law in ordinary cases, and instead of deciding upon the gains or losses of parties in particular cases, a uniform interest has been applied as the measure of damages for the detention of property.\" There is much force in that admirably constructed passage. We ought to pay all due homage in this country to the decisions of the American Courts upon this important subject, to which they appear to have given much careful consideration. The damages here are too remote. Several of the cases which were principally relied upon by the plaintiffs are distinguishable. In"
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Waters v. Towers",
+      "text": "Waters v. Towers",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1 Exch. 401) there was a special contract to do the work in a particular time, and the damage occasioned by the non-completion of the contract was that to which the plaintiffs were held to be entitled. In",
+      "text": "(1 Exch. 401) there was a special contract to do the work in a particular time, and the damage occasioned by the non-completion of the contract was that to which the plaintiffs were held to be entitled. In"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Borradale v. Brunton",
+      "text": "Borradale v. Brunton",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8 Taunt. 535) there was a direct engagement that the cable should hold the anchor. So, in the case of taking away a workman's tools, the natural and necessary consequence is the loss of employment: Bodley v. Reynolds (8 Q. B. 779). The following cases may be referred to as decisions upon the principle within which the defendants contend that the present case falls:",
+      "text": "(8 Taunt. 535) there was a direct engagement that the cable should hold the anchor. So, in the case of taking away a workman's tools, the natural and necessary consequence is the loss of employment: Bodley v. Reynolds (8 Q. B. 779). The following cases may be referred to as decisions upon the principle within which the defendants contend that the present case falls:"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Jones v. Gooday",
+      "text": "Jones v. Gooday",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(8 M. & W. 146),",
+      "text": "(8 M. & W. 146),"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Walton v. Fothergill",
+      "text": "Walton v. Fothergill",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(7 Car. & P. 392),",
+      "text": "(7 Car. & P. 392),"
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Boyce v. Bayliffe",
+      "text": "Boyce v. Bayliffe",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(1 Camp. 58) and",
+      "text": "(1 Camp. 58) and"
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Archer v. Williams",
+      "text": "Archer v. Williams",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2. C. & K. 26). The rule, therefore, that the immediate cause is to be regarded in considering the loss, is applicable here. There was no special contract between these parties. A carrier has a certain duty cast upon him by law, and that duty is not to be enlarged to an indefinite extent in the absence of a special contract, or of fraud or malice. The maxim \"dolus circuitu non purgatur\", does not apply. The question as to how far liability may be affected by reason of malice forming one of the elements to be taken into consideration, was treated of by the Court of Queen's Bench in",
+      "text": "(2. C. & K. 26). The rule, therefore, that the immediate cause is to be regarded in considering the loss, is applicable here. There was no special contract between these parties. A carrier has a certain duty cast upon him by law, and that duty is not to be enlarged to an indefinite extent in the absence of a special contract, or of fraud or malice. The maxim \"dolus circuitu non purgatur\", does not apply. The question as to how far liability may be affected by reason of malice forming one of the elements to be taken into consideration, was treated of by the Court of Queen's Bench in"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lumley v. Gye",
+      "text": "Lumley v. Gye",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2 E. & B. 216). Here the declaration is founded upon the defendants' duty as common carriers, and indeed there is no pretence for saying that they entered into a special contract to bear all the consequences of the non-delivery of the article in question. They were merely bound to carry it safely, and to deliver it within a reasonable time. The duty of the clerk, who was in attendance at the defendants' office, was to enter the article, and to take the amount of the carriage; but a mere notice to him, such as was here given, could not make the defendants, as carriers, liable as upon a special contract. Such matters, therefore, must be rejected from the consideration of the question. If carriers are to be liable in such a case as this, the exercise of a sound judgment would not suffice, but they ought to be gifted also with a spirit of prophecy. \"I have always understood,\" said Patterson, J., in",
+      "text": "(2 E. & B. 216). Here the declaration is founded upon the defendants' duty as common carriers, and indeed there is no pretence for saying that they entered into a special contract to bear all the consequences of the non-delivery of the article in question. They were merely bound to carry it safely, and to deliver it within a reasonable time. The duty of the clerk, who was in attendance at the defendants' office, was to enter the article, and to take the amount of the carriage; but a mere notice to him, such as was here given, could not make the defendants, as carriers, liable as upon a special contract. Such matters, therefore, must be rejected from the consideration of the question. If carriers are to be liable in such a case as this, the exercise of a sound judgment would not suffice, but they ought to be gifted also with a spirit of prophecy. \"I have always understood,\" said Patterson, J., in"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kelly v. Partington",
+      "text": "Kelly v. Partington",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(5 B. & Ad. 651), \"that the special damage must be the natural result of the thing done.\" That sentence presents the true test. The Court of Queen's Bench acted upon that rule in",
+      "text": "(5 B. & Ad. 651), \"that the special damage must be the natural result of the thing done.\" That sentence presents the true test. The Court of Queen's Bench acted upon that rule in"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Foxall v. Barnett",
+      "text": "Foxall v. Barnett",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(2 E. & B. 928). This therefore is a question of law, and the jury ought to have been told that these damages were too remote; and that, in the absence of the proof of any other damage, the plaintiffs were entitled to nominal damages only:",
+      "text": "(2 E. & B. 928). This therefore is a question of law, and the jury ought to have been told that these damages were too remote; and that, in the absence of the proof of any other damage, the plaintiffs were entitled to nominal damages only:"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Tindall v. Bell",
+      "text": "Tindall v. Bell",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(11 M. & W. 232).",
+      "text": "(11 M. & W. 232)."
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Siordet v. Hall",
+      "text": "Siordet v. Hall",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(4 Bing. 607) and",
+      "text": "(4 Bing. 607) and"
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "De Vaux v. Salvador",
+      "text": "De Vaux v. Salvador",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(4 A. & E. 420) are instances of cases where the Courts appear to have gone into the opposite extremes: in the one case of unduly favouring the carrier, in the other of holding them liable for results which would appear too remote. If the defendants should be held responsible for the damages awarded by the jury, they would be in a better position if they confined their business to the conveyance of gold. They cannot be responsible for results which, at the time the goods are delivered for carriage, and beyond all human foresight. Suppose a manufacturer were to contract with a coal merchant or min owner for the delivery of a boat load of coals, no intimation being given that the coals were required for immediate use, the vendor in that case would not be liable for the stoppage of the vendee's business for want of the article which he had failed to deliver: for the vendor has no knowledge that the goods are not to go to the vendee's general stock. Where the contracting party is shewn to be acquainted with all the consequences that must of necessity follow from a breach on his part of the contract, it may be reasonable to say that he takes the risk of such consequences. If, as between vendor and vendee, this species of liability has no existence, a fortiori, the carrier is not to be burthened with it. In cases of personal injury to passengers, the damage to which the sufferer has been held entitled is the direct and immediate consequence of the wrongful act.",
+      "text": "(4 A. & E. 420) are instances of cases where the Courts appear to have gone into the opposite extremes: in the one case of unduly favouring the carrier, in the other of holding them liable for results which would appear too remote. If the defendants should be held responsible for the damages awarded by the jury, they would be in a better position if they confined their business to the conveyance of gold. They cannot be responsible for results which, at the time the goods are delivered for carriage, and beyond all human foresight. Suppose a manufacturer were to contract with a coal merchant or min owner for the delivery of a boat load of coals, no intimation being given that the coals were required for immediate use, the vendor in that case would not be liable for the stoppage of the vendee's business for want of the article which he had failed to deliver: for the vendor has no knowledge that the goods are not to go to the vendee's general stock. Where the contracting party is shewn to be acquainted with all the consequences that must of necessity follow from a breach on his part of the contract, it may be reasonable to say that he takes the risk of such consequences. If, as between vendor and vendee, this species of liability has no existence, a fortiori, the carrier is not to be burthened with it. In cases of personal injury to passengers, the damage to which the sufferer has been held entitled is the direct and immediate consequence of the wrongful act."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Cur. adv. vult.",
+      "text": "Cur. adv. vult."
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The judgment of the Court was now delivered by",
+      "text": "The judgment of the Court was now delivered by"
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "ALDERSON, B. We think that there ought to be a new trial in this case; but, in so doing, we deem it to be expedient and necessary to state explicitly the rule which the Judge, at the next trial, ought, in our opinion, to direct the jury to be governed by when they estimate the damages.",
+      "text": "ALDERSON, B. We think that there ought to be a new trial in this case; but, in so doing, we deem it to be expedient and necessary to state explicitly the rule which the Judge, at the next trial, ought, in our opinion, to direct the jury to be governed by when they estimate the damages."
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It is. Indeed, of the last importance that we should do this; for, if the jury are left without any definite rule to guide them, it will, in such cases as these, manifestly lead to the greatest injustice. The Courts have done this on several occasions; and in Blake v. Midland Railway Company (18 Q. B. 93), the Court granted a new trial on this very ground, that the rule had not been definitely laid down to the jury by the learned Judge at Nisi Prius.",
+      "text": "It is. Indeed, of the last importance that we should do this; for, if the jury are left without any definite rule to guide them, it will, in such cases as these, manifestly lead to the greatest injustice. The Courts have done this on several occasions; and in Blake v. Midland Railway Company (18 Q. B. 93), the Court granted a new trial on this very ground, that the rule had not been definitely laid down to the jury by the learned Judge at Nisi Prius."
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"There are certain establishing rules\", this Court says, in Alder v. Keighley (15 M. & W. 117), \"according to which the jury ought to find\". And the Court, in that case, adds: \"and here there is a clear rule, that the amount which would have been received if the contract had been kept, is the measure of damages if the contract is broken.\"",
+      "text": "\"There are certain establishing rules\", this Court says, in Alder v. Keighley (15 M. & W. 117), \"according to which the jury ought to find\". And the Court, in that case, adds: \"and here there is a clear rule, that the amount which would have been received if the contract had been kept, is the measure of damages if the contract is broken.\""
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Now we think the proper rule is such as the present is this: Where two parties have made a contract which one of them has broken, the damages which the other party ought to receive in respect of such breach of contract should be such as may fairly and reasonably be considered either arising naturally, i.e., according to the usual course of things, from such breach of contract itself, or such as may reasonably be supposed to have been in the contemplation of both parties, at the time they made the contract, as the probable result of the breach of it. Now, if the special circumstances under which the contract was actually made where communicated by the plaintiffs to the defendants, and thus known to both parties, the damages resulting from the breach of such a contract, which they would reasonably contemplate, would be the amount of injury which would ordinarily follow from a breach of contract under these special circumstances so known and communicated. But, on the other hand, if these special circumstances were wholly unknown to the party breaking the contract, he, at the most, could only be supposed to have had in his contemplation the amount of injury which would arise generally, and in the great multitude of cases not affected by any special circumstances, from such a breach of contract. For such loss would neither have flowed naturally from the breach of this contract in the great multitude of such cases occurring under ordinary circumstances, nor were the special circumstances, which, perhaps, would have made it a reasonable and natural consequence of such breach of contract, communicated to or known by the defendants. The Judge ought, therefore, to have told the jury, that, upon the fats then before them, they ought not to take the loss of profits into consideration at all in estimating the damages. There must therefore be a new trial in this case.",
+      "text": "Now we think the proper rule is such as the present is this: Where two parties have made a contract which one of them has broken, the damages which the other party ought to receive in respect of such breach of contract should be such as may fairly and reasonably be considered either arising naturally, i.e., according to the usual course of things, from such breach of contract itself, or such as may reasonably be supposed to have been in the contemplation of both parties, at the time they made the contract, as the probable result of the breach of it. Now, if the special circumstances under which the contract was actually made where communicated by the plaintiffs to the defendants, and thus known to both parties, the damages resulting from the breach of such a contract, which they would reasonably contemplate, would be the amount of injury which would ordinarily follow from a breach of contract under these special circumstances so known and communicated. But, on the other hand, if these special circumstances were wholly unknown to the party breaking the contract, he, at the most, could only be supposed to have had in his contemplation the amount of injury which would arise generally, and in the great multitude of cases not affected by any special circumstances, from such a breach of contract. For such loss would neither have flowed naturally from the breach of this contract in the great multitude of such cases occurring under ordinary circumstances, nor were the special circumstances, which, perhaps, would have made it a reasonable and natural consequence of such breach of contract, communicated to or known by the defendants. The Judge ought, therefore, to have told the jury, that, upon the fats then before them, they ought not to take the loss of profits into consideration at all in estimating the damages. There must therefore be a new trial in this case."
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Rule absolute.",
+      "text": "Rule absolute."
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Note 1 Broom's Legal Maxims, p. 95;",
+      "text": "Note 1 Broom's Legal Maxims, p. 95;"
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Davies v. Jenkins",
+      "text": "Davies v. Jenkins",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", 11 M. & W. 755.",
+      "text": ", 11 M. & W. 755."
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Free Daily Summaries in Your Inbox",
+      "text": "Free Daily Summaries in Your Inbox",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "You're all set! You already receive all suggested Justia Opinion Summary Newsletters. You can explore additional available newsletters",
+      "text": "You're all set! You already receive all suggested Justia Opinion Summary Newsletters. You can explore additional available newsletters"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "here",
+      "text": "here",
+      "hyperlink": "https://connect.justia.com/case-law-summary-newsletters"
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sign up for our free summaries and get the latest delivered directly to you.",
+      "text": "Sign up for our free summaries and get the latest delivered directly to you."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Our Suggestions:",
+      "text": "Our Suggestions:",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Enter Your Email",
+      "text": "Enter Your Email"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Enter email",
+      "text": "Enter email"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sign Up",
+      "text": "Sign Up"
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Free Webinars for All",
+      "text": "Free Webinars for All",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://connect.justia.com/webinars"
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Ask a Lawyer\nGet Free Answers",
+      "text": "Ask a Lawyer\nGet Free Answers",
+      "hyperlink": "https://answers.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Have a legal question? Get free answers from experienced lawyers!",
+      "text": "Have a legal question? Get free answers from experienced lawyers!"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Ask Question",
+      "text": "Ask Question"
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Find a Lawyer",
+      "text": "Find a Lawyer",
+      "hyperlink": "https://www.justia.com/lawyers"
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Legal Issue or Lawyer Name",
+      "text": "Legal Issue or Lawyer Name"
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "City, State",
+      "text": "City, State"
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Search",
+      "text": "Search"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lawyers - Get Listed Now!",
+      "text": "Lawyers - Get Listed Now!",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://lawyers.justia.com/lawyer-directory-listings"
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Get a free directory profile listing",
+      "text": "Get a free directory profile listing"
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Justia Legal Resources",
+      "text": "Justia Legal Resources"
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Find a Lawyer",
+      "text": "Find a Lawyer",
+      "hyperlink": "https://www.justia.com/lawyers"
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Bankruptcy Lawyers",
+      "text": "Bankruptcy Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/bankruptcy",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Business Lawyers",
+      "text": "Business Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/business-law",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Criminal Lawyers",
+      "text": "Criminal Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/criminal-law",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Employment Lawyers",
+      "text": "Employment Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/employment-law",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Estate Planning Lawyers",
+      "text": "Estate Planning Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/estate-planning",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Family Lawyers",
+      "text": "Family Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/family-law",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Personal Injury Lawyers",
+      "text": "Personal Injury Lawyers",
+      "hyperlink": "https://www.justia.com/lawyers/personal-injury",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/lawyers",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Individuals",
+      "text": "Individuals",
+      "hyperlink": "https://www.justia.com/individuals/"
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Bankruptcy",
+      "text": "Bankruptcy",
+      "hyperlink": "https://www.justia.com/bankruptcy/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Criminal",
+      "text": "Criminal",
+      "hyperlink": "https://www.justia.com/criminal/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Divorce",
+      "text": "Divorce",
+      "hyperlink": "https://www.justia.com/family/divorce/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "DUI",
+      "text": "DUI",
+      "hyperlink": "https://www.justia.com/criminal/drunk-driving-dui-dwi/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Estate Planning",
+      "text": "Estate Planning",
+      "hyperlink": "https://www.justia.com/estate-planning/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Family Law",
+      "text": "Family Law",
+      "hyperlink": "https://www.justia.com/family/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Personal Injury",
+      "text": "Personal Injury",
+      "hyperlink": "https://www.justia.com/injury/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/individuals/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Business",
+      "text": "Business",
+      "hyperlink": "https://www.justia.com/business/"
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Business Formation",
+      "text": "Business Formation",
+      "hyperlink": "https://www.justia.com/business-operations/starting-your-own-business/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Business Operations",
+      "text": "Business Operations",
+      "hyperlink": "https://www.justia.com/business-operations/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Employment",
+      "text": "Employment",
+      "hyperlink": "https://www.justia.com/employment/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Intellectual Property",
+      "text": "Intellectual Property",
+      "hyperlink": "https://www.justia.com/intellectual-property/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "International Trade",
+      "text": "International Trade",
+      "hyperlink": "https://www.justia.com/international-law/international-trade-law/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Real Estate",
+      "text": "Real Estate",
+      "hyperlink": "https://www.justia.com/business-operations/commercial-real-estate-the-law/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Tax Law",
+      "text": "Tax Law",
+      "hyperlink": "https://www.justia.com/tax/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/business/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Law Schools",
+      "text": "Law Schools",
+      "hyperlink": "https://www.justia.com/law-schools/"
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/171",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Dictionary",
+      "text": "Dictionary",
+      "hyperlink": "https://dictionary.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/172",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Admissions",
+      "text": "Admissions",
+      "hyperlink": "https://www.justia.com/law-students/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/173",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Financial Aid",
+      "text": "Financial Aid",
+      "hyperlink": "https://www.justia.com/law-students/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/174",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Course Outlines",
+      "text": "Course Outlines",
+      "hyperlink": "https://www.justia.com/law-schools/outlines/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/175",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Law Journals",
+      "text": "Law Journals",
+      "hyperlink": "https://www.justia.com/law-schools/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/176",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Blogs",
+      "text": "Blogs",
+      "hyperlink": "https://blawgsearch.justia.com/blogs/categories/law-student",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/177",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Employment",
+      "text": "Employment",
+      "hyperlink": "https://www.justia.jobs/jobs/summer-associate-legal-internship/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/178",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/law-schools/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/179",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "U.S. Federal Law",
+      "text": "U.S. Federal Law",
+      "hyperlink": "https://law.justia.com/us/"
+    },
+    {
+      "self_ref": "#/texts/180",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/181",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "U.S. Constitution",
+      "text": "U.S. Constitution",
+      "hyperlink": "https://law.justia.com/constitution/us/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/182",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "U.S. Code",
+      "text": "U.S. Code",
+      "hyperlink": "https://law.justia.com/codes/us",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/183",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Regulations",
+      "text": "Regulations",
+      "hyperlink": "https://regulations.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/184",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Supreme Court",
+      "text": "Supreme Court",
+      "hyperlink": "https://supreme.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/185",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Circuit Courts",
+      "text": "Circuit Courts",
+      "hyperlink": "https://law.justia.com/cases/federal/appellate-courts/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/186",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "District Courts",
+      "text": "District Courts",
+      "hyperlink": "https://law.justia.com/cases/federal/district-courts/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/187",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Dockets & Filings",
+      "text": "Dockets & Filings",
+      "hyperlink": "https://dockets.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/188",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://law.justia.com/us/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/189",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "U.S. State Law",
+      "text": "U.S. State Law",
+      "hyperlink": "https://law.justia.com/us-states/"
+    },
+    {
+      "self_ref": "#/texts/190",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/191",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "State Constitutions",
+      "text": "State Constitutions",
+      "hyperlink": "https://law.justia.com/us-states/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/192",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "State Codes",
+      "text": "State Codes",
+      "hyperlink": "https://law.justia.com/codes/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/193",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "State Case Law",
+      "text": "State Case Law",
+      "hyperlink": "https://law.justia.com/cases/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/194",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "California",
+      "text": "California",
+      "hyperlink": "https://law.justia.com/california/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/195",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Florida",
+      "text": "Florida",
+      "hyperlink": "https://law.justia.com/florida/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/196",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "New York",
+      "text": "New York",
+      "hyperlink": "https://law.justia.com/new-york/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/197",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Texas",
+      "text": "Texas",
+      "hyperlink": "https://law.justia.com/texas/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/198",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://law.justia.com/us-states/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/199",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Other Databases",
+      "text": "Other Databases",
+      "hyperlink": "https://www.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/200",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/201",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Legal Jobs",
+      "text": "Legal Jobs",
+      "hyperlink": "https://www.justia.jobs/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/202",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Legal Blogs",
+      "text": "Legal Blogs",
+      "hyperlink": "https://blawgsearch.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/203",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Business Forms",
+      "text": "Business Forms",
+      "hyperlink": "https://contracts.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/204",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Product Recalls",
+      "text": "Product Recalls",
+      "hyperlink": "https://recalls.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/205",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Patents",
+      "text": "Patents",
+      "hyperlink": "https://patents.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/206",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Trademarks",
+      "text": "Trademarks",
+      "hyperlink": "https://trademarks.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/207",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Countries",
+      "text": "Countries",
+      "hyperlink": "https://www.justia.com/countries/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/208",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/209",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Marketing Solutions",
+      "text": "Marketing Solutions",
+      "hyperlink": "https://www.justia.com/marketing/"
+    },
+    {
+      "self_ref": "#/texts/210",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Arrow",
+      "text": "Arrow"
+    },
+    {
+      "self_ref": "#/texts/211",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Connect Membership",
+      "text": "Justia Connect Membership",
+      "hyperlink": "https://www.justia.com/marketing/connect/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/212",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Lawyer Directory",
+      "text": "Justia Lawyer Directory",
+      "hyperlink": "https://www.justia.com/marketing/lawyer-directory/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/213",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Premium Placements",
+      "text": "Justia Premium Placements",
+      "hyperlink": "https://www.justia.com/marketing/lawyer-directory/#premium-placements",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/214",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Elevate (SEO, Websites)",
+      "text": "Justia Elevate (SEO, Websites)",
+      "hyperlink": "https://www.justia.com/marketing/elevate/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/215",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Amplify (PPC, GBP)",
+      "text": "Justia Amplify (PPC, GBP)",
+      "hyperlink": "https://www.justia.com/marketing/amplify/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/216",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Justia Onward Blog",
+      "text": "Justia Onward Blog",
+      "hyperlink": "https://onward.justia.com/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/217",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Testimonials",
+      "text": "Testimonials",
+      "hyperlink": "https://www.justia.com/marketing/testimonials/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/218",
+      "parent": {
+        "$ref": "#/groups/27"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "More...",
+      "text": "More...",
+      "hyperlink": "https://www.justia.com/marketing/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/219",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "LinkedIn",
+      "text": "LinkedIn",
+      "hyperlink": "https://www.linkedin.com/company/justia"
+    },
+    {
+      "self_ref": "#/texts/220",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "YouTube",
+      "text": "YouTube",
+      "hyperlink": "https://www.youtube.com/justia"
+    },
+    {
+      "self_ref": "#/texts/221",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Facebook",
+      "text": "Facebook",
+      "hyperlink": "https://www.facebook.com/justia"
+    },
+    {
+      "self_ref": "#/texts/222",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Instagram",
+      "text": "Instagram",
+      "hyperlink": "https://www.instagram.com/justiacom"
+    },
+    {
+      "self_ref": "#/texts/223",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Threads",
+      "text": "Threads",
+      "hyperlink": "https://www.threads.com/@justiacom"
+    },
+    {
+      "self_ref": "#/texts/224",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Bluesky",
+      "text": "Bluesky",
+      "hyperlink": "https://bsky.app/profile/justiacom.bsky.social"
+    },
+    {
+      "self_ref": "#/texts/225",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "X",
+      "text": "X",
+      "hyperlink": "https://x.com/justiacom"
+    },
+    {
+      "self_ref": "#/texts/226",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Justia",
+      "text": "Justia",
+      "hyperlink": "https://lawyers.justia.com/organization/justia-inc-16302"
+    },
+    {
+      "self_ref": "#/texts/227",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u00a9 2026",
+      "text": "\u00a9 2026"
+    },
+    {
+      "self_ref": "#/texts/228",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Justia",
+      "text": "Justia",
+      "hyperlink": "https://www.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/229",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Justia Connect",
+      "text": "Justia Connect",
+      "hyperlink": "https://connect.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/230",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Legal Portal",
+      "text": "Legal Portal",
+      "hyperlink": "https://www.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/231",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Company",
+      "text": "Company",
+      "hyperlink": "https://company.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/232",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Help",
+      "text": "Help",
+      "hyperlink": "https://support.justia.com/"
+    },
+    {
+      "self_ref": "#/texts/233",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Terms of Service",
+      "text": "Terms of Service",
+      "hyperlink": "https://www.justia.com/terms-of-service/"
+    },
+    {
+      "self_ref": "#/texts/234",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Privacy Policy",
+      "text": "Privacy Policy",
+      "hyperlink": "https://www.justia.com/privacy-policy/"
+    },
+    {
+      "self_ref": "#/texts/235",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Marketing Solutions",
+      "text": "Marketing Solutions",
+      "hyperlink": "https://www.justia.com/marketing/"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/1"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/2"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/140"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/150"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/160"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/170"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/180"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/10",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/190"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/11",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/200"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/12",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/210"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/13",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/219"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/14",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/220"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/15",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/221"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/16",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/222"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/17",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/223"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/18",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/224"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/19",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/225"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/20",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/226"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/8"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Neutral Citation Number: [1854] EWHC Exch J70\n(1854) 9 Ex Ch 341; 156 ER 145",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/8"
+            }
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 1,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Neutral Citation Number: [1854] EWHC Exch J70\n(1854) 9 Ex Ch 341; 156 ER 145",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "23 February 1854",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 1,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "23 February 1854",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/11"
+        },
+        {
+          "$ref": "#/groups/12"
+        },
+        {
+          "$ref": "#/groups/13"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "HADLEY & ANOR",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/11"
+            }
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "-v-",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/12"
+            }
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "BAXENDALE & ORS",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/13"
+            }
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 1,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "HADLEY & ANOR",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "-v-",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "BAXENDALE & ORS",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}
