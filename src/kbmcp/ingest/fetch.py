@@ -55,8 +55,27 @@ def content_hash(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def _ext_for(fmt: str) -> str:
-    return {"pdf": ".pdf", "html": ".html"}.get(fmt, ".bin")
+# Cap on a preserved suffix: anything longer is not a real file extension, and an
+# unbounded suffix would let a crafted filename dictate the cache filename.
+_MAX_EXT_LEN = 12
+
+
+def _ext_for(fmt: str, source_path=None) -> str:
+    """Extension for the pinned raw file.
+
+    Remote sources map by declared format, exactly as before -- the 55 committed pin
+    records depend on this. A LOCAL source keeps its own suffix instead, because
+    Docling infers input format from the extension and natively handles md, docx,
+    pptx, xlsx, csv, epub and more; caching those as .bin makes them unparseable.
+    """
+    known = {"pdf": ".pdf", "html": ".html"}
+    if fmt in known:
+        return known[fmt]
+    if source_path:
+        suffix = Path(str(source_path)).suffix.lower()
+        if suffix and len(suffix) <= _MAX_EXT_LEN:
+            return suffix
+    return ".bin"
 
 
 def meta_path_for(raw_dir, doc_id: str) -> Path:
@@ -257,7 +276,7 @@ def fetch_source(entry, raw_dir, cfg, *, force=False, transport=None, renderer=N
         fmt = entry.format
         resolved_version = entry.version
 
-    raw_filename = f"{entry.doc_id}{_ext_for(fmt)}"
+    raw_filename = f"{entry.doc_id}{_ext_for(fmt, final_url if recipe == 'local' else None)}"
     (raw_dir / raw_filename).write_bytes(data)
     meta = {
         "doc_id": entry.doc_id, "recipe": recipe, "resolved_version": resolved_version,
