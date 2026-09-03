@@ -85,3 +85,29 @@ def test_written_manifest_round_trips_through_load_manifest(safe_tmp_path):
 def test_empty_folder_raises_rather_than_building_nothing(safe_tmp_path):
     with pytest.raises(fs.FolderSourceError):
         fs.discover(safe_tmp_path)
+
+
+def test_punctuation_only_difference_collides_and_raises(safe_tmp_path):
+    """a-b.md and a_b.md both slug to 'a-b'. Without the check, one file would
+    silently vanish from the CKB."""
+    _write(safe_tmp_path, "a-b.md")
+    _write(safe_tmp_path, "a_b.md")
+    with pytest.raises(fs.FolderSourceError) as exc:
+        fs.discover(safe_tmp_path)
+    assert "a-b" in str(exc.value)          # names the colliding slug
+    assert "a-b.md" in str(exc.value) or "a_b.md" in str(exc.value)   # and a real file
+
+
+def test_slugs_that_reduce_to_empty_collide_and_raise(safe_tmp_path):
+    """Filenames of pure punctuation both fall back to 'source'."""
+    _write(safe_tmp_path, "___.md")
+    _write(safe_tmp_path, "!!!.md")
+    with pytest.raises(fs.FolderSourceError):
+        fs.discover(safe_tmp_path)
+
+
+def test_a_single_punctuation_only_filename_is_still_usable(safe_tmp_path):
+    """One such file must NOT raise -- the fallback slug is legitimate on its own."""
+    _write(safe_tmp_path, "___.md")
+    rows = fs.discover(safe_tmp_path)
+    assert [r["doc_id"] for r in rows] == ["source"]
