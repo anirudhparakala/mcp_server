@@ -23,6 +23,13 @@ chunk:
   max_tokens: 800
   overlap_policy: minimal
   tokenizer: Qwen/Qwen3-Embedding-0.6B   # HybridChunker token counting; matches the Phase-2 embedder
+  # Pinned so an upstream tokenizer revision cannot silently shift chunk boundaries:
+  # context pins validate via text_sha256 of chunk text, so a shifted boundary would
+  # invalidate all 2803 pinned contexts at once and a keyless rebuild would produce a
+  # context-free CKB. Resolved 2026-09-02; the repo was last modified 2026-04-20, which
+  # predates every build here, so this pin matches the committed parses.
+  # Override a mismatch with build_corpus.py --allow-tokenizer-drift.
+  tokenizer_revision: "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
   # Drop publisher site chrome (leginfo code-selector menu, Justia link footer) that
   # Docling faithfully extracts but that carries no corpus content. Narrow signatures
   # only -- see ingest/chunk.py:is_boilerplate for why a structural heuristic was

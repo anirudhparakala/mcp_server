@@ -27,6 +27,50 @@ from transformers import AutoTokenizer
 _LINK_LINE = re.compile(r"^\[[^\]]+\]\(https?://[^)]+\)$")
 
 
+class TokenizerDriftError(RuntimeError):
+    """Raised when the resolved tokenizer revision differs from the pinned one."""
+
+
+def resolve_tokenizer_revision(model: str) -> str:
+    """The tokenizer repo's current commit sha on Hugging Face."""
+    from huggingface_hub import HfApi
+
+    return HfApi().model_info(model).sha
+
+
+def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False, resolver=None):
+    """Compare the pinned tokenizer revision against what the hub serves now.
+
+    Returns the revision actually in force, or None when it cannot be resolved
+    (offline, hub outage) -- an unresolvable revision must not break a build that
+    would otherwise succeed.
+
+    Raises TokenizerDriftError when a pin exists and disagrees. That failure is
+    loud and opt-out because the alternative is silent and expensive: a shifted
+    chunk boundary invalidates EVERY pinned context at once (they validate via
+    text_sha256 of chunk text), and a rebuild without an API key would then produce
+    a context-free CKB that looks fine.
+    """
+    resolver = resolver or resolve_tokenizer_revision
+    model = chunk_cfg.get("tokenizer", "Qwen/Qwen3-Embedding-0.6B")
+    pinned = chunk_cfg.get("tokenizer_revision")
+    try:
+        resolved = resolver(model)
+    except Exception:  # noqa: BLE001 — offline is not a build failure
+        return None
+    if pinned and resolved != pinned and not allow_drift:
+        raise TokenizerDriftError(
+            f"tokenizer revision drift for {model}:\n"
+            f"  pinned:   {pinned}\n"
+            f"  resolved: {resolved}\n"
+            "Every pinned context would be invalidated, and a rebuild without "
+            "ANTHROPIC_API_KEY would silently produce a context-free CKB. Re-run with "
+            "--allow-tokenizer-drift to accept the new tokenizer (you will need to "
+            "regenerate contexts), or pin chunk.tokenizer_revision to the resolved value."
+        )
+    return resolved
+
+
 def is_boilerplate(text: str) -> bool:
     """True only for site navigation/footer chrome, never for document content."""
     stripped = (text or "").strip()
@@ -59,8 +103,11 @@ class ChunkRecord:
 
 
 @lru_cache(maxsize=2)
-def _chunker(model: str, max_tokens: int) -> HybridChunker:
-    tok = HuggingFaceTokenizer(tokenizer=AutoTokenizer.from_pretrained(model), max_tokens=max_tokens)
+def _chunker(model: str, max_tokens: int, revision: str | None) -> HybridChunker:
+    kwargs = {"revision": revision} if revision else {}
+    tok = HuggingFaceTokenizer(
+        tokenizer=AutoTokenizer.from_pretrained(model, **kwargs), max_tokens=max_tokens
+    )
     return HybridChunker(tokenizer=tok)
 
 
@@ -87,6 +134,7 @@ def chunk_document(dl_doc: DoclingDocument, chunk_cfg: dict) -> list[ChunkRecord
     chunker = _chunker(
         chunk_cfg.get("tokenizer", "Qwen/Qwen3-Embedding-0.6B"),
         int(chunk_cfg.get("max_tokens", 512)),
+        chunk_cfg.get("tokenizer_revision"),
     )
     drop_chrome = bool(chunk_cfg.get("drop_boilerplate", True))
     records: list[ChunkRecord] = []
