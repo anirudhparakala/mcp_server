@@ -75,3 +75,41 @@ def test_graph_cli_returns_0_on_an_empty_expectations_file(safe_tmp_path):
     (raw / "u.meta.json").write_text('{"resolved_version": "v1"}', encoding="utf-8")
     assert vg.main(["--ckb", str(ckb), "--expectations", str(exp),
                     "--manifest", str(man), "--raw-dir", str(raw)]) == 0
+
+
+def test_graph_cli_returns_1_when_an_active_expectation_fails(safe_tmp_path):
+    """The failure path is the whole point of this task: a gate that cannot
+    report failure is the silent-exit-0 bug in a new costume."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb_with_chunk(ckb, "text")
+    exp = safe_tmp_path / "exp.yaml"
+    exp.write_text(
+        "- name: needs-an-edge\n  from_slug: u\n  to_slug: u\n  min_edges: 1\n",
+        encoding="utf-8")
+    man = safe_tmp_path / "m.yaml"
+    man.write_text(
+        "- doc_id: u\n  url: u\n  domain: d\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n", encoding="utf-8")
+    raw = safe_tmp_path / "raw"
+    raw.mkdir()
+    (raw / "u.meta.json").write_text('{"resolved_version": "v1"}', encoding="utf-8")
+    assert vg.main(["--ckb", str(ckb), "--expectations", str(exp),
+                    "--manifest", str(man), "--raw-dir", str(raw)]) == 1
+
+
+def test_graph_cli_writes_nothing_to_stdout(safe_tmp_path, capsys):
+    """House rule: stdio JSON-RPC transport -- gate output goes to stderr."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb_with_chunk(ckb, "text")
+    exp = safe_tmp_path / "exp.yaml"
+    exp.write_text("[]\n", encoding="utf-8")
+    man = safe_tmp_path / "m.yaml"
+    man.write_text(
+        "- doc_id: u\n  url: u\n  domain: d\n  format: html\n"
+        "  license: x\n  license_ok: true\n  version: v1\n", encoding="utf-8")
+    raw = safe_tmp_path / "raw"
+    raw.mkdir()
+    (raw / "u.meta.json").write_text('{"resolved_version": "v1"}', encoding="utf-8")
+    vg.main(["--ckb", str(ckb), "--expectations", str(exp),
+             "--manifest", str(man), "--raw-dir", str(raw)])
+    assert capsys.readouterr().out == ""
