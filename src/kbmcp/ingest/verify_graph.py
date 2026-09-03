@@ -90,3 +90,30 @@ def all_passed(results) -> bool:
     """True iff every ACTIVE (non-pending) expectation passed. A pending
     expectation is reported but never allowed to fail the gate."""
     return all(r.passed for r in results if not r.pending)
+
+
+def main(argv=None) -> int:
+    import argparse
+    import sys
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.verify_graph")
+    p.add_argument("--ckb", default="ckb/ckb.sqlite")
+    p.add_argument("--expectations", default="corpus/benchmark/graph_expectations.yaml")
+    p.add_argument("--manifest", default="corpus/manifest.yaml")
+    p.add_argument("--raw-dir", default="corpus/raw")
+    a = p.parse_args(argv)
+
+    results = verify_graph(a.ckb, a.expectations, a.manifest, a.raw_dir)
+    for r in results:
+        tag = "PASS" if r.passed else "FAIL"
+        pending = " (pending)" if r.pending else ""
+        print(f"  [{tag}]{pending} {r.name}: {r.detail}", file=sys.stderr)
+    ok = all_passed(results)
+    active = [r for r in results if not r.pending]
+    print(f"graph gate: {sum(r.passed for r in active)}/{len(active)} active "
+          f"{'ok' if ok else 'FAILED'}", file=sys.stderr)
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

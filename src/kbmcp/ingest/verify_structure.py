@@ -53,3 +53,25 @@ def verify_structure(ckb_path, fixtures_path) -> list[FixtureResult]:
 
 def all_passed(results) -> bool:
     return all(r.passed for r in results)
+
+
+def main(argv=None) -> int:
+    import argparse
+    import sys
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.verify_structure")
+    p.add_argument("--ckb", default="ckb/ckb.sqlite")
+    p.add_argument("--fixtures", default="corpus/benchmark/structure_fixtures.yaml")
+    a = p.parse_args(argv)
+
+    results = verify_structure(a.ckb, a.fixtures)
+    for r in results:
+        print(f"  [{'PASS' if r.passed else 'FAIL'}] {r.name}: {r.detail}", file=sys.stderr)
+    ok = all_passed(results)
+    print(f"structure: {sum(r.passed for r in results)}/{len(results)} "
+          f"{'ok' if ok else 'FAILED'}", file=sys.stderr)
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
