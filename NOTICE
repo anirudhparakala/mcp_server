@@ -1,0 +1,240 @@
+NOTICE
+======
+
+This project ships a prebuilt knowledge base ("the CKB") containing text
+extracted from 55 third-party sources, together with machine-generated
+per-chunk context summaries derived from that text.
+
+The **software** in this repository is licensed under the MIT License; see
+LICENSE. This NOTICE covers the **corpus content**, which is NOT covered by
+that license and remains under the terms of its respective sources, listed
+below.
+
+Corpus content is included for retrieval research and evaluation: the server
+returns short cited evidence chunks in response to queries and performs no
+generation. Sources that are public domain, Creative Commons, or licensed for
+reuse are included under those terms, with attribution below. A small number of
+copyrighted items are included on a fair-use basis for this research purpose;
+they are marked "REMOVAL CANDIDATE" and the manifest is structured so any single
+source can be removed in one line.
+
+If you hold rights in any material listed here and object to its inclusion,
+please open an issue in this repository and it will be removed.
+
+This file is generated from corpus/manifest.yaml by scripts/generate_notice.py.
+Do not edit it by hand -- edit the manifest and regenerate.
+
+This is a record of attribution, not legal advice.
+
+
+Sources (55 source(s), grouped by license)
+==============================================================
+
+[REMOVAL CANDIDATE] (c) ACM (SIGIR 2009, DOI 10.1145/1571941.1572114); author self-archived postprint (University of Waterloo). Shipped fair-use + attribution; first candidate for one-line removal if challenged.
+--------------------------------------------------------------
+  paper-cormack-2009-rrf  [ai]
+    https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf
+
+(c) European Union / EDPB (WP29); reuse under Commission Decision 2011/833/EU with source acknowledgement
+--------------------------------------------------------------
+  edpb-guidelines-automated-decisions  [law_aireg]
+    https://ec.europa.eu/newsroom/article29/redirection/document/49826
+
+(c) European Union / EDPB; reuse under Commission Decision 2011/833/EU with source acknowledgement
+--------------------------------------------------------------
+  edpb-guidelines-consent  [law_aireg]
+    https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf
+
+(c) European Union; reuse authorized under Commission Decision 2011/833/EU with source acknowledgement (EUR-Lex)
+--------------------------------------------------------------
+  eurlex-ai-act-2024-1689  [law_aireg]
+    https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689
+  eurlex-gdpr-2016-679  [law_aireg]
+    https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504
+
+[REMOVAL CANDIDATE] (c) Now Publishers (Foundations and Trends in IR 3(4), 2009); author self-archived open copy (City, University of London). Shipped fair-use + attribution; first candidate for one-line removal if challenged.
+--------------------------------------------------------------
+  paper-robertson-2009-bm25  [ai]
+    https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf
+
+Apache-2.0 (model card)
+--------------------------------------------------------------
+  modelcard-bge-reranker-v2-m3  [ai]
+    https://huggingface.co/BAAI/bge-reranker-v2-m3
+  modelcard-qwen3-embedding  [ai]
+    https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+
+CC BY (Frontiers in Public Health; via Europe PMC PMC8990091)
+--------------------------------------------------------------
+  pmc-resistance-training-review  [fitness]
+    https://europepmc.org/articles/PMC8990091?pdf=render
+
+CC BY (Sports Medicine; via Europe PMC PMC11239729)
+--------------------------------------------------------------
+  pmc-swinton-2024-dose-response  [fitness]
+    https://europepmc.org/articles/PMC11239729?pdf=render
+
+CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5469049)
+--------------------------------------------------------------
+  issn-creatine  [fitness]
+    https://europepmc.org/articles/PMC5469049?pdf=render
+
+CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5470183)
+--------------------------------------------------------------
+  issn-diets-body-comp  [fitness]
+    https://europepmc.org/articles/PMC5470183?pdf=render
+
+CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5477153)
+--------------------------------------------------------------
+  issn-protein-exercise  [fitness]
+    https://europepmc.org/articles/PMC5477153?pdf=render
+
+CC BY 4.0 (JISSN / BMC; via Europe PMC PMC5596471)
+--------------------------------------------------------------
+  issn-nutrient-timing  [fitness]
+    https://europepmc.org/articles/PMC5596471?pdf=render
+
+CC BY 4.0 (Nature Open Access; via Europe PMC, PMC8371605)
+--------------------------------------------------------------
+  paper-jumper-2021-alphafold  [ai]
+    https://europepmc.org/articles/PMC8371605?pdf=render
+
+CC BY 4.0 (PLoS One; via Europe PMC PMC9560172)
+--------------------------------------------------------------
+  pmc-frequency-volume-equated  [fitness]
+    https://europepmc.org/articles/PMC9560172?pdf=render
+
+[REMOVAL CANDIDATE, NONCOMMERCIAL] CC BY-NC (Br J Sports Med / BMJ; via Europe PMC PMC5867436). NonCommercial; kept per user decision 2026-07-23 (load-bearing T5, no clean CC-BY equivalent); first candidate for removal if the shipped index's NC status is challenged.
+--------------------------------------------------------------
+  pmc-morton-2018-protein-meta  [fitness]
+    https://europepmc.org/articles/PMC5867436?pdf=render
+
+CC BY-SA 4.0 (Wikipedia)
+--------------------------------------------------------------
+  wiki-breach-of-contract  [law_contract]
+    https://en.wikipedia.org/w/index.php?title=Breach_of_contract&oldid=1358210839
+  wiki-ccpa  [law_aireg]
+    https://en.wikipedia.org/w/index.php?title=California_Consumer_Privacy_Act&oldid=1363027288
+  wiki-consideration  [law_contract]
+    https://en.wikipedia.org/w/index.php?title=Consideration&oldid=1362535624
+  wiki-eu-ai-act  [law_aireg]
+    https://en.wikipedia.org/w/index.php?title=Artificial_Intelligence_Act&oldid=1365588755
+  wiki-gdpr  [law_aireg]
+    https://en.wikipedia.org/w/index.php?title=General_Data_Protection_Regulation&oldid=1363040264
+  wiki-liquidated-damages  [law_contract]
+    https://en.wikipedia.org/w/index.php?title=Liquidated_damages&oldid=1360872692
+  wiki-muscle-hypertrophy  [fitness]
+    https://en.wikipedia.org/w/index.php?title=Muscle_hypertrophy&oldid=1363648459
+  wiki-progressive-overload  [fitness]
+    https://en.wikipedia.org/w/index.php?title=Progressive_overload&oldid=1364829368
+  wiki-protein-nutrient  [fitness]
+    https://en.wikipedia.org/w/index.php?title=Protein_(nutrient)&oldid=1366342569
+  wiki-strength-training  [fitness]
+    https://en.wikipedia.org/w/index.php?title=Strength_training&oldid=1365407520
+  wiki-transformer-dl  [ai]
+    https://en.wikipedia.org/w/index.php?title=Transformer_(deep_learning_architecture)&oldid=1362319941
+  wiki-vector-database  [ai]
+    https://en.wikipedia.org/w/index.php?title=Vector_database&oldid=1363379488
+
+CC BY-SA 4.0 (author-selected on arXiv)
+--------------------------------------------------------------
+  arxiv-reimers-2019-sbert  [ai]
+    https://arxiv.org/abs/1908.10084
+
+CC0 1.0 (original work authored for this corpus; placeholder facility, no real entity)
+--------------------------------------------------------------
+  sample-gym-liability-waiver  [fitness]
+    corpus/authored/sample-gym-liability-waiver.html
+
+Public domain (1854 English judicial opinion; no copyright in judicial opinions)
+--------------------------------------------------------------
+  case-hadley-v-baxendale  [law_contract]
+    https://law.justia.com/cases/foreign/united-kingdom/9-ex-ch-341-1854.html
+
+Public domain (1891 NY Court of Appeals opinion; official NY Law Reporting Bureau)
+--------------------------------------------------------------
+  case-hamer-v-sidway  [law_contract]
+    https://www.nycourts.gov/reporter/archives/hamer_sidway.htm
+
+Public domain (1893 English Court of Appeal judgment); Wikisource transcription (CC BY-SA wrapper on formatting only)
+--------------------------------------------------------------
+  case-carlill-carbolic  [law_contract]
+    https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727
+
+Public domain (1921 NY Court of Appeals opinion, Cardozo)
+--------------------------------------------------------------
+  case-jacob-youngs-v-kent  [law_contract]
+    https://law.justia.com/cases/new-york/court-of-appeals/1921/230-n-y-239-1921.html
+
+Public domain (1954 Virginia Supreme Court opinion); Wikisource transcription (CC BY-SA wrapper on formatting only)
+--------------------------------------------------------------
+  case-lucy-v-zehmer  [law_contract]
+    https://en.wikisource.org/w/index.php?title=Lucy_v._Zehmer&oldid=15747165
+
+Public domain (California Civil Code; government edict)
+--------------------------------------------------------------
+  law-ca-civil-contracts  [law_contract]
+    https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1550.
+
+Public domain (California Commercial Code; government edict). CA-enacted UCC Article 1 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23).
+--------------------------------------------------------------
+  ucc-article-1  [law_contract]
+    https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=1.&title=&part=&chapter=3.&article=
+
+Public domain (California Commercial Code; government edict). CA-enacted UCC Article 2 substitutes for the ALI/NCCUSL-copyrighted Cornell LII text (user decision 2026-07-23).
+--------------------------------------------------------------
+  ucc-article-2  [law_contract]
+    https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=COM&division=2.&title=&part=&chapter=2.&article=
+
+Public domain (California ballot measure / government work)
+--------------------------------------------------------------
+  law-cpra-amendment  [law_aireg]
+    https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop24.pdf
+
+Public domain (California statute; government edict, not copyrightable)
+--------------------------------------------------------------
+  law-ccpa-1798  [law_aireg]
+    https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5
+
+Public domain (U.S. federal government work, 17 U.S.C. 105)
+--------------------------------------------------------------
+  nist-ai-rmf  [law_aireg]
+    https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+
+Public domain (USDA/HHS, U.S. federal government work, 17 U.S.C. 105)
+--------------------------------------------------------------
+  usda-dietary-guidelines  [fitness]
+    https://odphp.health.gov/sites/default/files/2026-02/dietary_guidelines_for_americans-2020-2025.pdf
+
+Public record (SEC EDGAR filing; Hexion Specialty Chemicals Credit Agreement, Ex. 10.4). Shipped fair-use as a public SEC filing.
+--------------------------------------------------------------
+  edgar-commercial-contract  [law_contract]
+    https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm
+
+UK Open Government Licence v3.0 (Crown copyright)
+--------------------------------------------------------------
+  ico-ai-automated-decision  [law_aireg]
+    https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-individual-rights-in-our-ai-systems/
+
+arXiv.org perpetual non-exclusive license 1.0 (author retains copyright)
+--------------------------------------------------------------
+  arxiv-devlin-2018-bert  [ai]
+    https://arxiv.org/abs/1810.04805
+  arxiv-hoffmann-2022-chinchilla  [ai]
+    https://arxiv.org/abs/2203.15556
+  arxiv-hu-2021-lora  [ai]
+    https://arxiv.org/abs/2106.09685
+  arxiv-kaplan-2020-scaling-laws  [ai]
+    https://arxiv.org/abs/2001.08361
+  arxiv-karpukhin-2020-dpr  [ai]
+    https://arxiv.org/abs/2004.04906
+  arxiv-khattab-2020-colbert  [ai]
+    https://arxiv.org/abs/2004.12832
+  arxiv-lewis-2020-rag  [ai]
+    https://arxiv.org/abs/2005.11401
+  arxiv-liu-2023-lost-in-middle  [ai]
+    https://arxiv.org/abs/2307.03172
+  arxiv-malkov-2016-hnsw  [ai]
+    https://arxiv.org/abs/1603.09320
+  arxiv-vaswani-2017-attention  [ai]
+    https://arxiv.org/abs/1706.03762
