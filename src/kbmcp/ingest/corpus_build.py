@@ -90,12 +90,16 @@ class _DefaultStages:
         finally:
             conn.close()
 
-    def gates(self, *, ckb_path, manifest_path, raw_dir,
+    def gates(self, *, ckb_path, manifest_path, raw_dir, applicable=True,
               fixtures_path=_STRUCTURE_FIXTURES_DEFAULT,
               expectations_path=_GRAPH_EXPECTATIONS_DEFAULT):
-        """Run each gate only when its fixture file exists (spec Sec.8): a
-        missing fixture is a skip-with-note, not a failure -- a BYO corpus
-        legitimately has neither."""
+        """Run each gate only when its fixture file exists (spec Sec.8) AND the
+        fixtures describe the corpus being built (`applicable`, see
+        _gates_apply_to). A missing or inapplicable fixture is a skip-with-note,
+        not a failure -- a BYO corpus legitimately has no ground truth."""
+        if not applicable:
+            return {"structure": None, "graph": None}
+
         result = {}
 
         if Path(fixtures_path).exists():
@@ -115,6 +119,26 @@ class _DefaultStages:
         return result
 
 
+def _gates_apply_to(args, manifest_path) -> bool:
+    """True only when corpus/benchmark/*.yaml describe the corpus being built.
+
+    Those fixtures are ground truth for THIS project's shipped manifest --
+    specific doc_ids, specific cited articles. A BYO user working from a clone of
+    this repo has them on disk, so keying the gates on mere file existence
+    asserts our corpus's facts about their documents and fails every run
+    (measured: a 3-file folder build reported structure 0/5, graph 0/3, exit 1).
+    Folder mode never matches; neither does --manifest pointed at someone else's
+    manifest. This deliberately narrows spec Sec.8, which only anticipated
+    fixtures being ABSENT.
+    """
+    if args.folder:
+        return False
+    try:
+        return Path(manifest_path).resolve() == Path(DEFAULT_MANIFEST).resolve()
+    except OSError:
+        return False
+
+
 def run(args, *, stages=None) -> dict:
     """Run the full fetch -> build -> graph -> bm25 -> gates pipeline.
 
@@ -129,9 +153,10 @@ def run(args, *, stages=None) -> dict:
 
     # Neither given: fall back to the standard manifest. The fallback lives here
     # rather than in argparse's default so that --folder alone does not collide
-    # with a pre-populated --manifest (which made folder mode unusable).
-    if not args.manifest and not args.folder:
-        args.manifest = DEFAULT_MANIFEST
+    # with a pre-populated --manifest (which made folder mode unusable). Held in
+    # a local rather than written back to args -- run() must not mutate its
+    # caller's namespace.
+    requested_manifest = args.manifest or (None if args.folder else DEFAULT_MANIFEST)
 
     stages = stages or _DefaultStages()
     out = {"stages": {}, "errors": []}
@@ -141,7 +166,7 @@ def run(args, *, stages=None) -> dict:
         out_path = Path(args.ckb).parent / "folder-manifest.yaml"
         manifest_path = str(folder_source.write_manifest(rows, out_path))
     else:
-        manifest_path = args.manifest
+        manifest_path = requested_manifest
 
     Path(args.ckb).parent.mkdir(parents=True, exist_ok=True)
 
@@ -209,24 +234,29 @@ def run(args, *, stages=None) -> dict:
 
     # 5. gates
     #
-    # Folder mode never runs them. The fixtures under corpus/benchmark/ are
-    # ground truth for THIS project's 55-source manifest -- specific doc_ids,
-    # specific cited articles. A BYO user working from a clone of this repo has
-    # those files on disk, so an existence check alone would happily assert our
-    # corpus's facts against their documents and fail every run (measured: a
-    # 3-file folder build reported structure 0/5, graph 0/3, exit 1). The
-    # fixture-exists rule still governs manifest mode, where the fixtures and
-    # the manifest describe the same corpus.
+    # Run only when the fixtures actually describe the corpus being built --
+    # see _gates_apply_to.
     try:
-        if args.folder:
-            gates_result = {"structure": None, "graph": None}
-        else:
-            gates_result = stages.gates(
-                ckb_path=ckb_path, manifest_path=manifest_path, raw_dir=raw_dir)
+        gates_result = stages.gates(
+            ckb_path=ckb_path, manifest_path=manifest_path, raw_dir=raw_dir,
+            applicable=_gates_apply_to(args, manifest_path))
     except Exception as exc:  # noqa: BLE001 -- one bad stage must not abort the run
         gates_result = {}
         out["errors"].append({"stage": "gates", "doc_id": None, "error": str(exc)})
     out["stages"]["gates"] = gates_result
+
+    # A run that indexed nothing is a failure even when every stage "succeeded".
+    # build_ckb records no error for a document that yields zero chunks, and with
+    # the gates skipped for a BYO corpus nothing else would catch it -- a folder
+    # of unparseable files would report "3 docs / 0 chunks / 0 indexed / exit 0",
+    # exactly the partial-state-that-looks-complete this pipeline exists to avoid.
+    built = out["stages"].get("build") or {}
+    if built.get("docs") and not built.get("chunks"):
+        out["errors"].append({
+            "stage": "build", "doc_id": None,
+            "error": (f"{built.get('docs')} document(s) produced 0 chunks -- nothing was "
+                      "indexed. Every source parsed to empty; check the input formats."),
+        })
     for name, gate in (gates_result or {}).items():
         if gate is not None and gate[0] < gate[1]:
             out["errors"].append({
@@ -344,7 +374,8 @@ def main(argv=None) -> int:
     args = build_arg_parser().parse_args(argv)
     try:
         result = run(args)
-    except (CorpusBuildError, chunk_mod.TokenizerDriftError) as exc:
+    except (CorpusBuildError, chunk_mod.TokenizerDriftError,
+            folder_source.FolderSourceError, manifest_mod.ManifestError, OSError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     print_summary(result)
