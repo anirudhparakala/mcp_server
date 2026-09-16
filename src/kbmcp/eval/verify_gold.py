@@ -10,7 +10,6 @@ scoring. Mirrors verify_structure.py / verify_graph.py's shape and naming:
 items -> results list -> all_passed.
 """
 
-from collections import Counter
 from contextlib import closing
 from dataclasses import dataclass
 
@@ -150,21 +149,15 @@ def verify_gold(ckb_path, queries_path, manifest_path, raw_dir, *, min_per_tier=
                 ))
 
     # 9. tier_count -- once, across the whole file, not per item.
-    # A tier absent entirely (0 items) is not held to min_per_tier here -- a
-    # partial/in-progress queries file legitimately omits whole tiers, and
-    # this file only judges tiers it actually contains. Only tiers with at
-    # least one item are checked against the floor.
-    counts = Counter(item.tier for item in items)
+    # Every tier in TIERS, not just the tiers present in the file. A file missing
+    # an entire tier is exactly what this check exists to catch: the Phase 1 exit
+    # criterion is >=15 in EVERY tier, and an absent T7 would mean shipping with
+    # no evidence the not-found gate works.
     for tier in models.TIERS:
-        n = counts.get(tier, 0)
-        if n == 0:
-            continue
-        count_ok = n >= min_per_tier
+        count = sum(1 for it in items if it.tier == tier)
         results.append(CheckResult(
-            tier, "tier_count", count_ok,
-            "ok" if count_ok else
-            f"tier {tier} has {n} item(s), need >= {min_per_tier}",
-        ))
+            item_id="*", check="tier_count", passed=count >= min_per_tier,
+            detail=f"{tier}: {count} item(s), need >= {min_per_tier}"))
 
     return results
 
@@ -196,9 +189,10 @@ def main(argv=None) -> int:
         if not r.passed:
             print(f"  [FAIL] {r.item_id} {r.check}: {r.detail}", file=sys.stderr)
 
-    tier_counts = {r.item_id: r.detail for r in results if r.check == "tier_count"}
-    for tier in models.TIERS:
-        print(f"  tier {tier}: {tier_counts.get(tier, 'not checked')}", file=sys.stderr)
+    # tier_count results are appended once per tier, in models.TIERS order.
+    for r in results:
+        if r.check == "tier_count":
+            print(f"  tier {r.detail}", file=sys.stderr)
 
     ok = all_passed(results)
     print(f"gold gate: {sum(r.passed for r in results)}/{len(results)} checks "

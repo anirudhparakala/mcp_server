@@ -154,9 +154,23 @@ def test_a_distractor_slug_absent_from_the_manifest_fails(safe_tmp_path):
 
 
 def test_the_min_per_tier_rule_is_enforced(safe_tmp_path):
+    """min_per_tier=0 disables the check, which is how the authoring tasks build
+    the file up one tier at a time."""
     items = [_ok_item(id=f"T1-{i:03d}") for i in range(3)]
     assert vg.all_passed(_run(safe_tmp_path, items, min_per_tier=15)) is False
-    assert vg.all_passed(_run(safe_tmp_path, items, min_per_tier=3)) is True
+    assert vg.all_passed(_run(safe_tmp_path, items, min_per_tier=0)) is True
+
+
+def test_a_tier_entirely_absent_from_the_file_fails(safe_tmp_path):
+    """The case the previous implementation missed: 15 T1 items and nothing else
+    passed at min_per_tier=15, because only tiers PRESENT in the file were
+    counted. The exit criterion is >=15 in every tier."""
+    items = [_ok_item(id=f"T1-{i:03d}") for i in range(15)]
+    results = _run(safe_tmp_path, items, min_per_tier=15)
+    assert vg.all_passed(results) is False
+    failed_tiers = {r.detail.split(":")[0] for r in results
+                    if not r.passed and r.check == "tier_count"}
+    assert "T7" in failed_tiers, "an absent T7 must be named in the failures"
 
 
 def test_cli_returns_1_on_failure_and_writes_nothing_to_stdout(safe_tmp_path, capsys):
