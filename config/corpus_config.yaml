@@ -28,7 +28,10 @@ chunk:
   # invalidate all 2803 pinned contexts at once and a keyless rebuild would produce a
   # context-free CKB. Resolved 2026-09-02; the repo was last modified 2026-04-20, which
   # predates every build here, so this pin matches the committed parses.
-  # Override a mismatch with build_corpus.py --allow-tokenizer-drift.
+  # A mismatch against the hub is a WARNING, not a failure: builds always load
+  # THIS revision, so upstream moving cannot shift a boundary. Change this value
+  # only to deliberately adopt a new tokenizer -- that re-chunks the corpus and
+  # requires regenerating every context.
   tokenizer_revision: "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
   # Drop publisher site chrome (leginfo code-selector menu, Justia link footer) that
   # Docling faithfully extracts but that carries no corpus content. Narrow signatures
