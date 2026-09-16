@@ -92,3 +92,27 @@ def test_search_can_be_scoped_to_one_document(safe_tmp_path):
                                  raw_dir=raw)) == 1
     finally:
         conn.close()
+
+
+def test_the_ambiguity_count_is_not_capped_by_the_result_limit(safe_tmp_path):
+    """find_chunks caps its list; the ambiguity message must still report the
+    TRUE total, because an author uses it to judge how much to lengthen the
+    anchor."""
+    conn = _ckb(safe_tmp_path / "t.sqlite", [f"shared phrase item {i}" for i in range(14)])
+    by_slug, raw = _by_slug_and_raw(safe_tmp_path)
+    try:
+        with pytest.raises(r.ResolveError) as exc:
+            r.gold_ref_for(conn, "u", "shared phrase", by_slug, raw)
+        assert "14" in str(exc.value), f"expected the true count, got: {exc.value}"
+    finally:
+        conn.close()
+
+
+def test_count_chunks_agrees_with_find_chunks_when_under_the_limit(safe_tmp_path):
+    """The two queries must describe the same match set, or the count would
+    describe something other than the sample."""
+    conn = _ckb(safe_tmp_path / "t.sqlite", ["alpha one", "alpha two", "beta"])
+    try:
+        assert r.count_chunks(conn, "alpha") == len(r.find_chunks(conn, "alpha")) == 2
+    finally:
+        conn.close()

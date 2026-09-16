@@ -23,6 +23,20 @@ class ResolveError(ValueError):
     """Raised when a phrase does not identify exactly one chunk."""
 
 
+def _scope_where(phrase: str, slug, by_slug, raw_dir):
+    """The WHERE clause and params shared by `find_chunks` and `count_chunks`.
+
+    Kept as one function so the sampled list and the true total always
+    describe the same match set -- a hand-duplicated WHERE clause in each
+    caller could drift and make the count describe a different query than
+    the sample it accompanies.
+    """
+    if slug is not None:
+        target_doc_id = doc_id_for_slug(slug, by_slug, raw_dir)
+        return "instr(text, ?) > 0 AND doc_id = ?", (phrase, target_doc_id)
+    return "instr(text, ?) > 0", (phrase,)
+
+
 def find_chunks(
     conn: sqlite3.Connection,
     phrase: str,
@@ -36,6 +50,9 @@ def find_chunks(
 
     Scoped to one document when `slug` is given (resolved to a doc_id via
     `graph.doc_id_for_slug` -- the one place that mapping is computed).
+
+    Capped at `limit` -- fine for browsing, but callers that need the true
+    match count (e.g. an ambiguity message) must use `count_chunks` instead.
     """
     doc_id_to_slug = None
     if by_slug is not None:
@@ -43,19 +60,12 @@ def find_chunks(
             doc_id_for_slug(s, by_slug, raw_dir): s for s in by_slug
         }
 
-    if slug is not None:
-        target_doc_id = doc_id_for_slug(slug, by_slug, raw_dir)
-        rows = conn.execute(
-            "SELECT chunk_id, doc_id, text FROM chunks "
-            "WHERE instr(text, ?) > 0 AND doc_id = ? ORDER BY chunk_id LIMIT ?",
-            (phrase, target_doc_id, limit),
-        ).fetchall()
-    else:
-        rows = conn.execute(
-            "SELECT chunk_id, doc_id, text FROM chunks "
-            "WHERE instr(text, ?) > 0 ORDER BY chunk_id LIMIT ?",
-            (phrase, limit),
-        ).fetchall()
+    where, params = _scope_where(phrase, slug, by_slug, raw_dir)
+    rows = conn.execute(
+        f"SELECT chunk_id, doc_id, text FROM chunks WHERE {where} "
+        "ORDER BY chunk_id LIMIT ?",
+        (*params, limit),
+    ).fetchall()
 
     hits = []
     for row in rows:
@@ -73,6 +83,21 @@ def find_chunks(
     return hits
 
 
+def count_chunks(conn: sqlite3.Connection, phrase: str, *, slug: str | None = None,
+                  by_slug: dict | None = None, raw_dir=None) -> int:
+    """Total chunks containing `phrase` -- uncapped.
+
+    find_chunks caps its result list, which is fine for browsing but wrong for
+    an ambiguity message: an author uses the count to judge how much to lengthen
+    an anchor, and "matched 10" when the truth is 47 understates the problem.
+    """
+    where, params = _scope_where(phrase, slug, by_slug, raw_dir)
+    row = conn.execute(
+        f"SELECT COUNT(*) FROM chunks WHERE {where}", params
+    ).fetchone()
+    return row[0]
+
+
 def gold_ref_for(conn: sqlite3.Connection, slug: str, phrase: str, by_slug: dict,
                   raw_dir) -> "models.GoldRef":
     """Resolve `phrase` within document `slug` to a `GoldRef`.
@@ -85,9 +110,11 @@ def gold_ref_for(conn: sqlite3.Connection, slug: str, phrase: str, by_slug: dict
     if len(hits) == 0:
         raise ResolveError(f"phrase {phrase!r} matched no chunks in {slug!r}")
     if len(hits) > 1:
-        chunk_ids = [h["chunk_id"] for h in hits]
+        total = count_chunks(conn, phrase, slug=slug, by_slug=by_slug, raw_dir=raw_dir)
+        sample = [h["chunk_id"] for h in hits]
         raise ResolveError(
-            f"phrase {phrase!r} is ambiguous in {slug!r}: matched {len(hits)} "
-            f"chunks {chunk_ids!r}; lengthen the anchor"
+            f"phrase {phrase!r} is ambiguous in {slug!r}: matched {total} chunks "
+            f"(showing {len(sample)}): {sample}. Lengthen the anchor until it "
+            "identifies exactly one chunk."
         )
     return models.GoldRef(doc=slug, chunk_id=hits[0]["chunk_id"], anchor=phrase)
