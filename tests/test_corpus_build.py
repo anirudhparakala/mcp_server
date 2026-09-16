@@ -334,12 +334,48 @@ def test_a_build_that_produced_no_chunks_is_a_failure(capsys):
     assert "0 chunks" in capsys.readouterr().err
 
 
-def test_a_genuinely_empty_corpus_is_not_reported_as_a_failure():
-    """docs=0 means nothing was asked for, which is different from docs>0 that
-    all parsed to nothing. Only the latter is the silent-loss case."""
+def test_a_run_that_leaves_the_ckb_empty_is_a_failure():
+    """Reversal of an earlier wrong call. I originally carved out docs==0 as
+    "nothing was asked for" -- true for an incremental no-op, but
+    indistinguishable from the destructive case: build_ckb PRUNES every document
+    absent from the manifest, so an empty or shrunken manifest wipes a populated
+    CKB. Measured before this fix: a seeded 1-doc/1-chunk CKB went to 0/0 and the
+    run reported exit 0. The end state, not the delta, is what matters."""
     s = _Stages(build={"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0,
-                       "pruned": 0, "errors": []}, bm25=0)
+                       "pruned": 1, "errors": []}, bm25=0)
+    out = cb.run(_args(), stages=s)
+    assert cb.exit_code(out) == 1
+    assert any("0 indexed chunks" in str(e) for e in out["errors"])
+
+
+def test_an_incremental_no_op_over_a_populated_ckb_still_passes():
+    """The counterpart: docs=0 because everything was already built is fine, so
+    long as the CKB actually still holds content."""
+    s = _Stages(build={"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0,
+                       "pruned": 0, "errors": []}, bm25=2803)
     assert cb.exit_code(cb.run(_args(), stages=s)) == 0
+
+
+def test_pruned_and_missing_contexts_are_visible_in_the_summary(capsys):
+    """Both were computed and silently dropped. `pruned` is the signal that
+    documents were REMOVED; contexts_missing that a keyless rebuild lost them."""
+    s = _Stages(build={"docs": 2, "chunks": 9, "contexts": 4, "contexts_missing": 5,
+                       "pruned": 3, "errors": []})
+    cb.print_summary(cb.run(_args(), stages=s))
+    err = capsys.readouterr().err
+    assert "5 chunk(s) WITHOUT context" in err
+    assert "3 document(s) PRUNED" in err
+
+
+def test_an_unknown_only_slug_is_rejected(safe_tmp_path):
+    """An --only typo would select nothing, build nothing and exit 0."""
+    man = safe_tmp_path / "m.yaml"
+    man.write_text("- doc_id: real\n  url: u\n  domain: d\n  format: html\n"
+                   "  license: x\n  license_ok: true\n  version: v1\n", encoding="utf-8")
+    with pytest.raises(cb.CorpusBuildError) as exc:
+        cb.run(_args(manifest=str(man), only=["typo"],
+                     ckb=str(safe_tmp_path / "t.sqlite")), stages=_Stages())
+    assert "typo" in str(exc.value)
 
 
 def test_gate_applicability_does_not_depend_on_the_process_cwd(monkeypatch):
@@ -387,3 +423,31 @@ def test_fixture_defaults_are_absolute_so_cwd_cannot_hide_them():
     assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).is_absolute()
     assert Path(cb._STRUCTURE_FIXTURES_DEFAULT).exists()
     assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).exists()
+
+
+def test_ingest_run_records_which_tokenizer_produced_the_chunk_ids(safe_tmp_path):
+    """Spec Sec.7 asked for this and it was never implemented. Without it the
+    shipped CKB carries no evidence of what its chunk boundaries depend on --
+    which matters once M7 freezes gold labels against those ids."""
+    import json
+
+    from kbmcp.db import ops
+    from kbmcp.ingest.build import build_ckb
+
+    manifest = safe_tmp_path / "m.yaml"
+    manifest.write_text("[]\n", encoding="utf-8")
+    ckb = safe_tmp_path / "t.sqlite"
+    cfg = {"chunk": {"tokenizer": "Qwen/Qwen3-Embedding-0.6B",
+                     "tokenizer_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"},
+           "contextualize": {"enabled": False}}
+    build_ckb(str(manifest), str(safe_tmp_path / "raw"), str(safe_tmp_path / "parsed"),
+              str(ckb), cfg)
+
+    conn = ops.get_db(ckb)
+    try:
+        row = conn.execute("SELECT stats_json FROM ingest_runs").fetchone()
+        stats = json.loads(row["stats_json"])
+    finally:
+        conn.close()
+    assert stats["tokenizer"] == "Qwen/Qwen3-Embedding-0.6B"
+    assert stats["tokenizer_revision"] == "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"

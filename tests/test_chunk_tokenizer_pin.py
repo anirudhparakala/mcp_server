@@ -18,13 +18,33 @@ def test_matching_revision_passes_and_returns_it():
     assert got == CFG["tokenizer_revision"]
 
 
-def test_drift_raises_and_names_both_revisions():
+def test_drift_warns_and_continues_on_the_pinned_revision(capsys):
+    """Corrected after the whole-branch review: drift is a WARNING, not a failure.
+
+    chunk_document always passes the PINNED revision to from_pretrained, so
+    upstream movement cannot shift a chunk boundary or invalidate a context. The
+    original hard failure blocked builds over a condition that provably does not
+    affect output -- and model_info().sha is the repo HEAD, so an upstream README
+    edit alone would have hard-failed every shipped and BYO build."""
+    got = ch.check_tokenizer_revision(
+        CFG, resolver=lambda m: "ffffffffffffffffffffffffffffffffffffffff")
+    assert got == "ffffffffffffffffffffffffffffffffffffffff"
+    err = capsys.readouterr().err
+    assert CFG["tokenizer_revision"][:12] in err       # the pin
+    assert "ffffffffffff" in err                       # what was resolved
+    assert "CONTINUES" in err                          # and that it is not fatal
+
+
+def test_strict_still_raises_for_a_caller_that_wants_to_stop():
     with pytest.raises(ch.TokenizerDriftError) as exc:
-        ch.check_tokenizer_revision(CFG, resolver=lambda m: "ffffffffffffffffffffffffffffffffffffffff")
-    msg = str(exc.value)
-    assert CFG["tokenizer_revision"][:12] in msg      # the pin
-    assert "ffffffffffff" in msg                       # what was resolved
-    assert "--allow-tokenizer-drift" in msg            # the escape hatch
+        ch.check_tokenizer_revision(
+            CFG, strict=True, resolver=lambda m: "ffffffffffffffffffffffffffffffffffffffff")
+    assert CFG["tokenizer_revision"][:12] in str(exc.value)
+
+
+def test_drift_warning_goes_to_stderr_not_stdout(capsys):
+    ch.check_tokenizer_revision(CFG, resolver=lambda m: "f" * 40)
+    assert capsys.readouterr().out == ""
 
 
 def test_allow_drift_suppresses_the_failure():

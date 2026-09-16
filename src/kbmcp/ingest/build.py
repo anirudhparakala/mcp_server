@@ -155,6 +155,13 @@ def _run_build(conn, entries, raw_dir, parsed_dir, cfg, ctx_cfg, contexts_dir, c
     # index/bm25_store.py; invalidate() is a no-op on a CKB that never had one.
     bm25_store.invalidate(conn)
 
+    # Record which tokenizer produced these chunk_ids (spec Sec.7). Without it the
+    # shipped CKB carries no evidence of what its boundaries depend on, which
+    # matters once eval gold labels are frozen against those ids.
+    chunk_cfg = cfg.get("chunk", {})
+    stats["tokenizer"] = chunk_cfg.get("tokenizer")
+    stats["tokenizer_revision"] = chunk_cfg.get("tokenizer_revision")
+
     conn.execute(
         "INSERT INTO ingest_runs (ingest_run_id, started_at, finished_at, status, stats_json) "
         "VALUES (?, ?, ?, ?, ?)",

@@ -200,6 +200,19 @@ def run(args, *, stages=None) -> dict:
     parsed_dir = args.parsed_dir
     ckb_path = args.ckb
     only = set(args.only) if args.only else None
+    if only and manifest_path and Path(manifest_path).exists():
+        # An --only typo would otherwise select no sources, build nothing, and
+        # exit 0 -- the same silent-no-op family as the prune wipe above.
+        try:
+            known = {e.doc_id for e in manifest_mod.load_manifest(manifest_path)}
+        except Exception:  # noqa: BLE001 -- a bad manifest is the stages' error to report
+            known = None
+        if known is not None:
+            unknown = sorted(only - known)
+            if unknown:
+                raise CorpusBuildError(
+                    f"--only names {len(unknown)} slug(s) absent from the manifest: "
+                    f"{', '.join(unknown)}. Nothing would be built.")
 
     # 1. fetch
     if args.skip_fetch:
@@ -267,12 +280,21 @@ def run(args, *, stages=None) -> dict:
     # the gates skipped for a BYO corpus nothing else would catch it -- a folder
     # of unparseable files would report "3 docs / 0 chunks / 0 indexed / exit 0",
     # exactly the partial-state-that-looks-complete this pipeline exists to avoid.
-    built = out["stages"].get("build") or {}
-    if built.get("docs") and not built.get("chunks"):
+    # Judge the END STATE, not this run's delta. Checking only "docs>0 and
+    # chunks==0" missed the destructive case: build_ckb prunes every doc absent
+    # from the manifest, so an empty or shrunken manifest WIPES a populated CKB
+    # and reports docs=0/chunks=0 -- which the delta check waved through as
+    # "nothing was asked for". Measured: a seeded 1-doc CKB went to 0/0 at exit 0.
+    # stages.bm25 returns the whole CKB's indexed count, so it is the honest
+    # end-state signal.
+    indexed = out["stages"].get("bm25")
+    if indexed == 0:
         out["errors"].append({
-            "stage": "build", "doc_id": None,
-            "error": (f"{built.get('docs')} document(s) produced 0 chunks -- nothing was "
-                      "indexed. Every source parsed to empty; check the input formats."),
+            "stage": "bm25", "doc_id": None,
+            "error": ("the CKB contains 0 indexed chunks after this run -- nothing is "
+                      "retrievable. If you expected content, check that the manifest lists "
+                      "your sources (a manifest missing a source PRUNES it from the CKB) "
+                      "and that the inputs parsed."),
         })
     for name, gate in (gates_result or {}).items():
         if gate is not None and gate[0] < gate[1]:
@@ -324,16 +346,29 @@ def print_summary(result: dict) -> None:
 
     print(f"bm25         {stages.get('bm25', 0)} indexed", file=sys.stderr)
 
+    build = stages.get("build") or {}
+    missing = build.get("contexts_missing") or 0
+    pruned = build.get("pruned") or 0
+    if missing:
+        print(f"             {missing} chunk(s) WITHOUT context -- set ANTHROPIC_API_KEY "
+              "and rebuild with --force to add them", file=sys.stderr)
+    if pruned:
+        print(f"             {pruned} document(s) PRUNED (absent from the manifest and "
+              "removed from the CKB)", file=sys.stderr)
+
     gates = stages.get("gates") or {}
     structure_gate = gates.get("structure")
     if structure_gate is None:
-        print("structure    skipped (not applicable to this corpus)", file=sys.stderr)
+        print("structure    skipped (the benchmark fixtures describe the shipped "
+              "manifest, not this corpus)", file=sys.stderr)
     else:
-        print(f"structure    {structure_gate[0]}/{structure_gate[1]}", file=sys.stderr)
+        print(f"structure    {structure_gate[0]}/{structure_gate[1]}"
+              "   (ground truth for the shipped 55-source manifest)", file=sys.stderr)
 
     graph_gate = gates.get("graph")
     if graph_gate is None:
-        print("graph gate   skipped (not applicable to this corpus)", file=sys.stderr)
+        print("graph gate   skipped (the benchmark expectations describe the shipped "
+              "manifest, not this corpus)", file=sys.stderr)
     else:
         print(f"graph gate   {graph_gate[0]}/{graph_gate[1]}", file=sys.stderr)
 

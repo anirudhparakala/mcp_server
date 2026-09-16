@@ -7,6 +7,7 @@ citation_anchors are left empty here (populated in M4 contextualize / M5 graph).
 
 import re
 from dataclasses import dataclass, field
+import sys
 from functools import lru_cache
 from typing import Optional
 
@@ -71,18 +72,22 @@ def resolve_tokenizer_revision(model: str) -> str:
     return HfApi().model_info(model, timeout=_HUB_TIMEOUT_S).sha
 
 
-def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False, resolver=None):
+def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False,
+                             strict: bool = False, resolver=None):
     """Compare the pinned tokenizer revision against what the hub serves now.
 
     Returns the revision actually in force, or None when it cannot be resolved
     (offline, hub outage) -- an unresolvable revision must not break a build that
     would otherwise succeed.
 
-    Raises TokenizerDriftError when a pin exists and disagrees. That failure is
-    loud and opt-out because the alternative is silent and expensive: a shifted
-    chunk boundary invalidates EVERY pinned context at once (they validate via
-    text_sha256 of chunk text), and a rebuild without an API key would then produce
-    a context-free CKB that looks fine.
+    Drift between the pin and the hub is a WARNING: chunk_document always loads the
+    PINNED revision, so upstream movement cannot shift a boundary or invalidate a
+    context. Pass strict=True to raise TokenizerDriftError instead.
+
+    The pin is what protects the corpus. A shifted chunk boundary would invalidate
+    EVERY pinned context at once (they validate via text_sha256 of chunk text), and
+    a keyless rebuild would then produce a context-free CKB that looks fine -- which
+    is why the revision is pinned, and why this check only reports.
     """
     resolver = resolver or resolve_tokenizer_revision
     model = chunk_cfg.get("tokenizer", "Qwen/Qwen3-Embedding-0.6B")
@@ -97,15 +102,29 @@ def check_tokenizer_revision(chunk_cfg: dict, *, allow_drift: bool = False, reso
         # revision, which is the failure this function exists to prevent.
         return None
     if pinned and resolved != pinned and not allow_drift:
-        raise TokenizerDriftError(
+        # A WARNING, not a failure -- corrected after the whole-branch review.
+        #
+        # chunk_document always passes the PINNED revision to from_pretrained, so
+        # upstream movement cannot shift a chunk boundary and cannot invalidate a
+        # pinned context. The original hard failure blocked builds over a
+        # condition that provably does not affect output -- and because
+        # model_info().sha is the repo's HEAD commit, an upstream README edit
+        # alone would have hard-failed every shipped and BYO build.
+        #
+        # strict=True restores the raise for a caller that genuinely wants to
+        # stop; nothing in the pipeline asks for it today.
+        message = (
             f"tokenizer revision drift for {model}:\n"
             f"  pinned:   {pinned}\n"
             f"  resolved: {resolved}\n"
-            "Every pinned context would be invalidated, and a rebuild without "
-            "ANTHROPIC_API_KEY would silently produce a context-free CKB. Re-run with "
-            "--allow-tokenizer-drift to accept the new tokenizer (you will need to "
-            "regenerate contexts), or pin chunk.tokenizer_revision to the resolved value."
+            "The build CONTINUES on the pinned revision, so chunk boundaries and "
+            "existing contexts are unaffected -- upstream has simply moved on. Update "
+            "chunk.tokenizer_revision only if you intend to adopt the new tokenizer, "
+            "which re-chunks the corpus and requires regenerating every context."
         )
+        if strict:
+            raise TokenizerDriftError(message)
+        print(f"[warning] {message}", file=sys.stderr)
     return resolved
 
 
