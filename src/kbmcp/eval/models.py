@@ -54,6 +54,21 @@ def _require(d: dict, key: str, where: str):
     return value
 
 
+def _require_list(d: dict, key: str, where: str) -> list:
+    """A string is iterable, so a bare `"distractor_docs": "doc1"` would silently
+    become ('d','o','c','1'). Anything not a list is rejected by type, not by
+    whether it happens to iterate."""
+    value = d.get(key)
+    if value is None:
+        return []
+    if not isinstance(value, list):
+        raise BenchmarkError(
+            f"{where}: {key!r} must be a list, got {type(value).__name__} "
+            f"({value!r}). A single value still needs to be a one-element list."
+        )
+    return value
+
+
 def item_from_dict(d: dict) -> BenchmarkItem:
     """Validate and build one item. Raises BenchmarkError rather than admitting a
     malformed item -- a silently-wrong benchmark corrupts every published number."""
@@ -62,18 +77,27 @@ def item_from_dict(d: dict) -> BenchmarkItem:
     if tier not in TIERS:
         raise BenchmarkError(f"{ident}: unknown tier {tier!r}; expected one of {TIERS}")
     gold = []
-    for i, g in enumerate(d.get("gold") or []):
+    for i, g in enumerate(_require_list(d, "gold", ident)):
         where = f"{ident} gold[{i}]"
+        if not isinstance(g, dict):
+            raise BenchmarkError(f"{ident} gold[{i}]: must be an object with doc/chunk_id/anchor, got {type(g).__name__}")
         gold.append(GoldRef(doc=_require(g, "doc", where),
                             chunk_id=_require(g, "chunk_id", where),
                             anchor=_require(g, "anchor", where)))
+    answerable = d.get("answerable", True)
+    if not isinstance(answerable, bool):
+        raise BenchmarkError(
+            f"{ident}: 'answerable' must be a JSON boolean (true/false), got "
+            f"{type(answerable).__name__} ({answerable!r}). A quoted \"false\" is "
+            "truthy and would silently flip the item to answerable."
+        )
     return BenchmarkItem(
         id=_require(d, "id", ident),
         tier=tier,
         query=_require(d, "query", ident),
-        answerable=bool(d.get("answerable", True)),
+        answerable=answerable,
         gold=tuple(gold),
-        distractor_docs=tuple(d.get("distractor_docs") or ()),
+        distractor_docs=tuple(_require_list(d, "distractor_docs", ident)),
         collision_term=d.get("collision_term"),
         notes=d.get("notes", ""),
     )
@@ -101,8 +125,16 @@ def load_queries(path) -> list:
     return items
 
 
+def _sort_key(item):
+    """Sort by tier then numeric suffix, so T1-2 precedes T1-10 regardless of
+    zero-padding. Plain lexicographic order would interleave them and make
+    later diffs noisy."""
+    tier, _, rest = item.id.partition("-")
+    return (tier, int(rest) if rest.isdigit() else 0, item.id)
+
+
 def dump_queries(items, path) -> None:
     """Write JSONL, one item per line, sorted by id for a stable diff."""
     lines = [json.dumps(item_to_dict(i), ensure_ascii=False, sort_keys=True)
-             for i in sorted(items, key=lambda x: x.id)]
+             for i in sorted(items, key=_sort_key)]
     Path(path).write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

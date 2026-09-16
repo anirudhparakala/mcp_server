@@ -3,6 +3,8 @@
 Hermetic: pure dataclasses and JSONL round-tripping; no CKB, no corpus.
 """
 
+import json
+
 import pytest
 
 from kbmcp.eval import models as m
@@ -74,3 +76,34 @@ def test_items_are_frozen():
 
 def test_tiers_constant_is_the_seven_agreed_tiers():
     assert m.TIERS == ("T1", "T2", "T3", "T4", "T5", "T6", "T7")
+
+
+def test_a_non_list_gold_is_rejected_by_type():
+    for bad in ({"doc": "d1", "chunk_id": "c0", "anchor": "x"}, "c0", 3):
+        with pytest.raises(m.BenchmarkError):
+            m.item_from_dict(_item(gold=bad))
+
+
+def test_a_non_dict_gold_entry_is_rejected():
+    with pytest.raises(m.BenchmarkError):
+        m.item_from_dict(_item(gold=["c0"]))
+
+
+def test_a_string_distractor_docs_is_rejected_not_shredded():
+    """"doc1" would otherwise become ('d','o','c','1') with no error."""
+    with pytest.raises(m.BenchmarkError):
+        m.item_from_dict(_item(distractor_docs="case-hadley-v-baxendale"))
+
+
+def test_a_quoted_boolean_answerable_is_rejected():
+    """A quoted "false" is truthy and would silently flip a T7 item."""
+    with pytest.raises(m.BenchmarkError):
+        m.item_from_dict(_item(answerable="false"))
+
+
+def test_ids_sort_numerically_within_a_tier(safe_tmp_path):
+    items = [m.item_from_dict(_item(id=f"T1-{n}")) for n in (10, 2, 1)]
+    path = safe_tmp_path / "q.jsonl"
+    m.dump_queries(items, path)
+    ids = [json.loads(l)["id"] for l in path.read_text(encoding="utf-8").splitlines()]
+    assert ids == ["T1-1", "T1-2", "T1-10"]
