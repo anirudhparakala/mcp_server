@@ -34,6 +34,8 @@ import argparse
 import sys
 from pathlib import Path
 
+import yaml
+
 from ..config import load_corpus_config
 from ..db import ops
 from ..db.schema import create_all_tables
@@ -47,8 +49,23 @@ from . import verify_graph
 from . import verify_structure
 
 DEFAULT_MANIFEST = "corpus/manifest.yaml"
-_STRUCTURE_FIXTURES_DEFAULT = "corpus/benchmark/structure_fixtures.yaml"
-_GRAPH_EXPECTATIONS_DEFAULT = "corpus/benchmark/graph_expectations.yaml"
+
+# The shipped manifest, anchored to the PACKAGE rather than the process cwd.
+# corpus_build.py lives at <root>/src/kbmcp/ingest/, so parents[3] is the repo
+# root. Resolving DEFAULT_MANIFEST against cwd instead would make gate
+# applicability depend on where the command was launched from: running the
+# shipped build from outside the repo with an absolute --manifest silently
+# skipped both gates, which is a worse failure than the one that motivated
+# the check. On an installed (non-repo) layout this path simply will not
+# exist, and the fixture-existence check skips the gates anyway.
+_SHIPPED_MANIFEST = Path(__file__).resolve().parents[3] / "corpus" / "manifest.yaml"
+# Anchored to the package for the same reason as _SHIPPED_MANIFEST: as bare
+# cwd-relative literals these silently "did not exist" whenever the build was
+# launched from outside the repo root, so both gates skipped and the run
+# reported a clean exit while verifying nothing.
+_BENCH_DIR = Path(__file__).resolve().parents[3] / "corpus" / "benchmark"
+_STRUCTURE_FIXTURES_DEFAULT = str(_BENCH_DIR / "structure_fixtures.yaml")
+_GRAPH_EXPECTATIONS_DEFAULT = str(_BENCH_DIR / "graph_expectations.yaml")
 
 
 class CorpusBuildError(ValueError):
@@ -131,10 +148,10 @@ def _gates_apply_to(args, manifest_path) -> bool:
     manifest. This deliberately narrows spec Sec.8, which only anticipated
     fixtures being ABSENT.
     """
-    if args.folder:
+    if args.folder or not manifest_path:
         return False
     try:
-        return Path(manifest_path).resolve() == Path(DEFAULT_MANIFEST).resolve()
+        return Path(manifest_path).resolve() == _SHIPPED_MANIFEST.resolve()
     except OSError:
         return False
 
@@ -375,7 +392,8 @@ def main(argv=None) -> int:
     try:
         result = run(args)
     except (CorpusBuildError, chunk_mod.TokenizerDriftError,
-            folder_source.FolderSourceError, manifest_mod.ManifestError, OSError) as exc:
+            folder_source.FolderSourceError, manifest_mod.ManifestError,
+            yaml.YAMLError, OSError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     print_summary(result)

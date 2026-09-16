@@ -4,6 +4,8 @@ Hermetic: every stage is injected, so no network, no Docling, no API calls, and
 the real corpus is never touched.
 """
 
+from pathlib import Path
+
 import pytest
 
 from kbmcp.ingest import corpus_build as cb
@@ -338,3 +340,50 @@ def test_a_genuinely_empty_corpus_is_not_reported_as_a_failure():
     s = _Stages(build={"docs": 0, "chunks": 0, "contexts": 0, "contexts_missing": 0,
                        "pruned": 0, "errors": []}, bm25=0)
     assert cb.exit_code(cb.run(_args(), stages=s)) == 0
+
+
+def test_gate_applicability_does_not_depend_on_the_process_cwd(monkeypatch):
+    """Regression: DEFAULT_MANIFEST is repo-relative, so resolving it against the
+    process cwd made a legitimate shipped-corpus build launched from elsewhere
+    silently skip both gates -- our own eval gates going quiet, which is worse
+    than the mismatch the check exists to prevent."""
+    import argparse
+
+    shipped = str(cb._SHIPPED_MANIFEST)
+    args = argparse.Namespace(folder=None, manifest=shipped)
+
+    # NOT safe_tmp_path: chdir-ing into it blocks its own cleanup on Windows.
+    monkeypatch.chdir(Path.home())            # anywhere but the repo root
+    assert cb._gates_apply_to(args, shipped) is True
+
+
+def test_gate_applicability_is_false_for_a_lookalike_path(safe_tmp_path):
+    """A different corpus/manifest.yaml under someone else's tree must not be
+    mistaken for the shipped one."""
+    import argparse
+
+    fake = safe_tmp_path / "corpus"
+    fake.mkdir()
+    lookalike = fake / "manifest.yaml"
+    lookalike.write_text("[]\n", encoding="utf-8")
+    args = argparse.Namespace(folder=None, manifest=str(lookalike))
+    assert cb._gates_apply_to(args, str(lookalike)) is False
+
+
+def test_cli_reports_a_malformed_config_without_a_traceback(safe_tmp_path):
+    """A broken YAML config is an ordinary user error, not a crash."""
+    bad = safe_tmp_path / "bad.yaml"
+    bad.write_text("chunk: [unclosed\n", encoding="utf-8")
+    rc = cb.main(["--config", str(bad), "--ckb", str(safe_tmp_path / "t.sqlite"),
+                  "--manifest", str(safe_tmp_path / "m.yaml"), "--skip-fetch"])
+    assert rc == 1
+
+
+def test_fixture_defaults_are_absolute_so_cwd_cannot_hide_them():
+    """As cwd-relative literals these silently 'did not exist' outside the repo
+    root, so both gates skipped and the run reported a clean exit while
+    verifying nothing."""
+    assert Path(cb._STRUCTURE_FIXTURES_DEFAULT).is_absolute()
+    assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).is_absolute()
+    assert Path(cb._STRUCTURE_FIXTURES_DEFAULT).exists()
+    assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).exists()
