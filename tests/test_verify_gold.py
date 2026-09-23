@@ -173,6 +173,91 @@ def test_a_tier_entirely_absent_from_the_file_fails(safe_tmp_path):
     assert "T7" in failed_tiers, "an absent T7 must be named in the failures"
 
 
+def test_tier_minimums_override_lowers_the_floor_for_that_tier(safe_tmp_path):
+    """T5 is deliberately capped at 5 (see TIER_MINIMUMS's comment); the override
+    must apply regardless of the min_per_tier the caller passes for every other
+    tier."""
+    items = [_ok_item(id=f"T5-{i:03d}", tier="T5",
+                      gold=[{"doc": "u", "chunk_id": "c0", "anchor": "quick"},
+                            {"doc": "other", "chunk_id": "c1", "anchor": "brown"}])
+             for i in range(5)]
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, slugs=("u", "other"))
+    raw = safe_tmp_path / "raw"
+    _raw(raw, slugs=("u", "other"))
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb)
+    conn = ops.get_db(ckb)
+    try:
+        ops.insert_source(conn, canonical_url="other", url_original="other", domain="d",
+                          format="html", license="x", license_ok=True, version="v1")
+        ops.insert_doc(conn, doc_id=mk_doc_id("other", "v1"), canonical_url="other",
+                       domain="d", format="html")
+        ops.insert_chunk(conn, chunk_id="c1", doc_id=mk_doc_id("other", "v1"),
+                         chunk_index=0, chunk_type="text", text="the quick brown fox")
+    finally:
+        conn.close()
+    q = safe_tmp_path / "q.jsonl"
+    _write(q, items)
+    results = vg.verify_gold(str(ckb), str(q), str(man), str(raw), min_per_tier=15)
+    t5_result = next(r for r in results if r.check == "tier_count" and
+                     r.detail.startswith("T5"))
+    assert t5_result.passed is True, t5_result.detail
+
+
+def test_a_tier_below_its_override_still_fails(safe_tmp_path):
+    items = [_ok_item(id=f"T5-{i:03d}", tier="T5",
+                      gold=[{"doc": "u", "chunk_id": "c0", "anchor": "quick"},
+                            {"doc": "other", "chunk_id": "c1", "anchor": "brown"}])
+             for i in range(4)]
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, slugs=("u", "other"))
+    raw = safe_tmp_path / "raw"
+    _raw(raw, slugs=("u", "other"))
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb)
+    conn = ops.get_db(ckb)
+    try:
+        ops.insert_source(conn, canonical_url="other", url_original="other", domain="d",
+                          format="html", license="x", license_ok=True, version="v1")
+        ops.insert_doc(conn, doc_id=mk_doc_id("other", "v1"), canonical_url="other",
+                       domain="d", format="html")
+        ops.insert_chunk(conn, chunk_id="c1", doc_id=mk_doc_id("other", "v1"),
+                         chunk_index=0, chunk_type="text", text="the quick brown fox")
+    finally:
+        conn.close()
+    q = safe_tmp_path / "q.jsonl"
+    _write(q, items)
+    results = vg.verify_gold(str(ckb), str(q), str(man), str(raw), min_per_tier=15)
+    t5_result = next(r for r in results if r.check == "tier_count" and
+                     r.detail.startswith("T5"))
+    assert t5_result.passed is False
+
+
+def test_defaults_are_absolute_and_exist():
+    """Identical defect class to corpus_build.py's _SHIPPED_MANIFEST/_BENCH_DIR:
+    bare cwd-relative literals silently 'did not exist' whenever the CLI was
+    launched from outside the repo root. The defaults must be absolute and, in
+    this checked-out repo, must actually resolve."""
+    for p in (vg.DEFAULT_CKB, vg.DEFAULT_QUERIES, vg.DEFAULT_MANIFEST, vg.DEFAULT_RAW_DIR):
+        assert p.is_absolute(), f"{p} is not absolute"
+    assert vg.DEFAULT_QUERIES.exists()
+    assert vg.DEFAULT_MANIFEST.exists()
+    assert vg.DEFAULT_RAW_DIR.exists()
+    # DEFAULT_CKB is gitignored (a fresh clone won't have it); only assert the
+    # parent directory resolves to the expected repo location.
+    assert vg.DEFAULT_CKB.parent.name == "ckb"
+
+
+def test_cli_reports_a_missing_file_instead_of_crashing(safe_tmp_path, capsys):
+    """Finding 4: the CLI used to die with an unhandled FileNotFoundError
+    traceback instead of a gate result when a path didn't exist."""
+    rc = vg.main(["--queries", str(safe_tmp_path / "does-not-exist.jsonl")])
+    assert rc == 1
+    err = capsys.readouterr().err
+    assert "error:" in err
+
+
 def test_cli_returns_1_on_failure_and_writes_nothing_to_stdout(safe_tmp_path, capsys):
     ckb = safe_tmp_path / "t.sqlite"
     _ckb(ckb)
@@ -186,3 +271,19 @@ def test_cli_returns_1_on_failure_and_writes_nothing_to_stdout(safe_tmp_path, ca
                   "--raw-dir", str(raw), "--min-per-tier", "0"])
     assert rc == 1
     assert capsys.readouterr().out == ""
+
+
+def test_the_shipped_benchmark_passes_its_own_gate():
+    """Not hermetic, deliberately (spec Sec.9). Every other test builds a toy CKB;
+    this one asserts the REAL 95 gold labels still resolve against the REAL corpus.
+    Without it, a re-chunk or manifest edit drifts every label while the suite
+    stays green."""
+    if not vg.DEFAULT_CKB.exists():
+        pytest.skip("ckb/ckb.sqlite is gitignored and absent on a fresh clone")
+
+    results = vg.verify_gold(
+        str(vg.DEFAULT_CKB), str(vg.DEFAULT_QUERIES),
+        str(vg.DEFAULT_MANIFEST), str(vg.DEFAULT_RAW_DIR),
+        min_per_tier=0)
+    failures = [r for r in results if not r.passed]
+    assert failures == [], f"shipped gold labels no longer resolve: {failures[:5]}"
