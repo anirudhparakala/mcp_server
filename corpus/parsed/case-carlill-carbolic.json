@@ -4,7 +4,7 @@
   "name": "case-carlill-carbolic",
   "origin": {
     "mimetype": "text/html",
-    "binary_hash": 7450921179993528188,
+    "binary_hash": 13432723842710709135,
     "filename": "case-carlill-carbolic.html"
   },
   "furniture": {
@@ -84,7 +84,19 @@
         "$ref": "#/groups/6"
       },
       {
-        "$ref": "#/texts/31"
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/105"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/texts/119"
       }
     ],
     "content_layer": "body",
@@ -219,12 +231,16 @@
     {
       "self_ref": "#/groups/7",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/body"
       },
-      "children": [],
+      "children": [
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
       "content_layer": "body",
-      "name": "list",
-      "label": "list"
+      "name": "header-1",
+      "label": "section"
     },
     {
       "self_ref": "#/groups/8",
@@ -246,7 +262,7 @@
     {
       "self_ref": "#/groups/9",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/35"
       },
       "children": [],
       "content_layer": "body",
@@ -256,19 +272,9 @@
     {
       "self_ref": "#/groups/10",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
-      "children": [
-        {
-          "$ref": "#/texts/37"
-        },
-        {
-          "$ref": "#/texts/38"
-        },
-        {
-          "$ref": "#/texts/39"
-        }
-      ],
+      "children": [],
       "content_layer": "body",
       "name": "list",
       "label": "list"
@@ -276,17 +282,14 @@
     {
       "self_ref": "#/groups/11",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [
         {
-          "$ref": "#/texts/45"
+          "$ref": "#/texts/40"
         },
         {
-          "$ref": "#/texts/46"
-        },
-        {
-          "$ref": "#/texts/47"
+          "$ref": "#/texts/41"
         }
       ],
       "content_layer": "body",
@@ -296,15 +299,39 @@
     {
       "self_ref": "#/groups/12",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/texts/37"
       },
       "children": [
         {
-          "$ref": "#/texts/49"
+          "$ref": "#/texts/43"
         },
         {
-          "$ref": "#/texts/50"
+          "$ref": "#/texts/44"
         },
+        {
+          "$ref": "#/texts/45"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
         {
           "$ref": "#/texts/51"
         },
@@ -313,9 +340,6 @@
         },
         {
           "$ref": "#/texts/53"
-        },
-        {
-          "$ref": "#/texts/54"
         }
       ],
       "content_layer": "body",
@@ -323,11 +347,14 @@
       "label": "list"
     },
     {
-      "self_ref": "#/groups/13",
+      "self_ref": "#/groups/15",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [
+        {
+          "$ref": "#/texts/55"
+        },
         {
           "$ref": "#/texts/56"
         },
@@ -349,67 +376,25 @@
       "label": "list"
     },
     {
-      "self_ref": "#/groups/14",
-      "parent": {
-        "$ref": "#/texts/31"
-      },
-      "children": [],
-      "content_layer": "body",
-      "name": "list",
-      "label": "list"
-    },
-    {
-      "self_ref": "#/groups/15",
-      "parent": {
-        "$ref": "#/texts/31"
-      },
-      "children": [
-        {
-          "$ref": "#/texts/67"
-        },
-        {
-          "$ref": "#/texts/68"
-        },
-        {
-          "$ref": "#/texts/69"
-        },
-        {
-          "$ref": "#/texts/70"
-        },
-        {
-          "$ref": "#/texts/71"
-        },
-        {
-          "$ref": "#/texts/72"
-        },
-        {
-          "$ref": "#/texts/73"
-        },
-        {
-          "$ref": "#/texts/74"
-        },
-        {
-          "$ref": "#/texts/75"
-        },
-        {
-          "$ref": "#/texts/76"
-        },
-        {
-          "$ref": "#/texts/77"
-        }
-      ],
-      "content_layer": "body",
-      "name": "group",
-      "label": "inline"
-    },
-    {
       "self_ref": "#/groups/16",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [
         {
-          "$ref": "#/texts/81"
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
         }
       ],
       "content_layer": "body",
@@ -419,9 +404,47 @@
     {
       "self_ref": "#/groups/17",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/18",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
         {
           "$ref": "#/texts/82"
         },
@@ -437,29 +460,9 @@
       "label": "inline"
     },
     {
-      "self_ref": "#/groups/18",
-      "parent": {
-        "$ref": "#/texts/31"
-      },
-      "children": [
-        {
-          "$ref": "#/groups/19"
-        },
-        {
-          "$ref": "#/groups/21"
-        },
-        {
-          "$ref": "#/groups/22"
-        }
-      ],
-      "content_layer": "furniture",
-      "name": "footer",
-      "label": "section"
-    },
-    {
       "self_ref": "#/groups/19",
       "parent": {
-        "$ref": "#/groups/18"
+        "$ref": "#/texts/37"
       },
       "children": [
         {
@@ -467,18 +470,7 @@
         },
         {
           "$ref": "#/texts/86"
-        }
-      ],
-      "content_layer": "furniture",
-      "name": "list",
-      "label": "list"
-    },
-    {
-      "self_ref": "#/groups/20",
-      "parent": {
-        "$ref": "#/texts/86"
-      },
-      "children": [
+        },
         {
           "$ref": "#/texts/87"
         },
@@ -487,27 +479,52 @@
         },
         {
           "$ref": "#/texts/89"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/20",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/1"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_1_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/21",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [
         {
           "$ref": "#/texts/90"
-        },
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/22",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [
         {
           "$ref": "#/texts/91"
         },
         {
           "$ref": "#/texts/92"
-        }
-      ],
-      "content_layer": "furniture",
-      "name": "group",
-      "label": "inline"
-    },
-    {
-      "self_ref": "#/groups/21",
-      "parent": {
-        "$ref": "#/groups/18"
-      },
-      "children": [
+        },
         {
           "$ref": "#/texts/93"
         },
@@ -522,15 +539,363 @@
         },
         {
           "$ref": "#/texts/97"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/23",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/21"
         },
         {
-          "$ref": "#/texts/98"
+          "$ref": "#/groups/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "rich_cell_group_1_0_0",
+      "label": "unspecified"
+    },
+    {
+      "self_ref": "#/groups/24",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/101"
         },
         {
-          "$ref": "#/texts/99"
+          "$ref": "#/texts/106"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/25",
+      "parent": {
+        "$ref": "#/texts/101"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/102"
         },
         {
-          "$ref": "#/texts/100"
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/26",
+      "parent": {
+        "$ref": "#/texts/106"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/107"
+        },
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        },
+        {
+          "$ref": "#/texts/113"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/27",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/115"
+        },
+        {
+          "$ref": "#/texts/116"
+        },
+        {
+          "$ref": "#/texts/117"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/28",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/128"
+        },
+        {
+          "$ref": "#/texts/129"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/29",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/30",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/162"
+        },
+        {
+          "$ref": "#/texts/163"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/31",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/174"
+        },
+        {
+          "$ref": "#/texts/175"
+        },
+        {
+          "$ref": "#/texts/176"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/32",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/177"
+        },
+        {
+          "$ref": "#/texts/178"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/33",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/179"
+        },
+        {
+          "$ref": "#/texts/180"
+        },
+        {
+          "$ref": "#/texts/181"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/34",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/182"
+        },
+        {
+          "$ref": "#/texts/183"
+        },
+        {
+          "$ref": "#/texts/184"
+        },
+        {
+          "$ref": "#/texts/185"
+        },
+        {
+          "$ref": "#/texts/186"
+        },
+        {
+          "$ref": "#/texts/187"
+        },
+        {
+          "$ref": "#/texts/188"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/35",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/190"
+        },
+        {
+          "$ref": "#/texts/191"
+        },
+        {
+          "$ref": "#/texts/192"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/36",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/193"
+        },
+        {
+          "$ref": "#/texts/194"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/37",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/195"
+        },
+        {
+          "$ref": "#/texts/196"
+        },
+        {
+          "$ref": "#/texts/197"
+        },
+        {
+          "$ref": "#/texts/198"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/38",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/200"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/39",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/40"
+        },
+        {
+          "$ref": "#/groups/42"
+        },
+        {
+          "$ref": "#/groups/43"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "footer",
+      "label": "section"
+    },
+    {
+      "self_ref": "#/groups/40",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/201"
+        },
+        {
+          "$ref": "#/texts/202"
         }
       ],
       "content_layer": "furniture",
@@ -538,9 +903,76 @@
       "label": "list"
     },
     {
-      "self_ref": "#/groups/22",
+      "self_ref": "#/groups/41",
       "parent": {
-        "$ref": "#/groups/18"
+        "$ref": "#/texts/202"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/203"
+        },
+        {
+          "$ref": "#/texts/204"
+        },
+        {
+          "$ref": "#/texts/205"
+        },
+        {
+          "$ref": "#/texts/206"
+        },
+        {
+          "$ref": "#/texts/207"
+        },
+        {
+          "$ref": "#/texts/208"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/42",
+      "parent": {
+        "$ref": "#/groups/39"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/209"
+        },
+        {
+          "$ref": "#/texts/210"
+        },
+        {
+          "$ref": "#/texts/211"
+        },
+        {
+          "$ref": "#/texts/212"
+        },
+        {
+          "$ref": "#/texts/213"
+        },
+        {
+          "$ref": "#/texts/214"
+        },
+        {
+          "$ref": "#/texts/215"
+        },
+        {
+          "$ref": "#/texts/216"
+        },
+        {
+          "$ref": "#/texts/217"
+        }
+      ],
+      "content_layer": "furniture",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/43",
+      "parent": {
+        "$ref": "#/groups/39"
       },
       "children": [],
       "content_layer": "furniture",
@@ -548,9 +980,9 @@
       "label": "list"
     },
     {
-      "self_ref": "#/groups/23",
+      "self_ref": "#/groups/44",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/173"
       },
       "children": [],
       "content_layer": "body",
@@ -568,8 +1000,8 @@
       "content_layer": "furniture",
       "label": "title",
       "prov": [],
-      "orig": "Carlill v. Carbolic Smoke Ball Company - Wikisource, the free online library",
-      "text": "Carlill v. Carbolic Smoke Ball Company - Wikisource, the free online library"
+      "orig": "Carlill v Carbolic Smoke Ball Company - Wikisource, the free online library",
+      "text": "Carlill v Carbolic Smoke Ball Company - Wikisource, the free online library"
     },
     {
       "self_ref": "#/texts/1",
@@ -909,7 +1341,7 @@
       "prov": [],
       "orig": "Create account",
       "text": "Create account",
-      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Carlill+v.+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D6792727",
+      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Carlill+v+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D12776832",
       "enumerated": false,
       "marker": ""
     },
@@ -924,7 +1356,7 @@
       "prov": [],
       "orig": "Log in",
       "text": "Log in",
-      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Carlill+v.+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D6792727",
+      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Carlill+v+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D12776832",
       "enumerated": false,
       "marker": ""
     },
@@ -966,7 +1398,7 @@
       "prov": [],
       "orig": "Create account",
       "text": "Create account",
-      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Carlill+v.+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D6792727",
+      "hyperlink": "\\w\\index.php?title=Special:CreateAccount&returnto=Carlill+v+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D12776832",
       "enumerated": false,
       "marker": ""
     },
@@ -981,21 +1413,18 @@
       "prov": [],
       "orig": "Log in",
       "text": "Log in",
-      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Carlill+v.+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D6792727",
+      "hyperlink": "\\w\\index.php?title=Special:UserLogin&returnto=Carlill+v+Carbolic+Smoke+Ball+Company&returntoquery=oldid%3D12776832",
       "enumerated": false,
       "marker": ""
     },
     {
       "self_ref": "#/texts/31",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/groups/7"
       },
       "children": [
         {
           "$ref": "#/texts/32"
-        },
-        {
-          "$ref": "#/groups/7"
         },
         {
           "$ref": "#/texts/33"
@@ -1005,100 +1434,14 @@
         },
         {
           "$ref": "#/texts/36"
-        },
-        {
-          "$ref": "#/groups/9"
-        },
-        {
-          "$ref": "#/groups/10"
-        },
-        {
-          "$ref": "#/texts/40"
-        },
-        {
-          "$ref": "#/texts/41"
-        },
-        {
-          "$ref": "#/texts/42"
-        },
-        {
-          "$ref": "#/texts/43"
-        },
-        {
-          "$ref": "#/texts/44"
-        },
-        {
-          "$ref": "#/groups/11"
-        },
-        {
-          "$ref": "#/texts/48"
-        },
-        {
-          "$ref": "#/groups/12"
-        },
-        {
-          "$ref": "#/texts/55"
-        },
-        {
-          "$ref": "#/groups/13"
-        },
-        {
-          "$ref": "#/texts/61"
-        },
-        {
-          "$ref": "#/groups/14"
-        },
-        {
-          "$ref": "#/texts/62"
-        },
-        {
-          "$ref": "#/texts/63"
-        },
-        {
-          "$ref": "#/texts/64"
-        },
-        {
-          "$ref": "#/texts/65"
-        },
-        {
-          "$ref": "#/texts/66"
-        },
-        {
-          "$ref": "#/groups/15"
-        },
-        {
-          "$ref": "#/texts/78"
-        },
-        {
-          "$ref": "#/texts/79"
-        },
-        {
-          "$ref": "#/texts/80"
-        },
-        {
-          "$ref": "#/groups/16"
-        },
-        {
-          "$ref": "#/groups/17"
-        },
-        {
-          "$ref": "#/groups/18"
-        },
-        {
-          "$ref": "#/texts/101"
-        },
-        {
-          "$ref": "#/texts/102"
-        },
-        {
-          "$ref": "#/groups/23"
         }
       ],
       "content_layer": "body",
-      "label": "title",
+      "label": "section_header",
       "prov": [],
-      "orig": "Carlill v. Carbolic Smoke Ball Company",
-      "text": "Carlill v. Carbolic Smoke Ball Company"
+      "orig": "Contents",
+      "text": "Contents",
+      "level": 1
     },
     {
       "self_ref": "#/texts/32",
@@ -1107,10 +1450,10 @@
       },
       "children": [],
       "content_layer": "body",
-      "label": "checkbox_unselected",
+      "label": "text",
       "prov": [],
-      "orig": "Add languages",
-      "text": "Add languages"
+      "orig": "move to sidebar",
+      "text": "move to sidebar"
     },
     {
       "self_ref": "#/texts/33",
@@ -1121,9 +1464,8 @@
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Add links",
-      "text": "Add links",
-      "hyperlink": "https://www.wikidata.org/wiki/Special:NewItem?site=enwikisource&page=Carlill+v.+Carbolic+Smoke+Ball+Company"
+      "orig": "hide",
+      "text": "hide"
     },
     {
       "self_ref": "#/texts/34",
@@ -1134,9 +1476,9 @@
       "content_layer": "body",
       "label": "list_item",
       "prov": [],
-      "orig": "Page",
-      "text": "Page",
-      "hyperlink": "\\wiki\\Carlill_v._Carbolic_Smoke_Ball_Company",
+      "orig": "Beginning",
+      "text": "Beginning",
+      "hyperlink": "#",
       "enumerated": false,
       "marker": ""
     },
@@ -1145,13 +1487,17 @@
       "parent": {
         "$ref": "#/groups/8"
       },
-      "children": [],
+      "children": [
+        {
+          "$ref": "#/groups/9"
+        }
+      ],
       "content_layer": "body",
       "label": "list_item",
       "prov": [],
-      "orig": "Discussion",
-      "text": "Discussion",
-      "hyperlink": "\\w\\index.php?title=Talk:Carlill_v._Carbolic_Smoke_Ball_Company&action=edit&redlink=1",
+      "orig": "1 Source",
+      "text": "1 Source",
+      "hyperlink": "#Source",
       "enumerated": false,
       "marker": ""
     },
@@ -1164,13 +1510,348 @@
       "content_layer": "body",
       "label": "checkbox_unselected",
       "prov": [],
-      "orig": "English",
-      "text": "English"
+      "orig": "Toggle the table of contents",
+      "text": "Toggle the table of contents"
     },
     {
       "self_ref": "#/texts/37",
       "parent": {
-        "$ref": "#/groups/10"
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/groups/10"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/groups/11"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/groups/12"
+        },
+        {
+          "$ref": "#/groups/13"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/groups/14"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/groups/15"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/groups/16"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/groups/17"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/groups/18"
+        },
+        {
+          "$ref": "#/groups/19"
+        },
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/groups/24"
+        },
+        {
+          "$ref": "#/groups/27"
+        },
+        {
+          "$ref": "#/texts/118"
+        },
+        {
+          "$ref": "#/pictures/4"
+        },
+        {
+          "$ref": "#/texts/120"
+        },
+        {
+          "$ref": "#/texts/121"
+        },
+        {
+          "$ref": "#/texts/122"
+        },
+        {
+          "$ref": "#/texts/123"
+        },
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        },
+        {
+          "$ref": "#/groups/28"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        },
+        {
+          "$ref": "#/texts/135"
+        },
+        {
+          "$ref": "#/texts/136"
+        },
+        {
+          "$ref": "#/texts/137"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/texts/140"
+        },
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/groups/29"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        },
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        },
+        {
+          "$ref": "#/texts/148"
+        },
+        {
+          "$ref": "#/texts/149"
+        },
+        {
+          "$ref": "#/texts/150"
+        },
+        {
+          "$ref": "#/texts/151"
+        },
+        {
+          "$ref": "#/texts/152"
+        },
+        {
+          "$ref": "#/texts/153"
+        },
+        {
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/155"
+        },
+        {
+          "$ref": "#/texts/156"
+        },
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        },
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/groups/30"
+        },
+        {
+          "$ref": "#/texts/164"
+        },
+        {
+          "$ref": "#/texts/165"
+        },
+        {
+          "$ref": "#/texts/166"
+        },
+        {
+          "$ref": "#/texts/167"
+        },
+        {
+          "$ref": "#/texts/168"
+        },
+        {
+          "$ref": "#/texts/169"
+        },
+        {
+          "$ref": "#/texts/170"
+        },
+        {
+          "$ref": "#/texts/171"
+        },
+        {
+          "$ref": "#/texts/172"
+        },
+        {
+          "$ref": "#/texts/173"
+        }
+      ],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "Carlill v Carbolic Smoke Ball Company",
+      "text": "Carlill v Carbolic Smoke Ball Company"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Add languages",
+      "text": "Add languages"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Add links",
+      "text": "Add links",
+      "hyperlink": "https://www.wikidata.org/wiki/Special:EntityPage/Q3610522#sitelinks-wikisource"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Page",
+      "text": "Page",
+      "hyperlink": "\\wiki\\Carlill_v_Carbolic_Smoke_Ball_Company",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Discussion",
+      "text": "Discussion",
+      "hyperlink": "\\w\\index.php?title=Talk:Carlill_v_Carbolic_Smoke_Ball_Company&action=edit&redlink=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "English",
+      "text": "English"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/13"
       },
       "children": [],
       "content_layer": "body",
@@ -1178,14 +1859,14 @@
       "prov": [],
       "orig": "Read",
       "text": "Read",
-      "hyperlink": "\\wiki\\Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "\\wiki\\Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/38",
+      "self_ref": "#/texts/44",
       "parent": {
-        "$ref": "#/groups/10"
+        "$ref": "#/groups/13"
       },
       "children": [],
       "content_layer": "body",
@@ -1193,14 +1874,14 @@
       "prov": [],
       "orig": "Edit",
       "text": "Edit",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&action=edit",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=edit",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/39",
+      "self_ref": "#/texts/45",
       "parent": {
-        "$ref": "#/groups/10"
+        "$ref": "#/groups/13"
       },
       "children": [],
       "content_layer": "body",
@@ -1208,14 +1889,14 @@
       "prov": [],
       "orig": "View history",
       "text": "View history",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&action=history",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=history",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/40",
+      "self_ref": "#/texts/46",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1225,9 +1906,9 @@
       "text": "Tools"
     },
     {
-      "self_ref": "#/texts/41",
+      "self_ref": "#/texts/47",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1237,9 +1918,9 @@
       "text": "Tools"
     },
     {
-      "self_ref": "#/texts/42",
+      "self_ref": "#/texts/48",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1249,9 +1930,9 @@
       "text": "move to sidebar"
     },
     {
-      "self_ref": "#/texts/43",
+      "self_ref": "#/texts/49",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1261,9 +1942,9 @@
       "text": "hide"
     },
     {
-      "self_ref": "#/texts/44",
+      "self_ref": "#/texts/50",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1273,9 +1954,9 @@
       "text": "Actions"
     },
     {
-      "self_ref": "#/texts/45",
+      "self_ref": "#/texts/51",
       "parent": {
-        "$ref": "#/groups/11"
+        "$ref": "#/groups/14"
       },
       "children": [],
       "content_layer": "body",
@@ -1283,14 +1964,14 @@
       "prov": [],
       "orig": "Read",
       "text": "Read",
-      "hyperlink": "\\wiki\\Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "\\wiki\\Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/46",
+      "self_ref": "#/texts/52",
       "parent": {
-        "$ref": "#/groups/11"
+        "$ref": "#/groups/14"
       },
       "children": [],
       "content_layer": "body",
@@ -1298,14 +1979,14 @@
       "prov": [],
       "orig": "Edit",
       "text": "Edit",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&action=edit",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=edit",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/47",
+      "self_ref": "#/texts/53",
       "parent": {
-        "$ref": "#/groups/11"
+        "$ref": "#/groups/14"
       },
       "children": [],
       "content_layer": "body",
@@ -1313,14 +1994,14 @@
       "prov": [],
       "orig": "View history",
       "text": "View history",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&action=history",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=history",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/48",
+      "self_ref": "#/texts/54",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1330,9 +2011,9 @@
       "text": "General"
     },
     {
-      "self_ref": "#/texts/49",
+      "self_ref": "#/texts/55",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1340,14 +2021,14 @@
       "prov": [],
       "orig": "What links here",
       "text": "What links here",
-      "hyperlink": "\\wiki\\Special:WhatLinksHere\\Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "\\wiki\\Special:WhatLinksHere\\Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/50",
+      "self_ref": "#/texts/56",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1355,14 +2036,14 @@
       "prov": [],
       "orig": "Related changes",
       "text": "Related changes",
-      "hyperlink": "\\wiki\\Special:RecentChangesLinked\\Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "\\wiki\\Special:RecentChangesLinked\\Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/51",
+      "self_ref": "#/texts/57",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1370,14 +2051,14 @@
       "prov": [],
       "orig": "Permanent link",
       "text": "Permanent link",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/52",
+      "self_ref": "#/texts/58",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1385,14 +2066,14 @@
       "prov": [],
       "orig": "Page information",
       "text": "Page information",
-      "hyperlink": "\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&action=info",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=info",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/53",
+      "self_ref": "#/texts/59",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1400,14 +2081,14 @@
       "prov": [],
       "orig": "Cite this page",
       "text": "Cite this page",
-      "hyperlink": "\\w\\index.php?title=Special:CiteThisPage&page=Carlill_v._Carbolic_Smoke_Ball_Company&id=6792727&wpFormIdentifier=titleform",
+      "hyperlink": "\\w\\index.php?title=Special:CiteThisPage&page=Carlill_v_Carbolic_Smoke_Ball_Company&id=12776832&wpFormIdentifier=titleform",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/54",
+      "self_ref": "#/texts/60",
       "parent": {
-        "$ref": "#/groups/12"
+        "$ref": "#/groups/15"
       },
       "children": [],
       "content_layer": "body",
@@ -1415,14 +2096,14 @@
       "prov": [],
       "orig": "Get shortened URL",
       "text": "Get shortened URL",
-      "hyperlink": "\\w\\index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikisource.org%2Fw%2Findex.php%3Ftitle%3DCarlill_v._Carbolic_Smoke_Ball_Company%26oldid%3D6792727",
+      "hyperlink": "\\w\\index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikisource.org%2Fw%2Findex.php%3Ftitle%3DCarlill_v_Carbolic_Smoke_Ball_Company%26oldid%3D12776832",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/55",
+      "self_ref": "#/texts/61",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1432,9 +2113,9 @@
       "text": "Print/export"
     },
     {
-      "self_ref": "#/texts/56",
+      "self_ref": "#/texts/62",
       "parent": {
-        "$ref": "#/groups/13"
+        "$ref": "#/groups/16"
       },
       "children": [],
       "content_layer": "body",
@@ -1447,9 +2128,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/57",
+      "self_ref": "#/texts/63",
       "parent": {
-        "$ref": "#/groups/13"
+        "$ref": "#/groups/16"
       },
       "children": [],
       "content_layer": "body",
@@ -1457,14 +2138,14 @@
       "prov": [],
       "orig": "Download EPUB",
       "text": "Download EPUB",
-      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/58",
+      "self_ref": "#/texts/64",
       "parent": {
-        "$ref": "#/groups/13"
+        "$ref": "#/groups/16"
       },
       "children": [],
       "content_layer": "body",
@@ -1472,14 +2153,14 @@
       "prov": [],
       "orig": "Download MOBI",
       "text": "Download MOBI",
-      "hyperlink": "https://ws-export.wmcloud.org/?format=mobi&lang=en&page=Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=mobi&lang=en&page=Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/59",
+      "self_ref": "#/texts/65",
       "parent": {
-        "$ref": "#/groups/13"
+        "$ref": "#/groups/16"
       },
       "children": [],
       "content_layer": "body",
@@ -1487,14 +2168,14 @@
       "prov": [],
       "orig": "Download PDF",
       "text": "Download PDF",
-      "hyperlink": "https://ws-export.wmcloud.org/?format=pdf&lang=en&page=Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "https://ws-export.wmcloud.org/?format=pdf&lang=en&page=Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/60",
+      "self_ref": "#/texts/66",
       "parent": {
-        "$ref": "#/groups/13"
+        "$ref": "#/groups/16"
       },
       "children": [],
       "content_layer": "body",
@@ -1502,14 +2183,14 @@
       "prov": [],
       "orig": "Other formats",
       "text": "Other formats",
-      "hyperlink": "https://ws-export.wmcloud.org/?lang=en&title=Carlill_v._Carbolic_Smoke_Ball_Company",
+      "hyperlink": "https://ws-export.wmcloud.org/?lang=en&title=Carlill_v_Carbolic_Smoke_Ball_Company",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/61",
+      "self_ref": "#/texts/67",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1519,9 +2200,54 @@
       "text": "In other projects"
     },
     {
-      "self_ref": "#/texts/62",
+      "self_ref": "#/texts/68",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Wikimedia Commons",
+      "text": "Wikimedia Commons",
+      "hyperlink": "https://commons.wikimedia.org/wiki/Category:The_Carbolic_Smoke_Ball_Company",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Wikipedia",
+      "text": "Wikipedia",
+      "hyperlink": "https://en.wikipedia.org/wiki/Carlill_v_Carbolic_Smoke_Ball_Co",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Wikidata item",
+      "text": "Wikidata item",
+      "hyperlink": "https://www.wikidata.org/wiki/Special:EntityPage/Q3610522",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1531,9 +2257,9 @@
       "text": "Appearance"
     },
     {
-      "self_ref": "#/texts/63",
+      "self_ref": "#/texts/72",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1543,9 +2269,9 @@
       "text": "move to sidebar"
     },
     {
-      "self_ref": "#/texts/64",
+      "self_ref": "#/texts/73",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1555,9 +2281,9 @@
       "text": "hide"
     },
     {
-      "self_ref": "#/texts/65",
+      "self_ref": "#/texts/74",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1565,12 +2291,12 @@
       "prov": [],
       "orig": "Download",
       "text": "Download",
-      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Carlill_v._Carbolic_Smoke_Ball_Company"
+      "hyperlink": "https://ws-export.wmcloud.org/?format=epub&lang=en&page=Carlill_v_Carbolic_Smoke_Ball_Company"
     },
     {
-      "self_ref": "#/texts/66",
+      "self_ref": "#/texts/75",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
@@ -1580,34 +2306,34 @@
       "text": "From Wikisource"
     },
     {
-      "self_ref": "#/texts/67",
+      "self_ref": "#/texts/76",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Revision as of 17:24, 4 May 2017 by",
-      "text": "Revision as of 17:24, 4 May 2017 by"
+      "orig": "Revision as of 09:37, 27 November 2022 by",
+      "text": "Revision as of 09:37, 27 November 2022 by"
     },
     {
-      "self_ref": "#/texts/68",
+      "self_ref": "#/texts/77",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Cromium",
-      "text": "Cromium",
-      "hyperlink": "\\wiki\\User:Cromium"
+      "orig": "ShakespeareFan00",
+      "text": "ShakespeareFan00",
+      "hyperlink": "\\wiki\\User:ShakespeareFan00"
     },
     {
-      "self_ref": "#/texts/69",
+      "self_ref": "#/texts/78",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
@@ -1617,9 +2343,9 @@
       "text": "("
     },
     {
-      "self_ref": "#/texts/70",
+      "self_ref": "#/texts/79",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
@@ -1627,12 +2353,12 @@
       "prov": [],
       "orig": "talk",
       "text": "talk",
-      "hyperlink": "\\wiki\\User_talk:Cromium"
+      "hyperlink": "\\wiki\\User_talk:ShakespeareFan00"
     },
     {
-      "self_ref": "#/texts/71",
+      "self_ref": "#/texts/80",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
@@ -1642,9 +2368,9 @@
       "text": "|"
     },
     {
-      "self_ref": "#/texts/72",
+      "self_ref": "#/texts/81",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
@@ -1652,49 +2378,447 @@
       "prov": [],
       "orig": "contribs",
       "text": "contribs",
-      "hyperlink": "\\wiki\\Special:Contributions\\Cromium"
+      "hyperlink": "\\wiki\\Special:Contributions\\ShakespeareFan00"
     },
     {
-      "self_ref": "#/texts/73",
+      "self_ref": "#/texts/82",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": ") (Green Giant moved page",
-      "text": ") (Green Giant moved page"
+      "orig": ") (",
+      "text": ") ("
     },
     {
-      "self_ref": "#/texts/74",
+      "self_ref": "#/texts/83",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Carlill v. Carbolic Smoke Ball Company",
-      "text": "Carlill v. Carbolic Smoke Ball Company",
-      "hyperlink": "\\wiki\\Carlill_v._Carbolic_Smoke_Ball_Company"
+      "orig": "\u2192 top",
+      "text": "\u2192 top",
+      "hyperlink": "#top"
     },
     {
-      "self_ref": "#/texts/75",
+      "self_ref": "#/texts/84",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/18"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "to",
-      "text": "to"
+      "orig": ": Templatise rules.., replaced: ---- \u2192 {{rule}} (3))",
+      "text": ": Templatise rules.., replaced: ---- \u2192 {{rule}} (3))"
     },
     {
-      "self_ref": "#/texts/76",
+      "self_ref": "#/texts/85",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(",
+      "text": "("
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "diff",
+      "text": "diff",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&diff=prev&oldid=12776832"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ")",
+      "text": ")"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2190 Older revision",
+      "text": "\u2190 Older revision",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&direction=prev&oldid=12776832"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "| Latest revision (diff) | Newer revision \u2192 (diff)",
+      "text": "| Latest revision (diff) | Newer revision \u2192 (diff)"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The source document of this text is not known.",
+      "text": "The source document of this text is not known.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Please see this document's",
+      "text": "Please see this document's"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "talk page",
+      "text": "talk page",
+      "hyperlink": "\\w\\index.php?title=Talk:Carlill_v_Carbolic_Smoke_Ball_Company&action=edit&redlink=1"
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "for details for verification. \"Source\" means a location at which other users can find a copy of this work. Ideally this will be a scanned copy of the original that can be uploaded to",
+      "text": "for details for verification. \"Source\" means a location at which other users can find a copy of this work. Ideally this will be a scanned copy of the original that can be uploaded to"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wikimedia Commons",
+      "text": "Wikimedia Commons",
+      "hyperlink": "https://commons.wikimedia.org/wiki/Main_page"
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "and",
+      "text": "and"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "proofread",
+      "text": "proofread",
+      "hyperlink": "\\wiki\\Help:Proofread"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ". If not, it is preferably a URL; if one is not available, please explain on the talk page.",
+      "text": ". If not, it is preferably a URL; if one is not available, please explain on the talk page."
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2190",
+      "text": "\u2190"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Carlill v Carbolic Smoke Ball Company ( 1892 )\nLindley, Bowen, Smith A.L. (Court of Appeal)",
+      "text": "Carlill v Carbolic Smoke Ball Company ( 1892 )\nLindley, Bowen, Smith A.L. (Court of Appeal)"
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\u2192",
+      "text": "\u2192"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/25"
+        },
+        {
+          "$ref": "#/pictures/2"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "related portals",
+      "text": "related portals",
+      "hyperlink": "\\wiki\\Portal:Portals"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/groups/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Law of the United Kingdom and Ireland",
+      "text": "Law of the United Kingdom and Ireland",
+      "hyperlink": "\\wiki\\Portal:Law_of_the_United_Kingdom_and_Ireland"
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Related Portals",
+      "text": "Related Portals",
+      "hyperlink": "\\wiki\\Portal:Portals"
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/26"
+        },
+        {
+          "$ref": "#/pictures/3"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "sister projects",
+      "text": "sister projects",
+      "hyperlink": "\\wiki\\Special:SiteMatrix"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wikipedia article",
+      "text": "Wikipedia article",
+      "hyperlink": "https://en.wikipedia.org/wiki/Carlill_v_Carbolic_Smoke_Ball_Company"
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ",",
+      "text": ","
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Commons category",
+      "text": "Commons category",
+      "hyperlink": "https://commons.wikimedia.org/wiki/Category:The_Carbolic_Smoke_Ball_Company"
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ",",
+      "text": ","
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/groups/26"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Wikidata item",
+      "text": "Wikidata item",
+      "hyperlink": "https://www.wikidata.org/wiki/Q3610522"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "Sister Projects",
+      "text": "Sister Projects",
+      "hyperlink": "\\wiki\\Special:SiteMatrix"
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/groups/27"
       },
       "children": [],
       "content_layer": "body",
@@ -1702,75 +2826,1054 @@
       "prov": [],
       "orig": "Carlill v Carbolic Smoke Ball Company",
       "text": "Carlill v Carbolic Smoke Ball Company",
-      "hyperlink": "\\wiki\\Carlill_v_Carbolic_Smoke_Ball_Company"
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
     },
     {
-      "self_ref": "#/texts/77",
+      "self_ref": "#/texts/116",
       "parent": {
-        "$ref": "#/groups/15"
+        "$ref": "#/groups/27"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "over redirect: Despite old Wikipedia policies, English cases use \"v\" rather than \"v.\")",
-      "text": "over redirect: Despite old Wikipedia policies, English cases use \"v\" rather than \"v.\")"
+      "orig": "[1893] 1 QB 256",
+      "text": "[1893] 1 QB 256",
+      "hyperlink": "https://en.wikipedia.org/wiki/Case_citation#England_and_Wales"
     },
     {
-      "self_ref": "#/texts/78",
+      "self_ref": "#/texts/117",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/groups/27"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "(diff) \u2190 Older revision | Latest revision (diff) | Newer revision \u2192 (diff)",
-      "text": "(diff) \u2190 Older revision | Latest revision (diff) | Newer revision \u2192 (diff)"
+      "orig": "is a landmark case in English contract law, specifically regarding unilateral offers.",
+      "text": "is a landmark case in English contract law, specifically regarding unilateral offers."
     },
     {
-      "self_ref": "#/texts/79",
+      "self_ref": "#/texts/118",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Redirect page",
-      "text": "Redirect page"
+      "orig": "185565 Carlill v Carbolic Smoke Ball Company 1892 Lindley, Bowen, Smith A.L. (Court of Appeal)",
+      "text": "185565 Carlill v Carbolic Smoke Ball Company 1892 Lindley, Bowen, Smith A.L. (Court of Appeal)"
     },
     {
-      "self_ref": "#/texts/80",
+      "self_ref": "#/texts/119",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "The Carbolic Smoke Ball advertisement at the centre of the case.",
+      "text": "The Carbolic Smoke Ball advertisement at the centre of the case."
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/texts/37"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "Redirect to:",
-      "text": "Redirect to:"
+      "orig": "B e f o r e :",
+      "text": "B e f o r e :"
     },
     {
-      "self_ref": "#/texts/81",
+      "self_ref": "#/texts/121",
       "parent": {
-        "$ref": "#/groups/16"
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE LINDLEY",
+      "text": "LORD JUSTICE LINDLEY",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE BOWEN",
+      "text": "LORD JUSTICE BOWEN",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE A.L. SMITH",
+      "text": "LORD JUSTICE A.L. SMITH",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Carlill Plaintiff",
+      "text": "Carlill Plaintiff"
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "v",
+      "text": "v"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Carbolic Smoke Ball Company Defendants",
+      "text": "Carbolic Smoke Ball Company Defendants"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "J. Banks Pittman for the Plaintiff.\nField & Roscoe for the Defendants.",
+      "text": "J. Banks Pittman for the Plaintiff.\nField & Roscoe for the Defendants."
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE LINDLEY:",
+      "text": "LORD JUSTICE LINDLEY:",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/groups/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I will begin by referring to two points which were raised in the Court below. I refer to them simply for the purpose of dismissing them. First, it is said no action will lie upon this contract because it is a policy. You have only to look at the advertisement to dismiss that suggestion. Then it was said that it is a bet. Hawkins, J., came to the conclusion that nobody ever dreamt of a bet, and that the transaction had nothing whatever in common with a bet. I so entirely agree with him that I pass over this contention also as not worth serious attention.",
+      "text": "I will begin by referring to two points which were raised in the Court below. I refer to them simply for the purpose of dismissing them. First, it is said no action will lie upon this contract because it is a policy. You have only to look at the advertisement to dismiss that suggestion. Then it was said that it is a bet. Hawkins, J., came to the conclusion that nobody ever dreamt of a bet, and that the transaction had nothing whatever in common with a bet. I so entirely agree with him that I pass over this contention also as not worth serious attention."
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then, what is left? The first observation I will make is that we are not dealing with any inference of fact. We are dealing with an express promise to pay \u00a3100 in certain events. Read the advertisement how you will, and twist it about as you will, here is a distinct promise expressed in language which is perfectly unmistakable - \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the influenza after having used the ball three times daily for two weeks according to the printed directions supplied with each ball.\"",
+      "text": "Then, what is left? The first observation I will make is that we are not dealing with any inference of fact. We are dealing with an express promise to pay \u00a3100 in certain events. Read the advertisement how you will, and twist it about as you will, here is a distinct promise expressed in language which is perfectly unmistakable - \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the influenza after having used the ball three times daily for two weeks according to the printed directions supplied with each ball.\""
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We must first consider whether this was intended to be a promise at all, or whether it was a mere puff which meant nothing.Was it a mere puff? My answer to that question is No, and I base my answer upon this passage: \"\u00a31000 is deposited with the Alliance Bank, shewing our sincerity in the matter.\"",
+      "text": "We must first consider whether this was intended to be a promise at all, or whether it was a mere puff which meant nothing.Was it a mere puff? My answer to that question is No, and I base my answer upon this passage: \"\u00a31000 is deposited with the Alliance Bank, shewing our sincerity in the matter.\""
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Now, for what was that money deposited or that statement made except to negative the suggestion that this was a mere puff and meant nothing at all? The deposit is called in aid by the advertiser as proof of his sincerity in the matter - that is, the sincerity of his promise to pay this \u00a3100 in the event which he has specified.I say this for the purpose of giving point to the observation that we are not inferring a promise; there is the promise, as plain as words can make it.",
+      "text": "Now, for what was that money deposited or that statement made except to negative the suggestion that this was a mere puff and meant nothing at all? The deposit is called in aid by the advertiser as proof of his sincerity in the matter - that is, the sincerity of his promise to pay this \u00a3100 in the event which he has specified.I say this for the purpose of giving point to the observation that we are not inferring a promise; there is the promise, as plain as words can make it."
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then it is contended that it is not binding. In the first place, it is said that it is not made with anybody in particular.Now that point is common to the words of this advertisement and to the words of all other advertisements offering rewards. They are offers to anybody who performs the conditions named in the advertisement, and anybody who does perform the condition accepts the offer. In point of law this advertisement is an offer to pay\u00a3100 to anybody who will perform these conditions, and the performance of the conditions is the acceptance of the offer.That rests upon a string of authorities, the earliest of which is Williams v. Carwardine 4 B. Ad. 621, which has been followed by many other decisions upon advertisements offering rewards.",
+      "text": "Then it is contended that it is not binding. In the first place, it is said that it is not made with anybody in particular.Now that point is common to the words of this advertisement and to the words of all other advertisements offering rewards. They are offers to anybody who performs the conditions named in the advertisement, and anybody who does perform the condition accepts the offer. In point of law this advertisement is an offer to pay\u00a3100 to anybody who will perform these conditions, and the performance of the conditions is the acceptance of the offer.That rests upon a string of authorities, the earliest of which is Williams v. Carwardine 4 B. Ad. 621, which has been followed by many other decisions upon advertisements offering rewards."
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "But then it is said, \"Supposing that the performance of the conditions is an acceptance of the offer, that acceptance ought to have been notified.\"",
+      "text": "But then it is said, \"Supposing that the performance of the conditions is an acceptance of the offer, that acceptance ought to have been notified.\""
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Unquestionably, as a general proposition, when an offer is made, it is necessary in order to make a binding contract, not only that it should be accepted, but that the acceptance should be notified. But is that so in cases of this kind? I apprehend that they are an exception to that rule,or, if not an exception, they are open to the observation that the notification of the acceptance need not precede the performance. This offer is a continuing offer. It was never revoked, and if notice of acceptance is required - which I doubt very much, for I rather think the true view is that which was expressed and explained by Lord Blackburn in the case of Brogdenv. Metropolitan Ry. Co. 2 App. Cas. 666, 691 - if notice of acceptance is required, the person who makes the offer gets the notice of acceptance contemporaneously with his notice of the performance of the condition. If he gets notice of the acceptance before his offer is revoked, that in principle is all you want. I,however, think that the true view, in a case of this kind, is that the person who makes the over shews by his language and from the nature of the transaction that he does not expect and does not require notice of the acceptance apart from notice of the performance.",
+      "text": "Unquestionably, as a general proposition, when an offer is made, it is necessary in order to make a binding contract, not only that it should be accepted, but that the acceptance should be notified. But is that so in cases of this kind? I apprehend that they are an exception to that rule,or, if not an exception, they are open to the observation that the notification of the acceptance need not precede the performance. This offer is a continuing offer. It was never revoked, and if notice of acceptance is required - which I doubt very much, for I rather think the true view is that which was expressed and explained by Lord Blackburn in the case of Brogdenv. Metropolitan Ry. Co. 2 App. Cas. 666, 691 - if notice of acceptance is required, the person who makes the offer gets the notice of acceptance contemporaneously with his notice of the performance of the condition. If he gets notice of the acceptance before his offer is revoked, that in principle is all you want. I,however, think that the true view, in a case of this kind, is that the person who makes the over shews by his language and from the nature of the transaction that he does not expect and does not require notice of the acceptance apart from notice of the performance."
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We, therefore, find here all the elements which are necessary to form a binding contract enforceable in point of law, subject to two observations. First of all it is said that this advertisement is so vague that you cannot really construe it as a promise - that the vagueness of the language shews that a legal promise was never intended or contemplated. The language is vague and uncertain in some respects, and particularly in this, that the \u00a3100 is to be paid to any person who contracts the increasing epidemic after having used the balls three times daily for two weeks. It is said, When are they to be used? According to the language of the advertisement no time is fixed, and,construing the offer most strongly against the person who has made it, one might infer that any time was meant. I do not think that was meant, and to hold the contrary would be pushing too far the doctrine of taking language most strongly against the person using it. I do not think that business people or reasonable people would understand the words as meaning that if you took a smoke ball and used it three times daily for two weeks you were to be guaranteed against influenza for the rest of your life, and I think it would be pushing the language of the advertisement too far to construe it as meaning that. But if it does not mean that,what does it mean? It is for the defendants to shew what it does mean; and it strikes me that there are two, and possibly three,reasonable constructions to be put on this advertisement, any one of which will answer the purpose of the plaintiff.",
+      "text": "We, therefore, find here all the elements which are necessary to form a binding contract enforceable in point of law, subject to two observations. First of all it is said that this advertisement is so vague that you cannot really construe it as a promise - that the vagueness of the language shews that a legal promise was never intended or contemplated. The language is vague and uncertain in some respects, and particularly in this, that the \u00a3100 is to be paid to any person who contracts the increasing epidemic after having used the balls three times daily for two weeks. It is said, When are they to be used? According to the language of the advertisement no time is fixed, and,construing the offer most strongly against the person who has made it, one might infer that any time was meant. I do not think that was meant, and to hold the contrary would be pushing too far the doctrine of taking language most strongly against the person using it. I do not think that business people or reasonable people would understand the words as meaning that if you took a smoke ball and used it three times daily for two weeks you were to be guaranteed against influenza for the rest of your life, and I think it would be pushing the language of the advertisement too far to construe it as meaning that. But if it does not mean that,what does it mean? It is for the defendants to shew what it does mean; and it strikes me that there are two, and possibly three,reasonable constructions to be put on this advertisement, any one of which will answer the purpose of the plaintiff."
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Possibly it may be limited to persons catching the \"increasing epidemic\" (that is, the then prevailing epidemic), or any colds or diseases caused by taking cold, during the prevalence of the increasing epidemic. That is one suggestion; but it does not commend itself to me. Another suggested meaning is that you are warranted free from catching this epidemic, or colds or other diseases caused by taking cold, whilst you are using this remedy after using it for two weeks. If that is the meaning, the plaintiff is right, for she used the remedy for two weeks and went on using it till she got the epidemic. Another meaning, and the one which I rather prefer, is that the reward is offered to any person who contracts the epidemic or other disease within a reasonable time after having used the smoke ball. Then it is asked, What is a reasonable time? It has been suggested that there is no standard of reasonableness; that it depends upon the reasonable time for a germ to develop! I do not feel pressed by that. It strikes me that a reasonable time may be ascertained in a business sense and in a sense satisfactory to a lawyer, in this way; find out from a chemist what the ingredients are; find out from a skilled physician how long the effect of such ingredients on the system could be reasonably expected to endure so as to protect a person from an epidemic or cold, and in that way you will get a standard to be laid before a jury, or a judge without a jury, by which they might exercise their judgment as to what a reasonable time would be. It strikes me, I confess, that the true construction of this advertisement is that \u00a3100 will be paid to anybody who uses this smoke ball three times daily for two weeks according to the printed directions, and who gets the influenza or cold or other diseases caused by taking cold within a reasonable time after so using it; and if that is the true construction, it is enough for the plaintiff.",
+      "text": "Possibly it may be limited to persons catching the \"increasing epidemic\" (that is, the then prevailing epidemic), or any colds or diseases caused by taking cold, during the prevalence of the increasing epidemic. That is one suggestion; but it does not commend itself to me. Another suggested meaning is that you are warranted free from catching this epidemic, or colds or other diseases caused by taking cold, whilst you are using this remedy after using it for two weeks. If that is the meaning, the plaintiff is right, for she used the remedy for two weeks and went on using it till she got the epidemic. Another meaning, and the one which I rather prefer, is that the reward is offered to any person who contracts the epidemic or other disease within a reasonable time after having used the smoke ball. Then it is asked, What is a reasonable time? It has been suggested that there is no standard of reasonableness; that it depends upon the reasonable time for a germ to develop! I do not feel pressed by that. It strikes me that a reasonable time may be ascertained in a business sense and in a sense satisfactory to a lawyer, in this way; find out from a chemist what the ingredients are; find out from a skilled physician how long the effect of such ingredients on the system could be reasonably expected to endure so as to protect a person from an epidemic or cold, and in that way you will get a standard to be laid before a jury, or a judge without a jury, by which they might exercise their judgment as to what a reasonable time would be. It strikes me, I confess, that the true construction of this advertisement is that \u00a3100 will be paid to anybody who uses this smoke ball three times daily for two weeks according to the printed directions, and who gets the influenza or cold or other diseases caused by taking cold within a reasonable time after so using it; and if that is the true construction, it is enough for the plaintiff."
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I come now to the last point which I think requires attention- that is, the consideration. It has been argued that this is nudum pactum - that there is no consideration. We must apply to that argument the usual legal tests. Let us see whether there is no advantage to the defendants. It is said that the use of the ball is no advantage to them, and that what benefits them is the sale; and the case is put that a lot of these balls might be stolen, and that it would be no advantage to the defendants if the thief or other people used them. The answer to that, I think,is as follows. It is quite obvious that in the view of the advertisers a use by the public of their remedy, if they can only get the public to have confidence enough to use it, will react and produce a sale which is directly beneficial to them.Therefore, the advertisers get out of the use an advantage which is enough to constitute a consideration.",
+      "text": "I come now to the last point which I think requires attention- that is, the consideration. It has been argued that this is nudum pactum - that there is no consideration. We must apply to that argument the usual legal tests. Let us see whether there is no advantage to the defendants. It is said that the use of the ball is no advantage to them, and that what benefits them is the sale; and the case is put that a lot of these balls might be stolen, and that it would be no advantage to the defendants if the thief or other people used them. The answer to that, I think,is as follows. It is quite obvious that in the view of the advertisers a use by the public of their remedy, if they can only get the public to have confidence enough to use it, will react and produce a sale which is directly beneficial to them.Therefore, the advertisers get out of the use an advantage which is enough to constitute a consideration."
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "But there is another view. Does not the person who acts upon this advertisement and accepts the offer put himself to some inconvenience at the request of the defendants? Is it nothing to use this ball three times daily for two weeks according to the directions at the request of the advertiser? Is that to go for nothing? It appears to me that there is a distinct inconvenience,not to say a detriment, to any person who so uses the smoke ball.I am of opinion, therefore, that there is ample consideration for the promise.",
+      "text": "But there is another view. Does not the person who acts upon this advertisement and accepts the offer put himself to some inconvenience at the request of the defendants? Is it nothing to use this ball three times daily for two weeks according to the directions at the request of the advertiser? Is that to go for nothing? It appears to me that there is a distinct inconvenience,not to say a detriment, to any person who so uses the smoke ball.I am of opinion, therefore, that there is ample consideration for the promise."
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We were pressed upon this point with the case of Gerhard v.Bates 2 E. B. 476, which was the case of a promoter of companies who had promised the bearers of share warrants that they should have dividends for so many years, and the promise as alleged was held not to shew any consideration. Lord Campbell's judgment when you come to examine it is open to the explanation, that the real point in that case was that the promise, if any, was to the original bearer and not to the plaintiff, and that as the plaintiff was not suing in the name of the original bearer there was no contract with him. Then Lord Campbell goes on to enforce that view by shewing that there was no consideration shewn for the promise to him. I cannot help thinking that Lord Campbell's observations would have been very different if the plaintiff in that action had been an original bearer, or if the declaration had gone on to shew what a soci\u00e9t\u00e9 anonyme was, and had alleged the promise to have been, not only to the first bearer, but to anybody who should become the bearer. There was no such allegation, and the Court said, in the absence of such allegation,they did not know (judicially, of course) what a soci\u00e9t\u00e9 anonyme was, and, therefore, there was no consideration. But in the present case, for the reasons I have given, I cannot see the slightest difficulty in coming to the conclusion that there is consideration.",
+      "text": "We were pressed upon this point with the case of Gerhard v.Bates 2 E. B. 476, which was the case of a promoter of companies who had promised the bearers of share warrants that they should have dividends for so many years, and the promise as alleged was held not to shew any consideration. Lord Campbell's judgment when you come to examine it is open to the explanation, that the real point in that case was that the promise, if any, was to the original bearer and not to the plaintiff, and that as the plaintiff was not suing in the name of the original bearer there was no contract with him. Then Lord Campbell goes on to enforce that view by shewing that there was no consideration shewn for the promise to him. I cannot help thinking that Lord Campbell's observations would have been very different if the plaintiff in that action had been an original bearer, or if the declaration had gone on to shew what a soci\u00e9t\u00e9 anonyme was, and had alleged the promise to have been, not only to the first bearer, but to anybody who should become the bearer. There was no such allegation, and the Court said, in the absence of such allegation,they did not know (judicially, of course) what a soci\u00e9t\u00e9 anonyme was, and, therefore, there was no consideration. But in the present case, for the reasons I have given, I cannot see the slightest difficulty in coming to the conclusion that there is consideration."
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It appears to me, therefore, that the defendants must perform their promise, and, if they have been so unwary as to expose themselves to a great many actions, so much the worse for them.",
+      "text": "It appears to me, therefore, that the defendants must perform their promise, and, if they have been so unwary as to expose themselves to a great many actions, so much the worse for them."
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE BOWEN:",
+      "text": "LORD JUSTICE BOWEN:",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/29"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I am of the same opinion. We were asked to say that this document was a contract too vague to be enforced.",
+      "text": "I am of the same opinion. We were asked to say that this document was a contract too vague to be enforced."
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The first observation which arises is that the document itself is not a contract at all, it is only an offer made to the public.",
+      "text": "The first observation which arises is that the document itself is not a contract at all, it is only an offer made to the public."
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The defendants contend next, that it is an offer the terms of which are too vague to be treated as a definite offer, inasmuch as there is no limit of time fixed for the catching of the influenza, and it cannot be supposed that the advertisers seriously meant to promise to pay money to every person who catches the influenza at any time after the inhaling of the smoke ball. It was urged also, that if you look at this document you will find much vagueness as to the persons with whom the contract was intended to be made - that, in the first place, its terms are wide enough to include persons who may have used the smoke ball before the advertisement was issued; at all events, that it is an offer to the world in general, and, also, that it is unreasonable to suppose it to be a definite offer, because nobody in their senses would contract themselves out of the opportunity of checking the experiment which was going to be made at their own expense. It is also contended that the advertisement is rather in the nature of a puff or a proclamation than a promise or offer intended to mature into a contract when accepted. But the main point seems to be that the vagueness of the document shews that no contract whatever was intended. It seems to me that in order to arrive at a right conclusion we must read this advertisement in its plain meaning, as the public would understand it. It was intended to be issued to the public and to be read by the public.How would an ordinary person reading this document construe it?",
+      "text": "The defendants contend next, that it is an offer the terms of which are too vague to be treated as a definite offer, inasmuch as there is no limit of time fixed for the catching of the influenza, and it cannot be supposed that the advertisers seriously meant to promise to pay money to every person who catches the influenza at any time after the inhaling of the smoke ball. It was urged also, that if you look at this document you will find much vagueness as to the persons with whom the contract was intended to be made - that, in the first place, its terms are wide enough to include persons who may have used the smoke ball before the advertisement was issued; at all events, that it is an offer to the world in general, and, also, that it is unreasonable to suppose it to be a definite offer, because nobody in their senses would contract themselves out of the opportunity of checking the experiment which was going to be made at their own expense. It is also contended that the advertisement is rather in the nature of a puff or a proclamation than a promise or offer intended to mature into a contract when accepted. But the main point seems to be that the vagueness of the document shews that no contract whatever was intended. It seems to me that in order to arrive at a right conclusion we must read this advertisement in its plain meaning, as the public would understand it. It was intended to be issued to the public and to be read by the public.How would an ordinary person reading this document construe it?"
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It was intended unquestionably to have some effect, and I think the effect which it was intended to have, was to make people use the smoke ball, because the suggestions and allegations which it contains are directed immediately to the use of the smoke ball as distinct from the purchase of it. It did not follow that the smoke ball was to be purchased from the defendants directly, or even from agents of theirs directly. The intention was that the circulation of the smoke ball should be promoted, and that the use of it should be increased. The advertisement begins by saying that a reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the increasing epidemic after using the ball. It has been said that the words do not apply only to persons who contract the epidemic after the publication of the advertisement, but include persons who had previously contracted the influenza. I cannot so read the advertisement. It is written in colloquial and popular language,and I think that it is equivalent to this: \"\u00a3100 will be paid to any person who shall contract the increasing epidemic after having used the carbolic smoke ball three times daily for two weeks.\"",
+      "text": "It was intended unquestionably to have some effect, and I think the effect which it was intended to have, was to make people use the smoke ball, because the suggestions and allegations which it contains are directed immediately to the use of the smoke ball as distinct from the purchase of it. It did not follow that the smoke ball was to be purchased from the defendants directly, or even from agents of theirs directly. The intention was that the circulation of the smoke ball should be promoted, and that the use of it should be increased. The advertisement begins by saying that a reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the increasing epidemic after using the ball. It has been said that the words do not apply only to persons who contract the epidemic after the publication of the advertisement, but include persons who had previously contracted the influenza. I cannot so read the advertisement. It is written in colloquial and popular language,and I think that it is equivalent to this: \"\u00a3100 will be paid to any person who shall contract the increasing epidemic after having used the carbolic smoke ball three times daily for two weeks.\""
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And it seems to me that the way in which the public would read it would be this, that if anybody, after the advertisement was published, used three times daily for two weeks the carbolic smoke ball, and then caught cold, he would be entitled to the reward. Then again it was said: \"How long is this protection to endure? Is it to go on for ever, or for what limit of time?\"",
+      "text": "And it seems to me that the way in which the public would read it would be this, that if anybody, after the advertisement was published, used three times daily for two weeks the carbolic smoke ball, and then caught cold, he would be entitled to the reward. Then again it was said: \"How long is this protection to endure? Is it to go on for ever, or for what limit of time?\""
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I think that there are two constructions of this document, each of which is good sense, and each of which seems to me to satisfy the exigencies of the present action. It may mean that the protection is warranted to last during the epidemic, and it was during the epidemic that the plaintiff contracted the disease. I think, more probably, it means that the smoke ball will be a protection while it is in use. That seems tome the way in which an ordinary person would understand an advertisement about medicine, and about a specific against influenza. It could not be supposed that after you have left off using it you are still to be protected for ever, as if there was to be a stamp set upon your forehead that you were never to catch influenza because you had once used the carbolic smoke ball. I think the immunity is to last during the use of the ball. That is the way in which I should naturally read it, and it seems to me that the subsequent language of the advertisement supports that construction. It says: \"During the last epidemic of influenza many thousand carbolic smoke balls were sold, and in no ascertained case was the disease contracted by those using\"",
+      "text": "I think that there are two constructions of this document, each of which is good sense, and each of which seems to me to satisfy the exigencies of the present action. It may mean that the protection is warranted to last during the epidemic, and it was during the epidemic that the plaintiff contracted the disease. I think, more probably, it means that the smoke ball will be a protection while it is in use. That seems tome the way in which an ordinary person would understand an advertisement about medicine, and about a specific against influenza. It could not be supposed that after you have left off using it you are still to be protected for ever, as if there was to be a stamp set upon your forehead that you were never to catch influenza because you had once used the carbolic smoke ball. I think the immunity is to last during the use of the ball. That is the way in which I should naturally read it, and it seems to me that the subsequent language of the advertisement supports that construction. It says: \"During the last epidemic of influenza many thousand carbolic smoke balls were sold, and in no ascertained case was the disease contracted by those using\""
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "(not \"who had used\") \"the carbolic smoke ball,\" and it concludes with saying that one smoke ball will last a family several months (which imports that it is to be efficacious while it is being used), and that the ball can be refilled at a cost of 5s. I, therefore, have myself no hesitation in saying that I think, on the construction of this advertisement, the protection was to enure during the time that the carbolic smoke ball was being used. My brother, the Lord Justice who preceded me,thinks that the contract would be sufficiently definite if you were to read it in the sense that the protection was to be warranted during a reasonable period after use. I have some difficulty myself on that point; but it is not necessary for me to consider it further, because the disease here was contracted during the use of the carbolic smoke ball.",
+      "text": "(not \"who had used\") \"the carbolic smoke ball,\" and it concludes with saying that one smoke ball will last a family several months (which imports that it is to be efficacious while it is being used), and that the ball can be refilled at a cost of 5s. I, therefore, have myself no hesitation in saying that I think, on the construction of this advertisement, the protection was to enure during the time that the carbolic smoke ball was being used. My brother, the Lord Justice who preceded me,thinks that the contract would be sufficiently definite if you were to read it in the sense that the protection was to be warranted during a reasonable period after use. I have some difficulty myself on that point; but it is not necessary for me to consider it further, because the disease here was contracted during the use of the carbolic smoke ball."
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Was it intended that the \u00a3100 should, if the conditions were fulfilled, be paid? The advertisement says that \u00a31000 is lodged at the bank for the purpose. Therefore, it cannot be said that the statement that \u00a3100 would be paid was intended to be a mere puff. I think it was intended to be understood by the public as an offer which was to be acted upon.",
+      "text": "Was it intended that the \u00a3100 should, if the conditions were fulfilled, be paid? The advertisement says that \u00a31000 is lodged at the bank for the purpose. Therefore, it cannot be said that the statement that \u00a3100 would be paid was intended to be a mere puff. I think it was intended to be understood by the public as an offer which was to be acted upon."
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "But it was said there was no check on the part of the persons who issued the advertisement, and that it would be an insensate thing to promise \u00a3100 to a person who used the smoke ball unless you could check or superintend his manner of using it. The answer to that argument seems to me to be that if a person chooses to make extravagant promises of this kind he probably does so because it pays him to make them, and, if he has made them, the extravagance of the promises is no reason in law why he should not be bound by them.",
+      "text": "But it was said there was no check on the part of the persons who issued the advertisement, and that it would be an insensate thing to promise \u00a3100 to a person who used the smoke ball unless you could check or superintend his manner of using it. The answer to that argument seems to me to be that if a person chooses to make extravagant promises of this kind he probably does so because it pays him to make them, and, if he has made them, the extravagance of the promises is no reason in law why he should not be bound by them."
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It was also said that the contract is made with all the world- that is, with everybody; and that you cannot contract with everybody. It is not a contract made with all the world. There is the fallacy of the argument. It is an offer made to all the world;and why should not an offer be made to all the world which is to ripen into a contract with anybody who comes forward and performs the condition? It is an offer to become liable to any one who,before it is retracted, performs the condition, and, although the offer is made to the world, the contract is made with that limited portion of the public who come forward and perform the condition on the faith of the advertisement. It is not like cases in which you offer to negotiate, or you issue advertisements that you have got a stock of books to sell, or houses to let, in which case there is no offer to be bound by any contract. Such advertisements are offers to negotiate - offers to receive offers- offers to chaffer, as, I think, some learned judge in one of the cases has said. If this is an offer to be bound, then it is a contract the moment the person fulfils the condition.",
+      "text": "It was also said that the contract is made with all the world- that is, with everybody; and that you cannot contract with everybody. It is not a contract made with all the world. There is the fallacy of the argument. It is an offer made to all the world;and why should not an offer be made to all the world which is to ripen into a contract with anybody who comes forward and performs the condition? It is an offer to become liable to any one who,before it is retracted, performs the condition, and, although the offer is made to the world, the contract is made with that limited portion of the public who come forward and perform the condition on the faith of the advertisement. It is not like cases in which you offer to negotiate, or you issue advertisements that you have got a stock of books to sell, or houses to let, in which case there is no offer to be bound by any contract. Such advertisements are offers to negotiate - offers to receive offers- offers to chaffer, as, I think, some learned judge in one of the cases has said. If this is an offer to be bound, then it is a contract the moment the person fulfils the condition."
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "That seems to me to be sense, and it is also the ground on which all these advertisement cases have been decided during the century; and it cannot be put better than in Willes, J.'s,judgment in Spencer v. Harding Law Rep. 5 C. P. 561, 563. \"In the advertisement cases,\"",
+      "text": "That seems to me to be sense, and it is also the ground on which all these advertisement cases have been decided during the century; and it cannot be put better than in Willes, J.'s,judgment in Spencer v. Harding Law Rep. 5 C. P. 561, 563. \"In the advertisement cases,\""
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "he says, \"there never was any doubt that the advertisement amounted to a promise to pay the money to the person who first gave information. The difficulty suggested was that it was a contract with all the world. But that,of course, was soon overruled. It was an offer to become liable to any person who before the offer should be retracted should happen to be the person to fulfil the contract, of which the advertisement was an offer or tender. That is not the sort of difficulty which presents itself here. If the circular had gone on, 'and we undertake to sell to the highest bidder,'the reward cases would have applied, and there would have been a good contract in respect of the persons.\"",
+      "text": "he says, \"there never was any doubt that the advertisement amounted to a promise to pay the money to the person who first gave information. The difficulty suggested was that it was a contract with all the world. But that,of course, was soon overruled. It was an offer to become liable to any person who before the offer should be retracted should happen to be the person to fulfil the contract, of which the advertisement was an offer or tender. That is not the sort of difficulty which presents itself here. If the circular had gone on, 'and we undertake to sell to the highest bidder,'the reward cases would have applied, and there would have been a good contract in respect of the persons.\""
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "As soon as the highest bidder presented himself, says Willes, J., the person who was to hold the vinculum juris on the other side of the contract was ascertained, and it became settled.",
+      "text": "As soon as the highest bidder presented himself, says Willes, J., the person who was to hold the vinculum juris on the other side of the contract was ascertained, and it became settled."
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then it was said that there was no notification of the acceptance of the contract. One cannot doubt that, as an ordinary rule of law, an acceptance of an offer made ought to be notified to the person who makes the offer, in order that the two minds may come together. Unless this is done the two minds may be apart,and there is not that consensus which is necessary according to the English law - I say nothing about the laws of other countries- to make a contract. But there is this clear gloss to be made upon that doctrine, that as notification of acceptance is required for the benefit of the person who makes the offer, the person who makes the offer may dispense with notice to himself if he thinks it desirable to do so, and I suppose there can be no doubt that where a person in an offer made by him to another person, expressly or impliedly intimates a particular mode of acceptance as sufficient to make the bargain binding, it is only necessary for the other person to whom such offer is made to follow the indicated method of acceptance; and if the person making the offer, expressly or impliedly intimates in his offer that it will be sufficient to act on the proposal without communicating acceptance of it to himself, performance of the condition is a sufficient acceptance without notification.",
+      "text": "Then it was said that there was no notification of the acceptance of the contract. One cannot doubt that, as an ordinary rule of law, an acceptance of an offer made ought to be notified to the person who makes the offer, in order that the two minds may come together. Unless this is done the two minds may be apart,and there is not that consensus which is necessary according to the English law - I say nothing about the laws of other countries- to make a contract. But there is this clear gloss to be made upon that doctrine, that as notification of acceptance is required for the benefit of the person who makes the offer, the person who makes the offer may dispense with notice to himself if he thinks it desirable to do so, and I suppose there can be no doubt that where a person in an offer made by him to another person, expressly or impliedly intimates a particular mode of acceptance as sufficient to make the bargain binding, it is only necessary for the other person to whom such offer is made to follow the indicated method of acceptance; and if the person making the offer, expressly or impliedly intimates in his offer that it will be sufficient to act on the proposal without communicating acceptance of it to himself, performance of the condition is a sufficient acceptance without notification."
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "That seems to me to be the principle which lies at the bottom of the acceptance cases, of which two instances are the well-known judgment of Mellish, L.J., in Harris's Case Law Rep. 7 Ch.587, and the very instructive judgment of Lord Blackburn in Brogden v. Metropolitan Ry. Co. 2 App. Cas. 666, 691, in which he appears to me to take exactly the line I have indicated.",
+      "text": "That seems to me to be the principle which lies at the bottom of the acceptance cases, of which two instances are the well-known judgment of Mellish, L.J., in Harris's Case Law Rep. 7 Ch.587, and the very instructive judgment of Lord Blackburn in Brogden v. Metropolitan Ry. Co. 2 App. Cas. 666, 691, in which he appears to me to take exactly the line I have indicated."
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Now, if that is the law, how are we to find out whether the person who makes the offer does intimate that notification of acceptance will not be necessary in order to constitute a binding bargain? In many cases you look to the offer itself. In many cases you extract from the character of the transaction that notification is not required, and in the advertisement cases it seems to me to follow as an inference to be drawn from the transaction itself that a person is not to notify his acceptance of the offer before he performs the condition, but that if he performs the condition notification is dispensed with. It seems to me that from the point of view of common sense no other idea could be entertained. If I advertise to the world that my dog is lost, and that anybody who brings the dog to a particular place will be paid some money, are all the police or other persons whose business it is to find lost dogs to be expected to sit down and write me a note saying that they have accepted my proposal?Why, of course, they at once look after the dog, and as soon as they find the dog they have performed the condition. The essence of the transaction is that the dog should be found, and it is not necessary under such circumstances, as it seems to me, that in order to make the contract binding there should be any notification of acceptance. It follows from the nature of the thing that the performance of the condition is sufficient acceptance without the notification of it, and a person who makes an offer in an advertisement of that kind makes an offer which must be read by the light of that common sense reflection. He does, therefore, in his offer impliedly indicate that he does not require notification of the acceptance of the offer.",
+      "text": "Now, if that is the law, how are we to find out whether the person who makes the offer does intimate that notification of acceptance will not be necessary in order to constitute a binding bargain? In many cases you look to the offer itself. In many cases you extract from the character of the transaction that notification is not required, and in the advertisement cases it seems to me to follow as an inference to be drawn from the transaction itself that a person is not to notify his acceptance of the offer before he performs the condition, but that if he performs the condition notification is dispensed with. It seems to me that from the point of view of common sense no other idea could be entertained. If I advertise to the world that my dog is lost, and that anybody who brings the dog to a particular place will be paid some money, are all the police or other persons whose business it is to find lost dogs to be expected to sit down and write me a note saying that they have accepted my proposal?Why, of course, they at once look after the dog, and as soon as they find the dog they have performed the condition. The essence of the transaction is that the dog should be found, and it is not necessary under such circumstances, as it seems to me, that in order to make the contract binding there should be any notification of acceptance. It follows from the nature of the thing that the performance of the condition is sufficient acceptance without the notification of it, and a person who makes an offer in an advertisement of that kind makes an offer which must be read by the light of that common sense reflection. He does, therefore, in his offer impliedly indicate that he does not require notification of the acceptance of the offer."
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A further argument for the defendants was that this was a nudum pactum - that there was no consideration for the promise -that taking the influenza was only a condition, and that the using the smoke ball was only a condition, and that there was no consideration at all; in fact, that there was no request, express or implied, to use the smoke ball. Now, I will not enter into an elaborate discussion upon the law as to requests in this kind of contracts. I will simply refer to Victors v. Davies 12 M. W. 758and Serjeant Manning's note to Fisher v. Pyne 1 M. G. 265,which everybody ought to read who wishes to embark in this controversy. The short answer, to abstain from academical discussion, is, it seems to me, that there is here a request to use involved in the offer. Then as to the alleged want of consideration. The definition of \"consideration\" given in Selwyn's Nisi Prius, 8th ed. p. 47, which is cited and adopted by Tindal, C.J., in the case of Laythoarp v.Bryant 3 Scott, 238, 250, is this: \"Any act of the plaintiff from which the defendant derives a benefit or advantage, or any labour, detriment, or inconvenience sustained by the plaintiff,provided such act is performed or such inconvenience suffered by the plaintiff, with the consent, either express or implied, of the defendant.\"",
+      "text": "A further argument for the defendants was that this was a nudum pactum - that there was no consideration for the promise -that taking the influenza was only a condition, and that the using the smoke ball was only a condition, and that there was no consideration at all; in fact, that there was no request, express or implied, to use the smoke ball. Now, I will not enter into an elaborate discussion upon the law as to requests in this kind of contracts. I will simply refer to Victors v. Davies 12 M. W. 758and Serjeant Manning's note to Fisher v. Pyne 1 M. G. 265,which everybody ought to read who wishes to embark in this controversy. The short answer, to abstain from academical discussion, is, it seems to me, that there is here a request to use involved in the offer. Then as to the alleged want of consideration. The definition of \"consideration\" given in Selwyn's Nisi Prius, 8th ed. p. 47, which is cited and adopted by Tindal, C.J., in the case of Laythoarp v.Bryant 3 Scott, 238, 250, is this: \"Any act of the plaintiff from which the defendant derives a benefit or advantage, or any labour, detriment, or inconvenience sustained by the plaintiff,provided such act is performed or such inconvenience suffered by the plaintiff, with the consent, either express or implied, of the defendant.\""
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Can it be said here that if the person who reads this advertisement applies thrice daily, for such time as may seem to him tolerable, the carbolic smoke ball to his nostrils for a whole fortnight, he is doing nothing at all - that it is a mere act which is not to count towards consideration to support a promise (for the law does not require us to measure the adequacy of the consideration). Inconvenience sustained by one party at the request of the other is enough to create a consideration. I think, therefore, that it is consideration enough that the plaintiff took the trouble of using the smoke ball. But I think also that the defendants received a benefit from this user, for the use of the smoke ball was contemplated by the defendants as being indirectly a benefit to them, because the use of the smoke balls would promote their sale.",
+      "text": "Can it be said here that if the person who reads this advertisement applies thrice daily, for such time as may seem to him tolerable, the carbolic smoke ball to his nostrils for a whole fortnight, he is doing nothing at all - that it is a mere act which is not to count towards consideration to support a promise (for the law does not require us to measure the adequacy of the consideration). Inconvenience sustained by one party at the request of the other is enough to create a consideration. I think, therefore, that it is consideration enough that the plaintiff took the trouble of using the smoke ball. But I think also that the defendants received a benefit from this user, for the use of the smoke ball was contemplated by the defendants as being indirectly a benefit to them, because the use of the smoke balls would promote their sale."
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then we were pressed with Gerhard v. Bates 2 E. B. 476. In Gerhard v. Bates 2 E. B. 476, which arose upon demurrer, the point upon which the action failed was that the plaintiff did not allege that the promise was made to the class of which alone the plaintiff was a member, and that therefore there was no privity between the plaintiffs and the defendant. Then Lord Campbell went on to give a second reason. If his first reason was not enough,and the plaintiff and the defendant there had come together as contracting parties and the only question was consideration, it seems to me Lord Campbell's reasoning would not have been sound. It is only to be supported by reading it as an additional reason for thinking that they had not come into the relation of contracting parties; but, if so, the language was superfluous.The truth is, that if in that case you had found a contract between the parties there would have been no difficulty about consideration; but you could not find such a contract. Here, in the same way, if you once make up your mind that there was a promise made to this lady who is the plaintiff, as one of the public - a promise made to her that if she used the smoke ball three times daily for a fortnight and got the influenza, she should have \u00a3100, it seems to me that her using the smoke ball was sufficient consideration. I cannot picture to myself the view of the law on which the contrary could be held when you have once found who are the contracting parties. If I say to a person,\"If you use such and such a medicine for a week I will give you \u00a35,\" and he uses it, there is ample consideration for the promise.",
+      "text": "Then we were pressed with Gerhard v. Bates 2 E. B. 476. In Gerhard v. Bates 2 E. B. 476, which arose upon demurrer, the point upon which the action failed was that the plaintiff did not allege that the promise was made to the class of which alone the plaintiff was a member, and that therefore there was no privity between the plaintiffs and the defendant. Then Lord Campbell went on to give a second reason. If his first reason was not enough,and the plaintiff and the defendant there had come together as contracting parties and the only question was consideration, it seems to me Lord Campbell's reasoning would not have been sound. It is only to be supported by reading it as an additional reason for thinking that they had not come into the relation of contracting parties; but, if so, the language was superfluous.The truth is, that if in that case you had found a contract between the parties there would have been no difficulty about consideration; but you could not find such a contract. Here, in the same way, if you once make up your mind that there was a promise made to this lady who is the plaintiff, as one of the public - a promise made to her that if she used the smoke ball three times daily for a fortnight and got the influenza, she should have \u00a3100, it seems to me that her using the smoke ball was sufficient consideration. I cannot picture to myself the view of the law on which the contrary could be held when you have once found who are the contracting parties. If I say to a person,\"If you use such and such a medicine for a week I will give you \u00a35,\" and he uses it, there is ample consideration for the promise."
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/groups/30"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "LORD JUSTICE A. L. SMITH:",
+      "text": "LORD JUSTICE A. L. SMITH:",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/groups/30"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The first point in this case is, whether the defendants' advertisement which appeared in the Pall Mall Gazette was an offer which, when accepted and its conditions performed,constituted a promise to pay, assuming there was good consideration to uphold that promise, or whether it was only a puff from which no promise could be implied, or, as put by Mr.Finlay, a mere statement by the defendants of the confidence they entertained in the efficacy of their remedy. Or as I might put it in the words of Lord Campbell in Denton v. Great Northern Ry. Co.5 E. B. 860, whether this advertisement was mere waste paper.That is the first matter to be determined. It seems to me that this advertisement reads as follows: \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who after having used the ball three times daily for two weeks according to the printed directions supplied with such ball contracts the increasing epidemic influenza, colds, or any diseases caused by taking cold. The ball will last a family several months, and can be refilled at a cost of 5s\"",
+      "text": "The first point in this case is, whether the defendants' advertisement which appeared in the Pall Mall Gazette was an offer which, when accepted and its conditions performed,constituted a promise to pay, assuming there was good consideration to uphold that promise, or whether it was only a puff from which no promise could be implied, or, as put by Mr.Finlay, a mere statement by the defendants of the confidence they entertained in the efficacy of their remedy. Or as I might put it in the words of Lord Campbell in Denton v. Great Northern Ry. Co.5 E. B. 860, whether this advertisement was mere waste paper.That is the first matter to be determined. It seems to me that this advertisement reads as follows: \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who after having used the ball three times daily for two weeks according to the printed directions supplied with such ball contracts the increasing epidemic influenza, colds, or any diseases caused by taking cold. The ball will last a family several months, and can be refilled at a cost of 5s\""
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "If I may paraphrase it, it means this: \"If you\" - that is one of the public as yet not ascertained, but who, as Lindley and Bowen, L.JJ., have pointed out, will be ascertained by the performing the condition- \"will hereafter use my smoke ball three times daily for two weeks according to my printed directions, I will pay you \u00a3100if you contract the influenza within the period mentioned in the advertisement.\"",
+      "text": "If I may paraphrase it, it means this: \"If you\" - that is one of the public as yet not ascertained, but who, as Lindley and Bowen, L.JJ., have pointed out, will be ascertained by the performing the condition- \"will hereafter use my smoke ball three times daily for two weeks according to my printed directions, I will pay you \u00a3100if you contract the influenza within the period mentioned in the advertisement.\""
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Now, is there not a request there? It comes to this: \"In consideration of your buying my smoke ball, and then using it as I prescribe, I promise that if you catch the influenza within a certain time I will pay you \u00a3100\"",
+      "text": "Now, is there not a request there? It comes to this: \"In consideration of your buying my smoke ball, and then using it as I prescribe, I promise that if you catch the influenza within a certain time I will pay you \u00a3100\""
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It must not be forgotten that this advertisement states that as security for what is being offered, and as proof of the sincerity of the offer, \u00a31000 is actually lodged at the bank wherewith to satisfy any possible demands which might be made in the event of the conditions contained therein being fulfilled and a person catching the epidemic so as to entitle him to the \u00a3100. How can it be said that such a statement as that embodied only a mere expression of confidence in the wares which the defendants had to sell? I cannot read the advertisement in any such way. In my judgment, the advertisement was an offer intended to be acted upon, and when accepted and the conditions performed constituted a binding promise on which an action would lie, assuming there was consideration for that promise. The defendants have contended that it was a promise in honour or an agreement or a contract in honour - whatever that may mean. I understand that if there is no consideration for a promise, it may be a promise in honour, or,as we should call it, a promise without consideration and nudum pactum; but if anything else is meant, I do not understand it. Ido not understand what a bargain or a promise or an agreement in honour is unless it is one on which an action cannot be brought because it is nudum pactum, and about nudum pactum I will say a word in a moment.",
+      "text": "It must not be forgotten that this advertisement states that as security for what is being offered, and as proof of the sincerity of the offer, \u00a31000 is actually lodged at the bank wherewith to satisfy any possible demands which might be made in the event of the conditions contained therein being fulfilled and a person catching the epidemic so as to entitle him to the \u00a3100. How can it be said that such a statement as that embodied only a mere expression of confidence in the wares which the defendants had to sell? I cannot read the advertisement in any such way. In my judgment, the advertisement was an offer intended to be acted upon, and when accepted and the conditions performed constituted a binding promise on which an action would lie, assuming there was consideration for that promise. The defendants have contended that it was a promise in honour or an agreement or a contract in honour - whatever that may mean. I understand that if there is no consideration for a promise, it may be a promise in honour, or,as we should call it, a promise without consideration and nudum pactum; but if anything else is meant, I do not understand it. Ido not understand what a bargain or a promise or an agreement in honour is unless it is one on which an action cannot be brought because it is nudum pactum, and about nudum pactum I will say a word in a moment."
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In my judgment, therefore, this first point fails, and this was an offer intended to be acted upon, and, when acted upon and the conditions performed, constituted a promise to pay.",
+      "text": "In my judgment, therefore, this first point fails, and this was an offer intended to be acted upon, and, when acted upon and the conditions performed, constituted a promise to pay."
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "In the next place, it was said that the promise was too wide,because there is no limit of time within which the person has to catch the epidemic. There are three possible limits of time to this contract. The first is, catching the epidemic during its continuance; the second is, catching the influenza during the time you are using the ball; the third is, catching the influenza within a reasonable time after the expiration of the two weeks during which you have used the ball three times daily. It is not necessary to say which is the correct construction of this contract, for no question arises thereon. Whichever is the true construction, there is sufficient limit of time so as not to make the contract too vague on that account.",
+      "text": "In the next place, it was said that the promise was too wide,because there is no limit of time within which the person has to catch the epidemic. There are three possible limits of time to this contract. The first is, catching the epidemic during its continuance; the second is, catching the influenza during the time you are using the ball; the third is, catching the influenza within a reasonable time after the expiration of the two weeks during which you have used the ball three times daily. It is not necessary to say which is the correct construction of this contract, for no question arises thereon. Whichever is the true construction, there is sufficient limit of time so as not to make the contract too vague on that account."
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then it was argued, that if the advertisement constituted an offer which might culminate in a contract if it was accepted, and its conditions performed, yet it was not accepted by the plaintiff in the manner contemplated, and that the offer contemplated was such that notice of the acceptance had to be given by the party using the carbolic ball to the defendants before user, so that the defendants might be at liberty to superintend the experiment. All I can say is, that there is no such clause in the advertisement, and that, in my judgment, no such clause can be read into it; and I entirely agree with what has fallen from my Brothers, that this is one of those cases in which a performance of the condition by using these smoke balls for two weeks three times a day is an acceptance of the offer.",
+      "text": "Then it was argued, that if the advertisement constituted an offer which might culminate in a contract if it was accepted, and its conditions performed, yet it was not accepted by the plaintiff in the manner contemplated, and that the offer contemplated was such that notice of the acceptance had to be given by the party using the carbolic ball to the defendants before user, so that the defendants might be at liberty to superintend the experiment. All I can say is, that there is no such clause in the advertisement, and that, in my judgment, no such clause can be read into it; and I entirely agree with what has fallen from my Brothers, that this is one of those cases in which a performance of the condition by using these smoke balls for two weeks three times a day is an acceptance of the offer."
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "It was then said there was no person named in the advertisement with whom any contract was made. That, I suppose,has taken place in every case in which actions on advertisement shave been maintained, from the time of Williams v. Carwardine 4 B.Ad. 621, and before that, down to the present day. I have nothing to add to what has been said on that subject, except that a person becomes a persona designat a and able to sue, when he performs the conditions mentioned in the advertisement.",
+      "text": "It was then said there was no person named in the advertisement with whom any contract was made. That, I suppose,has taken place in every case in which actions on advertisement shave been maintained, from the time of Williams v. Carwardine 4 B.Ad. 621, and before that, down to the present day. I have nothing to add to what has been said on that subject, except that a person becomes a persona designat a and able to sue, when he performs the conditions mentioned in the advertisement."
+    },
+    {
+      "self_ref": "#/texts/171",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Lastly, it was said that there was no consideration, and that it was nudum pactum. There are two considerations here. One is the consideration of the inconvenience of having to use this carbolic smoke ball for two weeks three times a day; and the other more important consideration is the money gain likely to accrue to the defendants by the enhanced sale of the smoke balls,by reason of the plaintiff's user of them. There is ample consideration to support this promise. I have only to add that as regards the policy and the wagering points, in my judgment, there is nothing in either of them.",
+      "text": "Lastly, it was said that there was no consideration, and that it was nudum pactum. There are two considerations here. One is the consideration of the inconvenience of having to use this carbolic smoke ball for two weeks three times a day; and the other more important consideration is the money gain likely to accrue to the defendants by the enhanced sale of the smoke balls,by reason of the plaintiff's user of them. There is ample consideration to support this promise. I have only to add that as regards the policy and the wagering points, in my judgment, there is nothing in either of them."
+    },
+    {
+      "self_ref": "#/texts/172",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Appeal dismissed.",
+      "text": "Appeal dismissed.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/173",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/31"
+        },
+        {
+          "$ref": "#/groups/32"
+        },
+        {
+          "$ref": "#/pictures/5"
+        },
+        {
+          "$ref": "#/groups/33"
+        },
+        {
+          "$ref": "#/groups/34"
+        },
+        {
+          "$ref": "#/pictures/6"
+        },
+        {
+          "$ref": "#/texts/189"
+        },
+        {
+          "$ref": "#/groups/35"
+        },
+        {
+          "$ref": "#/groups/36"
+        },
+        {
+          "$ref": "#/groups/37"
+        },
+        {
+          "$ref": "#/texts/199"
+        },
+        {
+          "$ref": "#/groups/38"
+        },
+        {
+          "$ref": "#/groups/39"
+        },
+        {
+          "$ref": "#/texts/218"
+        },
+        {
+          "$ref": "#/texts/219"
+        },
+        {
+          "$ref": "#/texts/220"
+        },
+        {
+          "$ref": "#/groups/44"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Source",
+      "text": "Source",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/174",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "[",
+      "text": "["
+    },
+    {
+      "self_ref": "#/texts/175",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "edit",
+      "text": "edit",
+      "hyperlink": "\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&action=edit&section=1"
+    },
+    {
+      "self_ref": "#/texts/176",
+      "parent": {
+        "$ref": "#/groups/31"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "]",
+      "text": "]"
+    },
+    {
+      "self_ref": "#/texts/177",
+      "parent": {
+        "$ref": "#/groups/32"
       },
       "children": [],
       "content_layer": "body",
       "label": "list_item",
       "prov": [],
-      "orig": "Carlill v Carbolic Smoke Ball Company",
-      "text": "Carlill v Carbolic Smoke Ball Company",
-      "hyperlink": "\\wiki\\Carlill_v_Carbolic_Smoke_Ball_Company",
+      "orig": "Text of the decision from the British and Irish Legal Information Institute",
+      "text": "Text of the decision from the British and Irish Legal Information Institute",
+      "hyperlink": "http://www.bailii.org/ew/cases/EWCA/Civ/1892/1.html",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/82",
+      "self_ref": "#/texts/178",
       "parent": {
-        "$ref": "#/groups/17"
+        "$ref": "#/groups/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "The spelling of influenza has been corrected in \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the influenza\".",
+      "text": "The spelling of influenza has been corrected in \"\u00a3100 reward will be paid by the Carbolic Smoke Ball Company to any person who contracts the influenza\".",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/179",
+      "parent": {
+        "$ref": "#/groups/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This work is in the",
+      "text": "This work is in the"
+    },
+    {
+      "self_ref": "#/texts/180",
+      "parent": {
+        "$ref": "#/groups/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "public domain",
+      "text": "public domain",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://en.wikipedia.org/wiki/public_domain"
+    },
+    {
+      "self_ref": "#/texts/181",
+      "parent": {
+        "$ref": "#/groups/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "worldwide because it was created by a public body of the United Kingdom with Crown Status and published before 1976.",
+      "text": "worldwide because it was created by a public body of the United Kingdom with Crown Status and published before 1976."
+    },
+    {
+      "self_ref": "#/texts/182",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "See",
+      "text": "See"
+    },
+    {
+      "self_ref": "#/texts/183",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Crown copyright artistic works",
+      "text": "Crown copyright artistic works",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://www.museumscopyright.org.uk/crown-a.pdf"
+    },
+    {
+      "self_ref": "#/texts/184",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ",",
+      "text": ","
+    },
+    {
+      "self_ref": "#/texts/185",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Crown copyright non-artistic works",
+      "text": "Crown copyright non-artistic works",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://www.museumscopyright.org.uk/crown-l.pdf"
+    },
+    {
+      "self_ref": "#/texts/186",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "and",
+      "text": "and",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/187",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "List of Public Bodies with Crown Status",
+      "text": "List of Public Bodies with Crown Status",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/uk-crown-bodies/"
+    },
+    {
+      "self_ref": "#/texts/188",
+      "parent": {
+        "$ref": "#/groups/34"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/189",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Public domain Public domain false false",
+      "text": "Public domain Public domain false false"
+    },
+    {
+      "self_ref": "#/texts/190",
+      "parent": {
+        "$ref": "#/groups/35"
       },
       "children": [],
       "content_layer": "body",
@@ -1780,22 +3883,22 @@
       "text": "Retrieved from \""
     },
     {
-      "self_ref": "#/texts/83",
+      "self_ref": "#/texts/191",
       "parent": {
-        "$ref": "#/groups/17"
+        "$ref": "#/groups/35"
       },
       "children": [],
       "content_layer": "body",
       "label": "text",
       "prov": [],
-      "orig": "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727",
-      "text": "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727",
-      "hyperlink": "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727"
+      "orig": "https://en.wikisource.org/w/index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832",
+      "text": "https://en.wikisource.org/w/index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832",
+      "hyperlink": "https://en.wikisource.org/w/index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832"
     },
     {
-      "self_ref": "#/texts/84",
+      "self_ref": "#/texts/192",
       "parent": {
-        "$ref": "#/groups/17"
+        "$ref": "#/groups/35"
       },
       "children": [],
       "content_layer": "body",
@@ -1805,27 +3908,139 @@
       "text": "\""
     },
     {
-      "self_ref": "#/texts/85",
+      "self_ref": "#/texts/193",
       "parent": {
-        "$ref": "#/groups/19"
+        "$ref": "#/groups/36"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Categories",
+      "text": "Categories",
+      "hyperlink": "\\wiki\\Special:Categories"
+    },
+    {
+      "self_ref": "#/texts/194",
+      "parent": {
+        "$ref": "#/groups/36"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ":",
+      "text": ":"
+    },
+    {
+      "self_ref": "#/texts/195",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Texts without a source",
+      "text": "Texts without a source",
+      "hyperlink": "\\wiki\\Category:Texts_without_a_source",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/196",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "1892 works",
+      "text": "1892 works",
+      "hyperlink": "\\wiki\\Category:1892_works",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/197",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "PD-UKGov",
+      "text": "PD-UKGov",
+      "hyperlink": "\\wiki\\Category:PD-UKGov",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/198",
+      "parent": {
+        "$ref": "#/groups/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "British case law",
+      "text": "British case law",
+      "hyperlink": "\\wiki\\Category:British_case_law",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/199",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Hidden category:",
+      "text": "Hidden category:"
+    },
+    {
+      "self_ref": "#/texts/200",
+      "parent": {
+        "$ref": "#/groups/38"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Pages with override author",
+      "text": "Pages with override author",
+      "hyperlink": "\\wiki\\Category:Pages_with_override_author",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/201",
+      "parent": {
+        "$ref": "#/groups/40"
       },
       "children": [],
       "content_layer": "furniture",
       "label": "list_item",
       "prov": [],
-      "orig": "This page was last edited on 4 May 2017, at 17:24.",
-      "text": "This page was last edited on 4 May 2017, at 17:24.",
+      "orig": "This page was last edited on 27 November 2022, at 09:37.",
+      "text": "This page was last edited on 27 November 2022, at 09:37.",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/86",
+      "self_ref": "#/texts/202",
       "parent": {
-        "$ref": "#/groups/19"
+        "$ref": "#/groups/40"
       },
       "children": [
         {
-          "$ref": "#/groups/20"
+          "$ref": "#/groups/41"
         }
       ],
       "content_layer": "furniture",
@@ -1837,9 +4052,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/87",
+      "self_ref": "#/texts/203",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1849,9 +4064,9 @@
       "text": "Text is available under the"
     },
     {
-      "self_ref": "#/texts/88",
+      "self_ref": "#/texts/204",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1862,9 +4077,9 @@
       "hyperlink": "\\\\creativecommons.org\\licenses\\by-sa\\4.0"
     },
     {
-      "self_ref": "#/texts/89",
+      "self_ref": "#/texts/205",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1874,9 +4089,9 @@
       "text": "; additional terms may apply. By using this site, you agree to the"
     },
     {
-      "self_ref": "#/texts/90",
+      "self_ref": "#/texts/206",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1887,9 +4102,9 @@
       "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use"
     },
     {
-      "self_ref": "#/texts/91",
+      "self_ref": "#/texts/207",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1899,9 +4114,9 @@
       "text": "and"
     },
     {
-      "self_ref": "#/texts/92",
+      "self_ref": "#/texts/208",
       "parent": {
-        "$ref": "#/groups/20"
+        "$ref": "#/groups/41"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1912,9 +4127,9 @@
       "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
     },
     {
-      "self_ref": "#/texts/93",
+      "self_ref": "#/texts/209",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1927,9 +4142,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/94",
+      "self_ref": "#/texts/210",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1942,9 +4157,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/95",
+      "self_ref": "#/texts/211",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1957,9 +4172,24 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/96",
+      "self_ref": "#/texts/212",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Legal & safety contacts",
+      "text": "Legal & safety contacts",
+      "hyperlink": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/213",
+      "parent": {
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1972,9 +4202,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/97",
+      "self_ref": "#/texts/214",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -1987,9 +4217,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/98",
+      "self_ref": "#/texts/215",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -2002,9 +4232,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/99",
+      "self_ref": "#/texts/216",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -2017,9 +4247,9 @@
       "marker": ""
     },
     {
-      "self_ref": "#/texts/100",
+      "self_ref": "#/texts/217",
       "parent": {
-        "$ref": "#/groups/21"
+        "$ref": "#/groups/42"
       },
       "children": [],
       "content_layer": "furniture",
@@ -2027,14 +4257,14 @@
       "prov": [],
       "orig": "Mobile view",
       "text": "Mobile view",
-      "hyperlink": "\\\\en.wikisource.org\\w\\index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727&mobileaction=toggle_view_mobile",
+      "hyperlink": "\\\\en.wikisource.org\\w\\index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832&mobileaction=toggle_view_mobile",
       "enumerated": false,
       "marker": ""
     },
     {
-      "self_ref": "#/texts/101",
+      "self_ref": "#/texts/218",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/173"
       },
       "children": [],
       "content_layer": "body",
@@ -2044,9 +4274,9 @@
       "text": "Search Wikisource"
     },
     {
-      "self_ref": "#/texts/102",
+      "self_ref": "#/texts/219",
       "parent": {
-        "$ref": "#/texts/31"
+        "$ref": "#/texts/173"
       },
       "children": [],
       "content_layer": "body",
@@ -2054,6 +4284,18 @@
       "prov": [],
       "orig": "Search",
       "text": "Search"
+    },
+    {
+      "self_ref": "#/texts/220",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "checkbox_unselected",
+      "prov": [],
+      "orig": "Toggle the table of contents",
+      "text": "Toggle the table of contents"
     }
   ],
   "pictures": [
@@ -2074,9 +4316,196 @@
       "references": [],
       "footnotes": [],
       "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/texts/101"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/105"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/texts/106"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/114"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/119"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/texts/173"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
     }
   ],
-  "tables": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/20"
+        },
+        {
+          "$ref": "#/groups/23"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/20"
+            }
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "The source document of this text is not known.\n\n\nPlease see this document's talk page for details for verification. \"Source\" means a location at which other users can find a copy of this work.  Ideally this will be a scanned copy of the original that can be uploaded to Wikimedia Commons and proofread. If not, it is preferably a URL; if one is not available, please explain on the talk page.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false,
+            "ref": {
+              "$ref": "#/groups/23"
+            }
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "The source document of this text is not known.\n\n\nPlease see this document's talk page for details for verification. \"Source\" means a location at which other users can find a copy of this work.  Ideally this will be a scanned copy of the original that can be uploaded to Wikimedia Commons and proofread. If not, it is preferably a URL; if one is not available, please explain on the talk page.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
   "key_value_items": [],
   "form_items": [],
   "pages": {}

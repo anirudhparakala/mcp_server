@@ -1,18 +1,93 @@
 {
   "contexts": {
+    "063a30ebf797ff09071234729ac3534ec51fc3345cd93ff048b97334f5d705dc": {
+      "context": "In Carlill v Carbolic Smoke Ball Company, Lord Justice A. L. Smith's judgment addresses the defendants' final argument that the advertisement lacked consideration and constituted nudum pactum (a promise without consideration). This passage concludes his analysis by identifying two forms of consideration supporting the promise and dismissing policy and wagering objections before the appeal is dismissed.",
+      "text_sha256": "88bc82d7a391bdb1c24950eefd2b30321e4cf791a9f7aed384af63a8f0c5b18d",
+      "window_index": 2
+    },
+    "37fcd8c059a40280b7e30154b8674db9f5e24a8af8429aac6176ce38669b3330": {
+      "context": "This chunk contains Lord Justice A. L. Smith's judgment in Carlill v Carbolic Smoke Ball Company, addressing the first major legal issue in the case: whether the Carbolic Smoke Ball Company's advertisement constituted a binding offer or merely puffery. The judgment analyzes the advertisement's language, the \u00a31000 bank deposit as evidence of sincerity, and rebuts the defendants' arguments regarding acceptance, time limits, identification of parties, and consideration.",
+      "text_sha256": "79ded1deef84cae3bb2781347a13f208adf0c54eb63d21a7ec63fceb5b4fb33c",
+      "window_index": 2
+    },
+    "509461ccb06309d442dcbdcf05d71fb58d392a11d89b7b75f3e1d343a7bcea40": {
+      "context": "This is the table of contents navigation element from Carlill v Carbolic Smoke Ball Company, a legal case document hosted on Wikisource. It provides links to major sections including the beginning of the case and the source information, along with a toggle function for the contents menu.",
+      "text_sha256": "c12294faee1536e47cb8b23430b41f2f65c34a23acbde6c52084974998d2dcf6",
+      "window_index": 0
+    },
+    "6583cdea720ad4671d776166110171ea254435cb2bc47c593e0d2eb4e2ae6fb3": {
+      "context": "This is the opening section of Carlill v Carbolic Smoke Ball Company ([1893] 1 QB 256), a landmark 1892 English contract law case heard before the Court of Appeal with judges Lindley, Bowen, and A.L. Smith. The chunk provides the case citation, parties involved (plaintiff Carlill versus defendant Carbolic Smoke Ball Company), and the names of counsel representing each side, establishing the procedural framework for the subsequent judicial opinions on unilateral contract offers.",
+      "text_sha256": "11f16cba6d62722e352ed949bd6db08049fc70ba84c585e990c1c4af4a42a95f",
+      "window_index": 1
+    },
+    "7854336710b4d2e1d6c7864f62eb22fe75f20ef0edbdd6cc19d332deb758c6db": {
+      "context": "This chunk is from the judgment of Lord Justice Lindley in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. The chunk addresses whether acceptance of the advertisement's offer required notification, and discusses the vagueness of the advertisement's terms regarding when influenza must be contracted to claim the \u00a3100 reward.",
+      "text_sha256": "ab7ab541349fc332af3c2b70bab3aefc16e527c0c9bfcd41d4cc5e24d10d996a",
+      "window_index": 1
+    },
+    "798510ae9a74dc90a502c451d4f9f99dc72a3203981b8c91791a5aa9514f4549": {
+      "context": "This chunk is from Lord Justice Bowen's judgment in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. In this section, Bowen addresses key objections to enforcing the Carbolic Smoke Ball Company's advertisement as a binding contract, including arguments about the lack of supervision, contracting with the world, and the nature of advertisement offers versus mere puffs.",
+      "text_sha256": "b28af8f188241e81ed20a063ac16294c23f63d5e471eb04696af1b09e2b7e65d",
+      "window_index": 1
+    },
     "7f96ab72a790dd6f60d1a99080e260eed807915b0db9b859b334cb99ae78a768": {
       "context": "This chunk contains the navigation and interface elements from the Wikisource page for Carlill v. Carbolic Smoke Ball Company, a legal case document. It includes links for reading, editing, viewing history, and downloading the case in various formats, as well as language and tool options available on the Wikisource platform.",
       "text_sha256": "baedcf1eeedcf471b3130321efc928f8591a46e4bf25e7112903ec8bb2a8258c",
       "window_index": 0
     },
+    "86c8159184d7e4d0e966dcb4edaca9acb10e4125546833dfbf981a47c64dd87b": {
+      "context": "This chunk is from the judgment of Lord Justice Bowen in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. In this section, Bowen addresses the defendants' argument that the advertisement was too vague to constitute a binding contract, analyzing how an ordinary person would interpret the advertisement's terms regarding the duration of protection and the conditions for receiving the \u00a3100 reward.",
+      "text_sha256": "df5ac4aa6332eaf9c015bfb7e7b04fd01c1be48fb6f12d8cf0e2e7cd297814fa",
+      "window_index": 1
+    },
     "8db25d3c49ee27839c7f322745aa16564a7f9fea1908442bdd0cd829a9cb58a5": {
       "context": "This chunk is the revision history and redirect information from the Wikisource page for Carlill v. Carbolic Smoke Ball Company, a legal case document. It documents a page move made by user Cromium on May 4, 2017, changing the case title from \"Carlill v. Carbolic Smoke Ball Company\" to \"Carlill v Carbolic Smoke Ball Company\" to conform with English legal citation conventions.",
       "text_sha256": "fee3134b6c63287fb8fe830c940e5ea53ba99e424175a0efde3a898f7989e4e6",
       "window_index": 0
+    },
+    "8db44fb263adfdacda408bfd2b3aa5a3c99db504df31541503025072ef34a625": {
+      "context": "This chunk from Carlill v Carbolic Smoke Ball Company contains judicial reasoning on whether the Carbolic Smoke Ball Company's advertisement constituted a binding offer and whether there was sufficient consideration for the promise. It includes discussion of the precedent case Gerhard v. Bates and Lord Justice A. L. Smith's analysis of the first key issue in the case: whether the advertisement was an enforceable offer or merely puffery.",
+      "text_sha256": "0cdf31a153a65321236767a83c5aa635a2f08d31a7967eaed3bfd8cb43348d27",
+      "window_index": 2
+    },
+    "9629a824dbe8de2aab8c2ef689b7023c2b4d8fcdc463978267479866e4734a73": {
+      "context": "This is the source information and copyright notice section from the Wikisource page for Carlill v Carbolic Smoke Ball Company, a landmark 1892 British case law decision. It provides links to the full legal text, notes editorial corrections made to the historical document, and explains the work's public domain status under UK Crown copyright law.",
+      "text_sha256": "2b41a675cd40aab49feb2931e69709c875693091414faf6e6a16e5929a1e0c45",
+      "window_index": 3
+    },
+    "9749656baee7338af154f0722b828a3f61ee0df6d680d6481a4c3fb1b25e8bb0": {
+      "context": "This chunk is from Lord Justice Lindley's judgment in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. The passage addresses two key issues: the interpretation of the advertisement's scope regarding when influenza protection applies, and whether the contract has sufficient consideration to be binding, rejecting the defendants' argument that it is a nudum pactum.",
+      "text_sha256": "27f393bef02bc2321b3d0c82ad43a549588e2028e545af9ace1339cf6dac1ea3",
+      "window_index": 1
+    },
+    "9e7781855d472cabbda281298a60bee91a2f4aa991442fc27aaaefc524d1d59d": {
+      "context": "This passage is from Lord Justice Bowen's judgment in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. In this section, Bowen addresses the defendants' argument that there was no valid contract because the plaintiff failed to notify the company of her acceptance of their advertised offer. He explains the principle that while notification of acceptance is ordinarily required, the offeror may dispense with this requirement, particularly in advertisement cases where performance of the condition constitutes sufficient acceptance without prior notice.",
+      "text_sha256": "4c660782fb8769686045bea5ac87df66f2f6a4d7191560011963cd89948fd6b2",
+      "window_index": 1
+    },
+    "c3f9a887800bf06908030665955496d61fbb818e4c29f4872241cf70d9f570e5": {
+      "context": "This is the navigation and metadata header section of the Wikisource document for Carlill v Carbolic Smoke Ball Company, a landmark 1893 English contract law case decided by the Court of Appeal (Lindley, Bowen, and Smith A.L.). The chunk contains wiki interface elements, language options, and links to related projects rather than substantive case content.",
+      "text_sha256": "be879dd2bf0931533e1d8e5bda6d3395d26cc12ace04eb7a7218f26213dc314b",
+      "window_index": 1
+    },
+    "e4e134450fb8318c77879f5046ff4d3bc1b307657865972ecbe5694492942507": {
+      "context": "In Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case regarding unilateral offers, Lord Justice Bowen addresses the defendants' argument that the contract lacked consideration, examining whether using the smoke ball constituted sufficient consideration to support the company's promise to pay \u00a3100 to anyone who contracted influenza after using the product as directed.",
+      "text_sha256": "384d4b9c93852d63248b52c6234613916a579de4ff5994bf0374c431325fa823",
+      "window_index": 1
+    },
+    "f5c94a45e47528be1fbc988c3665e757024b2ca6678499c7e153c8c29e2315f8": {
+      "context": "This is the opening section of Lord Justice Lindley's judgment in Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case concerning unilateral offers. Lindley dismisses preliminary objections that the contract is a policy or bet, then establishes that the advertisement contains an express promise to pay \u00a3100, argues it is not a mere puff based on the \u00a31000 bank deposit, and explains that advertisements offering rewards constitute binding offers that can be accepted by performance of the stated conditions.",
+      "text_sha256": "948d07fb90062cc50b52a44dc8340bd5541a2be15ac80e7d82618c0189b78799",
+      "window_index": 1
+    },
+    "fe65b4583a04f1263a55331fd565a1ddb20e2c377f4c7b22d00be69aeb344bf4": {
+      "context": "This chunk is from the judgment section of Carlill v Carbolic Smoke Ball Company (1893), a landmark English contract law case about unilateral offers. It contains the conclusion of Lord Justice Lindley's opinion on the consideration requirement, where he distinguishes the case from Gerhard v. Bates, followed by the beginning of Lord Justice Bowen's concurring opinion addressing the defendants' arguments that the advertisement was too vague to constitute an enforceable contract.",
+      "text_sha256": "fed42d3899283931a8e370629e4ce93fa84e5ce7d718bfd551ef31cc3880c6eb",
+      "window_index": 1
     }
   },
   "doc_id": "case-carlill-carbolic",
-  "generated_at": "2026-08-29T22:26:50Z",
+  "generated_at": "2026-09-24T00:03:51Z",
   "model": "claude-haiku-4-5",
   "prompt_version": 1
 }

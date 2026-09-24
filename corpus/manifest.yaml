@@ -424,15 +424,15 @@
   rationale: "Jacob & Youngs v. Kent (1921, Cardozo) — substantial performance doctrine. T5 conflict_with UCC Article 2 perfect-tender rule. Fetched via curl_cffi (Justia TLS-gated)."
 
 - doc_id: case-carlill-carbolic
-  url: "https://en.wikisource.org/w/index.php?title=Carlill_v._Carbolic_Smoke_Ball_Company&oldid=6792727"
+  url: "https://en.wikisource.org/w/index.php?title=Carlill_v_Carbolic_Smoke_Ball_Company&oldid=12776832"
   domain: law_contract
   format: html
   license: "Public domain (1893 English Court of Appeal judgment); Wikisource transcription (CC BY-SA wrapper on formatting only)"
   license_ok: true
-  version: oldid-6792727
+  version: oldid-12776832
   tier_roles: [T1]
   collision_terms: [offer]
-  rationale: "Carlill v. Carbolic Smoke Ball Co. (1893) — unilateral offer / offer to the world. Wikisource (cleanest host, plain GET)."
+  rationale: "Carlill v. Carbolic Smoke Ball Co. (1893) — unilateral offer / offer to the world. Wikisource (cleanest host, plain GET). REPOINTED 2026-09-23: the original URL used the 'Carlill v. Carbolic' title (with a period), which is a REDIRECT page -- the fetch succeeded but pinned 47KB of redirect chrome, and the built document was 2 chunks of page navigation and a revision-history line with ZERO case text. Undetected through M2-M7 because the structure gate checks 5 named fixtures and this is not one. Now points at the real transcription (no period, oldid 12776832)."
 
 - doc_id: edgar-commercial-contract
   url: "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm"
