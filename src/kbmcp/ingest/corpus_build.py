@@ -39,6 +39,7 @@ import yaml
 from ..config import load_corpus_config
 from ..db import ops
 from ..db.schema import create_all_tables
+from ..eval import verify_gold
 from ..index.bm25_store import BM25Store
 from . import build as build_mod
 from . import chunk as chunk_mod
@@ -47,7 +48,6 @@ from . import graph as graph_mod
 from . import manifest as manifest_mod
 from . import verify_graph
 from . import verify_structure
-from ..eval import verify_gold
 
 DEFAULT_MANIFEST = "corpus/manifest.yaml"
 

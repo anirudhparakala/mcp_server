@@ -475,6 +475,19 @@ class _Passed:
         self.passed = passed
 
 
+def test_a_failing_gate_fails_the_build_via_run():
+    """test_gates_runs_the_gold_gate pins gates() -> verify_gold and
+    _gate_errors()'s mapping, but it never calls run() -- it calls gates() and
+    _gate_errors() directly. That leaves a gap one level up: run() could stop
+    calling _gate_errors(gates_result) entirely and every existing test would
+    stay green. Reuses the _Stages/_args doubles already established at the
+    top of this file rather than inventing a new stub pattern."""
+    s = _Stages(gates={"structure": (4, 5)})
+    out = cb.run(_args(), stages=s)
+    assert cb.exit_code(out) == 1
+    assert any(e["doc_id"] == "structure" for e in out["errors"])
+
+
 def test_ingest_run_records_which_tokenizer_produced_the_chunk_ids(safe_tmp_path):
     """Spec Sec.7 asked for this and it was never implemented. Without it the
     shipped CKB carries no evidence of what its chunk boundaries depend on --
