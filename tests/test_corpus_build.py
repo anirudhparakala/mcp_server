@@ -162,8 +162,9 @@ def test_gates_are_skipped_when_their_fixture_files_are_absent(safe_tmp_path):
                       manifest_path=str(safe_tmp_path / "m.yaml"),
                       raw_dir=str(safe_tmp_path),
                       fixtures_path=str(safe_tmp_path / "absent-fixtures.yaml"),
-                      expectations_path=str(safe_tmp_path / "absent-exp.yaml"))
-    assert result == {"structure": None, "graph": None}
+                      expectations_path=str(safe_tmp_path / "absent-exp.yaml"),
+                      queries_path=str(safe_tmp_path / "absent-queries.jsonl"))
+    assert result == {"structure": None, "graph": None, "gold": None}
 
 
 def test_tokenizer_preflight_is_skipped_when_no_config_file(safe_tmp_path):
@@ -276,7 +277,7 @@ def test_gates_stage_is_always_called_so_sequencing_stays_in_run():
 def test_default_stages_gates_returns_all_none_when_not_applicable(safe_tmp_path):
     st = cb._DefaultStages()
     assert st.gates(ckb_path="x", manifest_path="y", raw_dir="z",
-                    applicable=False) == {"structure": None, "graph": None}
+                    applicable=False) == {"structure": None, "graph": None, "gold": None}
 
 
 def test_default_stages_gates_actually_runs_the_gates_when_applicable(safe_tmp_path):
@@ -423,6 +424,55 @@ def test_fixture_defaults_are_absolute_so_cwd_cannot_hide_them():
     assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).is_absolute()
     assert Path(cb._STRUCTURE_FIXTURES_DEFAULT).exists()
     assert Path(cb._GRAPH_EXPECTATIONS_DEFAULT).exists()
+
+
+def test_gates_runs_the_gold_gate(safe_tmp_path, monkeypatch):
+    """A gate with no caller is the M6 defect's sibling: verify_gold has a real
+    main() but the orchestrator never invoked it, so a build could exit 0 with
+    drifted gold labels."""
+    from kbmcp.ingest import corpus_build as cb
+
+    called = {}
+
+    def fake_gold(ckb_path, queries_path, manifest_path, raw_dir, **kw):
+        called["yes"] = True
+        return [_Passed(True), _Passed(False)]
+
+    monkeypatch.setattr(cb.verify_gold, "verify_gold", fake_gold)
+    monkeypatch.setattr(cb.verify_structure, "verify_structure", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_graph, "verify_graph", lambda *a, **k: [])
+
+    queries = safe_tmp_path / "queries.jsonl"
+    queries.write_text("", encoding="utf-8")
+    fixtures = safe_tmp_path / "fx.yaml"
+    fixtures.write_text("[]", encoding="utf-8")
+    expectations = safe_tmp_path / "ge.yaml"
+    expectations.write_text("[]", encoding="utf-8")
+
+    out = cb._DefaultStages().gates(
+        ckb_path=safe_tmp_path / "t.sqlite",
+        manifest_path=safe_tmp_path / "m.yaml",
+        raw_dir=safe_tmp_path / "raw",
+        applicable=True,
+        fixtures_path=str(fixtures),
+        expectations_path=str(expectations),
+        queries_path=str(queries),
+    )
+
+    assert called.get("yes"), "verify_gold was never called by the orchestrator"
+    assert out["gold"] == (1, 2)
+
+    # Spec test 11: the BUILD must fail, not just the standalone CLI. Call the
+    # production helper -- re-implementing its loop inside the test would assert
+    # the test's own arithmetic and still pass if run() stopped calling it.
+    errors = cb._gate_errors(out)
+    assert any(e["doc_id"] == "gold" for e in errors)
+    assert cb.exit_code({"stages": {}, "errors": errors}) == 1
+
+
+class _Passed:
+    def __init__(self, passed):
+        self.passed = passed
 
 
 def test_ingest_run_records_which_tokenizer_produced_the_chunk_ids(safe_tmp_path):

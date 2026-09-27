@@ -47,6 +47,7 @@ from . import graph as graph_mod
 from . import manifest as manifest_mod
 from . import verify_graph
 from . import verify_structure
+from ..eval import verify_gold
 
 DEFAULT_MANIFEST = "corpus/manifest.yaml"
 
@@ -66,6 +67,7 @@ _SHIPPED_MANIFEST = Path(__file__).resolve().parents[3] / "corpus" / "manifest.y
 _BENCH_DIR = Path(__file__).resolve().parents[3] / "corpus" / "benchmark"
 _STRUCTURE_FIXTURES_DEFAULT = str(_BENCH_DIR / "structure_fixtures.yaml")
 _GRAPH_EXPECTATIONS_DEFAULT = str(_BENCH_DIR / "graph_expectations.yaml")
+_QUERIES_DEFAULT = str(_BENCH_DIR / "queries.jsonl")
 
 
 class CorpusBuildError(ValueError):
@@ -109,13 +111,14 @@ class _DefaultStages:
 
     def gates(self, *, ckb_path, manifest_path, raw_dir, applicable=True,
               fixtures_path=_STRUCTURE_FIXTURES_DEFAULT,
-              expectations_path=_GRAPH_EXPECTATIONS_DEFAULT):
+              expectations_path=_GRAPH_EXPECTATIONS_DEFAULT,
+              queries_path=_QUERIES_DEFAULT):
         """Run each gate only when its fixture file exists (spec Sec.8) AND the
         fixtures describe the corpus being built (`applicable`, see
         _gates_apply_to). A missing or inapplicable fixture is a skip-with-note,
         not a failure -- a BYO corpus legitimately has no ground truth."""
         if not applicable:
-            return {"structure": None, "graph": None}
+            return {"structure": None, "graph": None, "gold": None}
 
         result = {}
 
@@ -132,6 +135,17 @@ class _DefaultStages:
             result["graph"] = (sum(r.passed for r in active), len(active))
         else:
             result["graph"] = None
+
+        # verify_gold had a CLI but no caller: a build could exit 0 while the
+        # benchmark's gold labels no longer matched the CKB. Insertion order
+        # matters -- callers attribute errors by key order, so gold reports
+        # before integrity (see Task 6).
+        if Path(queries_path).exists():
+            gold_results = verify_gold.verify_gold(
+                ckb_path, queries_path, manifest_path, raw_dir)
+            result["gold"] = (sum(r.passed for r in gold_results), len(gold_results))
+        else:
+            result["gold"] = None
 
         return result
 
@@ -296,14 +310,26 @@ def run(args, *, stages=None) -> dict:
                       "your sources (a manifest missing a source PRUNES it from the CKB) "
                       "and that the inputs parsed."),
         })
+    out["errors"].extend(_gate_errors(gates_result))
+
+    return out
+
+
+def _gate_errors(gates_result) -> list:
+    """One error entry per gate that did not fully pass.
+
+    Extracted from run() so tests can exercise the real mapping: a test that
+    re-implements this loop would keep passing if run() stopped calling it,
+    which is exactly how a wired gate silently comes unwired.
+    """
+    errors = []
     for name, gate in (gates_result or {}).items():
         if gate is not None and gate[0] < gate[1]:
-            out["errors"].append({
+            errors.append({
                 "stage": "gates", "doc_id": name,
                 "error": f"{name} gate: {gate[0]}/{gate[1]} passed",
             })
-
-    return out
+    return errors
 
 
 def _collect_errors(out: dict, stage: str, errors) -> None:
@@ -371,6 +397,13 @@ def print_summary(result: dict) -> None:
               "manifest, not this corpus)", file=sys.stderr)
     else:
         print(f"graph gate   {graph_gate[0]}/{graph_gate[1]}", file=sys.stderr)
+
+    gold_gate = gates.get("gold")
+    if gold_gate is None:
+        print("gold gate    skipped (the benchmark describes the shipped manifest, "
+              "not this corpus)", file=sys.stderr)
+    else:
+        print(f"gold gate    {gold_gate[0]}/{gold_gate[1]}", file=sys.stderr)
 
     errors = result.get("errors") or []
     if errors:
