@@ -127,3 +127,22 @@ def test_expect_terms_rejects_a_non_string_term(safe_tmp_path):
     p = _write_file(safe_tmp_path / "m.yaml", _BASE + "  expect_terms: [22]\n")
     with pytest.raises(ManifestError, match="non-empty"):
         load_manifest(p)
+
+
+def test_expect_terms_rejects_a_mapping(safe_tmp_path):
+    # A YAML mapping is iterable over its keys, so an unguarded list(raw)
+    # would silently turn {a: 1} into ["a"] -- a one-character term that
+    # matches almost any document. Same hazard the bare-string guard exists
+    # to prevent, so it must be rejected the same way.
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE + "  expect_terms: {a: 1}\n")
+    with pytest.raises(ManifestError, match="must be a list"):
+        load_manifest(p)
+
+
+def test_expect_terms_rejects_a_non_iterable(safe_tmp_path):
+    # An int is not iterable at all -- list(raw) would raise a bare TypeError
+    # instead of the clean ManifestError every other malformed-manifest case
+    # raises.
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE + "  expect_terms: 5\n")
+    with pytest.raises(ManifestError, match="must be a list"):
+        load_manifest(p)

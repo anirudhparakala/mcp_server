@@ -58,6 +58,11 @@ def _expect_terms(row: dict, i: int, slug: str) -> list:
             f"entry {i} ({slug}): expect_terms must be a list of strings, not the "
             f"bare string {raw!r}"
         )
+    if not isinstance(raw, list):
+        raise ManifestError(
+            f"entry {i} ({slug}): expect_terms must be a list of strings; got "
+            f"{type(raw).__name__}"
+        )
     terms = list(raw)
     for t in terms:
         if not isinstance(t, str) or not t.strip():
