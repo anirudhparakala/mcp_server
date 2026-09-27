@@ -41,6 +41,31 @@ class SourceEntry:
     references: list = field(default_factory=list)
     conflict_with: list = field(default_factory=list)
     rationale: Optional[str] = None
+    expect_terms: list = field(default_factory=list)  # corpus-integrity gate (optional)
+
+
+def _expect_terms(row: dict, i: int, slug: str) -> list:
+    """Parse and validate the optional `expect_terms` field.
+
+    Rejects a bare string because `list("Bowen")` silently yields five
+    one-character terms that match nearly any document, and rejects blank terms
+    because "" is a substring of everything -- a check that can never fail is
+    worse than no check, since the coverage half counts it as one.
+    """
+    raw = row.get("expect_terms", [])
+    if isinstance(raw, str):
+        raise ManifestError(
+            f"entry {i} ({slug}): expect_terms must be a list of strings, not the "
+            f"bare string {raw!r}"
+        )
+    terms = list(raw)
+    for t in terms:
+        if not isinstance(t, str) or not t.strip():
+            raise ManifestError(
+                f"entry {i} ({slug}): expect_terms entries must be non-empty "
+                f"strings; got {t!r}"
+            )
+    return terms
 
 
 def load_manifest(path) -> list[SourceEntry]:
@@ -79,6 +104,7 @@ def load_manifest(path) -> list[SourceEntry]:
                 references=list(row.get("references", [])),
                 conflict_with=list(row.get("conflict_with", [])),
                 rationale=row.get("rationale"),
+                expect_terms=_expect_terms(row, i, slug),
             )
         )
     return entries

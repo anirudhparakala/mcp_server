@@ -80,3 +80,50 @@ def test_missing_required_field_raises(safe_tmp_path):
 def test_duplicate_slug_raises(safe_tmp_path):
     with pytest.raises(ManifestError):
         load_manifest(_write(safe_tmp_path, VALID + VALID.split("\n", 1)[1]))
+
+
+def _write_file(path, body):
+    # Named distinctly from the module's existing `_write(tmpdir, text)` above
+    # (which appends "manifest.yaml" to a directory arg): redefining `_write`
+    # here would shadow that helper for every earlier test in this file, since
+    # a module-level name is resolved at call time against the final
+    # namespace -- the last `def` wins regardless of source order.
+    path.write_text(body, encoding="utf-8")
+    return path
+
+
+_BASE = ("- doc_id: s1\n  url: http://x/1\n  format: html\n"
+         "  license: x\n  license_ok: true\n  version: v1\n")
+
+
+def test_expect_terms_defaults_to_empty(safe_tmp_path):
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE)
+    assert load_manifest(p)[0].expect_terms == []
+
+
+def test_expect_terms_round_trips_a_list(safe_tmp_path):
+    p = _write_file(safe_tmp_path / "m.yaml",
+               _BASE + '  expect_terms: ["smoke ball", "Bowen"]\n')
+    assert load_manifest(p)[0].expect_terms == ["smoke ball", "Bowen"]
+
+
+def test_expect_terms_as_a_bare_string_is_rejected(safe_tmp_path):
+    # list("Bowen") silently becomes ['B','o','w','e','n'] -- five one-character
+    # terms that all match almost any document. Must fail loudly instead.
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE + '  expect_terms: "Bowen"\n')
+    with pytest.raises(ManifestError, match="must be a list"):
+        load_manifest(p)
+
+
+def test_expect_terms_rejects_a_blank_term(safe_tmp_path):
+    # "" is a substring of every string, so a blank term is a check that can
+    # never fail -- worse than no check, because it reads as coverage.
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE + '  expect_terms: ["ok", "   "]\n')
+    with pytest.raises(ManifestError, match="non-empty"):
+        load_manifest(p)
+
+
+def test_expect_terms_rejects_a_non_string_term(safe_tmp_path):
+    p = _write_file(safe_tmp_path / "m.yaml", _BASE + "  expect_terms: [22]\n")
+    with pytest.raises(ManifestError, match="non-empty"):
+        load_manifest(p)
