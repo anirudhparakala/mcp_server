@@ -4,6 +4,8 @@ Hermetic: tiny CKBs under safe_tmp_path. Never touches ckb/ckb.sqlite except
 the one end-to-end test added in Task 5.
 """
 
+import json
+
 import pytest
 
 from kbmcp.db import ops
@@ -262,9 +264,6 @@ def test_a_collision_slug_is_not_also_scored_against_the_shared_text(safe_tmp_pa
     assert not any(r.check == "expect_terms" for r in res)
 
 
-import json
-
-
 def _queries(path, pairs):
     """pairs: [(item_id, slug)] -> one minimal gold-bearing item per pair."""
     items = [{"id": i, "tier": "T1", "query": "q", "answerable": True,
@@ -397,6 +396,9 @@ def test_the_shipped_manifest_is_fully_covered():
     """End-to-end against the live CKB. The five sources named here had no
     content check of any kind, which is how case-carlill-carbolic shipped zero
     case text through M2-M7."""
+    if not vi.DEFAULT_CKB.exists():
+        pytest.skip("ckb/ckb.sqlite is gitignored and absent on a fresh clone")
+
     res = vi.verify_integrity(vi.DEFAULT_CKB, vi.DEFAULT_MANIFEST, vi.DEFAULT_RAW_DIR)
     failed = [(r.slug, r.check, r.detail) for r in res if not r.passed]
     assert failed == [], f"integrity failures: {failed}"
@@ -413,3 +415,108 @@ def test_every_previously_uncovered_source_now_declares_expect_terms():
     for slug in ("case-carlill-carbolic", "ico-ai-automated-decision",
                  "issn-nutrient-timing", "law-cpra-amendment", "wiki-ccpa"):
         assert by[slug].expect_terms, f"{slug} lost its expect_terms"
+
+
+def test_a_gold_entry_missing_doc_names_the_file_and_line(safe_tmp_path):
+    """Minor 2: the adjacent JSON-decode path names the file and line number;
+    a gold entry missing 'doc' (a bare KeyError before this fix) gets the same
+    treatment rather than crashing with an unhelpful traceback."""
+    q = safe_tmp_path / "q.jsonl"
+    q.write_text('{"id": "T1-001", "gold": [{"chunk_id": "x", "anchor": "y"}]}\n',
+                encoding="utf-8")
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    with pytest.raises(vi.IntegrityError, match="line 1"):
+        _run(safe_tmp_path, {"a": "t"}, {"a": []}, queries_path=q, fixtures_path=f)
+
+
+def test_cli_reports_a_missing_ckb_instead_of_crashing(safe_tmp_path, capsys):
+    """Minor 3: both sibling gates (verify_gold, verify_graph) already print
+    'error: ...' to stderr and return 1 rather than an unhandled traceback for
+    a bad path; verify_integrity now matches for a missing CKB file."""
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, {"a": []})
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a"])
+    ckb = safe_tmp_path / "does" / "not" / "exist.sqlite"  # parent dir absent
+    rc = vi.main(["--ckb", str(ckb), "--manifest", str(man), "--raw-dir", str(raw),
+                  "--no-coverage"])
+    out = capsys.readouterr()
+    assert rc == 1
+    assert out.out == "", "stdio transport: gate output must go to stderr only"
+    assert "error:" in out.err
+    assert "Traceback" not in out.err
+
+
+def test_no_coverage_flag_is_wired_through_main(safe_tmp_path):
+    """Minor 7: only verify_integrity(coverage=False) was ever called directly
+    in these tests; `coverage=not a.no_coverage` itself was never driven
+    through argparse/main(). Slug "a" has no content check in the real
+    shipped benchmark, so coverage ON must fail and --no-coverage must pass."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"a": "text"})
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, {"a": []})
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a"])
+
+    rc_with_coverage = vi.main(["--ckb", str(ckb), "--manifest", str(man),
+                                "--raw-dir", str(raw)])
+    rc_without_coverage = vi.main(["--ckb", str(ckb), "--manifest", str(man),
+                                   "--raw-dir", str(raw), "--no-coverage"])
+    assert rc_with_coverage == 1
+    assert rc_without_coverage == 0
+
+
+def test_the_blob_is_byte_identical_to_verify_structures_blob(safe_tmp_path):
+    """Spec Sec.6: the gate's docstring claims this contract, but nothing
+    verified it. A term that only matches when chunks are joined with "\\n"
+    (not '' or ' ') must pass BOTH gates identically, or they have silently
+    diverged on what "present in the document" means."""
+    from kbmcp.ingest import verify_structure as vs
+
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"a": ["ends here", "starts there"]})
+    did = mk_doc_id("a", "v1")
+
+    fixtures = safe_tmp_path / "fx.yaml"
+    fixtures.write_text(
+        f"- name: f1\n  slug: a\n  doc_id: {did}\n"
+        '  must_contain: ["ends here\\nstarts there"]\n',
+        encoding="utf-8")
+    structure_res = vs.verify_structure(ckb, fixtures)
+    assert vs.all_passed(structure_res)
+
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, {"a": ["ends here\nstarts there"]})
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a"])
+    integrity_res = vi.verify_integrity(
+        ckb, man, raw, coverage=False,
+        queries_path=safe_tmp_path / "nq.jsonl",
+        fixtures_path=safe_tmp_path / "nf.yaml")
+    assert vi.all_passed(integrity_res)
+
+
+def test_structure_fixture_slugs_match_their_own_doc_id():
+    """Minor 5: verify_structure keys entirely on `doc_id`; `_covered_slugs` is
+    the only code in src/ that reads a fixture's `slug`. If a fixture's doc_id
+    is re-derived after a source repoint (a manual step CLAUDE.md documents as
+    required) but its slug is not, coverage would credit the wrong source --
+    the exact silent decay the coverage half exists to prevent. Latent, not
+    live: all 5 shipped fixtures currently agree; this fails loudly the moment
+    one doesn't."""
+    import yaml as _yaml
+
+    from kbmcp.ingest.manifest import load_manifest
+
+    entries = load_manifest(vi.DEFAULT_MANIFEST)
+    by_slug = {e.doc_id: e for e in entries}
+    fixtures = _yaml.safe_load(vi.DEFAULT_FIXTURES.read_text(encoding="utf-8")) or []
+    assert fixtures, "no fixtures loaded -- this test would vacuously pass"
+    for fx in fixtures:
+        slug, doc_id = fx["slug"], fx["doc_id"]
+        resolved = vi.doc_id_for_slug(slug, by_slug, vi.DEFAULT_RAW_DIR)
+        assert resolved == doc_id, (
+            f"fixture {fx['name']!r}: slug {slug!r} resolves to {resolved!r}, "
+            f"but the fixture's own doc_id is {doc_id!r}")

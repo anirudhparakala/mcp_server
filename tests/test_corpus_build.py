@@ -51,6 +51,11 @@ def _args(**kw):
     return argparse.Namespace(**d)
 
 
+class _Passed:
+    def __init__(self, passed):
+        self.passed = passed
+
+
 def test_stages_run_in_the_load_bearing_order(monkeypatch):
     """graph must follow build (build_ckb clears edges) and bm25 must follow both
     (build_ckb invalidates the index whenever it writes chunks)."""
@@ -323,11 +328,22 @@ def test_default_stages_gates_actually_runs_the_gates_when_applicable(safe_tmp_p
     raw.mkdir()
     (raw / "u.meta.json").write_text('{"resolved_version": "v1"}', encoding="utf-8")
 
+    # queries_path must be an absent tmp path, not the default (the real,
+    # committed corpus/benchmark/queries.jsonl): this test's own docstring and
+    # the module docstring both promise "the real corpus is never touched", but
+    # since the gold gate was wired, an omitted queries_path silently ran the
+    # REAL verify_gold against the real queries file and real integrity
+    # coverage (measured: gold (437, 785), integrity (1, 1)) -- passing only
+    # because this test asserts nothing about "gold" or "integrity". The tmp
+    # fixtures above still satisfy coverage for slug "u".
     result = cb._DefaultStages().gates(
         ckb_path=str(ckb), manifest_path=str(manifest),
         raw_dir=str(raw), applicable=True,
-        fixtures_path=str(fixtures), expectations_path=str(expectations))
+        fixtures_path=str(fixtures), expectations_path=str(expectations),
+        queries_path=str(safe_tmp_path / "absent-queries.jsonl"))
     assert result["structure"] == (1, 1)
+    assert result["gold"] is None  # queries_path absent -- the real corpus is untouched
+    assert result["integrity"] == (1, 1)
     assert result["graph"] == (0, 0)
 
 
@@ -438,8 +454,6 @@ def test_gates_runs_the_gold_gate(safe_tmp_path, monkeypatch):
     """A gate with no caller is the M6 defect's sibling: verify_gold has a real
     main() but the orchestrator never invoked it, so a build could exit 0 with
     drifted gold labels."""
-    from kbmcp.ingest import corpus_build as cb
-
     called = {}
 
     def fake_gold(ckb_path, queries_path, manifest_path, raw_dir, **kw):
@@ -479,11 +493,6 @@ def test_gates_runs_the_gold_gate(safe_tmp_path, monkeypatch):
     errors = cb._gate_errors(out)
     assert any(e["doc_id"] == "gold" for e in errors)
     assert cb.exit_code({"stages": {}, "errors": errors}) == 1
-
-
-class _Passed:
-    def __init__(self, passed):
-        self.passed = passed
 
 
 def test_a_failing_gate_fails_the_build_via_run():
@@ -531,8 +540,6 @@ def test_gates_runs_integrity_verification_even_for_a_byo_corpus(safe_tmp_path,
                                                                  monkeypatch):
     """Spec Sec.7: a BYO user's expect_terms are their own assertion about their
     own documents, so verification runs; only coverage is shipped-only."""
-    from kbmcp.ingest import corpus_build as cb
-
     seen = {}
 
     def fake_integrity(ckb, man, raw, **kw):
@@ -558,8 +565,6 @@ def test_gates_runs_integrity_coverage_for_the_shipped_corpus(safe_tmp_path, mon
     shipped-manifest path (applicable=True) is the other half of the coverage
     split and needs its own fast assertion rather than resting on the slow
     real-build evidence alone (fix round 1, item 4)."""
-    from kbmcp.ingest import corpus_build as cb
-
     seen = {}
 
     def fake_integrity(ckb, man, raw, **kw):
@@ -595,8 +600,6 @@ def test_gates_runs_integrity_coverage_for_the_shipped_corpus(safe_tmp_path, mon
 def test_gate_keys_are_ordered_gold_before_integrity(safe_tmp_path, monkeypatch):
     """Errors are attributed by key order, so a drifted gold label must read as a
     gold failure rather than surfacing first as an integrity coverage error."""
-    from kbmcp.ingest import corpus_build as cb
-
     monkeypatch.setattr(cb.verify_structure, "verify_structure", lambda *a, **k: [])
     monkeypatch.setattr(cb.verify_graph, "verify_graph", lambda *a, **k: [])
     monkeypatch.setattr(cb.verify_gold, "verify_gold", lambda *a, **k: [])
@@ -626,15 +629,11 @@ def test_an_integrity_failure_makes_the_build_exit_nonzero():
     """Calls the production helper (Task 2 Step 5). Re-implementing its loop here
     would assert this test's own arithmetic and keep passing if run() stopped
     calling it."""
-    from kbmcp.ingest import corpus_build as cb
-
     errors = cb._gate_errors({"structure": (5, 5), "integrity": (54, 55)})
     assert [e["doc_id"] for e in errors] == ["integrity"]
     assert cb.exit_code({"stages": {}, "errors": errors}) == 1
 
 
 def test_a_fully_passing_gate_set_produces_no_errors():
-    from kbmcp.ingest import corpus_build as cb
-
     assert cb._gate_errors({"structure": (5, 5), "gold": None,
                             "integrity": (60, 60)}) == []

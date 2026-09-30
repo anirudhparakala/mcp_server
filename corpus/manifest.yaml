@@ -328,7 +328,7 @@
   version: oldid-1363027288
   tier_roles: [T3]
   rationale: "Wikipedia restatement of CCPA; T3 paraphrase pair with law-ccpa-1798."
-  expect_terms: ["California Consumer Privacy Act", "Do Not Sell"]
+  expect_terms: ["California Consumer Privacy Act", "Do Not Sell", "Assembly Bill No. 375"]
 
 - doc_id: wiki-eu-ai-act
   url: "https://en.wikipedia.org/w/index.php?title=Artificial_Intelligence_Act&oldid=1365588755"
@@ -510,7 +510,7 @@
   tier_roles: [T5]
   collision_terms: [timing]
   rationale: "ISSN Position Stand: Nutrient Timing ('anabolic window')."
-  expect_terms: ["nutrient timing", "glycogen", "Kerksick"]
+  expect_terms: ["nutrient timing", "glycogen", "Kerksick", "Muscle Glycogen"]
 
 - doc_id: issn-creatine
   url: "https://europepmc.org/articles/PMC5469049?pdf=render"

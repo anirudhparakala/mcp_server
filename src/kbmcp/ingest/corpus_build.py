@@ -130,9 +130,8 @@ class _DefaultStages:
         them to confirm their fetch produced the right file -- while requiring
         coverage of every source would impose this corpus's standards on theirs.
         """
-        result = {}
-
         if applicable:
+            result = {}
             if Path(fixtures_path).exists():
                 fixture_results = verify_structure.verify_structure(ckb_path, fixtures_path)
                 result["structure"] = (sum(r.passed for r in fixture_results),

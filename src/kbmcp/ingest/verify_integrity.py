@@ -84,7 +84,12 @@ def _covered_slugs(queries_path, fixtures_path) -> set:
             except json.JSONDecodeError as exc:
                 raise IntegrityError(f"{q}: line {n} is not valid JSON: {exc}") from exc
             for g in item.get("gold") or []:
-                covered.add(g["doc"])
+                try:
+                    covered.add(g["doc"])
+                except KeyError as exc:
+                    raise IntegrityError(
+                        f"{q}: line {n} has a gold entry missing 'doc': {g!r}"
+                    ) from exc
     if f.exists():
         for fx in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
             slug = fx.get("slug")
@@ -153,7 +158,8 @@ def verify_integrity(ckb_path, manifest_path, raw_dir, *,
                               "(no fetch pin in raw_dir), so there is no text to check")
                     passed = False
                 else:
-                    missing = [t for t in e.expect_terms if t not in _blob(conn, did)]
+                    blob = _blob(conn, did)
+                    missing = [t for t in e.expect_terms if t not in blob]
                     passed = not missing
                     detail = "ok" if passed else f"missing: {missing}"
                 results.append(IntegrityResult(slug, "expect_terms", passed, detail))
@@ -173,6 +179,7 @@ def all_passed(results) -> bool:
 
 def main(argv=None) -> int:
     import argparse
+    import sqlite3
     import sys
 
     p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.verify_integrity")
@@ -186,9 +193,13 @@ def main(argv=None) -> int:
                         "every-source-is-covered rule (BYO corpora)")
     a = p.parse_args(argv)
 
-    results = verify_integrity(
-        a.ckb, a.manifest, a.raw_dir, queries_path=a.queries,
-        fixtures_path=a.fixtures, coverage=not a.no_coverage)
+    try:
+        results = verify_integrity(
+            a.ckb, a.manifest, a.raw_dir, queries_path=a.queries,
+            fixtures_path=a.fixtures, coverage=not a.no_coverage)
+    except (IntegrityError, sqlite3.OperationalError, FileNotFoundError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
 
     for r in results:
         if not r.passed:
@@ -200,6 +211,16 @@ def main(argv=None) -> int:
     # neither line -- all_passed() below still covers it for the exit code,
     # but the operator-facing summary would under-report a real failure. This
     # form stays honest if a fourth check name is ever added.
+    #
+    # Dependency worth naming: the "expect_terms" line itself vanishes from this
+    # summary when no source declares terms, so a silently-stopped term
+    # evaluation would print nothing here. That is accepted as safe only on an
+    # EMPIRICAL fact, not a structural guarantee: today's five term-declaring
+    # sources have no OTHER coverage (no gold anchor, no structure fixture), so
+    # if term evaluation ever silently stopped, their "coverage" result would
+    # flip to failing and the gate would still go red. If one of those five
+    # later gains a gold anchor or structure fixture, this safety net quietly
+    # expires and a silent expect_terms regression would pass unnoticed.
     by_check: dict = {}
     for r in results:
         by_check.setdefault(r.check, []).append(r)
