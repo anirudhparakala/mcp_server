@@ -154,9 +154,11 @@ def test_folder_mode_failure_propagates(safe_tmp_path):
                      ckb=str(safe_tmp_path / "t.sqlite")), stages=_Stages())
 
 
-def test_gates_are_skipped_when_their_fixture_files_are_absent(safe_tmp_path):
+def test_gates_are_skipped_when_their_fixture_files_are_absent(safe_tmp_path, monkeypatch):
     """A BYO corpus legitimately has neither fixture file; that is a skip, not
-    a failure."""
+    a failure. Integrity is the exception (Task 6): it still runs, so the
+    manifest load is stubbed here -- the manifest path itself is fake."""
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", lambda *a, **k: [])
     st = cb._DefaultStages()
     result = st.gates(ckb_path=str(safe_tmp_path / "nope.sqlite"),
                       manifest_path=str(safe_tmp_path / "m.yaml"),
@@ -164,7 +166,7 @@ def test_gates_are_skipped_when_their_fixture_files_are_absent(safe_tmp_path):
                       fixtures_path=str(safe_tmp_path / "absent-fixtures.yaml"),
                       expectations_path=str(safe_tmp_path / "absent-exp.yaml"),
                       queries_path=str(safe_tmp_path / "absent-queries.jsonl"))
-    assert result == {"structure": None, "graph": None, "gold": None}
+    assert result == {"structure": None, "graph": None, "gold": None, "integrity": (0, 0)}
 
 
 def test_tokenizer_preflight_is_skipped_when_no_config_file(safe_tmp_path):
@@ -274,10 +276,14 @@ def test_gates_stage_is_always_called_so_sequencing_stays_in_run():
     assert "gates" in s.calls
 
 
-def test_default_stages_gates_returns_all_none_when_not_applicable(safe_tmp_path):
+def test_default_stages_gates_returns_all_none_when_not_applicable(safe_tmp_path, monkeypatch):
+    """Integrity is the exception (Task 6): it still runs for a non-applicable
+    (BYO) corpus, so the manifest load is stubbed here -- "y" is not a real path."""
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", lambda *a, **k: [])
     st = cb._DefaultStages()
     assert st.gates(ckb_path="x", manifest_path="y", raw_dir="z",
-                    applicable=False) == {"structure": None, "graph": None, "gold": None}
+                    applicable=False) == {"structure": None, "graph": None, "gold": None,
+                                          "integrity": (0, 0)}
 
 
 def test_default_stages_gates_actually_runs_the_gates_when_applicable(safe_tmp_path):
@@ -441,6 +447,9 @@ def test_gates_runs_the_gold_gate(safe_tmp_path, monkeypatch):
     monkeypatch.setattr(cb.verify_gold, "verify_gold", fake_gold)
     monkeypatch.setattr(cb.verify_structure, "verify_structure", lambda *a, **k: [])
     monkeypatch.setattr(cb.verify_graph, "verify_graph", lambda *a, **k: [])
+    # manifest_path below is a fake, non-existent path; integrity (Task 6) would
+    # otherwise try to load it even though this test is only exercising gold.
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", lambda *a, **k: [])
 
     queries = safe_tmp_path / "queries.jsonl"
     queries.write_text("", encoding="utf-8")
@@ -514,3 +523,77 @@ def test_ingest_run_records_which_tokenizer_produced_the_chunk_ids(safe_tmp_path
         conn.close()
     assert stats["tokenizer"] == "Qwen/Qwen3-Embedding-0.6B"
     assert stats["tokenizer_revision"] == "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+
+
+def test_gates_runs_integrity_verification_even_for_a_byo_corpus(safe_tmp_path,
+                                                                 monkeypatch):
+    """Spec Sec.7: a BYO user's expect_terms are their own assertion about their
+    own documents, so verification runs; only coverage is shipped-only."""
+    from kbmcp.ingest import corpus_build as cb
+
+    seen = {}
+
+    def fake_integrity(ckb, man, raw, **kw):
+        seen["coverage"] = kw.get("coverage")
+        return []
+
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", fake_integrity)
+
+    out = cb._DefaultStages().gates(
+        ckb_path=safe_tmp_path / "t.sqlite",
+        manifest_path=safe_tmp_path / "m.yaml",
+        raw_dir=safe_tmp_path / "raw",
+        applicable=False,
+    )
+
+    assert seen["coverage"] is False, "coverage must be off for a BYO corpus"
+    assert out["integrity"] == (0, 0)
+    assert out["structure"] is None and out["graph"] is None and out["gold"] is None
+
+
+def test_gate_keys_are_ordered_gold_before_integrity(safe_tmp_path, monkeypatch):
+    """Errors are attributed by key order, so a drifted gold label must read as a
+    gold failure rather than surfacing first as an integrity coverage error."""
+    from kbmcp.ingest import corpus_build as cb
+
+    monkeypatch.setattr(cb.verify_structure, "verify_structure", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_graph, "verify_graph", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_gold, "verify_gold", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", lambda *a, **k: [])
+
+    queries = safe_tmp_path / "q.jsonl"
+    queries.write_text("", encoding="utf-8")
+    fixtures = safe_tmp_path / "fx.yaml"
+    fixtures.write_text("[]", encoding="utf-8")
+    expectations = safe_tmp_path / "ge.yaml"
+    expectations.write_text("[]", encoding="utf-8")
+
+    out = cb._DefaultStages().gates(
+        ckb_path=safe_tmp_path / "t.sqlite",
+        manifest_path=safe_tmp_path / "m.yaml",
+        raw_dir=safe_tmp_path / "raw",
+        applicable=True,
+        fixtures_path=str(fixtures),
+        expectations_path=str(expectations),
+        queries_path=str(queries),
+    )
+
+    assert list(out) == ["structure", "graph", "gold", "integrity"]
+
+
+def test_an_integrity_failure_makes_the_build_exit_nonzero():
+    """Calls the production helper (Task 2 Step 5). Re-implementing its loop here
+    would assert this test's own arithmetic and keep passing if run() stopped
+    calling it."""
+    from kbmcp.ingest import corpus_build as cb
+
+    errors = cb._gate_errors({"structure": (5, 5), "integrity": (54, 55)})
+    assert [e["doc_id"] for e in errors] == ["integrity"]
+    assert cb.exit_code({"stages": {}, "errors": errors}) == 1
+
+
+def test_a_fully_passing_gate_set_produces_no_errors():
+    from kbmcp.ingest import corpus_build as cb
+
+    assert cb._gate_errors({"structure": (5, 5), "gold": None,
+                            "integrity": (60, 60)}) == []

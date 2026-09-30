@@ -47,6 +47,7 @@ from . import folder_source
 from . import graph as graph_mod
 from . import manifest as manifest_mod
 from . import verify_graph
+from . import verify_integrity
 from . import verify_structure
 
 DEFAULT_MANIFEST = "corpus/manifest.yaml"
@@ -117,35 +118,45 @@ class _DefaultStages:
         fixtures describe the corpus being built (`applicable`, see
         _gates_apply_to). A missing or inapplicable fixture is a skip-with-note,
         not a failure -- a BYO corpus legitimately has no ground truth."""
-        if not applicable:
-            return {"structure": None, "graph": None, "gold": None}
-
         result = {}
 
-        if Path(fixtures_path).exists():
-            fixture_results = verify_structure.verify_structure(ckb_path, fixtures_path)
-            result["structure"] = (sum(r.passed for r in fixture_results), len(fixture_results))
-        else:
-            result["structure"] = None
+        if applicable:
+            if Path(fixtures_path).exists():
+                fixture_results = verify_structure.verify_structure(ckb_path, fixtures_path)
+                result["structure"] = (sum(r.passed for r in fixture_results),
+                                       len(fixture_results))
+            else:
+                result["structure"] = None
 
-        if Path(expectations_path).exists():
-            exp_results = verify_graph.verify_graph(
-                ckb_path, expectations_path, manifest_path, raw_dir)
-            active = [r for r in exp_results if not r.pending]
-            result["graph"] = (sum(r.passed for r in active), len(active))
-        else:
-            result["graph"] = None
+            if Path(expectations_path).exists():
+                exp_results = verify_graph.verify_graph(
+                    ckb_path, expectations_path, manifest_path, raw_dir)
+                active = [r for r in exp_results if not r.pending]
+                result["graph"] = (sum(r.passed for r in active), len(active))
+            else:
+                result["graph"] = None
 
-        # verify_gold had a CLI but no caller: a build could exit 0 while the
-        # benchmark's gold labels no longer matched the CKB. Insertion order
-        # matters -- callers attribute errors by key order, so gold reports
-        # before integrity (see Task 6).
-        if Path(queries_path).exists():
-            gold_results = verify_gold.verify_gold(
-                ckb_path, queries_path, manifest_path, raw_dir)
-            result["gold"] = (sum(r.passed for r in gold_results), len(gold_results))
+            # verify_gold had a CLI but no caller: a build could exit 0 while the
+            # benchmark's gold labels no longer matched the CKB.
+            if Path(queries_path).exists():
+                gold_results = verify_gold.verify_gold(
+                    ckb_path, queries_path, manifest_path, raw_dir)
+                result["gold"] = (sum(r.passed for r in gold_results), len(gold_results))
+            else:
+                result["gold"] = None
         else:
-            result["gold"] = None
+            result = {"structure": None, "graph": None, "gold": None}
+
+        # Integrity is the ONLY gate that also runs for a BYO corpus, because a
+        # BYO user's expect_terms assert things about their OWN documents. Its
+        # coverage half stays shipped-only. Inserted last so a gold failure is
+        # attributed to the gold gate.
+        integrity_results = verify_integrity.verify_integrity(
+            ckb_path, manifest_path, raw_dir,
+            queries_path=queries_path, fixtures_path=fixtures_path,
+            coverage=applicable)
+        result["integrity"] = (sum(r.passed for r in integrity_results),
+                               len(integrity_results))
 
         return result
 
@@ -404,6 +415,11 @@ def print_summary(result: dict) -> None:
               "not this corpus)", file=sys.stderr)
     else:
         print(f"gold gate    {gold_gate[0]}/{gold_gate[1]}", file=sys.stderr)
+
+    integrity_gate = gates.get("integrity")
+    if integrity_gate is not None:
+        print(f"integrity    {integrity_gate[0]}/{integrity_gate[1]}"
+              "   (every source has a content check, and it holds)", file=sys.stderr)
 
     errors = result.get("errors") or []
     if errors:
