@@ -161,7 +161,12 @@ def test_an_unbuilt_document_is_reported_as_unbuilt(safe_tmp_path):
 
 def test_two_slugs_sharing_a_url_do_not_borrow_each_others_content(safe_tmp_path):
     """Review Focus 5: identical url+version means one doc_id, so slug b's term
-    could pass on slug a's text. Flag the collision rather than score it."""
+    could pass on slug a's text. Flag the collision rather than score it.
+
+    Ordering: the term-less slug ("a") is listed first, the terms-declaring
+    slug ("b") second. This is the ordering the ORIGINAL (order-dependent)
+    implementation happened to catch -- see the reversed-order test below for
+    the ordering that hid the bug."""
     ckb = safe_tmp_path / "t.sqlite"
     _ckb(ckb, {"a": "Bowen LJ"})
     man = safe_tmp_path / "m.yaml"
@@ -178,3 +183,80 @@ def test_two_slugs_sharing_a_url_do_not_borrow_each_others_content(safe_tmp_path
                               fixtures_path=safe_tmp_path / "nf.yaml")
     assert not vi.all_passed(res)
     assert "shares a doc_id" in res[0].detail
+
+
+def test_collision_is_reported_when_the_declaring_slug_is_listed_first(safe_tmp_path):
+    """Fix round 1 (Important finding): the original check was order-dependent.
+    It recorded the first-seen slug for a doc_id without flagging it (nothing
+    to compare against yet), and only checked for a collision inside
+    `if e.expect_terms`. So when the TERMS-DECLARING slug ("a") came first, it
+    saw no prior record and was scored normally against the shared document's
+    real text (which genuinely contains "Bowen", so it passed); when the
+    term-less slug ("b") came second, it was skipped entirely because it
+    declared no terms. Old behaviour: a single passing expect_terms result,
+    all_passed True, collision never reported. Both slugs must now be flagged."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"shared-url": "Bowen LJ delivered the judgment"})
+    man = safe_tmp_path / "m.yaml"
+    man.write_text(
+        "- doc_id: a\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n  expect_terms: [\"Bowen\"]\n"
+        "- doc_id: b\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a", "b"])
+    res = vi.verify_integrity(ckb, man, raw, coverage=False,
+                              queries_path=safe_tmp_path / "nq.jsonl",
+                              fixtures_path=safe_tmp_path / "nf.yaml")
+    assert not vi.all_passed(res)
+    assert {r.slug for r in res} == {"a", "b"}
+    assert all(r.check == "doc_id_collision" for r in res)
+    assert all(not r.passed for r in res)
+
+
+def test_collision_is_reported_when_neither_slug_declares_expect_terms(safe_tmp_path):
+    """A collision is a manifest defect independent of expect_terms -- two
+    named sources collapsing to one document must be reported even when
+    neither slug declares any terms to check."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"shared-url": "anything at all"})
+    man = safe_tmp_path / "m.yaml"
+    man.write_text(
+        "- doc_id: a\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n"
+        "- doc_id: b\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n",
+        encoding="utf-8")
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a", "b"])
+    res = vi.verify_integrity(ckb, man, raw, coverage=False,
+                              queries_path=safe_tmp_path / "nq.jsonl",
+                              fixtures_path=safe_tmp_path / "nf.yaml")
+    assert not vi.all_passed(res)
+    assert {r.slug for r in res} == {"a", "b"}
+    assert all(r.check == "doc_id_collision" for r in res)
+
+
+def test_a_collision_slug_is_not_also_scored_against_the_shared_text(safe_tmp_path):
+    """A slug in a collision group gets the collision result INSTEAD of an
+    expect_terms result, not in addition to one -- even when it declares
+    terms that are genuinely absent from the shared document's text, the
+    reported check must be doc_id_collision, not expect_terms."""
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"shared-url": "unrelated content with no matching phrase"})
+    man = safe_tmp_path / "m.yaml"
+    man.write_text(
+        "- doc_id: a\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n  expect_terms: [\"Bowen\"]\n"
+        "- doc_id: b\n  url: shared-url\n  domain: d\n  format: html\n  license: x\n"
+        "  license_ok: true\n  version: v1\n  expect_terms: [\"Bowen\"]\n",
+        encoding="utf-8")
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a", "b"])
+    res = vi.verify_integrity(ckb, man, raw, coverage=False,
+                              queries_path=safe_tmp_path / "nq.jsonl",
+                              fixtures_path=safe_tmp_path / "nf.yaml")
+    assert len(res) == 2  # one result per slug, not a collision plus a scoring
+    assert all(r.check == "doc_id_collision" for r in res)
+    assert not any(r.check == "expect_terms" for r in res)

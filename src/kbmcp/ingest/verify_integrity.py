@@ -36,7 +36,7 @@ DEFAULT_FIXTURES = _ROOT / "corpus" / "benchmark" / "structure_fixtures.yaml"
 @dataclass
 class IntegrityResult:
     slug: str
-    check: str  # "expect_terms" | "coverage"
+    check: str  # "expect_terms" | "doc_id_collision" | "coverage"
     passed: bool
     detail: str
 
@@ -70,26 +70,46 @@ def verify_integrity(ckb_path, manifest_path, raw_dir, *,
 
     # doc_id is sha256(url, version), so two slugs with the same url+version
     # collapse to one document and would score against each other's text.
-    seen_doc_ids: dict[str, str] = {}
+    # Collision groups are computed up front, over ALL entries, before the
+    # per-entry loop below -- not incrementally as entries are visited. An
+    # incremental "have I seen this doc_id before" check is order-dependent:
+    # the first-seen slug in a colliding pair never sees a collision (nothing
+    # recorded yet), and a term-less slug is skipped entirely if the check
+    # only runs inside `if e.expect_terms`. Either gap lets a real collision
+    # go unreported depending on manifest ordering. Grouping first makes every
+    # member of a collision visible regardless of iteration order or whether
+    # it declares expect_terms.
+    dids: dict[str, str] = {}
+    doc_id_slugs: dict[str, list] = {}
+    for e in entries:
+        did = doc_id_for_slug(e.doc_id, by_slug, raw_dir)
+        dids[e.doc_id] = did
+        if did is not None:
+            doc_id_slugs.setdefault(did, []).append(e.doc_id)
+    collisions = {did: slugs for did, slugs in doc_id_slugs.items() if len(slugs) > 1}
+
     results: list[IntegrityResult] = []
 
     with closing(ops.get_db(ckb_path)) as conn:
         for e in entries:
             slug = e.doc_id
-            did = doc_id_for_slug(slug, by_slug, raw_dir)
-            collision = seen_doc_ids.get(did) if did else None
-            if did:
-                seen_doc_ids.setdefault(did, slug)
+            did = dids[slug]
+            group = collisions.get(did) if did is not None else None
 
-            if e.expect_terms:
+            if group:
+                # Two (or more) named sources collapsing to one document is a
+                # manifest defect in its own right, independent of whether
+                # this slug declares expect_terms -- report every slug in the
+                # group, and do not also score it against the shared text.
+                others = [s for s in group if s != slug]
+                detail = (f"shares a doc_id with {others!r} (identical url and "
+                          "pinned version), so its terms would score against that "
+                          "document's text")
+                results.append(IntegrityResult(slug, "doc_id_collision", False, detail))
+            elif e.expect_terms:
                 if did is None:
                     detail = ("not built: no manifest entry resolved to a doc_id "
                               "(no fetch pin in raw_dir), so there is no text to check")
-                    passed = False
-                elif collision:
-                    detail = (f"shares a doc_id with {collision!r} (identical url and "
-                              "pinned version), so its terms would score against that "
-                              "document's text")
                     passed = False
                 else:
                     missing = [t for t in e.expect_terms if t not in _blob(conn, did)]
