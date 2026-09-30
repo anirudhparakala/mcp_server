@@ -276,9 +276,11 @@ def test_gates_stage_is_always_called_so_sequencing_stays_in_run():
     assert "gates" in s.calls
 
 
-def test_default_stages_gates_returns_all_none_when_not_applicable(safe_tmp_path, monkeypatch):
-    """Integrity is the exception (Task 6): it still runs for a non-applicable
-    (BYO) corpus, so the manifest load is stubbed here -- "y" is not a real path."""
+def test_fixture_driven_gates_are_none_but_integrity_still_runs_when_not_applicable(
+        safe_tmp_path, monkeypatch):
+    """structure/graph/gold are None for a non-applicable (BYO) corpus; integrity
+    is the exception (Task 6) and still runs, so the manifest load is stubbed
+    here -- "y" is not a real path."""
     monkeypatch.setattr(cb.verify_integrity, "verify_integrity", lambda *a, **k: [])
     st = cb._DefaultStages()
     assert st.gates(ckb_path="x", manifest_path="y", raw_dir="z",
@@ -549,6 +551,45 @@ def test_gates_runs_integrity_verification_even_for_a_byo_corpus(safe_tmp_path,
     assert seen["coverage"] is False, "coverage must be off for a BYO corpus"
     assert out["integrity"] == (0, 0)
     assert out["structure"] is None and out["graph"] is None and out["gold"] is None
+
+
+def test_gates_runs_integrity_coverage_for_the_shipped_corpus(safe_tmp_path, monkeypatch):
+    """Mirror of test_gates_runs_integrity_verification_even_for_a_byo_corpus: the
+    shipped-manifest path (applicable=True) is the other half of the coverage
+    split and needs its own fast assertion rather than resting on the slow
+    real-build evidence alone (fix round 1, item 4)."""
+    from kbmcp.ingest import corpus_build as cb
+
+    seen = {}
+
+    def fake_integrity(ckb, man, raw, **kw):
+        seen["coverage"] = kw.get("coverage")
+        return []
+
+    monkeypatch.setattr(cb.verify_structure, "verify_structure", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_graph, "verify_graph", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_gold, "verify_gold", lambda *a, **k: [])
+    monkeypatch.setattr(cb.verify_integrity, "verify_integrity", fake_integrity)
+
+    fixtures = safe_tmp_path / "fx.yaml"
+    fixtures.write_text("[]", encoding="utf-8")
+    expectations = safe_tmp_path / "ge.yaml"
+    expectations.write_text("[]", encoding="utf-8")
+    queries = safe_tmp_path / "q.jsonl"
+    queries.write_text("", encoding="utf-8")
+
+    out = cb._DefaultStages().gates(
+        ckb_path=safe_tmp_path / "t.sqlite",
+        manifest_path=safe_tmp_path / "m.yaml",
+        raw_dir=safe_tmp_path / "raw",
+        applicable=True,
+        fixtures_path=str(fixtures),
+        expectations_path=str(expectations),
+        queries_path=str(queries),
+    )
+
+    assert seen["coverage"] is True, "coverage must be on for the shipped manifest"
+    assert out["integrity"] == (0, 0)
 
 
 def test_gate_keys_are_ordered_gold_before_integrity(safe_tmp_path, monkeypatch):

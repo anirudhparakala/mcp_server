@@ -114,10 +114,22 @@ class _DefaultStages:
               fixtures_path=_STRUCTURE_FIXTURES_DEFAULT,
               expectations_path=_GRAPH_EXPECTATIONS_DEFAULT,
               queries_path=_QUERIES_DEFAULT):
-        """Run each gate only when its fixture file exists (spec Sec.8) AND the
-        fixtures describe the corpus being built (`applicable`, see
-        _gates_apply_to). A missing or inapplicable fixture is a skip-with-note,
-        not a failure -- a BYO corpus legitimately has no ground truth."""
+        """Four gates, two different contracts.
+
+        `structure`, `graph`, and `gold` each run only when its fixture file
+        exists (spec Sec.8) AND the fixtures describe the corpus being built
+        (`applicable`, see _gates_apply_to); otherwise the key is `None` -- a
+        missing or inapplicable fixture is a skip-with-note, not a failure, since
+        a BYO corpus legitimately has no ground truth for these three.
+
+        `integrity` does not follow that rule: it always runs, and its value is
+        always a `(passed, total)` tuple, never `None`. Only its coverage half
+        (the "every source has a content check" rule) is gated on `applicable`;
+        its expect_terms half always runs, because a BYO user's `expect_terms`
+        assert things about their OWN documents -- that is the one cheap way for
+        them to confirm their fetch produced the right file -- while requiring
+        coverage of every source would impose this corpus's standards on theirs.
+        """
         result = {}
 
         if applicable:
@@ -418,8 +430,12 @@ def print_summary(result: dict) -> None:
 
     integrity_gate = gates.get("integrity")
     if integrity_gate is not None:
+        # Phrasing must hold in both modes: coverage (every source has a
+        # content check) only runs for the shipped manifest, so this line must
+        # not claim coverage happened when it did not (BYO).
         print(f"integrity    {integrity_gate[0]}/{integrity_gate[1]}"
-              "   (every source has a content check, and it holds)", file=sys.stderr)
+              "   (declared expect_terms hold; full-source coverage is "
+              "checked only for the shipped manifest)", file=sys.stderr)
 
     errors = result.get("errors") or []
     if errors:
