@@ -13,13 +13,22 @@ never matched -- M4's generated contexts are model output, and a hallucinated
 summary must not satisfy a gate about the source document.
 """
 
+import json
 from contextlib import closing
 from dataclasses import dataclass
 from pathlib import Path
 
+import yaml
+
 from ..db import ops
 from .graph import doc_id_for_slug
 from .manifest import load_manifest
+
+
+class IntegrityError(ValueError):
+    """Raised when the gate's own inputs are unusable (as distinct from a source
+    failing its check)."""
+
 
 # This file lives at <root>/src/kbmcp/ingest/, so parents[3] is the repo root.
 # Anchored to the PACKAGE, never the process cwd: as cwd-relative literals these
@@ -49,7 +58,39 @@ def _blob(conn, doc_id: str) -> str:
 
 
 def _covered_slugs(queries_path, fixtures_path) -> set:
-    return set()  # replaced in Task 4
+    """Slugs carrying an EXTERNAL content check: a gold anchor or a structure
+    fixture. Those are verified by their own gates -- re-verifying here would
+    mean two places to fix when the assertion changes -- so this only asks
+    whether the claim exists.
+
+    graph_expectations.yaml is deliberately excluded: an edge between two
+    documents is a weaker claim about either one's content than a quote is.
+    """
+    q, f = Path(queries_path), Path(fixtures_path)
+    if not q.exists() and not f.exists():
+        raise IntegrityError(
+            f"coverage inputs unavailable: neither {q} nor {f} exists, so every "
+            "source would fail 'no content check' for want of an input rather "
+            "than a defect. Pass --no-coverage for a BYO corpus."
+        )
+
+    covered: set = set()
+    if q.exists():
+        for n, line in enumerate(q.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line.strip():
+                continue
+            try:
+                item = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise IntegrityError(f"{q}: line {n} is not valid JSON: {exc}") from exc
+            for g in item.get("gold") or []:
+                covered.add(g["doc"])
+    if f.exists():
+        for fx in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
+            slug = fx.get("slug")
+            if slug:
+                covered.add(slug)
+    return covered
 
 
 def verify_integrity(ckb_path, manifest_path, raw_dir, *,
@@ -128,3 +169,49 @@ def verify_integrity(ckb_path, manifest_path, raw_dir, *,
 
 def all_passed(results) -> bool:
     return all(r.passed for r in results)
+
+
+def main(argv=None) -> int:
+    import argparse
+    import sys
+
+    p = argparse.ArgumentParser(prog="python -m kbmcp.ingest.verify_integrity")
+    p.add_argument("--ckb", default=str(DEFAULT_CKB))
+    p.add_argument("--manifest", default=str(DEFAULT_MANIFEST))
+    p.add_argument("--raw-dir", default=str(DEFAULT_RAW_DIR))
+    p.add_argument("--queries", default=str(DEFAULT_QUERIES))
+    p.add_argument("--fixtures", default=str(DEFAULT_FIXTURES))
+    p.add_argument("--no-coverage", action="store_true",
+                   help="verify declared expect_terms only; skip the "
+                        "every-source-is-covered rule (BYO corpora)")
+    a = p.parse_args(argv)
+
+    results = verify_integrity(
+        a.ckb, a.manifest, a.raw_dir, queries_path=a.queries,
+        fixtures_path=a.fixtures, coverage=not a.no_coverage)
+
+    for r in results:
+        if not r.passed:
+            print(f"  [FAIL] {r.slug} ({r.check}): {r.detail}", file=sys.stderr)
+
+    # Summarize by whatever check names actually appear in `results`, not a
+    # hard-coded pair. A hard-coded coverage/expect_terms split would count a
+    # doc_id_collision result (Task 3's review fix, a third check name) in
+    # neither line -- all_passed() below still covers it for the exit code,
+    # but the operator-facing summary would under-report a real failure. This
+    # form stays honest if a fourth check name is ever added.
+    by_check: dict = {}
+    for r in results:
+        by_check.setdefault(r.check, []).append(r)
+    for check in sorted(by_check):
+        rs = by_check[check]
+        print(f"integrity    {check} {sum(r.passed for r in rs)}/{len(rs)}",
+              file=sys.stderr)
+
+    ok = all_passed(results)
+    print(f"integrity: {'ok' if ok else 'FAILED'}", file=sys.stderr)
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -260,3 +260,134 @@ def test_a_collision_slug_is_not_also_scored_against_the_shared_text(safe_tmp_pa
     assert len(res) == 2  # one result per slug, not a collision plus a scoring
     assert all(r.check == "doc_id_collision" for r in res)
     assert not any(r.check == "expect_terms" for r in res)
+
+
+import json
+
+
+def _queries(path, pairs):
+    """pairs: [(item_id, slug)] -> one minimal gold-bearing item per pair."""
+    items = [{"id": i, "tier": "T1", "query": "q", "answerable": True,
+              "gold": [{"doc": s, "chunk_id": "x", "anchor": "y"}],
+              "distractor_docs": [], "collision_term": None, "notes": ""}
+             for i, s in pairs]
+    path.write_text("\n".join(json.dumps(i) for i in items) + "\n", encoding="utf-8")
+
+
+def _fixtures(path, slugs):
+    body = "".join(f"- name: f-{s}\n  slug: {s}\n  doc_id: deadbeef\n"
+                   f"  must_contain: [\"z\"]\n" for s in slugs)
+    path.write_text(body or "[]", encoding="utf-8")
+
+
+def test_a_source_with_no_check_at_all_fails_coverage(safe_tmp_path):
+    """The carlill class: nothing in the corpus contradicted it."""
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    res = _run(safe_tmp_path, {"a": "text"}, {"a": []},
+               queries_path=q, fixtures_path=f)
+    cov = [r for r in res if r.check == "coverage"]
+    assert len(cov) == 1 and not cov[0].passed
+    assert "no content check" in cov[0].detail
+
+
+def test_a_gold_anchor_alone_satisfies_coverage(safe_tmp_path):
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [("T1-001", "a")])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    res = _run(safe_tmp_path, {"a": "text"}, {"a": []},
+               queries_path=q, fixtures_path=f)
+    assert vi.all_passed(res)
+
+
+def test_a_structure_fixture_slug_alone_satisfies_coverage(safe_tmp_path):
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, ["a"])
+    res = _run(safe_tmp_path, {"a": "text"}, {"a": []},
+               queries_path=q, fixtures_path=f)
+    assert vi.all_passed(res)
+
+
+def test_expect_terms_alone_satisfies_coverage(safe_tmp_path):
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    res = _run(safe_tmp_path, {"a": "Bowen LJ"}, {"a": ["Bowen"]},
+               queries_path=q, fixtures_path=f)
+    assert vi.all_passed(res)
+
+
+def test_coverage_is_skipped_but_terms_still_verified_for_byo(safe_tmp_path):
+    """Spec Sec.7: requiring a declared expectation per source would impose this
+    corpus's standards on a BYO user's documents. Their own terms still hold."""
+    res = _run(safe_tmp_path, {"a": "wrong text"}, {"a": ["Bowen"]}, coverage=False)
+    assert [r.check for r in res] == ["expect_terms"]
+    assert not vi.all_passed(res)
+
+
+def test_a_malformed_queries_line_names_the_file_and_line(safe_tmp_path):
+    """Review Focus 2: a bare JSONDecodeError does not say which file or line."""
+    q = safe_tmp_path / "q.jsonl"
+    q.write_text('{"id": "T1-001", "gold": []}\nnot json at all\n', encoding="utf-8")
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    with pytest.raises(vi.IntegrityError, match="line 2"):
+        _run(safe_tmp_path, {"a": "t"}, {"a": []}, queries_path=q, fixtures_path=f)
+
+
+def test_both_coverage_sources_missing_is_reported_as_missing_inputs(safe_tmp_path):
+    """Review Focus 3: 55 sources failing 'no content check' reads as 55 corpus
+    defects when the real cause is one absent input file."""
+    with pytest.raises(vi.IntegrityError, match="coverage inputs"):
+        _run(safe_tmp_path, {"a": "t"}, {"a": []},
+             queries_path=safe_tmp_path / "nope.jsonl",
+             fixtures_path=safe_tmp_path / "nope.yaml")
+
+
+def test_cli_returns_1_on_failure_and_writes_nothing_to_stdout(safe_tmp_path, capsys):
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"a": "text"})
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, {"a": []})
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a"])
+    rc = vi.main(["--ckb", str(ckb), "--manifest", str(man), "--raw-dir", str(raw),
+                  "--queries", str(q), "--fixtures", str(f)])
+    out = capsys.readouterr()
+    assert rc == 1
+    assert out.out == "", "stdio transport: gate output must go to stderr only"
+    assert "no content check" in out.err
+
+
+def test_cli_returns_0_when_everything_passes(safe_tmp_path, capsys):
+    q = safe_tmp_path / "q.jsonl"
+    _queries(q, [("T1-001", "a")])
+    f = safe_tmp_path / "f.yaml"
+    _fixtures(f, [])
+    ckb = safe_tmp_path / "t.sqlite"
+    _ckb(ckb, {"a": "text"})
+    man = safe_tmp_path / "m.yaml"
+    _manifest(man, {"a": []})
+    raw = safe_tmp_path / "raw"
+    _raw(raw, ["a"])
+    rc = vi.main(["--ckb", str(ckb), "--manifest", str(man), "--raw-dir", str(raw),
+                  "--queries", str(q), "--fixtures", str(f)])
+    assert rc == 0
+    assert capsys.readouterr().out == ""
+
+
+def test_defaults_are_absolute_and_package_anchored():
+    for p in (vi.DEFAULT_CKB, vi.DEFAULT_MANIFEST, vi.DEFAULT_RAW_DIR,
+              vi.DEFAULT_QUERIES, vi.DEFAULT_FIXTURES):
+        assert p.is_absolute()
+    assert vi.DEFAULT_MANIFEST.exists()
