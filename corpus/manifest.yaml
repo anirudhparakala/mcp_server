@@ -259,6 +259,7 @@
   collision_terms: [consent]
   conflict_with: [law-ccpa-1798]
   rationale: "CPRA (Prop 24, 2020) — the isolated amendment instrument (SOS official text), deliberately distinct from the merged CCPA codified law so the CCPA-vs-CPRA T5 versioning conflict has two separable documents."
+  expect_terms: ["California Privacy Rights Act", "sensitive personal information", "cross-context behavioral advertising"]
 
 - doc_id: edpb-guidelines-automated-decisions
   url: "https://ec.europa.eu/newsroom/article29/redirection/document/49826"
@@ -294,6 +295,7 @@
   tier_roles: [T5]
   collision_terms: [profiling]
   rationale: "ICO (UK) guidance on AI & automated decisions; UK<->EU divergence (T5). Cloudflare-fronted (fetch-reliability watch)."
+  expect_terms: ["solely automated", "human review", "automated decision-making"]
 
 - doc_id: nist-ai-rmf
   url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
@@ -326,6 +328,7 @@
   version: oldid-1363027288
   tier_roles: [T3]
   rationale: "Wikipedia restatement of CCPA; T3 paraphrase pair with law-ccpa-1798."
+  expect_terms: ["California Consumer Privacy Act", "Do Not Sell"]
 
 - doc_id: wiki-eu-ai-act
   url: "https://en.wikipedia.org/w/index.php?title=Artificial_Intelligence_Act&oldid=1365588755"
@@ -433,6 +436,7 @@
   tier_roles: [T1]
   collision_terms: [offer]
   rationale: "Carlill v. Carbolic Smoke Ball Co. (1893) — unilateral offer / offer to the world. Wikisource (cleanest host, plain GET). REPOINTED 2026-09-23: the original URL used the 'Carlill v. Carbolic' title (with a period), which is a REDIRECT page -- the fetch succeeded but pinned 47KB of redirect chrome, and the built document was 2 chunks of page navigation and a revision-history line with ZERO case text. Undetected through M2-M7 because the structure gate checks 5 named fixtures and this is not one. Now points at the real transcription (no period, oldid 12776832)."
+  expect_terms: ["smoke ball", "Bowen", "influenza"]
 
 - doc_id: edgar-commercial-contract
   url: "https://www.sec.gov/Archives/edgar/data/13239/000119312509174289/dex104.htm"
@@ -506,6 +510,7 @@
   tier_roles: [T5]
   collision_terms: [timing]
   rationale: "ISSN Position Stand: Nutrient Timing ('anabolic window')."
+  expect_terms: ["nutrient timing", "glycogen", "Kerksick"]
 
 - doc_id: issn-creatine
   url: "https://europepmc.org/articles/PMC5469049?pdf=render"

@@ -391,3 +391,25 @@ def test_defaults_are_absolute_and_package_anchored():
               vi.DEFAULT_QUERIES, vi.DEFAULT_FIXTURES):
         assert p.is_absolute()
     assert vi.DEFAULT_MANIFEST.exists()
+
+
+def test_the_shipped_manifest_is_fully_covered():
+    """End-to-end against the live CKB. The five sources named here had no
+    content check of any kind, which is how case-carlill-carbolic shipped zero
+    case text through M2-M7."""
+    res = vi.verify_integrity(vi.DEFAULT_CKB, vi.DEFAULT_MANIFEST, vi.DEFAULT_RAW_DIR)
+    failed = [(r.slug, r.check, r.detail) for r in res if not r.passed]
+    assert failed == [], f"integrity failures: {failed}"
+    cov = [r for r in res if r.check == "coverage"]
+    assert len(cov) == 55
+
+
+def test_every_previously_uncovered_source_now_declares_expect_terms():
+    """Guards the coverage half against silent decay: these five are covered by
+    expect_terms ALONE, so if one is dropped the gate must go red rather than
+    fall back on a gold anchor that does not exist."""
+    from kbmcp.ingest.manifest import load_manifest
+    by = {e.doc_id: e for e in load_manifest(vi.DEFAULT_MANIFEST)}
+    for slug in ("case-carlill-carbolic", "ico-ai-automated-decision",
+                 "issn-nutrient-timing", "law-cpra-amendment", "wiki-ccpa"):
+        assert by[slug].expect_terms, f"{slug} lost its expect_terms"
